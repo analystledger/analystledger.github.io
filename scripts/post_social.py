@@ -316,7 +316,7 @@ def main():
             save_json(os.path.join(DATA, "alerts_pending.json"), pending[CFG["alerts"]["max_alert_posts_per_run"]:])
     elif mode == "weekly":
         p = weekly_post(sorted(events.values(), key=lambda e: e["date"], reverse=True))
-        if p and p["id"] not in log:
+        if p:  # platforms that already received it are skipped inside publish()
             posts.append(p)
     elif mode == "queue":
         posts = queued_posts()
