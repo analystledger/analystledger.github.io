@@ -68,4 +68,5 @@ def card(path, kicker, title, lines, footer, size=(1080, 1350), accent=None):
     d.text((70, H - 80), "Not investment advice. Data may be delayed.", font=font(26), fill=MUTED)
     os.makedirs(os.path.dirname(path), exist_ok=True)
     img.save(path, "PNG", optimize=True)
+    img.convert("RGB").save(os.path.splitext(path)[0] + ".jpg", "JPEG", quality=90)  # TikTok photos need JPEG
     return path

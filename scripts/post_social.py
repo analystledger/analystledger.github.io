@@ -141,8 +141,9 @@ def queued_posts():
 
 
 # ------------------------------------------------------------------ platforms
-def public_image_url(post):
-    rel = os.path.relpath(post["image"], DOCS).replace(os.sep, "/")
+def public_image_url(post, ext=None):
+    path = os.path.splitext(post["image"])[0] + ext if ext else post["image"]
+    rel = os.path.relpath(path, DOCS).replace(os.sep, "/")
     url = f"{SITE}/{rel}"
     if DRY:
         return url
@@ -261,7 +262,7 @@ def post_tiktok(p):
     privacy = "PUBLIC_TO_EVERYONE" if "PUBLIC_TO_EVERYONE" in opts else opts[0]
     body = {"post_info": {"title": p["title"][:90], "description": p["long"][:2200], "privacy_level": privacy,
                           "disable_comment": False, "auto_add_music": True},
-            "source_info": {"source": "PULL_FROM_URL", "photo_cover_index": 0, "photo_images": [public_image_url(p)]},
+            "source_info": {"source": "PULL_FROM_URL", "photo_cover_index": 0, "photo_images": [public_image_url(p, ".jpg")]},
             "post_mode": "DIRECT_POST", "media_type": "PHOTO"}
     r = requests.post("https://open.tiktokapis.com/v2/post/publish/content/init/", headers=h, json=body, timeout=60)
     if "unaudited_client" in r.text and privacy != "SELF_ONLY":
@@ -271,6 +272,15 @@ def post_tiktok(p):
     r.raise_for_status()
     if (r.json().get("error") or {}).get("code") not in (None, "ok"):
         raise RuntimeError(r.text[:300])
+    pub = (r.json().get("data") or {}).get("publish_id")
+    for _ in range(24):  # confirm TikTok finished processing (max ~4 min)
+        time.sleep(10)
+        st = requests.post("https://open.tiktokapis.com/v2/post/publish/status/fetch/", headers=h,
+                           json={"publish_id": pub}, timeout=30).json().get("data") or {}
+        if st.get("status") == "PUBLISH_COMPLETE":
+            break
+        if st.get("status") == "FAILED":
+            raise RuntimeError(f"TikTok processing failed: {st.get('fail_reason')}")
     if privacy != "PUBLIC_TO_EVERYONE":
         print("  NOTE: TikTok posted privately - the app must pass TikTok's audit before posts can be public.")
 
