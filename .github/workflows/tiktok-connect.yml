@@ -1,0 +1,33 @@
+name: Connect TikTok
+on:
+  workflow_dispatch:
+    inputs:
+      code:
+        description: "One-time code shown on analystledger.github.io/tiktok-callback.html"
+        required: true
+permissions:
+  contents: write
+jobs:
+  connect:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install -r requirements.txt
+      - name: Exchange code for tokens (stored encrypted)
+        env:
+          TIKTOK_CLIENT_KEY: ${{ secrets.TIKTOK_CLIENT_KEY }}
+          TIKTOK_CLIENT_SECRET: ${{ secrets.TIKTOK_CLIENT_SECRET }}
+          CODE: ${{ github.event.inputs.code }}
+        run: |
+          echo "::add-mask::$CODE"
+          python scripts/tiktok_auth.py exchange "$CODE"
+      - name: Commit encrypted token
+        run: |
+          git config user.name "analyst-ledger-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/tiktok_token.enc
+          git commit -m "Connect TikTok (encrypted token)"
+          git pull --rebase -X ours || true
+          git push

@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %}Privacy Policy | {{ CFG.site_name }}{% endblock %}
+{% block body %}
+<article class="prose">
+<h1>Privacy Policy</h1>
+<p>Last updated: 15 November 2026</p>
+<p>{{ CFG.site_name }} is a static website. We do not run accounts, logins, advertising trackers or analytics cookies, and we do not collect personal data from visitors.</p>
+<h2>What we store</h2>
+<p>We publish information about professional analysts' publicly reported rating changes (name, firm, date, rating, price target and source link) as reported by the press and data providers.</p>
+<h2>Our automated posting apps</h2>
+<p>Our posting integrations (TikTok, Meta, Bluesky, Mastodon, Telegram) are used only to publish to accounts owned by {{ CFG.site_name }}. The access tokens for those accounts are stored encrypted and are used only to publish posts. We do not collect, store or share data about other users of those platforms.</p>
+<h2>Hosting</h2>
+<p>The site is hosted on GitHub Pages; GitHub may log technical data such as IP addresses as described in GitHub's own privacy statement.</p>
+<h2>Contact</h2>
+<p>Questions or removal requests: open an issue at github.com/analystledger/analystledger.github.io.</p>
+</article>
+{% endblock %}

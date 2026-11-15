@@ -253,14 +253,8 @@ def post_instagram(p):
 
 
 def post_tiktok(p):
-    t = requests.post("https://open.tiktokapis.com/v2/oauth/token/", timeout=30,
-                      headers={"Content-Type": "application/x-www-form-urlencoded"},
-                      data={"client_key": ENV("TIKTOK_CLIENT_KEY"), "client_secret": ENV("TIKTOK_CLIENT_SECRET"),
-                            "grant_type": "refresh_token", "refresh_token": ENV("TIKTOK_REFRESH_TOKEN")})
-    t.raise_for_status()
-    tok = t.json()
-    if tok.get("refresh_token") and tok["refresh_token"] != ENV("TIKTOK_REFRESH_TOKEN"):
-        print("  NOTE: TikTok issued a new refresh token - update the TIKTOK_REFRESH_TOKEN secret.")
+    from tiktok_auth import access_token
+    tok = {"access_token": access_token()}
     h = {"Authorization": f"Bearer {tok['access_token']}", "Content-Type": "application/json; charset=UTF-8"}
     info = requests.post("https://open.tiktokapis.com/v2/post/publish/creator_info/query/", headers=h, timeout=30).json()
     opts = (info.get("data") or {}).get("privacy_level_options") or ["SELF_ONLY"]
@@ -284,7 +278,7 @@ PLATFORMS = [
     ("telegram", ["TELEGRAM_BOT_TOKEN", "TELEGRAM_CHAT_ID"], post_telegram),
     ("facebook", ["FB_PAGE_ID", "FB_PAGE_TOKEN"], post_facebook),
     ("instagram", ["IG_USER_ID", "FB_PAGE_TOKEN"], post_instagram),
-    ("tiktok", ["TIKTOK_CLIENT_KEY", "TIKTOK_CLIENT_SECRET", "TIKTOK_REFRESH_TOKEN"], post_tiktok),
+    ("tiktok", ["TIKTOK_CLIENT_KEY", "TIKTOK_CLIENT_SECRET"], post_tiktok),
 ]
 
 
@@ -294,6 +288,8 @@ def publish(post, log):
         if done.get(name) == "ok":
             continue
         if not all(ENV(k) for k in keys):
+            continue
+        if name == "tiktok" and not (os.path.exists(os.path.join(DATA, "tiktok_token.enc")) or ENV("TIKTOK_REFRESH_TOKEN")):
             continue
         if DRY:
             print(f"[dry-run] {name}: {post['short'][:120]!r}")

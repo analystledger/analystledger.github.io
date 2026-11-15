@@ -125,6 +125,8 @@ def main():
     for s in s_list:
         render(f"stocks/{slugify(s['ticker'])}.html", "stock.html", 1, s=s, **common)
     render("about.html", "about.html", 0, **common)
+    render("terms.html", "terms.html", 0, **common)
+    render("privacy.html", "privacy.html", 0, **common)
 
     # compact search index for the client-side search box
     save_json(os.path.join(DOCS, "assets", "search.json"),

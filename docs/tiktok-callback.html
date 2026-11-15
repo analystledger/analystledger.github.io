@@ -1,0 +1,8 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Analyst Ledger – TikTok connection</title>
+<style>body{font:16px/1.5 -apple-system,Segoe UI,Arial,sans-serif;max-width:640px;margin:40px auto;padding:0 16px;color:#0f1b2d}code{display:block;word-break:break-all;background:#f1f4f9;padding:12px;border-radius:8px;margin:12px 0}</style></head>
+<body><h1>TikTok connection</h1><div id="out">Reading response…</div>
+<script>
+var p=new URLSearchParams(location.search),o=document.getElementById('out');
+if(p.get('code')){o.innerHTML='<p>Authorization succeeded. Copy this one-time code and paste it into the <b>Connect TikTok</b> workflow on GitHub within 5 minutes:</p><code></code><p>Then you can close this page.</p>';o.querySelector('code').textContent=p.get('code');}
+else{o.textContent='No code received'+(p.get('error')?': '+p.get('error')+' '+(p.get('error_description')||''):'.');}
+</script></body></html>
