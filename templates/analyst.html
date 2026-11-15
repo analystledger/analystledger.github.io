@@ -1,0 +1,20 @@
+{% extends "base.html" %}{% import "_macros.html" as m %}
+{% block title %}{{ a.name }} — rating history | {{ CFG.site_name }}{% endblock %}
+{% block desc %}Every dated rating and price-target change by {{ a.name }} ({{ a.firm }}): {{ a.n }} actions across {{ a.stocks }} stocks.{% endblock %}
+{% block body %}
+<p class="crumbs"><a href="index.html">Analysts</a> / {{ a.name }}</p>
+<section class="hero small">
+  <h1>{{ a.name }}</h1>
+  <p class="muted">{{ a.firm }} · tracked since {{ a.first }} · last action {{ a.last }}</p>
+  <div class="kpis">
+    <div><b>{{ a.n }}</b><span>recorded actions</span></div>
+    <div><b>{{ a.stocks }}</b><span>stocks covered</span></div>
+    <div><b>{{ a.upgrades }} / {{ a.downgrades }}</b><span>upgrades / downgrades</span></div>
+    <div><b class="{% if a.avg_ret is not none %}{{ 'up' if a.avg_ret > 0 else 'down' }}{% endif %}">{{ a.avg_ret|pct }}</b><span>avg return per call{% if a.scored %} ({{ a.scored }}){% endif %}</span></div>
+    <div><b>{{ a.hit ~ "%" if a.hit is not none else "—" }}</b><span>calls in the right direction</span></div>
+  </div>
+</section>
+<h2>Full history</h2>
+{{ m.events_table(a.events, root, show_analyst=False, filterable=a.n > 15) }}
+<p class="note">*Return since the rating date, positive when the call was right. Neutral ratings are not scored.</p>
+{% endblock %}

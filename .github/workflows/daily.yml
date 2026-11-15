@@ -1,0 +1,59 @@
+name: Daily update
+on:
+  schedule:
+    - cron: "30 22 * * 1-5"   # 22:30 UTC, after US market close, Mon-Fri
+    - cron: "0 13 * * 1-5"    # 13:00 UTC, catches pre-market rating calls
+  push:
+    paths: ["data/news_events.json", "data/posts_queue.json", "templates/**", "scripts/**", "config.json"]
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency: { group: site, cancel-in-progress: false }
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install -r requirements.txt
+      - name: Fetch and merge analyst data
+        env:
+          FMP_API_KEY: ${{ secrets.FMP_API_KEY }}
+          FINNHUB_API_KEY: ${{ secrets.FINNHUB_API_KEY }}
+        run: python scripts/update_data.py
+      - name: Build website
+        run: python scripts/build_site.py
+      - name: Prepare post images
+        run: python scripts/post_social.py alerts --dry-run && python scripts/post_social.py queue --dry-run
+      - name: Commit
+        run: |
+          git config user.name "analyst-ledger-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add -A
+          git diff --cached --quiet || git commit -m "Daily update $(date -u +%F)"
+          git pull --rebase -X ours || true
+          git push
+      - name: Post alerts and queued posts
+        env:
+          X_API_KEY: ${{ secrets.X_API_KEY }}
+          X_API_SECRET: ${{ secrets.X_API_SECRET }}
+          X_ACCESS_TOKEN: ${{ secrets.X_ACCESS_TOKEN }}
+          X_ACCESS_SECRET: ${{ secrets.X_ACCESS_SECRET }}
+          BSKY_HANDLE: ${{ secrets.BSKY_HANDLE }}
+          BSKY_APP_PASSWORD: ${{ secrets.BSKY_APP_PASSWORD }}
+          MASTODON_INSTANCE: ${{ secrets.MASTODON_INSTANCE }}
+          MASTODON_TOKEN: ${{ secrets.MASTODON_TOKEN }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
+          FB_PAGE_TOKEN: ${{ secrets.FB_PAGE_TOKEN }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          TIKTOK_CLIENT_KEY: ${{ secrets.TIKTOK_CLIENT_KEY }}
+          TIKTOK_CLIENT_SECRET: ${{ secrets.TIKTOK_CLIENT_SECRET }}
+          TIKTOK_REFRESH_TOKEN: ${{ secrets.TIKTOK_REFRESH_TOKEN }}
+        run: |
+          python scripts/post_social.py alerts
+          python scripts/post_social.py queue
+          git add -A
+          git diff --cached --quiet || (git commit -m "Post log $(date -u +%F)" && git pull --rebase -X ours && git push)

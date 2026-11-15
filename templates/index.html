@@ -1,0 +1,48 @@
+{% extends "base.html" %}{% import "_macros.html" as m %}
+{% block title %}{{ CFG.site_name }} — Analyst rating changes & track records{% endblock %}
+{% block body %}
+<section class="hero">
+  <h1>{{ CFG.tagline }}</h1>
+  <p>Upgrades, downgrades, new coverage and price-target moves from Wall Street analysts — each one dated, sourced and added to the analyst's permanent history.</p>
+  <div class="kpis">
+    <div><b>{{ week|length }}</b><span>changes this week</span></div>
+    <div><b>{{ week|selectattr("action","equalto","upgrade")|list|length }}</b><span>upgrades</span></div>
+    <div><b>{{ week|selectattr("action","equalto","downgrade")|list|length }}</b><span>downgrades</span></div>
+    <div><b>{{ n_analysts }}</b><span>analysts tracked</span></div>
+  </div>
+</section>
+
+<div class="grid2">
+  <section class="card">
+    <h2>Most-covered stocks this week</h2>
+    <ol class="list">
+    {% for s in top_stocks if s.events %}
+      <li><a class="tk" href="stocks/{{ s.ticker|lower|replace('.', '-') }}.html">{{ s.ticker }}</a>
+        <span class="muted">{{ s.company or "" }}</span>
+        <span class="pill"><span class="r-bullish">{{ s.bull }}</span>/<span class="r-neutral">{{ s.neutral }}</span>/<span class="r-bearish">{{ s.bear }}</span></span></li>
+    {% endfor %}
+    </ol>
+    <p class="note">Bullish / neutral / bearish views from firms over the last 12 months.</p>
+  </section>
+  <section class="card">
+    <h2>Best-scoring analysts</h2>
+    {% if ranked %}
+    <ol class="list">
+    {% for a in ranked %}
+      <li><a href="analysts/{{ a.slug }}.html">{{ a.name }}</a> <span class="muted">{{ a.firm if a.name != a.firm ~ " (research team)" else "" }}</span>
+        <span class="pill {{ 'up' if a.avg_ret > 0 else 'down' }}">{{ a.avg_ret|pct }}</span></li>
+    {% endfor %}
+    </ol>
+    {% else %}
+    <p class="muted">Scores appear once analysts have at least 3 rated calls with price data.</p>
+    {% endif %}
+    <p class="note">Average directional return since each Buy/Sell-type call. <a href="about.html#method">Method</a></p>
+  </section>
+</div>
+
+<section>
+  <h2>Latest rating changes</h2>
+  {{ m.events_table(latest, root, filterable=True) }}
+  <p class="note">*Return = stock move since the rating date, counted positive when the call was right (Buy-type and the stock rose, or Sell-type and it fell).</p>
+</section>
+{% endblock %}

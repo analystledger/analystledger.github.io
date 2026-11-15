@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% block title %}{{ CFG.site_name }}{% endblock %}</title>
+<meta name="description" content="{% block desc %}{{ CFG.tagline }}{% endblock %}">
+<meta property="og:title" content="{{ self.title() }}">
+<meta property="og:description" content="{{ self.desc() }}">
+<meta property="og:type" content="website">
+<meta property="og:image" content="{{ CFG.base_url }}{{ CFG.base_path }}/assets/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="{{ root }}assets/logo.svg" type="image/svg+xml">
+<link rel="alternate" type="application/rss+xml" title="{{ CFG.site_name }}" href="{{ root }}feed.xml">
+<link rel="stylesheet" href="{{ root }}assets/style.css">
+</head>
+<body>
+<header class="top">
+  <div class="wrap bar">
+    <a class="brand" href="{{ root }}index.html"><img src="{{ root }}assets/logo.svg" alt="" width="28" height="28"> {{ CFG.site_name }}</a>
+    <nav>
+      <a href="{{ root }}index.html">Latest</a>
+      <a href="{{ root }}analysts/index.html">Analysts</a>
+      <a href="{{ root }}stocks/index.html">Stocks</a>
+      <a href="{{ root }}about.html">About</a>
+    </nav>
+    <div class="search">
+      <input id="q" type="search" placeholder="Search ticker, analyst, firm…" autocomplete="off" aria-label="Search">
+      <div id="qres" class="qres" hidden></div>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+{% block body %}{% endblock %}
+</main>
+<footer class="wrap foot">
+  <p><strong>Disclaimer:</strong> {{ CFG.disclaimer }}</p>
+  <p>{{ total }} rating changes · {{ n_analysts }} analysts · {{ n_stocks }} stocks · Updated {{ updated or "daily" }} · <a href="{{ root }}feed.xml">RSS</a></p>
+</footer>
+<script>window.ROOT = "{{ root }}";</script>
+<script src="{{ root }}assets/app.js"></script>
+</body>
+</html>

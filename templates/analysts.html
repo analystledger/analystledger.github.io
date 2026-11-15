@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %}All analysts | {{ CFG.site_name }}{% endblock %}
+{% block body %}
+<h1>Analysts</h1>
+<p class="muted">Click a column to sort. Return = average directional return per Buy/Sell-type call.</p>
+<div class="filters"><input class="tf" type="search" placeholder="Filter analysts or firms…" aria-label="Filter"></div>
+<div class="tw"><table class="ev sortable">
+<thead><tr><th>Analyst</th><th>Firm</th><th data-num>Actions</th><th data-num>Stocks</th><th data-num>Up</th><th data-num>Down</th><th data-num>Avg return</th><th data-num>Right direction</th><th>Last action</th></tr></thead>
+<tbody>
+{% for a in analysts %}
+<tr><td><a href="{{ a.slug }}.html">{{ a.name }}</a></td><td>{{ a.firm }}</td><td>{{ a.n }}</td><td>{{ a.stocks }}</td><td>{{ a.upgrades }}</td><td>{{ a.downgrades }}</td>
+<td class="{% if a.avg_ret is not none %}{{ 'up' if a.avg_ret > 0 else 'down' }}{% endif %}" data-v="{{ a.avg_ret if a.avg_ret is not none else -9999 }}">{{ a.avg_ret|pct }}</td>
+<td data-v="{{ a.hit if a.hit is not none else -1 }}">{{ a.hit ~ "%" if a.hit is not none else "—" }}</td><td class="nw">{{ a.last }}</td></tr>
+{% endfor %}
+</tbody></table></div>
+{% endblock %}

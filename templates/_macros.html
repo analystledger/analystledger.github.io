@@ -1,0 +1,46 @@
+{% macro badge(action) -%}
+<span class="b b-{{ action }}">{{ ACTIONS[action] }}</span>
+{%- endmacro %}
+
+{% macro rating_change(e) -%}
+{% if e.rating_from and e.rating_to and e.rating_from|lower != e.rating_to|lower %}<span class="r r-{{ stance(e.rating_from) }}">{{ e.rating_from }}</span> → {% endif %}
+{% if e.rating_to %}<span class="r r-{{ stance(e.rating_to) }}">{{ e.rating_to }}</span>{% else %}<span class="muted">—</span>{% endif %}
+{%- endmacro %}
+
+{% macro target(e) -%}
+{% if e.pt_from and e.pt_to and e.pt_from != e.pt_to %}<span class="muted">{{ e.pt_from|money }}</span> → {{ e.pt_to|money }}{% elif e.pt_to %}{{ e.pt_to|money }}{% else %}<span class="muted">—</span>{% endif %}
+{%- endmacro %}
+
+{% macro src(e) -%}
+{% if e.source_url %}<a class="src" href="{{ e.source_url }}" rel="nofollow noopener" target="_blank">{{ e.source }}</a>{% else %}<span class="src">{{ e.source }}</span>{% endif %}
+{%- endmacro %}
+
+{% macro events_table(rows, root, show_stock=True, show_analyst=True, filterable=False) -%}
+{% if filterable %}
+<div class="filters">
+  <input class="tf" type="search" placeholder="Filter this table…" aria-label="Filter table">
+  <select class="af" aria-label="Action">
+    <option value="">All actions</option>
+    {% for k, v in ACTIONS.items() %}<option value="{{ k }}">{{ v }}</option>{% endfor %}
+  </select>
+</div>
+{% endif %}
+<div class="tw"><table class="ev">
+<thead><tr><th>Date</th>{% if show_stock %}<th>Stock</th>{% endif %}{% if show_analyst %}<th>Analyst / Firm</th>{% endif %}<th>Action</th><th>Rating</th><th>Price target</th><th>Return*</th><th>Source</th></tr></thead>
+<tbody>
+{% for e in rows %}
+<tr data-action="{{ e.action }}">
+  <td class="nw">{{ e.date }}</td>
+  {% if show_stock %}<td><a class="tk" href="{{ root }}stocks/{{ e.ticker|lower|replace('.', '-') }}.html">{{ e.ticker }}</a>{% if e.company %}<div class="sub">{{ e.company }}</div>{% endif %}</td>{% endif %}
+  {% if show_analyst %}<td><a href="{{ root }}analysts/{{ e.analyst_slug }}.html">{{ e.analyst or e.firm }}</a>{% if e.analyst %}<div class="sub">{{ e.firm }}</div>{% endif %}</td>{% endif %}
+  <td>{{ badge(e.action) }}</td>
+  <td>{{ rating_change(e) }}</td>
+  <td class="nw">{{ target(e) }}</td>
+  <td class="nw {% if e.ret is not none %}{{ 'up' if e.ret > 0 else 'down' }}{% endif %}">{{ e.ret|pct }}</td>
+  <td>{{ src(e) }}</td>
+</tr>
+{% else %}
+<tr><td colspan="8" class="muted">No rating changes recorded yet.</td></tr>
+{% endfor %}
+</tbody></table></div>
+{%- endmacro %}

@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block title %}All stocks | {{ CFG.site_name }}{% endblock %}
+{% block body %}
+<h1>Stocks</h1>
+<p class="muted">Consensus uses each firm's latest view in the last 12 months. Click a column to sort.</p>
+<div class="filters"><input class="tf" type="search" placeholder="Filter stocks…" aria-label="Filter"></div>
+<div class="tw"><table class="ev sortable">
+<thead><tr><th>Ticker</th><th>Company</th><th data-num>Bullish</th><th data-num>Neutral</th><th data-num>Bearish</th><th data-num>Avg target</th><th data-num>Upside</th><th data-num>Actions</th><th>Last action</th></tr></thead>
+<tbody>
+{% for s in stocks %}
+<tr><td><a class="tk" href="{{ s.ticker|lower|replace('.', '-') }}.html">{{ s.ticker }}</a></td><td>{{ s.company or "" }}</td>
+<td class="r-bullish">{{ s.bull }}</td><td class="r-neutral">{{ s.neutral }}</td><td class="r-bearish">{{ s.bear }}</td>
+<td data-v="{{ s.avg_pt or 0 }}">{{ s.avg_pt|money }}</td>
+<td data-v="{{ s.upside if s.upside is defined else -9999 }}" class="{% if s.upside is defined %}{{ 'up' if s.upside > 0 else 'down' }}{% endif %}">{{ (s.upside if s.upside is defined else none)|pct }}</td>
+<td>{{ s.n }}</td><td class="nw">{{ s.last }}</td></tr>
+{% endfor %}
+</tbody></table></div>
+{% endblock %}

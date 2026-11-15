@@ -1,0 +1,19 @@
+{
+  "site_name": "Analyst Ledger",
+  "tagline": "Every Wall Street rating change, dated and tracked — free.",
+  "base_url": "https://analystledger.github.io",
+  "base_path": "",
+  "disclaimer": "Analyst Ledger publishes factual records of publicly reported analyst rating and price-target changes for information only. Nothing here is investment advice or a recommendation to buy or sell any security. Data may be delayed or incomplete — always verify with the original source.",
+  "post_disclaimer": "Not investment advice.",
+  "hashtags": ["#stocks", "#investing", "#WallStreet"],
+  "alerts": {
+    "max_alert_posts_per_run": 3,
+    "price_target_change_pct": 20,
+    "cluster_actions_same_ticker": 3,
+    "watchlist": ["AAPL", "MSFT", "NVDA", "AMZN", "GOOGL", "META", "TSLA", "AVGO", "AMD", "NFLX", "JPM", "V", "MA", "LLY", "UNH", "XOM", "COST", "WMT", "ORCL", "CRM", "PLTR", "CRWV", "TSM", "BRK.B", "INTC", "MU", "ARM", "SMCI", "COIN", "UBER"]
+  },
+  "fetch": {
+    "lookback_days": 3,
+    "max_pages": 5
+  }
+}

@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block title %}About & method | {{ CFG.site_name }}{% endblock %}
+{% block body %}
+<article class="prose">
+<h1>About {{ CFG.site_name }}</h1>
+<p>{{ CFG.site_name }} is a free, independent record of what Wall Street analysts say about stocks and when they said it. Every upgrade, downgrade, new coverage, reiteration and price-target change is stored with its date and a link to its source, so each analyst builds up a permanent, checkable history.</p>
+
+<h2 id="sources">Where the data comes from</h2>
+<ul>
+  <li><strong>Licensed market-data APIs</strong> — analyst grade and price-target feeds from commercial data providers.</li>
+  <li><strong>Public news reports</strong> — rating changes reported in financial news and company or broker press releases, recorded as facts (who, what, when) with a link to the report.</li>
+</ul>
+<p>The site updates automatically every day. We do not copy or republish other ratings websites' content, scores or rankings; all statistics here are computed independently from the dated records.</p>
+
+<h2 id="method">How analysts are scored</h2>
+<p>For each Buy-type rating (Buy, Outperform, Overweight…) and Sell-type rating (Sell, Underperform, Underweight…), we compare the stock's price on the day of the rating with its latest price. A Buy-type call counts as right if the stock has risen since then; a Sell-type call counts as right if it has fallen. The <em>average return</em> is the mean of those directional moves. Neutral ratings (Hold, Neutral, Equal Weight…) are recorded but not scored. Analysts need at least three scored calls to appear in rankings. Dividends are ignored and recent calls have had little time to play out, so treat scores as a rough guide.</p>
+
+<h2>Disclaimer</h2>
+<p>{{ CFG.disclaimer }}</p>
+</article>
+{% endblock %}

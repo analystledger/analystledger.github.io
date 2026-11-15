@@ -1,0 +1,417 @@
+[
+ {
+  "t": "a",
+  "n": "Deutsche Bank (research team)",
+  "u": "analysts/deutsche-bank-research.html"
+ },
+ {
+  "t": "a",
+  "n": "Morgan Stanley (research team)",
+  "u": "analysts/morgan-stanley-research.html"
+ },
+ {
+  "t": "a",
+  "n": "Baird (research team)",
+  "u": "analysts/baird-research.html"
+ },
+ {
+  "t": "a",
+  "n": "Oliver Wintermantel",
+  "u": "analysts/oliver-wintermantel-evercore-isi.html"
+ },
+ {
+  "t": "a",
+  "n": "Jason Bazinet",
+  "u": "analysts/jason-bazinet-citigroup.html"
+ },
+ {
+  "t": "a",
+  "n": "William Stein",
+  "u": "analysts/william-stein-truist-securities.html"
+ },
+ {
+  "t": "a",
+  "n": "W. Andrew Carter",
+  "u": "analysts/w-andrew-carter-stifel.html"
+ },
+ {
+  "t": "a",
+  "n": "Wells Fargo (research team)",
+  "u": "analysts/wells-fargo-research.html"
+ },
+ {
+  "t": "a",
+  "n": "Goldman Sachs (research team)",
+  "u": "analysts/goldman-sachs-research.html"
+ },
+ {
+  "t": "a",
+  "n": "Nate Svensson",
+  "u": "analysts/nate-svensson-deutsche-bank.html"
+ },
+ {
+  "t": "a",
+  "n": "Piper Sandler (research team)",
+  "u": "analysts/piper-sandler-research.html"
+ },
+ {
+  "t": "a",
+  "n": "Loop Capital (research team)",
+  "u": "analysts/loop-capital-research.html"
+ },
+ {
+  "t": "a",
+  "n": "Bernstein (research team)",
+  "u": "analysts/bernstein-research.html"
+ },
+ {
+  "t": "a",
+  "n": "JPMorgan (research team)",
+  "u": "analysts/jpmorgan-research.html"
+ },
+ {
+  "t": "a",
+  "n": "Citigroup (research team)",
+  "u": "analysts/citigroup-research.html"
+ },
+ {
+  "t": "a",
+  "n": "Freedom Broker (research team)",
+  "u": "analysts/freedom-broker-research.html"
+ },
+ {
+  "t": "a",
+  "n": "Oppenheimer (research team)",
+  "u": "analysts/oppenheimer-research.html"
+ },
+ {
+  "t": "a",
+  "n": "Barclays (research team)",
+  "u": "analysts/barclays-research.html"
+ },
+ {
+  "t": "a",
+  "n": "Bose George",
+  "u": "analysts/bose-george-keefe-bruyette-woods.html"
+ },
+ {
+  "t": "a",
+  "n": "Mark Lipacis",
+  "u": "analysts/mark-lipacis-evercore-isi.html"
+ },
+ {
+  "t": "a",
+  "n": "Michael Lavery",
+  "u": "analysts/michael-lavery-piper-sandler.html"
+ },
+ {
+  "t": "a",
+  "n": "Stephen Gengaro",
+  "u": "analysts/stephen-gengaro-stifel.html"
+ },
+ {
+  "t": "a",
+  "n": "Eric Handler",
+  "u": "analysts/eric-handler-roth-capital.html"
+ },
+ {
+  "t": "a",
+  "n": "BofA Global Research (research team)",
+  "u": "analysts/bofa-global-research-research.html"
+ },
+ {
+  "t": "a",
+  "n": "Needham (research team)",
+  "u": "analysts/needham-research.html"
+ },
+ {
+  "t": "a",
+  "n": "DZ Bank (research team)",
+  "u": "analysts/dz-bank-research.html"
+ },
+ {
+  "t": "a",
+  "n": "William Blair (research team)",
+  "u": "analysts/william-blair-research.html"
+ },
+ {
+  "t": "a",
+  "n": "Ladenburg Thalmann (research team)",
+  "u": "analysts/ladenburg-thalmann-research.html"
+ },
+ {
+  "t": "a",
+  "n": "China Renaissance (research team)",
+  "u": "analysts/china-renaissance-research.html"
+ },
+ {
+  "t": "a",
+  "n": "Sergio Segura",
+  "u": "analysts/sergio-segura-keybanc.html"
+ },
+ {
+  "t": "a",
+  "n": "Jefferies (research team)",
+  "u": "analysts/jefferies-research.html"
+ },
+ {
+  "t": "a",
+  "n": "Eddy Wang",
+  "u": "analysts/eddy-wang-morgan-stanley.html"
+ },
+ {
+  "t": "a",
+  "n": "Stefan Chang",
+  "u": "analysts/stefan-chang-aletheia-capital.html"
+ },
+ {
+  "t": "a",
+  "n": "Stifel (research team)",
+  "u": "analysts/stifel-research.html"
+ },
+ {
+  "t": "a",
+  "n": "Sheila Kahyaoglu",
+  "u": "analysts/sheila-kahyaoglu-jefferies.html"
+ },
+ {
+  "t": "a",
+  "n": "Rothschild & Co Redburn (research team)",
+  "u": "analysts/rothschild-co-redburn-research.html"
+ },
+ {
+  "t": "a",
+  "n": "Manav Patnaik",
+  "u": "analysts/manav-patnaik-barclays.html"
+ },
+ {
+  "t": "a",
+  "n": "Jay Sole",
+  "u": "analysts/jay-sole-ubs.html"
+ },
+ {
+  "t": "s",
+  "n": "NVDA NVIDIA",
+  "u": "stocks/nvda.html"
+ },
+ {
+  "t": "s",
+  "n": "TSCO Tractor Supply",
+  "u": "stocks/tsco.html"
+ },
+ {
+  "t": "s",
+  "n": "RBLX Roblox",
+  "u": "stocks/rblx.html"
+ },
+ {
+  "t": "s",
+  "n": "LOW Lowe's Companies",
+  "u": "stocks/low.html"
+ },
+ {
+  "t": "s",
+  "n": "IBP Installed Building Products",
+  "u": "stocks/ibp.html"
+ },
+ {
+  "t": "s",
+  "n": "FOXA Fox Corp",
+  "u": "stocks/foxa.html"
+ },
+ {
+  "t": "s",
+  "n": "ECL Ecolab",
+  "u": "stocks/ecl.html"
+ },
+ {
+  "t": "s",
+  "n": "DTM DT Midstream",
+  "u": "stocks/dtm.html"
+ },
+ {
+  "t": "s",
+  "n": "DPZ Domino's Pizza",
+  "u": "stocks/dpz.html"
+ },
+ {
+  "t": "s",
+  "n": "CTSH Cognizant Technology Solutions",
+  "u": "stocks/ctsh.html"
+ },
+ {
+  "t": "s",
+  "n": "COLD Americold Realty Trust",
+  "u": "stocks/cold.html"
+ },
+ {
+  "t": "s",
+  "n": "ADSK Autodesk",
+  "u": "stocks/adsk.html"
+ },
+ {
+  "t": "s",
+  "n": "CRCL Circle Internet Group",
+  "u": "stocks/crcl.html"
+ },
+ {
+  "t": "s",
+  "n": "AMD Advanced Micro Devices",
+  "u": "stocks/amd.html"
+ },
+ {
+  "t": "s",
+  "n": "TM Toyota Motor",
+  "u": "stocks/tm.html"
+ },
+ {
+  "t": "s",
+  "n": "RWT Redwood Trust",
+  "u": "stocks/rwt.html"
+ },
+ {
+  "t": "s",
+  "n": "GIS General Mills",
+  "u": "stocks/gis.html"
+ },
+ {
+  "t": "s",
+  "n": "FLY Firefly Aerospace",
+  "u": "stocks/fly.html"
+ },
+ {
+  "t": "s",
+  "n": "FDX FedEx",
+  "u": "stocks/fdx.html"
+ },
+ {
+  "t": "s",
+  "n": "FANG Diamondback Energy",
+  "u": "stocks/fang.html"
+ },
+ {
+  "t": "s",
+  "n": "EVGO EVgo",
+  "u": "stocks/evgo.html"
+ },
+ {
+  "t": "s",
+  "n": "DDI DoubleDown Interactive",
+  "u": "stocks/ddi.html"
+ },
+ {
+  "t": "s",
+  "n": "CSCO Cisco Systems",
+  "u": "stocks/csco.html"
+ },
+ {
+  "t": "s",
+  "n": "CRWD CrowdStrike",
+  "u": "stocks/crwd.html"
+ },
+ {
+  "t": "s",
+  "n": "COP ConocoPhillips",
+  "u": "stocks/cop.html"
+ },
+ {
+  "t": "s",
+  "n": "CLF Cleveland-Cliffs",
+  "u": "stocks/clf.html"
+ },
+ {
+  "t": "s",
+  "n": "BABA Alibaba Group",
+  "u": "stocks/baba.html"
+ },
+ {
+  "t": "s",
+  "n": "APH Amphenol",
+  "u": "stocks/aph.html"
+ },
+ {
+  "t": "s",
+  "n": "TOST Toast",
+  "u": "stocks/tost.html"
+ },
+ {
+  "t": "s",
+  "n": "MRCY Mercury Systems",
+  "u": "stocks/mrcy.html"
+ },
+ {
+  "t": "s",
+  "n": "GAIN Gladstone Investment",
+  "u": "stocks/gain.html"
+ },
+ {
+  "t": "s",
+  "n": "DK Delek US Holdings",
+  "u": "stocks/dk.html"
+ },
+ {
+  "t": "s",
+  "n": "AAPL Apple",
+  "u": "stocks/aapl.html"
+ },
+ {
+  "t": "s",
+  "n": "ZG Zillow Group",
+  "u": "stocks/zg.html"
+ },
+ {
+  "t": "s",
+  "n": "UNM Unum Group",
+  "u": "stocks/unm.html"
+ },
+ {
+  "t": "s",
+  "n": "TRIP Tripadvisor",
+  "u": "stocks/trip.html"
+ },
+ {
+  "t": "s",
+  "n": "TAP Molson Coors Beverage",
+  "u": "stocks/tap.html"
+ },
+ {
+  "t": "s",
+  "n": "ROL Rollins",
+  "u": "stocks/rol.html"
+ },
+ {
+  "t": "s",
+  "n": "PDD PDD Holdings",
+  "u": "stocks/pdd.html"
+ },
+ {
+  "t": "s",
+  "n": "DKNG DraftKings",
+  "u": "stocks/dkng.html"
+ },
+ {
+  "t": "s",
+  "n": "BETA BETA Technologies",
+  "u": "stocks/beta.html"
+ },
+ {
+  "t": "s",
+  "n": "ABNB Airbnb",
+  "u": "stocks/abnb.html"
+ },
+ {
+  "t": "s",
+  "n": "IT Gartner",
+  "u": "stocks/it.html"
+ },
+ {
+  "t": "s",
+  "n": "IRTC iRhythm Technologies",
+  "u": "stocks/irtc.html"
+ },
+ {
+  "t": "s",
+  "n": "GIL Gildan Activewear",
+  "u": "stocks/gil.html"
+ }
+]

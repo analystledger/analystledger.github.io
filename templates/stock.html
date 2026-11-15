@@ -1,0 +1,17 @@
+{% extends "base.html" %}{% import "_macros.html" as m %}
+{% block title %}{{ s.ticker }} analyst ratings & price targets | {{ CFG.site_name }}{% endblock %}
+{% block desc %}{{ s.ticker }}{% if s.company %} ({{ s.company }}){% endif %}: {{ s.n }} dated analyst rating and price-target changes.{% endblock %}
+{% block body %}
+<p class="crumbs"><a href="index.html">Stocks</a> / {{ s.ticker }}</p>
+<section class="hero small">
+  <h1>{{ s.ticker }}{% if s.company %} <span class="muted">· {{ s.company }}</span>{% endif %}</h1>
+  <div class="kpis">
+    <div><b>{{ s.firms }}</b><span>firms with a view (12 mo)</span></div>
+    <div><b><span class="r-bullish">{{ s.bull }}</span> / <span class="r-neutral">{{ s.neutral }}</span> / <span class="r-bearish">{{ s.bear }}</span></b><span>bullish / neutral / bearish</span></div>
+    <div><b>{{ s.avg_pt|money }}</b><span>average target{% if s.low_pt %} ({{ s.low_pt|money }}–{{ s.high_pt|money }}){% endif %}</span></div>
+    <div><b>{{ s.price|money }}</b><span>last price{% if s.upside is defined %} · <span class="{{ 'up' if s.upside > 0 else 'down' }}">{{ s.upside|pct }}</span> to avg target{% endif %}</span></div>
+  </div>
+</section>
+<h2>Rating history</h2>
+{{ m.events_table(s.events, root, show_stock=False, filterable=s.n > 15) }}
+{% endblock %}

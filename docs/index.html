@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Analyst Ledger — Analyst rating changes & track records</title>
+<meta name="description" content="Every Wall Street rating change, dated and tracked — free.">
+<meta property="og:title" content="Analyst Ledger — Analyst rating changes & track records">
+<meta property="og:description" content="Every Wall Street rating change, dated and tracked — free.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://analystledger.github.io/assets/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+<link rel="alternate" type="application/rss+xml" title="Analyst Ledger" href="feed.xml">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="top">
+  <div class="wrap bar">
+    <a class="brand" href="index.html"><img src="assets/logo.svg" alt="" width="28" height="28"> Analyst Ledger</a>
+    <nav>
+      <a href="index.html">Latest</a>
+      <a href="analysts/index.html">Analysts</a>
+      <a href="stocks/index.html">Stocks</a>
+      <a href="about.html">About</a>
+    </nav>
+    <div class="search">
+      <input id="q" type="search" placeholder="Search ticker, analyst, firm…" autocomplete="off" aria-label="Search">
+      <div id="qres" class="qres" hidden></div>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+
+<section class="hero">
+  <h1>Every Wall Street rating change, dated and tracked — free.</h1>
+  <p>Upgrades, downgrades, new coverage and price-target moves from Wall Street analysts — each one dated, sourced and added to the analyst's permanent history.</p>
+  <div class="kpis">
+    <div><b>49</b><span>changes this week</span></div>
+    <div><b>20</b><span>upgrades</span></div>
+    <div><b>23</b><span>downgrades</span></div>
+    <div><b>38</b><span>analysts tracked</span></div>
+  </div>
+</section>
+
+<div class="grid2">
+  <section class="card">
+    <h2>Most-covered stocks this week</h2>
+    <ol class="list">
+    
+      <li><a class="tk" href="stocks/nvda.html">NVDA</a>
+        <span class="muted">NVIDIA</span>
+        <span class="pill"><span class="r-bullish">0</span>/<span class="r-neutral">6</span>/<span class="r-bearish">0</span></span></li>
+    
+      <li><a class="tk" href="stocks/crcl.html">CRCL</a>
+        <span class="muted">Circle Internet Group</span>
+        <span class="pill"><span class="r-bullish">1</span>/<span class="r-neutral">0</span>/<span class="r-bearish">0</span></span></li>
+    
+      <li><a class="tk" href="stocks/amd.html">AMD</a>
+        <span class="muted">Advanced Micro Devices</span>
+        <span class="pill"><span class="r-bullish">2</span>/<span class="r-neutral">0</span>/<span class="r-bearish">0</span></span></li>
+    
+      <li><a class="tk" href="stocks/tsco.html">TSCO</a>
+        <span class="muted">Tractor Supply</span>
+        <span class="pill"><span class="r-bullish">0</span>/<span class="r-neutral">1</span>/<span class="r-bearish">0</span></span></li>
+    
+      <li><a class="tk" href="stocks/rblx.html">RBLX</a>
+        <span class="muted">Roblox</span>
+        <span class="pill"><span class="r-bullish">0</span>/<span class="r-neutral">1</span>/<span class="r-bearish">0</span></span></li>
+    
+      <li><a class="tk" href="stocks/low.html">LOW</a>
+        <span class="muted">Lowe&#39;s Companies</span>
+        <span class="pill"><span class="r-bullish">0</span>/<span class="r-neutral">0</span>/<span class="r-bearish">1</span></span></li>
+    
+      <li><a class="tk" href="stocks/ibp.html">IBP</a>
+        <span class="muted">Installed Building Products</span>
+        <span class="pill"><span class="r-bullish">1</span>/<span class="r-neutral">0</span>/<span class="r-bearish">0</span></span></li>
+    
+      <li><a class="tk" href="stocks/foxa.html">FOXA</a>
+        <span class="muted">Fox Corp</span>
+        <span class="pill"><span class="r-bullish">1</span>/<span class="r-neutral">0</span>/<span class="r-bearish">0</span></span></li>
+    
+      <li><a class="tk" href="stocks/ecl.html">ECL</a>
+        <span class="muted">Ecolab</span>
+        <span class="pill"><span class="r-bullish">1</span>/<span class="r-neutral">0</span>/<span class="r-bearish">0</span></span></li>
+    
+      <li><a class="tk" href="stocks/dtm.html">DTM</a>
+        <span class="muted">DT Midstream</span>
+        <span class="pill"><span class="r-bullish">0</span>/<span class="r-neutral">1</span>/<span class="r-bearish">0</span></span></li>
+    
+    </ol>
+    <p class="note">Bullish / neutral / bearish views from firms over the last 12 months.</p>
+  </section>
+  <section class="card">
+    <h2>Best-scoring analysts</h2>
+    
+    <p class="muted">Scores appear once analysts have at least 3 rated calls with price data.</p>
+    
+    <p class="note">Average directional return since each Buy/Sell-type call. <a href="about.html#method">Method</a></p>
+  </section>
+</div>
+
+<section>
+  <h2>Latest rating changes</h2>
+  
+<div class="filters">
+  <input class="tf" type="search" placeholder="Filter this table…" aria-label="Filter table">
+  <select class="af" aria-label="Action">
+    <option value="">All actions</option>
+    <option value="upgrade">Upgrade</option><option value="downgrade">Downgrade</option><option value="initiate">Initiates coverage</option><option value="reiterate">Reiterates</option><option value="target_raise">Raises target</option><option value="target_cut">Cuts target</option><option value="terminate">Drops coverage</option>
+  </select>
+</div>
+
+<div class="tw"><table class="ev">
+<thead><tr><th>Date</th><th>Stock</th><th>Analyst / Firm</th><th>Action</th><th>Rating</th><th>Price target</th><th>Return*</th><th>Source</th></tr></thead>
+<tbody>
+
+<tr data-action="downgrade">
+  <td class="nw">2026-11-13</td>
+  <td><a class="tk" href="stocks/tsco.html">TSCO</a><div class="sub">Tractor Supply</div></td>
+  <td><a href="analysts/oliver-wintermantel-evercore-isi.html">Oliver Wintermantel</a><div class="sub">Evercore ISI</div></td>
+  <td><span class="b b-downgrade">Downgrade</span></td>
+  <td><span class="r r-bullish">Outperform</span> → 
+<span class="r r-neutral">In-Line</span></td>
+  <td class="nw"><span class="muted">$40.00</span> → $38.00</td>
+  <td class="nw ">—</td>
+  <td><a class="src" href="https://benzinga.com/analyst-stock-ratings/downgrades/26/11/63276847/this-lowes-analyst-turns-bearish-here-are-top-5-downgrades-for-friday" rel="nofollow noopener" target="_blank">News</a></td>
+</tr>
+
+<tr data-action="downgrade">
+  <td class="nw">2026-11-13</td>
+  <td><a class="tk" href="stocks/rblx.html">RBLX</a><div class="sub">Roblox</div></td>
+  <td><a href="analysts/jason-bazinet-citigroup.html">Jason Bazinet</a><div class="sub">Citigroup</div></td>
+  <td><span class="b b-downgrade">Downgrade</span></td>
+  <td><span class="r r-bullish">Buy</span> → 
+<span class="r r-neutral">Neutral</span></td>
+  <td class="nw">$55.00</td>
+  <td class="nw ">—</td>
+  <td><a class="src" href="https://benzinga.com/analyst-stock-ratings/downgrades/26/11/63276847/this-lowes-analyst-turns-bearish-here-are-top-5-downgrades-for-friday" rel="nofollow noopener" target="_blank">News</a></td>
+</tr>
+
+<tr data-action="downgrade">
+  <td class="nw">2026-11-13</td>
+  <td><a class="tk" href="stocks/nvda.html">NVDA</a><div class="sub">NVIDIA</div></td>
+  <td><a href="analysts/william-stein-truist-securities.html">William Stein</a><div class="sub">Truist Securities</div></td>
+  <td><span class="b b-downgrade">Downgrade</span></td>
+  <td><span class="r r-bullish">Buy</span> → 
+<span class="r r-neutral">Hold</span></td>
+  <td class="nw"><span class="muted">$346.00</span> → $174.00</td>
+  <td class="nw ">—</td>
+  <td><a class="src" href="https://benzinga.com/analyst-stock-ratings/downgrades/26/11/63276847/this-lowes-analyst-turns-bearish-here-are-top-5-downgrades-for-friday" rel="nofollow noopener" target="_blank">News</a></td>
+</tr>
+
+<tr data-action="downgrade">
+  <td class="nw">2026-11-13</td>
+  <td><a class="tk" href="stocks/low.html">LOW</a><div class="sub">Lowe&#39;s Companies</div></td>
+  <td><a href="analysts/w-andrew-carter-stifel.html">W. Andrew Carter</a><div class="sub">Stifel</div></td>
+  <td><span class="b b-downgrade">Downgrade</span></td>
+  <td><span class="r r-neutral">Hold</span> → 
+<span class="r r-bearish">Sell</span></td>
+  <td class="nw"><span class="muted">$195.00</span> → $190.00</td>
+  <td class="nw ">—</td>
+  <td><a class="src" href="https://benzinga.com/analyst-stock-ratings/downgrades/26/11/63276847/this-lowes-analyst-turns-bearish-here-are-top-5-downgrades-for-friday" rel="nofollow noopener" target="_blank">News</a></td>
+</tr>
+
+<tr data-action="upgrade">
+  <td class="nw">2026-11-13</td>
+  <td><a class="tk" href="stocks/ibp.html">IBP</a><div class="sub">Installed Building Products</div></td>
+  <td><a href="analysts/deutsche-bank-research.html">Deutsche Bank</a></td>
+  <td><span class="b b-upgrade">Upgrade</span></td>
+  <td><span class="r r-neutral">Hold</span> → 
+<span class="r r-bullish">Buy</span></td>
+  <td class="nw"><span class="muted">—</span></td>
+  <td class="nw ">—</td>
+  <td><a class="src" href="https://dailytradealert.com/2026/11/13/analyst-upgrades-and-downgrades-for-friday-11-13/" rel="nofollow noopener" target="_blank">News</a></td>
+</tr>
+
+<tr data-action="initiate">
+  <td class="nw">2026-11-13</td>
+  <td><a class="tk" href="stocks/foxa.html">FOXA</a><div class="sub">Fox Corp</div></td>
+  <td><a href="analysts/morgan-stanley-research.html">Morgan Stanley</a></td>
+  <td><span class="b b-initiate">Initiates coverage</span></td>
+  <td>
+<span class="r r-bullish">Overweight</span></td>
+  <td class="nw"><span class="muted">—</span></td>
+  <td class="nw ">—</td>
+  <td><a class="src" href="https://dailytradealert.com/2026/11/13/analyst-upgrades-and-downgrades-for-friday-11-13/" rel="nofollow noopener" target="_blank">News</a></td>
+</tr>
+
+<tr data-action="upgrade">
+  <td class="nw">2026-11-13</td>
+  <td><a class="tk" href="stocks/ecl.html">ECL</a><div class="sub">Ecolab</div></td>
+  <td><a href="analysts/wells-fargo-research.html">Wells Fargo</a></td>
+  <td><span class="b b-upgrade">Upgrade</span></td>
+  <td><span class="r r-neutral">Equal Weight</span> → 
+<span class="r r-bullish">Overweight</span></td>
+  <td class="nw"><span class="muted">—</span></td>
+  <td class="nw ">—</td>
+  <td><a class="src" href="https://dailytradealert.com/2026/11/13/analyst-upgrades-and-downgrades-for-friday-11-13/" rel="nofollow noopener" target="_blank">News</a></td>
+</tr>
+
+<tr data-action="upgrade">
+  <td class="nw">2026-11-13</td>
+  <td><a class="tk" href="stocks/dtm.html">DTM</a><div class="sub">DT Midstream</div></td>
+  <td><a href="analysts/goldman-sachs-research.html">Goldman Sachs</a></td>
+  <td><span class="b b-upgrade">Upgrade</span></td>
+  <td><span class="r r-bearish">Sell</span> → 
+<span class="r r-neutral">Neutral</span></td>
+  <td class="nw"><span class="muted">—</span></td>
+  <td class="nw ">—</td>
+  <td><a class="src" href="https://dailytradealert.com/2026/11/13/analyst-upgrades-and-downgrades-for-friday-11-13/" rel="nofollow noopener" target="_blank">News</a></td>
+</tr>
+
+<tr data-action="upgrade">
+  <td class="nw">2026-11-13</td>
+  <td><a class="tk" href="stocks/dpz.html">DPZ</a><div class="sub">Domino&#39;s Pizza</div></td>
+  <td><a href="analysts/baird-research.html">Baird</a></td>
+  <td><span class="b b-upgrade">Upgrade</span></td>
+  <td><span class="r r-neutral">Neutral</span> → 
+<span class="r r-bullish">Outperform</span></td>
+  <td class="nw"><span class="muted">—</span></td>
+  <td class="nw ">—</td>
+  <td><a class="src" href="https://dailytradealert.com/2026/11/13/analyst-upgrades-and-downgrades-for-friday-11-13/" rel="nofollow noopener" target="_blank">News</a></td>
+</tr>
+
+<tr data-action="downgrade">
+  <td class="nw">2026-11-13</td>
+  <td><a class="tk" href="stocks/ctsh.html">CTSH</a><div class="sub">Cognizant Technology Solutions</div></td>
+  <td><a href="analysts/nate-svensson-deutsche-bank.html">Nate Svensson</a><div class="sub">Deutsche Bank</div></td>
+  <td><span class="b b-downgrade">Downgrade</span></td>
+  <td><span class="r r-bullish">Buy</span> → 
+<span class="r r-neutral">Hold</span></td>
+  <td class="nw"><span class="muted">$75.00</span> → $66.00</td>
+  <td class="nw ">—</td>
+  <td><a class="src" href="https://benzinga.com/analyst-stock-ratings/downgrades/26/11/63276847/this-lowes-analyst-turns-bearish-here-are-top-5-downgrades-for-friday" rel="nofollow noopener" target="_blank">News</a></td>
+</tr>
+
+<tr data-action="upgrade">
+  <td class="nw">2026-11-13</td>
+  <td><a class="tk" href="stocks/cold.html">COLD</a><div class="sub">Americold Realty Trust</div></td>
+  <td><a href="analysts/piper-sandler-research.html">Piper Sandler</a></td>
+  <td><span class="b b-upgrade">Upgrade</span></td>
+  <td><span class="r r-neutral">Neutral</span> → 
+<span class="r r-bullish">Overweight</span></td>
+  <td class="nw"><span class="muted">—</span></td>
+  <td class="nw ">—</td>
+  <td><a class="src" href="https://dailytradealert.com/2026/11/13/analyst-upgrades-and-downgrades-for-friday-11-13/" rel="nofollow noopener" target="_blank">News</a></td>
+</tr>
+
+<tr data-action="upgrade">
+  <td class="nw">2026-11-13</td>
+  <td><a class="tk" href="stocks/adsk.html">ADSK</a><div class="sub">Autodesk</div></td>
+  <td><a href="analysts/loop-capital-research.html">Loop Capital</a></td>
+  <td><span class="b b-upgrade">Upgrade</span></td>
+  <td><span class="r r-neutral">Hold</span> → 
+<span class="r r-bullish">Buy</span></td>
+  <td class="nw"><span class="muted">—</span></td>
+  <td class="nw ">—</td>
+  <td><a class="src" href="https://dailytradealert.com/2026/11/13/analyst-upgrades-and-downgrades-for-friday-11-13/" rel="nofollow noopener" target="_blank">News</a></td>
+</tr>
+
+<tr data-action="downgrade">
+  <td class="nw">2026-11-12</td>
+  <td><a class="tk" href="stocks/tm.html">TM</a><div class="sub">Toyota Motor</div></td>
+  <td><a href="analysts/freedom-broker-research.html">Freedom Broker</a></td>
+  <td><span class="b b-downgrade">Downgrade</span></td>
+  <td><span class="r r-bullish">Buy</span> → 
+<span class="r r-neutral">Hold</span></td>
+  <td class="nw">$230.00</td>
+  <td class="nw ">—</td>
+  <td><a class="src" href="https://247wallst.com/investing/2026/11/12/buy-sell-or-hold-thursdays-top-upgrades-and-downgrades-advanced-micro-devices-alibaba-group-cleveland-cliffs-conoco-phillips-diamondback-energy-general-mills-nvidia-toyota-wendys-and-m/" rel="nofollow noopener" target="_blank">News</a></td>
+</tr>
+
+<tr data-action="downgrade">
+  <td class="nw">2026-11-12</td>
+  <td><a class="tk" href="stocks/rwt.html">RWT</a><div class="sub">Redwood Trust</div></td>
+  <td><a href="analysts/bose-george-keefe-bruyette-woods.html">Bose George</a><div class="sub">Keefe, Bruyette &amp; Woods</div></td>
+  <td><span class="b b-downgrade">Downgrade</span></td>
+  <td><span class="r r-bullish">Outperform</span> → 
+<span class="r r-neutral">Market Perform</span></td>
+  <td class="nw"><span class="muted">$4.25</span> → $3.50</td>
+  <td class="nw ">—</td>
+  <td><a class="src" href="https://benzinga.com/analyst-stock-ratings/downgrades/26/11/63179430/this-nvidia-analyst-is-no-longer-bullish-here-are-top-5-downgrades-for-thursday" rel="nofollow noopener" target="_blank">News</a></td>
+</tr>
+
+<tr data-action="downgrade">
+  <td class="nw">2026-11-12</td>
+  <td><a class="tk" href="stocks/nvda.html">NVDA</a><div class="sub">NVIDIA</div></td>
+  <td><a href="analysts/mark-lipacis-evercore-isi.html">Mark Lipacis</a><div class="sub">Evercore ISI</div></td>
+  <td><span class="b b-downgrade">Downgrade</span></td>
+  <td><span class="r r-bullish">Outperform</span> → 
+<span class="r r-neutral">In-Line</span></td>
+  <td class="nw"><span class="muted">$465.00</span> → $186.00</td>
+  <td class="nw ">—</td>
+  <td><a class="src" href="https://benzinga.com/analyst-stock-ratings/downgrades/26/11/63179430/this-nvidia-analyst-is-no-longer-bullish-here-are-top-5-downgrades-for-thursday" rel="nofollow noopener" target="_blank">News</a></td>
+</tr>
+
+<tr data-action="downgrade">
+  <td class="nw">2026-11-12</td>
+  <td><a class="tk" href="stocks/nvda.html">NVDA</a><div class="sub">NVIDIA</div></td>
+  <td><a href="analysts/bernstein-research.html">Bernstein</a></td>
+  <td><span class="b b-downgrade">Downgrade</span></td>
+  <td><span class="r r-bullish">Outperform</span> → 
+<span class="r r-neutral">Market Perform</span></td>
+  <td class="nw">$200.00</td>
+  <td class="nw ">—</td>
+  <td><a class="src" href="https://247wallst.com/investing/2026/11/12/buy-sell-or-hold-thursdays-top-upgrades-and-downgrades-advanced-micro-devices-alibaba-group-cleveland-cliffs-conoco-phillips-diamondback-energy-general-mills-nvidia-toyota-wendys-and-m/" rel="nofollow noopener" target="_blank">News</a></td>
+</tr>
+
+<tr data-action="downgrade">
+  <td class="nw">2026-11-12</td>
+  <td><a class="tk" href="stocks/nvda.html">NVDA</a><div class="sub">NVIDIA</div></td>
+  <td><a href="analysts/oppenheimer-research.html">Oppenheimer</a></td>
+  <td><span class="b b-downgrade">Downgrade</span></td>
+  <td><span class="r r-bullish">Outperform</span> → 
+<span class="r r-neutral">Market Perform</span></td>
+  <td class="nw"><span class="muted">—</span></td>
+  <td class="nw ">—</td>
+  <td><a class="src" href="https://247wallst.com/investing/2026/11/12/buy-sell-or-hold-thursdays-top-upgrades-and-downgrades-advanced-micro-devices-alibaba-group-cleveland-cliffs-conoco-phillips-diamondback-energy-general-mills-nvidia-toyota-wendys-and-m/" rel="nofollow noopener" target="_blank">News</a></td>
+</tr>
+
+<tr data-action="downgrade">
+  <td class="nw">2026-11-12</td>
+  <td><a class="tk" href="stocks/gis.html">GIS</a><div class="sub">General Mills</div></td>
+  <td><a href="analysts/michael-lavery-piper-sandler.html">Michael Lavery</a><div class="sub">Piper Sandler</div></td>
+  <td><span class="b b-downgrade">Downgrade</span></td>
+  <td><span class="r r-bullish">Overweight</span> → 
+<span class="r r-neutral">Neutral</span></td>
+  <td class="nw"><span class="muted">$41.00</span> → $35.00</td>
+  <td class="nw ">—</td>
+  <td><a class="src" href="https://benzinga.com/analyst-stock-ratings/downgrades/26/11/63179430/this-nvidia-analyst-is-no-longer-bullish-here-are-top-5-downgrades-for-thursday" rel="nofollow noopener" target="_blank">News</a></td>
+</tr>
+
+<tr data-action="upgrade">
+  <td class="nw">2026-11-12</td>
+  <td><a class="tk" href="stocks/fly.html">FLY</a><div class="sub">Firefly Aerospace</div></td>
+  <td><a href="analysts/deutsche-bank-research.html">Deutsche Bank</a></td>
+  <td><span class="b b-upgrade">Upgrade</span></td>
+  <td><span class="r r-neutral">Hold</span> → 
+<span class="r r-bullish">Buy</span></td>
+  <td class="nw"><span class="muted">$40.00</span> → $30.00</td>
+  <td class="nw ">—</td>
+  <td><a class="src" href="https://www-web.itiger.com/news/2583855979" rel="nofollow noopener" target="_blank">News</a></td>
+</tr>
+
+<tr data-action="target_raise">
+  <td class="nw">2026-11-12</td>
+  <td><a class="tk" href="stocks/fdx.html">FDX</a><div class="sub">FedEx</div></td>
+  <td><a href="analysts/citigroup-research.html">Citigroup</a></td>
+  <td><span class="b b-target_raise">Raises target</span></td>
+  <td>
+<span class="muted">—</span></td>
+  <td class="nw"><span class="muted">$279.00</span> → $310.00</td>
+  <td class="nw ">—</td>
+  <td><a class="src" href="https://www-web.itiger.com/news/2583855979" rel="nofollow noopener" target="_blank">News</a></td>
+</tr>
+
+<tr data-action="downgrade">
+  <td class="nw">2026-11-12</td>
+  <td><a class="tk" href="stocks/fang.html">FANG</a><div class="sub">Diamondback Energy</div></td>
+  <td><a href="analysts/bernstein-research.html">Bernstein</a></td>
+  <td><span class="b b-downgrade">Downgrade</span></td>
+  <td><span class="r r-bullish">Outperform</span> → 
+<span class="r r-neutral">Market Perform</span></td>
+  <td class="nw"><span class="muted">$221.00</span> → $192.00</td>
+  <td class="nw ">—</td>
+  <td><a class="src" href="https://247wallst.com/investing/2026/11/12/buy-sell-or-hold-thursdays-top-upgrades-and-downgrades-advanced-micro-devices-alibaba-group-cleveland-cliffs-conoco-phillips-diamondback-energy-general-mills-nvidia-toyota-wendys-and-m/" rel="nofollow noopener" target="_blank">News</a></td>
+</tr>
+
+<tr data-action="downgrade">
+  <td class="nw">2026-11-12</td>
+  <td><a class="tk" href="stocks/evgo.html">EVGO</a><div class="sub">EVgo</div></td>
+  <td><a href="analysts/stephen-gengaro-stifel.html">Stephen Gengaro</a><div class="sub">Stifel</div></td>
+  <td><span class="b b-downgrade">Downgrade</span></td>
+  <td><span class="r r-bullish">Buy</span> → 
+<span class="r r-neutral">Hold</span></td>
+  <td class="nw"><span class="muted">$6.00</span> → $2.50</td>
+  <td class="nw ">—</td>
+  <td><a class="src" href="https://benzinga.com/analyst-stock-ratings/downgrades/26/11/63179430/this-nvidia-analyst-is-no-longer-bullish-here-are-top-5-downgrades-for-thursday" rel="nofollow noopener" target="_blank">News</a></td>
+</tr>
+
+<tr data-action="downgrade">
+  <td class="nw">2026-11-12</td>
+  <td><a class="tk" href="stocks/ddi.html">DDI</a><div class="sub">DoubleDown Interactive</div></td>
+  <td><a href="analysts/eric-handler-roth-capital.html">Eric Handler</a><div class="sub">Roth Capital</div></td>
+  <td><span class="b b-downgrade">Downgrade</span></td>
+  <td><span class="r r-bullish">Buy</span> → 
+<span class="r r-neutral">Neutral</span></td>
+  <td class="nw"><span class="muted">$16.00</span> → $16.25</td>
+  <td class="nw ">—</td>
+  <td><a class="src" href="https://benzinga.com/analyst-stock-ratings/downgrades/26/11/63179430/this-nvidia-analyst-is-no-longer-bullish-here-are-top-5-downgrades-for-thursday" rel="nofollow noopener" target="_blank">News</a></td>
+</tr>
+
+<tr data-action="target_raise">
+  <td class="nw">2026-11-12</td>
+  <td><a class="tk" href="stocks/csco.html">CSCO</a><div class="sub">Cisco Systems</div></td>
+  <td><a href="analysts/bofa-global-research-research.html">BofA Global Research</a></td>
+  <td><span class="b b-target_raise">Raises target</span></td>
+  <td>
+<span class="muted">—</span></td>
+  <td class="nw"><span class="muted">$85.00</span> → $95.00</td>
+  <td class="nw ">—</td>
+  <td><a class="src" href="https://www-web.itiger.com/news/2583855979" rel="nofollow noopener" target="_blank">News</a></td>
+</tr>
+
+<tr data-action="target_raise">
+  <td class="nw">2026-11-12</td>
+  <td><a class="tk" href="stocks/crwd.html">CRWD</a><div class="sub">CrowdStrike</div></td>
+  <td><a href="analysts/morgan-stanley-research.html">Morgan Stanley</a></td>
+  <td><span class="b b-target_raise">Raises target</span></td>
+  <td>
+<span class="muted">—</span></td>
+  <td class="nw"><span class="muted">$475.00</span> → $515.00</td>
+  <td class="nw ">—</td>
+  <td><a class="src" href="https://www-web.itiger.com/news/2583855979" rel="nofollow noopener" target="_blank">News</a></td>
+</tr>
+
+<tr data-action="upgrade">
+  <td class="nw">2026-11-12</td>
+  <td><a class="tk" href="stocks/crcl.html">CRCL</a><div class="sub">Circle Internet Group</div></td>
+  <td><a href="analysts/jpmorgan-research.html">JPMorgan</a></td>
+  <td><span class="b b-upgrade">Upgrade</span></td>
+  <td><span class="r r-bearish">Underweight</span> → 
+<span class="r r-bullish">Overweight</span></td>
+  <td class="nw"><span class="muted">—</span></td>
+  <td class="nw ">—</td>
+  <td><a class="src" href="https://www-web.itiger.com/news/2583855979" rel="nofollow noopener" target="_blank">News</a></td>
+</tr>
+
+<tr data-action="target_cut">
+  <td class="nw">2026-11-12</td>
+  <td><a class="tk" href="stocks/crcl.html">CRCL</a><div class="sub">Circle Internet Group</div></td>
+  <td><a href="analysts/needham-research.html">Needham</a></td>
+  <td><span class="b b-target_cut">Cuts target</span></td>
+  <td>
+<span class="muted">—</span></td>
+  <td class="nw"><span class="muted">$250.00</span> → $190.00</td>
+  <td class="nw ">—</td>
+  <td><a class="src" href="https://www-web.itiger.com/news/2583855979" rel="nofollow noopener" target="_blank">News</a></td>
+</tr>
+
+<tr data-action="downgrade">
+  <td class="nw">2026-11-12</td>
+  <td><a class="tk" href="stocks/cop.html">COP</a><div class="sub">ConocoPhillips</div></td>
+  <td><a href="analysts/bernstein-research.html">Bernstein</a></td>
+  <td><span class="b b-downgrade">Downgrade</span></td>
+  <td><span class="r r-bullish">Outperform</span> → 
+<span class="r r-neutral">Market Perform</span></td>
+  <td class="nw"><span class="muted">$129.00</span> → $122.00</td>
+  <td class="nw ">—</td>
+  <td><a class="src" href="https://247wallst.com/investing/2026/11/12/buy-sell-or-hold-thursdays-top-upgrades-and-downgrades-advanced-micro-devices-alibaba-group-cleveland-cliffs-conoco-phillips-diamondback-energy-general-mills-nvidia-toyota-wendys-and-m/" rel="nofollow noopener" target="_blank">News</a></td>
+</tr>
+
+<tr data-action="upgrade">
+  <td class="nw">2026-11-12</td>
+  <td><a class="tk" href="stocks/clf.html">CLF</a><div class="sub">Cleveland-Cliffs</div></td>
+  <td><a href="analysts/barclays-research.html">Barclays</a></td>
+  <td><span class="b b-upgrade">Upgrade</span></td>
+  <td><span class="r r-bearish">Underweight</span> → 
+<span class="r r-neutral">Equal Weight</span></td>
+  <td class="nw"><span class="muted">$21.00</span> → $23.00</td>
+  <td class="nw ">—</td>
+  <td><a class="src" href="https://247wallst.com/investing/2026/11/12/buy-sell-or-hold-thursdays-top-upgrades-and-downgrades-advanced-micro-devices-alibaba-group-cleveland-cliffs-conoco-phillips-diamondback-energy-general-mills-nvidia-toyota-wendys-and-m/" rel="nofollow noopener" target="_blank">News</a></td>
+</tr>
+
+<tr data-action="upgrade">
+  <td class="nw">2026-11-12</td>
+  <td><a class="tk" href="stocks/baba.html">BABA</a><div class="sub">Alibaba Group</div></td>
+  <td><a href="analysts/dz-bank-research.html">DZ Bank</a></td>
+  <td><span class="b b-upgrade">Upgrade</span></td>
+  <td><span class="r r-neutral">Hold</span> → 
+<span class="r r-bullish">Buy</span></td>
+  <td class="nw">$140.00</td>
+  <td class="nw ">—</td>
+  <td><a class="src" href="https://247wallst.com/investing/2026/11/12/buy-sell-or-hold-thursdays-top-upgrades-and-downgrades-advanced-micro-devices-alibaba-group-cleveland-cliffs-conoco-phillips-diamondback-energy-general-mills-nvidia-toyota-wendys-and-m/" rel="nofollow noopener" target="_blank">News</a></td>
+</tr>
+
+<tr data-action="target_raise">
+  <td class="nw">2026-11-12</td>
+  <td><a class="tk" href="stocks/aph.html">APH</a><div class="sub">Amphenol</div></td>
+  <td><a href="analysts/barclays-research.html">Barclays</a></td>
+  <td><span class="b b-target_raise">Raises target</span></td>
+  <td>
+<span class="muted">—</span></td>
+  <td class="nw"><span class="muted">$120.00</span> → $143.00</td>
+  <td class="nw ">—</td>
+  <td><a class="src" href="https://www-web.itiger.com/news/2583855979" rel="nofollow noopener" target="_blank">News</a></td>
+</tr>
+
+<tr data-action="upgrade">
+  <td class="nw">2026-11-12</td>
+  <td><a class="tk" href="stocks/amd.html">AMD</a><div class="sub">Advanced Micro Devices</div></td>
+  <td><a href="analysts/william-blair-research.html">William Blair</a></td>
+  <td><span class="b b-upgrade">Upgrade</span></td>
+  <td><span class="r r-neutral">Market Perform</span> → 
+<span class="r r-bullish">Outperform</span></td>
+  <td class="nw"><span class="muted">—</span></td>
+  <td class="nw ">—</td>
+  <td><a class="src" href="https://247wallst.com/investing/2026/11/12/buy-sell-or-hold-thursdays-top-upgrades-and-downgrades-advanced-micro-devices-alibaba-group-cleveland-cliffs-conoco-phillips-diamondback-energy-general-mills-nvidia-toyota-wendys-and-m/" rel="nofollow noopener" target="_blank">News</a></td>
+</tr>
+
+<tr data-action="downgrade">
+  <td class="nw">2026-11-11</td>
+  <td><a class="tk" href="stocks/tost.html">TOST</a><div class="sub">Toast</div></td>
+  <td><a href="analysts/bernstein-research.html">Bernstein</a></td>
+  <td><span class="b b-downgrade">Downgrade</span></td>
+  <td><span class="r r-bullish">Outperform</span> → 
+<span class="r r-neutral">Market Perform</span></td>
+  <td class="nw"><span class="muted">$45.00</span> → $38.00</td>
+  <td class="nw ">—</td>
+  <td><a class="src" href="https://247wallst.com/investing/2026/11/11/buy-sell-or-hold-wednesdays-top-upgrades-and-downgrades-akamai-technologies-apple-bill-holdings-corning-form-factor-guidewire-software-nvidia-riot-platforms-toast-and-more/" rel="nofollow noopener" target="_blank">News</a></td>
+</tr>
+
+<tr data-action="downgrade">
+  <td class="nw">2026-11-11</td>
+  <td><a class="tk" href="stocks/nvda.html">NVDA</a><div class="sub">NVIDIA</div></td>
+  <td><a href="analysts/baird-research.html">Baird</a></td>
+  <td><span class="b b-downgrade">Downgrade</span></td>
+  <td><span class="r r-bullish">Outperform</span> → 
+<span class="r r-neutral">Neutral</span></td>
+  <td class="nw"><span class="muted">$500.00</span> → $200.00</td>
+  <td class="nw ">—</td>
+  <td><a class="src" href="https://247wallst.com/investing/2026/11/11/buy-sell-or-hold-wednesdays-top-upgrades-and-downgrades-akamai-technologies-apple-bill-holdings-corning-form-factor-guidewire-software-nvidia-riot-platforms-toast-and-more/" rel="nofollow noopener" target="_blank">News</a></td>
+</tr>
+
+<tr data-action="upgrade">
+  <td class="nw">2026-11-11</td>
+  <td><a class="tk" href="stocks/mrcy.html">MRCY</a><div class="sub">Mercury Systems</div></td>
+  <td><a href="analysts/jpmorgan-research.html">JPMorgan</a></td>
+  <td><span class="b b-upgrade">Upgrade</span></td>
+  <td><span class="r r-neutral">Neutral</span> → 
+<span class="r r-bullish">Overweight</span></td>
+  <td class="nw">$102.00</td>
+  <td class="nw ">—</td>
+  <td><a class="src" href="https://247wallst.com/investing/2026/11/11/buy-sell-or-hold-wednesdays-top-upgrades-and-downgrades-akamai-technologies-apple-bill-holdings-corning-form-factor-guidewire-software-nvidia-riot-platforms-toast-and-more/" rel="nofollow noopener" target="_blank">News</a></td>
+</tr>
+
+<tr data-action="upgrade">
+  <td class="nw">2026-11-11</td>
+  <td><a class="tk" href="stocks/gain.html">GAIN</a><div class="sub">Gladstone Investment</div></td>
+  <td><a href="analysts/ladenburg-thalmann-research.html">Ladenburg Thalmann</a></td>
+  <td><span class="b b-upgrade">Upgrade</span></td>
+  <td><span class="r r-neutral">Neutral</span> → 
+<span class="r r-bullish">Buy</span></td>
+  <td class="nw">$17.00</td>
+  <td class="nw ">—</td>
+  <td><a class="src" href="https://247wallst.com/investing/2026/11/11/buy-sell-or-hold-wednesdays-top-upgrades-and-downgrades-akamai-technologies-apple-bill-holdings-corning-form-factor-guidewire-software-nvidia-riot-platforms-toast-and-more/" rel="nofollow noopener" target="_blank">News</a></td>
+</tr>
+
+<tr data-action="upgrade">
+  <td class="nw">2026-11-11</td>
+  <td><a class="tk" href="stocks/dk.html">DK</a><div class="sub">Delek US Holdings</div></td>
+  <td><a href="analysts/freedom-broker-research.html">Freedom Broker</a></td>
+  <td><span class="b b-upgrade">Upgrade</span></td>
+  <td><span class="r r-neutral">Hold</span> → 
+<span class="r r-bullish">Buy</span></td>
+  <td class="nw"><span class="muted">$86.00</span> → $88.00</td>
+  <td class="nw ">—</td>
+  <td><a class="src" href="https://247wallst.com/investing/2026/11/11/buy-sell-or-hold-wednesdays-top-upgrades-and-downgrades-akamai-technologies-apple-bill-holdings-corning-form-factor-guidewire-software-nvidia-riot-platforms-toast-and-more/" rel="nofollow noopener" target="_blank">News</a></td>
+</tr>
+
+<tr data-action="upgrade">
+  <td class="nw">2026-11-11</td>
+  <td><a class="tk" href="stocks/aapl.html">AAPL</a><div class="sub">Apple</div></td>
+  <td><a href="analysts/china-renaissance-research.html">China Renaissance</a></td>
+  <td><span class="b b-upgrade">Upgrade</span></td>
+  <td><span class="r r-neutral">Hold</span> → 
+<span class="r r-bullish">Buy</span></td>
+  <td class="nw">$425.00</td>
+  <td class="nw ">—</td>
+  <td><a class="src" href="https://247wallst.com/investing/2026/11/11/buy-sell-or-hold-wednesdays-top-upgrades-and-downgrades-akamai-technologies-apple-bill-holdings-corning-form-factor-guidewire-software-nvidia-riot-platforms-toast-and-more/" rel="nofollow noopener" target="_blank">News</a></td>
+</tr>
+
+<tr data-action="downgrade">
+  <td class="nw">2026-11-09</td>
+  <td><a class="tk" href="stocks/zg.html">ZG</a><div class="sub">Zillow Group</div></td>
+  <td><a href="analysts/sergio-segura-keybanc.html">Sergio Segura</a><div class="sub">KeyBanc</div></td>
+  <td><span class="b b-downgrade">Downgrade</span></td>
+  <td><span class="r r-bullish">Overweight</span> → 
+<span class="r r-neutral">Sector Weight</span></td>
+  <td class="nw"><span class="muted">—</span></td>
+  <td class="nw ">—</td>
+  <td><a class="src" href="https://www.insidermonkey.com/news/sell-alert-10-stocks-analysts-just-downgraded-1863791/?singlepage=1" rel="nofollow noopener" target="_blank">News</a></td>
+</tr>
+
+<tr data-action="upgrade">
+  <td class="nw">2026-11-09</td>
+  <td><a class="tk" href="stocks/unm.html">UNM</a><div class="sub">Unum Group</div></td>
+  <td><a href="analysts/jpmorgan-research.html">JPMorgan</a></td>
+  <td><span class="b b-upgrade">Upgrade</span></td>
+  <td><span class="r r-neutral">Neutral</span> → 
+<span class="r r-bullish">Overweight</span></td>
+  <td class="nw"><span class="muted">$98.00</span> → $90.00</td>
+  <td class="nw ">—</td>
+  <td><a class="src" href="https://247wallst.com/investing/2026/11/09/buy-sell-or-hold-mondays-top-upgrades-and-downgrades-advanced-micro-devices-airbnb-draftkings-l3-harris-technologies-molson-coors-nvidia-take-two-interactive-uber-technologies-and-more/" rel="nofollow noopener" target="_blank">News</a></td>
+</tr>
+
+<tr data-action="upgrade">
+  <td class="nw">2026-11-09</td>
+  <td><a class="tk" href="stocks/trip.html">TRIP</a><div class="sub">Tripadvisor</div></td>
+  <td><a href="analysts/jefferies-research.html">Jefferies</a></td>
+  <td><span class="b b-upgrade">Upgrade</span></td>
+  <td><span class="r r-bearish">Underperform</span> → 
+<span class="r r-neutral">Hold</span></td>
+  <td class="nw"><span class="muted">$8.00</span> → $7.00</td>
+  <td class="nw ">—</td>
+  <td><a class="src" href="https://247wallst.com/investing/2026/11/09/buy-sell-or-hold-mondays-top-upgrades-and-downgrades-advanced-micro-devices-airbnb-draftkings-l3-harris-technologies-molson-coors-nvidia-take-two-interactive-uber-technologies-and-more/" rel="nofollow noopener" target="_blank">News</a></td>
+</tr>
+
+<tr data-action="downgrade">
+  <td class="nw">2026-11-09</td>
+  <td><a class="tk" href="stocks/tap.html">TAP</a><div class="sub">Molson Coors Beverage</div></td>
+  <td><a href="analysts/jpmorgan-research.html">JPMorgan</a></td>
+  <td><span class="b b-downgrade">Downgrade</span></td>
+  <td><span class="r r-neutral">Neutral</span> → 
+<span class="r r-bearish">Underweight</span></td>
+  <td class="nw"><span class="muted">$41.00</span> → $37.00</td>
+  <td class="nw ">—</td>
+  <td><a class="src" href="https://247wallst.com/investing/2026/11/09/buy-sell-or-hold-mondays-top-upgrades-and-downgrades-advanced-micro-devices-airbnb-draftkings-l3-harris-technologies-molson-coors-nvidia-take-two-interactive-uber-technologies-and-more/" rel="nofollow noopener" target="_blank">News</a></td>
+</tr>
+
+<tr data-action="upgrade">
+  <td class="nw">2026-11-09</td>
+  <td><a class="tk" href="stocks/rol.html">ROL</a><div class="sub">Rollins</div></td>
+  <td><a href="analysts/citigroup-research.html">Citigroup</a></td>
+  <td><span class="b b-upgrade">Upgrade</span></td>
+  <td><span class="r r-neutral">Neutral</span> → 
+<span class="r r-bullish">Buy</span></td>
+  <td class="nw"><span class="muted">$32.00</span> → $49.00</td>
+  <td class="nw ">—</td>
+  <td><a class="src" href="https://247wallst.com/investing/2026/11/09/buy-sell-or-hold-mondays-top-upgrades-and-downgrades-advanced-micro-devices-airbnb-draftkings-l3-harris-technologies-molson-coors-nvidia-take-two-interactive-uber-technologies-and-more/" rel="nofollow noopener" target="_blank">News</a></td>
+</tr>
+
+<tr data-action="downgrade">
+  <td class="nw">2026-11-09</td>
+  <td><a class="tk" href="stocks/pdd.html">PDD</a><div class="sub">PDD Holdings</div></td>
+  <td><a href="analysts/eddy-wang-morgan-stanley.html">Eddy Wang</a><div class="sub">Morgan Stanley</div></td>
+  <td><span class="b b-downgrade">Downgrade</span></td>
+  <td><span class="r r-bullish">Overweight</span> → 
+<span class="r r-neutral">Equal Weight</span></td>
+  <td class="nw"><span class="muted">$129.00</span> → $90.00</td>
+  <td class="nw ">—</td>
+  <td><a class="src" href="https://www.insidermonkey.com/news/sell-alert-10-stocks-analysts-just-downgraded-1863791/?singlepage=1" rel="nofollow noopener" target="_blank">News</a></td>
+</tr>
+
+<tr data-action="downgrade">
+  <td class="nw">2026-11-09</td>
+  <td><a class="tk" href="stocks/nvda.html">NVDA</a><div class="sub">NVIDIA</div></td>
+  <td><a href="analysts/stefan-chang-aletheia-capital.html">Stefan Chang</a><div class="sub">Aletheia Capital</div></td>
+  <td><span class="b b-downgrade">Downgrade</span></td>
+  <td><span class="r r-bullish">Buy</span> → 
+<span class="r r-neutral">Hold</span></td>
+  <td class="nw"><span class="muted">—</span></td>
+  <td class="nw ">—</td>
+  <td><a class="src" href="https://www.insidermonkey.com/news/sell-alert-10-stocks-analysts-just-downgraded-1863791/?singlepage=1" rel="nofollow noopener" target="_blank">News</a></td>
+</tr>
+
+<tr data-action="downgrade">
+  <td class="nw">2026-11-09</td>
+  <td><a class="tk" href="stocks/dkng.html">DKNG</a><div class="sub">DraftKings</div></td>
+  <td><a href="analysts/stifel-research.html">Stifel</a></td>
+  <td><span class="b b-downgrade">Downgrade</span></td>
+  <td><span class="r r-bullish">Buy</span> → 
+<span class="r r-neutral">Hold</span></td>
+  <td class="nw"><span class="muted">$32.00</span> → $21.00</td>
+  <td class="nw ">—</td>
+  <td><a class="src" href="https://247wallst.com/investing/2026/11/09/buy-sell-or-hold-mondays-top-upgrades-and-downgrades-advanced-micro-devices-airbnb-draftkings-l3-harris-technologies-molson-coors-nvidia-take-two-interactive-uber-technologies-and-more/" rel="nofollow noopener" target="_blank">News</a></td>
+</tr>
+
+<tr data-action="downgrade">
+  <td class="nw">2026-11-09</td>
+  <td><a class="tk" href="stocks/beta.html">BETA</a><div class="sub">BETA Technologies</div></td>
+  <td><a href="analysts/sheila-kahyaoglu-jefferies.html">Sheila Kahyaoglu</a><div class="sub">Jefferies</div></td>
+  <td><span class="b b-downgrade">Downgrade</span></td>
+  <td><span class="r r-bullish">Buy</span> → 
+<span class="r r-neutral">Hold</span></td>
+  <td class="nw"><span class="muted">$29.00</span> → $27.00</td>
+  <td class="nw ">—</td>
+  <td><a class="src" href="https://www.insidermonkey.com/news/sell-alert-10-stocks-analysts-just-downgraded-1863791/?singlepage=1" rel="nofollow noopener" target="_blank">News</a></td>
+</tr>
+
+<tr data-action="upgrade">
+  <td class="nw">2026-11-09</td>
+  <td><a class="tk" href="stocks/amd.html">AMD</a><div class="sub">Advanced Micro Devices</div></td>
+  <td><a href="analysts/oppenheimer-research.html">Oppenheimer</a></td>
+  <td><span class="b b-upgrade">Upgrade</span></td>
+  <td>
+<span class="r r-bullish">Outperform</span></td>
+  <td class="nw">$600.00</td>
+  <td class="nw ">—</td>
+  <td><a class="src" href="https://247wallst.com/investing/2026/11/09/buy-sell-or-hold-mondays-top-upgrades-and-downgrades-advanced-micro-devices-airbnb-draftkings-l3-harris-technologies-molson-coors-nvidia-take-two-interactive-uber-technologies-and-more/" rel="nofollow noopener" target="_blank">News</a></td>
+</tr>
+
+<tr data-action="upgrade">
+  <td class="nw">2026-11-09</td>
+  <td><a class="tk" href="stocks/abnb.html">ABNB</a><div class="sub">Airbnb</div></td>
+  <td><a href="analysts/rothschild-co-redburn-research.html">Rothschild &amp; Co Redburn</a></td>
+  <td><span class="b b-upgrade">Upgrade</span></td>
+  <td><span class="r r-bearish">Sell</span> → 
+<span class="r r-neutral">Neutral</span></td>
+  <td class="nw"><span class="muted">$135.00</span> → $190.00</td>
+  <td class="nw ">—</td>
+  <td><a class="src" href="https://247wallst.com/investing/2026/11/09/buy-sell-or-hold-mondays-top-upgrades-and-downgrades-advanced-micro-devices-airbnb-draftkings-l3-harris-technologies-molson-coors-nvidia-take-two-interactive-uber-technologies-and-more/" rel="nofollow noopener" target="_blank">News</a></td>
+</tr>
+
+<tr data-action="downgrade">
+  <td class="nw">2026-11-06</td>
+  <td><a class="tk" href="stocks/it.html">IT</a><div class="sub">Gartner</div></td>
+  <td><a href="analysts/manav-patnaik-barclays.html">Manav Patnaik</a><div class="sub">Barclays</div></td>
+  <td><span class="b b-downgrade">Downgrade</span></td>
+  <td><span class="r r-neutral">Equal Weight</span> → 
+<span class="r r-bearish">Underweight</span></td>
+  <td class="nw"><span class="muted">$150.00</span> → $185.00</td>
+  <td class="nw ">—</td>
+  <td><a class="src" href="https://www.insidermonkey.com/news/sell-alert-10-high-profile-stocks-just-dumped-by-top-analysts-1862938/?singlepage=1" rel="nofollow noopener" target="_blank">News</a></td>
+</tr>
+
+<tr data-action="downgrade">
+  <td class="nw">2026-11-06</td>
+  <td><a class="tk" href="stocks/irtc.html">IRTC</a><div class="sub">iRhythm Technologies</div></td>
+  <td><a href="analysts/citigroup-research.html">Citigroup</a></td>
+  <td><span class="b b-downgrade">Downgrade</span></td>
+  <td><span class="r r-bullish">Buy</span> → 
+<span class="r r-neutral">Neutral</span></td>
+  <td class="nw"><span class="muted">$157.00</span> → $124.00</td>
+  <td class="nw ">—</td>
+  <td><a class="src" href="https://www.insidermonkey.com/news/sell-alert-10-high-profile-stocks-just-dumped-by-top-analysts-1862938/?singlepage=1" rel="nofollow noopener" target="_blank">News</a></td>
+</tr>
+
+<tr data-action="downgrade">
+  <td class="nw">2026-11-06</td>
+  <td><a class="tk" href="stocks/gil.html">GIL</a><div class="sub">Gildan Activewear</div></td>
+  <td><a href="analysts/jay-sole-ubs.html">Jay Sole</a><div class="sub">UBS</div></td>
+  <td><span class="b b-downgrade">Downgrade</span></td>
+  <td><span class="r r-bullish">Buy</span> → 
+<span class="r r-neutral">Neutral</span></td>
+  <td class="nw"><span class="muted">$71.00</span> → $38.00</td>
+  <td class="nw ">—</td>
+  <td><a class="src" href="https://www.insidermonkey.com/news/sell-alert-10-high-profile-stocks-just-dumped-by-top-analysts-1862938/?singlepage=1" rel="nofollow noopener" target="_blank">News</a></td>
+</tr>
+
+</tbody></table></div>
+  <p class="note">*Return = stock move since the rating date, counted positive when the call was right (Buy-type and the stock rose, or Sell-type and it fell).</p>
+</section>
+
+</main>
+<footer class="wrap foot">
+  <p><strong>Disclaimer:</strong> Analyst Ledger publishes factual records of publicly reported analyst rating and price-target changes for information only. Nothing here is investment advice or a recommendation to buy or sell any security. Data may be delayed or incomplete — always verify with the original source.</p>
+  <p>52 rating changes · 38 analysts · 45 stocks · Updated 2026-11-15 12:24 UTC · <a href="feed.xml">RSS</a></p>
+</footer>
+<script>window.ROOT = "";</script>
+<script src="assets/app.js"></script>
+</body>
+</html>

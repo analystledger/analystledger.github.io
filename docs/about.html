@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About & method | Analyst Ledger</title>
+<meta name="description" content="Every Wall Street rating change, dated and tracked — free.">
+<meta property="og:title" content="About & method | Analyst Ledger">
+<meta property="og:description" content="Every Wall Street rating change, dated and tracked — free.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://analystledger.github.io/assets/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+<link rel="alternate" type="application/rss+xml" title="Analyst Ledger" href="feed.xml">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="top">
+  <div class="wrap bar">
+    <a class="brand" href="index.html"><img src="assets/logo.svg" alt="" width="28" height="28"> Analyst Ledger</a>
+    <nav>
+      <a href="index.html">Latest</a>
+      <a href="analysts/index.html">Analysts</a>
+      <a href="stocks/index.html">Stocks</a>
+      <a href="about.html">About</a>
+    </nav>
+    <div class="search">
+      <input id="q" type="search" placeholder="Search ticker, analyst, firm…" autocomplete="off" aria-label="Search">
+      <div id="qres" class="qres" hidden></div>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+
+<article class="prose">
+<h1>About Analyst Ledger</h1>
+<p>Analyst Ledger is a free, independent record of what Wall Street analysts say about stocks and when they said it. Every upgrade, downgrade, new coverage, reiteration and price-target change is stored with its date and a link to its source, so each analyst builds up a permanent, checkable history.</p>
+
+<h2 id="sources">Where the data comes from</h2>
+<ul>
+  <li><strong>Licensed market-data APIs</strong> — analyst grade and price-target feeds from commercial data providers.</li>
+  <li><strong>Public news reports</strong> — rating changes reported in financial news and company or broker press releases, recorded as facts (who, what, when) with a link to the report.</li>
+</ul>
+<p>The site updates automatically every day. We do not copy or republish other ratings websites' content, scores or rankings; all statistics here are computed independently from the dated records.</p>
+
+<h2 id="method">How analysts are scored</h2>
+<p>For each Buy-type rating (Buy, Outperform, Overweight…) and Sell-type rating (Sell, Underperform, Underweight…), we compare the stock's price on the day of the rating with its latest price. A Buy-type call counts as right if the stock has risen since then; a Sell-type call counts as right if it has fallen. The <em>average return</em> is the mean of those directional moves. Neutral ratings (Hold, Neutral, Equal Weight…) are recorded but not scored. Analysts need at least three scored calls to appear in rankings. Dividends are ignored and recent calls have had little time to play out, so treat scores as a rough guide.</p>
+
+<h2>Disclaimer</h2>
+<p>Analyst Ledger publishes factual records of publicly reported analyst rating and price-target changes for information only. Nothing here is investment advice or a recommendation to buy or sell any security. Data may be delayed or incomplete — always verify with the original source.</p>
+</article>
+
+</main>
+<footer class="wrap foot">
+  <p><strong>Disclaimer:</strong> Analyst Ledger publishes factual records of publicly reported analyst rating and price-target changes for information only. Nothing here is investment advice or a recommendation to buy or sell any security. Data may be delayed or incomplete — always verify with the original source.</p>
+  <p>52 rating changes · 38 analysts · 45 stocks · Updated 2026-11-15 12:24 UTC · <a href="feed.xml">RSS</a></p>
+</footer>
+<script>window.ROOT = "";</script>
+<script src="assets/app.js"></script>
+</body>
+</html>
