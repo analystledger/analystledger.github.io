@@ -8,6 +8,6 @@
   "mastodon": "ok",
   "facebook": "ok",
   "instagram": "ok",
-  "tiktok": "error: {\"error\":{\"code\":\"url_ownership_unverified\",\"message\":\"Please review our URL ownership verification rules at https://developers.tiktok.com/doc/content-posting-api-media-transfer-guide/#pull_from_url\","
+  "tiktok": "ok"
  }
 }
