@@ -264,6 +264,10 @@ def post_tiktok(p):
             "source_info": {"source": "PULL_FROM_URL", "photo_cover_index": 0, "photo_images": [public_image_url(p)]},
             "post_mode": "DIRECT_POST", "media_type": "PHOTO"}
     r = requests.post("https://open.tiktokapis.com/v2/post/publish/content/init/", headers=h, json=body, timeout=60)
+    if "unaudited_client" in r.text and privacy != "SELF_ONLY":
+        # Until TikTok approves the app, posts must be "only me" on a private account.
+        privacy = body["post_info"]["privacy_level"] = "SELF_ONLY"
+        r = requests.post("https://open.tiktokapis.com/v2/post/publish/content/init/", headers=h, json=body, timeout=60)
     r.raise_for_status()
     if (r.json().get("error") or {}).get("code") not in (None, "ok"):
         raise RuntimeError(r.text[:300])
