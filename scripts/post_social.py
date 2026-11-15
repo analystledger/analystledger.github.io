@@ -216,10 +216,21 @@ def post_telegram(p):
     r.raise_for_status()
 
 
+def page_token():
+    """FB_PAGE_TOKEN may hold either the Page token or the long-lived user token; return a Page token."""
+    tok = ENV("FB_PAGE_TOKEN")
+    try:
+        r = requests.get(f"{GRAPH}/{ENV('FB_PAGE_ID')}", params={"fields": "access_token", "access_token": tok},
+                         timeout=30).json()
+        return r.get("access_token") or tok
+    except (requests.RequestException, ValueError):
+        return tok
+
+
 def post_facebook(p):
     with open(p["image"], "rb") as f:
         r = requests.post(f"{GRAPH}/{ENV('FB_PAGE_ID')}/photos", timeout=60, files={"source": f},
-                          data={"caption": p["long"], "access_token": ENV("FB_PAGE_TOKEN")})
+                          data={"caption": p["long"], "access_token": page_token()})
     r.raise_for_status()
 
 
