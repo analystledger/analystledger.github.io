@@ -4,6 +4,9 @@
  },
  "weekly-2026-11-15": {
   "bluesky": "ok",
-  "telegram": "ok"
+  "telegram": "ok",
+  "mastodon": "ok",
+  "facebook": "error: {\"error\":{\"message\":\"(#283) Requires pages_manage_metadata permission to manage the object\",\"type\":\"OAuthException\",\"code\":283,\"fbtrace_id\":\"AhNrTmIT40hFn9fOadCAdMD\"}}",
+  "instagram": "ok"
  }
 }
