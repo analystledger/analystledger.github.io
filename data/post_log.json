@@ -7,6 +7,7 @@
   "telegram": "ok",
   "mastodon": "ok",
   "facebook": "ok",
-  "instagram": "ok"
+  "instagram": "ok",
+  "tiktok": "error: {\"error\":{\"code\":\"unaudited_client_can_only_post_to_private_accounts\",\"message\":\"Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/\",\"log_id\":\"20"
  }
 }
