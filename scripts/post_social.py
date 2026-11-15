@@ -261,7 +261,7 @@ def post_tiktok(p):
     opts = (info.get("data") or {}).get("privacy_level_options") or ["SELF_ONLY"]
     privacy = "PUBLIC_TO_EVERYONE" if "PUBLIC_TO_EVERYONE" in opts else opts[0]
     body = {"post_info": {"title": p["title"][:90], "description": p["long"][:2200], "privacy_level": privacy,
-                          "disable_comment": False, "auto_add_music": True},
+                          "disable_comment": False, "auto_add_music": False},
             "source_info": {"source": "PULL_FROM_URL", "photo_cover_index": 0, "photo_images": [public_image_url(p, ".jpg")]},
             "post_mode": "DIRECT_POST", "media_type": "PHOTO"}
     r = requests.post("https://open.tiktokapis.com/v2/post/publish/content/init/", headers=h, json=body, timeout=60)
