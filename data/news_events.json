@@ -1,72 +1,367 @@
 [
  {
-  "date": "2026-11-12",
+  "date": "2026-11-16",
+  "ticker": "NUE",
+  "company": "Nucor",
+  "firm": "UBS",
+  "rating_from": "Neutral",
+  "rating_to": "Buy",
+  "pt_from": 256,
+  "pt_to": 307,
+  "action": "upgrade",
+  "source_url": "https://www.investing.com/news/analyst-ratings/ubs-upgrades-nucor-stock-rating-on-steel-pricing-raises-target-to-307-93CH-5028495"
+ },
+ {
+  "date": "2026-11-16",
+  "ticker": "YETI",
+  "company": "YETI Holdings",
+  "firm": "Goldman Sachs",
+  "rating_from": "Buy",
+  "rating_to": "Neutral",
+  "pt_to": 41,
+  "action": "downgrade",
+  "source_url": "https://www.gurufocus.com/news/9201302/yeti-downgraded-by-goldman-sachs-price-target-lowered-to-4100"
+ },
+ {
+  "date": "2026-11-16",
+  "ticker": "LOW",
+  "company": "Lowe's Companies",
+  "firm": "Zelman & Associates",
+  "rating_to": "Underperform",
+  "action": "downgrade",
+  "source_url": "https://www.gurufocus.com/news/9201434/low-downgraded-by-zelman-assoc-rating-changed-to-underperform"
+ },
+ {
+  "date": "2026-11-16",
+  "ticker": "LEU",
+  "company": "Centrus Energy",
+  "firm": "Cantor Fitzgerald",
+  "rating_to": "Overweight",
+  "action": "initiate",
+  "source_url": "https://www.investing.com/news/analyst-ratings/cantor-fitzgerald-initiates-centrus-energy-stock-with-overweight-rating-93CH-5029636"
+ },
+ {
+  "date": "2026-11-16",
   "ticker": "NVDA",
   "company": "NVIDIA",
-  "analyst": "Mark Lipacis",
-  "firm": "Evercore ISI",
-  "rating_from": "Outperform",
-  "rating_to": "In-Line",
-  "pt_from": 465,
-  "pt_to": 186,
-  "price_at_rating": 173.73,
+  "firm": "CLSA",
+  "rating_from": "High-Conviction Outperform",
+  "rating_to": "Outperform",
+  "pt_to": 255,
   "action": "downgrade",
-  "source_url": "https://benzinga.com/analyst-stock-ratings/downgrades/26/11/63179430/this-nvidia-analyst-is-no-longer-bullish-here-are-top-5-downgrades-for-thursday"
+  "source_url": "https://www.everhint.com/analyst-hints-ratings-november-16-2026-midday-update-last-24-hours-pacific-time/"
  },
  {
-  "date": "2026-11-12",
-  "ticker": "GIS",
-  "company": "General Mills",
-  "analyst": "Michael Lavery",
-  "firm": "Piper Sandler",
-  "rating_from": "Overweight",
-  "rating_to": "Neutral",
-  "pt_from": 41,
-  "pt_to": 35,
-  "action": "downgrade",
-  "source_url": "https://benzinga.com/analyst-stock-ratings/downgrades/26/11/63179430/this-nvidia-analyst-is-no-longer-bullish-here-are-top-5-downgrades-for-thursday"
- },
- {
-  "date": "2026-11-12",
-  "ticker": "RWT",
-  "company": "Redwood Trust",
-  "analyst": "Bose George",
-  "firm": "Keefe, Bruyette & Woods",
-  "rating_from": "Outperform",
-  "rating_to": "Market Perform",
-  "pt_from": 4.25,
-  "pt_to": 3.5,
-  "price_at_rating": 2.96,
-  "action": "downgrade",
-  "source_url": "https://benzinga.com/analyst-stock-ratings/downgrades/26/11/63179430/this-nvidia-analyst-is-no-longer-bullish-here-are-top-5-downgrades-for-thursday"
- },
- {
-  "date": "2026-11-12",
-  "ticker": "DDI",
-  "company": "DoubleDown Interactive",
-  "analyst": "Eric Handler",
-  "firm": "Roth Capital",
+  "date": "2026-11-16",
+  "ticker": "NVDA",
+  "company": "NVIDIA",
+  "firm": "UBS",
   "rating_from": "Buy",
-  "rating_to": "Neutral",
-  "pt_from": 16,
-  "pt_to": 16.25,
-  "price_at_rating": 15.72,
-  "action": "downgrade",
-  "source_url": "https://benzinga.com/analyst-stock-ratings/downgrades/26/11/63179430/this-nvidia-analyst-is-no-longer-bullish-here-are-top-5-downgrades-for-thursday"
+  "rating_to": "Buy",
+  "pt_from": 300,
+  "pt_to": 240,
+  "action": "target_cut",
+  "source_url": "https://www.everhint.com/analyst-hints-ratings-november-16-2026-midday-update-last-24-hours-pacific-time/"
  },
  {
-  "date": "2026-11-12",
-  "ticker": "EVGO",
-  "company": "EVgo",
-  "analyst": "Stephen Gengaro",
+  "date": "2026-11-16",
+  "ticker": "NVDA",
+  "company": "NVIDIA",
+  "firm": "Mizuho",
+  "rating_to": "Outperform",
+  "pt_to": 220,
+  "action": "target_cut",
+  "source_url": "https://www.everhint.com/analyst-hints-ratings-november-16-2026-midday-update-last-24-hours-pacific-time/"
+ },
+ {
+  "date": "2026-11-16",
+  "ticker": "PRAX",
+  "company": "Praxis Precision Medicines",
+  "firm": "Guggenheim",
+  "rating_from": "Buy",
+  "rating_to": "Buy",
+  "pt_from": 800,
+  "pt_to": 1050,
+  "action": "target_raise",
+  "source_url": "https://www.everhint.com/analyst-hints-ratings-november-16-2026-midday-update-last-24-hours-pacific-time/"
+ },
+ {
+  "date": "2026-11-16",
+  "ticker": "LXEO",
+  "company": "Lexeo Therapeutics",
+  "firm": "Raymond James",
+  "rating_from": "Strong Buy",
+  "rating_to": "Strong Buy",
+  "pt_from": 24,
+  "pt_to": 42,
+  "action": "target_raise",
+  "source_url": "https://www.everhint.com/analyst-hints-ratings-november-16-2026-midday-update-last-24-hours-pacific-time/"
+ },
+ {
+  "date": "2026-11-16",
+  "ticker": "APP",
+  "company": "AppLovin",
+  "firm": "Jefferies",
+  "rating_from": "Buy",
+  "rating_to": "Buy",
+  "pt_from": 430,
+  "pt_to": 500,
+  "action": "target_raise",
+  "source_url": "https://www.everhint.com/analyst-hints-ratings-november-16-2026-midday-update-last-24-hours-pacific-time/"
+ },
+ {
+  "date": "2026-11-16",
+  "ticker": "BOX",
+  "company": "Box",
+  "firm": "Citigroup",
+  "rating_from": "Buy",
+  "rating_to": "Buy",
+  "pt_from": 40,
+  "pt_to": 55,
+  "action": "target_raise",
+  "source_url": "https://www.everhint.com/analyst-hints-ratings-november-16-2026-midday-update-last-24-hours-pacific-time/"
+ },
+ {
+  "date": "2026-11-16",
+  "ticker": "IR",
+  "company": "Ingersoll Rand",
+  "firm": "Melius Research",
+  "rating_from": "Hold",
+  "rating_to": "Buy",
+  "pt_to": 113,
+  "action": "upgrade",
+  "source_url": "https://www.everhint.com/analyst-hints-ratings-november-16-2026-midday-update-last-24-hours-pacific-time/"
+ },
+ {
+  "date": "2026-11-16",
+  "ticker": "AARD",
+  "company": "Aardvark Therapeutics",
   "firm": "Stifel",
   "rating_from": "Buy",
-  "rating_to": "Hold",
+  "rating_to": "Buy",
   "pt_from": 6,
-  "pt_to": 2.5,
-  "price_at_rating": 1.84,
+  "pt_to": 2,
+  "action": "target_cut",
+  "source_url": "https://www.everhint.com/analyst-hints-ratings-november-16-2026-midday-update-last-24-hours-pacific-time/"
+ },
+ {
+  "date": "2026-11-16",
+  "ticker": "IBP",
+  "company": "Installed Building Products",
+  "firm": "Truist Securities",
+  "rating_from": "Buy",
+  "rating_to": "Buy",
+  "pt_from": 180,
+  "pt_to": 220,
+  "action": "target_raise",
+  "source_url": "https://www.everhint.com/analyst-hints-ratings-november-16-2026-midday-update-last-24-hours-pacific-time/"
+ },
+ {
+  "date": "2026-11-16",
+  "ticker": "IBP",
+  "company": "Installed Building Products",
+  "firm": "RBC Capital",
+  "rating_to": "Outperform",
+  "pt_to": 215,
+  "action": "target_raise",
+  "source_url": "https://www.everhint.com/analyst-hints-ratings-november-16-2026-midday-update-last-24-hours-pacific-time/"
+ },
+ {
+  "date": "2026-11-16",
+  "ticker": "BILI",
+  "company": "Bilibili",
+  "firm": "Macquarie",
+  "rating_from": "Outperform",
+  "rating_to": "Neutral",
   "action": "downgrade",
-  "source_url": "https://benzinga.com/analyst-stock-ratings/downgrades/26/11/63179430/this-nvidia-analyst-is-no-longer-bullish-here-are-top-5-downgrades-for-thursday"
+  "source_url": "https://www.everhint.com/analyst-hints-ratings-november-16-2026-midday-update-last-24-hours-pacific-time/"
+ },
+ {
+  "date": "2026-11-16",
+  "ticker": "REAX",
+  "company": "Real Brokerage",
+  "firm": "Freedom Broker",
+  "pt_from": 40,
+  "pt_to": 25,
+  "action": "target_cut",
+  "source_url": "https://www.everhint.com/analyst-hints-ratings-november-16-2026-midday-update-last-24-hours-pacific-time/"
+ },
+ {
+  "date": "2026-11-16",
+  "ticker": "WSM",
+  "company": "Williams-Sonoma",
+  "firm": "Telsey Advisory Group",
+  "rating_to": "Outperform",
+  "pt_to": 285,
+  "action": "target_raise",
+  "source_url": "https://www.everhint.com/analyst-hints-ratings-november-16-2026-midday-update-last-24-hours-pacific-time/"
+ },
+ {
+  "date": "2026-11-16",
+  "ticker": "BBY",
+  "company": "Best Buy",
+  "firm": "Telsey Advisory Group",
+  "rating_to": "Outperform",
+  "pt_to": 110,
+  "action": "target_raise",
+  "source_url": "https://www.everhint.com/analyst-hints-ratings-november-16-2026-midday-update-last-24-hours-pacific-time/"
+ },
+ {
+  "date": "2026-11-16",
+  "ticker": "BTU",
+  "company": "Peabody Energy",
+  "firm": "UBS",
+  "rating_to": "Buy",
+  "action": "upgrade",
+  "source_url": "https://www.everhint.com/analyst-hints-ratings-november-16-2026-midday-update-last-24-hours-pacific-time/"
+ },
+ {
+  "date": "2026-11-16",
+  "ticker": "BILL",
+  "company": "BILL Holdings",
+  "firm": "William Blair",
+  "rating_from": "Market Perform",
+  "rating_to": "Outperform",
+  "action": "upgrade",
+  "source_url": "https://www.everhint.com/analyst-hints-ratings-november-16-2026-midday-update-last-24-hours-pacific-time/"
+ },
+ {
+  "date": "2026-11-16",
+  "ticker": "CTVA",
+  "company": "Corteva",
+  "firm": "KeyBanc",
+  "rating_to": "Overweight",
+  "pt_to": 14,
+  "action": "target_cut",
+  "source_url": "https://www.everhint.com/analyst-hints-ratings-november-16-2026-midday-update-last-24-hours-pacific-time/"
+ },
+ {
+  "date": "2026-11-16",
+  "ticker": "CTVA",
+  "company": "Corteva",
+  "firm": "Mizuho",
+  "rating_to": "Outperform",
+  "pt_to": 13,
+  "action": "target_cut",
+  "source_url": "https://www.everhint.com/analyst-hints-ratings-november-16-2026-midday-update-last-24-hours-pacific-time/"
+ },
+ {
+  "date": "2026-11-16",
+  "ticker": "CRWD",
+  "company": "CrowdStrike",
+  "firm": "Cantor Fitzgerald",
+  "rating_to": "Overweight",
+  "pt_to": 275,
+  "action": "target_raise",
+  "source_url": "https://www.everhint.com/analyst-hints-ratings-november-16-2026-midday-update-last-24-hours-pacific-time/"
+ },
+ {
+  "date": "2026-11-16",
+  "ticker": "MIST",
+  "company": "Milestone Pharmaceuticals",
+  "firm": "TD Cowen",
+  "pt_to": 5,
+  "action": "target_cut",
+  "source_url": "https://www.everhint.com/analyst-hints-ratings-november-16-2026-midday-update-last-24-hours-pacific-time/"
+ },
+ {
+  "date": "2026-11-16",
+  "ticker": "MIST",
+  "company": "Milestone Pharmaceuticals",
+  "firm": "Piper Sandler",
+  "pt_to": 3,
+  "action": "target_cut",
+  "source_url": "https://www.everhint.com/analyst-hints-ratings-november-16-2026-midday-update-last-24-hours-pacific-time/"
+ },
+ {
+  "date": "2026-11-16",
+  "ticker": "SPXC",
+  "firm": "TD Cowen",
+  "rating_to": "Buy",
+  "action": "upgrade",
+  "source_url": "https://www.everhint.com/analyst-hints-ratings-november-16-2026-midday-update-last-24-hours-pacific-time/"
+ },
+ {
+  "date": "2026-11-16",
+  "ticker": "AMRZ",
+  "firm": "Jefferies",
+  "rating_to": "Underperform",
+  "action": "downgrade",
+  "source_url": "https://www.everhint.com/analyst-hints-ratings-november-16-2026-midday-update-last-24-hours-pacific-time/"
+ },
+ {
+  "date": "2026-11-16",
+  "ticker": "CNNE",
+  "firm": "RBC Capital",
+  "rating_to": "Sector Perform",
+  "action": "downgrade",
+  "source_url": "https://www.everhint.com/analyst-hints-ratings-november-16-2026-midday-update-last-24-hours-pacific-time/"
+ },
+ {
+  "date": "2026-11-16",
+  "ticker": "FMC",
+  "company": "FMC",
+  "firm": "KeyBanc",
+  "rating_to": "Sector Weight",
+  "action": "downgrade",
+  "source_url": "https://www.everhint.com/analyst-hints-ratings-november-16-2026-midday-update-last-24-hours-pacific-time/"
+ },
+ {
+  "date": "2026-11-16",
+  "ticker": "CVI",
+  "firm": "Mizuho",
+  "rating_to": "Neutral",
+  "action": "upgrade",
+  "source_url": "https://www.everhint.com/analyst-hints-ratings-november-16-2026-midday-update-last-24-hours-pacific-time/"
+ },
+ {
+  "date": "2026-11-16",
+  "ticker": "USAR",
+  "firm": "William Blair",
+  "rating_to": "Market Perform",
+  "action": "downgrade",
+  "source_url": "https://www.everhint.com/analyst-hints-ratings-november-16-2026-midday-update-last-24-hours-pacific-time/"
+ },
+ {
+  "date": "2026-11-16",
+  "ticker": "OFG",
+  "company": "OFG Bancorp",
+  "firm": "UBS",
+  "rating_to": "Sell",
+  "action": "initiate",
+  "source_url": "https://www.gurufocus.com/news/9202358/ubs-initiates-sell-on-ofg-bancorp-ofg-amid-deposit-competition-dividend-sustainability-in-focus"
+ },
+ {
+  "date": "2026-11-16",
+  "ticker": "FBP",
+  "firm": "UBS",
+  "rating_to": "Neutral",
+  "action": "initiate",
+  "source_url": "https://www.everhint.com/analyst-hints-ratings-november-16-2026-midday-update-last-24-hours-pacific-time/"
+ },
+ {
+  "date": "2026-11-16",
+  "ticker": "CDNL",
+  "firm": "Stifel",
+  "rating_to": "Hold",
+  "action": "downgrade",
+  "source_url": "https://www.everhint.com/analyst-hints-ratings-november-16-2026-midday-update-last-24-hours-pacific-time/"
+ },
+ {
+  "date": "2026-11-16",
+  "ticker": "STIM",
+  "firm": "William Blair",
+  "rating_to": "Outperform",
+  "action": "initiate",
+  "source_url": "https://www.everhint.com/analyst-hints-ratings-november-16-2026-midday-update-last-24-hours-pacific-time/"
+ },
+ {
+  "date": "2026-11-16",
+  "ticker": "SGHC",
+  "firm": "Wells Fargo",
+  "rating_to": "Equal Weight",
+  "action": "initiate",
+  "source_url": "https://www.everhint.com/analyst-hints-ratings-november-16-2026-midday-update-last-24-hours-pacific-time/"
  },
  {
   "date": "2026-11-13",
@@ -137,6 +432,144 @@
   "price_at_rating": 63.01,
   "action": "downgrade",
   "source_url": "https://benzinga.com/analyst-stock-ratings/downgrades/26/11/63276847/this-lowes-analyst-turns-bearish-here-are-top-5-downgrades-for-friday"
+ },
+ {
+  "date": "2026-11-13",
+  "ticker": "ADSK",
+  "company": "Autodesk",
+  "firm": "Loop Capital",
+  "rating_from": "Hold",
+  "rating_to": "Buy",
+  "action": "upgrade",
+  "source_url": "https://dailytradealert.com/2026/11/13/analyst-upgrades-and-downgrades-for-friday-11-13/"
+ },
+ {
+  "date": "2026-11-13",
+  "ticker": "DPZ",
+  "company": "Domino's Pizza",
+  "firm": "Baird",
+  "rating_from": "Neutral",
+  "rating_to": "Outperform",
+  "action": "upgrade",
+  "source_url": "https://dailytradealert.com/2026/11/13/analyst-upgrades-and-downgrades-for-friday-11-13/"
+ },
+ {
+  "date": "2026-11-13",
+  "ticker": "ECL",
+  "company": "Ecolab",
+  "firm": "Wells Fargo",
+  "rating_from": "Equal Weight",
+  "rating_to": "Overweight",
+  "action": "upgrade",
+  "source_url": "https://dailytradealert.com/2026/11/13/analyst-upgrades-and-downgrades-for-friday-11-13/"
+ },
+ {
+  "date": "2026-11-13",
+  "ticker": "IBP",
+  "company": "Installed Building Products",
+  "firm": "Deutsche Bank",
+  "rating_from": "Hold",
+  "rating_to": "Buy",
+  "action": "upgrade",
+  "source_url": "https://dailytradealert.com/2026/11/13/analyst-upgrades-and-downgrades-for-friday-11-13/"
+ },
+ {
+  "date": "2026-11-13",
+  "ticker": "COLD",
+  "company": "Americold Realty Trust",
+  "firm": "Piper Sandler",
+  "rating_from": "Neutral",
+  "rating_to": "Overweight",
+  "action": "upgrade",
+  "source_url": "https://dailytradealert.com/2026/11/13/analyst-upgrades-and-downgrades-for-friday-11-13/"
+ },
+ {
+  "date": "2026-11-13",
+  "ticker": "DTM",
+  "company": "DT Midstream",
+  "firm": "Goldman Sachs",
+  "rating_from": "Sell",
+  "rating_to": "Neutral",
+  "action": "upgrade",
+  "source_url": "https://dailytradealert.com/2026/11/13/analyst-upgrades-and-downgrades-for-friday-11-13/"
+ },
+ {
+  "date": "2026-11-13",
+  "ticker": "FOXA",
+  "company": "Fox Corp",
+  "firm": "Morgan Stanley",
+  "rating_to": "Overweight",
+  "action": "initiate",
+  "source_url": "https://dailytradealert.com/2026/11/13/analyst-upgrades-and-downgrades-for-friday-11-13/"
+ },
+ {
+  "date": "2026-11-12",
+  "ticker": "NVDA",
+  "company": "NVIDIA",
+  "analyst": "Mark Lipacis",
+  "firm": "Evercore ISI",
+  "rating_from": "Outperform",
+  "rating_to": "In-Line",
+  "pt_from": 465,
+  "pt_to": 186,
+  "price_at_rating": 173.73,
+  "action": "downgrade",
+  "source_url": "https://benzinga.com/analyst-stock-ratings/downgrades/26/11/63179430/this-nvidia-analyst-is-no-longer-bullish-here-are-top-5-downgrades-for-thursday"
+ },
+ {
+  "date": "2026-11-12",
+  "ticker": "GIS",
+  "company": "General Mills",
+  "analyst": "Michael Lavery",
+  "firm": "Piper Sandler",
+  "rating_from": "Overweight",
+  "rating_to": "Neutral",
+  "pt_from": 41,
+  "pt_to": 35,
+  "action": "downgrade",
+  "source_url": "https://benzinga.com/analyst-stock-ratings/downgrades/26/11/63179430/this-nvidia-analyst-is-no-longer-bullish-here-are-top-5-downgrades-for-thursday"
+ },
+ {
+  "date": "2026-11-12",
+  "ticker": "RWT",
+  "company": "Redwood Trust",
+  "analyst": "Bose George",
+  "firm": "Keefe, Bruyette & Woods",
+  "rating_from": "Outperform",
+  "rating_to": "Market Perform",
+  "pt_from": 4.25,
+  "pt_to": 3.5,
+  "price_at_rating": 2.96,
+  "action": "downgrade",
+  "source_url": "https://benzinga.com/analyst-stock-ratings/downgrades/26/11/63179430/this-nvidia-analyst-is-no-longer-bullish-here-are-top-5-downgrades-for-thursday"
+ },
+ {
+  "date": "2026-11-12",
+  "ticker": "DDI",
+  "company": "DoubleDown Interactive",
+  "analyst": "Eric Handler",
+  "firm": "Roth Capital",
+  "rating_from": "Buy",
+  "rating_to": "Neutral",
+  "pt_from": 16,
+  "pt_to": 16.25,
+  "price_at_rating": 15.72,
+  "action": "downgrade",
+  "source_url": "https://benzinga.com/analyst-stock-ratings/downgrades/26/11/63179430/this-nvidia-analyst-is-no-longer-bullish-here-are-top-5-downgrades-for-thursday"
+ },
+ {
+  "date": "2026-11-12",
+  "ticker": "EVGO",
+  "company": "EVgo",
+  "analyst": "Stephen Gengaro",
+  "firm": "Stifel",
+  "rating_from": "Buy",
+  "rating_to": "Hold",
+  "pt_from": 6,
+  "pt_to": 2.5,
+  "price_at_rating": 1.84,
+  "action": "downgrade",
+  "source_url": "https://benzinga.com/analyst-stock-ratings/downgrades/26/11/63179430/this-nvidia-analyst-is-no-longer-bullish-here-are-top-5-downgrades-for-thursday"
  },
  {
   "date": "2026-11-12",
@@ -227,6 +660,78 @@
   "pt_to": 230,
   "action": "downgrade",
   "source_url": "https://247wallst.com/investing/2026/11/12/buy-sell-or-hold-thursdays-top-upgrades-and-downgrades-advanced-micro-devices-alibaba-group-cleveland-cliffs-conoco-phillips-diamondback-energy-general-mills-nvidia-toyota-wendys-and-m/"
+ },
+ {
+  "date": "2026-11-12",
+  "ticker": "CRCL",
+  "company": "Circle Internet Group",
+  "firm": "JPMorgan",
+  "rating_from": "Underweight",
+  "rating_to": "Overweight",
+  "action": "upgrade",
+  "source_url": "https://www-web.itiger.com/news/2583855979"
+ },
+ {
+  "date": "2026-11-12",
+  "ticker": "FLY",
+  "company": "Firefly Aerospace",
+  "firm": "Deutsche Bank",
+  "rating_from": "Hold",
+  "rating_to": "Buy",
+  "pt_from": 40,
+  "pt_to": 30,
+  "action": "upgrade",
+  "source_url": "https://www-web.itiger.com/news/2583855979"
+ },
+ {
+  "date": "2026-11-12",
+  "ticker": "CRWD",
+  "company": "CrowdStrike",
+  "firm": "Morgan Stanley",
+  "pt_from": 475,
+  "pt_to": 515,
+  "action": "target_raise",
+  "source_url": "https://www-web.itiger.com/news/2583855979"
+ },
+ {
+  "date": "2026-11-12",
+  "ticker": "FDX",
+  "company": "FedEx",
+  "firm": "Citigroup",
+  "pt_from": 279,
+  "pt_to": 310,
+  "action": "target_raise",
+  "source_url": "https://www-web.itiger.com/news/2583855979"
+ },
+ {
+  "date": "2026-11-12",
+  "ticker": "APH",
+  "company": "Amphenol",
+  "firm": "Barclays",
+  "pt_from": 120,
+  "pt_to": 143,
+  "action": "target_raise",
+  "source_url": "https://www-web.itiger.com/news/2583855979"
+ },
+ {
+  "date": "2026-11-12",
+  "ticker": "CSCO",
+  "company": "Cisco Systems",
+  "firm": "BofA Global Research",
+  "pt_from": 85,
+  "pt_to": 95,
+  "action": "target_raise",
+  "source_url": "https://www-web.itiger.com/news/2583855979"
+ },
+ {
+  "date": "2026-11-12",
+  "ticker": "CRCL",
+  "company": "Circle Internet Group",
+  "firm": "Needham",
+  "pt_from": 250,
+  "pt_to": 190,
+  "action": "target_cut",
+  "source_url": "https://www-web.itiger.com/news/2583855979"
  },
  {
   "date": "2026-11-11",
@@ -427,147 +932,6 @@
   "pt_to": 27,
   "action": "downgrade",
   "source_url": "https://www.insidermonkey.com/news/sell-alert-10-stocks-analysts-just-downgraded-1863791/?singlepage=1"
- },
- {
-  "date": "2026-11-13",
-  "ticker": "ADSK",
-  "company": "Autodesk",
-  "firm": "Loop Capital",
-  "rating_from": "Hold",
-  "rating_to": "Buy",
-  "action": "upgrade",
-  "source_url": "https://dailytradealert.com/2026/11/13/analyst-upgrades-and-downgrades-for-friday-11-13/"
- },
- {
-  "date": "2026-11-13",
-  "ticker": "DPZ",
-  "company": "Domino's Pizza",
-  "firm": "Baird",
-  "rating_from": "Neutral",
-  "rating_to": "Outperform",
-  "action": "upgrade",
-  "source_url": "https://dailytradealert.com/2026/11/13/analyst-upgrades-and-downgrades-for-friday-11-13/"
- },
- {
-  "date": "2026-11-13",
-  "ticker": "ECL",
-  "company": "Ecolab",
-  "firm": "Wells Fargo",
-  "rating_from": "Equal Weight",
-  "rating_to": "Overweight",
-  "action": "upgrade",
-  "source_url": "https://dailytradealert.com/2026/11/13/analyst-upgrades-and-downgrades-for-friday-11-13/"
- },
- {
-  "date": "2026-11-13",
-  "ticker": "IBP",
-  "company": "Installed Building Products",
-  "firm": "Deutsche Bank",
-  "rating_from": "Hold",
-  "rating_to": "Buy",
-  "action": "upgrade",
-  "source_url": "https://dailytradealert.com/2026/11/13/analyst-upgrades-and-downgrades-for-friday-11-13/"
- },
- {
-  "date": "2026-11-13",
-  "ticker": "COLD",
-  "company": "Americold Realty Trust",
-  "firm": "Piper Sandler",
-  "rating_from": "Neutral",
-  "rating_to": "Overweight",
-  "action": "upgrade",
-  "source_url": "https://dailytradealert.com/2026/11/13/analyst-upgrades-and-downgrades-for-friday-11-13/"
- },
- {
-  "date": "2026-11-13",
-  "ticker": "DTM",
-  "company": "DT Midstream",
-  "firm": "Goldman Sachs",
-  "rating_from": "Sell",
-  "rating_to": "Neutral",
-  "action": "upgrade",
-  "source_url": "https://dailytradealert.com/2026/11/13/analyst-upgrades-and-downgrades-for-friday-11-13/"
- },
- {
-  "date": "2026-11-13",
-  "ticker": "FOXA",
-  "company": "Fox Corp",
-  "firm": "Morgan Stanley",
-  "rating_to": "Overweight",
-  "action": "initiate",
-  "source_url": "https://dailytradealert.com/2026/11/13/analyst-upgrades-and-downgrades-for-friday-11-13/"
- },
- {
-  "date": "2026-11-12",
-  "ticker": "CRCL",
-  "company": "Circle Internet Group",
-  "firm": "JPMorgan",
-  "rating_from": "Underweight",
-  "rating_to": "Overweight",
-  "action": "upgrade",
-  "source_url": "https://www-web.itiger.com/news/2583855979"
- },
- {
-  "date": "2026-11-12",
-  "ticker": "FLY",
-  "company": "Firefly Aerospace",
-  "firm": "Deutsche Bank",
-  "rating_from": "Hold",
-  "rating_to": "Buy",
-  "pt_from": 40,
-  "pt_to": 30,
-  "action": "upgrade",
-  "source_url": "https://www-web.itiger.com/news/2583855979"
- },
- {
-  "date": "2026-11-12",
-  "ticker": "CRWD",
-  "company": "CrowdStrike",
-  "firm": "Morgan Stanley",
-  "pt_from": 475,
-  "pt_to": 515,
-  "action": "target_raise",
-  "source_url": "https://www-web.itiger.com/news/2583855979"
- },
- {
-  "date": "2026-11-12",
-  "ticker": "FDX",
-  "company": "FedEx",
-  "firm": "Citigroup",
-  "pt_from": 279,
-  "pt_to": 310,
-  "action": "target_raise",
-  "source_url": "https://www-web.itiger.com/news/2583855979"
- },
- {
-  "date": "2026-11-12",
-  "ticker": "APH",
-  "company": "Amphenol",
-  "firm": "Barclays",
-  "pt_from": 120,
-  "pt_to": 143,
-  "action": "target_raise",
-  "source_url": "https://www-web.itiger.com/news/2583855979"
- },
- {
-  "date": "2026-11-12",
-  "ticker": "CSCO",
-  "company": "Cisco Systems",
-  "firm": "BofA Global Research",
-  "pt_from": 85,
-  "pt_to": 95,
-  "action": "target_raise",
-  "source_url": "https://www-web.itiger.com/news/2583855979"
- },
- {
-  "date": "2026-11-12",
-  "ticker": "CRCL",
-  "company": "Circle Internet Group",
-  "firm": "Needham",
-  "pt_from": 250,
-  "pt_to": 190,
-  "action": "target_cut",
-  "source_url": "https://www-web.itiger.com/news/2583855979"
  },
  {
   "date": "2026-11-06",
