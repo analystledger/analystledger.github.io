@@ -1,17 +1,1 @@
-[
- {
-  "id": "4f00c935666c",
-  "reason": "downgrade on a major stock",
-  "queued": "2026-11-16"
- },
- {
-  "id": "27a447045ecd",
-  "reason": "price target moved 20%",
-  "queued": "2026-11-16"
- },
- {
-  "id": "8ce52a20ce01",
-  "reason": "cluster of analyst actions",
-  "queued": "2026-11-16"
- }
-]
+[]
