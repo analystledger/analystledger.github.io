@@ -27,7 +27,7 @@ Secrets go in GitHub under Settings → Secrets and variables → Actions → Ne
 | Telegram | Public channel, plus a bot from @BotFather. Add the bot as a channel admin. | `TELEGRAM_BOT_TOKEN`, `TELEGRAM_CHAT_ID` (e.g. `@analystledger`) |
 | Mastodon | Account, then Preferences → Development → New application (scope `write`) | `MASTODON_INSTANCE`, `MASTODON_TOKEN` |
 | X | Account, then developer.x.com → app with Read+Write → keys and access tokens. Mark the account as automated in its settings. | `X_API_KEY`, `X_API_SECRET`, `X_ACCESS_TOKEN`, `X_ACCESS_SECRET` |
-| Facebook | A Page, plus an app at developers.facebook.com. Generate a long-lived Page access token. | `FB_PAGE_ID`, `FB_PAGE_TOKEN` |
+| Facebook | A Page, plus an app at developers.facebook.com. Use a Page token that never expires (see below). | `FB_PAGE_ID`, `FB_PAGE_TOKEN` |
 | Instagram | Professional (Business/Creator) account linked to the Facebook Page | `IG_USER_ID` (uses `FB_PAGE_TOKEN`) |
 | TikTok | Account, plus an app at developers.tiktok.com with Content Posting API. Verify the site's URL prefix. | `TIKTOK_CLIENT_KEY`, `TIKTOK_CLIENT_SECRET`, `TIKTOK_REFRESH_TOKEN` |
 
@@ -47,3 +47,13 @@ Settings → Pages → Deploy from a branch → `main` / `/docs`.
 - `brand/`: profile picture and banners for the social accounts
 
 Disclaimer: information only, not investment advice.
+
+### Facebook/Instagram token that never expires
+
+1. In the Graph API Explorer (developers.facebook.com/tools/explorer), choose your app and generate a **User** token with
+   `pages_manage_posts`, `pages_read_engagement`, `pages_show_list`, `instagram_basic`, `instagram_content_publish`, `business_management`.
+2. Paste it into the Access Token Debugger (developers.facebook.com/tools/debug/accesstoken) and click **Extend Access Token**.
+3. Back in the Explorer, paste the extended token and run `GET me/accounts`. Copy your Page's `access_token`.
+4. Save it as the `FB_PAGE_TOKEN` secret, then run the **Check Facebook token** workflow (Actions tab). It should say `Expires: never`.
+
+Alerts that failed on a platform are retried automatically for 3 days, so posts missed while a token was expired go out on the next run.

@@ -12,7 +12,7 @@ Secrets (GitHub > Settings > Secrets and variables > Actions):
   Bluesky:    BSKY_HANDLE, BSKY_APP_PASSWORD
   Mastodon:   MASTODON_INSTANCE (e.g. https://mastodon.social), MASTODON_TOKEN
   Telegram:   TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID (e.g. @analystledger)
-  Facebook:   FB_PAGE_ID, FB_PAGE_TOKEN
+  Facebook:   FB_PAGE_ID, FB_PAGE_TOKEN (use a Page token that never expires; check it with `post_social.py fbcheck`)
   Instagram:  IG_USER_ID (+ FB_PAGE_TOKEN)
   TikTok:     TIKTOK_CLIENT_KEY, TIKTOK_CLIENT_SECRET, TIKTOK_REFRESH_TOKEN
 """
@@ -34,6 +34,7 @@ SITE = CFG["base_url"].rstrip("/") + CFG.get("base_path", "")
 DRY = "--dry-run" in sys.argv
 ENV = os.environ.get
 GRAPH = "https://graph.facebook.com/v21.0"
+RETRY_DAYS = 3  # failed platforms are retried for alerts on events this recent
 
 
 def money(v):
@@ -68,7 +69,7 @@ def alert_post(e, reason):
     tags = f"#{re.sub(r'[^A-Za-z]', '', e['ticker'])} " + " ".join(CFG["hashtags"][:2])
     short = f"{icon} {ACTIONS[e['action']]}: {body}\n\nFull analyst history: {url}\n{CFG['post_disclaimer']} {tags}"
     long = (f"{icon} {ACTIONS[e['action']].upper()} — ${e['ticker']}{' (' + e['company'] + ')' if e.get('company') else ''}\n\n"
-            f"{body}\nDate: {e['date']}\n\nWhy we flagged it: {reason}.\n\n"
+            f"{body}\nDate: {e['date']}\n\n" + (f"Why we flagged it: {reason}.\n\n" if reason else "") +
             f"See every dated call this analyst has made and how they scored: {url}\n\n"
             f"{CFG['post_disclaimer']} {tags} " + " ".join(CFG["hashtags"][2:]))
     col = GREEN if e["action"] in ("upgrade", "target_raise") else RED if e["action"] in ("downgrade", "target_cut") else None
@@ -217,15 +218,45 @@ def post_telegram(p):
     r.raise_for_status()
 
 
+_PAGE_TOKEN = None
+
+
 def page_token():
-    """FB_PAGE_TOKEN may hold either the Page token or the long-lived user token; return a Page token."""
+    """FB_PAGE_TOKEN may hold a Page token or a user token; return a Page token (cached per run)."""
+    global _PAGE_TOKEN
+    if _PAGE_TOKEN:
+        return _PAGE_TOKEN
     tok = ENV("FB_PAGE_TOKEN")
     try:
         r = requests.get(f"{GRAPH}/{ENV('FB_PAGE_ID')}", params={"fields": "access_token", "access_token": tok},
                          timeout=30).json()
-        return r.get("access_token") or tok
+        _PAGE_TOKEN = r.get("access_token") or tok
     except (requests.RequestException, ValueError):
-        return tok
+        _PAGE_TOKEN = tok
+    return _PAGE_TOKEN
+
+
+def check_facebook():
+    """Print what FB_PAGE_TOKEN is, when it expires and whether Facebook/Instagram accept it. Never prints the token."""
+    tok = ENV("FB_PAGE_TOKEN")
+    if not tok:
+        print("FB_PAGE_TOKEN is not set.")
+        return
+    d = requests.get(f"{GRAPH}/debug_token", params={"input_token": tok, "access_token": tok}, timeout=30).json()
+    d = d.get("data") or d
+    exp = d.get("expires_at")
+    print("Token type:  ", d.get("type"))
+    print("Valid:       ", d.get("is_valid"), (d.get("error") or {}).get("message", ""))
+    print("Expires:     ", "never" if exp == 0 else datetime.fromtimestamp(exp, timezone.utc).strftime("%Y-%m-%d %H:%M UTC") if exp else "unknown")
+    print("Permissions: ", ", ".join(d.get("scopes") or []))
+    pt = page_token()
+    page = requests.get(f"{GRAPH}/{ENV('FB_PAGE_ID')}", params={"fields": "name", "access_token": pt}, timeout=30).json()
+    print("Facebook Page:", page.get("name") or page.get("error", {}).get("message"))
+    if ENV("IG_USER_ID"):
+        ig = requests.get(f"{GRAPH}/{ENV('IG_USER_ID')}", params={"fields": "username", "access_token": pt}, timeout=30).json()
+        print("Instagram:    ", ig.get("username") or ig.get("error", {}).get("message"))
+    if exp not in (0, None) and d.get("type") != "PAGE":
+        print("\nThis token will expire. Follow the steps in README to make a Page token that never expires.")
 
 
 def post_facebook(p):
@@ -236,7 +267,7 @@ def post_facebook(p):
 
 
 def post_instagram(p):
-    ig, tok = ENV("IG_USER_ID"), ENV("FB_PAGE_TOKEN")
+    ig, tok = ENV("IG_USER_ID"), page_token()
     url = public_image_url(p)
     c = requests.post(f"{GRAPH}/{ig}/media", timeout=60,
                       data={"image_url": url, "caption": p["long"][:2150], "access_token": tok})
@@ -321,6 +352,9 @@ def publish(post, log):
 
 def main():
     mode = next((a for a in sys.argv[1:] if not a.startswith("--")), "alerts")
+    if mode == "fbcheck":
+        check_facebook()
+        return
     if not DRY and not any(all(ENV(k) for k in keys) for _, keys, _ in PLATFORMS):
         print("No social accounts connected yet - nothing posted, queue kept for later.")
         return
@@ -333,8 +367,19 @@ def main():
         for a in pending[:CFG["alerts"]["max_alert_posts_per_run"]]:
             if a["id"] in events and f"alert-{a['id']}" not in log:
                 posts.append(alert_post(events[a["id"]], a["reason"]))
+        # Retry recent alerts that failed on some platform (e.g. after an expired token is replaced).
+        cutoff = (date.today() - timedelta(days=RETRY_DAYS)).isoformat()
+        reasons = {a["id"]: a.get("reason", "") for a in load_json(os.path.join(DATA, "alerts_retry.json"), [])}
+        for pid, done in list(log.items()):
+            eid = pid[len("alert-"):]
+            if (pid.startswith("alert-") and eid in events and events[eid]["date"] >= cutoff
+                    and any(v != "ok" for v in done.values()) and pid not in {p["id"] for p in posts}):
+                posts.append(alert_post(events[eid], reasons.get(eid, "")))
         if not DRY:
-            save_json(os.path.join(DATA, "alerts_pending.json"), pending[CFG["alerts"]["max_alert_posts_per_run"]:])
+            n = CFG["alerts"]["max_alert_posts_per_run"]
+            save_json(os.path.join(DATA, "alerts_pending.json"), pending[n:])
+            retry_path = os.path.join(DATA, "alerts_retry.json")  # keeps each alert's reason for retries
+            save_json(retry_path, (load_json(retry_path, []) + pending[:n])[-100:])
     elif mode == "weekly":
         p = weekly_post(sorted(events.values(), key=lambda e: e["date"], reverse=True))
         if p:  # platforms that already received it are skipped inside publish()
