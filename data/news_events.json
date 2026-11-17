@@ -1,5 +1,336 @@
 [
  {
+  "date": "2026-11-17",
+  "ticker": "NUE",
+  "company": "Nucor",
+  "firm": "Morgan Stanley",
+  "rating_to": "Overweight",
+  "pt_to": 310,
+  "action": "upgrade",
+  "source_url": "https://pomegra.io/news/nucor-upgraded-to-overweight-at-morgan-stanley-target-310"
+ },
+ {
+  "date": "2026-11-17",
+  "ticker": "MDT",
+  "company": "Medtronic",
+  "firm": "Piper Sandler",
+  "action": "upgrade",
+  "source_url": "https://www.investing.com/news/analyst-ratings/piper-sandler-upgrades-medtronic-stock-rating-on-growth-outlook-93CH-5031840"
+ },
+ {
+  "date": "2026-11-17",
+  "ticker": "CSCO",
+  "company": "Cisco Systems",
+  "firm": "HSBC",
+  "action": "upgrade",
+  "source_url": "https://www.investing.com/news/analyst-ratings/hsbc-upgrades-cisco-stock-rating-on-ai-networking-growth-outlook-93CH-5031789"
+ },
+ {
+  "date": "2026-11-17",
+  "ticker": "PRAX",
+  "company": "Praxis Precision Medicines",
+  "firm": "Wells Fargo",
+  "action": "upgrade",
+  "source_url": "https://www.investing.com/news/analyst-ratings/wells-fargo-upgrades-praxis-precision-medicines-stock-rating-on-endpoint-confidence-93CH-5031700"
+ },
+ {
+  "date": "2026-11-17",
+  "ticker": "UNFI",
+  "company": "United Natural Foods",
+  "firm": "Goldman Sachs",
+  "rating_to": "Buy",
+  "action": "upgrade",
+  "source_url": "https://www.investing.com/news/analyst-ratings/goldman-sachs-upgrades-united-natural-foods-stock-rating-to-buy-93CH-5032072"
+ },
+ {
+  "date": "2026-11-17",
+  "ticker": "MPTI",
+  "company": "M-tron Industries",
+  "firm": "Freedom Broker",
+  "rating_to": "Buy",
+  "action": "upgrade",
+  "source_url": "https://www.investing.com/news/analyst-ratings/mtron-industries-stock-rating-upgraded-to-buy-by-freedom-broker-93CH-5032769"
+ },
+ {
+  "date": "2026-11-17",
+  "ticker": "PRG",
+  "company": "PROG Holdings",
+  "firm": "Loop Capital",
+  "rating_to": "Hold",
+  "action": "downgrade",
+  "source_url": "https://www.gurufocus.com/news/9204998/prg-downgraded-by-loop-capital-rating-changed-to-hold"
+ },
+ {
+  "date": "2026-11-17",
+  "ticker": "IDA",
+  "company": "IDACORP",
+  "firm": "Jefferies",
+  "action": "downgrade",
+  "source_url": "https://www.investing.com/news/analyst-ratings/jefferies-downgrades-idacorp-stock-rating-on-valuation-concerns-93CH-5032150"
+ },
+ {
+  "date": "2026-11-17",
+  "ticker": "TSN",
+  "company": "Tyson Foods",
+  "firm": "JPMorgan",
+  "rating_to": "Neutral",
+  "action": "downgrade",
+  "source_url": "https://www.investing.com/news/analyst-ratings/jpmorgan-downgrades-tyson-stock-rating-to-neutral-on-valuation-93CH-5031819"
+ },
+ {
+  "date": "2026-11-17",
+  "ticker": "TSN",
+  "company": "Tyson Foods",
+  "firm": "BMO Capital",
+  "action": "target_raise",
+  "source_url": "https://www.investing.com/news/analyst-ratings/bmo-raises-tyson-stock-price-target-on-beef-recovery-outlook-93CH-5033134"
+ },
+ {
+  "date": "2026-11-17",
+  "ticker": "TSN",
+  "company": "Tyson Foods",
+  "firm": "Bernstein",
+  "action": "target_raise",
+  "source_url": "https://www.investing.com/news/analyst-ratings/bernstein-raises-tyson-stock-price-target-on-new-ceo-priorities-93CH-5033041"
+ },
+ {
+  "date": "2026-11-17",
+  "ticker": "TSN",
+  "company": "Tyson Foods",
+  "firm": "Piper Sandler",
+  "action": "target_raise",
+  "source_url": "https://za.investing.com/news/stock-market-news/piper-sandler-raises-tyson-stock-price-target-on-beef-margin-outlook-93CH-4580924"
+ },
+ {
+  "date": "2026-11-17",
+  "ticker": "COST",
+  "company": "Costco Wholesale",
+  "firm": "Stifel",
+  "rating_to": "Buy",
+  "action": "initiate",
+  "source_url": "https://www.investing.com/news/analyst-ratings/stifel-initiates-costco-stock-with-buy-rating-on-membership-growth-93CH-5031722"
+ },
+ {
+  "date": "2026-11-17",
+  "ticker": "MUSA",
+  "company": "Murphy USA",
+  "firm": "Stifel",
+  "rating_to": "Hold",
+  "pt_to": 545,
+  "action": "initiate",
+  "source_url": "https://ca.investing.com/news/stock-market-news/stifel-initiates-murphy-usa-stock-coverage-with-hold-rating-93CH-4962849"
+ },
+ {
+  "date": "2026-11-17",
+  "ticker": "WSM",
+  "company": "Williams-Sonoma",
+  "firm": "Stifel",
+  "rating_to": "Buy",
+  "pt_to": 290,
+  "action": "initiate",
+  "source_url": "https://www.gurufocus.com/news/9204934/wsm-initiates-coverage-by-stifel-price-target-announced-at-290"
+ },
+ {
+  "date": "2026-11-17",
+  "ticker": "DLTR",
+  "company": "Dollar Tree",
+  "firm": "Stifel",
+  "pt_to": 160,
+  "action": "initiate",
+  "source_url": "https://www.gurufocus.com/news/9204955/dltr-initiates-coverage-on-stifel-price-target-announced-at-160"
+ },
+ {
+  "date": "2026-11-17",
+  "ticker": "SFM",
+  "company": "Sprouts Farmers Market",
+  "firm": "Stifel",
+  "rating_to": "Hold",
+  "pt_to": 50,
+  "action": "initiate",
+  "source_url": "https://www.gurufocus.com/news/9204979/sfm-initiates-coverage-on-stifel-rating-set-at-hold-with-price-target-of-50"
+ },
+ {
+  "date": "2026-11-17",
+  "ticker": "CASY",
+  "company": "Casey's General Stores",
+  "firm": "Stifel",
+  "pt_to": 800,
+  "action": "initiate",
+  "source_url": "https://www.gurufocus.com/news/9204939/casy-initiates-coverage-on-stifel-announces-price-target-of-800"
+ },
+ {
+  "date": "2026-11-17",
+  "ticker": "ORLY",
+  "company": "O'Reilly Automotive",
+  "firm": "Stifel",
+  "rating_to": "Buy",
+  "action": "initiate",
+  "source_url": "https://uk.investing.com/news/stock-market-news/stifel-initiates-oreilly-automotive-stock-with-buy-rating-93CH-4986693"
+ },
+ {
+  "date": "2026-11-17",
+  "ticker": "SN",
+  "company": "SharkNinja",
+  "firm": "Stifel",
+  "rating_to": "Buy",
+  "action": "initiate",
+  "source_url": "https://ca.investing.com/news/stock-market-news/stifel-initiates-sharkninja-stock-coverage-with-buy-rating-93CH-4962852"
+ },
+ {
+  "date": "2026-11-17",
+  "ticker": "WMT",
+  "company": "Walmart",
+  "firm": "Stifel",
+  "rating_to": "Buy",
+  "action": "initiate",
+  "source_url": "https://ca.investing.com/news/stock-market-news/stifel-initiates-walmart-stock-coverage-with-buy-rating-on-margin-growth-93CH-4962876"
+ },
+ {
+  "date": "2026-11-17",
+  "ticker": "MTZ",
+  "company": "MasTec",
+  "firm": "Morgan Stanley",
+  "pt_to": 220,
+  "action": "initiate",
+  "source_url": "https://www.gurufocus.com/news/9204801/mtz-initiates-coverage-by-morgan-stanley-price-target-set-at-220"
+ },
+ {
+  "date": "2026-11-17",
+  "ticker": "HD",
+  "company": "Home Depot",
+  "firm": "Evercore ISI",
+  "action": "reiterate",
+  "source_url": "https://www.investing.com/news/analyst-ratings/evercore-isi-reiterates-home-depot-stock-rating-on-sales-beat-93CH-5033200"
+ },
+ {
+  "date": "2026-11-17",
+  "ticker": "AAL",
+  "company": "American Airlines Group",
+  "firm": "UBS",
+  "pt_to": 17,
+  "action": "target_raise",
+  "source_url": "https://www.gurufocus.com/news/9205354/aal-maintained-by-ubs-price-target-raised-to-1700"
+ },
+ {
+  "date": "2026-11-17",
+  "ticker": "GXO",
+  "company": "GXO Logistics",
+  "firm": "Citigroup",
+  "pt_to": 71,
+  "action": "target_raise",
+  "source_url": "https://www.gurufocus.com/news/9205497/gxo-maintained-by-citigroup-price-target-raised-to-7100"
+ },
+ {
+  "date": "2026-11-17",
+  "ticker": "HELP",
+  "firm": "Canaccord Genuity",
+  "pt_to": 58,
+  "action": "target_raise",
+  "source_url": "https://www.gurufocus.com/news/9205458/help-maintained-by-canaccord-genuity-price-target-raised-to-5800"
+ },
+ {
+  "date": "2026-11-17",
+  "ticker": "AIG",
+  "company": "American International Group",
+  "firm": "Morgan Stanley",
+  "pt_to": 85,
+  "action": "target_raise",
+  "source_url": "https://www.gurufocus.com/news/9205486/aig-maintained-by-morgan-stanley-price-target-raised-to-85"
+ },
+ {
+  "date": "2026-11-17",
+  "ticker": "PH",
+  "company": "Parker-Hannifin",
+  "firm": "Morgan Stanley",
+  "pt_to": 1050,
+  "action": "target_raise",
+  "source_url": "https://www.gurufocus.com/news/9205505/ph-maintained-by-morgan-stanley-price-target-raised-to-1050"
+ },
+ {
+  "date": "2026-11-17",
+  "ticker": "PRU",
+  "company": "Prudential Financial",
+  "firm": "Mizuho",
+  "pt_to": 124,
+  "action": "target_raise",
+  "source_url": "https://www.gurufocus.com/news/9205460/pru-maintained-by-mizuho-price-target-raised-to-124"
+ },
+ {
+  "date": "2026-11-17",
+  "ticker": "ARMK",
+  "company": "Aramark",
+  "firm": "Baird",
+  "pt_to": 65,
+  "action": "target_cut",
+  "source_url": "https://www.gurufocus.com/news/9204712/armk-maintained-by-baird-price-target-lowered-to-6500"
+ },
+ {
+  "date": "2026-11-17",
+  "ticker": "SPG",
+  "company": "Simon Property Group",
+  "firm": "Citigroup",
+  "pt_to": 237,
+  "action": "target_raise",
+  "source_url": "https://www.gurufocus.com/news/9205521/spg-maintained-by-citigroup-price-target-raised-to-237"
+ },
+ {
+  "date": "2026-11-17",
+  "ticker": "BEPC",
+  "company": "Brookfield Renewable Corp",
+  "firm": "Morgan Stanley",
+  "pt_to": 39,
+  "action": "target_raise",
+  "source_url": "https://www.gurufocus.com/news/9205493/bepc-maintained-by-morgan-stanley-price-target-raised-to-3900"
+ },
+ {
+  "date": "2026-11-17",
+  "ticker": "CWEN",
+  "company": "Clearway Energy",
+  "firm": "Morgan Stanley",
+  "pt_to": 53,
+  "action": "target_raise",
+  "source_url": "https://www.gurufocus.com/news/9205494/cwen-maintained-by-morgan-stanley-price-target-raised-to-5300"
+ },
+ {
+  "date": "2026-11-17",
+  "ticker": "EMR",
+  "company": "Emerson Electric",
+  "firm": "Morgan Stanley",
+  "pt_to": 175,
+  "action": "target_raise",
+  "source_url": "https://www.gurufocus.com/news/9204818/emr-maintained-by-morgan-stanley-price-target-raised-to-175"
+ },
+ {
+  "date": "2026-11-17",
+  "ticker": "ACRS",
+  "company": "Aclaris Therapeutics",
+  "firm": "Canaccord Genuity",
+  "pt_to": 12,
+  "action": "target_cut",
+  "source_url": "https://www.gurufocus.com/news/9205454/acrs-maintained-by-canaccord-genuity-price-target-lowered-to-12"
+ },
+ {
+  "date": "2026-11-17",
+  "ticker": "AXTI",
+  "company": "AXT Inc",
+  "firm": "B. Riley Securities",
+  "rating_from": "Neutral",
+  "rating_to": "Neutral",
+  "pt_to": 43,
+  "action": "target_cut",
+  "source_url": "https://www.gurufocus.com/news/9205360/axti-maintains-neutral-rating-price-target-lowered-to-4300-by-b-riley-securities"
+ },
+ {
+  "date": "2026-11-17",
+  "ticker": "NATL",
+  "company": "NCR Atleos",
+  "firm": "DA Davidson",
+  "rating_from": "Neutral",
+  "rating_to": "Neutral",
+  "action": "reiterate",
+  "source_url": "https://www.gurufocus.com/news/9205645/natl-maintained-by-da-davidson-rating-remains-neutral"
+ },
+ {
   "date": "2026-11-16",
   "ticker": "NUE",
   "company": "Nucor",
@@ -362,6 +693,17 @@
   "rating_to": "Equal Weight",
   "action": "initiate",
   "source_url": "https://www.everhint.com/analyst-hints-ratings-november-16-2026-midday-update-last-24-hours-pacific-time/"
+ },
+ {
+  "date": "2026-11-16",
+  "ticker": "OXY",
+  "company": "Occidental Petroleum",
+  "analyst": "Vin Lovaglio",
+  "firm": "Seaport Global",
+  "rating_from": "Buy",
+  "rating_to": "Neutral",
+  "action": "downgrade",
+  "source_url": "https://www.gurufocus.com/news/9201437/oxy-downgraded-by-seaport-global-rating-changed-to-neutral"
  },
  {
   "date": "2026-11-13",
