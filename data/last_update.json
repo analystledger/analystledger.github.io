@@ -1,11 +1,11 @@
 {
- "updated_utc": "2026-11-18 20:58 UTC",
- "total_events": 127,
- "new_events": 0,
+ "updated_utc": "2026-11-18 21:50 UTC",
+ "total_events": 159,
+ "new_events": 32,
  "log": [
   "FMP: no FMP_API_KEY set - skipped",
   "Finnhub: no FINNHUB_API_KEY set - skipped",
-  "News (Claude): 127 events",
-  "Alerts queued: 0 pending"
+  "News (Claude): 159 events",
+  "Alerts queued: 4 pending"
  ]
 }

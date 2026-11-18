@@ -6,6 +6,96 @@
  },
  {
   "t": "a",
+  "n": "JPMorgan (research team)",
+  "u": "analysts/jpmorgan-research.html"
+ },
+ {
+  "t": "a",
+  "n": "Piper Sandler (research team)",
+  "u": "analysts/piper-sandler-research.html"
+ },
+ {
+  "t": "a",
+  "n": "Jefferies (research team)",
+  "u": "analysts/jefferies-research.html"
+ },
+ {
+  "t": "a",
+  "n": "Erste Group (research team)",
+  "u": "analysts/erste-group-research.html"
+ },
+ {
+  "t": "a",
+  "n": "TD Cowen (research team)",
+  "u": "analysts/td-cowen-research.html"
+ },
+ {
+  "t": "a",
+  "n": "Wells Fargo (research team)",
+  "u": "analysts/wells-fargo-research.html"
+ },
+ {
+  "t": "a",
+  "n": "Truist Securities (research team)",
+  "u": "analysts/truist-securities-research.html"
+ },
+ {
+  "t": "a",
+  "n": "BMO Capital (research team)",
+  "u": "analysts/bmo-capital-research.html"
+ },
+ {
+  "t": "a",
+  "n": "Guggenheim (research team)",
+  "u": "analysts/guggenheim-research.html"
+ },
+ {
+  "t": "a",
+  "n": "Needham (research team)",
+  "u": "analysts/needham-research.html"
+ },
+ {
+  "t": "a",
+  "n": "Raymond James (research team)",
+  "u": "analysts/raymond-james-research.html"
+ },
+ {
+  "t": "a",
+  "n": "Dan Ives",
+  "u": "analysts/dan-ives-wedbush.html"
+ },
+ {
+  "t": "a",
+  "n": "Summit Insights (research team)",
+  "u": "analysts/summit-insights-research.html"
+ },
+ {
+  "t": "a",
+  "n": "Rodman & Renshaw (research team)",
+  "u": "analysts/rodman-renshaw-research.html"
+ },
+ {
+  "t": "a",
+  "n": "BofA Securities (research team)",
+  "u": "analysts/bofa-securities-research.html"
+ },
+ {
+  "t": "a",
+  "n": "Argus (research team)",
+  "u": "analysts/argus-research.html"
+ },
+ {
+  "t": "a",
+  "n": "Rosenblatt (research team)",
+  "u": "analysts/rosenblatt-research.html"
+ },
+ {
+  "t": "a",
+  "n": "StoneX (research team)",
+  "u": "analysts/stonex-research.html"
+ },
+ {
+  "t": "a",
   "n": "Morgan Stanley (research team)",
   "u": "analysts/morgan-stanley-research.html"
  },
@@ -21,18 +111,8 @@
  },
  {
   "t": "a",
-  "n": "JPMorgan (research team)",
-  "u": "analysts/jpmorgan-research.html"
- },
- {
-  "t": "a",
   "n": "Bernstein (research team)",
   "u": "analysts/bernstein-research.html"
- },
- {
-  "t": "a",
-  "n": "Piper Sandler (research team)",
-  "u": "analysts/piper-sandler-research.html"
  },
  {
   "t": "a",
@@ -46,18 +126,8 @@
  },
  {
   "t": "a",
-  "n": "Jefferies (research team)",
-  "u": "analysts/jefferies-research.html"
- },
- {
-  "t": "a",
   "n": "Goldman Sachs (research team)",
   "u": "analysts/goldman-sachs-research.html"
- },
- {
-  "t": "a",
-  "n": "Wells Fargo (research team)",
-  "u": "analysts/wells-fargo-research.html"
  },
  {
   "t": "a",
@@ -73,11 +143,6 @@
   "t": "a",
   "n": "Canaccord Genuity (research team)",
   "u": "analysts/canaccord-genuity-research.html"
- },
- {
-  "t": "a",
-  "n": "BMO Capital (research team)",
-  "u": "analysts/bmo-capital-research.html"
  },
  {
   "t": "a",
@@ -111,11 +176,6 @@
  },
  {
   "t": "a",
-  "n": "TD Cowen (research team)",
-  "u": "analysts/td-cowen-research.html"
- },
- {
-  "t": "a",
   "n": "Cantor Fitzgerald (research team)",
   "u": "analysts/cantor-fitzgerald-research.html"
  },
@@ -131,11 +191,6 @@
  },
  {
   "t": "a",
-  "n": "Guggenheim (research team)",
-  "u": "analysts/guggenheim-research.html"
- },
- {
-  "t": "a",
   "n": "Vin Lovaglio",
   "u": "analysts/vin-lovaglio-seaport-global.html"
  },
@@ -146,11 +201,6 @@
  },
  {
   "t": "a",
-  "n": "Raymond James (research team)",
-  "u": "analysts/raymond-james-research.html"
- },
- {
-  "t": "a",
   "n": "Zelman & Associates (research team)",
   "u": "analysts/zelman-associates-research.html"
  },
@@ -158,11 +208,6 @@
   "t": "a",
   "n": "Melius Research (research team)",
   "u": "analysts/melius-research-research.html"
- },
- {
-  "t": "a",
-  "n": "Truist Securities (research team)",
-  "u": "analysts/truist-securities-research.html"
  },
  {
   "t": "a",
@@ -241,11 +286,6 @@
  },
  {
   "t": "a",
-  "n": "Needham (research team)",
-  "u": "analysts/needham-research.html"
- },
- {
-  "t": "a",
   "n": "DZ Bank (research team)",
   "u": "analysts/dz-bank-research.html"
  },
@@ -293,6 +333,106 @@
   "t": "a",
   "n": "Jay Sole",
   "u": "analysts/jay-sole-ubs.html"
+ },
+ {
+  "t": "s",
+  "n": "NVDA NVIDIA",
+  "u": "stocks/nvda.html"
+ },
+ {
+  "t": "s",
+  "n": "DIS Walt Disney",
+  "u": "stocks/dis.html"
+ },
+ {
+  "t": "s",
+  "n": "TYL Tyler Technologies",
+  "u": "stocks/tyl.html"
+ },
+ {
+  "t": "s",
+  "n": "PODD Insulet",
+  "u": "stocks/podd.html"
+ },
+ {
+  "t": "s",
+  "n": "NKE Nike",
+  "u": "stocks/nke.html"
+ },
+ {
+  "t": "s",
+  "n": "XOM Exxon Mobil",
+  "u": "stocks/xom.html"
+ },
+ {
+  "t": "s",
+  "n": "TNDM Tandem Diabetes Care",
+  "u": "stocks/tndm.html"
+ },
+ {
+  "t": "s",
+  "n": "TIGO Millicom",
+  "u": "stocks/tigo.html"
+ },
+ {
+  "t": "s",
+  "n": "RPRX Royalty Pharma",
+  "u": "stocks/rprx.html"
+ },
+ {
+  "t": "s",
+  "n": "MANH Manhattan Associates",
+  "u": "stocks/manh.html"
+ },
+ {
+  "t": "s",
+  "n": "LTRN Lantern Pharma",
+  "u": "stocks/ltrn.html"
+ },
+ {
+  "t": "s",
+  "n": "INVA Innoviva",
+  "u": "stocks/inva.html"
+ },
+ {
+  "t": "s",
+  "n": "GEV GE Vernova",
+  "u": "stocks/gev.html"
+ },
+ {
+  "t": "s",
+  "n": "FCX Freeport-McMoRan",
+  "u": "stocks/fcx.html"
+ },
+ {
+  "t": "s",
+  "n": "ETN Eaton",
+  "u": "stocks/etn.html"
+ },
+ {
+  "t": "s",
+  "n": "ENVX Enovix",
+  "u": "stocks/envx.html"
+ },
+ {
+  "t": "s",
+  "n": "ELV Elevance Health",
+  "u": "stocks/elv.html"
+ },
+ {
+  "t": "s",
+  "n": "CART Instacart",
+  "u": "stocks/cart.html"
+ },
+ {
+  "t": "s",
+  "n": "ALNY Alnylam Pharmaceuticals",
+  "u": "stocks/alny.html"
+ },
+ {
+  "t": "s",
+  "n": "ABBV AbbVie",
+  "u": "stocks/abbv.html"
  },
  {
   "t": "s",
@@ -463,11 +603,6 @@
   "t": "s",
   "n": "AAL American Airlines Group",
   "u": "stocks/aal.html"
- },
- {
-  "t": "s",
-  "n": "NVDA NVIDIA",
-  "u": "stocks/nvda.html"
  },
  {
   "t": "s",
