@@ -13,5 +13,20 @@
   "id": "8ce52a20ce01",
   "reason": "cluster of analyst actions",
   "queued": "2026-11-16"
+ },
+ {
+  "id": "451c1fb0e5a8",
+  "reason": "cluster of analyst actions",
+  "queued": "2026-11-18"
+ },
+ {
+  "id": "2f58885e05b1",
+  "reason": "downgrade on a major stock",
+  "queued": "2026-11-18"
+ },
+ {
+  "id": "5ecdae0a6ae3",
+  "reason": "price target moved 23%",
+  "queued": "2026-11-18"
  }
 ]
