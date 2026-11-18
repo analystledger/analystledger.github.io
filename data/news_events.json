@@ -1,5 +1,330 @@
 [
  {
+  "date": "2026-11-18",
+  "ticker": "NVDA",
+  "company": "Nvidia",
+  "firm": "JPMorgan",
+  "rating_from": "Overweight",
+  "rating_to": "Overweight",
+  "pt_from": 215,
+  "pt_to": 230,
+  "action": "target_raise",
+  "source_url": "https://www.everhint.com/analyst-ratings-november-18-2026-midday-update-last-24-hours-pacific-time/"
+ },
+ {
+  "date": "2026-11-18",
+  "ticker": "NVDA",
+  "company": "Nvidia",
+  "analyst": "Dan Ives",
+  "firm": "Wedbush",
+  "rating_to": "Outperform",
+  "pt_from": 275,
+  "pt_to": 293,
+  "action": "target_raise",
+  "source_url": "https://www.everhint.com/analyst-ratings-november-18-2026-midday-update-last-24-hours-pacific-time/"
+ },
+ {
+  "date": "2026-11-18",
+  "ticker": "NVDA",
+  "company": "Nvidia",
+  "firm": "Summit Insights",
+  "rating_from": "Buy",
+  "rating_to": "Hold",
+  "action": "downgrade",
+  "source_url": "https://www.everhint.com/analyst-ratings-november-18-2026-midday-update-last-24-hours-pacific-time/"
+ },
+ {
+  "date": "2026-11-18",
+  "ticker": "NVDA",
+  "company": "Nvidia",
+  "firm": "Piper Sandler",
+  "rating_from": "Overweight",
+  "rating_to": "Overweight",
+  "pt_from": 300,
+  "pt_to": 230,
+  "action": "target_cut",
+  "source_url": "https://www.everhint.com/analyst-ratings-november-18-2026-midday-update-last-24-hours-pacific-time/"
+ },
+ {
+  "date": "2026-11-18",
+  "ticker": "ELV",
+  "company": "Elevance Health",
+  "firm": "Argus",
+  "rating_from": "Hold",
+  "rating_to": "Buy",
+  "pt_to": 510,
+  "action": "upgrade",
+  "source_url": "https://www.everhint.com/analyst-ratings-november-18-2026-midday-update-last-24-hours-pacific-time/"
+ },
+ {
+  "date": "2026-11-18",
+  "ticker": "ABBV",
+  "company": "AbbVie",
+  "firm": "Piper Sandler",
+  "rating_from": "Overweight",
+  "rating_to": "Overweight",
+  "pt_from": 303,
+  "pt_to": 349,
+  "action": "target_raise",
+  "source_url": "https://www.everhint.com/analyst-ratings-november-18-2026-midday-update-last-24-hours-pacific-time/"
+ },
+ {
+  "date": "2026-11-18",
+  "ticker": "CART",
+  "company": "Instacart",
+  "firm": "Piper Sandler",
+  "rating_from": "Overweight",
+  "rating_to": "Overweight",
+  "pt_from": 50,
+  "pt_to": 65,
+  "action": "target_raise",
+  "source_url": "https://www.everhint.com/analyst-ratings-november-18-2026-midday-update-last-24-hours-pacific-time/"
+ },
+ {
+  "date": "2026-11-18",
+  "ticker": "PODD",
+  "company": "Insulet",
+  "firm": "Stifel",
+  "rating_from": "Buy",
+  "rating_to": "Hold",
+  "pt_to": 165,
+  "action": "downgrade",
+  "source_url": "https://www.everhint.com/analyst-ratings-november-18-2026-midday-update-last-24-hours-pacific-time/"
+ },
+ {
+  "date": "2026-11-18",
+  "ticker": "ENVX",
+  "company": "Enovix",
+  "firm": "BofA Securities",
+  "rating_from": "Neutral",
+  "rating_to": "Underperform",
+  "pt_from": 5,
+  "pt_to": 1,
+  "action": "downgrade",
+  "source_url": "https://investrade.com/morning-preview-november-18-2026/"
+ },
+ {
+  "date": "2026-11-18",
+  "ticker": "DIS",
+  "company": "Walt Disney",
+  "firm": "Guggenheim",
+  "rating_from": "Buy",
+  "rating_to": "Buy",
+  "pt_from": 120,
+  "pt_to": 135,
+  "action": "target_raise",
+  "source_url": "https://www.everhint.com/analyst-ratings-november-18-2026-midday-update-last-24-hours-pacific-time/"
+ },
+ {
+  "date": "2026-11-18",
+  "ticker": "ALNY",
+  "company": "Alnylam Pharmaceuticals",
+  "firm": "JPMorgan",
+  "rating_from": "Overweight",
+  "rating_to": "Overweight",
+  "pt_from": 369,
+  "pt_to": 254,
+  "action": "target_cut",
+  "source_url": "https://www.everhint.com/analyst-ratings-november-18-2026-midday-update-last-24-hours-pacific-time/"
+ },
+ {
+  "date": "2026-11-18",
+  "ticker": "RPRX",
+  "company": "Royalty Pharma",
+  "firm": "TD Cowen",
+  "rating_from": "Buy",
+  "rating_to": "Buy",
+  "pt_from": 68,
+  "pt_to": 80,
+  "action": "target_raise",
+  "source_url": "https://www.everhint.com/analyst-ratings-november-18-2026-midday-update-last-24-hours-pacific-time/"
+ },
+ {
+  "date": "2026-11-18",
+  "ticker": "GEV",
+  "company": "GE Vernova",
+  "firm": "Erste Group",
+  "rating_from": "Buy",
+  "rating_to": "Hold",
+  "action": "downgrade",
+  "source_url": "https://www.everhint.com/analyst-ratings-november-18-2026-midday-update-last-24-hours-pacific-time/"
+ },
+ {
+  "date": "2026-11-18",
+  "ticker": "ETN",
+  "company": "Eaton",
+  "firm": "Erste Group",
+  "rating_from": "Buy",
+  "rating_to": "Hold",
+  "action": "downgrade",
+  "source_url": "https://www.everhint.com/analyst-ratings-november-18-2026-midday-update-last-24-hours-pacific-time/"
+ },
+ {
+  "date": "2026-11-18",
+  "ticker": "FCX",
+  "company": "Freeport-McMoRan",
+  "firm": "Erste Group",
+  "rating_from": "Buy",
+  "rating_to": "Hold",
+  "action": "downgrade",
+  "source_url": "https://www.everhint.com/analyst-ratings-november-18-2026-midday-update-last-24-hours-pacific-time/"
+ },
+ {
+  "date": "2026-11-18",
+  "ticker": "XOM",
+  "company": "Exxon Mobil",
+  "firm": "Erste Group",
+  "rating_to": "Buy",
+  "action": "upgrade",
+  "source_url": "https://www.everhint.com/analyst-ratings-november-18-2026-midday-update-last-24-hours-pacific-time/"
+ },
+ {
+  "date": "2026-11-18",
+  "ticker": "TYL",
+  "company": "Tyler Technologies",
+  "firm": "Truist Securities",
+  "pt_to": 500,
+  "action": "target_raise",
+  "source_url": "https://www.everhint.com/analyst-ratings-november-18-2026-midday-update-last-24-hours-pacific-time/"
+ },
+ {
+  "date": "2026-11-18",
+  "ticker": "TYL",
+  "company": "Tyler Technologies",
+  "firm": "TD Cowen",
+  "pt_to": 475,
+  "action": "target_raise",
+  "source_url": "https://www.everhint.com/analyst-ratings-november-18-2026-midday-update-last-24-hours-pacific-time/"
+ },
+ {
+  "date": "2026-11-18",
+  "ticker": "LTRN",
+  "company": "Lantern Pharma",
+  "firm": "Rodman & Renshaw",
+  "rating_to": "Neutral",
+  "action": "downgrade",
+  "source_url": "https://www.everhint.com/analyst-ratings-november-18-2026-midday-update-last-24-hours-pacific-time/"
+ },
+ {
+  "date": "2026-11-18",
+  "ticker": "DIS",
+  "company": "Walt Disney",
+  "firm": "Wells Fargo",
+  "pt_to": 140,
+  "action": "target_raise",
+  "source_url": "https://www.everhint.com/analyst-ratings-november-18-2026-midday-update-last-24-hours-pacific-time/"
+ },
+ {
+  "date": "2026-11-18",
+  "ticker": "DIS",
+  "company": "Walt Disney",
+  "firm": "Rosenblatt",
+  "pt_to": 141,
+  "action": "target_raise",
+  "source_url": "https://www.everhint.com/analyst-ratings-november-18-2026-midday-update-last-24-hours-pacific-time/"
+ },
+ {
+  "date": "2026-11-18",
+  "ticker": "DIS",
+  "company": "Walt Disney",
+  "firm": "Needham",
+  "pt_to": 135,
+  "action": "target_raise",
+  "source_url": "https://www.everhint.com/analyst-ratings-november-18-2026-midday-update-last-24-hours-pacific-time/"
+ },
+ {
+  "date": "2026-11-18",
+  "ticker": "DIS",
+  "company": "Walt Disney",
+  "firm": "Raymond James",
+  "pt_to": 133,
+  "action": "target_raise",
+  "source_url": "https://www.everhint.com/analyst-ratings-november-18-2026-midday-update-last-24-hours-pacific-time/"
+ },
+ {
+  "date": "2026-11-18",
+  "ticker": "DIS",
+  "company": "Walt Disney",
+  "firm": "StoneX",
+  "pt_to": 130,
+  "action": "target_raise",
+  "source_url": "https://www.everhint.com/analyst-ratings-november-18-2026-midday-update-last-24-hours-pacific-time/"
+ },
+ {
+  "date": "2026-11-18",
+  "ticker": "DIS",
+  "company": "Walt Disney",
+  "firm": "JPMorgan",
+  "pt_to": 140,
+  "action": "target_raise",
+  "source_url": "https://www.everhint.com/analyst-ratings-november-18-2026-midday-update-last-24-hours-pacific-time/"
+ },
+ {
+  "date": "2026-11-18",
+  "ticker": "PODD",
+  "company": "Insulet",
+  "firm": "Jefferies",
+  "rating_to": "Buy",
+  "pt_to": 200,
+  "action": "reiterate",
+  "source_url": "https://www.everhint.com/analyst-ratings-november-18-2026-midday-update-last-24-hours-pacific-time/"
+ },
+ {
+  "date": "2026-11-18",
+  "ticker": "NKE",
+  "company": "Nike",
+  "firm": "Truist Securities",
+  "rating_to": "Sell",
+  "pt_to": 29,
+  "action": "reiterate",
+  "source_url": "https://www.everhint.com/analyst-ratings-november-18-2026-midday-update-last-24-hours-pacific-time/"
+ },
+ {
+  "date": "2026-11-18",
+  "ticker": "NKE",
+  "company": "Nike",
+  "firm": "BMO Capital",
+  "rating_to": "Underperform",
+  "pt_to": 25,
+  "action": "reiterate",
+  "source_url": "https://www.everhint.com/analyst-ratings-november-18-2026-midday-update-last-24-hours-pacific-time/"
+ },
+ {
+  "date": "2026-11-18",
+  "ticker": "TNDM",
+  "company": "Tandem Diabetes Care",
+  "firm": "Stifel",
+  "rating_to": "Buy",
+  "action": "upgrade",
+  "source_url": "https://www.everhint.com/analyst-ratings-november-18-2026-midday-update-last-24-hours-pacific-time/"
+ },
+ {
+  "date": "2026-11-18",
+  "ticker": "MANH",
+  "company": "Manhattan Associates",
+  "firm": "JPMorgan",
+  "rating_to": "Overweight",
+  "action": "initiate",
+  "source_url": "https://www.everhint.com/analyst-ratings-november-18-2026-midday-update-last-24-hours-pacific-time/"
+ },
+ {
+  "date": "2026-11-18",
+  "ticker": "INVA",
+  "company": "Innoviva",
+  "firm": "Piper Sandler",
+  "rating_to": "Overweight",
+  "action": "initiate",
+  "source_url": "https://www.everhint.com/analyst-ratings-november-18-2026-midday-update-last-24-hours-pacific-time/"
+ },
+ {
+  "date": "2026-11-18",
+  "ticker": "TIGO",
+  "company": "Millicom",
+  "firm": "JPMorgan",
+  "action": "upgrade",
+  "source_url": "https://www.investing.com/news/analyst-ratings/jpmorgan-upgrades-millicom-stock-rating-on-valuation-opportunity-93CH-5034947"
+ },
+ {
   "date": "2026-11-17",
   "ticker": "NUE",
   "company": "Nucor",
