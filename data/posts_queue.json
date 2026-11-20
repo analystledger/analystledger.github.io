@@ -1,1 +1,15 @@
-[]
+[
+  {
+    "id": "options-2026-11-20",
+    "status": "pending",
+    "kicker": "Weekly options watch",
+    "title": "Thanksgiving week: Dell, Best Buy & NVDA vol",
+    "card_lines": [
+      "$DELL: options imply ~12-16% move on Nov 24 earnings",
+      "$BBY: ~10% implied move Nov 24; Telsey lifted PT to $110",
+      "$NVDA: IV rank fell 100 to ~59 after a 0.4x priced move"
+    ],
+    "short": "Weekly options watch: $DELL prices a ~12-16% earnings move (Nov 24), $BBY ~10% after a PT hike, $NVDA vol reset post-print. VIX ~24-25. https://analystledger.github.io #options #stocks",
+    "long": "Weekly options watch for Thanksgiving week: here is what the options market is pricing heading into a holiday-shortened week (closed Thu Nov 26, half-day Fri), with VIX hovering around 24-25 and the October PCE report due Wed Nov 25.\n\n• $DELL — reports Tue Nov 24 after the close. Options imply a post-earnings move of roughly 12-16% depending on source, well above a typical large-cap print. Put open interest clusters near $300-310 and calls near $400, framing the range traders are watching.\n\n• $BBY — reports Tue Nov 24 before the open with an implied move near ±9.6%. Telsey Advisory raised its price target to $110 (Outperform) this week, making it a read on holiday-season consumer demand.\n\n• $NVDA — after pricing a ~7.7% earnings-day move, shares moved about 0.4x that amount and IV rank dropped from 100 to ~59. It also drew 14 analyst actions on our tracker this week, including six price-target cuts and two downgrades. Watch whether implied volatility keeps resetting lower.\n\nAlso on deck: $HPE (±14%), $WDAY, $ADSK, $HPQ and $DE.\n\nTrack every rating change free at https://analystledger.github.io\n\nEducational only — not investment advice.\n#options #stocks"
+  }
+]
