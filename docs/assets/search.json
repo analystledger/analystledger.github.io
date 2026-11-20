@@ -1,8 +1,23 @@
 [
  {
   "t": "a",
+  "n": "Raymond James (research team)",
+  "u": "analysts/raymond-james-research.html"
+ },
+ {
+  "t": "a",
+  "n": "Michael Tyndall",
+  "u": "analysts/michael-tyndall-hsbc.html"
+ },
+ {
+  "t": "a",
   "n": "JPMorgan (research team)",
   "u": "analysts/jpmorgan-research.html"
+ },
+ {
+  "t": "a",
+  "n": "UBS (research team)",
+  "u": "analysts/ubs-research.html"
  },
  {
   "t": "a",
@@ -11,8 +26,58 @@
  },
  {
   "t": "a",
+  "n": "Wells Fargo (research team)",
+  "u": "analysts/wells-fargo-research.html"
+ },
+ {
+  "t": "a",
   "n": "RBC Capital (research team)",
   "u": "analysts/rbc-capital-research.html"
+ },
+ {
+  "t": "a",
+  "n": "BMO Capital (research team)",
+  "u": "analysts/bmo-capital-research.html"
+ },
+ {
+  "t": "a",
+  "n": "Argus (research team)",
+  "u": "analysts/argus-research.html"
+ },
+ {
+  "t": "a",
+  "n": "Elyse Greenspan",
+  "u": "analysts/elyse-greenspan-wells-fargo.html"
+ },
+ {
+  "t": "a",
+  "n": "Casey Coates",
+  "u": "analysts/casey-coates-loop-capital.html"
+ },
+ {
+  "t": "a",
+  "n": "Julien Dumoulin-Smith",
+  "u": "analysts/julien-dumoulin-smith-jefferies.html"
+ },
+ {
+  "t": "a",
+  "n": "Kepler (research team)",
+  "u": "analysts/kepler-research.html"
+ },
+ {
+  "t": "a",
+  "n": "Williams Trading (research team)",
+  "u": "analysts/williams-trading-research.html"
+ },
+ {
+  "t": "a",
+  "n": "James Friedman",
+  "u": "analysts/james-friedman-susquehanna.html"
+ },
+ {
+  "t": "a",
+  "n": "B. Riley (research team)",
+  "u": "analysts/b-riley-research.html"
  },
  {
   "t": "a",
@@ -28,16 +93,6 @@
   "t": "a",
   "n": "Piper Sandler (research team)",
   "u": "analysts/piper-sandler-research.html"
- },
- {
-  "t": "a",
-  "n": "UBS (research team)",
-  "u": "analysts/ubs-research.html"
- },
- {
-  "t": "a",
-  "n": "Wells Fargo (research team)",
-  "u": "analysts/wells-fargo-research.html"
  },
  {
   "t": "a",
@@ -66,11 +121,6 @@
  },
  {
   "t": "a",
-  "n": "BMO Capital (research team)",
-  "u": "analysts/bmo-capital-research.html"
- },
- {
-  "t": "a",
   "n": "Sheila Kahyaoglu",
   "u": "analysts/sheila-kahyaoglu-jefferies.html"
  },
@@ -88,11 +138,6 @@
   "t": "a",
   "n": "Needham (research team)",
   "u": "analysts/needham-research.html"
- },
- {
-  "t": "a",
-  "n": "Raymond James (research team)",
-  "u": "analysts/raymond-james-research.html"
  },
  {
   "t": "a",
@@ -133,11 +178,6 @@
   "t": "a",
   "n": "Rodman & Renshaw (research team)",
   "u": "analysts/rodman-renshaw-research.html"
- },
- {
-  "t": "a",
-  "n": "Argus (research team)",
-  "u": "analysts/argus-research.html"
  },
  {
   "t": "a",
@@ -381,8 +421,58 @@
  },
  {
   "t": "s",
+  "n": "WMT Walmart",
+  "u": "stocks/wmt.html"
+ },
+ {
+  "t": "s",
+  "n": "TSLA Tesla Inc.",
+  "u": "stocks/tsla.html"
+ },
+ {
+  "t": "s",
+  "n": "UNM Unum Group",
+  "u": "stocks/unm.html"
+ },
+ {
+  "t": "s",
+  "n": "BOX Box",
+  "u": "stocks/box.html"
+ },
+ {
+  "t": "s",
+  "n": "BILL BILL Holdings",
+  "u": "stocks/bill.html"
+ },
+ {
+  "t": "s",
   "n": "WWD Woodward Inc.",
   "u": "stocks/wwd.html"
+ },
+ {
+  "t": "s",
+  "n": "UPBD Upbound Group Inc.",
+  "u": "stocks/upbd.html"
+ },
+ {
+  "t": "s",
+  "n": "PRIM Primoris Services Corporation",
+  "u": "stocks/prim.html"
+ },
+ {
+  "t": "s",
+  "n": "LIN Linde plc",
+  "u": "stocks/lin.html"
+ },
+ {
+  "t": "s",
+  "n": "IP International Paper Co.",
+  "u": "stocks/ip.html"
+ },
+ {
+  "t": "s",
+  "n": "DKS Dick's Sporting Goods Inc.",
+  "u": "stocks/dks.html"
  },
  {
   "t": "s",
@@ -393,6 +483,36 @@
   "t": "s",
   "n": "CI The Cigna Group",
   "u": "stocks/ci.html"
+ },
+ {
+  "t": "s",
+  "n": "BRO Brown & Brown Inc.",
+  "u": "stocks/bro.html"
+ },
+ {
+  "t": "s",
+  "n": "BHVN Biohaven Ltd.",
+  "u": "stocks/bhvn.html"
+ },
+ {
+  "t": "s",
+  "n": "BE Bloom Energy Corp.",
+  "u": "stocks/be.html"
+ },
+ {
+  "t": "s",
+  "n": "ASTS AST SpaceMobile Inc.",
+  "u": "stocks/asts.html"
+ },
+ {
+  "t": "s",
+  "n": "AON Aon plc",
+  "u": "stocks/aon.html"
+ },
+ {
+  "t": "s",
+  "n": "AJG Arthur J. Gallagher & Co.",
+  "u": "stocks/ajg.html"
  },
  {
   "t": "s",
@@ -563,11 +683,6 @@
   "t": "s",
   "n": "CSCO Cisco Systems",
   "u": "stocks/csco.html"
- },
- {
-  "t": "s",
-  "n": "WMT Walmart",
-  "u": "stocks/wmt.html"
  },
  {
   "t": "s",
@@ -831,16 +946,6 @@
  },
  {
   "t": "s",
-  "n": "BOX Box",
-  "u": "stocks/box.html"
- },
- {
-  "t": "s",
-  "n": "BILL BILL Holdings",
-  "u": "stocks/bill.html"
- },
- {
-  "t": "s",
   "n": "BILI Bilibili",
   "u": "stocks/bili.html"
  },
@@ -1003,11 +1108,6 @@
   "t": "s",
   "n": "ZG Zillow Group",
   "u": "stocks/zg.html"
- },
- {
-  "t": "s",
-  "n": "UNM Unum Group",
-  "u": "stocks/unm.html"
  },
  {
   "t": "s",
