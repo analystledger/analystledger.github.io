@@ -73,5 +73,13 @@
   "facebook": "ok",
   "instagram": "ok",
   "tiktok": "ok"
+ },
+ "options-2026-11-20": {
+  "bluesky": "ok",
+  "mastodon": "ok",
+  "telegram": "error: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))",
+  "facebook": "ok",
+  "instagram": "ok",
+  "tiktok": "ok"
  }
 }
