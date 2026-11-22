@@ -32,6 +32,7 @@
 <url><loc>https://analystledger.github.io/analysts/bofa-securities-research.html</loc></url>
 <url><loc>https://analystledger.github.io/analysts/guggenheim-research.html</loc></url>
 <url><loc>https://analystledger.github.io/analysts/needham-research.html</loc></url>
+<url><loc>https://analystledger.github.io/analysts/stonex-research.html</loc></url>
 <url><loc>https://analystledger.github.io/analysts/horst-schneider-bofa-securities.html</loc></url>
 <url><loc>https://analystledger.github.io/analysts/dan-ives-wedbush.html</loc></url>
 <url><loc>https://analystledger.github.io/analysts/summit-insights-research.html</loc></url>
@@ -41,11 +42,10 @@
 <url><loc>https://analystledger.github.io/analysts/monness-crespi-research.html</loc></url>
 <url><loc>https://analystledger.github.io/analysts/rodman-renshaw-research.html</loc></url>
 <url><loc>https://analystledger.github.io/analysts/rosenblatt-research.html</loc></url>
-<url><loc>https://analystledger.github.io/analysts/stonex-research.html</loc></url>
 <url><loc>https://analystledger.github.io/analysts/glen-santangelo-barclays.html</loc></url>
 <url><loc>https://analystledger.github.io/analysts/michael-cyprys-morgan-stanley.html</loc></url>
-<url><loc>https://analystledger.github.io/analysts/bernstein-research.html</loc></url>
 <url><loc>https://analystledger.github.io/analysts/citigroup-research.html</loc></url>
+<url><loc>https://analystledger.github.io/analysts/bernstein-research.html</loc></url>
 <url><loc>https://analystledger.github.io/analysts/mizuho-research.html</loc></url>
 <url><loc>https://analystledger.github.io/analysts/freedom-broker-research.html</loc></url>
 <url><loc>https://analystledger.github.io/analysts/goldman-sachs-research.html</loc></url>
@@ -72,9 +72,13 @@
 <url><loc>https://analystledger.github.io/analysts/william-stein-truist-securities.html</loc></url>
 <url><loc>https://analystledger.github.io/analysts/w-andrew-carter-stifel.html</loc></url>
 <url><loc>https://analystledger.github.io/analysts/nate-svensson-deutsche-bank.html</loc></url>
+<url><loc>https://analystledger.github.io/analysts/stacy-rasgon-bernstein.html</loc></url>
+<url><loc>https://analystledger.github.io/analysts/ben-reitzes-melius-research.html</loc></url>
+<url><loc>https://analystledger.github.io/analysts/john-vinh-keybanc.html</loc></url>
 <url><loc>https://analystledger.github.io/analysts/oppenheimer-research.html</loc></url>
 <url><loc>https://analystledger.github.io/analysts/bose-george-keefe-bruyette-woods.html</loc></url>
 <url><loc>https://analystledger.github.io/analysts/mark-lipacis-evercore-isi.html</loc></url>
+<url><loc>https://analystledger.github.io/analysts/craig-hallum-research.html</loc></url>
 <url><loc>https://analystledger.github.io/analysts/michael-lavery-piper-sandler.html</loc></url>
 <url><loc>https://analystledger.github.io/analysts/stephen-gengaro-stifel.html</loc></url>
 <url><loc>https://analystledger.github.io/analysts/eric-handler-roth-capital.html</loc></url>
@@ -88,6 +92,7 @@
 <url><loc>https://analystledger.github.io/analysts/rothschild-co-redburn-research.html</loc></url>
 <url><loc>https://analystledger.github.io/analysts/manav-patnaik-barclays.html</loc></url>
 <url><loc>https://analystledger.github.io/analysts/jay-sole-ubs.html</loc></url>
+<url><loc>https://analystledger.github.io/analysts/jay-goldberg-seaport-research-partners.html</loc></url>
 <url><loc>https://analystledger.github.io/stocks/wmt.html</loc></url>
 <url><loc>https://analystledger.github.io/stocks/tsla.html</loc></url>
 <url><loc>https://analystledger.github.io/stocks/unm.html</loc></url>

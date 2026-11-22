@@ -141,6 +141,11 @@
  },
  {
   "t": "a",
+  "n": "StoneX (research team)",
+  "u": "analysts/stonex-research.html"
+ },
+ {
+  "t": "a",
   "n": "Horst Schneider",
   "u": "analysts/horst-schneider-bofa-securities.html"
  },
@@ -186,11 +191,6 @@
  },
  {
   "t": "a",
-  "n": "StoneX (research team)",
-  "u": "analysts/stonex-research.html"
- },
- {
-  "t": "a",
   "n": "Glen Santangelo",
   "u": "analysts/glen-santangelo-barclays.html"
  },
@@ -201,13 +201,13 @@
  },
  {
   "t": "a",
-  "n": "Bernstein (research team)",
-  "u": "analysts/bernstein-research.html"
+  "n": "Citigroup (research team)",
+  "u": "analysts/citigroup-research.html"
  },
  {
   "t": "a",
-  "n": "Citigroup (research team)",
-  "u": "analysts/citigroup-research.html"
+  "n": "Bernstein (research team)",
+  "u": "analysts/bernstein-research.html"
  },
  {
   "t": "a",
@@ -341,6 +341,21 @@
  },
  {
   "t": "a",
+  "n": "Stacy Rasgon",
+  "u": "analysts/stacy-rasgon-bernstein.html"
+ },
+ {
+  "t": "a",
+  "n": "Ben Reitzes",
+  "u": "analysts/ben-reitzes-melius-research.html"
+ },
+ {
+  "t": "a",
+  "n": "John Vinh",
+  "u": "analysts/john-vinh-keybanc.html"
+ },
+ {
+  "t": "a",
   "n": "Oppenheimer (research team)",
   "u": "analysts/oppenheimer-research.html"
  },
@@ -353,6 +368,11 @@
   "t": "a",
   "n": "Mark Lipacis",
   "u": "analysts/mark-lipacis-evercore-isi.html"
+ },
+ {
+  "t": "a",
+  "n": "Craig-Hallum (research team)",
+  "u": "analysts/craig-hallum-research.html"
  },
  {
   "t": "a",
@@ -418,6 +438,11 @@
   "t": "a",
   "n": "Jay Sole",
   "u": "analysts/jay-sole-ubs.html"
+ },
+ {
+  "t": "a",
+  "n": "Jay Goldberg",
+  "u": "analysts/jay-goldberg-seaport-research-partners.html"
  },
  {
   "t": "s",
