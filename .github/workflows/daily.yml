@@ -21,6 +21,7 @@ jobs:
         env:
           FMP_API_KEY: ${{ secrets.FMP_API_KEY }}
           FINNHUB_API_KEY: ${{ secrets.FINNHUB_API_KEY }}
+          STOOQ_API_KEY: ${{ secrets.STOOQ_API_KEY }}
         run: python scripts/update_data.py
       - name: Build website
         run: python scripts/build_site.py

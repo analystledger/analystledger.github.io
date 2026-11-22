@@ -2,6 +2,7 @@
 
 Sources (each optional, used when available):
   1. Financial Modeling Prep  (env FMP_API_KEY)     - analyst grade + price-target news
+     Prices for scoring: FMP if keyed, otherwise Stooq end-of-day CSV (env STOOQ_API_KEY, optional)
   2. Finnhub                  (env FINNHUB_API_KEY) - upgrade/downgrade history for watchlist
   3. data/news_events.json    - events Claude adds every day from public news reports
 
@@ -179,22 +180,88 @@ def fill_previous_targets(events):
 
 
 # ---------------------------------------------------------------- prices (for track records)
-def update_prices(events):
-    prices = load_json(os.path.join(DATA, "prices.json"), {})
-    if not FMP:
-        return prices
-    today = date.today().isoformat()
-    tickers = sorted({e["ticker"] for e in events}, key=lambda t: prices.get(t, {}).get("date", ""))
-    calls = 0
-    for t in tickers:
-        if prices.get(t, {}).get("date") == today or calls >= 150:
+STOOQ = os.environ.get("STOOQ_API_KEY", "").strip()
+
+
+def stooq_symbol(ticker):
+    """Stooq writes US tickers as e.g. nvda.us, brk-b.us."""
+    return ticker.lower().replace(".", "-") + ".us"
+
+
+def stooq_history(ticker, start):
+    """Daily closes {YYYY-MM-DD: close} from Stooq's free CSV download, or {} on failure."""
+    params = {"s": stooq_symbol(ticker), "i": "d",
+              "d1": start.replace("-", ""), "d2": date.today().strftime("%Y%m%d")}
+    if STOOQ:
+        params["apikey"] = STOOQ
+    try:
+        r = SESSION.get("https://stooq.com/q/d/l/", params=params, timeout=30)
+    except requests.RequestException as e:
+        return {}, f"{ticker}: {e}"
+    text = r.text.strip()
+    if r.status_code != 200 or not text.lower().startswith("date,"):
+        return {}, f"{ticker}: HTTP {r.status_code} {text[:120]!r}"
+    out = {}
+    for line in text.splitlines()[1:]:
+        cols = line.split(",")
+        try:
+            out[cols[0]] = round(float(cols[4]), 2)   # Date,Open,High,Low,Close,Volume
+        except (IndexError, ValueError):
             continue
-        rows = get("https://financialmodelingprep.com/stable/quote-short", {"symbol": t, "apikey": FMP})
-        calls += 1
-        if isinstance(rows, list) and rows and rows[0].get("price"):
-            prices[t] = {"price": round(float(rows[0]["price"]), 2), "date": today}
+    return out, None if out else f"{ticker}: empty"
+
+
+def update_prices(events):
+    """Latest close per ticker (for scoring) and the close before each rating that lacks one.
+
+    Uses FMP when a key is set, otherwise Stooq's free end-of-day data.
+    """
+    prices = load_json(os.path.join(DATA, "prices.json"), {})
+    today = date.today().isoformat()
+    if FMP:
+        tickers = sorted({e["ticker"] for e in events}, key=lambda t: prices.get(t, {}).get("date", ""))
+        calls = 0
+        for t in tickers:
+            if prices.get(t, {}).get("checked") == today or calls >= 150:
+                continue
+            rows = get("https://financialmodelingprep.com/stable/quote-short", {"symbol": t, "apikey": FMP})
+            calls += 1
+            if isinstance(rows, list) and rows and rows[0].get("price"):
+                prices[t] = {"price": round(float(rows[0]["price"]), 2), "date": today,
+                             "checked": today, "source": "FMP"}
+        save_json(os.path.join(DATA, "prices.json"), prices)
+        log(f"Prices (FMP): refreshed {calls} tickers")
+        return prices
+
+    by_ticker = {}
+    for e in events:
+        by_ticker.setdefault(e["ticker"], []).append(e)
+    ok, filled, errors = 0, 0, []
+    for t, evs in sorted(by_ticker.items()):
+        if prices.get(t, {}).get("checked") == today:
+            continue
+        missing = [e for e in evs if not e.get("price_at_rating")]
+        start = min(e["date"] for e in missing) if missing else today
+        start = (date.fromisoformat(start) - timedelta(days=10)).isoformat()
+        hist, err = stooq_history(t, start)
+        time.sleep(0.3)
+        if err:
+            errors.append(err)
+            prices.setdefault(t, {})["checked"] = today
+            continue
+        days = sorted(hist)
+        last = days[-1]
+        prices[t] = {"price": hist[last], "date": last, "checked": today, "source": "Stooq"}
+        ok += 1
+        for e in missing:
+            before = [d for d in days if d < e["date"]]   # close before the rating was published
+            if before:
+                e["price_at_rating"] = hist[before[-1]]
+                filled += 1
     save_json(os.path.join(DATA, "prices.json"), prices)
-    log(f"Prices: refreshed {calls} tickers")
+    log(f"Prices (Stooq): {ok} tickers updated, {filled} rating prices filled, {len(errors)} failed")
+    for err in errors[:3]:
+        log(f"  {err}")
     return prices
 
 
@@ -246,8 +313,8 @@ def main():
     events, new_ids = merge(existing, incoming)
     fill_previous_targets(events)
     events.sort(key=lambda e: (e["date"], e["ticker"]), reverse=True)
-    save_json(path, events)
     update_prices(events)
+    save_json(path, events)
     queue_alerts(events, new_ids)
     save_json(os.path.join(DATA, "last_update.json"), {
         "updated_utc": datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC"),
