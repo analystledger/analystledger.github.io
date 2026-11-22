@@ -195,7 +195,7 @@ def stooq_history(ticker, start):
     if STOOQ:
         params["apikey"] = STOOQ
     try:
-        r = SESSION.get("https://stooq.com/q/d/l/", params=params, timeout=30)
+        r = SESSION.get("https://stooq.com/q/d/l/", params=params, timeout=10)
     except requests.RequestException as e:
         return {}, f"{ticker}: {e}"
     text = r.text.strip()
@@ -247,6 +247,9 @@ def update_prices(events):
         time.sleep(0.3)
         if err:
             errors.append(err)
+            if not ok and len(errors) >= 5:
+                log("Prices (Stooq): first 5 tickers failed - skipping price update this run")
+                break
             prices.setdefault(t, {})["checked"] = today
             continue
         days = sorted(hist)
