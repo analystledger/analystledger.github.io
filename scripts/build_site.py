@@ -130,6 +130,7 @@ def main():
                                   "u": slugify(s["ticker"])} for s in s_list}
     render("planner.html", "planner.html", 0,
            stocks_json=json.dumps(planner_data, separators=(",", ":")).replace("</", "<\\/"), **common)
+    render("start.html", "start.html", 0, **common)
     render("about.html", "about.html", 0, **common)
     render("terms.html", "terms.html", 0, **common)
     render("privacy.html", "privacy.html", 0, **common)
@@ -142,7 +143,7 @@ def main():
 
     # sitemap, robots, RSS
     base = CFG["base_url"].rstrip("/") + CFG.get("base_path", "")
-    urls = ["", "analysts/", "stocks/", "planner.html", "about.html"] + \
+    urls = ["", "analysts/", "stocks/", "planner.html", "start.html", "about.html"] + \
            [f"analysts/{a['slug']}.html" for a in a_list] + [f"stocks/{slugify(s['ticker'])}.html" for s in s_list]
     with open(os.path.join(DOCS, "sitemap.xml"), "w") as f:
         f.write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n')
