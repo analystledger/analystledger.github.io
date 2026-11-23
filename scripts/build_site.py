@@ -140,6 +140,10 @@ def main():
            stocks_json=json.dumps(planner_data, separators=(",", ":")).replace("</", "<\\/"), **common)
     render("start.html", "start.html", 0, **common)
     render("news.html", "news.html", 0, news=news, tracked=set(stocks), **common)
+    render("learn.html", "learn.html", 0, **common)
+    render("tools.html", "tools.html", 0, **common)
+    render("journal.html", "journal.html", 0, **common)
+    render("backtest.html", "backtest.html", 0, bt=load_json(os.path.join(DATA, "sigma_backtest.json"), {}), **common)
     render("about.html", "about.html", 0, **common)
     render("terms.html", "terms.html", 0, **common)
     render("privacy.html", "privacy.html", 0, **common)
@@ -152,7 +156,7 @@ def main():
 
     # sitemap, robots, RSS
     base = CFG["base_url"].rstrip("/") + CFG.get("base_path", "")
-    urls = ["", "analysts/", "stocks/", "news.html", "planner.html", "start.html", "about.html"] + \
+    urls = ["", "analysts/", "stocks/", "news.html", "learn.html", "tools.html", "backtest.html", "journal.html", "planner.html", "start.html", "about.html"] + \
            [f"analysts/{a['slug']}.html" for a in a_list] + [f"stocks/{slugify(s['ticker'])}.html" for s in s_list]
     with open(os.path.join(DOCS, "sitemap.xml"), "w") as f:
         f.write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n')

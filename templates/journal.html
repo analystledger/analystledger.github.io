@@ -1,0 +1,101 @@
+{% extends "base.html" %}
+{% block title %}Free trade journal for stocks and options | {{ CFG.site_name }}{% endblock %}
+{% block desc %}A free, private trade journal: log practice or real stock and options trades, record why you entered, and track win rate, average win and loss, and total profit. Saved only in your browser.{% endblock %}
+{% block body %}
+<style>
+.tool{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 20px;margin-bottom:18px}
+.tool h2{margin-top:0}
+.fg{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px 14px;margin-bottom:12px}
+.fg label{display:flex;flex-direction:column;gap:4px;font-size:13px;font-weight:600}
+.fg label.wide{grid-column:1/-1}
+.fg input,.fg select,.fg textarea{padding:8px 10px;border:1px solid var(--line);border-radius:8px;font-size:15px;font-weight:400;background:#fff;font-family:inherit}
+.btn{background:var(--brand);color:#fff;border:0;border-radius:8px;padding:9px 16px;font-size:15px;font-weight:600;cursor:pointer}
+.btn.sec{background:var(--bg);color:var(--ink);border:1px solid var(--line)}
+.btn.sm{padding:4px 10px;font-size:13px}
+.res{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px;margin:8px 0 14px}
+.res div{background:var(--bg);border-radius:10px;padding:10px 12px}.res b{display:block;font-size:19px}.res span{font-size:12.5px;color:var(--muted)}
+.row-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+</style>
+<p class="crumbs"><a href="learn.html">Learn</a> / Trade journal</p>
+<section class="hero small">
+  <h1>Trade journal</h1>
+  <p>Write down every trade — practice or real — with the reason you took it and the result. Over time, the numbers show what works for you. <strong>Private:</strong> your journal is saved only in this browser on this device. Export it to keep a copy.</p>
+</section>
+
+<section class="tool">
+<h2>Add a trade</h2>
+<form id="jf" class="fg" autocomplete="off">
+  <label>Date<input id="j-date" type="date" required></label>
+  <label>Ticker<input id="j-tk" required placeholder="e.g. SPY" style="text-transform:uppercase"></label>
+  <label>Strategy<select id="j-st">
+    <option>Shares</option><option>Covered call</option><option>Cash-secured put</option><option>Put credit spread</option>
+    <option>Call credit spread</option><option>Bought call</option><option>Bought put</option><option>Other</option></select></label>
+  <label>Account<select id="j-acc"><option>Practice</option><option>Real</option></select></label>
+  <label>Most I could lose ($)<input id="j-risk" type="number" step="any" placeholder="worst case"></label>
+  <label>Result ($, + or −)<input id="j-pl" type="number" step="any" placeholder="leave empty if open"></label>
+  <label class="wide">Why I took it, and my exit plan<textarea id="j-why" rows="2" placeholder="e.g. Sold 1σ put, no earnings before expiry; close at 50% profit or if price breaks the strike"></textarea></label>
+  <label class="wide">What I learned<textarea id="j-note" rows="2"></textarea></label>
+  <div class="row-actions"><button class="btn" type="submit">Save trade</button></div>
+</form>
+</section>
+
+<section class="tool">
+<h2>Your results</h2>
+<div class="fg" style="max-width:320px"><label>Show<select id="j-f"><option value="">All trades</option><option>Practice</option><option>Real</option></select></label></div>
+<div class="res" id="j-sum"></div>
+<div class="tw"><table class="ev"><thead><tr><th>Date</th><th>Ticker</th><th>Strategy</th><th>Account</th><th>Risk</th><th>Result</th><th>Notes</th><th></th></tr></thead><tbody id="j-rows"></tbody></table></div>
+<div class="row-actions">
+  <button class="btn sec" id="j-csv" type="button">Export CSV</button>
+  <button class="btn sec" id="j-json" type="button">Back up (JSON)</button>
+  <label class="btn sec" style="display:inline-block">Restore backup<input id="j-imp" type="file" accept=".json,application/json" hidden></label>
+</div>
+<p class="note" id="j-warn"></p>
+</section>
+
+<p class="note">Educational tool only — not investment advice. {{ CFG.disclaimer }}</p>
+<script>
+(function(){
+  var KEY="al-journal-v1", mem=[];
+  function $(i){return document.getElementById(i);}
+  function load(){try{var s=localStorage.getItem(KEY);return s?JSON.parse(s):[];}catch(e){$("j-warn").textContent="Your browser is blocking storage, so trades stay only until you close this page. Use Export to keep them.";return mem;}}
+  function save(a){mem=a;try{localStorage.setItem(KEY,JSON.stringify(a));}catch(e){$("j-warn").textContent="Could not save in this browser — export your trades to keep them.";}}
+  function esc(s){return String(s==null?"":s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c];});}
+  function usd(x){return x==null||x===""?"—":(x<0?"−$":"$")+Math.abs(x).toLocaleString(undefined,{maximumFractionDigits:2});}
+  $("j-date").value=new Date().toISOString().slice(0,10);
+  var trades=load();
+  function render(){
+    var f=$("j-f").value, list=trades.filter(function(t){return !f||t.acc===f;}).sort(function(a,b){return a.date<b.date?1:-1;});
+    var closed=list.filter(function(t){return t.pl!==null&&t.pl!==""&&!isNaN(t.pl);}),
+        wins=closed.filter(function(t){return t.pl>0;}),loss=closed.filter(function(t){return t.pl<=0;}),
+        sum=function(a){return a.reduce(function(s,t){return s+Number(t.pl);},0);},
+        aw=wins.length?sum(wins)/wins.length:null, al=loss.length?sum(loss)/loss.length:null;
+    $("j-sum").innerHTML=[[list.length,"trades"],[closed.length?Math.round(100*wins.length/closed.length)+"%":"—","win rate"],
+      [usd(aw),"average win"],[usd(al),"average loss"],[usd(closed.length?sum(closed):null),"total result"],
+      [aw&&al?(Math.abs(aw/al)).toFixed(2):"—","average win ÷ average loss"]]
+      .map(function(r){return '<div><b>'+r[0]+'</b><span>'+r[1]+'</span></div>';}).join("");
+    $("j-rows").innerHTML=list.map(function(t){
+      var cls=t.pl>0?"up":(t.pl<0?"down":"");
+      return '<tr><td class="nw">'+esc(t.date)+'</td><td><b>'+esc(t.tk)+'</b></td><td>'+esc(t.st)+'</td><td>'+esc(t.acc)+'</td><td class="nw">'+usd(t.risk)+'</td><td class="nw '+cls+'">'+usd(t.pl)+'</td><td>'+esc(t.why)+(t.note?'<div class="note">'+esc(t.note)+'</div>':'')+'</td><td><button class="btn sec sm" data-del="'+t.id+'" type="button">Delete</button></td></tr>';
+    }).join("")||'<tr><td colspan="8" class="muted">No trades yet.</td></tr>';
+  }
+  function num(id){var x=$(id).value;return x===""?null:Number(x);}
+  $("jf").addEventListener("submit",function(e){e.preventDefault();
+    trades.push({id:Date.now().toString(36),date:$("j-date").value,tk:$("j-tk").value.trim().toUpperCase(),st:$("j-st").value,acc:$("j-acc").value,
+      risk:num("j-risk"),pl:num("j-pl"),why:$("j-why").value.trim(),note:$("j-note").value.trim()});
+    save(trades); ["j-tk","j-risk","j-pl","j-why","j-note"].forEach(function(i){$(i).value="";}); render();});
+  $("j-rows").addEventListener("click",function(e){var id=e.target.getAttribute("data-del"); if(!id)return;
+    trades=trades.filter(function(t){return t.id!==id;}); save(trades); render();});
+  $("j-f").addEventListener("change",render);
+  function dl(name,type,text){var a=document.createElement("a");a.href=URL.createObjectURL(new Blob([text],{type:type}));a.download=name;document.body.appendChild(a);a.click();a.remove();}
+  $("j-csv").addEventListener("click",function(){
+    var q=function(s){return '"'+String(s==null?"":s).replace(/"/g,'""')+'"';};
+    dl("trade-journal.csv","text/csv",["date,ticker,strategy,account,max_loss,result,why,learned"].concat(trades.map(function(t){return [t.date,t.tk,t.st,t.acc,t.risk,t.pl,t.why,t.note].map(q).join(",");})).join("\n"));});
+  $("j-json").addEventListener("click",function(){dl("trade-journal-backup.json","application/json",JSON.stringify(trades,null,1));});
+  $("j-imp").addEventListener("change",function(){var f=this.files[0];if(!f)return;var r=new FileReader();
+    r.onload=function(){try{var a=JSON.parse(r.result);if(!Array.isArray(a))throw 0;var ids={};trades.forEach(function(t){ids[t.id]=1;});
+      a.forEach(function(t){if(t&&t.id&&!ids[t.id])trades.push(t);});save(trades);render();}catch(e){$("j-warn").textContent="That file is not a journal backup.";}};
+    r.readAsText(f);});
+  render();
+})();
+</script>
+{% endblock %}
