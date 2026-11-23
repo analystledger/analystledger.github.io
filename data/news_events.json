@@ -1,5 +1,469 @@
 [
  {
+  "date": "2026-11-23",
+  "ticker": "NVDA",
+  "company": "NVIDIA Corp.",
+  "firm": "Bernstein",
+  "rating_from": "Market Perform",
+  "rating_to": "Outperform",
+  "pt_from": 200,
+  "pt_to": 200,
+  "action": "upgrade",
+  "source_url": "https://financefeeds.com/bernstein-upgrades-nvidia-price-target-outperform/"
+ },
+ {
+  "date": "2026-11-23",
+  "ticker": "NVDA",
+  "company": "NVIDIA Corp.",
+  "firm": "Melius Research",
+  "rating_to": "Buy",
+  "pt_from": 185,
+  "pt_to": 220,
+  "action": "upgrade",
+  "source_url": "https://financefeeds.com/bernstein-upgrades-nvidia-price-target-outperform/"
+ },
+ {
+  "date": "2026-11-23",
+  "ticker": "NVDA",
+  "company": "NVIDIA Corp.",
+  "firm": "Baird",
+  "rating_from": "Neutral",
+  "rating_to": "Neutral",
+  "pt_to": 200,
+  "action": "reiterate",
+  "source_url": "https://financefeeds.com/bernstein-upgrades-nvidia-price-target-outperform/"
+ },
+ {
+  "date": "2026-11-23",
+  "ticker": "CRWD",
+  "company": "CrowdStrike Holdings",
+  "analyst": "Brian Essex",
+  "firm": "JPMorgan",
+  "rating_from": "Overweight",
+  "rating_to": "Overweight",
+  "pt_from": 235,
+  "pt_to": 240,
+  "action": "target_raise",
+  "source_url": "https://finance.yahoo.com/markets/stocks/articles/crowdstrikes-zscaler-acquisition-could-broaden-132758790.html"
+ },
+ {
+  "date": "2026-11-23",
+  "ticker": "S",
+  "company": "SentinelOne",
+  "firm": "Citizens",
+  "rating_from": "Outperform",
+  "rating_to": "Outperform",
+  "pt_from": 25,
+  "pt_to": 28,
+  "action": "target_raise",
+  "source_url": "https://finance.yahoo.com/markets/stocks/articles/crowdstrikes-zscaler-acquisition-could-broaden-132758790.html"
+ },
+ {
+  "date": "2026-11-23",
+  "ticker": "OVV",
+  "company": "Ovintiv Inc.",
+  "analyst": "Scott Gruber",
+  "firm": "Citi",
+  "rating_from": "Buy",
+  "rating_to": "Buy",
+  "pt_to": 74,
+  "action": "reiterate",
+  "source_url": "https://finwire.io/news/stock-markets-news/mondays-analyst-upgrades-and-downgrades-42"
+ },
+ {
+  "date": "2026-11-23",
+  "ticker": "DG",
+  "company": "Dollar General",
+  "firm": "Piper Sandler",
+  "action": "upgrade",
+  "source_url": "https://www.cnbc.com/2026/11/23/dollar-general-piper-sandler-upgrade.html"
+ },
+ {
+  "date": "2026-11-20",
+  "ticker": "BANR",
+  "company": "Banner Corp.",
+  "firm": "DA Davidson",
+  "rating_from": "Neutral",
+  "rating_to": "Buy",
+  "action": "upgrade",
+  "source_url": "https://dailytradealert.com/2026/11/20/analyst-upgrades-and-downgrades-for-friday-11-20/"
+ },
+ {
+  "date": "2026-11-20",
+  "ticker": "EBMT",
+  "company": "Eagle Bancorp Montana",
+  "firm": "DA Davidson",
+  "rating_from": "Neutral",
+  "rating_to": "Buy",
+  "action": "upgrade",
+  "source_url": "https://dailytradealert.com/2026/11/20/analyst-upgrades-and-downgrades-for-friday-11-20/"
+ },
+ {
+  "date": "2026-11-20",
+  "ticker": "EVH",
+  "company": "Evolent Health",
+  "firm": "Truist",
+  "rating_from": "Hold",
+  "rating_to": "Buy",
+  "action": "upgrade",
+  "source_url": "https://dailytradealert.com/2026/11/20/analyst-upgrades-and-downgrades-for-friday-11-20/"
+ },
+ {
+  "date": "2026-11-20",
+  "ticker": "EXPD",
+  "company": "Expeditors International",
+  "firm": "TD Cowen",
+  "rating_from": "Sell",
+  "rating_to": "Hold",
+  "action": "upgrade",
+  "source_url": "https://dailytradealert.com/2026/11/20/analyst-upgrades-and-downgrades-for-friday-11-20/"
+ },
+ {
+  "date": "2026-11-20",
+  "ticker": "GAP",
+  "company": "Gap Inc.",
+  "firm": "KGI Securities",
+  "rating_from": "Neutral",
+  "rating_to": "Outperform",
+  "action": "upgrade",
+  "source_url": "https://dailytradealert.com/2026/11/20/analyst-upgrades-and-downgrades-for-friday-11-20/"
+ },
+ {
+  "date": "2026-11-20",
+  "ticker": "HUM",
+  "company": "Humana",
+  "firm": "TD Cowen",
+  "rating_from": "Hold",
+  "rating_to": "Buy",
+  "action": "upgrade",
+  "source_url": "https://dailytradealert.com/2026/11/20/analyst-upgrades-and-downgrades-for-friday-11-20/"
+ },
+ {
+  "date": "2026-11-20",
+  "ticker": "OKLO",
+  "company": "Oklo",
+  "firm": "Guggenheim",
+  "rating_from": "Neutral",
+  "rating_to": "Buy",
+  "action": "upgrade",
+  "source_url": "https://dailytradealert.com/2026/11/20/analyst-upgrades-and-downgrades-for-friday-11-20/"
+ },
+ {
+  "date": "2026-11-20",
+  "ticker": "PDD",
+  "company": "PDD Holdings",
+  "firm": "BNP Paribas",
+  "rating_from": "Underperform",
+  "rating_to": "Neutral",
+  "action": "upgrade",
+  "source_url": "https://dailytradealert.com/2026/11/20/analyst-upgrades-and-downgrades-for-friday-11-20/"
+ },
+ {
+  "date": "2026-11-20",
+  "ticker": "PDD",
+  "company": "PDD Holdings",
+  "firm": "Macquarie",
+  "rating_from": "Neutral",
+  "rating_to": "Outperform",
+  "action": "upgrade",
+  "source_url": "https://dailytradealert.com/2026/11/20/analyst-upgrades-and-downgrades-for-friday-11-20/"
+ },
+ {
+  "date": "2026-11-20",
+  "ticker": "PYXS",
+  "company": "Pyxis Oncology",
+  "firm": "William Blair",
+  "rating_from": "Market Perform",
+  "rating_to": "Outperform",
+  "action": "upgrade",
+  "source_url": "https://dailytradealert.com/2026/11/20/analyst-upgrades-and-downgrades-for-friday-11-20/"
+ },
+ {
+  "date": "2026-11-20",
+  "ticker": "SBLK",
+  "company": "Star Bulk Carriers",
+  "firm": "DNB Carnegie",
+  "rating_from": "Hold",
+  "rating_to": "Buy",
+  "action": "upgrade",
+  "source_url": "https://dailytradealert.com/2026/11/20/analyst-upgrades-and-downgrades-for-friday-11-20/"
+ },
+ {
+  "date": "2026-11-20",
+  "ticker": "TU",
+  "company": "Telus",
+  "firm": "Barclays",
+  "rating_from": "Equal Weight",
+  "rating_to": "Overweight",
+  "action": "upgrade",
+  "source_url": "https://dailytradealert.com/2026/11/20/analyst-upgrades-and-downgrades-for-friday-11-20/"
+ },
+ {
+  "date": "2026-11-20",
+  "ticker": "UNH",
+  "company": "UnitedHealth Group",
+  "firm": "TD Cowen",
+  "rating_from": "Hold",
+  "rating_to": "Buy",
+  "action": "upgrade",
+  "source_url": "https://dailytradealert.com/2026/11/20/analyst-upgrades-and-downgrades-for-friday-11-20/"
+ },
+ {
+  "date": "2026-11-20",
+  "ticker": "BORR",
+  "company": "Borr Drilling",
+  "firm": "Fearnley",
+  "rating_from": "Hold",
+  "rating_to": "Buy",
+  "action": "upgrade",
+  "source_url": "https://dailytradealert.com/2026/11/20/analyst-upgrades-and-downgrades-for-friday-11-20/"
+ },
+ {
+  "date": "2026-11-20",
+  "ticker": "BMRC",
+  "company": "Bank of Marin",
+  "firm": "DA Davidson",
+  "rating_from": "Buy",
+  "rating_to": "Neutral",
+  "action": "downgrade",
+  "source_url": "https://dailytradealert.com/2026/11/20/analyst-upgrades-and-downgrades-for-friday-11-20/"
+ },
+ {
+  "date": "2026-11-20",
+  "ticker": "BRK.B",
+  "company": "Berkshire Hathaway",
+  "firm": "Argus",
+  "rating_from": "Buy",
+  "rating_to": "Hold",
+  "action": "downgrade",
+  "source_url": "https://dailytradealert.com/2026/11/20/analyst-upgrades-and-downgrades-for-friday-11-20/"
+ },
+ {
+  "date": "2026-11-20",
+  "ticker": "BILL",
+  "company": "BILL Holdings",
+  "firm": "BTIG",
+  "rating_from": "Buy",
+  "rating_to": "Neutral",
+  "action": "downgrade",
+  "source_url": "https://dailytradealert.com/2026/11/20/analyst-upgrades-and-downgrades-for-friday-11-20/"
+ },
+ {
+  "date": "2026-11-20",
+  "ticker": "BILL",
+  "company": "BILL Holdings",
+  "firm": "Jefferies",
+  "rating_from": "Buy",
+  "rating_to": "Hold",
+  "action": "downgrade",
+  "source_url": "https://dailytradealert.com/2026/11/20/analyst-upgrades-and-downgrades-for-friday-11-20/"
+ },
+ {
+  "date": "2026-11-20",
+  "ticker": "BILL",
+  "company": "BILL Holdings",
+  "firm": "JPMorgan",
+  "rating_from": "Overweight",
+  "rating_to": "Neutral",
+  "action": "downgrade",
+  "source_url": "https://dailytradealert.com/2026/11/20/analyst-upgrades-and-downgrades-for-friday-11-20/"
+ },
+ {
+  "date": "2026-11-20",
+  "ticker": "BILL",
+  "company": "BILL Holdings",
+  "firm": "Needham",
+  "rating_from": "Buy",
+  "rating_to": "Hold",
+  "action": "downgrade",
+  "source_url": "https://dailytradealert.com/2026/11/20/analyst-upgrades-and-downgrades-for-friday-11-20/"
+ },
+ {
+  "date": "2026-11-20",
+  "ticker": "BILL",
+  "company": "BILL Holdings",
+  "firm": "Oppenheimer",
+  "rating_from": "Outperform",
+  "rating_to": "Perform",
+  "action": "downgrade",
+  "source_url": "https://dailytradealert.com/2026/11/20/analyst-upgrades-and-downgrades-for-friday-11-20/"
+ },
+ {
+  "date": "2026-11-20",
+  "ticker": "BILL",
+  "company": "BILL Holdings",
+  "firm": "TD Cowen",
+  "rating_from": "Buy",
+  "rating_to": "Hold",
+  "action": "downgrade",
+  "source_url": "https://dailytradealert.com/2026/11/20/analyst-upgrades-and-downgrades-for-friday-11-20/"
+ },
+ {
+  "date": "2026-11-20",
+  "ticker": "BILL",
+  "company": "BILL Holdings",
+  "firm": "UBS",
+  "rating_from": "Buy",
+  "rating_to": "Neutral",
+  "action": "downgrade",
+  "source_url": "https://dailytradealert.com/2026/11/20/analyst-upgrades-and-downgrades-for-friday-11-20/"
+ },
+ {
+  "date": "2026-11-20",
+  "ticker": "COFS",
+  "company": "ChoiceOne Financial",
+  "firm": "DA Davidson",
+  "rating_from": "Buy",
+  "rating_to": "Neutral",
+  "action": "downgrade",
+  "source_url": "https://dailytradealert.com/2026/11/20/analyst-upgrades-and-downgrades-for-friday-11-20/"
+ },
+ {
+  "date": "2026-11-20",
+  "ticker": "EMN",
+  "company": "Eastman Chemical",
+  "firm": "JPMorgan",
+  "rating_from": "Neutral",
+  "rating_to": "Underweight",
+  "action": "downgrade",
+  "source_url": "https://dailytradealert.com/2026/11/20/analyst-upgrades-and-downgrades-for-friday-11-20/"
+ },
+ {
+  "date": "2026-11-20",
+  "ticker": "FAST",
+  "company": "Fastenal",
+  "firm": "Baird",
+  "rating_from": "Outperform",
+  "rating_to": "Neutral",
+  "action": "downgrade",
+  "source_url": "https://dailytradealert.com/2026/11/20/analyst-upgrades-and-downgrades-for-friday-11-20/"
+ },
+ {
+  "date": "2026-11-20",
+  "ticker": "FTS",
+  "company": "Fortis",
+  "firm": "Jefferies",
+  "rating_from": "Hold",
+  "rating_to": "Underperform",
+  "action": "downgrade",
+  "source_url": "https://dailytradealert.com/2026/11/20/analyst-upgrades-and-downgrades-for-friday-11-20/"
+ },
+ {
+  "date": "2026-11-20",
+  "ticker": "PAC",
+  "company": "Grupo Aeroportuario del Pacifico",
+  "firm": "Goldman Sachs",
+  "rating_from": "Buy",
+  "rating_to": "Sell",
+  "action": "downgrade",
+  "source_url": "https://dailytradealert.com/2026/11/20/analyst-upgrades-and-downgrades-for-friday-11-20/"
+ },
+ {
+  "date": "2026-11-20",
+  "ticker": "GWW",
+  "company": "W.W. Grainger",
+  "firm": "Baird",
+  "rating_from": "Outperform",
+  "rating_to": "Neutral",
+  "action": "downgrade",
+  "source_url": "https://dailytradealert.com/2026/11/20/analyst-upgrades-and-downgrades-for-friday-11-20/"
+ },
+ {
+  "date": "2026-11-20",
+  "ticker": "PODD",
+  "company": "Insulet",
+  "firm": "Baird",
+  "rating_from": "Outperform",
+  "rating_to": "Neutral",
+  "action": "downgrade",
+  "source_url": "https://dailytradealert.com/2026/11/20/analyst-upgrades-and-downgrades-for-friday-11-20/"
+ },
+ {
+  "date": "2026-11-20",
+  "ticker": "NBHC",
+  "company": "National Bank Holdings",
+  "firm": "DA Davidson",
+  "rating_from": "Buy",
+  "rating_to": "Neutral",
+  "action": "downgrade",
+  "source_url": "https://dailytradealert.com/2026/11/20/analyst-upgrades-and-downgrades-for-friday-11-20/"
+ },
+ {
+  "date": "2026-11-20",
+  "ticker": "NFG",
+  "company": "National Fuel Gas",
+  "firm": "Argus",
+  "rating_from": "Buy",
+  "rating_to": "Hold",
+  "action": "downgrade",
+  "source_url": "https://dailytradealert.com/2026/11/20/analyst-upgrades-and-downgrades-for-friday-11-20/"
+ },
+ {
+  "date": "2026-11-20",
+  "ticker": "VVV",
+  "company": "Valvoline",
+  "firm": "JPMorgan",
+  "rating_from": "Neutral",
+  "rating_to": "Underweight",
+  "action": "downgrade",
+  "source_url": "https://dailytradealert.com/2026/11/20/analyst-upgrades-and-downgrades-for-friday-11-20/"
+ },
+ {
+  "date": "2026-11-20",
+  "ticker": "XPEV",
+  "company": "XPeng",
+  "firm": "HSBC",
+  "rating_from": "Buy",
+  "rating_to": "Hold",
+  "action": "downgrade",
+  "source_url": "https://dailytradealert.com/2026/11/20/analyst-upgrades-and-downgrades-for-friday-11-20/"
+ },
+ {
+  "date": "2026-11-20",
+  "ticker": "PRAX",
+  "company": "Praxis Precision Medicines",
+  "firm": "B. Riley",
+  "rating_to": "Buy",
+  "action": "initiate",
+  "source_url": "https://dailytradealert.com/2026/11/20/analyst-upgrades-and-downgrades-for-friday-11-20/"
+ },
+ {
+  "date": "2026-11-20",
+  "ticker": "STM",
+  "company": "STMicroelectronics",
+  "firm": "Roth Capital",
+  "rating_to": "Buy",
+  "action": "initiate",
+  "source_url": "https://dailytradealert.com/2026/11/20/analyst-upgrades-and-downgrades-for-friday-11-20/"
+ },
+ {
+  "date": "2026-11-20",
+  "ticker": "SUPN",
+  "company": "Supernus Pharmaceuticals",
+  "firm": "Wells Fargo",
+  "rating_to": "Overweight",
+  "action": "initiate",
+  "source_url": "https://dailytradealert.com/2026/11/20/analyst-upgrades-and-downgrades-for-friday-11-20/"
+ },
+ {
+  "date": "2026-11-20",
+  "ticker": "VFF",
+  "company": "Village Farms International",
+  "firm": "Canaccord Genuity",
+  "rating_to": "Buy",
+  "action": "initiate",
+  "source_url": "https://dailytradealert.com/2026/11/20/analyst-upgrades-and-downgrades-for-friday-11-20/"
+ },
+ {
+  "date": "2026-11-20",
+  "ticker": "MSGR",
+  "company": "MSG Rangers",
+  "firm": "JPMorgan",
+  "rating_to": "Overweight",
+  "action": "initiate",
+  "source_url": "https://dailytradealert.com/2026/11/20/analyst-upgrades-and-downgrades-for-friday-11-20/"
+ },
+ {
   "date": "2026-11-20",
   "ticker": "TSLA",
   "company": "Tesla Inc.",
@@ -1864,6 +2328,66 @@
   "source_url": "https://www-web.itiger.com/news/2583855979"
  },
  {
+  "date": "2026-11-12",
+  "ticker": "NVDA",
+  "company": "NVIDIA",
+  "analyst": "Ben Reitzes",
+  "firm": "Melius Research",
+  "rating_from": "Buy",
+  "rating_to": "Hold",
+  "pt_from": 315,
+  "pt_to": 185,
+  "price_at_rating": 173.73,
+  "action": "downgrade",
+  "source_url": "https://www.cnbc.com/2026/11/12/jensen-huang-nvidia-affair-ceo.html"
+ },
+ {
+  "date": "2026-11-12",
+  "ticker": "NVDA",
+  "company": "NVIDIA",
+  "analyst": "John Vinh",
+  "firm": "KeyBanc",
+  "rating_from": "Overweight",
+  "rating_to": "Sector Weight",
+  "price_at_rating": 173.73,
+  "action": "downgrade",
+  "source_url": "https://www.cnbc.com/2026/11/12/jensen-huang-nvidia-affair-ceo.html"
+ },
+ {
+  "date": "2026-11-12",
+  "ticker": "NVDA",
+  "company": "NVIDIA",
+  "firm": "Craig-Hallum",
+  "rating_from": "Buy",
+  "rating_to": "Hold",
+  "pt_to": 180,
+  "price_at_rating": 173.73,
+  "action": "downgrade",
+  "source_url": "https://www.webull.com/news/15933830706414592"
+ },
+ {
+  "date": "2026-11-12",
+  "ticker": "NVDA",
+  "company": "NVIDIA",
+  "firm": "William Blair",
+  "rating_from": "Outperform",
+  "rating_to": "Market Perform",
+  "price_at_rating": 173.73,
+  "action": "downgrade",
+  "source_url": "https://www.webull.com/news/15933830706414592"
+ },
+ {
+  "date": "2026-11-12",
+  "ticker": "NVDA",
+  "company": "NVIDIA",
+  "firm": "StoneX",
+  "rating_from": "Buy",
+  "rating_to": "Hold",
+  "price_at_rating": 173.73,
+  "action": "downgrade",
+  "source_url": "https://www.webull.com/news/15933830706414592"
+ },
+ {
   "date": "2026-11-11",
   "ticker": "AAPL",
   "company": "Apple",
@@ -2064,6 +2588,18 @@
   "source_url": "https://www.insidermonkey.com/news/sell-alert-10-stocks-analysts-just-downgraded-1863791/?singlepage=1"
  },
  {
+  "date": "2026-11-09",
+  "ticker": "NVDA",
+  "company": "NVIDIA",
+  "analyst": "Stacy Rasgon",
+  "firm": "Bernstein",
+  "rating_to": "Outperform",
+  "pt_to": 400,
+  "price_at_rating": 186.64,
+  "action": "reiterate",
+  "source_url": "https://fourweekmba.com/ai-bernstein-halves-nvidia-target-to-200-12-7x-next-year-eps/"
+ },
+ {
   "date": "2026-11-06",
   "ticker": "GIL",
   "company": "Gildan Activewear",
@@ -2100,78 +2636,6 @@
   "pt_to": 124,
   "action": "downgrade",
   "source_url": "https://www.insidermonkey.com/news/sell-alert-10-high-profile-stocks-just-dumped-by-top-analysts-1862938/?singlepage=1"
- },
- {
-  "date": "2026-11-12",
-  "ticker": "NVDA",
-  "company": "NVIDIA",
-  "analyst": "Ben Reitzes",
-  "firm": "Melius Research",
-  "rating_from": "Buy",
-  "rating_to": "Hold",
-  "pt_from": 315,
-  "pt_to": 185,
-  "price_at_rating": 173.73,
-  "action": "downgrade",
-  "source_url": "https://www.cnbc.com/2026/11/12/jensen-huang-nvidia-affair-ceo.html"
- },
- {
-  "date": "2026-11-12",
-  "ticker": "NVDA",
-  "company": "NVIDIA",
-  "analyst": "John Vinh",
-  "firm": "KeyBanc",
-  "rating_from": "Overweight",
-  "rating_to": "Sector Weight",
-  "price_at_rating": 173.73,
-  "action": "downgrade",
-  "source_url": "https://www.cnbc.com/2026/11/12/jensen-huang-nvidia-affair-ceo.html"
- },
- {
-  "date": "2026-11-12",
-  "ticker": "NVDA",
-  "company": "NVIDIA",
-  "firm": "Craig-Hallum",
-  "rating_from": "Buy",
-  "rating_to": "Hold",
-  "pt_to": 180,
-  "price_at_rating": 173.73,
-  "action": "downgrade",
-  "source_url": "https://www.webull.com/news/15933830706414592"
- },
- {
-  "date": "2026-11-12",
-  "ticker": "NVDA",
-  "company": "NVIDIA",
-  "firm": "William Blair",
-  "rating_from": "Outperform",
-  "rating_to": "Market Perform",
-  "price_at_rating": 173.73,
-  "action": "downgrade",
-  "source_url": "https://www.webull.com/news/15933830706414592"
- },
- {
-  "date": "2026-11-12",
-  "ticker": "NVDA",
-  "company": "NVIDIA",
-  "firm": "StoneX",
-  "rating_from": "Buy",
-  "rating_to": "Hold",
-  "price_at_rating": 173.73,
-  "action": "downgrade",
-  "source_url": "https://www.webull.com/news/15933830706414592"
- },
- {
-  "date": "2026-11-09",
-  "ticker": "NVDA",
-  "company": "NVIDIA",
-  "analyst": "Stacy Rasgon",
-  "firm": "Bernstein",
-  "rating_to": "Outperform",
-  "pt_to": 400,
-  "price_at_rating": 186.64,
-  "action": "reiterate",
-  "source_url": "https://fourweekmba.com/ai-bernstein-halves-nvidia-target-to-200-12-7x-next-year-eps/"
  },
  {
   "date": "2026-10-26",
