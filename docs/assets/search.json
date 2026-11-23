@@ -1,13 +1,38 @@
 [
  {
   "t": "a",
-  "n": "Raymond James (research team)",
-  "u": "analysts/raymond-james-research.html"
+  "n": "Piper Sandler (research team)",
+  "u": "analysts/piper-sandler-research.html"
  },
  {
   "t": "a",
-  "n": "Michael Tyndall",
-  "u": "analysts/michael-tyndall-hsbc.html"
+  "n": "Baird (research team)",
+  "u": "analysts/baird-research.html"
+ },
+ {
+  "t": "a",
+  "n": "Bernstein (research team)",
+  "u": "analysts/bernstein-research.html"
+ },
+ {
+  "t": "a",
+  "n": "Melius Research (research team)",
+  "u": "analysts/melius-research-research.html"
+ },
+ {
+  "t": "a",
+  "n": "Citizens (research team)",
+  "u": "analysts/citizens-research.html"
+ },
+ {
+  "t": "a",
+  "n": "Scott Gruber",
+  "u": "analysts/scott-gruber-citi.html"
+ },
+ {
+  "t": "a",
+  "n": "Brian Essex",
+  "u": "analysts/brian-essex-jpmorgan.html"
  },
  {
   "t": "a",
@@ -16,18 +41,128 @@
  },
  {
   "t": "a",
-  "n": "UBS (research team)",
-  "u": "analysts/ubs-research.html"
- },
- {
-  "t": "a",
   "n": "Jefferies (research team)",
   "u": "analysts/jefferies-research.html"
  },
  {
   "t": "a",
+  "n": "UBS (research team)",
+  "u": "analysts/ubs-research.html"
+ },
+ {
+  "t": "a",
+  "n": "TD Cowen (research team)",
+  "u": "analysts/td-cowen-research.html"
+ },
+ {
+  "t": "a",
   "n": "Wells Fargo (research team)",
   "u": "analysts/wells-fargo-research.html"
+ },
+ {
+  "t": "a",
+  "n": "William Blair (research team)",
+  "u": "analysts/william-blair-research.html"
+ },
+ {
+  "t": "a",
+  "n": "DA Davidson (research team)",
+  "u": "analysts/da-davidson-research.html"
+ },
+ {
+  "t": "a",
+  "n": "Barclays (research team)",
+  "u": "analysts/barclays-research.html"
+ },
+ {
+  "t": "a",
+  "n": "Goldman Sachs (research team)",
+  "u": "analysts/goldman-sachs-research.html"
+ },
+ {
+  "t": "a",
+  "n": "Argus (research team)",
+  "u": "analysts/argus-research.html"
+ },
+ {
+  "t": "a",
+  "n": "Raymond James (research team)",
+  "u": "analysts/raymond-james-research.html"
+ },
+ {
+  "t": "a",
+  "n": "Canaccord Genuity (research team)",
+  "u": "analysts/canaccord-genuity-research.html"
+ },
+ {
+  "t": "a",
+  "n": "Guggenheim (research team)",
+  "u": "analysts/guggenheim-research.html"
+ },
+ {
+  "t": "a",
+  "n": "Needham (research team)",
+  "u": "analysts/needham-research.html"
+ },
+ {
+  "t": "a",
+  "n": "Oppenheimer (research team)",
+  "u": "analysts/oppenheimer-research.html"
+ },
+ {
+  "t": "a",
+  "n": "HSBC (research team)",
+  "u": "analysts/hsbc-research.html"
+ },
+ {
+  "t": "a",
+  "n": "B. Riley (research team)",
+  "u": "analysts/b-riley-research.html"
+ },
+ {
+  "t": "a",
+  "n": "Macquarie (research team)",
+  "u": "analysts/macquarie-research.html"
+ },
+ {
+  "t": "a",
+  "n": "BTIG (research team)",
+  "u": "analysts/btig-research.html"
+ },
+ {
+  "t": "a",
+  "n": "Michael Tyndall",
+  "u": "analysts/michael-tyndall-hsbc.html"
+ },
+ {
+  "t": "a",
+  "n": "Roth Capital (research team)",
+  "u": "analysts/roth-capital-research.html"
+ },
+ {
+  "t": "a",
+  "n": "DNB Carnegie (research team)",
+  "u": "analysts/dnb-carnegie-research.html"
+ },
+ {
+  "t": "a",
+  "n": "BNP Paribas (research team)",
+  "u": "analysts/bnp-paribas-research.html"
+ },
+ {
+  "t": "a",
+  "n": "KGI Securities (research team)",
+  "u": "analysts/kgi-securities-research.html"
+ },
+ {
+  "t": "a",
+  "n": "Truist (research team)",
+  "u": "analysts/truist-research.html"
+ },
+ {
+  "t": "a",
+  "n": "Fearnley (research team)",
+  "u": "analysts/fearnley-research.html"
  },
  {
   "t": "a",
@@ -38,11 +173,6 @@
   "t": "a",
   "n": "BMO Capital (research team)",
   "u": "analysts/bmo-capital-research.html"
- },
- {
-  "t": "a",
-  "n": "Argus (research team)",
-  "u": "analysts/argus-research.html"
  },
  {
   "t": "a",
@@ -76,11 +206,6 @@
  },
  {
   "t": "a",
-  "n": "B. Riley (research team)",
-  "u": "analysts/b-riley-research.html"
- },
- {
-  "t": "a",
   "n": "Stifel (research team)",
   "u": "analysts/stifel-research.html"
  },
@@ -91,28 +216,13 @@
  },
  {
   "t": "a",
-  "n": "Piper Sandler (research team)",
-  "u": "analysts/piper-sandler-research.html"
- },
- {
-  "t": "a",
   "n": "Erste Group (research team)",
   "u": "analysts/erste-group-research.html"
  },
  {
   "t": "a",
-  "n": "TD Cowen (research team)",
-  "u": "analysts/td-cowen-research.html"
- },
- {
-  "t": "a",
   "n": "Truist Securities (research team)",
   "u": "analysts/truist-securities-research.html"
- },
- {
-  "t": "a",
-  "n": "Barclays (research team)",
-  "u": "analysts/barclays-research.html"
  },
  {
   "t": "a",
@@ -128,16 +238,6 @@
   "t": "a",
   "n": "BofA Securities (research team)",
   "u": "analysts/bofa-securities-research.html"
- },
- {
-  "t": "a",
-  "n": "Guggenheim (research team)",
-  "u": "analysts/guggenheim-research.html"
- },
- {
-  "t": "a",
-  "n": "Needham (research team)",
-  "u": "analysts/needham-research.html"
  },
  {
   "t": "a",
@@ -206,11 +306,6 @@
  },
  {
   "t": "a",
-  "n": "Bernstein (research team)",
-  "u": "analysts/bernstein-research.html"
- },
- {
-  "t": "a",
   "n": "Mizuho (research team)",
   "u": "analysts/mizuho-research.html"
  },
@@ -221,23 +316,8 @@
  },
  {
   "t": "a",
-  "n": "Goldman Sachs (research team)",
-  "u": "analysts/goldman-sachs-research.html"
- },
- {
-  "t": "a",
-  "n": "Baird (research team)",
-  "u": "analysts/baird-research.html"
- },
- {
-  "t": "a",
   "n": "Loop Capital (research team)",
   "u": "analysts/loop-capital-research.html"
- },
- {
-  "t": "a",
-  "n": "Canaccord Genuity (research team)",
-  "u": "analysts/canaccord-genuity-research.html"
  },
  {
   "t": "a",
@@ -246,33 +326,13 @@
  },
  {
   "t": "a",
-  "n": "DA Davidson (research team)",
-  "u": "analysts/da-davidson-research.html"
- },
- {
-  "t": "a",
-  "n": "BTIG (research team)",
-  "u": "analysts/btig-research.html"
- },
- {
-  "t": "a",
   "n": "Evercore ISI (research team)",
   "u": "analysts/evercore-isi-research.html"
  },
  {
   "t": "a",
-  "n": "HSBC (research team)",
-  "u": "analysts/hsbc-research.html"
- },
- {
-  "t": "a",
   "n": "B. Riley Securities (research team)",
   "u": "analysts/b-riley-securities-research.html"
- },
- {
-  "t": "a",
-  "n": "William Blair (research team)",
-  "u": "analysts/william-blair-research.html"
  },
  {
   "t": "a",
@@ -298,16 +358,6 @@
   "t": "a",
   "n": "Zelman & Associates (research team)",
   "u": "analysts/zelman-associates-research.html"
- },
- {
-  "t": "a",
-  "n": "Melius Research (research team)",
-  "u": "analysts/melius-research-research.html"
- },
- {
-  "t": "a",
-  "n": "Macquarie (research team)",
-  "u": "analysts/macquarie-research.html"
  },
  {
   "t": "a",
@@ -353,11 +403,6 @@
   "t": "a",
   "n": "John Vinh",
   "u": "analysts/john-vinh-keybanc.html"
- },
- {
-  "t": "a",
-  "n": "Oppenheimer (research team)",
-  "u": "analysts/oppenheimer-research.html"
  },
  {
   "t": "a",
@@ -446,13 +491,198 @@
  },
  {
   "t": "s",
+  "n": "NVDA NVIDIA",
+  "u": "stocks/nvda.html"
+ },
+ {
+  "t": "s",
+  "n": "CRWD CrowdStrike",
+  "u": "stocks/crwd.html"
+ },
+ {
+  "t": "s",
+  "n": "S SentinelOne",
+  "u": "stocks/s.html"
+ },
+ {
+  "t": "s",
+  "n": "OVV Ovintiv Inc.",
+  "u": "stocks/ovv.html"
+ },
+ {
+  "t": "s",
+  "n": "DG Dollar General",
+  "u": "stocks/dg.html"
+ },
+ {
+  "t": "s",
+  "n": "BILL BILL Holdings",
+  "u": "stocks/bill.html"
+ },
+ {
+  "t": "s",
+  "n": "PRAX Praxis Precision Medicines",
+  "u": "stocks/prax.html"
+ },
+ {
+  "t": "s",
+  "n": "PODD Insulet",
+  "u": "stocks/podd.html"
+ },
+ {
+  "t": "s",
+  "n": "PDD PDD Holdings",
+  "u": "stocks/pdd.html"
+ },
+ {
+  "t": "s",
   "n": "WMT Walmart",
   "u": "stocks/wmt.html"
  },
  {
   "t": "s",
+  "n": "XPEV XPeng",
+  "u": "stocks/xpev.html"
+ },
+ {
+  "t": "s",
+  "n": "VVV Valvoline",
+  "u": "stocks/vvv.html"
+ },
+ {
+  "t": "s",
+  "n": "VFF Village Farms International",
+  "u": "stocks/vff.html"
+ },
+ {
+  "t": "s",
+  "n": "UNH UnitedHealth Group",
+  "u": "stocks/unh.html"
+ },
+ {
+  "t": "s",
+  "n": "TU Telus",
+  "u": "stocks/tu.html"
+ },
+ {
+  "t": "s",
   "n": "TSLA Tesla Inc.",
   "u": "stocks/tsla.html"
+ },
+ {
+  "t": "s",
+  "n": "SUPN Supernus Pharmaceuticals",
+  "u": "stocks/supn.html"
+ },
+ {
+  "t": "s",
+  "n": "STM STMicroelectronics",
+  "u": "stocks/stm.html"
+ },
+ {
+  "t": "s",
+  "n": "SBLK Star Bulk Carriers",
+  "u": "stocks/sblk.html"
+ },
+ {
+  "t": "s",
+  "n": "PYXS Pyxis Oncology",
+  "u": "stocks/pyxs.html"
+ },
+ {
+  "t": "s",
+  "n": "PAC Grupo Aeroportuario del Pacifico",
+  "u": "stocks/pac.html"
+ },
+ {
+  "t": "s",
+  "n": "OKLO Oklo",
+  "u": "stocks/oklo.html"
+ },
+ {
+  "t": "s",
+  "n": "NFG National Fuel Gas",
+  "u": "stocks/nfg.html"
+ },
+ {
+  "t": "s",
+  "n": "NBHC National Bank Holdings",
+  "u": "stocks/nbhc.html"
+ },
+ {
+  "t": "s",
+  "n": "MSGR MSG Rangers",
+  "u": "stocks/msgr.html"
+ },
+ {
+  "t": "s",
+  "n": "HUM Humana",
+  "u": "stocks/hum.html"
+ },
+ {
+  "t": "s",
+  "n": "GWW W.W. Grainger",
+  "u": "stocks/gww.html"
+ },
+ {
+  "t": "s",
+  "n": "GAP Gap Inc.",
+  "u": "stocks/gap.html"
+ },
+ {
+  "t": "s",
+  "n": "FTS Fortis",
+  "u": "stocks/fts.html"
+ },
+ {
+  "t": "s",
+  "n": "FAST Fastenal",
+  "u": "stocks/fast.html"
+ },
+ {
+  "t": "s",
+  "n": "EXPD Expeditors International",
+  "u": "stocks/expd.html"
+ },
+ {
+  "t": "s",
+  "n": "EVH Evolent Health",
+  "u": "stocks/evh.html"
+ },
+ {
+  "t": "s",
+  "n": "EMN Eastman Chemical",
+  "u": "stocks/emn.html"
+ },
+ {
+  "t": "s",
+  "n": "EBMT Eagle Bancorp Montana",
+  "u": "stocks/ebmt.html"
+ },
+ {
+  "t": "s",
+  "n": "COFS ChoiceOne Financial",
+  "u": "stocks/cofs.html"
+ },
+ {
+  "t": "s",
+  "n": "BRK.B Berkshire Hathaway",
+  "u": "stocks/brk-b.html"
+ },
+ {
+  "t": "s",
+  "n": "BORR Borr Drilling",
+  "u": "stocks/borr.html"
+ },
+ {
+  "t": "s",
+  "n": "BMRC Bank of Marin",
+  "u": "stocks/bmrc.html"
+ },
+ {
+  "t": "s",
+  "n": "BANR Banner Corp.",
+  "u": "stocks/banr.html"
  },
  {
   "t": "s",
@@ -463,11 +693,6 @@
   "t": "s",
   "n": "BOX Box",
   "u": "stocks/box.html"
- },
- {
-  "t": "s",
-  "n": "BILL BILL Holdings",
-  "u": "stocks/bill.html"
  },
  {
   "t": "s",
@@ -541,11 +766,6 @@
  },
  {
   "t": "s",
-  "n": "NVDA NVIDIA",
-  "u": "stocks/nvda.html"
- },
- {
-  "t": "s",
   "n": "DIS Walt Disney",
   "u": "stocks/dis.html"
  },
@@ -553,11 +773,6 @@
   "t": "s",
   "n": "TYL Tyler Technologies",
   "u": "stocks/tyl.html"
- },
- {
-  "t": "s",
-  "n": "PODD Insulet",
-  "u": "stocks/podd.html"
  },
  {
   "t": "s",
@@ -688,11 +903,6 @@
   "t": "s",
   "n": "SWK Stanley Black & Decker",
   "u": "stocks/swk.html"
- },
- {
-  "t": "s",
-  "n": "PRAX Praxis Precision Medicines",
-  "u": "stocks/prax.html"
  },
  {
   "t": "s",
@@ -878,11 +1088,6 @@
   "t": "s",
   "n": "CTVA Corteva",
   "u": "stocks/ctva.html"
- },
- {
-  "t": "s",
-  "n": "CRWD CrowdStrike",
-  "u": "stocks/crwd.html"
  },
  {
   "t": "s",
@@ -1148,11 +1353,6 @@
   "t": "s",
   "n": "ROL Rollins",
   "u": "stocks/rol.html"
- },
- {
-  "t": "s",
-  "n": "PDD PDD Holdings",
-  "u": "stocks/pdd.html"
  },
  {
   "t": "s",
