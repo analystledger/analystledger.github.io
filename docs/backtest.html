@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Weekly sigma-band backtest: SPY and QQQ | Analyst Ledger</title>
+<meta name="description" content="How often SPY and QQQ actually stayed inside their weekly ±1σ band over five years, how often they fell 2σ and 3σ, and how big the losing weeks were for a put sold at the −1σ line.">
+<meta property="og:title" content="Weekly sigma-band backtest: SPY and QQQ | Analyst Ledger">
+<meta property="og:description" content="How often SPY and QQQ actually stayed inside their weekly ±1σ band over five years, how often they fell 2σ and 3σ, and how big the losing weeks were for a put sold at the −1σ line.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://analystledger.github.io/assets/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+<link rel="alternate" type="application/rss+xml" title="Analyst Ledger" href="feed.xml">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="top">
+  <div class="wrap bar">
+    <a class="brand" href="index.html"><img src="assets/logo.svg" alt="" width="28" height="28"> Analyst Ledger</a>
+    <nav>
+      <a href="index.html">Latest</a>
+      <a href="analysts/index.html">Analysts</a>
+      <a href="stocks/index.html">Stocks</a>
+      <a href="news.html">News</a>
+      <a href="learn.html">Learn &amp; tools</a>
+      <a href="start.html">Open account</a>
+      <a href="about.html">About</a>
+    </nav>
+    <div class="search">
+      <input id="q" type="search" placeholder="Search ticker, analyst, firm…" autocomplete="off" aria-label="Search">
+      <div id="qres" class="qres" hidden></div>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+
+<style>
+.bt{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 20px;margin-bottom:18px}
+.bt h2{margin-top:0}
+.res{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin:8px 0 14px}
+.res div{background:var(--bg);border-radius:10px;padding:10px 12px}.res b{display:block;font-size:20px}.res span{font-size:12.5px;color:var(--muted)}
+svg.hist{width:100%;height:auto}
+.hist text{font-size:10.5px;fill:var(--muted)}
+.key{display:flex;gap:14px;font-size:12.5px;color:var(--muted);flex-wrap:wrap}
+.key i{display:inline-block;width:12px;height:12px;border-radius:2px;margin-right:5px;vertical-align:-1px}
+</style>
+<p class="crumbs"><a href="learn.html">Learn</a> / Weekly sigma-band backtest</p>
+<section class="hero small">
+  <h1>Weekly sigma-band backtest</h1>
+  <p>Put sellers often draw a ±1σ band each week and sell puts below it. This page checks, over five years of weekly moves in SPY and QQQ, how often price really stayed above the −1σ line — and how big the losing weeks were.</p>
+</section>
+
+
+
+<section class="bt" id="spy">
+  <h2>SPY — 255 weeks (2022-01-07 to 2026-11-20)</h2>
+  <div class="res">
+    <div><b>83.5%</b><span>weeks that stayed above −1σ (213 of 255)</span></div>
+    <div><b>42</b><span>weeks that fell through −1σ (bell curve: 40.5)</span></div>
+    <div><b>6</b><span>weeks that fell 2σ or more (bell curve: 5.8)</span></div>
+    <div><b>3</b><span>weeks that fell 3σ or more (bell curve: 0.3)</span></div>
+    <div><b>±2.14%</b><span>average width of 1σ in a week</span></div>
+  </div>
+
+  
+  <svg class="hist" viewBox="0 0 640 230" role="img" aria-label="Number of weeks by size of move in sigma for SPY">
+    
+      
+      
+      <rect x="30" y="190.0" width="30" height="0.0" rx="3" fill="#d23b3b" fill-opacity="1"><title>-4.0σ to -3.5σ: 0 weeks</title></rect>
+      
+      <text x="30" y="206" text-anchor="middle">-4σ</text>
+    
+      
+      
+      <rect x="66" y="179.375" width="30" height="10.625" rx="3" fill="#d23b3b" fill-opacity="1"><title>-3.5σ to -3.0σ: 3 weeks</title></rect>
+      <text x="81" y="175.375" text-anchor="middle">3</text>
+      
+    
+      
+      
+      <rect x="102" y="182.91666666666666" width="30" height="7.083333333333333" rx="3" fill="#d23b3b" fill-opacity="1"><title>-3.0σ to -2.5σ: 2 weeks</title></rect>
+      <text x="117" y="178.91666666666666" text-anchor="middle">2</text>
+      <text x="102" y="206" text-anchor="middle">-3σ</text>
+    
+      
+      
+      <rect x="138" y="186.45833333333334" width="30" height="3.5416666666666665" rx="3" fill="#d23b3b" fill-opacity="1"><title>-2.5σ to -2.0σ: 1 weeks</title></rect>
+      <text x="153" y="182.45833333333334" text-anchor="middle">1</text>
+      
+    
+      
+      
+      <rect x="174" y="143.95833333333334" width="30" height="46.041666666666664" rx="3" fill="#d23b3b" fill-opacity="1"><title>-2.0σ to -1.5σ: 13 weeks</title></rect>
+      <text x="189" y="139.95833333333334" text-anchor="middle">13</text>
+      <text x="174" y="206" text-anchor="middle">-2σ</text>
+    
+      
+      
+      <rect x="210" y="108.54166666666667" width="30" height="81.45833333333333" rx="3" fill="#d23b3b" fill-opacity="1"><title>-1.5σ to -1.0σ: 23 weeks</title></rect>
+      <text x="225" y="104.54166666666667" text-anchor="middle">23</text>
+      
+    
+      
+      
+      <rect x="246" y="90.83333333333333" width="30" height="99.16666666666667" rx="3" fill="#0b5fff" fill-opacity=".75"><title>-1.0σ to -0.5σ: 28 weeks</title></rect>
+      <text x="261" y="86.83333333333333" text-anchor="middle">28</text>
+      <text x="246" y="206" text-anchor="middle">-1σ</text>
+    
+      
+      
+      <rect x="282" y="20.0" width="30" height="170.0" rx="3" fill="#0b5fff" fill-opacity=".75"><title>-0.5σ to 0.0σ: 48 weeks</title></rect>
+      <text x="297" y="16.0" text-anchor="middle">48</text>
+      
+    
+      
+      
+      <rect x="318" y="41.25" width="30" height="148.75" rx="3" fill="#0b5fff" fill-opacity=".75"><title>0.0σ to 0.5σ: 42 weeks</title></rect>
+      <text x="333" y="37.25" text-anchor="middle">42</text>
+      <text x="318" y="206" text-anchor="middle">0σ</text>
+    
+      
+      
+      <rect x="354" y="23.541666666666657" width="30" height="166.45833333333334" rx="3" fill="#0b5fff" fill-opacity=".75"><title>0.5σ to 1.0σ: 47 weeks</title></rect>
+      <text x="369" y="19.541666666666657" text-anchor="middle">47</text>
+      
+    
+      
+      
+      <rect x="390" y="80.20833333333333" width="30" height="109.79166666666667" rx="3" fill="#0a8f4d" fill-opacity=".75"><title>1.0σ to 1.5σ: 31 weeks</title></rect>
+      <text x="405" y="76.20833333333333" text-anchor="middle">31</text>
+      <text x="390" y="206" text-anchor="middle">1σ</text>
+    
+      
+      
+      <rect x="426" y="151.04166666666666" width="30" height="38.958333333333336" rx="3" fill="#0a8f4d" fill-opacity=".75"><title>1.5σ to 2.0σ: 11 weeks</title></rect>
+      <text x="441" y="147.04166666666666" text-anchor="middle">11</text>
+      
+    
+      
+      
+      <rect x="462" y="175.83333333333334" width="30" height="14.166666666666666" rx="3" fill="#0a8f4d" fill-opacity=".75"><title>2.0σ to 2.5σ: 4 weeks</title></rect>
+      <text x="477" y="171.83333333333334" text-anchor="middle">4</text>
+      <text x="462" y="206" text-anchor="middle">2σ</text>
+    
+      
+      
+      <rect x="498" y="182.91666666666666" width="30" height="7.083333333333333" rx="3" fill="#0a8f4d" fill-opacity=".75"><title>2.5σ to 3.0σ: 2 weeks</title></rect>
+      <text x="513" y="178.91666666666666" text-anchor="middle">2</text>
+      
+    
+      
+      
+      <rect x="534" y="190.0" width="30" height="0.0" rx="3" fill="#0a8f4d" fill-opacity=".75"><title>3.0σ to 3.5σ: 0 weeks</title></rect>
+      
+      <text x="534" y="206" text-anchor="middle">3σ</text>
+    
+      
+      
+      <rect x="570" y="190.0" width="30" height="0.0" rx="3" fill="#0a8f4d" fill-opacity=".75"><title>3.5σ to 4.0σ: 0 weeks</title></rect>
+      
+      
+    
+    <text x="606" y="206" text-anchor="middle">+4σ</text>
+    <text x="320" y="224" text-anchor="middle">weekly move, in sigma</text>
+  </svg>
+  <div class="key"><span><i style="background:#d23b3b"></i>below −1σ (a put at −1σ loses)</span><span><i style="background:#0b5fff;opacity:.75"></i>inside ±1σ</span><span><i style="background:#0a8f4d;opacity:.75"></i>above +1σ</span></div>
+
+  <h3>If you had sold a put at the −1σ line every week</h3>
+  <p>In the 42 weeks the price ended below the line, it finished on average <b>1.13%</b> of the share price below the strike, and <b>6.16%</b> in the worst week. On SPY that is the loss per share before the premium you collected — the premiums from the winning weeks have to pay for it.</p>
+
+  <h3>Five worst weeks</h3>
+  <div class="tw"><table class="ev"><thead><tr><th>Week ending</th><th>Move</th><th>In sigma</th></tr></thead><tbody>
+  <tr><td>2025-04-04</td><td class="down">-9.07%</td><td>-3.22σ</td></tr><tr><td>2022-01-21</td><td class="down">-5.75%</td><td>-3.15σ</td></tr><tr><td>2025-10-10</td><td class="down">-2.42%</td><td>-3.07σ</td></tr><tr><td>2026-11-20</td><td class="down">-8.56%</td><td>-2.85σ</td></tr><tr><td>2025-08-01</td><td class="down">-2.41%</td><td>-2.65σ</td></tr>
+  </tbody></table></div>
+</section>
+
+<section class="bt" id="qqq">
+  <h2>QQQ — 255 weeks (2022-01-07 to 2026-11-20)</h2>
+  <div class="res">
+    <div><b>84.3%</b><span>weeks that stayed above −1σ (215 of 255)</span></div>
+    <div><b>40</b><span>weeks that fell through −1σ (bell curve: 40.5)</span></div>
+    <div><b>10</b><span>weeks that fell 2σ or more (bell curve: 5.8)</span></div>
+    <div><b>0</b><span>weeks that fell 3σ or more (bell curve: 0.3)</span></div>
+    <div><b>±2.93%</b><span>average width of 1σ in a week</span></div>
+  </div>
+
+  
+  <svg class="hist" viewBox="0 0 640 230" role="img" aria-label="Number of weeks by size of move in sigma for QQQ">
+    
+      
+      
+      <rect x="30" y="190.0" width="30" height="0.0" rx="3" fill="#d23b3b" fill-opacity="1"><title>-4.0σ to -3.5σ: 0 weeks</title></rect>
+      
+      <text x="30" y="206" text-anchor="middle">-4σ</text>
+    
+      
+      
+      <rect x="66" y="190.0" width="30" height="0.0" rx="3" fill="#d23b3b" fill-opacity="1"><title>-3.5σ to -3.0σ: 0 weeks</title></rect>
+      
+      
+    
+      
+      
+      <rect x="102" y="176.92307692307693" width="30" height="13.076923076923077" rx="3" fill="#d23b3b" fill-opacity="1"><title>-3.0σ to -2.5σ: 4 weeks</title></rect>
+      <text x="117" y="172.92307692307693" text-anchor="middle">4</text>
+      <text x="102" y="206" text-anchor="middle">-3σ</text>
+    
+      
+      
+      <rect x="138" y="170.3846153846154" width="30" height="19.615384615384617" rx="3" fill="#d23b3b" fill-opacity="1"><title>-2.5σ to -2.0σ: 6 weeks</title></rect>
+      <text x="153" y="166.3846153846154" text-anchor="middle">6</text>
+      
+    
+      
+      
+      <rect x="174" y="180.19230769230768" width="30" height="9.807692307692308" rx="3" fill="#d23b3b" fill-opacity="1"><title>-2.0σ to -1.5σ: 3 weeks</title></rect>
+      <text x="189" y="176.19230769230768" text-anchor="middle">3</text>
+      <text x="174" y="206" text-anchor="middle">-2σ</text>
+    
+      
+      
+      <rect x="210" y="101.73076923076923" width="30" height="88.26923076923077" rx="3" fill="#d23b3b" fill-opacity="1"><title>-1.5σ to -1.0σ: 27 weeks</title></rect>
+      <text x="225" y="97.73076923076923" text-anchor="middle">27</text>
+      
+    
+      
+      
+      <rect x="246" y="78.84615384615384" width="30" height="111.15384615384616" rx="3" fill="#0b5fff" fill-opacity=".75"><title>-1.0σ to -0.5σ: 34 weeks</title></rect>
+      <text x="261" y="74.84615384615384" text-anchor="middle">34</text>
+      <text x="246" y="206" text-anchor="middle">-1σ</text>
+    
+      
+      
+      <rect x="282" y="62.5" width="30" height="127.5" rx="3" fill="#0b5fff" fill-opacity=".75"><title>-0.5σ to 0.0σ: 39 weeks</title></rect>
+      <text x="297" y="58.5" text-anchor="middle">39</text>
+      
+    
+      
+      
+      <rect x="318" y="20.0" width="30" height="170.0" rx="3" fill="#0b5fff" fill-opacity=".75"><title>0.0σ to 0.5σ: 52 weeks</title></rect>
+      <text x="333" y="16.0" text-anchor="middle">52</text>
+      <text x="318" y="206" text-anchor="middle">0σ</text>
+    
+      
+      
+      <rect x="354" y="52.69230769230768" width="30" height="137.30769230769232" rx="3" fill="#0b5fff" fill-opacity=".75"><title>0.5σ to 1.0σ: 42 weeks</title></rect>
+      <text x="369" y="48.69230769230768" text-anchor="middle">42</text>
+      
+    
+      
+      
+      <rect x="390" y="114.8076923076923" width="30" height="75.1923076923077" rx="3" fill="#0a8f4d" fill-opacity=".75"><title>1.0σ to 1.5σ: 23 weeks</title></rect>
+      <text x="405" y="110.8076923076923" text-anchor="middle">23</text>
+      <text x="390" y="206" text-anchor="middle">1σ</text>
+    
+      
+      
+      <rect x="426" y="134.4230769230769" width="30" height="55.57692307692308" rx="3" fill="#0a8f4d" fill-opacity=".75"><title>1.5σ to 2.0σ: 17 weeks</title></rect>
+      <text x="441" y="130.4230769230769" text-anchor="middle">17</text>
+      
+    
+      
+      
+      <rect x="462" y="167.1153846153846" width="30" height="22.884615384615383" rx="3" fill="#0a8f4d" fill-opacity=".75"><title>2.0σ to 2.5σ: 7 weeks</title></rect>
+      <text x="477" y="163.1153846153846" text-anchor="middle">7</text>
+      <text x="462" y="206" text-anchor="middle">2σ</text>
+    
+      
+      
+      <rect x="498" y="186.73076923076923" width="30" height="3.269230769230769" rx="3" fill="#0a8f4d" fill-opacity=".75"><title>2.5σ to 3.0σ: 1 weeks</title></rect>
+      <text x="513" y="182.73076923076923" text-anchor="middle">1</text>
+      
+    
+      
+      
+      <rect x="534" y="190.0" width="30" height="0.0" rx="3" fill="#0a8f4d" fill-opacity=".75"><title>3.0σ to 3.5σ: 0 weeks</title></rect>
+      
+      <text x="534" y="206" text-anchor="middle">3σ</text>
+    
+      
+      
+      <rect x="570" y="190.0" width="30" height="0.0" rx="3" fill="#0a8f4d" fill-opacity=".75"><title>3.5σ to 4.0σ: 0 weeks</title></rect>
+      
+      
+    
+    <text x="606" y="206" text-anchor="middle">+4σ</text>
+    <text x="320" y="224" text-anchor="middle">weekly move, in sigma</text>
+  </svg>
+  <div class="key"><span><i style="background:#d23b3b"></i>below −1σ (a put at −1σ loses)</span><span><i style="background:#0b5fff;opacity:.75"></i>inside ±1σ</span><span><i style="background:#0a8f4d;opacity:.75"></i>above +1σ</span></div>
+
+  <h3>If you had sold a put at the −1σ line every week</h3>
+  <p>In the 40 weeks the price ended below the line, it finished on average <b>1.3%</b> of the share price below the strike, and <b>6.02%</b> in the worst week. On QQQ that is the loss per share before the premium you collected — the premiums from the winning weeks have to pay for it.</p>
+
+  <h3>Five worst weeks</h3>
+  <div class="tw"><table class="ev"><thead><tr><th>Week ending</th><th>Move</th><th>In sigma</th></tr></thead><tbody>
+  <tr><td>2022-01-21</td><td class="down">-7.45%</td><td>-2.88σ</td></tr><tr><td>2024-04-19</td><td class="down">-5.39%</td><td>-2.81σ</td></tr><tr><td>2025-04-04</td><td class="down">-9.87%</td><td>-2.65σ</td></tr><tr><td>2026-10-16</td><td class="down">-5.52%</td><td>-2.63σ</td></tr><tr><td>2025-10-10</td><td class="down">-2.27%</td><td>-2.28σ</td></tr>
+  </tbody></table></div>
+</section>
+
+
+<section class="bt">
+  <h2>What this shows</h2>
+  <ul>
+    <li><b>Most weeks are calm.</b> About 5 weeks in 6 ended above −1σ — that is why weekly put selling wins most of the time.</li>
+    <li><b>The tail is fatter than the bell curve.</b> Falls of 3σ or more were several times more frequent than a normal distribution predicts. One such week can erase months of small gains.</li>
+    <li><b>Win rate is not profit.</b> Always ask how big the losing weeks were, and whether the premiums collected cover them after commissions.</li>
+  </ul>
+  <h3>Method</h3>
+  <p class="note">Weekly close-to-close moves (last trading day of each week). One sigma = standard deviation of the previous 20 daily moves, scaled to the trading days in the week (realised volatility, not option-implied). Moves are measured from the last close of one week to the last close of the next. Option-implied volatility is usually a little higher than realised volatility, so bands drawn from option prices are slightly wider and would be crossed somewhat less often. Five years is a short sample. Updated 2026-11-23. Computed from daily closing prices; only aggregated results are published.</p>
+</section>
+
+<p class="note">Educational analysis of past prices only — past results do not predict future results, and this is not investment advice. Analyst Ledger publishes factual records of publicly reported analyst rating and price-target changes for information only. Nothing here is investment advice or a recommendation to buy or sell any security. Data may be delayed or incomplete — always verify with the original source.</p>
+
+</main>
+<footer class="wrap foot">
+  <p><strong>Disclaimer:</strong> Analyst Ledger publishes factual records of publicly reported analyst rating and price-target changes for information only. Nothing here is investment advice or a recommendation to buy or sell any security. Data may be delayed or incomplete — always verify with the original source.</p>
+  <p>213 rating changes · 89 analysts · 148 stocks · Updated 2026-11-23 16:04 UTC · <a href="feed.xml">RSS</a> · <a href="terms.html">Terms</a> · <a href="privacy.html">Privacy</a></p>
+</footer>
+<script>window.ROOT = "";</script>
+<script src="assets/app.js"></script>
+</body>
+</html>

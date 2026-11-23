@@ -1,5 +1,5 @@
 {
- "updated_utc": "2026-11-23 15:12 UTC",
+ "updated_utc": "2026-11-23 16:04 UTC",
  "total_events": 213,
  "new_events": 0,
  "log": [
@@ -8,9 +8,9 @@
   "News (Claude): 213 events",
   "Prices (Stooq): first 5 tickers failed - skipping price update this run",
   "Prices (Stooq): 0 tickers updated, 0 rating prices filled, 5 failed",
-  "  AJG: HTTP 200 '<!DOCTYPE html><html><head><meta charset=\"utf-8\"><meta name=\"robots\" content=\"noindex,nofollow\"></head><body><noscript>T'",
-  "  ALNY: HTTP 200 '<!DOCTYPE html><html><head><meta charset=\"utf-8\"><meta name=\"robots\" content=\"noindex,nofollow\"></head><body><noscript>T'",
-  "  AMD: HTTP 200 '<!DOCTYPE html><html><head><meta charset=\"utf-8\"><meta name=\"robots\" content=\"noindex,nofollow\"></head><body><noscript>T'",
+  "  AON: HTTPSConnectionPool(host='stooq.com', port=443): Max retries exceeded with url: /q/d/l/?s=aon.us&i=d&d1=20261113&d2=20261123 (Caused by ConnectTimeoutError(<HTTPSConnection(host='stooq.com', port=443) at 0x79d3d6a56f30>, 'Connection to stooq.com timed out. (connect timeout=10)'))",
+  "  APH: HTTPSConnectionPool(host='stooq.com', port=443): Max retries exceeded with url: /q/d/l/?s=aph.us&i=d&d1=20261102&d2=20261123 (Caused by ConnectTimeoutError(<HTTPSConnection(host='stooq.com', port=443) at 0x79d3d6a2aae0>, 'Connection to stooq.com timed out. (connect timeout=10)'))",
+  "  APP: HTTPSConnectionPool(host='stooq.com', port=443): Max retries exceeded with url: /q/d/l/?s=app.us&i=d&d1=20261106&d2=20261123 (Caused by ConnectTimeoutError(<HTTPSConnection(host='stooq.com', port=443) at 0x79d3d6a29e50>, 'Connection to stooq.com timed out. (connect timeout=10)'))",
   "Alerts queued: 0 pending"
  ]
 }

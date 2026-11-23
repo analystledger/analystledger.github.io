@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Learn options trading: free lessons and tools | Analyst Ledger</title>
+<meta name="description" content="Free plain-English lessons on options — calls and puts, covered calls, cash-secured puts, spreads, expected moves and sigma bands, position sizing and event risk — plus free calculators, a trade journal and a weekly sigma-band backtest.">
+<meta property="og:title" content="Learn options trading: free lessons and tools | Analyst Ledger">
+<meta property="og:description" content="Free plain-English lessons on options — calls and puts, covered calls, cash-secured puts, spreads, expected moves and sigma bands, position sizing and event risk — plus free calculators, a trade journal and a weekly sigma-band backtest.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://analystledger.github.io/assets/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+<link rel="alternate" type="application/rss+xml" title="Analyst Ledger" href="feed.xml">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="top">
+  <div class="wrap bar">
+    <a class="brand" href="index.html"><img src="assets/logo.svg" alt="" width="28" height="28"> Analyst Ledger</a>
+    <nav>
+      <a href="index.html">Latest</a>
+      <a href="analysts/index.html">Analysts</a>
+      <a href="stocks/index.html">Stocks</a>
+      <a href="news.html">News</a>
+      <a href="learn.html">Learn &amp; tools</a>
+      <a href="start.html">Open account</a>
+      <a href="about.html">About</a>
+    </nav>
+    <div class="search">
+      <input id="q" type="search" placeholder="Search ticker, analyst, firm…" autocomplete="off" aria-label="Search">
+      <div id="qres" class="qres" hidden></div>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+
+<style>
+.hub{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin:8px 0 22px}
+.hub a{display:block;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;color:var(--ink)}
+.hub a:hover{text-decoration:none;border-color:var(--brand)}
+.hub b{display:block;font-size:16px;margin-bottom:4px;color:var(--brand)}
+.hub span{color:var(--muted);font-size:13.5px}
+.toc{columns:2;column-gap:24px;padding-left:20px}.toc li{margin:3px 0}
+.lesson{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 20px;margin-bottom:16px}
+.lesson h2{margin-top:0}
+.lesson .ex{background:var(--bg);border-left:3px solid var(--brand);padding:8px 12px;border-radius:6px;margin:10px 0}
+.lesson .risk{background:#fff7e0;border-left:3px solid #e0a800;padding:8px 12px;border-radius:6px;margin:10px 0}
+@media(max-width:640px){.toc{columns:1}}
+</style>
+<section class="hero small">
+  <h1>Learn options — free</h1>
+  <p>Plain-English lessons and free tools for people starting with stock options. Everything here is educational: it explains how strategies work and where they lose money, and never tells you what to buy or sell.</p>
+</section>
+
+<div class="hub">
+  <a href="tools.html"><b>Options calculators</b><span>Expected move (±1σ/±2σ), profit and loss charts, compounding.</span></a>
+  <a href="backtest.html"><b>Weekly sigma-band backtest</b><span>How often SPY and QQQ really stayed inside the weekly band — and the bad weeks.</span></a>
+  <a href="journal.html"><b>Trade journal</b><span>Log practice or real trades and track your win rate. Saved only in your browser.</span></a>
+  <a href="planner.html"><b>Budget planner</b><span>What your budget can support and how much you could lose per trade.</span></a>
+  <a href="start.html"><b>Open an account</b><span>How to set up a brokerage account safely, step by step.</span></a>
+</div>
+
+<h2>Lessons</h2>
+<ol class="toc">
+  <li><a href="#basics">Calls and puts in 5 minutes</a></li>
+  <li><a href="#covered-call">Covered calls</a></li>
+  <li><a href="#csp">Cash-secured puts</a></li>
+  <li><a href="#spreads">Credit spreads: capping the worst case</a></li>
+  <li><a href="#sigma">Expected move and sigma bands</a></li>
+  <li><a href="#sizing">Position sizing: the 1–2% rule</a></li>
+  <li><a href="#events">Event risk, assignment and expiry day</a></li>
+  <li><a href="#mistakes">Seven common beginner mistakes</a></li>
+</ol>
+
+<article class="lesson" id="basics">
+<h2>1. Calls and puts in 5 minutes</h2>
+<p>An option is a contract on 100 shares that expires on a set date.</p>
+<ul>
+  <li><b>A call</b> gives the buyer the right to buy 100 shares at the <b>strike price</b> until expiry. Buyers profit if the stock rises well above the strike.</li>
+  <li><b>A put</b> gives the buyer the right to sell 100 shares at the strike. Buyers profit if the stock falls well below it.</li>
+  <li>The price of an option is the <b>premium</b>, quoted per share. A premium of $2.00 costs $200 per contract.</li>
+  <li><b>Buyers</b> can lose at most the premium. <b>Sellers</b> collect the premium but take on the obligation — and the risk — on the other side.</li>
+</ul>
+<div class="ex"><b>Example:</b> a stock trades at $100. A one-month $105 call costs $1.50. The buyer pays $150. If the stock ends at $110, the call is worth $5 ($500): a $350 profit. If it ends below $105, the call expires worthless and the $150 is lost.</div>
+<p>Premium has two parts: <b>intrinsic value</b> (how far the option is already in the money) and <b>time value</b>, which shrinks every day until expiry (called <b>theta decay</b>). Higher expected volatility (<b>implied volatility</b>) makes options more expensive.</p>
+</article>
+
+<article class="lesson" id="covered-call">
+<h2>2. Covered calls</h2>
+<p>You own 100 shares and sell one call against them. You keep the premium. If the stock ends above the strike, your shares are sold at the strike.</p>
+<ul>
+  <li><b>Good for:</b> earning extra income on shares you would be happy to sell at the strike.</li>
+  <li><b>Upside is capped</b> at the strike plus the premium.</li>
+  <li><b>Downside is almost the same as owning the shares</b> — the premium only cushions a fall slightly.</li>
+</ul>
+<div class="ex"><b>Example:</b> you own 100 shares at $40 and sell a 2-week $45 call for $0.60, collecting $60. Stock at $43 on expiry: you keep the shares and the $60. Stock at $50: your shares are sold at $45 — you miss the move above $45.</div>
+<div class="risk"><b>Watch out:</b> never sell a strike below the price you would accept for your shares. If the stock has fallen far below what you paid, a low strike can lock in a loss when it rebounds.</div>
+</article>
+
+<article class="lesson" id="csp">
+<h2>3. Cash-secured puts</h2>
+<p>You sell a put and keep enough cash to buy 100 shares at the strike. You collect the premium. If the stock ends below the strike, you buy the shares at the strike.</p>
+<ul>
+  <li><b>Good for:</b> getting paid while waiting to buy a stock you want, at a lower price.</li>
+  <li><b>Cash needed:</b> strike × 100. A $50 strike ties up $5,000.</li>
+  <li><b>Worst case:</b> the stock collapses and you own 100 shares bought at the strike, far above market.</li>
+</ul>
+<div class="ex"><b>Example:</b> a stock trades at $55. You sell a $50 put for $1.00 and collect $100, holding $5,000. If it ends at $52, you keep $100. If it ends at $40, you buy at $50: a paper loss of $1,000 minus the $100 premium.</div>
+</article>
+
+<article class="lesson" id="spreads">
+<h2>4. Credit spreads: capping the worst case</h2>
+<p>A <b>put credit spread</b> sells one put and buys a cheaper put further below. The bought put limits the loss.</p>
+<ul>
+  <li><b>Maximum loss</b> = (distance between strikes − premium) × 100.</li>
+  <li><b>Maximum gain</b> = premium collected.</li>
+  <li>Uses far less money than a cash-secured put, which is why small accounts use it.</li>
+</ul>
+<div class="ex"><b>Example:</b> sell a $500 put and buy a $495 put for a net $1.20. Maximum gain $120. Maximum loss ($5 − $1.20) × 100 = $380 — more than three times the gain.</div>
+<div class="risk"><b>Watch out:</b> spreads often win small amounts many times and then lose the maximum in one sharp fall. Size them so the maximum loss — not the expected gain — fits your rules.</div>
+</article>
+
+<article class="lesson" id="sigma">
+<h2>5. Expected move and sigma bands</h2>
+<p>Options prices imply how far the market expects a stock might move. One standard deviation (<b>1σ</b>) of that move is roughly:</p>
+<div class="ex"><b>1σ move ≈ price × implied volatility × √(days ÷ 365)</b><br>Example: price $700, implied volatility 18%, 5 days → 700 × 0.18 × √(5/365) ≈ $14.7.</div>
+<ul>
+  <li>In a textbook bell curve, the price stays inside ±1σ about 68% of the time and above −1σ about 84% of the time.</li>
+  <li>Real markets have <b>fat tails</b>: very large drops happen far more often than the bell curve says. See our <a href="backtest.html">weekly backtest</a> — SPY fell more than 3σ in a week about ten times as often as the bell curve predicts.</li>
+  <li>A band is a description of what prices imply, not a forecast.</li>
+</ul>
+<p>Try it with the <a href="tools.html#em">expected-move calculator</a>.</p>
+</article>
+
+<article class="lesson" id="sizing">
+<h2>6. Position sizing: the 1–2% rule</h2>
+<p>Decide the most you will lose on one trade <b>before</b> you trade. Many traders use 1–2% of their account.</p>
+<ul>
+  <li>With €5,000, 2% is €100. A spread whose maximum loss is $380 is too big for that account.</li>
+  <li>Size by the <b>worst case</b>, never by the expected profit or the broker's "buying power".</li>
+  <li>Avoid putting most of your account into one stock or one bet, even in different trades.</li>
+</ul>
+<p>The <a href="planner.html">budget planner</a> works this out for you.</p>
+</article>
+
+<article class="lesson" id="events">
+<h2>7. Event risk, assignment and expiry day</h2>
+<ul>
+  <li><b>Earnings, central-bank meetings, mergers and CEO changes</b> can move a stock several sigma overnight. Many option sellers close positions before these dates.</li>
+  <li><b>Assignment:</b> a short option that is in the money can be exercised against you, usually at expiry and sometimes earlier (often before a dividend).</li>
+  <li><b>Expiry day:</b> a stock finishing close to your strike makes the outcome uncertain. Closing the position before the final hour avoids surprises.</li>
+  <li><b>Gaps:</b> stocks can open far from the previous close. A stop order does not protect you through a gap.</li>
+</ul>
+</article>
+
+<article class="lesson" id="mistakes">
+<h2>8. Seven common beginner mistakes</h2>
+<ol>
+  <li>Sizing by how much you hope to make instead of how much you could lose.</li>
+  <li>Holding short options through earnings or major news.</li>
+  <li>Buying cheap far-out-of-the-money options that almost always expire worthless.</li>
+  <li>Using market orders on options with wide bid–ask spreads — always use limit orders.</li>
+  <li>Doubling down on a losing bet to "win it back".</li>
+  <li>Trusting high win rates without asking how big the losing trades were.</li>
+  <li>Skipping a practice (paper) account and a written trading journal.</li>
+</ol>
+<p>Start a <a href="journal.html">trade journal</a> — it is free and stays in your browser.</p>
+</article>
+
+<p class="note">Educational information only — not investment advice. Options involve a high risk of loss and are not suitable for everyone. Analyst Ledger publishes factual records of publicly reported analyst rating and price-target changes for information only. Nothing here is investment advice or a recommendation to buy or sell any security. Data may be delayed or incomplete — always verify with the original source.</p>
+
+</main>
+<footer class="wrap foot">
+  <p><strong>Disclaimer:</strong> Analyst Ledger publishes factual records of publicly reported analyst rating and price-target changes for information only. Nothing here is investment advice or a recommendation to buy or sell any security. Data may be delayed or incomplete — always verify with the original source.</p>
+  <p>213 rating changes · 89 analysts · 148 stocks · Updated 2026-11-23 16:04 UTC · <a href="feed.xml">RSS</a> · <a href="terms.html">Terms</a> · <a href="privacy.html">Privacy</a></p>
+</footer>
+<script>window.ROOT = "";</script>
+<script src="assets/app.js"></script>
+</body>
+</html>
