@@ -137,13 +137,16 @@ def queued_posts():
         long = p.get("long", p["short"]).strip()
         if CFG["post_disclaimer"] not in long:
             long += f"\n\n{CFG['post_disclaimer']}"
-        out.append({"id": p["id"], "short": short, "long": long, "image": img, "title": p["title"]})
+        item = {"id": p["id"], "short": short, "long": long, "image": img, "title": p["title"]}
+        if p.get("video") and os.path.exists(os.path.join(DOCS, p["video"])):
+            item["video"] = os.path.join(DOCS, p["video"])  # Reels/TikTok/Facebook/Telegram post the video
+        out.append(item)
     return out
 
 
 # ------------------------------------------------------------------ platforms
-def public_image_url(post, ext=None):
-    path = os.path.splitext(post["image"])[0] + ext if ext else post["image"]
+def public_image_url(post, ext=None, path=None):
+    path = path or (os.path.splitext(post["image"])[0] + ext if ext else post["image"])
     rel = os.path.relpath(path, DOCS).replace(os.sep, "/")
     url = f"{SITE}/{rel}"
     if DRY:
@@ -212,6 +215,12 @@ def post_mastodon(p):
 def post_telegram(p):
     tok, chat = ENV("TELEGRAM_BOT_TOKEN"), ENV("TELEGRAM_CHAT_ID")
     cap = p["long"] if len(p["long"]) <= 1024 else p["long"][:1020] + "…"
+    if p.get("video"):
+        with open(p["video"], "rb") as f:
+            r = requests.post(f"https://api.telegram.org/bot{tok}/sendVideo", timeout=120,
+                              data={"chat_id": chat, "caption": cap, "supports_streaming": "true"}, files={"video": f})
+        r.raise_for_status()
+        return
     with open(p["image"], "rb") as f:
         r = requests.post(f"https://api.telegram.org/bot{tok}/sendPhoto", timeout=60,
                           data={"chat_id": chat, "caption": cap}, files={"photo": f})
@@ -260,6 +269,12 @@ def check_facebook():
 
 
 def post_facebook(p):
+    if p.get("video"):
+        with open(p["video"], "rb") as f:
+            r = requests.post(f"{GRAPH}/{ENV('FB_PAGE_ID')}/videos", timeout=300, files={"source": f},
+                              data={"title": p["title"], "description": p["long"], "access_token": page_token()})
+        r.raise_for_status()
+        return
     with open(p["image"], "rb") as f:
         r = requests.post(f"{GRAPH}/{ENV('FB_PAGE_ID')}/photos", timeout=60, files={"source": f},
                           data={"caption": p["long"], "access_token": page_token()})
@@ -268,12 +283,15 @@ def post_facebook(p):
 
 def post_instagram(p):
     ig, tok = ENV("IG_USER_ID"), page_token()
-    url = public_image_url(p)
-    c = requests.post(f"{GRAPH}/{ig}/media", timeout=60,
-                      data={"image_url": url, "caption": p["long"][:2150], "access_token": tok})
+    if p.get("video"):  # publish as a Reel
+        data = {"media_type": "REELS", "video_url": public_image_url(p, path=p["video"]), "share_to_feed": "true",
+                "caption": p["long"][:2150], "access_token": tok}
+    else:
+        data = {"image_url": public_image_url(p), "caption": p["long"][:2150], "access_token": tok}
+    c = requests.post(f"{GRAPH}/{ig}/media", timeout=60, data=data)
     c.raise_for_status()
     cid = c.json()["id"]
-    for _ in range(20):
+    for _ in range(60 if p.get("video") else 20):
         st = requests.get(f"{GRAPH}/{cid}", params={"fields": "status_code", "access_token": tok}, timeout=30).json()
         if st.get("status_code") == "FINISHED":
             break
@@ -291,15 +309,22 @@ def post_tiktok(p):
     info = requests.post("https://open.tiktokapis.com/v2/post/publish/creator_info/query/", headers=h, timeout=30).json()
     opts = (info.get("data") or {}).get("privacy_level_options") or ["SELF_ONLY"]
     privacy = "PUBLIC_TO_EVERYONE" if "PUBLIC_TO_EVERYONE" in opts else opts[0]
-    body = {"post_info": {"title": p["title"][:90], "description": p["long"][:2200], "privacy_level": privacy,
-                          "disable_comment": False, "auto_add_music": False},
-            "source_info": {"source": "PULL_FROM_URL", "photo_cover_index": 0, "photo_images": [public_image_url(p, ".jpg")]},
-            "post_mode": "DIRECT_POST", "media_type": "PHOTO"}
-    r = requests.post("https://open.tiktokapis.com/v2/post/publish/content/init/", headers=h, json=body, timeout=60)
+    if p.get("video"):
+        endpoint = "https://open.tiktokapis.com/v2/post/publish/video/init/"
+        body = {"post_info": {"title": p["long"][:2200], "privacy_level": privacy, "disable_comment": False,
+                              "disable_duet": False, "disable_stitch": False, "video_cover_timestamp_ms": 1500},
+                "source_info": {"source": "PULL_FROM_URL", "video_url": public_image_url(p, path=p["video"])}}
+    else:
+        endpoint = "https://open.tiktokapis.com/v2/post/publish/content/init/"
+        body = {"post_info": {"title": p["title"][:90], "description": p["long"][:2200], "privacy_level": privacy,
+                              "disable_comment": False, "auto_add_music": False},
+                "source_info": {"source": "PULL_FROM_URL", "photo_cover_index": 0, "photo_images": [public_image_url(p, ".jpg")]},
+                "post_mode": "DIRECT_POST", "media_type": "PHOTO"}
+    r = requests.post(endpoint, headers=h, json=body, timeout=60)
     if "unaudited_client" in r.text and privacy != "SELF_ONLY":
         # Until TikTok approves the app, posts must be "only me" on a private account.
         privacy = body["post_info"]["privacy_level"] = "SELF_ONLY"
-        r = requests.post("https://open.tiktokapis.com/v2/post/publish/content/init/", headers=h, json=body, timeout=60)
+        r = requests.post(endpoint, headers=h, json=body, timeout=60)
     r.raise_for_status()
     if (r.json().get("error") or {}).get("code") not in (None, "ok"):
         raise RuntimeError(r.text[:300])
