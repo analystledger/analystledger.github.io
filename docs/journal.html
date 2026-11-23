@@ -10,9 +10,15 @@
 <meta property="og:type" content="website">
 <meta property="og:image" content="https://analystledger.github.io/assets/og.png">
 <meta name="twitter:card" content="summary_large_image">
+<link rel="alternate" hreflang="en" href="https://analystledger.github.io/journal.html">
+<link rel="alternate" hreflang="de" href="https://analystledger.github.io/de/journal.html">
+<link rel="alternate" hreflang="sq" href="https://analystledger.github.io/sq/journal.html">
+<link rel="alternate" hreflang="sr" href="https://analystledger.github.io/sr/journal.html">
+<link rel="alternate" hreflang="x-default" href="https://analystledger.github.io/journal.html">
 <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
 <link rel="alternate" type="application/rss+xml" title="Analyst Ledger" href="feed.xml">
 <link rel="stylesheet" href="assets/style.css">
+<script>window.ROOT = ""; window.AROOT = ""; window.LANG = "en"; window.TR = {}; window.T = function (s) { return window.TR[s] || s; };</script>
 </head>
 <body>
 <header class="top">
@@ -27,6 +33,7 @@
       <a href="start.html">Open account</a>
       <a href="about.html">About</a>
     </nav>
+    <div class="langs" aria-label="Language"><a href="journal.html" hreflang="en" lang="en" title="English" class="on" aria-current="true">EN</a><a href="de/journal.html" hreflang="de" lang="de" title="Deutsch">DE</a><a href="sq/journal.html" hreflang="sq" lang="sq" title="Shqip">SQ</a><a href="sr/journal.html" hreflang="sr" lang="sr" title="Srpski">SR</a></div>
     <div class="search">
       <input id="q" type="search" placeholder="Search ticker, analyst, firm…" autocomplete="off" aria-label="Search">
       <div id="qres" class="qres" hidden></div>
@@ -34,6 +41,7 @@
   </div>
 </header>
 <main class="wrap">
+
 
 <style>
 .tool{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 20px;margin-bottom:18px}
@@ -61,9 +69,9 @@
   <label>Date<input id="j-date" type="date" required></label>
   <label>Ticker<input id="j-tk" required placeholder="e.g. SPY" style="text-transform:uppercase"></label>
   <label>Strategy<select id="j-st">
-    <option>Shares</option><option>Covered call</option><option>Cash-secured put</option><option>Put credit spread</option>
-    <option>Call credit spread</option><option>Bought call</option><option>Bought put</option><option>Other</option></select></label>
-  <label>Account<select id="j-acc"><option>Practice</option><option>Real</option></select></label>
+    <option value="Shares">Shares</option><option value="Covered call">Covered call</option><option value="Cash-secured put">Cash-secured put</option><option value="Put credit spread">Put credit spread</option>
+    <option value="Call credit spread">Call credit spread</option><option value="Bought call">Bought call</option><option value="Bought put">Bought put</option><option value="Other">Other</option></select></label>
+  <label>Account<select id="j-acc"><option value="Practice">Practice</option><option value="Real">Real</option></select></label>
   <label>Most I could lose ($)<input id="j-risk" type="number" step="any" placeholder="worst case"></label>
   <label>Result ($, + or −)<input id="j-pl" type="number" step="any" placeholder="leave empty if open"></label>
   <label class="wide">Why I took it, and my exit plan<textarea id="j-why" rows="2" placeholder="e.g. Sold 1σ put, no earnings before expiry; close at 50% profit or if price breaks the strike"></textarea></label>
@@ -74,7 +82,7 @@
 
 <section class="tool">
 <h2>Your results</h2>
-<div class="fg" style="max-width:320px"><label>Show<select id="j-f"><option value="">All trades</option><option>Practice</option><option>Real</option></select></label></div>
+<div class="fg" style="max-width:320px"><label>Show<select id="j-f"><option value="">All trades</option><option value="Practice">Practice</option><option value="Real">Real</option></select></label></div>
 <div class="res" id="j-sum"></div>
 <div class="tw"><table class="ev"><thead><tr><th>Date</th><th>Ticker</th><th>Strategy</th><th>Account</th><th>Risk</th><th>Result</th><th>Notes</th><th></th></tr></thead><tbody id="j-rows"></tbody></table></div>
 <div class="row-actions">
@@ -88,10 +96,11 @@
 <p class="note">Educational tool only — not investment advice. Analyst Ledger publishes factual records of publicly reported analyst rating and price-target changes for information only. Nothing here is investment advice or a recommendation to buy or sell any security. Data may be delayed or incomplete — always verify with the original source.</p>
 <script>
 (function(){
+  var T=window.T||function(s){return s;};
   var KEY="al-journal-v1", mem=[];
   function $(i){return document.getElementById(i);}
-  function load(){try{var s=localStorage.getItem(KEY);return s?JSON.parse(s):[];}catch(e){$("j-warn").textContent="Your browser is blocking storage, so trades stay only until you close this page. Use Export to keep them.";return mem;}}
-  function save(a){mem=a;try{localStorage.setItem(KEY,JSON.stringify(a));}catch(e){$("j-warn").textContent="Could not save in this browser — export your trades to keep them.";}}
+  function load(){try{var s=localStorage.getItem(KEY);return s?JSON.parse(s):[];}catch(e){$("j-warn").textContent=T("Your browser is blocking storage, so trades stay only until you close this page. Use Export to keep them.");return mem;}}
+  function save(a){mem=a;try{localStorage.setItem(KEY,JSON.stringify(a));}catch(e){$("j-warn").textContent=T("Could not save in this browser — export your trades to keep them.");}}
   function esc(s){return String(s==null?"":s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c];});}
   function usd(x){return x==null||x===""?"—":(x<0?"−$":"$")+Math.abs(x).toLocaleString(undefined,{maximumFractionDigits:2});}
   $("j-date").value=new Date().toISOString().slice(0,10);
@@ -102,14 +111,14 @@
         wins=closed.filter(function(t){return t.pl>0;}),loss=closed.filter(function(t){return t.pl<=0;}),
         sum=function(a){return a.reduce(function(s,t){return s+Number(t.pl);},0);},
         aw=wins.length?sum(wins)/wins.length:null, al=loss.length?sum(loss)/loss.length:null;
-    $("j-sum").innerHTML=[[list.length,"trades"],[closed.length?Math.round(100*wins.length/closed.length)+"%":"—","win rate"],
-      [usd(aw),"average win"],[usd(al),"average loss"],[usd(closed.length?sum(closed):null),"total result"],
-      [aw&&al?(Math.abs(aw/al)).toFixed(2):"—","average win ÷ average loss"]]
+    $("j-sum").innerHTML=[[list.length,T("trades")],[closed.length?Math.round(100*wins.length/closed.length)+"%":"—",T("win rate")],
+      [usd(aw),T("average win")],[usd(al),T("average loss")],[usd(closed.length?sum(closed):null),T("total result")],
+      [aw&&al?(Math.abs(aw/al)).toFixed(2):"—",T("average win ÷ average loss")]]
       .map(function(r){return '<div><b>'+r[0]+'</b><span>'+r[1]+'</span></div>';}).join("");
     $("j-rows").innerHTML=list.map(function(t){
       var cls=t.pl>0?"up":(t.pl<0?"down":"");
-      return '<tr><td class="nw">'+esc(t.date)+'</td><td><b>'+esc(t.tk)+'</b></td><td>'+esc(t.st)+'</td><td>'+esc(t.acc)+'</td><td class="nw">'+usd(t.risk)+'</td><td class="nw '+cls+'">'+usd(t.pl)+'</td><td>'+esc(t.why)+(t.note?'<div class="note">'+esc(t.note)+'</div>':'')+'</td><td><button class="btn sec sm" data-del="'+t.id+'" type="button">Delete</button></td></tr>';
-    }).join("")||'<tr><td colspan="8" class="muted">No trades yet.</td></tr>';
+      return '<tr><td class="nw">'+esc(t.date)+'</td><td><b>'+esc(t.tk)+'</b></td><td>'+esc(T(t.st))+'</td><td>'+esc(T(t.acc))+'</td><td class="nw">'+usd(t.risk)+'</td><td class="nw '+cls+'">'+usd(t.pl)+'</td><td>'+esc(t.why)+(t.note?'<div class="note">'+esc(t.note)+'</div>':'')+'</td><td><button class="btn sec sm" data-del="'+t.id+'" type="button">'+T("Delete")+'</button></td></tr>';
+    }).join("")||'<tr><td colspan="8" class="muted">'+T("No trades yet.")+'</td></tr>';
   }
   function num(id){var x=$(id).value;return x===""?null:Number(x);}
   $("jf").addEventListener("submit",function(e){e.preventDefault();
@@ -126,7 +135,7 @@
   $("j-json").addEventListener("click",function(){dl("trade-journal-backup.json","application/json",JSON.stringify(trades,null,1));});
   $("j-imp").addEventListener("change",function(){var f=this.files[0];if(!f)return;var r=new FileReader();
     r.onload=function(){try{var a=JSON.parse(r.result);if(!Array.isArray(a))throw 0;var ids={};trades.forEach(function(t){ids[t.id]=1;});
-      a.forEach(function(t){if(t&&t.id&&!ids[t.id])trades.push(t);});save(trades);render();}catch(e){$("j-warn").textContent="That file is not a journal backup.";}};
+      a.forEach(function(t){if(t&&t.id&&!ids[t.id])trades.push(t);});save(trades);render();}catch(e){$("j-warn").textContent=T("That file is not a journal backup.");}};
     r.readAsText(f);});
   render();
 })();
@@ -135,9 +144,8 @@
 </main>
 <footer class="wrap foot">
   <p><strong>Disclaimer:</strong> Analyst Ledger publishes factual records of publicly reported analyst rating and price-target changes for information only. Nothing here is investment advice or a recommendation to buy or sell any security. Data may be delayed or incomplete — always verify with the original source.</p>
-  <p>213 rating changes · 89 analysts · 148 stocks · Updated 2026-11-23 16:50 UTC · <a href="feed.xml">RSS</a> · <a href="terms.html">Terms</a> · <a href="privacy.html">Privacy</a></p>
+  <p>213 rating changes · 89 analysts · 148 stocks · Updated 2026-11-23 17:10 UTC · <a href="feed.xml">RSS</a> · <a href="terms.html">Terms</a> · <a href="privacy.html">Privacy</a></p>
 </footer>
-<script>window.ROOT = "";</script>
 <script src="assets/app.js"></script>
 </body>
 </html>

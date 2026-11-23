@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wöchentlicher Sigma-Band-Backtest: SPY und QQQ | Analyst Ledger</title>
+<meta name="description" content="Wie oft SPY und QQQ in fünf Jahren tatsächlich innerhalb ihres wöchentlichen ±1σ-Bands blieben, wie oft sie um 2σ und 3σ fielen und wie groß die Verlustwochen für einen bei −1σ verkauften Put waren.">
+<meta property="og:title" content="Wöchentlicher Sigma-Band-Backtest: SPY und QQQ | Analyst Ledger">
+<meta property="og:description" content="Wie oft SPY und QQQ in fünf Jahren tatsächlich innerhalb ihres wöchentlichen ±1σ-Bands blieben, wie oft sie um 2σ und 3σ fielen und wie groß die Verlustwochen für einen bei −1σ verkauften Put waren.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://analystledger.github.io/assets/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="alternate" hreflang="en" href="https://analystledger.github.io/backtest.html">
+<link rel="alternate" hreflang="de" href="https://analystledger.github.io/de/backtest.html">
+<link rel="alternate" hreflang="sq" href="https://analystledger.github.io/sq/backtest.html">
+<link rel="alternate" hreflang="sr" href="https://analystledger.github.io/sr/backtest.html">
+<link rel="alternate" hreflang="x-default" href="https://analystledger.github.io/backtest.html">
+<link rel="icon" href="../assets/logo.svg" type="image/svg+xml">
+<link rel="alternate" type="application/rss+xml" title="Analyst Ledger" href="../feed.xml">
+<link rel="stylesheet" href="../assets/style.css">
+<script>window.ROOT = ""; window.AROOT = "../"; window.LANG = "de"; window.TR = {"1σ move": "1σ-Bewegung", "A practice (paper) trading account lets you test strategies with no money at risk.": "Ein Übungskonto (Paper Trading) lässt Sie Strategien ohne Geldrisiko testen.", "Analysts are often wrong, and targets usually follow the price. Check each analyst’s record before relying on a view.": "Analysten liegen oft falsch, und Kursziele folgen meist dem Kurs. Prüfen Sie die Bilanz jedes Analysten, bevor Sie sich auf eine Einschätzung verlassen.", "Average price target:": "Durchschnittliches Kursziel:", "Avoid holding options through major events (results, central-bank meetings, mergers): prices can jump overnight.": "Halten Sie Optionen nicht über wichtige Ereignisse (Zahlen, Notenbanksitzungen, Fusionen): Kurse können über Nacht springen.", "Bought call": "Gekaufter Call", "Bought put": "Gekaufter Put", "Budget too small": "Budget zu klein", "Buy {t} shares": "{t}-Aktien kaufen", "Buying a call or put": "Kauf eines Calls oder Puts", "Call credit spread": "Call-Credit-Spread", "Can lose 100% of what you pay, often within weeks": "Kann 100 % des Einsatzes verlieren, oft innerhalb von Wochen", "Cash needed": "Benötigtes Kapital", "Cash needed is the minimum a broker usually requires; options also need broker approval. Prices for options change by the minute.": "Das benötigte Kapital ist das übliche Minimum beim Broker; Optionen erfordern zudem eine Freigabe durch den Broker. Optionspreise ändern sich minütlich.", "Cash-secured put": "Bar gedeckter Put", "Checklist for your goal": "Checkliste für Ihr Ziel", "Could not save in this browser — export your trades to keep them.": "Speichern in diesem Browser nicht möglich — exportieren Sie Ihre Trades, um sie zu behalten.", "Covered call": "Gedeckter Call", "Delete": "Löschen", "Diversified index fund": "Breit gestreuter Indexfonds", "Dividends and covered calls pay income but do not protect you if the stock falls.": "Dividenden und gedeckte Calls bringen Einkommen, schützen aber nicht, wenn die Aktie fällt.", "Educational information only — not personal financial, investment or tax advice.": "Nur Lerninformationen — keine persönliche Finanz-, Anlage- oder Steuerberatung.", "Enter a share price to see covered calls, cash-secured puts, spreads and share counts.": "Geben Sie einen Aktienkurs ein, um gedeckte Calls, bar gedeckte Puts, Spreads und Stückzahlen zu sehen.", "Example strike about 10% below the price (${k}): {v} must be held in cash.": "Beispiel-Strike etwa 10 % unter dem Kurs (${k}): {v} müssen als Bargeld gehalten werden.", "Falls with the whole market (−30% to −50% in a crash)": "Fällt mit dem Gesamtmarkt (−30 % bis −50 % in einem Crash)", "Firms with a recent view: {n}.": "Firmen mit aktueller Einschätzung: {n}.", "Fits your settings": "Passt zu Ihren Einstellungen", "Fits, but over {p}% in one stock": "Passt, aber über {p} % in einer Aktie", "High": "Hoch", "Investing a fixed amount every month (dollar-cost averaging) reduces the risk of buying everything at a peak.": "Jeden Monat einen festen Betrag zu investieren (Durchschnittskosteneffekt) senkt das Risiko, alles am Höchststand zu kaufen.", "Long-term growth usually rests on low-cost, diversified funds; single stocks are extras sized within your one-stock limit.": "Langfristiges Wachstum beruht meist auf günstigen, breit gestreuten Fonds; Einzelaktien sind Beimischungen innerhalb Ihres Limits pro Aktie.", "Loses value if the stock falls; one company can fall 50%+": "Verliert an Wert, wenn die Aktie fällt; ein einzelnes Unternehmen kann um über 50 % fallen", "Low–medium": "Niedrig–mittel", "Medium": "Mittel", "Medium–high": "Mittel–hoch", "Needs 100 shares ({v}) and pays a small income for agreeing to sell them at a set price.": "Erfordert 100 Aktien ({v}) und bringt ein kleines Einkommen dafür, sie zu einem festen Preis zu verkaufen.", "Needs more experience": "Erfordert mehr Erfahrung", "Never invest borrowed money or money you need for living costs.": "Investieren Sie nie geliehenes Geld oder Geld, das Sie zum Leben brauchen.", "No basic warning signs in your answers.": "Keine grundlegenden Warnzeichen in Ihren Antworten.", "No firm has a dated rating in the last 12 months.": "Keine Firma hat in den letzten 12 Monaten eine datierte Bewertung.", "No matches": "Keine Treffer", "No trades yet.": "Noch keine Trades.", "Non-US residents usually have 30% US tax withheld on dividends unless a tax treaty lowers it — check yours.": "Nicht-US-Bürgern werden auf Dividenden meist 30 % US-Steuer einbehalten, sofern kein Doppelbesteuerungsabkommen den Satz senkt — prüfen Sie Ihres.", "Not tracked here — enter its price yourself": "Hier nicht erfasst — geben Sie den Kurs selbst ein", "One share costs more than your one-stock limit; some brokers sell fractions of a share.": "Eine Aktie kostet mehr als Ihr Limit pro Aktie; manche Broker verkaufen Aktienbruchteile.", "Only fits your rules if the premium (price × 100) is no more than {v}. Check the price with your broker.": "Passt nur zu Ihren Regeln, wenn die Prämie (Preis × 100) höchstens {v} beträgt. Prüfen Sie den Preis bei Ihrem Broker.", "Other": "Sonstiges", "Practice": "Übung", "Put credit spread": "Put-Credit-Spread", "Real": "Echt", "Risk": "Risiko", "Riskier than your setting": "Riskanter als Ihre Einstellung", "Same as owning 100 shares, minus the premium collected; gains capped at the strike": "Wie der Besitz von 100 Aktien, abzüglich der eingenommenen Prämie; Gewinne beim Strike gedeckelt", "See every dated rating for {t} →": "Alle datierten Bewertungen für {t} ansehen →", "Shares": "Aktien", "Sold strike ($)": "Verkaufter Strike ($)", "Spreads money across hundreds of companies; the usual core holding.": "Verteilt das Geld auf Hunderte Unternehmen; die übliche Kernanlage.", "Strategy": "Strategie", "Strike ($)": "Strike ($)", "Take profit or cut losses by a rule set in advance, not by feeling.": "Gewinne mitnehmen oder Verluste begrenzen nach einer vorab festgelegten Regel, nicht nach Gefühl.", "That file is not a journal backup.": "Diese Datei ist keine Journal-Sicherung.", "Ticker of a US stock tracked here, or any ticker": "Ticker einer hier erfassten US-Aktie oder ein beliebiger Ticker", "Unlimited": "Unbegrenzt", "Up to {v} per spread (strike width), minus the premium": "Bis zu {v} pro Spread (Strike-Abstand), abzüglich der Prämie", "What analysts say about {t}": "Was Analysten zu {t} sagen", "What your budget can support": "Was Ihr Budget tragen kann", "Within your one-stock limit: about {n} share(s) ({v}). Many brokers also sell fractions of a share.": "Innerhalb Ihres Limits pro Aktie: etwa {n} Aktie(n) ({v}). Viele Broker verkaufen auch Aktienbruchteile.", "Worst case": "Schlechtester Fall", "Worst case is fixed in advance. With a ${w} wide spread, the worst case is {rel} your per-trade limit of {lim}.": "Der schlechteste Fall steht vorab fest. Bei einem ${w} breiten Spread liegt er {rel} Ihrem Limit pro Trade von {lim}.", "Write down why you enter each trade and when you will exit, then compare with what happened.": "Notieren Sie, warum Sie jeden Trade eingehen und wann Sie aussteigen, und vergleichen Sie dann mit dem Ergebnis.", "You are new to investing. Options can lose money quickly; most guides suggest starting with diversified funds and learning how options work with a practice (paper) account first.": "Sie sind neu beim Investieren. Mit Optionen kann man schnell Geld verlieren; die meisten Ratgeber empfehlen, mit breit gestreuten Fonds zu beginnen und Optionen zuerst mit einem Übungskonto kennenzulernen.", "You have no emergency fund. The usual first step is to build 3–6 months of costs in savings before investing, so you are never forced to sell at a loss.": "Sie haben keinen Notgroschen. Üblicherweise baut man zuerst 3–6 Monatsausgaben als Ersparnis auf, bevor man investiert, damit man nie mit Verlust verkaufen muss.", "You may have to buy 100 shares at the strike even if the stock has fallen further": "Sie müssen evtl. 100 Aktien zum Strike kaufen, auch wenn die Aktie weiter gefallen ist", "You may need this money within a year. Stocks can fall 30% or more in a year, so money needed soon is usually kept in savings or short-term government bonds, not in single stocks or options.": "Sie brauchen dieses Geld evtl. innerhalb eines Jahres. Aktien können in einem Jahr 30 % oder mehr fallen; Geld, das bald gebraucht wird, liegt daher meist auf dem Sparkonto oder in kurzlaufenden Staatsanleihen, nicht in Einzelaktien oder Optionen.", "Your browser is blocking storage, so trades stay only until you close this page. Use Export to keep them.": "Ihr Browser blockiert die Speicherung; Trades bleiben nur bis zum Schließen dieser Seite erhalten. Nutzen Sie Export, um sie zu behalten.", "Your numbers": "Ihre Zahlen", "Your settings": "Ihre Einstellungen", "above": "über", "amount to invest": "Anlagebetrag", "amount you put in": "eingezahlter Betrag", "analyst": "Analyst", "any amount": "beliebiger Betrag", "average loss": "Ø Verlust", "average win": "Ø Gewinn", "average win ÷ average loss": "Ø Gewinn ÷ Ø Verlust", "bearish": "negativ", "break-even price": "Break-even-Kurs", "bullish": "positiv", "chance of staying above −1σ (bell curve)": "Chance, über −1σ zu bleiben (Glockenkurve)", "growth": "Wachstum", "high risk": "hohes Risiko", "low risk": "niedriges Risiko", "maximum gain": "maximaler Gewinn", "maximum loss": "maximaler Verlust", "medium risk": "mittleres Risiko", "money tied up (approx.)": "gebundenes Kapital (ca.)", "most in any one stock ({p}% for {risk})": "maximal in einer Aktie ({p} % bei {risk})", "most to lose on one trade ({p}%)": "maximaler Verlust pro Trade ({p} %)", "neutral": "neutral", "now": "jetzt", "stock": "Aktie", "total result": "Gesamtergebnis", "tracked here": "hier erfasst", "trades": "Trades", "value after {n} years": "Wert nach {n} Jahren", "win rate": "Trefferquote", "within": "innerhalb", "{p}% above the price you entered": "{p} % über dem eingegebenen Kurs", "{p}% below the price you entered": "{p} % unter dem eingegebenen Kurs", "{t} is not tracked on {site} yet, so there is no analyst summary.": "{t} wird auf {site} noch nicht erfasst, daher gibt es keine Analystenübersicht.", "±1σ band (≈68%)": "±1σ-Band (≈68 %)", "±2σ band (≈95%)": "±2σ-Band (≈95 %)"}; window.T = function (s) { return window.TR[s] || s; };</script>
+</head>
+<body>
+<header class="top">
+  <div class="wrap bar">
+    <a class="brand" href="index.html"><img src="../assets/logo.svg" alt="" width="28" height="28"> Analyst Ledger</a>
+    <nav>
+      <a href="index.html">Neueste</a>
+      <a href="analysts/index.html">Analysten</a>
+      <a href="stocks/index.html">Aktien</a>
+      <a href="news.html">Nachrichten</a>
+      <a href="learn.html">Lernen &amp; Tools</a>
+      <a href="start.html">Konto eröffnen</a>
+      <a href="about.html">Über uns</a>
+    </nav>
+    <div class="langs" aria-label="Sprache"><a href="../backtest.html" hreflang="en" lang="en" title="English">EN</a><a href="../de/backtest.html" hreflang="de" lang="de" title="Deutsch" class="on" aria-current="true">DE</a><a href="../sq/backtest.html" hreflang="sq" lang="sq" title="Shqip">SQ</a><a href="../sr/backtest.html" hreflang="sr" lang="sr" title="Srpski">SR</a></div>
+    <div class="search">
+      <input id="q" type="search" placeholder="Ticker, Analyst, Firma suchen…" autocomplete="off" aria-label="Suche">
+      <div id="qres" class="qres" hidden></div>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+
+
+<style>
+.bt{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 20px;margin-bottom:18px}
+.bt h2{margin-top:0}
+.res{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin:8px 0 14px}
+.res div{background:var(--bg);border-radius:10px;padding:10px 12px}.res b{display:block;font-size:20px}.res span{font-size:12.5px;color:var(--muted)}
+svg.hist{width:100%;height:auto}
+.hist text{font-size:10.5px;fill:var(--muted)}
+.key{display:flex;gap:14px;font-size:12.5px;color:var(--muted);flex-wrap:wrap}
+.key i{display:inline-block;width:12px;height:12px;border-radius:2px;margin-right:5px;vertical-align:-1px}
+</style>
+<p class="crumbs"><a href="learn.html">Lernen</a> / Wöchentlicher Sigma-Band-Backtest</p>
+<section class="hero small">
+  <h1>Wöchentlicher Sigma-Band-Backtest</h1>
+  <p>Put-Verkäufer zeichnen oft jede Woche ein ±1σ-Band und verkaufen Puts darunter. Diese Seite prüft anhand von fünf Jahren wöchentlicher Bewegungen bei SPY und QQQ, wie oft der Kurs wirklich über der −1σ-Linie blieb — und wie groß die Verlustwochen waren.</p>
+</section>
+
+
+
+<section class="bt" id="spy">
+  <h2>SPY — 255 Wochen (2022-01-07 bis 2026-11-20)</h2>
+  <div class="res">
+    <div><b>83.5%</b><span>Wochen über −1σ (213 von 255)</span></div>
+    <div><b>42</b><span>Wochen, die −1σ durchbrachen (Glockenkurve: 40.5)</span></div>
+    <div><b>6</b><span>Wochen mit Rückgang um 2σ oder mehr (Glockenkurve: 5.8)</span></div>
+    <div><b>3</b><span>Wochen mit Rückgang um 3σ oder mehr (Glockenkurve: 0.3)</span></div>
+    <div><b>±2.14%</b><span>durchschnittliche Breite von 1σ pro Woche</span></div>
+  </div>
+
+  
+  <svg class="hist" viewBox="0 0 640 230" role="img" aria-label="Anzahl der Wochen nach Größe der Bewegung in Sigma (SPY)">
+    
+      
+      
+      <rect x="30" y="190.0" width="30" height="0.0" rx="3" fill="#d23b3b" fill-opacity="1"><title>-4.0σ – -3.5σ: 0</title></rect>
+      
+      <text x="30" y="206" text-anchor="middle">-4σ</text>
+    
+      
+      
+      <rect x="66" y="179.375" width="30" height="10.625" rx="3" fill="#d23b3b" fill-opacity="1"><title>-3.5σ – -3.0σ: 3</title></rect>
+      <text x="81" y="175.375" text-anchor="middle">3</text>
+      
+    
+      
+      
+      <rect x="102" y="182.91666666666666" width="30" height="7.083333333333333" rx="3" fill="#d23b3b" fill-opacity="1"><title>-3.0σ – -2.5σ: 2</title></rect>
+      <text x="117" y="178.91666666666666" text-anchor="middle">2</text>
+      <text x="102" y="206" text-anchor="middle">-3σ</text>
+    
+      
+      
+      <rect x="138" y="186.45833333333334" width="30" height="3.5416666666666665" rx="3" fill="#d23b3b" fill-opacity="1"><title>-2.5σ – -2.0σ: 1</title></rect>
+      <text x="153" y="182.45833333333334" text-anchor="middle">1</text>
+      
+    
+      
+      
+      <rect x="174" y="143.95833333333334" width="30" height="46.041666666666664" rx="3" fill="#d23b3b" fill-opacity="1"><title>-2.0σ – -1.5σ: 13</title></rect>
+      <text x="189" y="139.95833333333334" text-anchor="middle">13</text>
+      <text x="174" y="206" text-anchor="middle">-2σ</text>
+    
+      
+      
+      <rect x="210" y="108.54166666666667" width="30" height="81.45833333333333" rx="3" fill="#d23b3b" fill-opacity="1"><title>-1.5σ – -1.0σ: 23</title></rect>
+      <text x="225" y="104.54166666666667" text-anchor="middle">23</text>
+      
+    
+      
+      
+      <rect x="246" y="90.83333333333333" width="30" height="99.16666666666667" rx="3" fill="#0b5fff" fill-opacity=".75"><title>-1.0σ – -0.5σ: 28</title></rect>
+      <text x="261" y="86.83333333333333" text-anchor="middle">28</text>
+      <text x="246" y="206" text-anchor="middle">-1σ</text>
+    
+      
+      
+      <rect x="282" y="20.0" width="30" height="170.0" rx="3" fill="#0b5fff" fill-opacity=".75"><title>-0.5σ – 0.0σ: 48</title></rect>
+      <text x="297" y="16.0" text-anchor="middle">48</text>
+      
+    
+      
+      
+      <rect x="318" y="41.25" width="30" height="148.75" rx="3" fill="#0b5fff" fill-opacity=".75"><title>0.0σ – 0.5σ: 42</title></rect>
+      <text x="333" y="37.25" text-anchor="middle">42</text>
+      <text x="318" y="206" text-anchor="middle">0σ</text>
+    
+      
+      
+      <rect x="354" y="23.541666666666657" width="30" height="166.45833333333334" rx="3" fill="#0b5fff" fill-opacity=".75"><title>0.5σ – 1.0σ: 47</title></rect>
+      <text x="369" y="19.541666666666657" text-anchor="middle">47</text>
+      
+    
+      
+      
+      <rect x="390" y="80.20833333333333" width="30" height="109.79166666666667" rx="3" fill="#0a8f4d" fill-opacity=".75"><title>1.0σ – 1.5σ: 31</title></rect>
+      <text x="405" y="76.20833333333333" text-anchor="middle">31</text>
+      <text x="390" y="206" text-anchor="middle">1σ</text>
+    
+      
+      
+      <rect x="426" y="151.04166666666666" width="30" height="38.958333333333336" rx="3" fill="#0a8f4d" fill-opacity=".75"><title>1.5σ – 2.0σ: 11</title></rect>
+      <text x="441" y="147.04166666666666" text-anchor="middle">11</text>
+      
+    
+      
+      
+      <rect x="462" y="175.83333333333334" width="30" height="14.166666666666666" rx="3" fill="#0a8f4d" fill-opacity=".75"><title>2.0σ – 2.5σ: 4</title></rect>
+      <text x="477" y="171.83333333333334" text-anchor="middle">4</text>
+      <text x="462" y="206" text-anchor="middle">2σ</text>
+    
+      
+      
+      <rect x="498" y="182.91666666666666" width="30" height="7.083333333333333" rx="3" fill="#0a8f4d" fill-opacity=".75"><title>2.5σ – 3.0σ: 2</title></rect>
+      <text x="513" y="178.91666666666666" text-anchor="middle">2</text>
+      
+    
+      
+      
+      <rect x="534" y="190.0" width="30" height="0.0" rx="3" fill="#0a8f4d" fill-opacity=".75"><title>3.0σ – 3.5σ: 0</title></rect>
+      
+      <text x="534" y="206" text-anchor="middle">3σ</text>
+    
+      
+      
+      <rect x="570" y="190.0" width="30" height="0.0" rx="3" fill="#0a8f4d" fill-opacity=".75"><title>3.5σ – 4.0σ: 0</title></rect>
+      
+      
+    
+    <text x="606" y="206" text-anchor="middle">+4σ</text>
+    <text x="320" y="224" text-anchor="middle">Wochenbewegung in Sigma</text>
+  </svg>
+  <div class="key"><span><i style="background:#d23b3b"></i>unter −1σ (ein Put bei −1σ verliert)</span><span><i style="background:#0b5fff;opacity:.75"></i>innerhalb ±1σ</span><span><i style="background:#0a8f4d;opacity:.75"></i>über +1σ</span></div>
+
+  <h3>Wenn Sie jede Woche einen Put an der −1σ-Linie verkauft hätten</h3>
+  <p>In den 42 Wochen, in denen der Kurs unter der Linie schloss, lag er im Schnitt <b>1.13 %</b> des Aktienkurses unter dem Strike und in der schlechtesten Woche <b>6.16 %</b>. Bei SPY ist das der Verlust pro Aktie vor der eingenommenen Prämie — die Prämien der Gewinnwochen müssen ihn bezahlen.</p>
+
+  <h3>Die fünf schlechtesten Wochen</h3>
+  <div class="tw"><table class="ev"><thead><tr><th>Woche bis</th><th>Bewegung</th><th>In Sigma</th></tr></thead><tbody>
+  <tr><td>2025-04-04</td><td class="down">-9.07%</td><td>-3.22σ</td></tr><tr><td>2022-01-21</td><td class="down">-5.75%</td><td>-3.15σ</td></tr><tr><td>2025-10-10</td><td class="down">-2.42%</td><td>-3.07σ</td></tr><tr><td>2026-11-20</td><td class="down">-8.56%</td><td>-2.85σ</td></tr><tr><td>2025-08-01</td><td class="down">-2.41%</td><td>-2.65σ</td></tr>
+  </tbody></table></div>
+</section>
+
+<section class="bt" id="qqq">
+  <h2>QQQ — 255 Wochen (2022-01-07 bis 2026-11-20)</h2>
+  <div class="res">
+    <div><b>84.3%</b><span>Wochen über −1σ (215 von 255)</span></div>
+    <div><b>40</b><span>Wochen, die −1σ durchbrachen (Glockenkurve: 40.5)</span></div>
+    <div><b>10</b><span>Wochen mit Rückgang um 2σ oder mehr (Glockenkurve: 5.8)</span></div>
+    <div><b>0</b><span>Wochen mit Rückgang um 3σ oder mehr (Glockenkurve: 0.3)</span></div>
+    <div><b>±2.93%</b><span>durchschnittliche Breite von 1σ pro Woche</span></div>
+  </div>
+
+  
+  <svg class="hist" viewBox="0 0 640 230" role="img" aria-label="Anzahl der Wochen nach Größe der Bewegung in Sigma (QQQ)">
+    
+      
+      
+      <rect x="30" y="190.0" width="30" height="0.0" rx="3" fill="#d23b3b" fill-opacity="1"><title>-4.0σ – -3.5σ: 0</title></rect>
+      
+      <text x="30" y="206" text-anchor="middle">-4σ</text>
+    
+      
+      
+      <rect x="66" y="190.0" width="30" height="0.0" rx="3" fill="#d23b3b" fill-opacity="1"><title>-3.5σ – -3.0σ: 0</title></rect>
+      
+      
+    
+      
+      
+      <rect x="102" y="176.92307692307693" width="30" height="13.076923076923077" rx="3" fill="#d23b3b" fill-opacity="1"><title>-3.0σ – -2.5σ: 4</title></rect>
+      <text x="117" y="172.92307692307693" text-anchor="middle">4</text>
+      <text x="102" y="206" text-anchor="middle">-3σ</text>
+    
+      
+      
+      <rect x="138" y="170.3846153846154" width="30" height="19.615384615384617" rx="3" fill="#d23b3b" fill-opacity="1"><title>-2.5σ – -2.0σ: 6</title></rect>
+      <text x="153" y="166.3846153846154" text-anchor="middle">6</text>
+      
+    
+      
+      
+      <rect x="174" y="180.19230769230768" width="30" height="9.807692307692308" rx="3" fill="#d23b3b" fill-opacity="1"><title>-2.0σ – -1.5σ: 3</title></rect>
+      <text x="189" y="176.19230769230768" text-anchor="middle">3</text>
+      <text x="174" y="206" text-anchor="middle">-2σ</text>
+    
+      
+      
+      <rect x="210" y="101.73076923076923" width="30" height="88.26923076923077" rx="3" fill="#d23b3b" fill-opacity="1"><title>-1.5σ – -1.0σ: 27</title></rect>
+      <text x="225" y="97.73076923076923" text-anchor="middle">27</text>
+      
+    
+      
+      
+      <rect x="246" y="78.84615384615384" width="30" height="111.15384615384616" rx="3" fill="#0b5fff" fill-opacity=".75"><title>-1.0σ – -0.5σ: 34</title></rect>
+      <text x="261" y="74.84615384615384" text-anchor="middle">34</text>
+      <text x="246" y="206" text-anchor="middle">-1σ</text>
+    
+      
+      
+      <rect x="282" y="62.5" width="30" height="127.5" rx="3" fill="#0b5fff" fill-opacity=".75"><title>-0.5σ – 0.0σ: 39</title></rect>
+      <text x="297" y="58.5" text-anchor="middle">39</text>
+      
+    
+      
+      
+      <rect x="318" y="20.0" width="30" height="170.0" rx="3" fill="#0b5fff" fill-opacity=".75"><title>0.0σ – 0.5σ: 52</title></rect>
+      <text x="333" y="16.0" text-anchor="middle">52</text>
+      <text x="318" y="206" text-anchor="middle">0σ</text>
+    
+      
+      
+      <rect x="354" y="52.69230769230768" width="30" height="137.30769230769232" rx="3" fill="#0b5fff" fill-opacity=".75"><title>0.5σ – 1.0σ: 42</title></rect>
+      <text x="369" y="48.69230769230768" text-anchor="middle">42</text>
+      
+    
+      
+      
+      <rect x="390" y="114.8076923076923" width="30" height="75.1923076923077" rx="3" fill="#0a8f4d" fill-opacity=".75"><title>1.0σ – 1.5σ: 23</title></rect>
+      <text x="405" y="110.8076923076923" text-anchor="middle">23</text>
+      <text x="390" y="206" text-anchor="middle">1σ</text>
+    
+      
+      
+      <rect x="426" y="134.4230769230769" width="30" height="55.57692307692308" rx="3" fill="#0a8f4d" fill-opacity=".75"><title>1.5σ – 2.0σ: 17</title></rect>
+      <text x="441" y="130.4230769230769" text-anchor="middle">17</text>
+      
+    
+      
+      
+      <rect x="462" y="167.1153846153846" width="30" height="22.884615384615383" rx="3" fill="#0a8f4d" fill-opacity=".75"><title>2.0σ – 2.5σ: 7</title></rect>
+      <text x="477" y="163.1153846153846" text-anchor="middle">7</text>
+      <text x="462" y="206" text-anchor="middle">2σ</text>
+    
+      
+      
+      <rect x="498" y="186.73076923076923" width="30" height="3.269230769230769" rx="3" fill="#0a8f4d" fill-opacity=".75"><title>2.5σ – 3.0σ: 1</title></rect>
+      <text x="513" y="182.73076923076923" text-anchor="middle">1</text>
+      
+    
+      
+      
+      <rect x="534" y="190.0" width="30" height="0.0" rx="3" fill="#0a8f4d" fill-opacity=".75"><title>3.0σ – 3.5σ: 0</title></rect>
+      
+      <text x="534" y="206" text-anchor="middle">3σ</text>
+    
+      
+      
+      <rect x="570" y="190.0" width="30" height="0.0" rx="3" fill="#0a8f4d" fill-opacity=".75"><title>3.5σ – 4.0σ: 0</title></rect>
+      
+      
+    
+    <text x="606" y="206" text-anchor="middle">+4σ</text>
+    <text x="320" y="224" text-anchor="middle">Wochenbewegung in Sigma</text>
+  </svg>
+  <div class="key"><span><i style="background:#d23b3b"></i>unter −1σ (ein Put bei −1σ verliert)</span><span><i style="background:#0b5fff;opacity:.75"></i>innerhalb ±1σ</span><span><i style="background:#0a8f4d;opacity:.75"></i>über +1σ</span></div>
+
+  <h3>Wenn Sie jede Woche einen Put an der −1σ-Linie verkauft hätten</h3>
+  <p>In den 40 Wochen, in denen der Kurs unter der Linie schloss, lag er im Schnitt <b>1.3 %</b> des Aktienkurses unter dem Strike und in der schlechtesten Woche <b>6.02 %</b>. Bei QQQ ist das der Verlust pro Aktie vor der eingenommenen Prämie — die Prämien der Gewinnwochen müssen ihn bezahlen.</p>
+
+  <h3>Die fünf schlechtesten Wochen</h3>
+  <div class="tw"><table class="ev"><thead><tr><th>Woche bis</th><th>Bewegung</th><th>In Sigma</th></tr></thead><tbody>
+  <tr><td>2022-01-21</td><td class="down">-7.45%</td><td>-2.88σ</td></tr><tr><td>2024-04-19</td><td class="down">-5.39%</td><td>-2.81σ</td></tr><tr><td>2025-04-04</td><td class="down">-9.87%</td><td>-2.65σ</td></tr><tr><td>2026-10-16</td><td class="down">-5.52%</td><td>-2.63σ</td></tr><tr><td>2025-10-10</td><td class="down">-2.27%</td><td>-2.28σ</td></tr>
+  </tbody></table></div>
+</section>
+
+
+<section class="bt">
+  <h2>Was das zeigt</h2>
+  <ul>
+    <li><b>Die meisten Wochen sind ruhig.</b> Etwa 5 von 6 Wochen endeten über −1σ — deshalb gewinnt der wöchentliche Put-Verkauf meistens.</li>
+    <li><b>Die Ränder sind dicker als bei der Glockenkurve.</b> Rückgänge von 3σ oder mehr kamen mehrfach häufiger vor, als eine Normalverteilung vorhersagt. Eine solche Woche kann monatelange kleine Gewinne auslöschen.</li>
+    <li><b>Trefferquote ist kein Gewinn.</b> Fragen Sie immer, wie groß die Verlustwochen waren und ob die eingenommenen Prämien sie nach Gebühren decken.</li>
+  </ul>
+  <h3>Methode</h3>
+  <p class="note">Wöchentliche Bewegungen von Schluss zu Schluss (letzter Handelstag jeder Woche). Ein Sigma = Standardabweichung der vorherigen 20 Tagesbewegungen, skaliert auf die Handelstage der Woche (realisierte Volatilität, nicht aus Optionen abgeleitet). Bewegungen werden vom letzten Schlusskurs einer Woche bis zum letzten Schlusskurs der nächsten gemessen. Die implizite Volatilität von Optionen liegt meist etwas über der realisierten, daher sind aus Optionspreisen abgeleitete Bänder etwas breiter und würden seltener durchbrochen. Fünf Jahre sind eine kurze Stichprobe. Aktualisiert 2026-11-23. Berechnet aus täglichen Schlusskursen; veröffentlicht werden nur zusammengefasste Ergebnisse.</p>
+</section>
+
+<p class="note">Nur eine Lernanalyse vergangener Kurse — vergangene Ergebnisse sagen keine zukünftigen voraus, und dies ist keine Anlageberatung. Analyst Ledger veröffentlicht sachliche Aufzeichnungen öffentlich gemeldeter Bewertungs- und Kurszieländerungen von Analysten ausschließlich zur Information. Nichts hier ist Anlageberatung oder eine Empfehlung zum Kauf oder Verkauf eines Wertpapiers. Daten können verzögert oder unvollständig sein — prüfen Sie stets die Originalquelle.</p>
+
+</main>
+<footer class="wrap foot">
+  <p><strong>Haftungsausschluss:</strong> Analyst Ledger veröffentlicht sachliche Aufzeichnungen öffentlich gemeldeter Bewertungs- und Kurszieländerungen von Analysten ausschließlich zur Information. Nichts hier ist Anlageberatung oder eine Empfehlung zum Kauf oder Verkauf eines Wertpapiers. Daten können verzögert oder unvollständig sein — prüfen Sie stets die Originalquelle.</p>
+  <p>213 Bewertungsänderungen · 89 Analysten · 148 Aktien · Aktualisiert 2026-11-23 17:10 UTC · <a href="../feed.xml">RSS</a> · <a href="terms.html">Nutzungsbedingungen</a> · <a href="privacy.html">Datenschutz</a></p>
+</footer>
+<script src="../assets/app.js"></script>
+</body>
+</html>
