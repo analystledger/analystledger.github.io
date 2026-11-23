@@ -1,6 +1,6 @@
 {% extends "base.html" %}
-{% block title %}Budget & strategy planner | {{ CFG.site_name }}{% endblock %}
-{% block desc %}Free educational planner: enter your budget and risk settings to see which stock and options strategies your budget can support, how much you could lose per trade, and what analysts say about a stock.{% endblock %}
+{% block title %}{{ _("Budget & strategy planner") }} | {{ CFG.site_name }}{% endblock %}
+{% block desc %}{{ _("Free educational planner: enter your budget and risk settings to see which stock and options strategies your budget can support, how much you could lose per trade, and what analysts say about a stock.") }}{% endblock %}
 {% block body %}
 <style>
 .pl-form{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px 16px}
@@ -19,55 +19,57 @@
 </style>
 
 <section class="hero small">
-  <h1>Budget &amp; strategy planner</h1>
-  <p>Tell the planner your budget and how much risk you accept. It shows which common stock and options strategies your budget can support, the most you could lose, and what analysts tracked on {{ CFG.site_name }} say about a stock. It is an educational calculator, not personal financial advice.</p>
+  <h1>{{ _("Budget & strategy planner") }}</h1>
+  <p>{{ _("Tell the planner your budget and how much risk you accept. It shows which common stock and options strategies your budget can support, the most you could lose, and what analysts tracked on {site} say about a stock. It is an educational calculator, not personal financial advice.", site=CFG.site_name) }}</p>
 </section>
 
-<div class="warn"><strong>Private:</strong> everything is calculated in your browser. Nothing you type is sent or stored.</div>
+<div class="warn"><strong>{{ _("Private:") }}</strong> {{ _("everything is calculated in your browser. Nothing you type is sent or stored.") }}</div>
 
 <form id="pl" class="card pl-form" autocomplete="off">
-  <label>Amount you can invest
-    <input id="budget" type="number" min="0" step="any" required placeholder="e.g. 5000">
-    <span>Money you could afford to lose without hardship</span></label>
-  <label>Currency
-    <select id="cur"><option value="USD">US dollar ($)</option><option value="EUR">Euro (€)</option><option value="GBP">British pound (£)</option></select></label>
-  <label>Exchange rate to US dollar
+  <label>{{ _("Amount you can invest") }}
+    <input id="budget" type="number" min="0" step="any" required placeholder="{{ _('e.g. 5000') }}">
+    <span>{{ _("Money you could afford to lose without hardship") }}</span></label>
+  <label>{{ _("Currency") }}
+    <select id="cur"><option value="USD">{{ _("US dollar ($)") }}</option><option value="EUR">{{ _("Euro (€)") }}</option><option value="GBP">{{ _("British pound (£)") }}</option></select></label>
+  <label>{{ _("Exchange rate to US dollar") }}
     <input id="fx" type="number" min="0" step="any" value="1">
-    <span>1 unit of your currency = ? USD (US stocks trade in USD)</span></label>
-  <label>Most you accept losing on one trade
-    <select id="riskpct"><option value="1">1% of the amount</option><option value="2" selected>2% of the amount</option><option value="5">5% of the amount</option><option value="10">10% of the amount</option></select></label>
-  <label>When might you need this money?
-    <select id="horizon"><option value="short">Within 1 year</option><option value="mid" selected>In 1–3 years</option><option value="long">In more than 3 years</option></select></label>
-  <label>How would you react to a 30% fall?
-    <select id="tol"><option value="low">Sell or lose sleep (low risk)</option><option value="medium" selected>Uncomfortable but hold (medium)</option><option value="high">Hold or buy more (high)</option></select></label>
-  <label>Experience
-    <select id="exp"><option value="new">New to investing</option><option value="stocks" selected>I have bought stocks or funds</option><option value="options">I have traded options</option></select></label>
-  <label>Main goal
-    <select id="goal"><option value="growth">Long-term growth</option><option value="income">Regular income</option><option value="learn">Learning with small amounts</option></select></label>
-  <label>Do you have an emergency fund (3–6 months of costs)?
-    <select id="emerg"><option value="yes">Yes</option><option value="no">No</option></select></label>
-  <label>Stock you are looking at (optional)
-    <input id="tk" list="tklist" placeholder="e.g. NVDA" style="text-transform:uppercase">
+    <span>{{ _("1 unit of your currency = ? USD (US stocks trade in USD)") }}</span></label>
+  <label>{{ _("Most you accept losing on one trade") }}
+    <select id="riskpct"><option value="1">{{ _("{p}% of the amount", p=1) }}</option><option value="2" selected>{{ _("{p}% of the amount", p=2) }}</option><option value="5">{{ _("{p}% of the amount", p=5) }}</option><option value="10">{{ _("{p}% of the amount", p=10) }}</option></select></label>
+  <label>{{ _("When might you need this money?") }}
+    <select id="horizon"><option value="short">{{ _("Within 1 year") }}</option><option value="mid" selected>{{ _("In 1–3 years") }}</option><option value="long">{{ _("In more than 3 years") }}</option></select></label>
+  <label>{{ _("How would you react to a 30% fall?") }}
+    <select id="tol"><option value="low">{{ _("Sell or lose sleep (low risk)") }}</option><option value="medium" selected>{{ _("Uncomfortable but hold (medium)") }}</option><option value="high">{{ _("Hold or buy more (high)") }}</option></select></label>
+  <label>{{ _("Experience") }}
+    <select id="exp"><option value="new">{{ _("New to investing") }}</option><option value="stocks" selected>{{ _("I have bought stocks or funds") }}</option><option value="options">{{ _("I have traded options") }}</option></select></label>
+  <label>{{ _("Main goal") }}
+    <select id="goal"><option value="growth">{{ _("Long-term growth") }}</option><option value="income">{{ _("Regular income") }}</option><option value="learn">{{ _("Learning with small amounts") }}</option></select></label>
+  <label>{{ _("Do you have an emergency fund (3–6 months of costs)?") }}
+    <select id="emerg"><option value="yes">{{ _("Yes") }}</option><option value="no">{{ _("No") }}</option></select></label>
+  <label>{{ _("Stock you are looking at (optional)") }}
+    <input id="tk" list="tklist" placeholder="{{ _('e.g. NVDA') }}" style="text-transform:uppercase">
     <datalist id="tklist"></datalist>
-    <span id="tkhint">Ticker of a US stock tracked here, or any ticker</span></label>
-  <label>Share price in USD
-    <input id="px" type="number" min="0" step="any" placeholder="filled in when known">
-    <span>Check the current price with your broker</span></label>
+    <span id="tkhint">{{ _("Ticker of a US stock tracked here, or any ticker") }}</span></label>
+  <label>{{ _("Share price in USD") }}
+    <input id="px" type="number" min="0" step="any" placeholder="{{ _('filled in when known') }}">
+    <span>{{ _("Check the current price with your broker") }}</span></label>
   <div class="pl-actions">
-    <button class="btn" type="submit">Show my options</button>
-    <button class="btn sec" type="reset">Clear</button>
+    <button class="btn" type="submit">{{ _("Show my options") }}</button>
+    <button class="btn sec" type="reset">{{ _("Clear") }}</button>
   </div>
 </form>
 
 <div id="out" aria-live="polite"></div>
 
-<p><a href="{{ root }}start.html">New to trading? How to open and set up a brokerage account →</a></p>
+<p><a href="{{ root }}start.html">{{ _("New to trading? How to open and set up a brokerage account →") }}</a></p>
 
-<p class="note">The planner applies simple, published rules of thumb (position sizing, the cash that each strategy requires, its worst case) to the numbers you enter. It does not know your full finances, taxes or goals and does not recommend buying or selling any security. Prices may be delayed. For personal advice, speak to a licensed financial adviser in your country. {{ CFG.disclaimer }}</p>
+<p class="note">{{ _("The planner applies simple, published rules of thumb (position sizing, the cash that each strategy requires, its worst case) to the numbers you enter. It does not know your full finances, taxes or goals and does not recommend buying or selling any security. Prices may be delayed. For personal advice, speak to a licensed financial adviser in your country.") }} {{ _(CFG.disclaimer) }}</p>
 
 <script id="pl-data" type="application/json">{{ stocks_json|safe }}</script>
 <script>
 (function(){
+  var T=window.T||function(s){return s;};
+  function F(s,o){ s=T(s); for (var k in o) s=s.split("{"+k+"}").join(o[k]); return s; }
   var S = JSON.parse(document.getElementById("pl-data").textContent || "{}");
   var $ = function(id){ return document.getElementById(id); };
   var dl = $("tklist");
@@ -76,7 +78,7 @@
   $("cur").addEventListener("change", function(){ $("fx").value = FX[this.value]; });
   $("tk").addEventListener("change", function(){
     var t=this.value.trim().toUpperCase(), s=S[t];
-    $("tkhint").textContent = s ? (s.c||t)+" · tracked here" : "Not tracked here — enter its price yourself";
+    $("tkhint").textContent = s ? (s.c||t)+" · "+T("tracked here") : T("Not tracked here — enter its price yourself");
     if (s && s.p) $("px").value = s.p;
   });
   var sym = {USD:"$", EUR:"€", GBP:"£"};
@@ -88,7 +90,7 @@
   function esc(s){ return String(s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c];}); }
   var LEVEL = {low:1, medium:2, high:3};
 
-  $("pl").addEventListener("reset", function(){ $("out").innerHTML=""; $("tkhint").textContent="Ticker of a US stock tracked here, or any ticker"; });
+  $("pl").addEventListener("reset", function(){ $("out").innerHTML=""; $("tkhint").textContent=T("Ticker of a US stock tracked here, or any ticker"); });
   $("pl").addEventListener("submit", function(ev){
     ev.preventDefault();
     var cur=$("cur").value, fx=parseFloat($("fx").value)||1;
@@ -101,58 +103,59 @@
 
     // 1. readiness
     var flags=[];
-    if (emerg==="no") flags.push("You have no emergency fund. The usual first step is to build 3–6 months of costs in savings before investing, so you are never forced to sell at a loss.");
-    if (hor==="short") flags.push("You may need this money within a year. Stocks can fall 30% or more in a year, so money needed soon is usually kept in savings or short-term government bonds, not in single stocks or options.");
-    if (exp==="new") flags.push("You are new to investing. Options can lose money quickly; most guides suggest starting with diversified funds and learning how options work with a practice (paper) account first.");
-    h.push('<div class="card"><h2>Your numbers</h2><div class="kpis">'+
-      '<div><b>'+money(B,cur,fx)+'</b><span>amount to invest'+(cur!=="USD"?' ('+usd(B)+')':'')+'</span></div>'+
-      '<div><b>'+money(R,cur,fx)+'</b><span>most to lose on one trade ('+rp+'%)</span></div>'+
-      '<div><b>'+money(CAP,cur,fx)+'</b><span>most in any one stock ('+capPct+'% for '+tol+' risk)</span></div>'+
-      '</div>'+(flags.length?flags.map(function(f){return '<div class="warn">'+f+'</div>';}).join(""):'<p class="ok">No basic warning signs in your answers.</p>')+'</div>');
+    if (emerg==="no") flags.push(T("You have no emergency fund. The usual first step is to build 3–6 months of costs in savings before investing, so you are never forced to sell at a loss."));
+    if (hor==="short") flags.push(T("You may need this money within a year. Stocks can fall 30% or more in a year, so money needed soon is usually kept in savings or short-term government bonds, not in single stocks or options."));
+    if (exp==="new") flags.push(T("You are new to investing. Options can lose money quickly; most guides suggest starting with diversified funds and learning how options work with a practice (paper) account first."));
+    var tolName={low:T("low risk"),medium:T("medium risk"),high:T("high risk")}[tol];
+    h.push('<div class="card"><h2>'+T("Your numbers")+'</h2><div class="kpis">'+
+      '<div><b>'+money(B,cur,fx)+'</b><span>'+T("amount to invest")+(cur!=="USD"?' ('+usd(B)+')':'')+'</span></div>'+
+      '<div><b>'+money(R,cur,fx)+'</b><span>'+F("most to lose on one trade ({p}%)",{p:rp})+'</span></div>'+
+      '<div><b>'+money(CAP,cur,fx)+'</b><span>'+F("most in any one stock ({p}% for {risk})",{p:capPct,risk:tolName})+'</span></div>'+
+      '</div>'+(flags.length?flags.map(function(f){return '<div class="warn">'+f+'</div>';}).join(""):'<p class="ok">'+T("No basic warning signs in your answers.")+'</p>')+'</div>');
 
     // 2. strategy feasibility
     var rows=[], hasP = P>0;
     function row(name, need, risk, worst, lvl, minExp, extra){
       var fitsCash = need<=B, fitsCap = need<=CAP, fitsTol = lvl<=LEVEL[tol];
       var expOk = minExp==="new" || (minExp==="stocks" && exp!=="new") || (minExp==="options" && exp==="options");
-      var verdict = !fitsCash ? '<span class="no">Budget too small</span>' :
-        (!fitsTol ? '<span class="no">Riskier than your setting</span>' :
-        (!expOk ? '<span class="mid">Needs more experience</span>' :
-        (!fitsCap ? '<span class="mid">Fits, but over '+capPct+'% in one stock</span>' : '<span class="ok">Fits your settings</span>')));
-      rows.push('<tr><td><b>'+name+'</b><div class="note">'+extra+'</div></td><td class="nw" data-l="Cash needed">'+(need===0?'any amount':usd(need))+'</td><td data-l="Risk">'+risk+'</td><td data-l="Worst case">'+worst+'</td><td data-l="Your settings">'+verdict+'</td></tr>');
+      var verdict = !fitsCash ? '<span class="no">'+T("Budget too small")+'</span>' :
+        (!fitsTol ? '<span class="no">'+T("Riskier than your setting")+'</span>' :
+        (!expOk ? '<span class="mid">'+T("Needs more experience")+'</span>' :
+        (!fitsCap ? '<span class="mid">'+F("Fits, but over {p}% in one stock",{p:capPct})+'</span>' : '<span class="ok">'+T("Fits your settings")+'</span>')));
+      rows.push('<tr><td><b>'+name+'</b><div class="note">'+extra+'</div></td><td class="nw" data-l="'+T("Cash needed")+'">'+(need===0?T("any amount"):usd(need))+'</td><td data-l="'+T("Risk")+'">'+T(risk)+'</td><td data-l="'+T("Worst case")+'">'+worst+'</td><td data-l="'+T("Your settings")+'">'+verdict+'</td></tr>');
     }
-    row("Diversified index fund", 0, "Low–medium", "Falls with the whole market (−30% to −50% in a crash)", 1, "new", "Spreads money across hundreds of companies; the usual core holding.");
+    row(T("Diversified index fund"), 0, "Low–medium", T("Falls with the whole market (−30% to −50% in a crash)"), 1, "new", T("Spreads money across hundreds of companies; the usual core holding."));
     if (hasP){
       var sh=Math.floor(CAP/P);
-      row("Buy "+esc(t||"the")+" shares", P, "Medium–high", "Loses value if the stock falls; one company can fall 50%+", 2, "new",
-          sh>=1 ? "Within your one-stock limit: about "+sh+" share"+(sh>1?"s":"")+" ("+usd(sh*P)+"). Many brokers also sell fractions of a share." : "One share costs more than your one-stock limit; some brokers sell fractions of a share.");
-      row("Covered call", 100*P, "Medium", "Same as owning 100 shares, minus the premium collected; gains capped at the strike", 2, "stocks",
-          "Needs 100 shares ("+usd(100*P)+") and pays a small income for agreeing to sell them at a set price.");
+      row(F("Buy {t} shares",{t:esc(t||"")}), P, "Medium–high", T("Loses value if the stock falls; one company can fall 50%+"), 2, "new",
+          sh>=1 ? F("Within your one-stock limit: about {n} share(s) ({v}). Many brokers also sell fractions of a share.",{n:sh,v:usd(sh*P)}) : T("One share costs more than your one-stock limit; some brokers sell fractions of a share."));
+      row(T("Covered call"), 100*P, "Medium", T("Same as owning 100 shares, minus the premium collected; gains capped at the strike"), 2, "stocks",
+          F("Needs 100 shares ({v}) and pays a small income for agreeing to sell them at a set price.",{v:usd(100*P)}));
       var k=Math.floor(P*0.9);
-      row("Cash-secured put", 100*k, "Medium", "You may have to buy 100 shares at the strike even if the stock has fallen further", 2, "stocks",
-          "Example strike about 10% below the price ($"+k+"): "+usd(100*k)+" must be held in cash.");
+      row(T("Cash-secured put"), 100*k, "Medium", T("You may have to buy 100 shares at the strike even if the stock has fallen further"), 2, "stocks",
+          F("Example strike about 10% below the price (${k}): {v} must be held in cash.",{k:k,v:usd(100*k)}));
       var w = P<50?2.5:(P<200?5:10), spreadLoss=100*w;
-      row("Put credit spread", spreadLoss, "Medium–high", "Up to "+usd(spreadLoss)+" per spread (strike width), minus the premium", 3, "options",
-          "Worst case is fixed in advance. With a $"+w+" wide spread, the worst case is "+(spreadLoss<=R?'<span class="ok">within</span>':'<span class="no">above</span>')+" your per-trade limit of "+usd(R)+".");
+      row(T("Put credit spread"), spreadLoss, "Medium–high", F("Up to {v} per spread (strike width), minus the premium",{v:usd(spreadLoss)}), 3, "options",
+          F("Worst case is fixed in advance. With a ${w} wide spread, the worst case is {rel} your per-trade limit of {lim}.",{w:w,rel:(spreadLoss<=R?'<span class="ok">'+T("within")+'</span>':'<span class="no">'+T("above")+'</span>'),lim:usd(R)}));
     }
-    row("Buying a call or put", 0, "High", "Can lose 100% of what you pay, often within weeks", 3, "options",
-        "Only fits your rules if the premium (price × 100) is no more than "+usd(R)+". Check the price with your broker.");
-    h.push('<div class="card"><h2>What your budget can support'+(hasP?' — '+esc(t||"this stock")+' at '+usd(P):'')+'</h2>'+
-      (hasP?'':'<p class="muted">Enter a share price to see covered calls, cash-secured puts, spreads and share counts.</p>')+
-      '<div class="tw"><table class="ev"><thead><tr><th>Strategy</th><th>Cash needed</th><th>Risk</th><th>Worst case</th><th>Your settings</th></tr></thead><tbody>'+rows.join("")+'</tbody></table></div>'+
-      '<p class="note">Cash needed is the minimum a broker usually requires; options also need broker approval. Prices for options change by the minute.</p></div>');
+    row(T("Buying a call or put"), 0, "High", T("Can lose 100% of what you pay, often within weeks"), 3, "options",
+        F("Only fits your rules if the premium (price × 100) is no more than {v}. Check the price with your broker.",{v:usd(R)}));
+    h.push('<div class="card"><h2>'+T("What your budget can support")+(hasP?' — '+esc(t||"")+' @ '+usd(P):'')+'</h2>'+
+      (hasP?'':'<p class="muted">'+T("Enter a share price to see covered calls, cash-secured puts, spreads and share counts.")+'</p>')+
+      '<div class="tw"><table class="ev"><thead><tr><th>'+T("Strategy")+'</th><th>'+T("Cash needed")+'</th><th>'+T("Risk")+'</th><th>'+T("Worst case")+'</th><th>'+T("Your settings")+'</th></tr></thead><tbody>'+rows.join("")+'</tbody></table></div>'+
+      '<p class="note">'+T("Cash needed is the minimum a broker usually requires; options also need broker approval. Prices for options change by the minute.")+'</p></div>');
 
     // 3. analyst view from the ledger (facts, not a recommendation)
     if (t){
       if (s){
         var tot=s.b+s.n+s.r;
-        h.push('<div class="card"><h2>What analysts say about '+esc(t)+'</h2>'+
-          '<p>'+(tot?('Of '+tot+' firm'+(tot===1?'':'s')+' with a recent view: <span class="up">'+s.b+' bullish</span>, '+s.n+' neutral, <span class="down">'+s.r+' bearish</span>.'):'No firm has a dated rating in the last 12 months.')+
-          (s.t?(' Average price target: '+usd(s.t)+(P?(function(d){return ' ('+Math.abs(d).toFixed(0)+'% '+(d>=0?'above':'below')+' the price you entered)';})((s.t/P-1)*100):'')+'.'):'')+'</p>'+
-          '<p class="note">Analysts are often wrong, and targets usually follow the price. Check each analyst&rsquo;s record before relying on a view.</p>'+
-          '<p><a href="'+window.ROOT+'stocks/'+s.u+'.html">See every dated rating for '+esc(t)+' →</a></p></div>');
+        h.push('<div class="card"><h2>'+F("What analysts say about {t}",{t:esc(t)})+'</h2>'+
+          '<p>'+(tot?F("Firms with a recent view: {n}.",{n:tot})+' <span class="up">'+s.b+' '+T("bullish")+'</span>, '+s.n+' '+T("neutral")+', <span class="down">'+s.r+' '+T("bearish")+'</span>.':T("No firm has a dated rating in the last 12 months."))+
+          (s.t?(' '+T("Average price target:")+' '+usd(s.t)+(P?(function(d){return ' ('+F(d>=0?"{p}% above the price you entered":"{p}% below the price you entered",{p:Math.abs(d).toFixed(0)})+')';})((s.t/P-1)*100):'')+'.'):'')+'</p>'+
+          '<p class="note">'+T("Analysts are often wrong, and targets usually follow the price. Check each analyst’s record before relying on a view.")+'</p>'+
+          '<p><a href="'+window.ROOT+'stocks/'+s.u+'.html">'+F("See every dated rating for {t} →",{t:esc(t)})+'</a></p></div>');
       } else {
-        h.push('<div class="card"><h2>'+esc(t)+'</h2><p class="muted">'+esc(t)+' is not tracked on {{ CFG.site_name }} yet, so there is no analyst summary.</p></div>');
+        h.push('<div class="card"><h2>'+esc(t)+'</h2><p class="muted">'+F("{t} is not tracked on {site} yet, so there is no analyst summary.",{t:esc(t),site:"{{ CFG.site_name }}"})+'</p></div>');
       }
     }
 
@@ -163,8 +166,8 @@
       learn:["A practice (paper) trading account lets you test strategies with no money at risk.","Write down why you enter each trade and when you will exit, then compare with what happened."]
     };
     var common = ["Avoid holding options through major events (results, central-bank meetings, mergers): prices can jump overnight.","Take profit or cut losses by a rule set in advance, not by feeling.","Never invest borrowed money or money you need for living costs."];
-    h.push('<div class="card"><h2>Checklist for your goal</h2><ul class="pl-chk">'+tips[goal].concat(common).map(function(x){return "<li>"+x+"</li>";}).join("")+'</ul>'+
-      '<p class="note">Educational information only — not personal financial, investment or tax advice.</p></div>');
+    h.push('<div class="card"><h2>'+T("Checklist for your goal")+'</h2><ul class="pl-chk">'+tips[goal].concat(common).map(function(x){return "<li>"+T(x)+"</li>";}).join("")+'</ul>'+
+      '<p class="note">'+T("Educational information only — not personal financial, investment or tax advice.")+'</p></div>');
 
     $("out").innerHTML = h.join("");
     $("out").scrollIntoView({behavior:"smooth"});

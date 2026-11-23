@@ -1,0 +1,139 @@
+{% extends "base.html" %}
+{% block title %}Optionen lernen: kostenlose Lektionen und Tools | {{ CFG.site_name }}{% endblock %}
+{% block desc %}Kostenlose Lektionen zu Optionen in einfacher Sprache — Calls und Puts, gedeckte Calls, bar gedeckte Puts, Spreads, erwartete Bewegung und Sigma-Bänder, Positionsgröße und Ereignisrisiko — dazu kostenlose Rechner, ein Trading-Journal und ein wöchentlicher Sigma-Band-Backtest.{% endblock %}
+{% block body %}
+<style>
+.hub{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin:8px 0 22px}
+.hub a{display:block;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;color:var(--ink)}
+.hub a:hover{text-decoration:none;border-color:var(--brand)}
+.hub b{display:block;font-size:16px;margin-bottom:4px;color:var(--brand)}
+.hub span{color:var(--muted);font-size:13.5px}
+.toc{columns:2;column-gap:24px;padding-left:20px}.toc li{margin:3px 0}
+.lesson{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 20px;margin-bottom:16px}
+.lesson h2{margin-top:0}
+.lesson .ex{background:var(--bg);border-left:3px solid var(--brand);padding:8px 12px;border-radius:6px;margin:10px 0}
+.lesson .risk{background:#fff7e0;border-left:3px solid #e0a800;padding:8px 12px;border-radius:6px;margin:10px 0}
+@media(max-width:640px){.toc{columns:1}}
+</style>
+<section class="hero small">
+  <h1>Optionen lernen — kostenlos</h1>
+  <p>Lektionen in einfacher Sprache und kostenlose Tools für Einsteiger in Aktienoptionen. Alles hier dient dem Lernen: Es erklärt, wie Strategien funktionieren und wo sie Geld verlieren — und sagt nie, was Sie kaufen oder verkaufen sollen.</p>
+</section>
+
+<div class="hub">
+  <a href="tools.html"><b>Optionsrechner</b><span>Erwartete Bewegung (±1σ/±2σ), Gewinn-und-Verlust-Diagramme, Zinseszins.</span></a>
+  <a href="backtest.html"><b>Wöchentlicher Sigma-Band-Backtest</b><span>Wie oft SPY und QQQ wirklich im wöchentlichen Band blieben — und die schlechten Wochen.</span></a>
+  <a href="journal.html"><b>Trading-Journal</b><span>Übungs- oder echte Trades erfassen und die Trefferquote verfolgen. Nur in Ihrem Browser gespeichert.</span></a>
+  <a href="planner.html"><b>Budgetplaner</b><span>Was Ihr Budget tragen kann und wie viel Sie pro Trade verlieren könnten.</span></a>
+  <a href="start.html"><b>Konto eröffnen</b><span>Schritt für Schritt ein Brokerkonto sicher einrichten.</span></a>
+</div>
+
+<h2>Lektionen</h2>
+<ol class="toc">
+  <li><a href="#basics">Calls und Puts in 5 Minuten</a></li>
+  <li><a href="#covered-call">Gedeckte Calls</a></li>
+  <li><a href="#csp">Bar gedeckte Puts</a></li>
+  <li><a href="#spreads">Credit-Spreads: den schlechtesten Fall begrenzen</a></li>
+  <li><a href="#sigma">Erwartete Bewegung und Sigma-Bänder</a></li>
+  <li><a href="#sizing">Positionsgröße: die 1–2-%-Regel</a></li>
+  <li><a href="#events">Ereignisrisiko, Ausübung und Verfallstag</a></li>
+  <li><a href="#mistakes">Sieben typische Anfängerfehler</a></li>
+</ol>
+
+<article class="lesson" id="basics">
+<h2>1. Calls und Puts in 5 Minuten</h2>
+<p>Eine Option ist ein Vertrag über 100 Aktien, der an einem festen Datum verfällt.</p>
+<ul>
+  <li><b>Ein Call</b> gibt dem Käufer das Recht, bis zum Verfall 100 Aktien zum <b>Ausübungspreis (Strike)</b> zu kaufen. Käufer gewinnen, wenn die Aktie deutlich über den Strike steigt.</li>
+  <li><b>Ein Put</b> gibt dem Käufer das Recht, 100 Aktien zum Strike zu verkaufen. Käufer gewinnen, wenn die Aktie deutlich unter den Strike fällt.</li>
+  <li>Der Preis einer Option ist die <b>Prämie</b>, angegeben pro Aktie. Eine Prämie von 2,00 $ kostet 200 $ pro Kontrakt.</li>
+  <li><b>Käufer</b> verlieren höchstens die Prämie. <b>Verkäufer</b> kassieren die Prämie, übernehmen aber die Pflicht — und das Risiko — der Gegenseite.</li>
+</ul>
+<div class="ex"><b>Beispiel:</b> Eine Aktie steht bei 100 $. Ein Ein-Monats-Call mit Strike 105 $ kostet 1,50 $. Der Käufer zahlt 150 $. Schließt die Aktie bei 110 $, ist der Call 5 $ (500 $) wert: 350 $ Gewinn. Schließt sie unter 105 $, verfällt der Call wertlos und die 150 $ sind verloren.</div>
+<p>Die Prämie hat zwei Teile: den <b>inneren Wert</b> (wie weit die Option bereits im Geld ist) und den <b>Zeitwert</b>, der bis zum Verfall täglich schrumpft (<b>Theta-Zerfall</b>). Höhere erwartete Schwankung (<b>implizite Volatilität</b>) macht Optionen teurer.</p>
+</article>
+
+<article class="lesson" id="covered-call">
+<h2>2. Gedeckte Calls</h2>
+<p>Sie besitzen 100 Aktien und verkaufen darauf einen Call. Sie behalten die Prämie. Schließt die Aktie über dem Strike, werden Ihre Aktien zum Strike verkauft.</p>
+<ul>
+  <li><b>Geeignet für:</b> Zusatzeinkommen aus Aktien, die Sie zum Strike gern verkaufen würden.</li>
+  <li><b>Der Gewinn ist gedeckelt</b> bei Strike plus Prämie.</li>
+  <li><b>Das Verlustrisiko entspricht fast dem Aktienbesitz</b> — die Prämie dämpft einen Kursrückgang nur leicht.</li>
+</ul>
+<div class="ex"><b>Beispiel:</b> Sie besitzen 100 Aktien zu 40 $ und verkaufen einen 2-Wochen-Call mit Strike 45 $ für 0,60 $ — Sie kassieren 60 $. Aktie bei Verfall 43 $: Sie behalten Aktien und 60 $. Aktie bei 50 $: Ihre Aktien werden zu 45 $ verkauft — die Bewegung über 45 $ entgeht Ihnen.</div>
+<div class="risk"><b>Achtung:</b> Verkaufen Sie nie einen Strike unter dem Preis, zu dem Sie Ihre Aktien hergeben würden. Ist die Aktie weit unter Ihren Kaufpreis gefallen, kann ein niedriger Strike bei einer Erholung einen Verlust festschreiben.</div>
+</article>
+
+<article class="lesson" id="csp">
+<h2>3. Bar gedeckte Puts</h2>
+<p>Sie verkaufen einen Put und halten genug Bargeld, um 100 Aktien zum Strike zu kaufen. Sie kassieren die Prämie. Schließt die Aktie unter dem Strike, kaufen Sie die Aktien zum Strike.</p>
+<ul>
+  <li><b>Geeignet für:</b> bezahlt zu werden, während Sie darauf warten, eine gewünschte Aktie günstiger zu kaufen.</li>
+  <li><b>Benötigtes Kapital:</b> Strike × 100. Ein Strike von 50 $ bindet 5.000 $.</li>
+  <li><b>Schlechtester Fall:</b> Die Aktie bricht ein, und Sie besitzen 100 Aktien, gekauft zum Strike weit über dem Marktpreis.</li>
+</ul>
+<div class="ex"><b>Beispiel:</b> Eine Aktie steht bei 55 $. Sie verkaufen einen Put mit Strike 50 $ für 1,00 $, kassieren 100 $ und halten 5.000 $. Schließt sie bei 52 $, behalten Sie 100 $. Schließt sie bei 40 $, kaufen Sie zu 50 $: ein Buchverlust von 1.000 $ abzüglich der 100 $ Prämie.</div>
+</article>
+
+<article class="lesson" id="spreads">
+<h2>4. Credit-Spreads: den schlechtesten Fall begrenzen</h2>
+<p>Ein <b>Put-Credit-Spread</b> verkauft einen Put und kauft einen günstigeren Put weiter darunter. Der gekaufte Put begrenzt den Verlust.</p>
+<ul>
+  <li><b>Maximaler Verlust</b> = (Abstand der Strikes − Prämie) × 100.</li>
+  <li><b>Maximaler Gewinn</b> = eingenommene Prämie.</li>
+  <li>Bindet viel weniger Geld als ein bar gedeckter Put — deshalb nutzen ihn kleine Konten.</li>
+</ul>
+<div class="ex"><b>Beispiel:</b> Put mit Strike 500 $ verkaufen und Put mit Strike 495 $ kaufen, netto 1,20 $. Maximaler Gewinn 120 $. Maximaler Verlust (5 $ − 1,20 $) × 100 = 380 $ — mehr als das Dreifache des Gewinns.</div>
+<div class="risk"><b>Achtung:</b> Spreads gewinnen oft viele Male kleine Beträge und verlieren dann bei einem starken Einbruch das Maximum. Wählen Sie die Größe so, dass der maximale Verlust — nicht der erhoffte Gewinn — zu Ihren Regeln passt.</div>
+</article>
+
+<article class="lesson" id="sigma">
+<h2>5. Erwartete Bewegung und Sigma-Bänder</h2>
+<p>Optionspreise zeigen, wie weit der Markt eine Aktie sich bewegen sieht. Eine Standardabweichung (<b>1σ</b>) dieser Bewegung ist ungefähr:</p>
+<div class="ex"><b>1σ-Bewegung ≈ Kurs × implizite Volatilität × √(Tage ÷ 365)</b><br>Beispiel: Kurs 700 $, implizite Volatilität 18 %, 5 Tage → 700 × 0,18 × √(5/365) ≈ 14,7 $.</div>
+<ul>
+  <li>Bei einer idealen Glockenkurve bleibt der Kurs etwa 68 % der Zeit innerhalb von ±1σ und etwa 84 % der Zeit über −1σ.</li>
+  <li>Echte Märkte haben <b>fette Ränder</b>: sehr große Rückgänge kommen viel häufiger vor, als die Glockenkurve sagt. Siehe unseren <a href="backtest.html">wöchentlichen Backtest</a> — SPY fiel in einer Woche etwa zehnmal so oft um mehr als 3σ, wie die Glockenkurve vorhersagt.</li>
+  <li>Ein Band beschreibt, was die Preise einpreisen — es ist keine Prognose.</li>
+</ul>
+<p>Probieren Sie es mit dem <a href="tools.html#em">Rechner für die erwartete Bewegung</a>.</p>
+</article>
+
+<article class="lesson" id="sizing">
+<h2>6. Positionsgröße: die 1–2-%-Regel</h2>
+<p>Legen Sie <b>vor</b> dem Trade fest, wie viel Sie höchstens verlieren wollen. Viele Trader nutzen 1–2 % ihres Kontos.</p>
+<ul>
+  <li>Bei 5.000 € sind 2 % genau 100 €. Ein Spread mit 380 $ Maximalverlust ist für dieses Konto zu groß.</li>
+  <li>Richten Sie die Größe nach dem <b>schlechtesten Fall</b> aus, nie nach dem erwarteten Gewinn oder der „Kaufkraft“ des Brokers.</li>
+  <li>Setzen Sie nicht den Großteil Ihres Kontos auf eine Aktie oder eine Wette, auch nicht verteilt auf mehrere Trades.</li>
+</ul>
+<p>Der <a href="planner.html">Budgetplaner</a> rechnet das für Sie aus.</p>
+</article>
+
+<article class="lesson" id="events">
+<h2>7. Ereignisrisiko, Ausübung und Verfallstag</h2>
+<ul>
+  <li><b>Quartalszahlen, Notenbanksitzungen, Fusionen und CEO-Wechsel</b> können eine Aktie über Nacht um mehrere Sigma bewegen. Viele Optionsverkäufer schließen Positionen vor diesen Terminen.</li>
+  <li><b>Ausübung (Assignment):</b> Eine verkaufte Option im Geld kann gegen Sie ausgeübt werden — meist bei Verfall, manchmal früher (oft vor einer Dividende).</li>
+  <li><b>Verfallstag:</b> Schließt eine Aktie nahe Ihrem Strike, ist das Ergebnis unsicher. Wer vor der letzten Stunde schließt, vermeidet Überraschungen.</li>
+  <li><b>Kurslücken:</b> Aktien können weit vom Vortagesschluss eröffnen. Eine Stop-Order schützt nicht durch eine Lücke.</li>
+</ul>
+</article>
+
+<article class="lesson" id="mistakes">
+<h2>8. Sieben typische Anfängerfehler</h2>
+<ol>
+  <li>Die Größe nach dem erhofften Gewinn statt nach dem möglichen Verlust wählen.</li>
+  <li>Verkaufte Optionen über Quartalszahlen oder wichtige Nachrichten halten.</li>
+  <li>Billige, weit aus dem Geld liegende Optionen kaufen, die fast immer wertlos verfallen.</li>
+  <li>Market-Orders bei Optionen mit großer Geld-Brief-Spanne nutzen — immer Limit-Orders verwenden.</li>
+  <li>Bei einer Verlustwette nachlegen, um es „zurückzuholen“.</li>
+  <li>Hohen Trefferquoten trauen, ohne zu fragen, wie groß die Verlust-Trades waren.</li>
+  <li>Ohne Übungskonto und ohne schriftliches Trading-Journal starten.</li>
+</ol>
+<p>Beginnen Sie ein <a href="journal.html">Trading-Journal</a> — kostenlos und nur in Ihrem Browser.</p>
+</article>
+
+<p class="note">Nur Lerninformationen — keine Anlageberatung. Optionen bergen ein hohes Verlustrisiko und sind nicht für jeden geeignet. {{ _(CFG.disclaimer) }}</p>
+{% endblock %}

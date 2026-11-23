@@ -1,6 +1,6 @@
 {% extends "base.html" %}
-{% block title %}Free options calculators: expected move, profit & loss, compounding | {{ CFG.site_name }}{% endblock %}
-{% block desc %}Free options calculators: expected move and ±1σ/±2σ bands from implied volatility, profit and loss at expiry for calls, puts, covered calls, cash-secured puts and spreads, and a compounding calculator.{% endblock %}
+{% block title %}{{ _("Free options calculators: expected move, profit & loss, compounding") }} | {{ CFG.site_name }}{% endblock %}
+{% block desc %}{{ _("Free options calculators: expected move and ±1σ/±2σ bands from implied volatility, profit and loss at expiry for calls, puts, covered calls, cash-secured puts and spreads, and a compounding calculator.") }}{% endblock %}
 {% block body %}
 <style>
 .tool{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 20px;margin-bottom:18px}
@@ -14,59 +14,60 @@ svg.pl{width:100%;height:auto;background:var(--bg);border-radius:10px}
 .pl text{font-size:11px;fill:var(--muted)}
 .fg .hide,.hide{display:none}
 </style>
-<p class="crumbs"><a href="learn.html">Learn</a> / Calculators</p>
+<p class="crumbs"><a href="learn.html">{{ _("Learn") }}</a> / {{ _("Calculators") }}</p>
 <section class="hero small">
-  <h1>Options calculators</h1>
-  <p>Free calculators that run in your browser. Enter numbers from your broker; nothing is sent or stored.</p>
+  <h1>{{ _("Options calculators") }}</h1>
+  <p>{{ _("Free calculators that run in your browser. Enter numbers from your broker; nothing is sent or stored.") }}</p>
 </section>
 
 <section class="tool" id="em">
-<h2>Expected move and sigma bands</h2>
-<p class="muted">How far the options market implies a stock could move by a date. <a href="learn.html#sigma">How it works</a></p>
+<h2>{{ _("Expected move and sigma bands") }}</h2>
+<p class="muted">{{ _("How far the options market implies a stock could move by a date.") }} <a href="learn.html#sigma">{{ _("How it works") }}</a></p>
 <div class="fg">
-  <label>Share price ($)<input id="em-p" type="number" step="any" value="700"></label>
-  <label>Implied volatility (%)<input id="em-iv" type="number" step="any" value="18"></label>
-  <label>Calendar days to expiry<input id="em-d" type="number" step="1" value="7"></label>
+  <label>{{ _("Share price ($)") }}<input id="em-p" type="number" step="any" value="700"></label>
+  <label>{{ _("Implied volatility (%)") }}<input id="em-iv" type="number" step="any" value="18"></label>
+  <label>{{ _("Calendar days to expiry") }}<input id="em-d" type="number" step="1" value="7"></label>
 </div>
 <div class="res" id="em-out"></div>
-<p class="note">Bell-curve probabilities. Real markets have fat tails: large drops happen more often than shown — see the <a href="backtest.html">weekly backtest</a>.</p>
+<p class="note">{{ _("Bell-curve probabilities. Real markets have fat tails: large drops happen more often than shown.") }} <a href="backtest.html">{{ _("Weekly backtest") }}</a></p>
 </section>
 
 <section class="tool" id="pl">
-<h2>Profit and loss at expiry</h2>
+<h2>{{ _("Profit and loss at expiry") }}</h2>
 <div class="fg">
-  <label>Strategy<select id="pl-s">
-    <option value="lc">Buy a call</option><option value="lp">Buy a put</option>
-    <option value="cc">Covered call</option><option value="csp">Cash-secured put</option>
-    <option value="pcs" selected>Put credit spread</option><option value="ccs">Call credit spread</option>
+  <label>{{ _("Strategy") }}<select id="pl-s">
+    <option value="lc">{{ _("Buy a call") }}</option><option value="lp">{{ _("Buy a put") }}</option>
+    <option value="cc">{{ _("Covered call") }}</option><option value="csp">{{ _("Cash-secured put") }}</option>
+    <option value="pcs" selected>{{ _("Put credit spread") }}</option><option value="ccs">{{ _("Call credit spread") }}</option>
   </select></label>
-  <label>Share price now ($)<input id="pl-p" type="number" step="any" value="100"></label>
-  <label id="l-k1">Strike ($)<input id="pl-k1" type="number" step="any" value="95"></label>
-  <label id="l-k2">Bought strike ($)<input id="pl-k2" type="number" step="any" value="90"></label>
-  <label id="l-pr">Premium per share ($)<input id="pl-pr" type="number" step="any" value="1.2"></label>
-  <label id="l-cb" class="hide">Your share cost ($)<input id="pl-cb" type="number" step="any" value="100"></label>
-  <label>Contracts<input id="pl-n" type="number" step="1" min="1" value="1"></label>
+  <label>{{ _("Share price now ($)") }}<input id="pl-p" type="number" step="any" value="100"></label>
+  <label id="l-k1">{{ _("Strike ($)") }}<input id="pl-k1" type="number" step="any" value="95"></label>
+  <label id="l-k2">{{ _("Bought strike ($)") }}<input id="pl-k2" type="number" step="any" value="90"></label>
+  <label id="l-pr">{{ _("Premium per share ($)") }}<input id="pl-pr" type="number" step="any" value="1.2"></label>
+  <label id="l-cb" class="hide">{{ _("Your share cost ($)") }}<input id="pl-cb" type="number" step="any" value="100"></label>
+  <label>{{ _("Contracts") }}<input id="pl-n" type="number" step="1" min="1" value="1"></label>
 </div>
 <div class="res" id="pl-out"></div>
-<svg class="pl" id="pl-svg" viewBox="0 0 640 260" role="img" aria-label="Profit and loss chart"></svg>
-<p class="note">At expiry only, before commissions and taxes. Premium is per share; one contract = 100 shares.</p>
+<svg class="pl" id="pl-svg" viewBox="0 0 640 260" role="img" aria-label="{{ _('Profit and loss chart') }}"></svg>
+<p class="note">{{ _("At expiry only, before commissions and taxes. Premium is per share; one contract = 100 shares.") }}</p>
 </section>
 
 <section class="tool" id="cmp">
-<h2>Compounding calculator</h2>
+<h2>{{ _("Compounding calculator") }}</h2>
 <div class="fg">
-  <label>Starting amount<input id="c-a" type="number" step="any" value="5000"></label>
-  <label>Added each month<input id="c-m" type="number" step="any" value="200"></label>
-  <label>Yearly return (%)<input id="c-r" type="number" step="any" value="7"></label>
-  <label>Years<input id="c-y" type="number" step="1" value="10"></label>
+  <label>{{ _("Starting amount") }}<input id="c-a" type="number" step="any" value="5000"></label>
+  <label>{{ _("Added each month") }}<input id="c-m" type="number" step="any" value="200"></label>
+  <label>{{ _("Yearly return (%)") }}<input id="c-r" type="number" step="any" value="7"></label>
+  <label>{{ _("Years") }}<input id="c-y" type="number" step="1" value="10"></label>
 </div>
 <div class="res" id="c-out"></div>
-<p class="note">A fixed yearly return is an assumption, not a forecast. Real returns vary and can be negative.</p>
+<p class="note">{{ _("A fixed yearly return is an assumption, not a forecast. Real returns vary and can be negative.") }}</p>
 </section>
 
-<p class="note">Educational calculators only — not investment advice. {{ CFG.disclaimer }}</p>
+<p class="note">{{ _("Educational calculators only — not investment advice.") }} {{ _(CFG.disclaimer) }}</p>
 <script>
 (function(){
+  var T=window.T||function(s){return s;};
   function $(i){return document.getElementById(i);}
   function v(i){return parseFloat($(i).value)||0;}
   function usd(x){return (x<0?"−$":"$")+Math.abs(x).toLocaleString(undefined,{maximumFractionDigits:2});}
@@ -75,9 +76,9 @@ svg.pl{width:100%;height:auto;background:var(--bg);border-radius:10px}
 
   function em(){
     var p=v("em-p"),iv=v("em-iv")/100,d=v("em-d"),s=p*iv*Math.sqrt(d/365);
-    $("em-out").innerHTML=box([[usd(s)+" ("+(100*s/p).toFixed(2)+"%)","1σ move"],
-      [usd(p-s)+" – "+usd(p+s),"±1σ band (≈68%)"],[usd(p-2*s)+" – "+usd(p+2*s),"±2σ band (≈95%)"],
-      [(100*ncdf(1)).toFixed(1)+"%","chance of staying above −1σ (bell curve)"]]);
+    $("em-out").innerHTML=box([[usd(s)+" ("+(100*s/p).toFixed(2)+"%)",T("1σ move")],
+      [usd(p-s)+" – "+usd(p+s),T("±1σ band (≈68%)")],[usd(p-2*s)+" – "+usd(p+2*s),T("±2σ band (≈95%)")],
+      [(100*ncdf(1)).toFixed(1)+"%",T("chance of staying above −1σ (bell curve)")]]);
   }
   ["em-p","em-iv","em-d"].forEach(function(i){$(i).addEventListener("input",em);}); em();
 
@@ -94,25 +95,25 @@ svg.pl{width:100%;height:auto;background:var(--bg);border-radius:10px}
     var s=$("pl-s").value,p=v("pl-p"),k1=v("pl-k1"),k2=v("pl-k2"),pr=v("pl-pr"),cb=v("pl-cb"),n=Math.max(1,Math.round(v("pl-n")));
     var spread=(s==="pcs"||s==="ccs");
     $("l-k2").classList.toggle("hide",!spread); $("l-cb").classList.toggle("hide",s!=="cc");
-    $("l-k1").firstChild.nodeValue = spread?"Sold strike ($)":"Strike ($)";
+    $("l-k1").firstChild.nodeValue = spread?T("Sold strike ($)"):T("Strike ($)");
     var lo=Math.max(0,p*0.6),hi=p*1.4,N=160,pts=[],mn=1e9,mx=-1e9;
     for(var i=0;i<=N;i++){var S=lo+(hi-lo)*i/N,y=payoff(s,S,k1,k2,pr,cb)*100*n;pts.push([S,y]);mn=Math.min(mn,y);mx=Math.max(mx,y);}
     var maxG,maxL,be;
-    if(s==="lc"){maxG="Unlimited";maxL=usd(-pr*100*n);be=k1+pr;}
+    if(s==="lc"){maxG=T("Unlimited");maxL=usd(-pr*100*n);be=k1+pr;}
     if(s==="lp"){maxG=usd((k1-pr)*100*n);maxL=usd(-pr*100*n);be=k1-pr;}
     if(s==="cc"){maxG=usd((k1-cb+pr)*100*n);maxL=usd(-(cb-pr)*100*n);be=cb-pr;}
     if(s==="csp"){maxG=usd(pr*100*n);maxL=usd(-(k1-pr)*100*n);be=k1-pr;}
     if(s==="pcs"){maxG=usd(pr*100*n);maxL=usd(-(Math.abs(k1-k2)-pr)*100*n);be=k1-pr;}
     if(s==="ccs"){maxG=usd(pr*100*n);maxL=usd(-(Math.abs(k2-k1)-pr)*100*n);be=k1+pr;}
     var cash={lc:pr*100*n,lp:pr*100*n,cc:cb*100*n,csp:k1*100*n,pcs:(Math.abs(k1-k2)-pr)*100*n,ccs:(Math.abs(k2-k1)-pr)*100*n}[s];
-    $("pl-out").innerHTML=box([[maxG,"maximum gain"],[maxL,"maximum loss"],[usd(be),"break-even price"],[usd(cash),"money tied up (approx.)"]]);
-    var W=640,H=260,L=56,R=12,T=14,B=30,x=function(S){return L+(S-lo)/(hi-lo)*(W-L-R);},
-        pad=(mx-mn)*0.1||1,y0=mn-pad,y1=mx+pad,y=function(Y){return T+(y1-Y)/(y1-y0)*(H-T-B);};
+    $("pl-out").innerHTML=box([[maxG,T("maximum gain")],[maxL,T("maximum loss")],[usd(be),T("break-even price")],[usd(cash),T("money tied up (approx.)")]]);
+    var W=640,H=260,L=56,R=12,TP=14,B=30,x=function(S){return L+(S-lo)/(hi-lo)*(W-L-R);},
+        pad=(mx-mn)*0.1||1,y0=mn-pad,y1=mx+pad,y=function(Y){return TP+(y1-Y)/(y1-y0)*(H-TP-B);};
     var d="",dpos="",g='';
     pts.forEach(function(q,i){d+=(i?"L":"M")+x(q[0]).toFixed(1)+" "+y(q[1]).toFixed(1);});
     g+='<line x1="'+L+'" x2="'+(W-R)+'" y1="'+y(0)+'" y2="'+y(0)+'" stroke="#9aa7b8" stroke-dasharray="4 4"/>';
-    g+='<line x1="'+x(p)+'" x2="'+x(p)+'" y1="'+T+'" y2="'+(H-B)+'" stroke="#0b5fff" stroke-opacity=".35"/>';
-    g+='<text x="'+(x(p)+4)+'" y="'+(T+10)+'">now '+usd(p)+'</text>';
+    g+='<line x1="'+x(p)+'" x2="'+x(p)+'" y1="'+TP+'" y2="'+(H-B)+'" stroke="#0b5fff" stroke-opacity=".35"/>';
+    g+='<text x="'+(x(p)+4)+'" y="'+(TP+10)+'">'+T("now")+' '+usd(p)+'</text>';
     [0,0.25,0.5,0.75,1].forEach(function(f){var S=lo+(hi-lo)*f;g+='<text x="'+x(S)+'" y="'+(H-10)+'" text-anchor="middle">'+usd(Math.round(S))+'</text>';});
     [y0+pad,0,y1-pad].forEach(function(Y){g+='<text x="'+(L-6)+'" y="'+(y(Y)+4)+'" text-anchor="end">'+usd(Math.round(Y))+'</text>';});
     g+='<path d="'+d+'" fill="none" stroke="#0f1b2d" stroke-width="2.2"/>';
@@ -126,7 +127,7 @@ svg.pl{width:100%;height:auto;background:var(--bg);border-radius:10px}
   function cmp(){
     var a=v("c-a"),m=v("c-m"),r=v("c-r")/100,yrs=Math.round(v("c-y")),mr=Math.pow(1+r,1/12)-1,b=a,paid=a;
     for(var i=0;i<yrs*12;i++){b=b*(1+mr)+m;paid+=m;}
-    $("c-out").innerHTML=box([[b.toLocaleString(undefined,{maximumFractionDigits:0}),"value after "+yrs+" years"],[paid.toLocaleString(undefined,{maximumFractionDigits:0}),"amount you put in"],[(b-paid).toLocaleString(undefined,{maximumFractionDigits:0}),"growth"]]);
+    $("c-out").innerHTML=box([[b.toLocaleString(undefined,{maximumFractionDigits:0}),T("value after {n} years").replace("{n}",yrs)],[paid.toLocaleString(undefined,{maximumFractionDigits:0}),T("amount you put in")],[(b-paid).toLocaleString(undefined,{maximumFractionDigits:0}),T("growth")]]);
   }
   ["c-a","c-m","c-r","c-y"].forEach(function(i){$(i).addEventListener("input",cmp);}); cmp();
 })();

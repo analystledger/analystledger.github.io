@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block title %}Über uns & Methode | {{ CFG.site_name }}{% endblock %}
+{% block body %}
+<article class="prose">
+<h1>Über {{ CFG.site_name }}</h1>
+<p>{{ CFG.site_name }} ist eine kostenlose, unabhängige Aufzeichnung dessen, was Wall-Street-Analysten über Aktien sagen und wann sie es gesagt haben. Jede Herauf- und Herabstufung, neue Abdeckung, Bestätigung und Kurszieländerung wird mit Datum und Quellenlink gespeichert, sodass jeder Analyst eine dauerhafte, überprüfbare Historie erhält.</p>
+
+<h2 id="sources">Woher die Daten stammen</h2>
+<ul>
+  <li><strong>Lizenzierte Marktdaten-Schnittstellen</strong> — Bewertungs- und Kurszieldaten kommerzieller Datenanbieter.</li>
+  <li><strong>Öffentliche Nachrichten</strong> — in Finanznachrichten sowie Pressemitteilungen von Unternehmen oder Brokern gemeldete Bewertungsänderungen, erfasst als Fakten (wer, was, wann) mit Link zur Meldung.</li>
+</ul>
+<p>Die für die Wertung genutzten Aktienkurse sind Tagesschlusskurse von <a href="https://stooq.com">Stooq</a>.</p>
+<p>Die Website aktualisiert sich jeden Tag automatisch. Wir kopieren oder veröffentlichen keine Inhalte, Wertungen oder Ranglisten anderer Bewertungsseiten; alle Statistiken hier werden unabhängig aus den datierten Einträgen berechnet.</p>
+
+<h2 id="method">Wie Analysten bewertet werden</h2>
+<p>Für jede Bewertung vom Kauf-Typ (Buy, Outperform, Overweight…) und vom Verkaufs-Typ (Sell, Underperform, Underweight…) vergleichen wir den Aktienkurs am Tag der Bewertung mit dem letzten Kurs. Eine Kaufempfehlung gilt als richtig, wenn die Aktie seitdem gestiegen ist; eine Verkaufsempfehlung, wenn sie gefallen ist. Die <em>durchschnittliche Rendite</em> ist der Mittelwert dieser Bewegungen in Empfehlungsrichtung. Neutrale Bewertungen (Hold, Neutral, Equal Weight…) werden erfasst, aber nicht gewertet. Analysten brauchen mindestens drei gewertete Empfehlungen, um in Ranglisten zu erscheinen. Dividenden werden nicht berücksichtigt, und neue Empfehlungen hatten wenig Zeit, sich zu bewähren — betrachten Sie die Wertungen daher als grobe Orientierung.</p>
+
+<h2>Haftungsausschluss</h2>
+<p>{{ _(CFG.disclaimer) }}</p>
+</article>
+{% endblock %}

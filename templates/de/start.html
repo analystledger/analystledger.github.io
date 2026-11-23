@@ -1,0 +1,103 @@
+{% extends "base.html" %}
+{% block title %}Ein Handelskonto eröffnen und einrichten (Beispiel IBKR) | {{ CFG.site_name }}{% endblock %}
+{% block desc %}Schritt-für-Schritt-Anleitung zur Eröffnung eines Brokerkontos bei Interactive Brokers und zur sicheren Einrichtung: Bar- oder Margin-Konto, Optionsstufen, Währungsumtausch, Marktdaten und eine Checkliste vor dem ersten Trade.{% endblock %}
+{% block body %}
+<style>
+.cta{display:inline-block;background:var(--brand);color:#fff;border-radius:8px;padding:11px 20px;font-weight:700;font-size:16px;margin:6px 10px 6px 0}
+.cta:hover{text-decoration:none;opacity:.92}.cta.sec{background:var(--card);color:var(--ink);border:1px solid var(--line)}
+.steps{counter-reset:s;list-style:none;padding:0;margin:0}
+.steps>li{counter-increment:s;position:relative;padding:0 0 14px 44px}
+.steps>li::before{content:counter(s);position:absolute;left:0;top:0;width:30px;height:30px;border-radius:50%;background:var(--navy);color:#fff;font-weight:700;display:flex;align-items:center;justify-content:center}
+.steps>li b{display:block}
+.chk{list-style:none;padding:0}.chk li{padding:4px 0 4px 28px;position:relative}.chk li::before{content:"☐";position:absolute;left:4px;color:var(--muted)}
+.start .card{margin-bottom:16px}
+</style>
+
+<section class="hero small">
+  <h1>Ein Handelskonto eröffnen und einrichten</h1>
+  <p>Ein praktischer Leitfaden am Beispiel von Interactive Brokers (IBKR): wie Sie sich bewerben, welche Einstellungen Ihr Risiko im Griff halten und was Sie vor dem ersten Trade prüfen sollten. Lesen Sie ihn vor dem Antrag, damit Sie dabei die richtigen Optionen wählen.</p>
+  <a class="cta" href="https://www.interactivebrokers.com/en/accounts/individual.php" rel="noopener" target="_blank">IBKR-Konto eröffnen →</a>
+  <a class="cta sec" href="{{ root }}planner.html">Zuerst Budget planen</a>
+  <p class="note">{{ CFG.site_name }} ist unabhängig und nicht mit Interactive Brokers verbunden. Andere regulierte Broker funktionieren ähnlich. Die Seiten von IBKR sind auf Englisch verlinkt.</p>
+</section>
+
+<div class="start">
+<div class="card">
+<h2>1. Antrag stellen (ca. 10 Minuten)</h2>
+<ol class="steps">
+  <li><b>Wählen Sie ein Einzelkonto und starten Sie den Antrag.</b> Klicken Sie auf der <a href="https://www.interactivebrokers.com/en/accounts/individual.php" rel="noopener" target="_blank">Kontoseite</a> von IBKR auf „Start Application“. Sie legen Benutzername und Passwort an, bestätigen Ihre E-Mail und füllen das Formular aus (<a href="https://www.interactivebrokers.com/campus/trading-lessons/open-an-account-deposit-and-withdraw/" rel="noopener" target="_blank">IBKR</a>).</li>
+  <li><b>Halten Sie Ihre Angaben bereit.</b> Name und Adresse, Geburtsdatum und -land, steuerliche Ansässigkeit und Steuernummer, Arbeitgeber, Einkommen und Vermögen sowie Ihre Anlageerfahrung (<a href="https://www.interactivebrokers.com/en/general/what-you-need-inv.php" rel="noopener" target="_blank">was Sie brauchen</a>).</li>
+  <li><b>Beantworten Sie die Erfahrungsfragen ehrlich.</b> Sie bestimmen, welche Produkte Sie handeln dürfen. Wer seine Erfahrung übertreibt, erhält Berechtigungen, für die er noch nicht bereit ist.</li>
+  <li><b>Wählen Sie Ihre Basiswährung.</b> Nehmen Sie die Währung Ihres Gehalts und Ihrer Bank, etwa EUR. Abrechnungen und Margin werden darin berechnet.</li>
+  <li><b>Warten Sie auf die Freigabe und zahlen Sie dann per Überweisung ein.</b> Die Freigabe kann wegen der Identitätsprüfung einige Tage dauern.</li>
+</ol>
+</div>
+
+<div class="card">
+<h2>2. Bar- oder Margin-Konto</h2>
+<p><strong>Für die meisten Einsteiger ist ein Barkonto die sicherere Wahl:</strong> Es kann keinen Kredit aufnehmen, Sie können also nicht mehr verlieren, als Sie einzahlen. Bei einem Margin-Konto leiht Ihnen der Broker Geld, und Verluste können Ihre Einzahlung übersteigen.</p>
+<div class="tw"><table class="ev"><thead><tr><th></th><th>Barkonto</th><th>Margin-Konto</th></tr></thead><tbody>
+<tr><td><b>Kredit</b></td><td>Nein</td><td>Ja — der Broker beleiht Ihre Bestände</td></tr>
+<tr><td><b>Schlechtester Fall</b></td><td>Was Sie eingezahlt haben</td><td>Mehr als Sie eingezahlt haben</td></tr>
+<tr><td><b>Optionen</b></td><td>Gedeckte und bar gedeckte Strategien</td><td>Alle Stufen, nach Freigabe</td></tr>
+<tr><td><b>Später ändern</b></td><td>Upgrade auf Margin möglich</td><td>Herabstufung auf Barkonto unter Settings &gt; Account Configuration &gt; Account Type beantragen (<a href="https://www.interactivebrokers.com/support/faq/content/change-account-type-between-margin-40340296" rel="noopener" target="_blank">IBKR</a>)</td></tr>
+</tbody></table></div>
+<p class="note">Wenn Sie Margin wählen, bemessen Sie jeden Trade nach Ihrem Bargeld, nicht nach der größeren „Kaufkraft“.</p>
+</div>
+
+<div class="card">
+<h2>3. Optionsberechtigungen: nur beantragen, was Sie nutzen</h2>
+<p>IBKR hat vier Optionsstufen (<a href="https://www.ibkrguides.com/kb/options-levels-1-4.htm" rel="noopener" target="_blank">IBKR</a>):</p>
+<ul>
+  <li><b>Stufe 1:</b> nur gedeckte Calls.</li>
+  <li><b>Stufe 2:</b> dazu Kauf von Calls und Puts, gekaufte Spreads und Collars.</li>
+  <li><b>Stufe 3:</b> dazu verkaufte Puts und verkaufte Spreads mit begrenztem Verlust.</li>
+  <li><b>Stufe 4:</b> dazu ungedeckte Calls und verkaufte Straddles mit unbegrenztem Verlust. <strong>Nicht für Einsteiger.</strong></li>
+</ul>
+<p>Später ändern unter Settings &gt; Trading &gt; Trading Permissions &gt; Update Options Level (<a href="https://www.ibkrguides.com/adminportal/optionstradingpermissions.htm" rel="noopener" target="_blank">IBKR-Anleitung</a>). Lassen Sie Produkte, die Sie nicht verstehen, etwa Futures oder Krypto, ausgeschaltet.</p>
+</div>
+
+<div class="card">
+<h2>4. Zuerst mit einem Übungskonto üben</h2>
+<p>IBKR bietet neben dem echten Konto ein kostenloses Übungskonto (Paper Trading) an (<a href="https://www.interactivebrokers.com/support/faq/content/open-interactive-brokers-account-28224903" rel="noopener" target="_blank">IBKR</a>). Testen Sie jede neue Strategie dort einige Wochen, bevor Sie echtes Geld einsetzen.</p>
+</div>
+
+<div class="card">
+<h2>5. Währung: vor dem Kauf von US-Aktien umtauschen</h2>
+<p>US-Aktien und -Optionen werden in US-Dollar gehandelt. Tauschen Sie Ihre Euro (oder andere Währung) vor dem Handel in Dollar, damit Ihr Konto nie ins Minus rutscht — das behandelt der Broker als Kredit.</p>
+<ul>
+  <li>In IBKR Mobile: Order Ticket, nach <b>EUR</b> suchen, <b>Forex</b> unter <b>IDEALPRO</b> wählen, <b>EUR.USD</b> auswählen und den Betrag eingeben (<a href="https://www.interactivebrokers.com/support/faq/content/convert-currency-using-ibkr-mobile-35805363" rel="noopener" target="_blank">IBKR-Schritte</a>).</li>
+  <li>Aufträge unter etwa 25.000 USD werden etwas schlechter ausgeführt, rund 1–2 Basispunkte neben dem Hauptkurs (<a href="https://www.interactivebrokers.com/support/faq/content/idealpro-minimum-mean-65996956" rel="noopener" target="_blank">IBKR</a>). Die Gebühr beträgt 0,01 % mit mindestens 2,50 USD (<a href="https://www.interactivebrokers.com/download/newMark/PDFs/commissionsForex.pdf" rel="noopener" target="_blank">IBKR-Gebühren</a>) — tauschen Sie also lieber einmal einen größeren Betrag als oft kleine.</li>
+</ul>
+</div>
+
+<div class="card">
+<h2>6. Marktdaten</h2>
+<div class="tw"><table class="ev"><thead><tr><th>Paket</th><th>Was es bietet</th><th>Kosten (Privatanleger)</th></tr></thead><tbody>
+<tr><td><b>Inklusive</b></td><td>US-Aktien und ETFs in Echtzeit (Cboe One, IEX), sonst verzögerte Daten</td><td>Kostenlos (<a href="https://www.interactivebrokers.com/en/pricing/market-data-pricing.php" rel="noopener" target="_blank">IBKR</a>)</td></tr>
+<tr><td><b>OPRA (US-Optionen)</b></td><td>Live-Optionspreise — für jeden Optionshandel nötig</td><td>1,50 USD/Monat, entfällt ab über 20 USD Monatsgebühren (<a href="https://www.interactivebrokers.com/support/faq/content/market-data-package-need-see-35797042" rel="noopener" target="_blank">IBKR</a>)</td></tr>
+<tr><td><b>US Securities Snapshot and Futures Value Bundle</b></td><td>Konsolidierte US-Aktienkurse</td><td>10 USD/Monat, entfällt ab mindestens 30 USD Monatsgebühren (<a href="https://www.interactivebrokers.com/support/faq/content/market-data-subscriptions-needed-trading-27277437" rel="noopener" target="_blank">IBKR</a>)</td></tr>
+</tbody></table></div>
+<p class="note">Melden Sie sich als Privatanleger (non-professional) an. Abos werden pro Nutzer berechnet und nicht anteilig — starten Sie sie also am Monatsanfang (<a href="https://www.interactivebrokers.com/campus/trading-lessons/trade-permissions-mkt/" rel="noopener" target="_blank">IBKR</a>).</p>
+</div>
+
+<div class="card">
+<h2>7. Checkliste vor dem ersten Trade</h2>
+<ul class="chk">
+  <li>Zwei-Faktor-Anmeldung aktiviert (IBKR Mobile)</li>
+  <li>Kontotyp bewusst gewählt: Barkonto oder Margin mit der Gewohnheit, nur Bargeld zu nutzen</li>
+  <li>Optionsstufe nicht höher als nötig (Stufe 1–3)</li>
+  <li>Geld in USD getauscht; kein negativer Kontostand</li>
+  <li>Marktdaten für das, was Sie handeln (OPRA für Optionen)</li>
+  <li>Strategie im Übungskonto getestet</li>
+  <li>Der schlechteste Fall des Trades beträgt höchstens 1–2 % Ihres Kontos — prüfen Sie es im <a href="{{ root }}planner.html">Planer</a></li>
+  <li>Keine Quartalszahlen, Notenbanksitzung oder Fusionsnachricht vor Ende des Trades</li>
+  <li>Nur Limit-Orders, nie Market-Orders bei Optionen</li>
+  <li>Ausstieg schriftlich festgelegt: Gewinnziel, Stopp und Datum, an dem Sie schließen</li>
+</ul>
+<a class="cta" href="https://www.interactivebrokers.com/en/accounts/individual.php" rel="noopener" target="_blank">IBKR-Konto eröffnen →</a>
+</div>
+
+<p class="note">Allgemeine Lerninformationen zur Einrichtung eines Brokerkontos — keine Anlage-, Rechts- oder Steuerberatung. Regeln, Gebühren und Verfügbarkeit der Broker unterscheiden sich je nach Land und ändern sich; prüfen Sie stets die aktuellen Bedingungen des Brokers. {{ _(CFG.disclaimer) }}</p>
+</div>
+{% endblock %}

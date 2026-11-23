@@ -1,11 +1,11 @@
 {% extends "base.html" %}
-{% block title %}All analysts | {{ CFG.site_name }}{% endblock %}
+{% block title %}{{ _("All analysts") }} | {{ CFG.site_name }}{% endblock %}
 {% block body %}
-<h1>Analysts</h1>
-<p class="muted">Click a column to sort. Return = average directional return per Buy/Sell-type call.</p>
-<div class="filters"><input class="tf" type="search" placeholder="Filter analysts or firms…" aria-label="Filter"></div>
+<h1>{{ _("Analysts") }}</h1>
+<p class="muted">{{ _("Click a column to sort. Return = average directional return per Buy/Sell-type call.") }}</p>
+<div class="filters"><input class="tf" type="search" placeholder="{{ _('Filter analysts or firms…') }}" aria-label="{{ _('Filter') }}"></div>
 <div class="tw"><table class="ev sortable">
-<thead><tr><th>Analyst</th><th>Firm</th><th data-num>Actions</th><th data-num>Stocks</th><th data-num>Up</th><th data-num>Down</th><th data-num>Avg return</th><th data-num>Right direction</th><th>Last action</th></tr></thead>
+<thead><tr><th>{{ _("Analyst") }}</th><th>{{ _("Firm") }}</th><th data-num>{{ _("Actions") }}</th><th data-num>{{ _("Stocks") }}</th><th data-num>{{ _("Up") }}</th><th data-num>{{ _("Down") }}</th><th data-num>{{ _("Avg return") }}</th><th data-num>{{ _("Right direction") }}</th><th>{{ _("Last action") }}</th></tr></thead>
 <tbody>
 {% for a in analysts %}
 <tr><td><a href="{{ a.slug }}.html">{{ a.name }}</a></td><td>{{ a.firm }}</td><td>{{ a.n }}</td><td>{{ a.stocks }}</td><td>{{ a.upgrades }}</td><td>{{ a.downgrades }}</td>

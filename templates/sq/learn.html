@@ -1,0 +1,139 @@
+{% extends "base.html" %}
+{% block title %}Mësoni opsionet: mësime dhe mjete falas | {{ CFG.site_name }}{% endblock %}
+{% block desc %}Mësime falas për opsionet në gjuhë të thjeshtë — call dhe put, covered call, put të mbuluar me para, spread, lëvizja e pritur dhe brezat sigma, madhësia e pozicionit dhe rreziku i ngjarjeve — si dhe kalkulatorë falas, ditar tregtimi dhe test historik javor i brezit sigma.{% endblock %}
+{% block body %}
+<style>
+.hub{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin:8px 0 22px}
+.hub a{display:block;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;color:var(--ink)}
+.hub a:hover{text-decoration:none;border-color:var(--brand)}
+.hub b{display:block;font-size:16px;margin-bottom:4px;color:var(--brand)}
+.hub span{color:var(--muted);font-size:13.5px}
+.toc{columns:2;column-gap:24px;padding-left:20px}.toc li{margin:3px 0}
+.lesson{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 20px;margin-bottom:16px}
+.lesson h2{margin-top:0}
+.lesson .ex{background:var(--bg);border-left:3px solid var(--brand);padding:8px 12px;border-radius:6px;margin:10px 0}
+.lesson .risk{background:#fff7e0;border-left:3px solid #e0a800;padding:8px 12px;border-radius:6px;margin:10px 0}
+@media(max-width:640px){.toc{columns:1}}
+</style>
+<section class="hero small">
+  <h1>Mësoni opsionet — falas</h1>
+  <p>Mësime në gjuhë të thjeshtë dhe mjete falas për ata që fillojnë me opsionet mbi aksione. Gjithçka këtu është edukative: shpjegon si funksionojnë strategjitë dhe ku humbin para — dhe nuk ju thotë kurrë çfarë të blini ose të shisni.</p>
+</section>
+
+<div class="hub">
+  <a href="tools.html"><b>Kalkulatorët e opsioneve</b><span>Lëvizja e pritur (±1σ/±2σ), grafikët e fitimit dhe humbjes, interesi i përbërë.</span></a>
+  <a href="backtest.html"><b>Testi historik javor i brezit sigma</b><span>Sa shpesh SPY dhe QQQ mbetën realisht brenda brezit javor — dhe javët e këqija.</span></a>
+  <a href="journal.html"><b>Ditari i tregtimit</b><span>Regjistroni tregtime praktike ose reale dhe ndiqni përqindjen e fitoreve. Ruhet vetëm në shfletuesin tuaj.</span></a>
+  <a href="planner.html"><b>Planifikuesi i buxhetit</b><span>Çfarë mund të përballojë buxheti juaj dhe sa mund të humbni për tregtim.</span></a>
+  <a href="start.html"><b>Hap llogari</b><span>Si të konfiguroni një llogari brokeri në mënyrë të sigurt, hap pas hapi.</span></a>
+</div>
+
+<h2>Mësimet</h2>
+<ol class="toc">
+  <li><a href="#basics">Call dhe put në 5 minuta</a></li>
+  <li><a href="#covered-call">Covered call</a></li>
+  <li><a href="#csp">Put të mbuluar me para</a></li>
+  <li><a href="#spreads">Credit spread: kufizimi i rastit më të keq</a></li>
+  <li><a href="#sigma">Lëvizja e pritur dhe brezat sigma</a></li>
+  <li><a href="#sizing">Madhësia e pozicionit: rregulli 1–2%</a></li>
+  <li><a href="#events">Rreziku i ngjarjeve, ushtrimi dhe dita e skadimit</a></li>
+  <li><a href="#mistakes">Shtatë gabime të zakonshme të fillestarëve</a></li>
+</ol>
+
+<article class="lesson" id="basics">
+<h2>1. Call dhe put në 5 minuta</h2>
+<p>Një opsion është kontratë për 100 aksione që skadon në një datë të caktuar.</p>
+<ul>
+  <li><b>Një call</b> i jep blerësit të drejtën të blejë 100 aksione me <b>çmimin e ushtrimit (strike)</b> deri në skadim. Blerësit fitojnë nëse aksioni rritet dukshëm mbi strike.</li>
+  <li><b>Një put</b> i jep blerësit të drejtën të shesë 100 aksione me strike. Blerësit fitojnë nëse aksioni bie dukshëm nën strike.</li>
+  <li>Çmimi i një opsioni quhet <b>prima</b> dhe jepet për aksion. Një prim prej 2,00 $ kushton 200 $ për kontratë.</li>
+  <li><b>Blerësit</b> mund të humbin maksimalisht primën. <b>Shitësit</b> arkëtojnë primën, por marrin përsipër detyrimin — dhe rrezikun — e palës tjetër.</li>
+</ul>
+<div class="ex"><b>Shembull:</b> një aksion kushton 100 $. Një call njëmujor me strike 105 $ kushton 1,50 $. Blerësi paguan 150 $. Nëse aksioni mbyllet në 110 $, call-i vlen 5 $ (500 $): fitim 350 $. Nëse mbyllet nën 105 $, call-i skadon pa vlerë dhe 150 $ humbasin.</div>
+<p>Prima ka dy pjesë: <b>vlerën e brendshme</b> (sa është opsioni tashmë në fitim) dhe <b>vlerën kohore</b>, që zvogëlohet çdo ditë deri në skadim (<b>zbërthimi theta</b>). Luhatja më e madhe e pritur (<b>volatiliteti i nënkuptuar</b>) i bën opsionet më të shtrenjta.</p>
+</article>
+
+<article class="lesson" id="covered-call">
+<h2>2. Covered call</h2>
+<p>Ju zotëroni 100 aksione dhe shisni një call mbi to. E mbani primën. Nëse aksioni mbyllet mbi strike, aksionet tuaja shiten me strike.</p>
+<ul>
+  <li><b>I përshtatshëm për:</b> të ardhura shtesë nga aksione që do t'i shisnit me kënaqësi me strike.</li>
+  <li><b>Fitimi është i kufizuar</b> te strike plus prima.</li>
+  <li><b>Rreziku i rënies është pothuajse si zotërimi i aksioneve</b> — prima e zbut rënien vetëm pak.</li>
+</ul>
+<div class="ex"><b>Shembull:</b> zotëroni 100 aksione me 40 $ dhe shisni një call 2-javor me strike 45 $ për 0,60 $, duke arkëtuar 60 $. Aksioni në 43 $ në skadim: mbani aksionet dhe 60 $. Aksioni në 50 $: aksionet shiten me 45 $ — e humbisni lëvizjen mbi 45 $.</div>
+<div class="risk"><b>Kujdes:</b> mos shisni kurrë një strike nën çmimin me të cilin do t'i jepnit aksionet. Nëse aksioni ka rënë shumë nën çmimin e blerjes, një strike i ulët mund të fiksojë humbjen kur ai rikuperohet.</div>
+</article>
+
+<article class="lesson" id="csp">
+<h2>3. Put të mbuluar me para</h2>
+<p>Shisni një put dhe mbani mjaft para për të blerë 100 aksione me strike. Arkëtoni primën. Nëse aksioni mbyllet nën strike, i blini aksionet me strike.</p>
+<ul>
+  <li><b>I përshtatshëm për:</b> të paguheni ndërsa prisni të blini më lirë një aksion që e dëshironi.</li>
+  <li><b>Paratë e nevojshme:</b> strike × 100. Një strike 50 $ bllokon 5 000 $.</li>
+  <li><b>Rasti më i keq:</b> aksioni shembet dhe ju zotëroni 100 aksione të blera me strike, shumë mbi çmimin e tregut.</li>
+</ul>
+<div class="ex"><b>Shembull:</b> një aksion kushton 55 $. Shisni një put me strike 50 $ për 1,00 $, arkëtoni 100 $ dhe mbani 5 000 $. Nëse mbyllet në 52 $, mbani 100 $. Nëse mbyllet në 40 $, blini me 50 $: humbje në letër 1 000 $ minus 100 $ prim.</div>
+</article>
+
+<article class="lesson" id="spreads">
+<h2>4. Credit spread: kufizimi i rastit më të keq</h2>
+<p>Një <b>put credit spread</b> shet një put dhe blen një put më të lirë më poshtë. Put-i i blerë e kufizon humbjen.</p>
+<ul>
+  <li><b>Humbja maksimale</b> = (distanca mes strike-ve − prima) × 100.</li>
+  <li><b>Fitimi maksimal</b> = prima e arkëtuar.</li>
+  <li>Përdor shumë më pak para se një put i mbuluar me para — prandaj e përdorin llogaritë e vogla.</li>
+</ul>
+<div class="ex"><b>Shembull:</b> shisni një put me strike 500 $ dhe blini një put me strike 495 $ për neto 1,20 $. Fitimi maksimal 120 $. Humbja maksimale (5 $ − 1,20 $) × 100 = 380 $ — më shumë se trefishi i fitimit.</div>
+<div class="risk"><b>Kujdes:</b> spread-et shpesh fitojnë shuma të vogla shumë herë dhe pastaj humbin maksimumin në një rënie të fortë. Zgjidhni madhësinë që humbja maksimale — jo fitimi i pritur — të përshtatet me rregullat tuaja.</div>
+</article>
+
+<article class="lesson" id="sigma">
+<h2>5. Lëvizja e pritur dhe brezat sigma</h2>
+<p>Çmimet e opsioneve tregojnë sa larg pret tregu të lëvizë një aksion. Një devijim standard (<b>1σ</b>) i asaj lëvizjeje është përafërsisht:</p>
+<div class="ex"><b>Lëvizja 1σ ≈ çmimi × volatiliteti i nënkuptuar × √(ditë ÷ 365)</b><br>Shembull: çmimi 700 $, volatiliteti 18%, 5 ditë → 700 × 0,18 × √(5/365) ≈ 14,7 $.</div>
+<ul>
+  <li>Në një kurbë kambane ideale, çmimi mbetet brenda ±1σ rreth 68% të kohës dhe mbi −1σ rreth 84% të kohës.</li>
+  <li>Tregjet reale kanë <b>bishta të trashë</b>: rëniet shumë të mëdha ndodhin shumë më shpesh se sa thotë kurba. Shihni <a href="backtest.html">testin tonë javor</a> — SPY ra mbi 3σ brenda një jave rreth dhjetë herë më shpesh nga sa parashikon kurba e kambanës.</li>
+  <li>Një brez përshkruan atë që nënkuptojnë çmimet, nuk është parashikim.</li>
+</ul>
+<p>Provojeni me <a href="tools.html#em">kalkulatorin e lëvizjes së pritur</a>.</p>
+</article>
+
+<article class="lesson" id="sizing">
+<h2>6. Madhësia e pozicionit: rregulli 1–2%</h2>
+<p>Vendosni humbjen maksimale për një tregtim <b>para</b> se të tregtoni. Shumë tregtarë përdorin 1–2% të llogarisë.</p>
+<ul>
+  <li>Me 5 000 €, 2% janë 100 €. Një spread me humbje maksimale 380 $ është shumë i madh për këtë llogari.</li>
+  <li>Zgjidhni madhësinë sipas <b>rastit më të keq</b>, kurrë sipas fitimit të pritur apo „fuqisë blerëse“ të brokerit.</li>
+  <li>Mos vendosni pjesën më të madhe të llogarisë në një aksion ose në një bast, edhe nëse e ndani në disa tregtime.</li>
+</ul>
+<p><a href="planner.html">Planifikuesi i buxhetit</a> e llogarit këtë për ju.</p>
+</article>
+
+<article class="lesson" id="events">
+<h2>7. Rreziku i ngjarjeve, ushtrimi dhe dita e skadimit</h2>
+<ul>
+  <li><b>Rezultatet, mbledhjet e bankave qendrore, bashkimet dhe ndryshimet e CEO-ve</b> mund ta lëvizin një aksion disa sigma brenda natës. Shumë shitës opsionesh i mbyllin pozicionet para këtyre datave.</li>
+  <li><b>Ushtrimi (assignment):</b> një opsion i shitur që është në fitim mund të ushtrohet kundër jush, zakonisht në skadim dhe ndonjëherë më herët (shpesh para një dividende).</li>
+  <li><b>Dita e skadimit:</b> nëse aksioni mbyllet afër strike-ut tuaj, rezultati është i pasigurt. Mbyllja para orës së fundit shmang surprizat.</li>
+  <li><b>Hendeqet:</b> aksionet mund të hapen larg mbylljes së mëparshme. Një urdhër stop nuk ju mbron gjatë një hendeku.</li>
+</ul>
+</article>
+
+<article class="lesson" id="mistakes">
+<h2>8. Shtatë gabime të zakonshme të fillestarëve</h2>
+<ol>
+  <li>Zgjedhja e madhësisë sipas fitimit të shpresuar në vend të humbjes së mundshme.</li>
+  <li>Mbajtja e opsioneve të shitura gjatë rezultateve ose lajmeve të mëdha.</li>
+  <li>Blerja e opsioneve të lira shumë larg çmimit, që pothuajse gjithmonë skadojnë pa vlerë.</li>
+  <li>Përdorimi i urdhrave të tregut për opsione me diferencë të madhe blerje–shitje — përdorni gjithmonë urdhra me limit.</li>
+  <li>Dyfishimi i një basti humbës për ta „rikthyer“.</li>
+  <li>Besimi te përqindjet e larta të fitoreve pa pyetur sa të mëdha ishin tregtimet humbëse.</li>
+  <li>Kapërcimi i llogarisë praktike dhe i një ditari tregtimi të shkruar.</li>
+</ol>
+<p>Filloni një <a href="journal.html">ditar tregtimi</a> — është falas dhe mbetet në shfletuesin tuaj.</p>
+</article>
+
+<p class="note">Vetëm informacion edukativ — jo këshillë investimi. Opsionet kanë rrezik të lartë humbjeje dhe nuk janë të përshtatshme për këdo. {{ _(CFG.disclaimer) }}</p>
+{% endblock %}

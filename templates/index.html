@@ -1,30 +1,30 @@
-{% extends "base.html" %}{% import "_macros.html" as m %}
-{% block title %}{{ CFG.site_name }} — Analyst rating changes & track records{% endblock %}
+{% extends "base.html" %}{% import "_macros.html" as m with context %}
+{% block title %}{{ CFG.site_name }} — {{ _("Analyst rating changes & track records") }}{% endblock %}
 {% block body %}
 <section class="hero">
-  <h1>{{ CFG.tagline }}</h1>
-  <p>Upgrades, downgrades, new coverage and price-target moves from Wall Street analysts — each one dated, sourced and added to the analyst's permanent history.</p>
+  <h1>{{ _(CFG.tagline) }}</h1>
+  <p>{{ _("Upgrades, downgrades, new coverage and price-target moves from Wall Street analysts — each one dated, sourced and added to the analyst's permanent history.") }}</p>
   <div class="kpis">
-    <div><b>{{ week|length }}</b><span>changes this week</span></div>
-    <div><b>{{ week|selectattr("action","equalto","upgrade")|list|length }}</b><span>upgrades</span></div>
-    <div><b>{{ week|selectattr("action","equalto","downgrade")|list|length }}</b><span>downgrades</span></div>
-    <div><b>{{ n_analysts }}</b><span>analysts tracked</span></div>
+    <div><b>{{ week|length }}</b><span>{{ _("changes this week") }}</span></div>
+    <div><b>{{ week|selectattr("action","equalto","upgrade")|list|length }}</b><span>{{ _("upgrades") }}</span></div>
+    <div><b>{{ week|selectattr("action","equalto","downgrade")|list|length }}</b><span>{{ _("downgrades") }}</span></div>
+    <div><b>{{ n_analysts }}</b><span>{{ _("analysts tracked") }}</span></div>
   </div>
 </section>
 
 {% if top_news %}
 <section class="card" style="margin-bottom:16px">
-  <h2>Market-moving news</h2>
+  <h2>{{ _("Market-moving news") }}</h2>
   <ul class="list">
   {% for n in top_news %}<li><span class="muted nw">{{ n.date[:10] }}</span> <a href="news.html#{{ n.id }}">{{ n.headline }}</a>{% if n.tickers %} <span class="muted">{% for t in n.tickers[:3] %}${{ t }} {% endfor %}</span>{% endif %}</li>{% endfor %}
   </ul>
-  <p class="note"><a href="news.html">All news →</a></p>
+  <p class="note"><a href="news.html">{{ _("All news →") }}</a></p>
 </section>
 {% endif %}
 
 <div class="grid2">
   <section class="card">
-    <h2>Most-covered stocks this week</h2>
+    <h2>{{ _("Most-covered stocks this week") }}</h2>
     <ol class="list">
     {% for s in top_stocks if s.events %}
       <li><a class="tk" href="stocks/{{ s.ticker|lower|replace('.', '-') }}.html">{{ s.ticker }}</a>
@@ -32,10 +32,10 @@
         <span class="pill"><span class="r-bullish">{{ s.bull }}</span>/<span class="r-neutral">{{ s.neutral }}</span>/<span class="r-bearish">{{ s.bear }}</span></span></li>
     {% endfor %}
     </ol>
-    <p class="note">Bullish / neutral / bearish views from firms over the last 12 months.</p>
+    <p class="note">{{ _("Bullish / neutral / bearish views from firms over the last 12 months.") }}</p>
   </section>
   <section class="card">
-    <h2>Best-scoring analysts</h2>
+    <h2>{{ _("Best-scoring analysts") }}</h2>
     {% if ranked %}
     <ol class="list">
     {% for a in ranked %}
@@ -44,15 +44,15 @@
     {% endfor %}
     </ol>
     {% else %}
-    <p class="muted">Scores appear once analysts have at least 3 rated calls with price data.</p>
+    <p class="muted">{{ _("Scores appear once analysts have at least 3 rated calls with price data.") }}</p>
     {% endif %}
-    <p class="note">Average directional return since each Buy/Sell-type call. <a href="about.html#method">Method</a></p>
+    <p class="note">{{ _("Average directional return since each Buy/Sell-type call.") }} <a href="about.html#method">{{ _("Method") }}</a></p>
   </section>
 </div>
 
 <section>
-  <h2>Latest rating changes</h2>
+  <h2>{{ _("Latest rating changes") }}</h2>
   {{ m.events_table(latest, root, filterable=True) }}
-  <p class="note">*Return = stock move since the rating date, counted positive when the call was right (Buy-type and the stock rose, or Sell-type and it fell).</p>
+  <p class="note">*{{ _("Return = stock move since the rating date, counted positive when the call was right (Buy-type and the stock rose, or Sell-type and it fell).") }}</p>
 </section>
 {% endblock %}

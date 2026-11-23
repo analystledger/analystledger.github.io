@@ -1,6 +1,6 @@
 {% extends "base.html" %}
-{% block title %}Weekly sigma-band backtest: SPY and QQQ | {{ CFG.site_name }}{% endblock %}
-{% block desc %}How often SPY and QQQ actually stayed inside their weekly ±1σ band over five years, how often they fell 2σ and 3σ, and how big the losing weeks were for a put sold at the −1σ line.{% endblock %}
+{% block title %}{{ _("Weekly sigma-band backtest: SPY and QQQ") }} | {{ CFG.site_name }}{% endblock %}
+{% block desc %}{{ _("How often SPY and QQQ actually stayed inside their weekly ±1σ band over five years, how often they fell 2σ and 3σ, and how big the losing weeks were for a put sold at the −1σ line.") }}{% endblock %}
 {% block body %}
 <style>
 .bt{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 20px;margin-bottom:18px}
@@ -12,58 +12,58 @@ svg.hist{width:100%;height:auto}
 .key{display:flex;gap:14px;font-size:12.5px;color:var(--muted);flex-wrap:wrap}
 .key i{display:inline-block;width:12px;height:12px;border-radius:2px;margin-right:5px;vertical-align:-1px}
 </style>
-<p class="crumbs"><a href="learn.html">Learn</a> / Weekly sigma-band backtest</p>
+<p class="crumbs"><a href="learn.html">{{ _("Learn") }}</a> / {{ _("Weekly sigma-band backtest") }}</p>
 <section class="hero small">
-  <h1>Weekly sigma-band backtest</h1>
-  <p>Put sellers often draw a ±1σ band each week and sell puts below it. This page checks, over five years of weekly moves in SPY and QQQ, how often price really stayed above the −1σ line — and how big the losing weeks were.</p>
+  <h1>{{ _("Weekly sigma-band backtest") }}</h1>
+  <p>{{ _("Put sellers often draw a ±1σ band each week and sell puts below it. This page checks, over five years of weekly moves in SPY and QQQ, how often price really stayed above the −1σ line — and how big the losing weeks were.") }}</p>
 </section>
 
 {% set tks = ["SPY", "QQQ"] %}
 {% for tk in tks if bt[tk] %}{% set d = bt[tk] %}
 <section class="bt" id="{{ tk|lower }}">
-  <h2>{{ tk }} — {{ d.weeks }} weeks ({{ d.first }} to {{ d.last }})</h2>
+  <h2>{{ tk }} — {{ _("{n} weeks ({a} to {b})", n=d.weeks, a=d.first, b=d.last) }}</h2>
   <div class="res">
-    <div><b>{{ (100 * d.stayed_above_1 / d.weeks)|round(1) }}%</b><span>weeks that stayed above −1σ ({{ d.stayed_above_1 }} of {{ d.weeks }})</span></div>
-    <div><b>{{ d.below["1"] }}</b><span>weeks that fell through −1σ (bell curve: {{ d.expected_below["1"] }})</span></div>
-    <div><b>{{ d.below["2"] }}</b><span>weeks that fell 2σ or more (bell curve: {{ d.expected_below["2"] }})</span></div>
-    <div><b>{{ d.below["3"] }}</b><span>weeks that fell 3σ or more (bell curve: {{ d.expected_below["3"] }})</span></div>
-    <div><b>±{{ d.avg_band_pct }}%</b><span>average width of 1σ in a week</span></div>
+    <div><b>{{ (100 * d.stayed_above_1 / d.weeks)|round(1) }}%</b><span>{{ _("weeks that stayed above −1σ ({a} of {b})", a=d.stayed_above_1, b=d.weeks) }}</span></div>
+    <div><b>{{ d.below["1"] }}</b><span>{{ _("weeks that fell through −1σ (bell curve: {x})", x=d.expected_below["1"]) }}</span></div>
+    <div><b>{{ d.below["2"] }}</b><span>{{ _("weeks that fell 2σ or more (bell curve: {x})", x=d.expected_below["2"]) }}</span></div>
+    <div><b>{{ d.below["3"] }}</b><span>{{ _("weeks that fell 3σ or more (bell curve: {x})", x=d.expected_below["3"]) }}</span></div>
+    <div><b>±{{ d.avg_band_pct }}%</b><span>{{ _("average width of 1σ in a week") }}</span></div>
   </div>
 
   {% set mx = d.hist|max %}
-  <svg class="hist" viewBox="0 0 640 230" role="img" aria-label="Number of weeks by size of move in sigma for {{ tk }}">
+  <svg class="hist" viewBox="0 0 640 230" role="img" aria-label="{{ _('Number of weeks by size of move in sigma') }} ({{ tk }})">
     {% for c in d.hist %}{% set lo = -4 + loop.index0 * 0.5 %}
       {% set h = (170 * c / mx) if mx else 0 %}
       {% set x = 30 + loop.index0 * 36 %}
-      <rect x="{{ x }}" y="{{ 190 - h }}" width="30" height="{{ h }}" rx="3" fill="{{ '#d23b3b' if lo < -1 else ('#0b5fff' if lo < 1 else '#0a8f4d') }}" fill-opacity="{{ '1' if lo < -1 else '.75' }}"><title>{{ lo }}σ to {{ lo + 0.5 }}σ: {{ c }} weeks</title></rect>
+      <rect x="{{ x }}" y="{{ 190 - h }}" width="30" height="{{ h }}" rx="3" fill="{{ '#d23b3b' if lo < -1 else ('#0b5fff' if lo < 1 else '#0a8f4d') }}" fill-opacity="{{ '1' if lo < -1 else '.75' }}"><title>{{ lo }}σ – {{ lo + 0.5 }}σ: {{ c }}</title></rect>
       {% if c %}<text x="{{ x + 15 }}" y="{{ 186 - h }}" text-anchor="middle">{{ c }}</text>{% endif %}
       {% if loop.index0 % 2 == 0 %}<text x="{{ x }}" y="206" text-anchor="middle">{{ lo|int }}σ</text>{% endif %}
     {% endfor %}
     <text x="606" y="206" text-anchor="middle">+4σ</text>
-    <text x="320" y="224" text-anchor="middle">weekly move, in sigma</text>
+    <text x="320" y="224" text-anchor="middle">{{ _("weekly move, in sigma") }}</text>
   </svg>
-  <div class="key"><span><i style="background:#d23b3b"></i>below −1σ (a put at −1σ loses)</span><span><i style="background:#0b5fff;opacity:.75"></i>inside ±1σ</span><span><i style="background:#0a8f4d;opacity:.75"></i>above +1σ</span></div>
+  <div class="key"><span><i style="background:#d23b3b"></i>{{ _("below −1σ (a put at −1σ loses)") }}</span><span><i style="background:#0b5fff;opacity:.75"></i>{{ _("inside ±1σ") }}</span><span><i style="background:#0a8f4d;opacity:.75"></i>{{ _("above +1σ") }}</span></div>
 
-  <h3>If you had sold a put at the −1σ line every week</h3>
-  <p>In the {{ d.below["1"] }} weeks the price ended below the line, it finished on average <b>{{ d.avg_loss_beyond_strike_pct }}%</b> of the share price below the strike, and <b>{{ d.worst_loss_beyond_strike_pct }}%</b> in the worst week. On {{ tk }} that is the loss per share before the premium you collected — the premiums from the winning weeks have to pay for it.</p>
+  <h3>{{ _("If you had sold a put at the −1σ line every week") }}</h3>
+  <p>{{ _("In the {n} weeks the price ended below the line, it finished on average <b>{a}%</b> of the share price below the strike, and <b>{w}%</b> in the worst week. On {tk} that is the loss per share before the premium you collected — the premiums from the winning weeks have to pay for it.", n=d.below["1"], a=d.avg_loss_beyond_strike_pct, w=d.worst_loss_beyond_strike_pct, tk=tk)|safe }}</p>
 
-  <h3>Five worst weeks</h3>
-  <div class="tw"><table class="ev"><thead><tr><th>Week ending</th><th>Move</th><th>In sigma</th></tr></thead><tbody>
+  <h3>{{ _("Five worst weeks") }}</h3>
+  <div class="tw"><table class="ev"><thead><tr><th>{{ _("Week ending") }}</th><th>{{ _("Move") }}</th><th>{{ _("In sigma") }}</th></tr></thead><tbody>
   {% for w in d.worst %}<tr><td>{{ w.week_ending }}</td><td class="down">{{ w.move_pct }}%</td><td>{{ w.sigma }}σ</td></tr>{% endfor %}
   </tbody></table></div>
 </section>
 {% endfor %}
 
 <section class="bt">
-  <h2>What this shows</h2>
+  <h2>{{ _("What this shows") }}</h2>
   <ul>
-    <li><b>Most weeks are calm.</b> About 5 weeks in 6 ended above −1σ — that is why weekly put selling wins most of the time.</li>
-    <li><b>The tail is fatter than the bell curve.</b> Falls of 3σ or more were several times more frequent than a normal distribution predicts. One such week can erase months of small gains.</li>
-    <li><b>Win rate is not profit.</b> Always ask how big the losing weeks were, and whether the premiums collected cover them after commissions.</li>
+    <li>{{ _("<b>Most weeks are calm.</b> About 5 weeks in 6 ended above −1σ — that is why weekly put selling wins most of the time.")|safe }}</li>
+    <li>{{ _("<b>The tail is fatter than the bell curve.</b> Falls of 3σ or more were several times more frequent than a normal distribution predicts. One such week can erase months of small gains.")|safe }}</li>
+    <li>{{ _("<b>Win rate is not profit.</b> Always ask how big the losing weeks were, and whether the premiums collected cover them after commissions.")|safe }}</li>
   </ul>
-  <h3>Method</h3>
-  <p class="note">{{ bt.method }} Moves are measured from the last close of one week to the last close of the next. Option-implied volatility is usually a little higher than realised volatility, so bands drawn from option prices are slightly wider and would be crossed somewhat less often. Five years is a short sample. Updated {{ bt.updated }}. {{ bt.source }}</p>
+  <h3>{{ _("Method") }}</h3>
+  <p class="note">{{ _(bt.method) }} {{ _("Moves are measured from the last close of one week to the last close of the next. Option-implied volatility is usually a little higher than realised volatility, so bands drawn from option prices are slightly wider and would be crossed somewhat less often. Five years is a short sample.") }} {{ _("Updated") }} {{ bt.updated }}. {{ _(bt.source) }}</p>
 </section>
 
-<p class="note">Educational analysis of past prices only — past results do not predict future results, and this is not investment advice. {{ CFG.disclaimer }}</p>
+<p class="note">{{ _("Educational analysis of past prices only — past results do not predict future results, and this is not investment advice.") }} {{ _(CFG.disclaimer) }}</p>
 {% endblock %}

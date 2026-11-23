@@ -1,11 +1,11 @@
 {% extends "base.html" %}
-{% block title %}All stocks | {{ CFG.site_name }}{% endblock %}
+{% block title %}{{ _("All stocks") }} | {{ CFG.site_name }}{% endblock %}
 {% block body %}
-<h1>Stocks</h1>
-<p class="muted">Consensus uses each firm's latest view in the last 12 months. Click a column to sort.</p>
-<div class="filters"><input class="tf" type="search" placeholder="Filter stocks…" aria-label="Filter"></div>
+<h1>{{ _("Stocks") }}</h1>
+<p class="muted">{{ _("Consensus uses each firm's latest view in the last 12 months. Click a column to sort.") }}</p>
+<div class="filters"><input class="tf" type="search" placeholder="{{ _('Filter stocks…') }}" aria-label="{{ _('Filter') }}"></div>
 <div class="tw"><table class="ev sortable">
-<thead><tr><th>Ticker</th><th>Company</th><th data-num>Bullish</th><th data-num>Neutral</th><th data-num>Bearish</th><th data-num>Avg target</th><th data-num>Upside</th><th data-num>Actions</th><th>Last action</th></tr></thead>
+<thead><tr><th>{{ _("Ticker") }}</th><th>{{ _("Company") }}</th><th data-num>{{ _("Bullish") }}</th><th data-num>{{ _("Neutral") }}</th><th data-num>{{ _("Bearish") }}</th><th data-num>{{ _("Avg target") }}</th><th data-num>{{ _("Upside") }}</th><th data-num>{{ _("Actions") }}</th><th>{{ _("Last action") }}</th></tr></thead>
 <tbody>
 {% for s in stocks %}
 <tr><td><a class="tk" href="{{ s.ticker|lower|replace('.', '-') }}.html">{{ s.ticker }}</a></td><td>{{ s.company or "" }}</td>

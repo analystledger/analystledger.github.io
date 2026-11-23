@@ -1,8 +1,9 @@
 {% extends "base.html" %}
-{% block title %}Terms of Service | {{ CFG.site_name }}{% endblock %}
+{% block title %}{{ _("Terms of Service") }} | {{ CFG.site_name }}{% endblock %}
 {% block body %}
+{% if lang != "en" %}<p class="warn" style="background:#fff7e0;border:1px solid #f1d58a;border-radius:10px;padding:10px 14px">{{ _("This page is available in English only. The English version applies.") }}</p>{% endif %}
 <article class="prose">
-<h1>Terms of Service</h1>
+<h1>{{ _("Terms of Service") }}</h1>
 <p>Last updated: 15 November 2026</p>
 <p>{{ CFG.site_name }} ("we") provides a free website and social media accounts that publish factual records of publicly reported Wall Street analyst rating and price-target changes. By using the website or following our accounts you agree to these terms.</p>
 <h2>Information only</h2>

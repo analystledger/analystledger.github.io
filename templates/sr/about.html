@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block title %}O nama i metod | {{ CFG.site_name }}{% endblock %}
+{% block body %}
+<article class="prose">
+<h1>O sajtu {{ CFG.site_name }}</h1>
+<p>{{ CFG.site_name }} je besplatan, nezavisan zapis onoga što analitičari sa Wall Streeta kažu o akcijama i kada su to rekli. Svako povišenje i sniženje ocene, novo praćenje, potvrda i promena ciljane cene čuva se sa datumom i linkom ka izvoru, tako da svaki analitičar dobija trajnu istoriju koja se može proveriti.</p>
+
+<h2 id="sources">Odakle potiču podaci</h2>
+<ul>
+  <li><strong>Licencirani interfejsi tržišnih podataka</strong> — podaci o ocenama i ciljanim cenama od komercijalnih dobavljača podataka.</li>
+  <li><strong>Javne vesti</strong> — promene ocena objavljene u finansijskim vestima i saopštenjima kompanija ili brokera, zabeležene kao činjenice (ko, šta, kada) sa linkom ka izveštaju.</li>
+</ul>
+<p>Cene akcija koje se koriste za ocenjivanje su dnevne cene zatvaranja sa <a href="https://stooq.com">Stooq</a>.</p>
+<p>Sajt se automatski ažurira svakog dana. Ne kopiramo niti ponovo objavljujemo sadržaj, rezultate ili rang-liste drugih sajtova sa ocenama; sve statistike ovde računaju se nezavisno iz datiranih zapisa.</p>
+
+<h2 id="method">Kako se ocenjuju analitičari</h2>
+<p>Za svaku ocenu tipa Kupi (Buy, Outperform, Overweight…) i tipa Prodaj (Sell, Underperform, Underweight…) poredimo cenu akcije na dan ocene sa poslednjom cenom. Preporuka Kupi smatra se tačnom ako je akcija od tada porasla; preporuka Prodaj ako je pala. <em>Prosečan prinos</em> je prosek tih kretanja u pravcu preporuke. Neutralne ocene (Hold, Neutral, Equal Weight…) se beleže, ali se ne boduju. Analitičari moraju imati najmanje tri bodovane preporuke da bi se pojavili na rang-listama. Dividende se ne uračunavaju, a novije preporuke su imale malo vremena da se pokažu, pa rezultate shvatite kao grubu orijentaciju.</p>
+
+<h2>Odricanje od odgovornosti</h2>
+<p>{{ _(CFG.disclaimer) }}</p>
+</article>
+{% endblock %}

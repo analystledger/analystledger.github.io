@@ -1,46 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ lang }}">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{% block title %}{{ CFG.site_name }}{% endblock %}</title>
-<meta name="description" content="{% block desc %}{{ CFG.tagline }}{% endblock %}">
+<meta name="description" content="{% block desc %}{{ _(CFG.tagline) }}{% endblock %}">
 <meta property="og:title" content="{{ self.title() }}">
 <meta property="og:description" content="{{ self.desc() }}">
 <meta property="og:type" content="website">
 <meta property="og:image" content="{{ CFG.base_url }}{{ CFG.base_path }}/assets/og.png">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="icon" href="{{ root }}assets/logo.svg" type="image/svg+xml">
-<link rel="alternate" type="application/rss+xml" title="{{ CFG.site_name }}" href="{{ root }}feed.xml">
-<link rel="stylesheet" href="{{ root }}assets/style.css">
+{% for L in langs %}<link rel="alternate" hreflang="{{ L.code }}" href="{{ CFG.base_url }}{{ CFG.base_path }}/{{ '' if L.code == 'en' else L.code ~ '/' }}{{ page_path }}">
+{% endfor %}<link rel="alternate" hreflang="x-default" href="{{ CFG.base_url }}{{ CFG.base_path }}/{{ page_path }}">
+<link rel="icon" href="{{ aroot }}assets/logo.svg" type="image/svg+xml">
+<link rel="alternate" type="application/rss+xml" title="{{ CFG.site_name }}" href="{{ aroot }}feed.xml">
+<link rel="stylesheet" href="{{ aroot }}assets/style.css">
+<script>window.ROOT = "{{ root }}"; window.AROOT = "{{ aroot }}"; window.LANG = "{{ lang }}"; window.TR = {{ js_t|safe }}; window.T = function (s) { return window.TR[s] || s; };</script>
 </head>
 <body>
 <header class="top">
   <div class="wrap bar">
-    <a class="brand" href="{{ root }}index.html"><img src="{{ root }}assets/logo.svg" alt="" width="28" height="28"> {{ CFG.site_name }}</a>
+    <a class="brand" href="{{ root }}index.html"><img src="{{ aroot }}assets/logo.svg" alt="" width="28" height="28"> {{ CFG.site_name }}</a>
     <nav>
-      <a href="{{ root }}index.html">Latest</a>
-      <a href="{{ root }}analysts/index.html">Analysts</a>
-      <a href="{{ root }}stocks/index.html">Stocks</a>
-      <a href="{{ root }}news.html">News</a>
-      <a href="{{ root }}learn.html">Learn &amp; tools</a>
-      <a href="{{ root }}start.html">Open account</a>
-      <a href="{{ root }}about.html">About</a>
+      <a href="{{ root }}index.html">{{ _("Latest") }}</a>
+      <a href="{{ root }}analysts/index.html">{{ _("Analysts") }}</a>
+      <a href="{{ root }}stocks/index.html">{{ _("Stocks") }}</a>
+      <a href="{{ root }}news.html">{{ _("News") }}</a>
+      <a href="{{ root }}learn.html">{{ _("Learn & tools") }}</a>
+      <a href="{{ root }}start.html">{{ _("Open account") }}</a>
+      <a href="{{ root }}about.html">{{ _("About") }}</a>
     </nav>
+    <div class="langs" aria-label="{{ _('Language') }}">{% for L in langs %}<a href="{{ aroot }}{{ '' if L.code == 'en' else L.code ~ '/' }}{{ page_path }}" hreflang="{{ L.code }}" lang="{{ L.code }}" title="{{ L.name }}"{% if L.code == lang %} class="on" aria-current="true"{% endif %}>{{ L.label }}</a>{% endfor %}</div>
     <div class="search">
-      <input id="q" type="search" placeholder="Search ticker, analyst, firm…" autocomplete="off" aria-label="Search">
+      <input id="q" type="search" placeholder="{{ _('Search ticker, analyst, firm…') }}" autocomplete="off" aria-label="{{ _('Search') }}">
       <div id="qres" class="qres" hidden></div>
     </div>
   </div>
 </header>
 <main class="wrap">
+{% if lang != "en" %}{% block langnote %}{% endblock %}{% endif %}
 {% block body %}{% endblock %}
 </main>
 <footer class="wrap foot">
-  <p><strong>Disclaimer:</strong> {{ CFG.disclaimer }}</p>
-  <p>{{ total }} rating changes · {{ n_analysts }} analysts · {{ n_stocks }} stocks · Updated {{ updated or "daily" }} · <a href="{{ root }}feed.xml">RSS</a> · <a href="{{ root }}terms.html">Terms</a> · <a href="{{ root }}privacy.html">Privacy</a></p>
+  <p><strong>{{ _("Disclaimer:") }}</strong> {{ _(CFG.disclaimer) }}</p>
+  <p>{{ _("{n} rating changes", n=total) }} · {{ _("{n} analysts", n=n_analysts) }} · {{ _("{n} stocks", n=n_stocks) }} · {{ _("Updated") }} {{ updated or _("daily") }} · <a href="{{ aroot }}feed.xml">RSS</a> · <a href="{{ root }}terms.html">{{ _("Terms") }}</a> · <a href="{{ root }}privacy.html">{{ _("Privacy") }}</a></p>
 </footer>
-<script>window.ROOT = "{{ root }}";</script>
-<script src="{{ root }}assets/app.js"></script>
+<script src="{{ aroot }}assets/app.js"></script>
 </body>
 </html>

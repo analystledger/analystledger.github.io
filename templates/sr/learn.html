@@ -1,0 +1,139 @@
+{% extends "base.html" %}
+{% block title %}Naučite opcije: besplatne lekcije i alati | {{ CFG.site_name }}{% endblock %}
+{% block desc %}Besplatne lekcije o opcijama na jednostavnom jeziku — call i put, pokriveni call, put pokriven gotovinom, spredovi, očekivano kretanje i sigma pojasevi, veličina pozicije i rizik događaja — uz besplatne kalkulatore, dnevnik trgovanja i nedeljni bektest sigma pojasa.{% endblock %}
+{% block body %}
+<style>
+.hub{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin:8px 0 22px}
+.hub a{display:block;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;color:var(--ink)}
+.hub a:hover{text-decoration:none;border-color:var(--brand)}
+.hub b{display:block;font-size:16px;margin-bottom:4px;color:var(--brand)}
+.hub span{color:var(--muted);font-size:13.5px}
+.toc{columns:2;column-gap:24px;padding-left:20px}.toc li{margin:3px 0}
+.lesson{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 20px;margin-bottom:16px}
+.lesson h2{margin-top:0}
+.lesson .ex{background:var(--bg);border-left:3px solid var(--brand);padding:8px 12px;border-radius:6px;margin:10px 0}
+.lesson .risk{background:#fff7e0;border-left:3px solid #e0a800;padding:8px 12px;border-radius:6px;margin:10px 0}
+@media(max-width:640px){.toc{columns:1}}
+</style>
+<section class="hero small">
+  <h1>Naučite opcije — besplatno</h1>
+  <p>Lekcije na jednostavnom jeziku i besplatni alati za one koji počinju sa opcijama na akcije. Sve ovde je edukativno: objašnjava kako strategije funkcionišu i gde gube novac — i nikada ne govori šta da kupite ili prodate.</p>
+</section>
+
+<div class="hub">
+  <a href="tools.html"><b>Kalkulatori opcija</b><span>Očekivano kretanje (±1σ/±2σ), grafikoni dobitka i gubitka, složena kamata.</span></a>
+  <a href="backtest.html"><b>Nedeljni bektest sigma pojasa</b><span>Koliko su često SPY i QQQ stvarno ostali u nedeljnom pojasu — i loše nedelje.</span></a>
+  <a href="journal.html"><b>Dnevnik trgovanja</b><span>Beležite vežbe ili stvarne trgovine i pratite procenat dobitaka. Čuva se samo u vašem pregledaču.</span></a>
+  <a href="planner.html"><b>Planer budžeta</b><span>Šta vaš budžet može da podrži i koliko možete da izgubite po trgovini.</span></a>
+  <a href="start.html"><b>Otvori račun</b><span>Kako bezbedno podesiti brokerski račun, korak po korak.</span></a>
+</div>
+
+<h2>Lekcije</h2>
+<ol class="toc">
+  <li><a href="#basics">Call i put za 5 minuta</a></li>
+  <li><a href="#covered-call">Pokriveni call</a></li>
+  <li><a href="#csp">Put pokriven gotovinom</a></li>
+  <li><a href="#spreads">Kreditni spredovi: ograničavanje najgoreg slučaja</a></li>
+  <li><a href="#sigma">Očekivano kretanje i sigma pojasevi</a></li>
+  <li><a href="#sizing">Veličina pozicije: pravilo 1–2%</a></li>
+  <li><a href="#events">Rizik događaja, izvršenje i dan isteka</a></li>
+  <li><a href="#mistakes">Sedam čestih grešaka početnika</a></li>
+</ol>
+
+<article class="lesson" id="basics">
+<h2>1. Call i put za 5 minuta</h2>
+<p>Opcija je ugovor na 100 akcija koji ističe određenog datuma.</p>
+<ul>
+  <li><b>Call</b> daje kupcu pravo da do isteka kupi 100 akcija po <b>izvršnoj ceni (strajku)</b>. Kupci zarađuju ako akcija znatno poraste iznad strajka.</li>
+  <li><b>Put</b> daje kupcu pravo da proda 100 akcija po strajku. Kupci zarađuju ako akcija znatno padne ispod strajka.</li>
+  <li>Cena opcije je <b>premija</b>, izražena po akciji. Premija od 2,00 $ košta 200 $ po ugovoru.</li>
+  <li><b>Kupci</b> mogu izgubiti najviše premiju. <b>Prodavci</b> naplaćuju premiju, ali preuzimaju obavezu — i rizik — druge strane.</li>
+</ul>
+<div class="ex"><b>Primer:</b> akcija vredi 100 $. Jednomesečni call sa strajkom 105 $ košta 1,50 $. Kupac plaća 150 $. Ako akcija završi na 110 $, call vredi 5 $ (500 $): dobit 350 $. Ako završi ispod 105 $, call ističe bezvredan i 150 $ je izgubljeno.</div>
+<p>Premija ima dva dela: <b>unutrašnju vrednost</b> (koliko je opcija već u dobitku) i <b>vremensku vrednost</b>, koja se smanjuje svakog dana do isteka (<b>theta opadanje</b>). Veća očekivana kolebanja (<b>implicitna volatilnost</b>) čine opcije skupljim.</p>
+</article>
+
+<article class="lesson" id="covered-call">
+<h2>2. Pokriveni call</h2>
+<p>Posedujete 100 akcija i prodajete jedan call na njih. Zadržavate premiju. Ako akcija završi iznad strajka, vaše akcije se prodaju po strajku.</p>
+<ul>
+  <li><b>Pogodno za:</b> dodatni prihod od akcija koje biste rado prodali po strajku.</li>
+  <li><b>Dobitak je ograničen</b> na strajk plus premiju.</li>
+  <li><b>Rizik pada je skoro isti kao kod posedovanja akcija</b> — premija samo malo ublažava pad.</li>
+</ul>
+<div class="ex"><b>Primer:</b> posedujete 100 akcija po 40 $ i prodajete dvonedeljni call sa strajkom 45 $ za 0,60 $, naplativši 60 $. Akcija na 43 $ na isteku: zadržavate akcije i 60 $. Akcija na 50 $: akcije se prodaju po 45 $ — propuštate rast iznad 45 $.</div>
+<div class="risk"><b>Pažnja:</b> nikada ne prodajte strajk ispod cene po kojoj biste dali svoje akcije. Ako je akcija pala daleko ispod nabavne cene, nizak strajk može zaključati gubitak kada se oporavi.</div>
+</article>
+
+<article class="lesson" id="csp">
+<h2>3. Put pokriven gotovinom</h2>
+<p>Prodajete put i držite dovoljno gotovine da kupite 100 akcija po strajku. Naplaćujete premiju. Ako akcija završi ispod strajka, kupujete akcije po strajku.</p>
+<ul>
+  <li><b>Pogodno za:</b> da budete plaćeni dok čekate da jeftinije kupite akciju koju želite.</li>
+  <li><b>Potreban novac:</b> strajk × 100. Strajk od 50 $ vezuje 5.000 $.</li>
+  <li><b>Najgori slučaj:</b> akcija se uruši i posedujete 100 akcija kupljenih po strajku, daleko iznad tržišne cene.</li>
+</ul>
+<div class="ex"><b>Primer:</b> akcija vredi 55 $. Prodajete put sa strajkom 50 $ za 1,00 $, naplaćujete 100 $ i držite 5.000 $. Ako završi na 52 $, zadržavate 100 $. Ako završi na 40 $, kupujete po 50 $: gubitak na papiru 1.000 $ minus 100 $ premije.</div>
+</article>
+
+<article class="lesson" id="spreads">
+<h2>4. Kreditni spredovi: ograničavanje najgoreg slučaja</h2>
+<p><b>Put kreditni spred</b> prodaje jedan put i kupuje jeftiniji put niže. Kupljeni put ograničava gubitak.</p>
+<ul>
+  <li><b>Najveći gubitak</b> = (razmak između strajkova − premija) × 100.</li>
+  <li><b>Najveći dobitak</b> = naplaćena premija.</li>
+  <li>Koristi mnogo manje novca od puta pokrivenog gotovinom — zato ga koriste mali računi.</li>
+</ul>
+<div class="ex"><b>Primer:</b> prodajte put sa strajkom 500 $ i kupite put sa strajkom 495 $ za neto 1,20 $. Najveći dobitak 120 $. Najveći gubitak (5 $ − 1,20 $) × 100 = 380 $ — više od tri puta veći od dobitka.</div>
+<div class="risk"><b>Pažnja:</b> spredovi često mnogo puta osvoje male iznose, a onda u jednom oštrom padu izgube maksimum. Odredite veličinu tako da najveći gubitak — a ne očekivani dobitak — odgovara vašim pravilima.</div>
+</article>
+
+<article class="lesson" id="sigma">
+<h2>5. Očekivano kretanje i sigma pojasevi</h2>
+<p>Cene opcija pokazuju koliko tržište očekuje da bi se akcija mogla pomeriti. Jedna standardna devijacija (<b>1σ</b>) tog kretanja je otprilike:</p>
+<div class="ex"><b>Kretanje 1σ ≈ cena × implicitna volatilnost × √(dani ÷ 365)</b><br>Primer: cena 700 $, implicitna volatilnost 18%, 5 dana → 700 × 0,18 × √(5/365) ≈ 14,7 $.</div>
+<ul>
+  <li>Kod idealne zvonaste krive cena ostaje unutar ±1σ oko 68% vremena, a iznad −1σ oko 84% vremena.</li>
+  <li>Stvarna tržišta imaju <b>debele repove</b>: veoma veliki padovi dešavaju se mnogo češće nego što kriva kaže. Pogledajte naš <a href="backtest.html">nedeljni bektest</a> — SPY je za nedelju dana pao više od 3σ oko deset puta češće nego što zvonasta kriva predviđa.</li>
+  <li>Pojas opisuje ono što cene podrazumevaju — nije prognoza.</li>
+</ul>
+<p>Isprobajte <a href="tools.html#em">kalkulator očekivanog kretanja</a>.</p>
+</article>
+
+<article class="lesson" id="sizing">
+<h2>6. Veličina pozicije: pravilo 1–2%</h2>
+<p>Odlučite koliko najviše želite da izgubite na jednoj trgovini <b>pre</b> nego što trgujete. Mnogi trgovci koriste 1–2% računa.</p>
+<ul>
+  <li>Sa 5.000 €, 2% je 100 €. Spred sa najvećim gubitkom od 380 $ je prevelik za taj račun.</li>
+  <li>Veličinu određujte prema <b>najgorem slučaju</b>, nikada prema očekivanom dobitku ili „kupovnoj moći“ brokera.</li>
+  <li>Ne stavljajte veći deo računa u jednu akciju ili jednu opkladu, čak ni kroz više trgovina.</li>
+</ul>
+<p><a href="planner.html">Planer budžeta</a> to izračunava za vas.</p>
+</article>
+
+<article class="lesson" id="events">
+<h2>7. Rizik događaja, izvršenje i dan isteka</h2>
+<ul>
+  <li><b>Rezultati poslovanja, sastanci centralnih banaka, spajanja i promene direktora</b> mogu pomeriti akciju za nekoliko sigmi preko noći. Mnogi prodavci opcija zatvaraju pozicije pre tih datuma.</li>
+  <li><b>Izvršenje (assignment):</b> prodata opcija koja je u dobitku može biti izvršena protiv vas, obično na isteku, a ponekad i ranije (često pre dividende).</li>
+  <li><b>Dan isteka:</b> ako akcija završi blizu vašeg strajka, ishod je neizvestan. Zatvaranje pre poslednjeg sata izbegava iznenađenja.</li>
+  <li><b>Jazovi:</b> akcije mogu otvoriti daleko od prethodnog zatvaranja. Stop nalog vas ne štiti kroz jaz.</li>
+</ul>
+</article>
+
+<article class="lesson" id="mistakes">
+<h2>8. Sedam čestih grešaka početnika</h2>
+<ol>
+  <li>Određivanje veličine prema željenom dobitku umesto prema mogućem gubitku.</li>
+  <li>Držanje prodatih opcija tokom rezultata ili važnih vesti.</li>
+  <li>Kupovina jeftinih opcija daleko od cene, koje skoro uvek isteknu bezvredne.</li>
+  <li>Tržišni nalozi za opcije sa velikom razlikom između ponude i tražnje — uvek koristite limit naloge.</li>
+  <li>Udvostručavanje gubitničke opklade da biste „vratili“ novac.</li>
+  <li>Verovanje visokom procentu dobitaka bez pitanja koliko su bile velike gubitničke trgovine.</li>
+  <li>Preskakanje računa za vežbu i pisanog dnevnika trgovanja.</li>
+</ol>
+<p>Započnite <a href="journal.html">dnevnik trgovanja</a> — besplatan je i ostaje u vašem pregledaču.</p>
+</article>
+
+<p class="note">Samo edukativne informacije — nije investicioni savet. Opcije nose visok rizik gubitka i nisu pogodne za svakoga. {{ _(CFG.disclaimer) }}</p>
+{% endblock %}

@@ -1,6 +1,6 @@
 {% extends "base.html" %}
-{% block title %}Market-moving news | {{ CFG.site_name }}{% endblock %}
-{% block desc %}Short, sourced summaries of news likely to move US stocks: company events, deals, leadership changes, regulation and macro data, with the tickers affected and links to the original reports.{% endblock %}
+{% block title %}{{ _("Market-moving news") }} | {{ CFG.site_name }}{% endblock %}
+{% block desc %}{{ _("Short, sourced summaries of news likely to move US stocks: company events, deals, leadership changes, regulation and macro data, with the tickers affected and links to the original reports.") }}{% endblock %}
 {% block body %}
 <style>
 .nw-item{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 18px;margin-bottom:12px}
@@ -16,35 +16,36 @@
 .nw-filter select{padding:8px 10px;border:1px solid var(--line);border-radius:8px;font-size:14px;background:#fff}
 </style>
 <section class="hero small">
-  <h1>Market-moving news</h1>
-  <p>Short, sourced summaries of news likely to affect US stocks — company events, deals, leadership changes, regulation and economic data — with the tickers involved. Updated each trading day. Summaries are written in our own words; follow the links for the full reports.</p>
+  <h1>{{ _("Market-moving news") }}</h1>
+  <p>{{ _("Short, sourced summaries of news likely to affect US stocks — company events, deals, leadership changes, regulation and economic data — with the tickers involved. Updated each trading day. Summaries are written in our own words; follow the links for the full reports.") }}</p>
+  {% if lang != "en" %}<p class="note">{{ _("News summaries are published in English.") }}</p>{% endif %}
 </section>
 
 <div class="nw-filter">
-  <input id="nwq" type="search" placeholder="Filter by ticker or word, e.g. NVDA" aria-label="Filter news">
-  <select id="nwi" aria-label="Impact"><option value="">All impact levels</option><option value="high">High impact</option><option value="medium">Medium impact</option></select>
+  <input id="nwq" type="search" placeholder="{{ _('Filter by ticker or word, e.g. NVDA') }}" aria-label="{{ _('Filter news') }}">
+  <select id="nwi" aria-label="{{ _('Impact') }}"><option value="">{{ _("All impact levels") }}</option><option value="high">{{ _("High impact") }}</option><option value="medium">{{ _("Medium impact") }}</option></select>
 </div>
 
 <div id="nwlist">
 {% for n in news %}
 <article class="nw-item" id="{{ n.id }}" data-text="{{ (n.headline ~ ' ' ~ n.tickers|join(' ') ~ ' ' ~ n.summary)|lower }}" data-imp="{{ n.impact }}">
   <div class="nw-meta">
-    <span class="imp imp-{{ n.impact }}">{{ n.impact|capitalize }} impact</span>
+    <span class="imp imp-{{ n.impact }}">{{ _(n.impact|capitalize ~ " impact") }}</span>
     <span>{{ n.date }}</span>
-    {% if n.category %}<span>· {{ n.category }}</span>{% endif %}
+    {% if n.category %}<span>· {{ _(n.category) }}</span>{% endif %}
   </div>
   <h3>{{ n.headline }}</h3>
   <p>{{ n.summary }}</p>
-  {% if n.why %}<p class="why"><b>Why it matters:</b> {{ n.why }}</p>{% endif %}
+  {% if n.why %}<p class="why"><b>{{ _("Why it matters:") }}</b> {{ n.why }}</p>{% endif %}
   {% if n.tickers %}<p class="tks">{% for t in n.tickers %}{% if t in tracked %}<a href="stocks/{{ t|lower|replace('.', '-') }}.html">${{ t }}</a>{% else %}<span class="tk">${{ t }}</span> {% endif %}{% endfor %}</p>{% endif %}
-  <p class="srcs">Sources: {% for s in n.sources %}<a href="{{ s.url }}" rel="noopener nofollow" target="_blank">{{ s.name }}</a>{{ ", " if not loop.last }}{% endfor %}</p>
+  <p class="srcs">{{ _("Sources:") }} {% for s in n.sources %}<a href="{{ s.url }}" rel="noopener nofollow" target="_blank">{{ s.name }}</a>{{ ", " if not loop.last }}{% endfor %}</p>
 </article>
 {% else %}
-<p class="muted">No news yet.</p>
+<p class="muted">{{ _("No news yet.") }}</p>
 {% endfor %}
 </div>
 
-<p class="note">News summaries are for information only and describe what was reported, not what a stock will do. {{ CFG.disclaimer }}</p>
+<p class="note">{{ _("News summaries are for information only and describe what was reported, not what a stock will do.") }} {{ _(CFG.disclaimer) }}</p>
 <script>
 (function(){
   var q=document.getElementById("nwq"), im=document.getElementById("nwi");

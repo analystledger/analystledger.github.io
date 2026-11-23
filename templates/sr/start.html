@@ -1,0 +1,103 @@
+{% extends "base.html" %}
+{% block title %}Kako otvoriti i podesiti račun za trgovanje (primer IBKR) | {{ CFG.site_name }}{% endblock %}
+{% block desc %}Vodič korak po korak za otvaranje brokerskog računa kod Interactive Brokers i njegovo bezbedno podešavanje: gotovinski ili marginski račun, nivoi opcija, konverzija valute, tržišni podaci i kontrolna lista pre prve trgovine.{% endblock %}
+{% block body %}
+<style>
+.cta{display:inline-block;background:var(--brand);color:#fff;border-radius:8px;padding:11px 20px;font-weight:700;font-size:16px;margin:6px 10px 6px 0}
+.cta:hover{text-decoration:none;opacity:.92}.cta.sec{background:var(--card);color:var(--ink);border:1px solid var(--line)}
+.steps{counter-reset:s;list-style:none;padding:0;margin:0}
+.steps>li{counter-increment:s;position:relative;padding:0 0 14px 44px}
+.steps>li::before{content:counter(s);position:absolute;left:0;top:0;width:30px;height:30px;border-radius:50%;background:var(--navy);color:#fff;font-weight:700;display:flex;align-items:center;justify-content:center}
+.steps>li b{display:block}
+.chk{list-style:none;padding:0}.chk li{padding:4px 0 4px 28px;position:relative}.chk li::before{content:"☐";position:absolute;left:4px;color:var(--muted)}
+.start .card{margin-bottom:16px}
+</style>
+
+<section class="hero small">
+  <h1>Otvorite i podesite račun za trgovanje</h1>
+  <p>Praktičan vodič sa Interactive Brokers (IBKR) kao primerom: kako podneti zahtev, koja podešavanja drže rizik pod kontrolom i šta proveriti pre prve trgovine. Pročitajte ga pre podnošenja zahteva, da biste tokom prijave izabrali prave opcije.</p>
+  <a class="cta" href="https://www.interactivebrokers.com/en/accounts/individual.php" rel="noopener" target="_blank">Otvorite IBKR račun →</a>
+  <a class="cta sec" href="{{ root }}planner.html">Prvo isplanirajte budžet</a>
+  <p class="note">{{ CFG.site_name }} je nezavisan i nije povezan sa Interactive Brokers. Drugi regulisani brokeri rade na sličan način. Stranice IBKR su na engleskom.</p>
+</section>
+
+<div class="start">
+<div class="card">
+<h2>1. Podnesite zahtev (oko 10 minuta)</h2>
+<ol class="steps">
+  <li><b>Izaberite individualni račun i započnite prijavu.</b> Na IBKR <a href="https://www.interactivebrokers.com/en/accounts/individual.php" rel="noopener" target="_blank">stranici za račune</a> kliknite „Start Application“. Napravite korisničko ime i lozinku, potvrdite e-poštu i popunite obrazac (<a href="https://www.interactivebrokers.com/campus/trading-lessons/open-an-account-deposit-and-withdraw/" rel="noopener" target="_blank">IBKR</a>).</li>
+  <li><b>Pripremite svoje podatke.</b> Ime i adresa, datum i zemlja rođenja, poresko rezidentstvo i poreski broj, poslodavac, prihodi i imovina, kao i iskustvo u investiranju (<a href="https://www.interactivebrokers.com/en/general/what-you-need-inv.php" rel="noopener" target="_blank">šta vam treba</a>).</li>
+  <li><b>Iskreno odgovorite na pitanja o iskustvu.</b> Od njih zavisi kojim proizvodima smete da trgujete. Preuveličavanje iskustva daje vam dozvole za koje niste spremni.</li>
+  <li><b>Izaberite osnovnu valutu.</b> Koristite valutu plate i banke, npr. EUR. Izvodi i margina se računaju u njoj.</li>
+  <li><b>Sačekajte odobrenje, pa uplatite bankovnim transferom.</b> Odobrenje može potrajati nekoliko dana zbog provere identiteta.</li>
+</ol>
+</div>
+
+<div class="card">
+<h2>2. Gotovinski ili marginski račun</h2>
+<p><strong>Za većinu početnika gotovinski račun je sigurniji izbor:</strong> ne može da se zadužuje, pa ne možete izgubiti više nego što uplatite. Marginski račun dozvoljava brokeru da vam pozajmi novac, a gubici mogu premašiti uplatu.</p>
+<div class="tw"><table class="ev"><thead><tr><th></th><th>Gotovinski račun</th><th>Marginski račun</th></tr></thead><tbody>
+<tr><td><b>Zaduživanje</b></td><td>Ne</td><td>Da — broker pozajmljuje uz vašu imovinu kao zalog</td></tr>
+<tr><td><b>Najgori slučaj</b></td><td>Koliko ste uplatili</td><td>Više nego što ste uplatili</td></tr>
+<tr><td><b>Opcije</b></td><td>Pokrivene strategije i strategije pokrivene gotovinom</td><td>Svi nivoi, uz odobrenje</td></tr>
+<tr><td><b>Kasnija promena</b></td><td>Može se preći na marginu</td><td>Prelazak na gotovinski račun tražite u Settings &gt; Account Configuration &gt; Account Type (<a href="https://www.interactivebrokers.com/support/faq/content/change-account-type-between-margin-40340296" rel="noopener" target="_blank">IBKR</a>)</td></tr>
+</tbody></table></div>
+<p class="note">Ako izaberete marginu, veličinu svake trgovine određujte prema gotovini, a ne prema većem iznosu „kupovne moći“.</p>
+</div>
+
+<div class="card">
+<h2>3. Dozvole za opcije: tražite samo ono što ćete koristiti</h2>
+<p>IBKR ima četiri nivoa opcija (<a href="https://www.ibkrguides.com/kb/options-levels-1-4.htm" rel="noopener" target="_blank">IBKR</a>):</p>
+<ul>
+  <li><b>Nivo 1:</b> samo pokriveni call.</li>
+  <li><b>Nivo 2:</b> dodaje kupovinu call i put opcija, kupljene spredove i kolare.</li>
+  <li><b>Nivo 3:</b> dodaje prodate put opcije i prodate spredove, gde je gubitak ograničen.</li>
+  <li><b>Nivo 4:</b> dodaje nepokrivene call opcije i prodate straddle, gde je gubitak neograničen. <strong>Nije za početnike.</strong></li>
+</ul>
+<p>Kasnije promenite u Settings &gt; Trading &gt; Trading Permissions &gt; Update Options Level (<a href="https://www.ibkrguides.com/adminportal/optionstradingpermissions.htm" rel="noopener" target="_blank">IBKR vodič</a>). Proizvode koje ne razumete, poput fjučersa ili kriptovaluta, ostavite isključene.</p>
+</div>
+
+<div class="card">
+<h2>4. Prvo vežbajte na računu za vežbu</h2>
+<p>IBKR nudi besplatan račun za vežbu (simulirani) pored stvarnog (<a href="https://www.interactivebrokers.com/support/faq/content/open-interactive-brokers-account-28224903" rel="noopener" target="_blank">IBKR</a>). Svaku novu strategiju testirajte tamo nekoliko nedelja pre nego što upotrebite pravi novac.</p>
+</div>
+
+<div class="card">
+<h2>5. Valuta: konvertujte pre kupovine američkih akcija</h2>
+<p>Američke akcije i opcije se trguju u američkim dolarima. Konvertujte evre (ili drugu valutu) u dolare pre trgovanja, kako vaš račun nikada ne bi otišao u minus — broker to tretira kao pozajmicu.</p>
+<ul>
+  <li>U IBKR Mobile: Order Ticket, potražite <b>EUR</b>, izaberite <b>Forex</b> pod <b>IDEALPRO</b>, izaberite <b>EUR.USD</b> i unesite iznos (<a href="https://www.interactivebrokers.com/support/faq/content/convert-currency-using-ibkr-mobile-35805363" rel="noopener" target="_blank">IBKR koraci</a>).</li>
+  <li>Nalozi ispod oko 25.000 USD izvršavaju se nešto lošije, oko 1–2 bazna poena izvan glavne kotacije (<a href="https://www.interactivebrokers.com/support/faq/content/idealpro-minimum-mean-65996956" rel="noopener" target="_blank">IBKR</a>). Naknada je 0,01% uz minimum od 2,50 USD (<a href="https://www.interactivebrokers.com/download/newMark/PDFs/commissionsForex.pdf" rel="noopener" target="_blank">IBKR naknade</a>), pa konvertujte jednim većim nalogom umesto mnogo malih.</li>
+</ul>
+</div>
+
+<div class="card">
+<h2>6. Tržišni podaci</h2>
+<div class="tw"><table class="ev"><thead><tr><th>Paket</th><th>Šta pruža</th><th>Cena (neprofesionalci)</th></tr></thead><tbody>
+<tr><td><b>Uključeno</b></td><td>Američke akcije i ETF-ovi u realnom vremenu (Cboe One, IEX), odloženi podaci za ostalo</td><td>Besplatno (<a href="https://www.interactivebrokers.com/en/pricing/market-data-pricing.php" rel="noopener" target="_blank">IBKR</a>)</td></tr>
+<tr><td><b>OPRA (američke opcije)</b></td><td>Cene opcija uživo — potrebne za svako trgovanje opcijama</td><td>1,50 USD/mesečno, besplatno uz više od 20 USD mesečnih provizija (<a href="https://www.interactivebrokers.com/support/faq/content/market-data-package-need-see-35797042" rel="noopener" target="_blank">IBKR</a>)</td></tr>
+<tr><td><b>US Securities Snapshot and Futures Value Bundle</b></td><td>Konsolidovane kotacije američkih akcija</td><td>10 USD/mesečno, besplatno uz najmanje 30 USD mesečnih provizija (<a href="https://www.interactivebrokers.com/support/faq/content/market-data-subscriptions-needed-trading-27277437" rel="noopener" target="_blank">IBKR</a>)</td></tr>
+</tbody></table></div>
+<p class="note">Registrujte se kao neprofesionalac (non-professional). Pretplate se naplaćuju po korisniku i nisu srazmerne, pa ih započnite početkom meseca (<a href="https://www.interactivebrokers.com/campus/trading-lessons/trade-permissions-mkt/" rel="noopener" target="_blank">IBKR</a>).</p>
+</div>
+
+<div class="card">
+<h2>7. Kontrolna lista pre prve trgovine</h2>
+<ul class="chk">
+  <li>Uključena prijava u dva koraka (IBKR Mobile)</li>
+  <li>Tip računa izabran svesno: gotovinski, ili marginski uz naviku korišćenja samo gotovine</li>
+  <li>Nivo opcija ne viši nego što vam treba (Nivo 1–3)</li>
+  <li>Novac konvertovan u USD; nema negativnog stanja</li>
+  <li>Tržišni podaci za ono čime trgujete (OPRA za opcije)</li>
+  <li>Strategija testirana na računu za vežbu</li>
+  <li>Najgori slučaj trgovine nije veći od 1–2% računa — proverite u <a href="{{ root }}planner.html">planeru</a></li>
+  <li>Nema rezultata, sastanka centralne banke ni vesti o spajanju pre kraja trgovine</li>
+  <li>Samo limit nalozi, nikada tržišni nalozi za opcije</li>
+  <li>Zapisan izlaz: ciljana dobit, stop i datum zatvaranja</li>
+</ul>
+<a class="cta" href="https://www.interactivebrokers.com/en/accounts/individual.php" rel="noopener" target="_blank">Otvorite IBKR račun →</a>
+</div>
+
+<p class="note">Ovo su opšte edukativne informacije o podešavanju brokerskog računa, a ne investicioni, pravni ili poreski savet. Pravila, naknade i dostupnost brokera razlikuju se po zemljama i menjaju se; uvek proverite trenutne uslove brokera. {{ _(CFG.disclaimer) }}</p>
+</div>
+{% endblock %}

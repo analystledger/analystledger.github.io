@@ -1,9 +1,10 @@
 (function () {
+  var T = window.T || function (s) { return s; };
   // Global search box
   var q = document.getElementById("q"), box = document.getElementById("qres"), idx = null;
   function load(cb) {
     if (idx) return cb();
-    fetch(window.ROOT + "assets/search.json").then(function (r) { return r.json(); })
+    fetch((window.AROOT || window.ROOT) + "assets/search.json").then(function (r) { return r.json(); })
       .then(function (j) { idx = j; cb(); }).catch(function () { idx = []; });
   }
   if (q) {
@@ -14,8 +15,8 @@
         var hits = idx.filter(function (x) { return x.n.toLowerCase().indexOf(v) !== -1; }).slice(0, 12);
         box.innerHTML = hits.map(function (h) {
           return '<a href="' + window.ROOT + h.u + '">' + h.n.replace(/</g, "&lt;") +
-            "<small>" + (h.t === "a" ? "analyst" : "stock") + "</small></a>";
-        }).join("") || '<a>No matches</a>';
+            "<small>" + T(h.t === "a" ? "analyst" : "stock") + "</small></a>";
+        }).join("") || '<a>' + T("No matches") + '</a>';
         box.hidden = false;
       });
     });

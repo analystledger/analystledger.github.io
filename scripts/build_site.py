@@ -46,12 +46,43 @@ def directional_return(e, prices):
     return round(r if s == "bullish" else -r, 1)
 
 
+LANGS = CFG.get("languages", [{"code": "en", "label": "EN", "name": "English"}])
+TR = load_json(os.path.join(ROOT, "i18n", "translations.json"), {"ui": {}, "js": {}})
+MISSING = set()
+
+
+def make_t(lang):
+    def _(text, /, **kw):
+        out = text
+        if lang != "en":
+            out = (TR["ui"].get(text) or {}).get(lang)
+            if not out:
+                MISSING.add(text)
+                out = text
+        return out.format(**kw) if kw else out
+    return _
+
+
+def js_dict(lang):
+    if lang == "en":
+        return {}
+    return {k: v[lang] for k, v in TR.get("js", {}).items() if v.get(lang)}
+
+
 def render(path, template, depth, **ctx):
-    full = os.path.join(DOCS, path)
-    os.makedirs(os.path.dirname(full), exist_ok=True)
-    html = env.get_template(template).render(root="../" * depth, page_path=path, **ctx)
-    with open(full, "w", encoding="utf-8") as f:
-        f.write(html)
+    """Render one page in every language: English at the site root, others under /<code>/."""
+    for L in LANGS:
+        lang = L["code"]
+        prefix = "" if lang == "en" else lang + "/"
+        full = os.path.join(DOCS, prefix + path)
+        os.makedirs(os.path.dirname(full), exist_ok=True)
+        names = ([f"{lang}/{template}"] if lang != "en" else []) + [template]
+        html = env.select_template(names).render(
+            root="../" * depth, aroot="../" * (depth + (0 if lang == "en" else 1)), page_path=path,
+            lang=lang, langs=LANGS, _=make_t(lang),
+            js_t=json.dumps(js_dict(lang), ensure_ascii=False).replace("</", "<\\/"), **ctx)
+        with open(full, "w", encoding="utf-8") as f:
+            f.write(html)
 
 
 def main():
@@ -63,7 +94,7 @@ def main():
     events.sort(key=lambda e: (e["date"], e["ticker"]), reverse=True)
 
     # clean generated folders (keep assets + social images)
-    for sub in ("analysts", "stocks"):
+    for sub in ["analysts", "stocks"] + [L["code"] for L in LANGS if L["code"] != "en"]:
         shutil.rmtree(os.path.join(DOCS, sub), ignore_errors=True)
 
     analysts = defaultdict(lambda: {"events": []})
@@ -158,6 +189,7 @@ def main():
     base = CFG["base_url"].rstrip("/") + CFG.get("base_path", "")
     urls = ["", "analysts/", "stocks/", "news.html", "learn.html", "tools.html", "backtest.html", "journal.html", "planner.html", "start.html", "about.html"] + \
            [f"analysts/{a['slug']}.html" for a in a_list] + [f"stocks/{slugify(s['ticker'])}.html" for s in s_list]
+    urls = [("" if L["code"] == "en" else L["code"] + "/") + u for L in LANGS for u in urls]
     with open(os.path.join(DOCS, "sitemap.xml"), "w") as f:
         f.write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n')
         f.writelines(f"<url><loc>{escape(base + '/' + u)}</loc></url>\n" for u in urls)
@@ -177,7 +209,10 @@ def main():
         f.write(f'<?xml version="1.0"?><rss version="2.0"><channel><title>{escape(CFG["site_name"])}</title>'
                 f"<link>{base}/</link><description>{escape(CFG['tagline'])}</description>{''.join(items)}</channel></rss>")
     open(os.path.join(DOCS, ".nojekyll"), "w").close()
-    print(f"Built site: {len(events)} events, {len(a_list)} analysts, {len(s_list)} stocks")
+    print(f"Built site: {len(events)} events, {len(a_list)} analysts, {len(s_list)} stocks, "
+          f"{len(LANGS)} languages")
+    if MISSING:
+        print(f"Missing translations ({len(MISSING)}): " + " | ".join(sorted(MISSING)[:40]))
 
 
 if __name__ == "__main__":

@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block title %}Rreth nesh & metoda | {{ CFG.site_name }}{% endblock %}
+{% block body %}
+<article class="prose">
+<h1>Rreth {{ CFG.site_name }}</h1>
+<p>{{ CFG.site_name }} është një regjistër falas dhe i pavarur i asaj që thonë analistët e Wall Street për aksionet dhe kur e thanë. Çdo ngritje dhe ulje vlerësimi, mbulim i ri, rikonfirmim dhe ndryshim i objektivit të çmimit ruhet me datën dhe lidhjen te burimi, që çdo analist të ketë një histori të përhershme e të verifikueshme.</p>
+
+<h2 id="sources">Nga vijnë të dhënat</h2>
+<ul>
+  <li><strong>Ndërfaqe të licencuara të të dhënave të tregut</strong> — të dhëna për vlerësimet dhe objektivat e çmimit nga ofrues tregtarë të të dhënave.</li>
+  <li><strong>Lajme publike</strong> — ndryshime vlerësimi të raportuara në lajme financiare dhe në njoftime për shtyp të kompanive ose brokerëve, të regjistruara si fakte (kush, çfarë, kur) me lidhje te raporti.</li>
+</ul>
+<p>Çmimet e aksioneve që përdoren për pikëzim janë çmimet e mbylljes ditore nga <a href="https://stooq.com">Stooq</a>.</p>
+<p>Faqja përditësohet automatikisht çdo ditë. Ne nuk kopjojmë apo ripublikojmë përmbajtje, pikë ose renditje të faqeve të tjera të vlerësimeve; të gjitha statistikat këtu llogariten në mënyrë të pavarur nga regjistrimet me datë.</p>
+
+<h2 id="method">Si pikëzohen analistët</h2>
+<p>Për çdo vlerësim të tipit Bli (Buy, Outperform, Overweight…) dhe të tipit Shit (Sell, Underperform, Underweight…), krahasojmë çmimin e aksionit në ditën e vlerësimit me çmimin e fundit. Një rekomandim Bli konsiderohet i saktë nëse aksioni është rritur që atëherë; një rekomandim Shit, nëse ka rënë. <em>Kthimi mesatar</em> është mesatarja e këtyre lëvizjeve në drejtimin e rekomandimit. Vlerësimet neutrale (Hold, Neutral, Equal Weight…) regjistrohen por nuk pikëzohen. Analistët duhet të kenë të paktën tre rekomandime të pikëzuara për të dalë në renditje. Dividendat nuk llogariten dhe rekomandimet e reja kanë pasur pak kohë të provohen, ndaj trajtojini pikët si udhëzim të përafërt.</p>
+
+<h2>Mohim përgjegjësie</h2>
+<p>{{ _(CFG.disclaimer) }}</p>
+</article>
+{% endblock %}
