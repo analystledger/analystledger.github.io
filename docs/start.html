@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How to open and set up a trading account (IBKR example) | Analyst Ledger</title>
+<meta name="description" content="Step-by-step guide to opening a brokerage account at Interactive Brokers and setting it up safely: cash vs margin, options levels, currency conversion, market data and a first-trade checklist.">
+<meta property="og:title" content="How to open and set up a trading account (IBKR example) | Analyst Ledger">
+<meta property="og:description" content="Step-by-step guide to opening a brokerage account at Interactive Brokers and setting it up safely: cash vs margin, options levels, currency conversion, market data and a first-trade checklist.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://analystledger.github.io/assets/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+<link rel="alternate" type="application/rss+xml" title="Analyst Ledger" href="feed.xml">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="top">
+  <div class="wrap bar">
+    <a class="brand" href="index.html"><img src="assets/logo.svg" alt="" width="28" height="28"> Analyst Ledger</a>
+    <nav>
+      <a href="index.html">Latest</a>
+      <a href="analysts/index.html">Analysts</a>
+      <a href="stocks/index.html">Stocks</a>
+      <a href="planner.html">Planner</a>
+      <a href="start.html">Open account</a>
+      <a href="about.html">About</a>
+    </nav>
+    <div class="search">
+      <input id="q" type="search" placeholder="Search ticker, analyst, firm…" autocomplete="off" aria-label="Search">
+      <div id="qres" class="qres" hidden></div>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+
+<style>
+.cta{display:inline-block;background:var(--brand);color:#fff;border-radius:8px;padding:11px 20px;font-weight:700;font-size:16px;margin:6px 10px 6px 0}
+.cta:hover{text-decoration:none;opacity:.92}.cta.sec{background:var(--card);color:var(--ink);border:1px solid var(--line)}
+.steps{counter-reset:s;list-style:none;padding:0;margin:0}
+.steps>li{counter-increment:s;position:relative;padding:0 0 14px 44px}
+.steps>li::before{content:counter(s);position:absolute;left:0;top:0;width:30px;height:30px;border-radius:50%;background:var(--navy);color:#fff;font-weight:700;display:flex;align-items:center;justify-content:center}
+.steps>li b{display:block}
+.chk{list-style:none;padding:0}.chk li{padding:4px 0 4px 28px;position:relative}.chk li::before{content:"☐";position:absolute;left:4px;color:var(--muted)}
+.start .card{margin-bottom:16px}
+</style>
+
+<section class="hero small">
+  <h1>Open and set up a trading account</h1>
+  <p>A practical guide using Interactive Brokers (IBKR) as the example: how to apply, which settings keep your risk under control, and what to check before your first trade. Read it before you apply, so you choose the right options during the application.</p>
+  <a class="cta" href="https://www.interactivebrokers.com/en/accounts/individual.php" rel="noopener" target="_blank">Open an IBKR account →</a>
+  <a class="cta sec" href="planner.html">Plan your budget first</a>
+  <p class="note">Analyst Ledger is independent and not affiliated with Interactive Brokers. Other regulated brokers work in a similar way.</p>
+</section>
+
+<div class="start">
+<div class="card">
+<h2>1. Apply (about 10 minutes)</h2>
+<ol class="steps">
+  <li><b>Choose an Individual account and start the application.</b> On IBKR's <a href="https://www.interactivebrokers.com/en/accounts/individual.php" rel="noopener" target="_blank">account page</a>, click Start Application. You create a username and password, confirm your email and complete the form (<a href="https://www.interactivebrokers.com/campus/trading-lessons/open-an-account-deposit-and-withdraw/" rel="noopener" target="_blank">IBKR</a>).</li>
+  <li><b>Have your details ready.</b> Name and address, date and country of birth, tax residency and ID number, employer, income and assets, and your investing experience (<a href="https://www.interactivebrokers.com/en/general/what-you-need-inv.php" rel="noopener" target="_blank">what you need</a>).</li>
+  <li><b>Answer the experience questions honestly.</b> They decide which products you may trade. Overstating experience gives you permissions you are not ready for.</li>
+  <li><b>Pick your base currency.</b> Use the currency of your salary and bank, such as EUR. Statements and margin are calculated in it.</li>
+  <li><b>Wait for approval, then fund by bank transfer.</b> Approval can take a few days while identity checks are done.</li>
+</ol>
+</div>
+
+<div class="card">
+<h2>2. Cash or margin account</h2>
+<p><strong>For most beginners, a cash account is the safer choice:</strong> it cannot borrow, so you cannot lose more than you deposit. A margin account lets the broker lend you money, and losses can exceed your deposit.</p>
+<div class="tw"><table class="ev"><thead><tr><th></th><th>Cash account</th><th>Margin account</th></tr></thead><tbody>
+<tr><td><b>Borrowing</b></td><td>No</td><td>Yes — the broker lends against your holdings</td></tr>
+<tr><td><b>Worst case</b></td><td>What you deposited</td><td>More than you deposited</td></tr>
+<tr><td><b>Options</b></td><td>Covered and cash-secured strategies</td><td>All levels, subject to approval</td></tr>
+<tr><td><b>Change later</b></td><td>Can upgrade to margin</td><td>Can request a downgrade to cash in Settings &gt; Account Configuration &gt; Account Type (<a href="https://www.interactivebrokers.com/support/faq/content/change-account-type-between-margin-40340296" rel="noopener" target="_blank">IBKR</a>)</td></tr>
+</tbody></table></div>
+<p class="note">If you choose margin, size every trade by your cash, not by the larger "buying power" figure.</p>
+</div>
+
+<div class="card">
+<h2>3. Options permissions: ask only for what you will use</h2>
+<p>IBKR has four options levels (<a href="https://www.ibkrguides.com/kb/options-levels-1-4.htm" rel="noopener" target="_blank">IBKR</a>):</p>
+<ul>
+  <li><b>Level 1:</b> covered calls only.</li>
+  <li><b>Level 2:</b> adds buying calls and puts, long spreads and collars.</li>
+  <li><b>Level 3:</b> adds short puts and short spreads, where the loss is capped.</li>
+  <li><b>Level 4:</b> adds naked calls and short straddles, where the loss is unlimited. <strong>Not for beginners.</strong></li>
+</ul>
+<p>Change it later in Settings &gt; Trading &gt; Trading Permissions &gt; Update Options Level (<a href="https://www.ibkrguides.com/adminportal/optionstradingpermissions.htm" rel="noopener" target="_blank">IBKR guide</a>). Leave products you do not understand, such as futures or crypto, switched off.</p>
+</div>
+
+<div class="card">
+<h2>4. Practise first with a paper account</h2>
+<p>IBKR offers a free paper (simulated) trading account alongside the real one (<a href="https://www.interactivebrokers.com/support/faq/content/open-interactive-brokers-account-28224903" rel="noopener" target="_blank">IBKR</a>). Test every new strategy there for a few weeks before using real money.</p>
+</div>
+
+<div class="card">
+<h2>5. Currency: convert before buying US stocks</h2>
+<p>US stocks and options trade in US dollars. Convert your euros (or other currency) to dollars before you trade, so your account never runs a negative balance, which the broker treats as a loan.</p>
+<ul>
+  <li>In IBKR Mobile: Order Ticket, search <b>EUR</b>, choose <b>Forex</b> under <b>IDEALPRO</b>, pick <b>EUR.USD</b> and enter the amount (<a href="https://www.interactivebrokers.com/support/faq/content/convert-currency-using-ibkr-mobile-35805363" rel="noopener" target="_blank">IBKR steps</a>).</li>
+  <li>Orders under about USD 25,000 fill slightly worse, around 1–2 basis points outside the main quote (<a href="https://www.interactivebrokers.com/support/faq/content/idealpro-minimum-mean-65996956" rel="noopener" target="_blank">IBKR</a>). The fee is 0.01% with a USD 2.50 minimum (<a href="https://www.interactivebrokers.com/download/newMark/PDFs/commissionsForex.pdf" rel="noopener" target="_blank">IBKR fees</a>), so convert in one larger order rather than many small ones.</li>
+</ul>
+</div>
+
+<div class="card">
+<h2>6. Market data</h2>
+<div class="tw"><table class="ev"><thead><tr><th>Package</th><th>What it gives</th><th>Cost (non-professional)</th></tr></thead><tbody>
+<tr><td><b>Included</b></td><td>Real-time US stocks and ETFs (Cboe One, IEX), delayed data elsewhere</td><td>Free (<a href="https://www.interactivebrokers.com/en/pricing/market-data-pricing.php" rel="noopener" target="_blank">IBKR</a>)</td></tr>
+<tr><td><b>OPRA (US options)</b></td><td>Live option prices — needed for any options trading</td><td>USD 1.50/month, waived with over USD 20 of monthly commissions (<a href="https://www.interactivebrokers.com/support/faq/content/market-data-package-need-see-35797042" rel="noopener" target="_blank">IBKR</a>)</td></tr>
+<tr><td><b>US Securities Snapshot and Futures Value Bundle</b></td><td>Consolidated US stock quotes</td><td>USD 10/month, waived with at least USD 30 of monthly commissions (<a href="https://www.interactivebrokers.com/support/faq/content/market-data-subscriptions-needed-trading-27277437" rel="noopener" target="_blank">IBKR</a>)</td></tr>
+</tbody></table></div>
+<p class="note">Register as a non-professional. Subscriptions are charged per user and not prorated, so start them at the beginning of a month (<a href="https://www.interactivebrokers.com/campus/trading-lessons/trade-permissions-mkt/" rel="noopener" target="_blank">IBKR</a>).</p>
+</div>
+
+<div class="card">
+<h2>7. Checklist before your first trade</h2>
+<ul class="chk">
+  <li>Two-factor login switched on (IBKR Mobile)</li>
+  <li>Account type chosen on purpose: cash, or margin with a cash-only habit</li>
+  <li>Options level no higher than you need (Level 1–3)</li>
+  <li>Money converted to USD; no negative cash balance</li>
+  <li>Market data for what you trade (OPRA for options)</li>
+  <li>Strategy tested in the paper account</li>
+  <li>Worst case of the trade is no more than 1–2% of your account — check it in the <a href="planner.html">planner</a></li>
+  <li>No results, central-bank meeting or merger news before the trade ends</li>
+  <li>Limit orders only, never market orders on options</li>
+  <li>Exit written down: profit target, stop, and the date you will close</li>
+</ul>
+<a class="cta" href="https://www.interactivebrokers.com/en/accounts/individual.php" rel="noopener" target="_blank">Open an IBKR account →</a>
+</div>
+
+<p class="note">This is general educational information about setting up a brokerage account, not investment, legal or tax advice. Broker rules, fees and availability vary by country and change over time; always check the broker's current terms. Analyst Ledger publishes factual records of publicly reported analyst rating and price-target changes for information only. Nothing here is investment advice or a recommendation to buy or sell any security. Data may be delayed or incomplete — always verify with the original source.</p>
+</div>
+
+</main>
+<footer class="wrap foot">
+  <p><strong>Disclaimer:</strong> Analyst Ledger publishes factual records of publicly reported analyst rating and price-target changes for information only. Nothing here is investment advice or a recommendation to buy or sell any security. Data may be delayed or incomplete — always verify with the original source.</p>
+  <p>213 rating changes · 89 analysts · 148 stocks · Updated 2026-11-23 13:53 UTC · <a href="feed.xml">RSS</a> · <a href="terms.html">Terms</a> · <a href="privacy.html">Privacy</a></p>
+</footer>
+<script>window.ROOT = "";</script>
+<script src="assets/app.js"></script>
+</body>
+</html>
