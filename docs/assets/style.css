@@ -48,3 +48,4 @@ table.ev{border-collapse:collapse;width:100%;font-size:14px}
 .prose{max-width:760px;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:8px 26px 18px;margin-top:22px}
 .foot{color:var(--muted);font-size:12.5px;padding:24px 16px 40px}
 @media(max-width:760px){.grid2{grid-template-columns:1fr}.hero h1{font-size:22px}nav{gap:12px}.search{max-width:none;order:3;flex-basis:100%;margin:0 0 10px}}
+@media(max-width:760px){nav{flex-wrap:wrap;row-gap:2px;column-gap:14px}nav a{white-space:nowrap}}

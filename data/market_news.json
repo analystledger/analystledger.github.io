@@ -1,0 +1,55 @@
+[
+ {
+  "id": "nvda-huang-reinstated-2026-11-23",
+  "date": "2026-11-23 14:30 UTC",
+  "impact": "high",
+  "category": "Leadership",
+  "headline": "Nvidia reinstates Jensen Huang as CEO; shares jump about 30%",
+  "summary": "Nvidia's board brought co-founder Jensen Huang back as president, CEO and director with immediate effect, 11 days after he resigned. The stock opened up about 33%, its largest intraday gain since 2003, and lifted chipmakers and AI-infrastructure names including neocloud providers.",
+  "why": "Removes the leadership uncertainty behind November's AI selloff. An SEC inquiry, shareholder lawsuits and national-security questions remain open.",
+  "tickers": [
+   "NVDA",
+   "CRWV",
+   "NBIS",
+   "SMH"
+  ],
+  "sources": [
+   {
+    "name": "Bloomberg",
+    "url": "https://www.bloomberg.com/news/articles/2026-11-23/ai-linked-stocks-take-off-after-nvidia-reinstates-jensen-huang"
+   },
+   {
+    "name": "Yahoo Finance",
+    "url": "https://finance.yahoo.com/markets/live/stock-market-today-monday-november-23-dow-sp-500-nasdaq-nvidia-reinstates-jensen-huang-141511975.html"
+   },
+   {
+    "name": "Investing.com",
+    "url": "https://ca.investing.com/news/stock-market-news/nvidia-shares-surge-30-as-board-announces-jensen-huangs-reinstatement-4976103"
+   }
+  ]
+ },
+ {
+  "id": "crwd-zscaler-deal-2026-11-23",
+  "date": "2026-11-23 10:39 UTC",
+  "impact": "high",
+  "category": "Mergers & acquisitions",
+  "headline": "CrowdStrike agrees to buy Zscaler in all-stock deal worth about $43.9 billion",
+  "summary": "CrowdStrike will pay 1.135 of its shares for each Zscaler share, about a 34% premium to Zscaler's previous close. Zscaler rose sharply before the open while CrowdStrike fell about 9%, as investors weighed dilution for the buyer.",
+  "why": "Creates one of the largest pure-play cybersecurity companies and a stronger rival to Palo Alto Networks. The deal still needs shareholder and regulatory approval.",
+  "tickers": [
+   "CRWD",
+   "ZS",
+   "PANW"
+  ],
+  "sources": [
+   {
+    "name": "Reuters via Investing.com",
+    "url": "https://investing.com/news/stock-market-news/crowdstrike-bets-on-network-security-with-439-billion-zscaler-deal-5044856"
+   },
+   {
+    "name": "Investing.com",
+    "url": "https://www.investing.com/news/stock-market-news/why-is-crowdstrike-stock-tumbling-today-93CH-5045041"
+   }
+  ]
+ }
+]

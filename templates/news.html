@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+{% block title %}Market-moving news | {{ CFG.site_name }}{% endblock %}
+{% block desc %}Short, sourced summaries of news likely to move US stocks: company events, deals, leadership changes, regulation and macro data, with the tickers affected and links to the original reports.{% endblock %}
+{% block body %}
+<style>
+.nw-item{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 18px;margin-bottom:12px}
+.nw-item h3{margin:4px 0 6px;font-size:17px;line-height:1.35}
+.nw-meta{display:flex;gap:8px;flex-wrap:wrap;align-items:center;font-size:12.5px;color:var(--muted)}
+.imp{font-weight:700;border-radius:20px;padding:1px 9px;font-size:12px}
+.imp-high{background:#fde7e7;color:var(--down)}.imp-medium{background:#fff4d6;color:var(--neu)}
+.why{margin:6px 0 4px}.why b{color:var(--ink)}
+.tks a{font-weight:700;margin-right:8px}
+.srcs{font-size:13px}
+.nw-filter{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 14px}
+.nw-filter input{padding:8px 10px;border:1px solid var(--line);border-radius:8px;font-size:14px;min-width:220px}
+.nw-filter select{padding:8px 10px;border:1px solid var(--line);border-radius:8px;font-size:14px;background:#fff}
+</style>
+<section class="hero small">
+  <h1>Market-moving news</h1>
+  <p>Short, sourced summaries of news likely to affect US stocks — company events, deals, leadership changes, regulation and economic data — with the tickers involved. Updated each trading day. Summaries are written in our own words; follow the links for the full reports.</p>
+</section>
+
+<div class="nw-filter">
+  <input id="nwq" type="search" placeholder="Filter by ticker or word, e.g. NVDA" aria-label="Filter news">
+  <select id="nwi" aria-label="Impact"><option value="">All impact levels</option><option value="high">High impact</option><option value="medium">Medium impact</option></select>
+</div>
+
+<div id="nwlist">
+{% for n in news %}
+<article class="nw-item" id="{{ n.id }}" data-text="{{ (n.headline ~ ' ' ~ n.tickers|join(' ') ~ ' ' ~ n.summary)|lower }}" data-imp="{{ n.impact }}">
+  <div class="nw-meta">
+    <span class="imp imp-{{ n.impact }}">{{ n.impact|capitalize }} impact</span>
+    <span>{{ n.date }}</span>
+    {% if n.category %}<span>· {{ n.category }}</span>{% endif %}
+  </div>
+  <h3>{{ n.headline }}</h3>
+  <p>{{ n.summary }}</p>
+  {% if n.why %}<p class="why"><b>Why it matters:</b> {{ n.why }}</p>{% endif %}
+  {% if n.tickers %}<p class="tks">{% for t in n.tickers %}{% if t in tracked %}<a href="stocks/{{ t|lower|replace('.', '-') }}.html">${{ t }}</a>{% else %}<span class="tk">${{ t }}</span> {% endif %}{% endfor %}</p>{% endif %}
+  <p class="srcs">Sources: {% for s in n.sources %}<a href="{{ s.url }}" rel="noopener nofollow" target="_blank">{{ s.name }}</a>{{ ", " if not loop.last }}{% endfor %}</p>
+</article>
+{% else %}
+<p class="muted">No news yet.</p>
+{% endfor %}
+</div>
+
+<p class="note">News summaries are for information only and describe what was reported, not what a stock will do. {{ CFG.disclaimer }}</p>
+<script>
+(function(){
+  var q=document.getElementById("nwq"), im=document.getElementById("nwi");
+  function f(){var v=q.value.trim().toLowerCase().replace(/^\$/,""), i=im.value;
+    document.querySelectorAll("#nwlist .nw-item").forEach(function(a){
+      a.hidden = !((!v || a.dataset.text.indexOf(v)>=0) && (!i || a.dataset.imp===i));});}
+  q.addEventListener("input",f); im.addEventListener("change",f);
+  var h=location.hash.slice(1); if(h && h.indexOf("t=")===0){q.value=h.slice(2); f();}
+})();
+</script>
+{% endblock %}

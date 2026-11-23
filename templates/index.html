@@ -12,6 +12,16 @@
   </div>
 </section>
 
+{% if top_news %}
+<section class="card" style="margin-bottom:16px">
+  <h2>Market-moving news</h2>
+  <ul class="list">
+  {% for n in top_news %}<li><span class="muted nw">{{ n.date[:10] }}</span> <a href="news.html#{{ n.id }}">{{ n.headline }}</a>{% if n.tickers %} <span class="muted">{% for t in n.tickers[:3] %}${{ t }} {% endfor %}</span>{% endif %}</li>{% endfor %}
+  </ul>
+  <p class="note"><a href="news.html">All news →</a></p>
+</section>
+{% endif %}
+
 <div class="grid2">
   <section class="card">
     <h2>Most-covered stocks this week</h2>

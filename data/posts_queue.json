@@ -12,5 +12,31 @@
   "short": "Weekly options watch: $DELL prices a ~12-16% earnings move (Nov 24), $BBY ~10% after a PT hike, $NVDA vol reset post-print. VIX ~24-25. https://analystledger.github.io #options #stocks",
   "long": "Weekly options watch for Thanksgiving week: here is what the options market is pricing heading into a holiday-shortened week (closed Thu Nov 26, half-day Fri), with VIX hovering around 24-25 and the October PCE report due Wed Nov 25.\n\n• $DELL — reports Tue Nov 24 after the close. Options imply a post-earnings move of roughly 12-16% depending on source, well above a typical large-cap print. Put open interest clusters near $300-310 and calls near $400, framing the range traders are watching.\n\n• $BBY — reports Tue Nov 24 before the open with an implied move near ±9.6%. Telsey Advisory raised its price target to $110 (Outperform) this week, making it a read on holiday-season consumer demand.\n\n• $NVDA — after pricing a ~7.7% earnings-day move, shares moved about 0.4x that amount and IV rank dropped from 100 to ~59. It also drew 14 analyst actions on our tracker this week, including six price-target cuts and two downgrades. Watch whether implied volatility keeps resetting lower.\n\nAlso on deck: $HPE (±14%), $WDAY, $ADSK, $HPQ and $DE.\n\nTrack every rating change free at https://analystledger.github.io\n\nEducational only — not investment advice.\n#options #stocks",
   "posted_utc": "2026-11-20 20:16"
+ },
+ {
+  "id": "news-nvda-huang-reinstated-2026-11-23",
+  "status": "pending",
+  "kicker": "Market news",
+  "title": "Nvidia brings back Jensen Huang as CEO",
+  "card_lines": [
+   "$NVDA: Huang reinstated as CEO, effective now",
+   "Stock opened up ~33%, biggest gain since 2003",
+   "$CRWV $NBIS and chip stocks rallied too"
+  ],
+  "short": "Nvidia reinstated Jensen Huang as CEO, 11 days after he resigned. $NVDA opened up ~33%, lifting chip and AI-infrastructure stocks. SEC inquiry still open. https://analystledger.github.io/news.html #stocks",
+  "long": "Nvidia's board has reinstated co-founder Jensen Huang as president and CEO, effective immediately, 11 days after he resigned.\n\n• $NVDA opened up about 33%, its biggest intraday gain since 2003 (Bloomberg).\n• Chipmakers and AI-infrastructure names rallied, including neocloud providers $CRWV and $NBIS.\n• Still open: an SEC inquiry, shareholder lawsuits and national-security questions.\n\nSources and every analyst rating change: https://analystledger.github.io/news.html\n\n#stocks #Nvidia"
+ },
+ {
+  "id": "news-crwd-zscaler-deal-2026-11-23",
+  "status": "pending",
+  "kicker": "Market news",
+  "title": "CrowdStrike to buy Zscaler for ~$43.9B",
+  "card_lines": [
+   "$CRWD: all-stock deal for $ZS, ~$43.9B",
+   "1.135 CRWD shares per ZS share (~34% premium)",
+   "$CRWD fell ~9% pre-open on dilution worries"
+  ],
+  "short": "CrowdStrike agreed to buy Zscaler in an all-stock deal worth ~$43.9B (1.135 $CRWD per $ZS share, ~34% premium). $CRWD fell ~9% pre-open. https://analystledger.github.io/news.html #cybersecurity #stocks",
+  "long": "CrowdStrike has agreed to buy Zscaler in an all-stock deal valued at about $43.9 billion (Reuters).\n\n• Zscaler holders get 1.135 $CRWD shares per $ZS share, about a 34% premium.\n• $CRWD fell about 9% before the open as investors weighed dilution; $ZS jumped.\n• The combination creates a stronger rival to $PANW. Shareholder and regulatory approvals are still needed.\n\nSources: https://analystledger.github.io/news.html\n\n#cybersecurity #stocks"
  }
 ]

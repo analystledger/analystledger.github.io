@@ -58,6 +58,8 @@ def main():
     events = load_json(os.path.join(DATA, "events.json"), [])
     prices = load_json(os.path.join(DATA, "prices.json"), {})
     meta = load_json(os.path.join(DATA, "last_update.json"), {})
+    news = sorted(load_json(os.path.join(DATA, "market_news.json"), []),
+                  key=lambda n: n.get("date", ""), reverse=True)[:300]
     events.sort(key=lambda e: (e["date"], e["ticker"]), reverse=True)
 
     # clean generated folders (keep assets + social images)
@@ -115,7 +117,13 @@ def main():
 
     common = dict(updated=meta.get("updated_utc", ""), total=len(events),
                   n_analysts=len(a_list), n_stocks=len(s_list))
-    render("index.html", "index.html", 0, latest=events[:150], week=week,
+    news_by_ticker = defaultdict(list)
+    for n in news:
+        for t in n.get("tickers", []):
+            news_by_ticker[t].append(n)
+    for t, st in stocks.items():
+        st["news"] = news_by_ticker.get(t, [])[:5]
+    render("index.html", "index.html", 0, latest=events[:150], week=week, top_news=news[:5],
            top_stocks=sorted(s_list, key=lambda s: sum(1 for e in s["events"] if e["date"] >= week_ago),
                              reverse=True)[:10],
            ranked=ranked[:10], **common)
@@ -131,6 +139,7 @@ def main():
     render("planner.html", "planner.html", 0,
            stocks_json=json.dumps(planner_data, separators=(",", ":")).replace("</", "<\\/"), **common)
     render("start.html", "start.html", 0, **common)
+    render("news.html", "news.html", 0, news=news, tracked=set(stocks), **common)
     render("about.html", "about.html", 0, **common)
     render("terms.html", "terms.html", 0, **common)
     render("privacy.html", "privacy.html", 0, **common)
@@ -143,7 +152,7 @@ def main():
 
     # sitemap, robots, RSS
     base = CFG["base_url"].rstrip("/") + CFG.get("base_path", "")
-    urls = ["", "analysts/", "stocks/", "planner.html", "start.html", "about.html"] + \
+    urls = ["", "analysts/", "stocks/", "news.html", "planner.html", "start.html", "about.html"] + \
            [f"analysts/{a['slug']}.html" for a in a_list] + [f"stocks/{slugify(s['ticker'])}.html" for s in s_list]
     with open(os.path.join(DOCS, "sitemap.xml"), "w") as f:
         f.write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n')

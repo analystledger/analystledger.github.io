@@ -12,6 +12,12 @@
     <div><b>{{ s.price|money }}</b><span>last price{% if s.upside is defined %} · <span class="{{ 'up' if s.upside > 0 else 'down' }}">{{ s.upside|pct }}</span> to avg target{% endif %}</span></div>
   </div>
 </section>
+{% if s.news %}
+<h2>Recent market news</h2>
+<ul class="list">
+{% for n in s.news %}<li><span class="muted nw">{{ n.date[:10] }}</span> <a href="../news.html#{{ n.id }}">{{ n.headline }}</a></li>{% endfor %}
+</ul>
+{% endif %}
 <h2>Rating history</h2>
 {{ m.events_table(s.events, root, show_stock=False, filterable=s.n > 15) }}
 {% endblock %}
