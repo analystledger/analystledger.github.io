@@ -15,7 +15,7 @@
  },
  {
   "id": "news-nvda-huang-reinstated-2026-11-23",
-  "status": "pending",
+  "status": "posted",
   "kicker": "Market news",
   "title": "Nvidia brings back Jensen Huang as CEO",
   "card_lines": [
@@ -24,11 +24,12 @@
    "$CRWV $NBIS and chip stocks rallied too"
   ],
   "short": "Nvidia reinstated Jensen Huang as CEO, 11 days after he resigned. $NVDA opened up ~33%, lifting chip and AI-infrastructure stocks. SEC inquiry still open. https://analystledger.github.io/news.html #stocks",
-  "long": "Nvidia's board has reinstated co-founder Jensen Huang as president and CEO, effective immediately, 11 days after he resigned.\n\n• $NVDA opened up about 33%, its biggest intraday gain since 2003 (Bloomberg).\n• Chipmakers and AI-infrastructure names rallied, including neocloud providers $CRWV and $NBIS.\n• Still open: an SEC inquiry, shareholder lawsuits and national-security questions.\n\nSources and every analyst rating change: https://analystledger.github.io/news.html\n\n#stocks #Nvidia"
+  "long": "Nvidia's board has reinstated co-founder Jensen Huang as president and CEO, effective immediately, 11 days after he resigned.\n\n• $NVDA opened up about 33%, its biggest intraday gain since 2003 (Bloomberg).\n• Chipmakers and AI-infrastructure names rallied, including neocloud providers $CRWV and $NBIS.\n• Still open: an SEC inquiry, shareholder lawsuits and national-security questions.\n\nSources and every analyst rating change: https://analystledger.github.io/news.html\n\n#stocks #Nvidia",
+  "posted_utc": "2026-11-23 15:14"
  },
  {
   "id": "news-crwd-zscaler-deal-2026-11-23",
-  "status": "pending",
+  "status": "posted",
   "kicker": "Market news",
   "title": "CrowdStrike to buy Zscaler for ~$43.9B",
   "card_lines": [
@@ -37,6 +38,7 @@
    "$CRWD fell ~9% pre-open on dilution worries"
   ],
   "short": "CrowdStrike agreed to buy Zscaler in an all-stock deal worth ~$43.9B (1.135 $CRWD per $ZS share, ~34% premium). $CRWD fell ~9% pre-open. https://analystledger.github.io/news.html #cybersecurity #stocks",
-  "long": "CrowdStrike has agreed to buy Zscaler in an all-stock deal valued at about $43.9 billion (Reuters).\n\n• Zscaler holders get 1.135 $CRWD shares per $ZS share, about a 34% premium.\n• $CRWD fell about 9% before the open as investors weighed dilution; $ZS jumped.\n• The combination creates a stronger rival to $PANW. Shareholder and regulatory approvals are still needed.\n\nSources: https://analystledger.github.io/news.html\n\n#cybersecurity #stocks"
+  "long": "CrowdStrike has agreed to buy Zscaler in an all-stock deal valued at about $43.9 billion (Reuters).\n\n• Zscaler holders get 1.135 $CRWD shares per $ZS share, about a 34% premium.\n• $CRWD fell about 9% before the open as investors weighed dilution; $ZS jumped.\n• The combination creates a stronger rival to $PANW. Shareholder and regulatory approvals are still needed.\n\nSources: https://analystledger.github.io/news.html\n\n#cybersecurity #stocks",
+  "posted_utc": "2026-11-23 15:14"
  }
 ]
