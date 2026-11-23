@@ -1,5 +1,55 @@
 [
  {
+  "id": "market-ai-rebound-rally-2026-11-23",
+  "date": "2026-11-23 17:02 UTC",
+  "impact": "high",
+  "category": "Macro & Fed",
+  "headline": "US stocks rebound sharply as chip and AI shares lead after last week's rout",
+  "summary": "By midday Monday the Nasdaq Composite was up about 6.7% and the S&P 500 about 4.9%, with the Philadelphia chip index up roughly 13% and every sector but energy higher. The bounce follows a week in which the S&P 500 fell 8.6% and confirmed a correction.",
+  "why": "A broad rebound eases pressure on tech-heavy portfolios, but futures pricing still points to a likely Fed rate hike in December and October PCE inflation data is due Wednesday.",
+  "tickers": [
+   "SPY",
+   "QQQ",
+   "SOXX"
+  ],
+  "sources": [
+   {
+    "name": "Reuters",
+    "url": "https://lufkindailynews.com/news_reuters/business/wall-street-roars-back-as-nvidia-reinstates-jensen-huang-as-ceo/article_e6d9ac41-7498-5fb0-ad1e-4379284b6679.html"
+   },
+   {
+    "name": "Fox Business",
+    "url": "https://www.foxbusiness.com/markets/stocks-november-23-2026"
+   },
+   {
+    "name": "AP via BNN Bloomberg",
+    "url": "https://www.bnnbloomberg.ca/markets/dow-jones/2026/11/23/us-futures-climb-and-world-shares-are-mixed-as-big-tech-stocks-fall-in-asia/"
+   }
+  ]
+ },
+ {
+  "id": "tsla-spacex-merger-talk-rally-2026-11-23",
+  "date": "2026-11-23 14:30 UTC",
+  "impact": "high",
+  "category": "Other",
+  "headline": "Tesla jumps about 12% on SpaceX merger reports, HSBC upgrade and market rebound",
+  "summary": "Tesla rose as much as 13.9% on Monday as Bloomberg reported a possible Tesla-SpaceX merger could come as soon as December, and HSBC raised the stock to hold from reduce with a $359 target, up from $157. The move came during a broad tech rally and after the weekend rollout of FSD version 15.",
+  "why": "A combination with SpaceX would reshape Tesla's valuation and shareholder base, but no merger has been officially announced and terms, timing and approvals are unknown.",
+  "tickers": [
+   "TSLA"
+  ],
+  "sources": [
+   {
+    "name": "The Motley Fool",
+    "url": "https://www.fool.com/investing/2026/11/23/why-tesla-stock-stepped-on-the-gas-today/"
+   },
+   {
+    "name": "24/7 Wall St.",
+    "url": "https://247wallst.com/investing/2026/11/23/tesla-jumps-13-as-jensen-huangs-return-to-nvidia-sparks-broad-market-rally-rivian-rallies-9-lucid-surges-8/"
+   }
+  ]
+ },
+ {
   "id": "nvda-huang-reinstated-2026-11-23",
   "date": "2026-11-23 14:30 UTC",
   "impact": "high",
@@ -25,6 +75,29 @@
    {
     "name": "Investing.com",
     "url": "https://ca.investing.com/news/stock-market-news/nvidia-shares-surge-30-as-board-announces-jensen-huangs-reinstatement-4976103"
+   }
+  ]
+ },
+ {
+  "id": "arm-haas-contract-2033-2026-11-23",
+  "date": "2026-11-23 12:49 UTC",
+  "impact": "high",
+  "category": "Leadership",
+  "headline": "Arm extends CEO Rene Haas's contract through 2033; shares climb about 16%",
+  "summary": "Arm said Rene Haas will keep leading the chip designer through 2033 and will also become vice chairman of majority owner SoftBank Group from December 1. Earlier this month Nvidia's board had reportedly approached Haas as a possible successor to Jensen Huang.",
+  "why": "The extension settles leadership questions at Arm and ties Haas more closely to SoftBank. How his larger SoftBank role will split his time is not yet clear.",
+  "tickers": [
+   "ARM",
+   "NVDA"
+  ],
+  "sources": [
+   {
+    "name": "Reuters via Investing.com",
+    "url": "https://www.investing.com/news/stock-market-news/arms-haas-extends-contract-to-lead-chip-firm-through-2033-amid-nvidia-top-job-chatter-5045460"
+   },
+   {
+    "name": "Yahoo Finance",
+    "url": "https://finance.yahoo.com/technology/articles/arm-secures-ceo-rene-haas-135347660.html"
    }
   ]
  },

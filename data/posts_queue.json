@@ -160,5 +160,44 @@
   "short": "Options lesson 8/8: 7 beginner mistakes. Avoid these and you're ahead of most new traders.\n▶ https://youtube.com/shorts/p9qqkiVv3Lo\nhttps://analystledger.github.io/learn.html#mistakes\n#options #investing",
   "long": "Options lesson 8 of 8: 7 beginner mistakes\n\nAvoid these and you're ahead of most new traders.\n\n▶ Watch the 1-minute video: https://youtube.com/shorts/p9qqkiVv3Lo\n📖 Full lesson, free: https://analystledger.github.io/learn.html#mistakes\n\nAll lessons: https://www.youtube.com/@AnalystLedger\n\n#options #investing #AnalystLedger",
   "video": "videos/lesson-08.mp4"
+ },
+ {
+  "id": "news-market-ai-rebound-rally-2026-11-23",
+  "status": "pending",
+  "kicker": "Market news",
+  "title": "US stocks rebound after last week's rout",
+  "card_lines": [
+   "Nasdaq up ~6.7%, S&P 500 ~4.9% by midday",
+   "Chip index up ~13%; energy only sector down",
+   "Follows an 8.6% weekly drop in the S&P 500"
+  ],
+  "short": "US stocks bounced Monday: Nasdaq up ~6.7%, S&P 500 ~4.9% by midday, chip stocks up ~13% after last week's 8.6% S&P drop. A December Fed hike is still priced in. https://analystledger.github.io/news.html #stocks #markets",
+  "long": "US stocks staged a sharp rebound on Monday after one of the worst weeks in years.\n\n• By midday the Nasdaq Composite was up about 6.7% and the S&P 500 about 4.9%\n• The Philadelphia semiconductor index rose roughly 13%; energy was the only sector lower\n• Last week the S&P 500 fell 8.6% and confirmed a correction; futures still price a likely December Fed hike\n\nSources: https://analystledger.github.io/news.html\n\n#stocks #markets #AnalystLedger"
+ },
+ {
+  "id": "news-arm-haas-contract-2033-2026-11-23",
+  "status": "pending",
+  "kicker": "Market news",
+  "title": "Arm keeps CEO Rene Haas through 2033",
+  "card_lines": [
+   "$ARM extends Haas's contract through 2033",
+   "He also becomes SoftBank vice chairman Dec 1",
+   "Shares up about 16% on Monday"
+  ],
+  "short": "$ARM extended CEO Rene Haas's contract through 2033; he also becomes SoftBank vice chairman Dec 1. Nvidia had reportedly approached him earlier this month. Shares rose ~16%. https://analystledger.github.io/news.html #Arm #semiconductors",
+  "long": "Arm said on Monday that CEO Rene Haas, who has run the chip designer since 2022, will stay in the role through 2033.\n\n• Haas also becomes vice chairman of majority owner SoftBank Group from December 1\n• Nvidia's board had reportedly approached him earlier this month during its CEO search\n• $ARM shares rose about 16% on Monday\n\nSources: https://analystledger.github.io/news.html\n\n#Arm #semiconductors #AnalystLedger"
+ },
+ {
+  "id": "news-tsla-spacex-merger-talk-rally-2026-11-23",
+  "status": "pending",
+  "kicker": "Market news",
+  "title": "Tesla jumps on SpaceX merger reports",
+  "card_lines": [
+   "$TSLA up as much as 13.9% on Monday",
+   "Bloomberg: SpaceX deal could come in December",
+   "HSBC upgrades to hold, target $359 from $157"
+  ],
+  "short": "$TSLA rose as much as 13.9% Monday after Bloomberg reported a possible SpaceX merger as soon as December and HSBC upgraded to hold. No deal has been announced. https://analystledger.github.io/news.html #Tesla #stocks",
+  "long": "Tesla shares rose sharply on Monday amid merger reports and a broad tech rebound.\n\n• $TSLA gained as much as 13.9% intraday\n• Bloomberg reported a possible Tesla-SpaceX merger could come as soon as December; nothing has been officially announced\n• HSBC upgraded the stock to hold from reduce and lifted its target to $359 from $157\n\nSources: https://analystledger.github.io/news.html\n\n#Tesla #stocks #AnalystLedger"
  }
 ]
