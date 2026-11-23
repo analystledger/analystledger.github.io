@@ -30,7 +30,10 @@
       <a href="{{ root }}start.html">{{ _("Open account") }}</a>
       <a href="{{ root }}about.html">{{ _("About") }}</a>
     </nav>
-    <div class="langs" aria-label="{{ _('Language') }}">{% for L in langs %}<a href="{{ aroot }}{{ '' if L.code == 'en' else L.code ~ '/' }}{{ page_path }}" hreflang="{{ L.code }}" lang="{{ L.code }}" title="{{ L.name }}"{% if L.code == lang %} class="on" aria-current="true"{% endif %}>{{ L.label }}</a>{% endfor %}</div>
+    <details class="langs">
+      <summary aria-label="{{ _('Language') }}"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20"/></svg>{% for L in langs if L.code == lang %}{{ L.label }}{% endfor %}<span class="car" aria-hidden="true">▾</span></summary>
+      <div class="langmenu">{% for L in langs %}<a href="{{ aroot }}{{ '' if L.code == 'en' else L.code ~ '/' }}{{ page_path }}" hreflang="{{ L.code }}" lang="{{ L.code }}"{% if L.code == lang %} class="on" aria-current="true"{% endif %}><b>{{ L.label }}</b> {{ L.name }}</a>{% endfor %}</div>
+    </details>
     <div class="search">
       <input id="q" type="search" placeholder="{{ _('Search ticker, analyst, firm…') }}" autocomplete="off" aria-label="{{ _('Search') }}">
       <div id="qres" class="qres" hidden></div>

@@ -1,5 +1,12 @@
 (function () {
   var T = window.T || function (s) { return s; };
+  // Language menu: close when clicking elsewhere or pressing Escape
+  var lm = document.querySelector("details.langs");
+  if (lm) {
+    document.addEventListener("click", function (e) { if (!e.target.closest("details.langs")) lm.open = false; });
+    document.addEventListener("keydown", function (e) { if (e.key === "Escape") lm.open = false; });
+  }
+
   // Global search box
   var q = document.getElementById("q"), box = document.getElementById("qres"), idx = null;
   function load(cb) {
