@@ -1,4 +1,4 @@
-{% extends "base.html" %}
+{% extends "base.html" %}{% import "_macros.html" as m with context %}
 {% block title %}Naučite opcije: besplatne lekcije i alati | {{ CFG.site_name }}{% endblock %}
 {% block desc %}Besplatne lekcije o opcijama na jednostavnom jeziku — call i put, pokriveni call, put pokriven gotovinom, spredovi, očekivano kretanje i sigma pojasevi, veličina pozicije i rizik događaja — uz besplatne kalkulatore, dnevnik trgovanja i nedeljni bektest sigma pojasa.{% endblock %}
 {% block body %}
@@ -11,6 +11,10 @@
 .toc{columns:2;column-gap:24px;padding-left:20px}.toc li{margin:3px 0}
 .lesson{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 20px;margin-bottom:16px}
 .lesson h2{margin-top:0}
+.ytv{display:flex;gap:12px;align-items:center;background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:8px;margin:6px 0 12px;color:var(--ink);max-width:420px}
+.ytv:hover{text-decoration:none;border-color:var(--brand)}
+.ytv img{width:96px;height:72px;object-fit:cover;border-radius:6px;flex:none}
+.ytv b{display:block;color:var(--brand)}.ytv small{color:var(--muted)}
 .lesson .ex{background:var(--bg);border-left:3px solid var(--brand);padding:8px 12px;border-radius:6px;margin:10px 0}
 .lesson .risk{background:#fff7e0;border-left:3px solid #e0a800;padding:8px 12px;border-radius:6px;margin:10px 0}
 @media(max-width:640px){.toc{columns:1}}
@@ -25,6 +29,7 @@
   <a href="backtest.html"><b>Nedeljni bektest sigma pojasa</b><span>Koliko su često SPY i QQQ stvarno ostali u nedeljnom pojasu — i loše nedelje.</span></a>
   <a href="journal.html"><b>Dnevnik trgovanja</b><span>Beležite vežbe ili stvarne trgovine i pratite procenat dobitaka. Čuva se samo u vašem pregledaču.</span></a>
   <a href="planner.html"><b>Planer budžeta</b><span>Šta vaš budžet može da podrži i koliko možete da izgubite po trgovini.</span></a>
+  <a href="{{ CFG.youtube.channel }}" target="_blank" rel="noopener"><b>{{ _("Video lessons on YouTube") }}</b><span>{{ _("All 8 lessons as one-minute videos.") }}</span></a>
   <a href="start.html"><b>Otvori račun</b><span>Kako bezbedno podesiti brokerski račun, korak po korak.</span></a>
 </div>
 
@@ -42,6 +47,7 @@
 
 <article class="lesson" id="basics">
 <h2>1. Call i put za 5 minuta</h2>
+{{ m.ytv("basics") }}
 <p>Opcija je ugovor na 100 akcija koji ističe određenog datuma.</p>
 <ul>
   <li><b>Call</b> daje kupcu pravo da do isteka kupi 100 akcija po <b>izvršnoj ceni (strajku)</b>. Kupci zarađuju ako akcija znatno poraste iznad strajka.</li>
@@ -55,6 +61,7 @@
 
 <article class="lesson" id="covered-call">
 <h2>2. Pokriveni call</h2>
+{{ m.ytv("covered-call") }}
 <p>Posedujete 100 akcija i prodajete jedan call na njih. Zadržavate premiju. Ako akcija završi iznad strajka, vaše akcije se prodaju po strajku.</p>
 <ul>
   <li><b>Pogodno za:</b> dodatni prihod od akcija koje biste rado prodali po strajku.</li>
@@ -67,6 +74,7 @@
 
 <article class="lesson" id="csp">
 <h2>3. Put pokriven gotovinom</h2>
+{{ m.ytv("csp") }}
 <p>Prodajete put i držite dovoljno gotovine da kupite 100 akcija po strajku. Naplaćujete premiju. Ako akcija završi ispod strajka, kupujete akcije po strajku.</p>
 <ul>
   <li><b>Pogodno za:</b> da budete plaćeni dok čekate da jeftinije kupite akciju koju želite.</li>
@@ -78,6 +86,7 @@
 
 <article class="lesson" id="spreads">
 <h2>4. Kreditni spredovi: ograničavanje najgoreg slučaja</h2>
+{{ m.ytv("spreads") }}
 <p><b>Put kreditni spred</b> prodaje jedan put i kupuje jeftiniji put niže. Kupljeni put ograničava gubitak.</p>
 <ul>
   <li><b>Najveći gubitak</b> = (razmak između strajkova − premija) × 100.</li>
@@ -90,6 +99,7 @@
 
 <article class="lesson" id="sigma">
 <h2>5. Očekivano kretanje i sigma pojasevi</h2>
+{{ m.ytv("sigma") }}
 <p>Cene opcija pokazuju koliko tržište očekuje da bi se akcija mogla pomeriti. Jedna standardna devijacija (<b>1σ</b>) tog kretanja je otprilike:</p>
 <div class="ex"><b>Kretanje 1σ ≈ cena × implicitna volatilnost × √(dani ÷ 365)</b><br>Primer: cena 700 $, implicitna volatilnost 18%, 5 dana → 700 × 0,18 × √(5/365) ≈ 14,7 $.</div>
 <ul>
@@ -102,6 +112,7 @@
 
 <article class="lesson" id="sizing">
 <h2>6. Veličina pozicije: pravilo 1–2%</h2>
+{{ m.ytv("sizing") }}
 <p>Odlučite koliko najviše želite da izgubite na jednoj trgovini <b>pre</b> nego što trgujete. Mnogi trgovci koriste 1–2% računa.</p>
 <ul>
   <li>Sa 5.000 €, 2% je 100 €. Spred sa najvećim gubitkom od 380 $ je prevelik za taj račun.</li>
@@ -113,6 +124,7 @@
 
 <article class="lesson" id="events">
 <h2>7. Rizik događaja, izvršenje i dan isteka</h2>
+{{ m.ytv("events") }}
 <ul>
   <li><b>Rezultati poslovanja, sastanci centralnih banaka, spajanja i promene direktora</b> mogu pomeriti akciju za nekoliko sigmi preko noći. Mnogi prodavci opcija zatvaraju pozicije pre tih datuma.</li>
   <li><b>Izvršenje (assignment):</b> prodata opcija koja je u dobitku može biti izvršena protiv vas, obično na isteku, a ponekad i ranije (često pre dividende).</li>
@@ -123,6 +135,7 @@
 
 <article class="lesson" id="mistakes">
 <h2>8. Sedam čestih grešaka početnika</h2>
+{{ m.ytv("mistakes") }}
 <ol>
   <li>Određivanje veličine prema željenom dobitku umesto prema mogućem gubitku.</li>
   <li>Držanje prodatih opcija tokom rezultata ili važnih vesti.</li>

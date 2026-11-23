@@ -72,5 +72,18 @@
       "label": "SR",
       "name": "Srpski"
     }
-  ]
+  ],
+  "youtube": {
+    "channel": "https://www.youtube.com/@AnalystLedger",
+    "lessons": {
+      "basics": "N7A0O5HWVcQ",
+      "covered-call": "5tuI9HNyRWQ",
+      "csp": "sp-a0jS4-eQ",
+      "spreads": "z6hNL_3_jXc",
+      "sigma": "fWcrZIj2tTc",
+      "sizing": "l0joOHtLydo",
+      "events": "KT6bUyoZ1tI",
+      "mistakes": "p9qqkiVv3Lo"
+    }
+  }
 }

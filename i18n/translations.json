@@ -1309,6 +1309,26 @@
    "de": "{p} % des Betrags",
    "sq": "{p}% e shumës",
    "sr": "{p}% iznosa"
+  },
+  "Watch the 1-minute video": {
+   "de": "1-Minuten-Video ansehen",
+   "sq": "Shiko videon 1-minutëshe",
+   "sr": "Pogledajte video od 1 minuta"
+  },
+  "YouTube Short · in English": {
+   "de": "YouTube Short · auf Englisch",
+   "sq": "YouTube Short · në anglisht",
+   "sr": "YouTube Short · na engleskom"
+  },
+  "Video lessons on YouTube": {
+   "de": "Videolektionen auf YouTube",
+   "sq": "Mësime me video në YouTube",
+   "sr": "Video lekcije na YouTube-u"
+  },
+  "All 8 lessons as one-minute videos.": {
+   "de": "Alle 8 Lektionen als Ein-Minuten-Videos.",
+   "sq": "Të 8 mësimet si video një-minutëshe.",
+   "sr": "Svih 8 lekcija kao video snimci od jednog minuta."
   }
  },
  "js": {

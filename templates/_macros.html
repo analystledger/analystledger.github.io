@@ -44,3 +44,9 @@
 {% endfor %}
 </tbody></table></div>
 {%- endmacro %}
+
+
+{% macro ytv(slug) -%}
+{% set vid = CFG.youtube.lessons.get(slug) if CFG.youtube is defined else none %}
+{% if vid %}<a class="ytv" href="https://www.youtube.com/shorts/{{ vid }}" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/{{ vid }}/hqdefault.jpg" alt="" loading="lazy" width="96" height="72"><span><b>&#9654; {{ _("Watch the 1-minute video") }}</b><small>{{ _("YouTube Short · in English") }}</small></span></a>{% endif %}
+{%- endmacro %}

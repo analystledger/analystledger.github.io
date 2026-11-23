@@ -1,4 +1,4 @@
-{% extends "base.html" %}
+{% extends "base.html" %}{% import "_macros.html" as m with context %}
 {% block title %}Optionen lernen: kostenlose Lektionen und Tools | {{ CFG.site_name }}{% endblock %}
 {% block desc %}Kostenlose Lektionen zu Optionen in einfacher Sprache — Calls und Puts, gedeckte Calls, bar gedeckte Puts, Spreads, erwartete Bewegung und Sigma-Bänder, Positionsgröße und Ereignisrisiko — dazu kostenlose Rechner, ein Trading-Journal und ein wöchentlicher Sigma-Band-Backtest.{% endblock %}
 {% block body %}
@@ -11,6 +11,10 @@
 .toc{columns:2;column-gap:24px;padding-left:20px}.toc li{margin:3px 0}
 .lesson{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 20px;margin-bottom:16px}
 .lesson h2{margin-top:0}
+.ytv{display:flex;gap:12px;align-items:center;background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:8px;margin:6px 0 12px;color:var(--ink);max-width:420px}
+.ytv:hover{text-decoration:none;border-color:var(--brand)}
+.ytv img{width:96px;height:72px;object-fit:cover;border-radius:6px;flex:none}
+.ytv b{display:block;color:var(--brand)}.ytv small{color:var(--muted)}
 .lesson .ex{background:var(--bg);border-left:3px solid var(--brand);padding:8px 12px;border-radius:6px;margin:10px 0}
 .lesson .risk{background:#fff7e0;border-left:3px solid #e0a800;padding:8px 12px;border-radius:6px;margin:10px 0}
 @media(max-width:640px){.toc{columns:1}}
@@ -25,6 +29,7 @@
   <a href="backtest.html"><b>Wöchentlicher Sigma-Band-Backtest</b><span>Wie oft SPY und QQQ wirklich im wöchentlichen Band blieben — und die schlechten Wochen.</span></a>
   <a href="journal.html"><b>Trading-Journal</b><span>Übungs- oder echte Trades erfassen und die Trefferquote verfolgen. Nur in Ihrem Browser gespeichert.</span></a>
   <a href="planner.html"><b>Budgetplaner</b><span>Was Ihr Budget tragen kann und wie viel Sie pro Trade verlieren könnten.</span></a>
+  <a href="{{ CFG.youtube.channel }}" target="_blank" rel="noopener"><b>{{ _("Video lessons on YouTube") }}</b><span>{{ _("All 8 lessons as one-minute videos.") }}</span></a>
   <a href="start.html"><b>Konto eröffnen</b><span>Schritt für Schritt ein Brokerkonto sicher einrichten.</span></a>
 </div>
 
@@ -42,6 +47,7 @@
 
 <article class="lesson" id="basics">
 <h2>1. Calls und Puts in 5 Minuten</h2>
+{{ m.ytv("basics") }}
 <p>Eine Option ist ein Vertrag über 100 Aktien, der an einem festen Datum verfällt.</p>
 <ul>
   <li><b>Ein Call</b> gibt dem Käufer das Recht, bis zum Verfall 100 Aktien zum <b>Ausübungspreis (Strike)</b> zu kaufen. Käufer gewinnen, wenn die Aktie deutlich über den Strike steigt.</li>
@@ -55,6 +61,7 @@
 
 <article class="lesson" id="covered-call">
 <h2>2. Gedeckte Calls</h2>
+{{ m.ytv("covered-call") }}
 <p>Sie besitzen 100 Aktien und verkaufen darauf einen Call. Sie behalten die Prämie. Schließt die Aktie über dem Strike, werden Ihre Aktien zum Strike verkauft.</p>
 <ul>
   <li><b>Geeignet für:</b> Zusatzeinkommen aus Aktien, die Sie zum Strike gern verkaufen würden.</li>
@@ -67,6 +74,7 @@
 
 <article class="lesson" id="csp">
 <h2>3. Bar gedeckte Puts</h2>
+{{ m.ytv("csp") }}
 <p>Sie verkaufen einen Put und halten genug Bargeld, um 100 Aktien zum Strike zu kaufen. Sie kassieren die Prämie. Schließt die Aktie unter dem Strike, kaufen Sie die Aktien zum Strike.</p>
 <ul>
   <li><b>Geeignet für:</b> bezahlt zu werden, während Sie darauf warten, eine gewünschte Aktie günstiger zu kaufen.</li>
@@ -78,6 +86,7 @@
 
 <article class="lesson" id="spreads">
 <h2>4. Credit-Spreads: den schlechtesten Fall begrenzen</h2>
+{{ m.ytv("spreads") }}
 <p>Ein <b>Put-Credit-Spread</b> verkauft einen Put und kauft einen günstigeren Put weiter darunter. Der gekaufte Put begrenzt den Verlust.</p>
 <ul>
   <li><b>Maximaler Verlust</b> = (Abstand der Strikes − Prämie) × 100.</li>
@@ -90,6 +99,7 @@
 
 <article class="lesson" id="sigma">
 <h2>5. Erwartete Bewegung und Sigma-Bänder</h2>
+{{ m.ytv("sigma") }}
 <p>Optionspreise zeigen, wie weit der Markt eine Aktie sich bewegen sieht. Eine Standardabweichung (<b>1σ</b>) dieser Bewegung ist ungefähr:</p>
 <div class="ex"><b>1σ-Bewegung ≈ Kurs × implizite Volatilität × √(Tage ÷ 365)</b><br>Beispiel: Kurs 700 $, implizite Volatilität 18 %, 5 Tage → 700 × 0,18 × √(5/365) ≈ 14,7 $.</div>
 <ul>
@@ -102,6 +112,7 @@
 
 <article class="lesson" id="sizing">
 <h2>6. Positionsgröße: die 1–2-%-Regel</h2>
+{{ m.ytv("sizing") }}
 <p>Legen Sie <b>vor</b> dem Trade fest, wie viel Sie höchstens verlieren wollen. Viele Trader nutzen 1–2 % ihres Kontos.</p>
 <ul>
   <li>Bei 5.000 € sind 2 % genau 100 €. Ein Spread mit 380 $ Maximalverlust ist für dieses Konto zu groß.</li>
@@ -113,6 +124,7 @@
 
 <article class="lesson" id="events">
 <h2>7. Ereignisrisiko, Ausübung und Verfallstag</h2>
+{{ m.ytv("events") }}
 <ul>
   <li><b>Quartalszahlen, Notenbanksitzungen, Fusionen und CEO-Wechsel</b> können eine Aktie über Nacht um mehrere Sigma bewegen. Viele Optionsverkäufer schließen Positionen vor diesen Terminen.</li>
   <li><b>Ausübung (Assignment):</b> Eine verkaufte Option im Geld kann gegen Sie ausgeübt werden — meist bei Verfall, manchmal früher (oft vor einer Dividende).</li>
@@ -123,6 +135,7 @@
 
 <article class="lesson" id="mistakes">
 <h2>8. Sieben typische Anfängerfehler</h2>
+{{ m.ytv("mistakes") }}
 <ol>
   <li>Die Größe nach dem erhofften Gewinn statt nach dem möglichen Verlust wählen.</li>
   <li>Verkaufte Optionen über Quartalszahlen oder wichtige Nachrichten halten.</li>

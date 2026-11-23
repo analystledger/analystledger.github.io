@@ -55,6 +55,10 @@
 .toc{columns:2;column-gap:24px;padding-left:20px}.toc li{margin:3px 0}
 .lesson{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 20px;margin-bottom:16px}
 .lesson h2{margin-top:0}
+.ytv{display:flex;gap:12px;align-items:center;background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:8px;margin:6px 0 12px;color:var(--ink);max-width:420px}
+.ytv:hover{text-decoration:none;border-color:var(--brand)}
+.ytv img{width:96px;height:72px;object-fit:cover;border-radius:6px;flex:none}
+.ytv b{display:block;color:var(--brand)}.ytv small{color:var(--muted)}
 .lesson .ex{background:var(--bg);border-left:3px solid var(--brand);padding:8px 12px;border-radius:6px;margin:10px 0}
 .lesson .risk{background:#fff7e0;border-left:3px solid #e0a800;padding:8px 12px;border-radius:6px;margin:10px 0}
 @media(max-width:640px){.toc{columns:1}}
@@ -69,6 +73,7 @@
   <a href="backtest.html"><b>Weekly sigma-band backtest</b><span>How often SPY and QQQ really stayed inside the weekly band — and the bad weeks.</span></a>
   <a href="journal.html"><b>Trade journal</b><span>Log practice or real trades and track your win rate. Saved only in your browser.</span></a>
   <a href="planner.html"><b>Budget planner</b><span>What your budget can support and how much you could lose per trade.</span></a>
+  <a href="https://www.youtube.com/@AnalystLedger" target="_blank" rel="noopener"><b>Video lessons on YouTube</b><span>All 8 lessons as one-minute videos.</span></a>
   <a href="start.html"><b>Open an account</b><span>How to set up a brokerage account safely, step by step.</span></a>
 </div>
 
@@ -86,6 +91,8 @@
 
 <article class="lesson" id="basics">
 <h2>1. Calls and puts in 5 minutes</h2>
+
+<a class="ytv" href="https://www.youtube.com/shorts/N7A0O5HWVcQ" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/N7A0O5HWVcQ/hqdefault.jpg" alt="" loading="lazy" width="96" height="72"><span><b>&#9654; Watch the 1-minute video</b><small>YouTube Short · in English</small></span></a>
 <p>An option is a contract on 100 shares that expires on a set date.</p>
 <ul>
   <li><b>A call</b> gives the buyer the right to buy 100 shares at the <b>strike price</b> until expiry. Buyers profit if the stock rises well above the strike.</li>
@@ -99,6 +106,8 @@
 
 <article class="lesson" id="covered-call">
 <h2>2. Covered calls</h2>
+
+<a class="ytv" href="https://www.youtube.com/shorts/5tuI9HNyRWQ" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/5tuI9HNyRWQ/hqdefault.jpg" alt="" loading="lazy" width="96" height="72"><span><b>&#9654; Watch the 1-minute video</b><small>YouTube Short · in English</small></span></a>
 <p>You own 100 shares and sell one call against them. You keep the premium. If the stock ends above the strike, your shares are sold at the strike.</p>
 <ul>
   <li><b>Good for:</b> earning extra income on shares you would be happy to sell at the strike.</li>
@@ -111,6 +120,8 @@
 
 <article class="lesson" id="csp">
 <h2>3. Cash-secured puts</h2>
+
+<a class="ytv" href="https://www.youtube.com/shorts/sp-a0jS4-eQ" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/sp-a0jS4-eQ/hqdefault.jpg" alt="" loading="lazy" width="96" height="72"><span><b>&#9654; Watch the 1-minute video</b><small>YouTube Short · in English</small></span></a>
 <p>You sell a put and keep enough cash to buy 100 shares at the strike. You collect the premium. If the stock ends below the strike, you buy the shares at the strike.</p>
 <ul>
   <li><b>Good for:</b> getting paid while waiting to buy a stock you want, at a lower price.</li>
@@ -122,6 +133,8 @@
 
 <article class="lesson" id="spreads">
 <h2>4. Credit spreads: capping the worst case</h2>
+
+<a class="ytv" href="https://www.youtube.com/shorts/z6hNL_3_jXc" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/z6hNL_3_jXc/hqdefault.jpg" alt="" loading="lazy" width="96" height="72"><span><b>&#9654; Watch the 1-minute video</b><small>YouTube Short · in English</small></span></a>
 <p>A <b>put credit spread</b> sells one put and buys a cheaper put further below. The bought put limits the loss.</p>
 <ul>
   <li><b>Maximum loss</b> = (distance between strikes − premium) × 100.</li>
@@ -134,6 +147,8 @@
 
 <article class="lesson" id="sigma">
 <h2>5. Expected move and sigma bands</h2>
+
+<a class="ytv" href="https://www.youtube.com/shorts/fWcrZIj2tTc" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/fWcrZIj2tTc/hqdefault.jpg" alt="" loading="lazy" width="96" height="72"><span><b>&#9654; Watch the 1-minute video</b><small>YouTube Short · in English</small></span></a>
 <p>Options prices imply how far the market expects a stock might move. One standard deviation (<b>1σ</b>) of that move is roughly:</p>
 <div class="ex"><b>1σ move ≈ price × implied volatility × √(days ÷ 365)</b><br>Example: price $700, implied volatility 18%, 5 days → 700 × 0.18 × √(5/365) ≈ $14.7.</div>
 <ul>
@@ -146,6 +161,8 @@
 
 <article class="lesson" id="sizing">
 <h2>6. Position sizing: the 1–2% rule</h2>
+
+<a class="ytv" href="https://www.youtube.com/shorts/l0joOHtLydo" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/l0joOHtLydo/hqdefault.jpg" alt="" loading="lazy" width="96" height="72"><span><b>&#9654; Watch the 1-minute video</b><small>YouTube Short · in English</small></span></a>
 <p>Decide the most you will lose on one trade <b>before</b> you trade. Many traders use 1–2% of their account.</p>
 <ul>
   <li>With €5,000, 2% is €100. A spread whose maximum loss is $380 is too big for that account.</li>
@@ -157,6 +174,8 @@
 
 <article class="lesson" id="events">
 <h2>7. Event risk, assignment and expiry day</h2>
+
+<a class="ytv" href="https://www.youtube.com/shorts/KT6bUyoZ1tI" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/KT6bUyoZ1tI/hqdefault.jpg" alt="" loading="lazy" width="96" height="72"><span><b>&#9654; Watch the 1-minute video</b><small>YouTube Short · in English</small></span></a>
 <ul>
   <li><b>Earnings, central-bank meetings, mergers and CEO changes</b> can move a stock several sigma overnight. Many option sellers close positions before these dates.</li>
   <li><b>Assignment:</b> a short option that is in the money can be exercised against you, usually at expiry and sometimes earlier (often before a dividend).</li>
@@ -167,6 +186,8 @@
 
 <article class="lesson" id="mistakes">
 <h2>8. Seven common beginner mistakes</h2>
+
+<a class="ytv" href="https://www.youtube.com/shorts/p9qqkiVv3Lo" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/p9qqkiVv3Lo/hqdefault.jpg" alt="" loading="lazy" width="96" height="72"><span><b>&#9654; Watch the 1-minute video</b><small>YouTube Short · in English</small></span></a>
 <ol>
   <li>Sizing by how much you hope to make instead of how much you could lose.</li>
   <li>Holding short options through earnings or major news.</li>
