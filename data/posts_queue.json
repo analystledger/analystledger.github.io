@@ -43,7 +43,7 @@
  },
  {
   "id": "video-lesson-01",
-  "status": "pending",
+  "status": "posted",
   "not_before": "2026-11-24T12:00:00+00:00",
   "kicker": "Options lesson 1/8",
   "title": "Calls and puts in 60 seconds",
@@ -54,7 +54,8 @@
   ],
   "short": "Options lesson 1/8: Calls and puts in 60 seconds. What an option is, what it costs, and who carries the risk.\n▶ https://youtube.com/shorts/N7A0O5HWVcQ\nhttps://analystledger.github.io/learn.html#basics\n#options #investing",
   "long": "Options lesson 1 of 8: Calls and puts in 60 seconds\n\nWhat an option is, what it costs, and who carries the risk.\n\n▶ Watch the 1-minute video: https://youtube.com/shorts/N7A0O5HWVcQ\n📖 Full lesson, free: https://analystledger.github.io/learn.html#basics\n\nAll lessons: https://www.youtube.com/@AnalystLedger\n\n#options #investing #AnalystLedger",
-  "video": "videos/lesson-01.mp4"
+  "video": "videos/lesson-01.mp4",
+  "posted_utc": "2026-11-24 12:51"
  },
  {
   "id": "video-lesson-02",
@@ -205,7 +206,7 @@
  },
  {
   "id": "news-insm-sanofi-buyout-41b-2026-11-24",
-  "status": "pending",
+  "status": "posted",
   "kicker": "Market news",
   "title": "Sanofi to buy Insmed for ~$41B",
   "card_lines": [
@@ -214,11 +215,12 @@
    "Expected to close in first half of 2027"
   ],
   "short": "Sanofi ($SNY) agreed to buy Insmed ($INSM) for $175/share in cash, about $41B, a ~46% premium to the unaffected price. Needs shareholder and regulatory approval. https://analystledger.github.io/news.html #biotech #stocks",
-  "long": "Sanofi has agreed to acquire Insmed in an all-cash deal announced Tuesday.\n\n• $INSM holders would receive $175 per share, an equity value of about $41.0 billion\n• The price is about a 46% premium to Insmed's Nov. 18 unaffected close\n• $SNY expects to close in the first half of 2027, subject to Insmed shareholder approval and regulatory clearances\n\nSources: https://analystledger.github.io/news.html\n\n#biotech #MergersAndAcquisitions #AnalystLedger"
+  "long": "Sanofi has agreed to acquire Insmed in an all-cash deal announced Tuesday.\n\n• $INSM holders would receive $175 per share, an equity value of about $41.0 billion\n• The price is about a 46% premium to Insmed's Nov. 18 unaffected close\n• $SNY expects to close in the first half of 2027, subject to Insmed shareholder approval and regulatory clearances\n\nSources: https://analystledger.github.io/news.html\n\n#biotech #MergersAndAcquisitions #AnalystLedger",
+  "posted_utc": "2026-11-24 12:51"
  },
  {
   "id": "news-hpe-q4-beat-margin-warning-2026-11-24",
-  "status": "pending",
+  "status": "posted",
   "kicker": "Market news",
   "title": "HPE slides despite Q4 beat",
   "card_lines": [
@@ -227,11 +229,12 @@
    "CFO flags AI server margin pressure in 2H FY27"
   ],
   "short": "$HPE fell premarket despite a Q4 beat (revenue $14.5B, +50%), a raised FY27 outlook and a new $5B buyback, after warning AI server sales could weigh on margins. https://analystledger.github.io/news.html #HPE #AI",
-  "long": "Hewlett Packard Enterprise shares dropped before Tuesday's open even though results beat expectations.\n\n• $HPE fiscal Q4 revenue rose 50% to $14.5 billion; non-GAAP EPS was $1.43\n• Fiscal 2027 non-GAAP EPS outlook raised to $5.05-$5.35, plus an extra $5 billion buyback\n• The CFO warned rising AI server sales could weigh on margins in the second half of fiscal 2027\n\nSources: https://analystledger.github.io/news.html\n\n#HPE #AI #earnings #AnalystLedger"
+  "long": "Hewlett Packard Enterprise shares dropped before Tuesday's open even though results beat expectations.\n\n• $HPE fiscal Q4 revenue rose 50% to $14.5 billion; non-GAAP EPS was $1.43\n• Fiscal 2027 non-GAAP EPS outlook raised to $5.05-$5.35, plus an extra $5 billion buyback\n• The CFO warned rising AI server sales could weigh on margins in the second half of fiscal 2027\n\nSources: https://analystledger.github.io/news.html\n\n#HPE #AI #earnings #AnalystLedger",
+  "posted_utc": "2026-11-24 12:51"
  },
  {
   "id": "news-dltr-q3-beat-raises-outlook-2026-11-24",
-  "status": "pending",
+  "status": "posted",
   "kicker": "Market news",
   "title": "Dollar Tree beats and lifts outlook",
   "card_lines": [
@@ -240,6 +243,7 @@
    "FY adj. EPS outlook now $8.05-$8.25"
   ],
   "short": "$DLTR rose premarket after Q3 adj. EPS of $1.16 vs $0.91 expected, comps +4.6% and a raised FY outlook of $8.05-$8.25, incl. ~$0.65 from tariff refunds. https://analystledger.github.io/news.html #retail #earnings",
-  "long": "Dollar Tree shares rose before the open after third-quarter results came in ahead of estimates.\n\n• $DLTR adjusted EPS was $1.16 versus a $0.91 consensus; net sales rose 6.9% to $5.07 billion\n• Comparable store sales grew 4.6%, led by a 3.8% gain in traffic\n• Full-year adjusted EPS outlook raised to $8.05-$8.25, including about $0.65 from tariff refunds\n\nSources: https://analystledger.github.io/news.html\n\n#retail #earnings #AnalystLedger"
+  "long": "Dollar Tree shares rose before the open after third-quarter results came in ahead of estimates.\n\n• $DLTR adjusted EPS was $1.16 versus a $0.91 consensus; net sales rose 6.9% to $5.07 billion\n• Comparable store sales grew 4.6%, led by a 3.8% gain in traffic\n• Full-year adjusted EPS outlook raised to $8.05-$8.25, including about $0.65 from tariff refunds\n\nSources: https://analystledger.github.io/news.html\n\n#retail #earnings #AnalystLedger",
+  "posted_utc": "2026-11-24 12:51"
  }
 ]
