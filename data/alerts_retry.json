@@ -58,5 +58,20 @@
   "id": "a74700a5b02c",
   "reason": "cluster of analyst actions",
   "queued": "2026-11-23"
+ },
+ {
+  "id": "2954c12dfb84",
+  "reason": "downgrade on a major stock",
+  "queued": "2026-11-24"
+ },
+ {
+  "id": "cb2b8b4344ca",
+  "reason": "double upgrade/downgrade",
+  "queued": "2026-11-24"
+ },
+ {
+  "id": "42f77cedb3c7",
+  "reason": "double upgrade/downgrade",
+  "queued": "2026-11-24"
  }
 ]

@@ -1,20 +1,5 @@
 [
  {
-  "id": "2954c12dfb84",
-  "reason": "downgrade on a major stock",
-  "queued": "2026-11-24"
- },
- {
-  "id": "cb2b8b4344ca",
-  "reason": "double upgrade/downgrade",
-  "queued": "2026-11-24"
- },
- {
-  "id": "42f77cedb3c7",
-  "reason": "double upgrade/downgrade",
-  "queued": "2026-11-24"
- },
- {
   "id": "a567becf511d",
   "reason": "double upgrade/downgrade",
   "queued": "2026-11-24"
