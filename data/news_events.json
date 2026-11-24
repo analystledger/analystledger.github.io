@@ -1,5 +1,40 @@
 [
  {
+  "date": "2026-11-24",
+  "ticker": "MU",
+  "company": "Micron Technology",
+  "analyst": "Karl Ackerman",
+  "firm": "BNP Paribas Exane",
+  "rating_from": "Outperform",
+  "rating_to": "Neutral",
+  "pt_from": 1700,
+  "pt_to": 775,
+  "action": "downgrade",
+  "source_url": "https://coinpedia.org/price-analysis/analyst-cuts-micron-stock-price-target-for-12-months-by-over-50/"
+ },
+ {
+  "date": "2026-11-24",
+  "ticker": "INSM",
+  "company": "Insmed",
+  "firm": "BMO Capital",
+  "rating_from": "Outperform",
+  "rating_to": "Market Perform",
+  "pt_to": 175,
+  "action": "downgrade",
+  "source_url": "https://www.investing.com/news/analyst-ratings/insmed-stock-rating-downgraded-by-bmo-capital-after-sanofi-acquisition-deal-93CH-5049008"
+ },
+ {
+  "date": "2026-11-24",
+  "ticker": "UGI",
+  "company": "UGI Corp",
+  "firm": "Jefferies",
+  "rating_from": "Buy",
+  "rating_to": "Hold",
+  "pt_to": 38,
+  "action": "downgrade",
+  "source_url": "https://www.quantisnow.com/insight/ugi-corp-downgraded-by-jefferies-with-a-new-price-target-6804933"
+ },
+ {
   "date": "2026-11-23",
   "ticker": "NVDA",
   "company": "NVIDIA Corp.",
@@ -77,6 +112,466 @@
   "firm": "Piper Sandler",
   "action": "upgrade",
   "source_url": "https://www.cnbc.com/2026/11/23/dollar-general-piper-sandler-upgrade.html"
+ },
+ {
+  "date": "2026-11-23",
+  "ticker": "VRT",
+  "company": "Vertiv Holdings Co",
+  "analyst": "Luke Junk",
+  "firm": "Baird",
+  "rating_from": "Outperform",
+  "rating_to": "Neutral",
+  "pt_from": 320,
+  "pt_to": 200,
+  "price_at_rating": 166.24,
+  "action": "downgrade",
+  "source_url": "https://longbridge.com/en/news/306499352"
+ },
+ {
+  "date": "2026-11-23",
+  "ticker": "CUBE",
+  "company": "CubeSmart",
+  "analyst": "Steve Sakwa",
+  "firm": "Evercore ISI",
+  "rating_from": "Outperform",
+  "rating_to": "In-Line",
+  "pt_from": 45,
+  "pt_to": 45,
+  "price_at_rating": 43.97,
+  "action": "downgrade",
+  "source_url": "https://longbridge.com/en/news/306499352"
+ },
+ {
+  "date": "2026-11-23",
+  "ticker": "LNC",
+  "company": "Lincoln National Corp",
+  "analyst": "Bob Huang",
+  "firm": "Morgan Stanley",
+  "rating_from": "Overweight",
+  "rating_to": "Equal-Weight",
+  "pt_from": 47,
+  "pt_to": 44,
+  "price_at_rating": 39.68,
+  "action": "downgrade",
+  "source_url": "https://longbridge.com/en/news/306499352"
+ },
+ {
+  "date": "2026-11-23",
+  "ticker": "PODD",
+  "company": "Insulet Corp",
+  "analyst": "Matt O'Brien",
+  "firm": "Piper Sandler",
+  "rating_from": "Overweight",
+  "rating_to": "Neutral",
+  "pt_from": 170,
+  "pt_to": 135,
+  "price_at_rating": 133.17,
+  "action": "downgrade",
+  "source_url": "https://longbridge.com/en/news/306499352"
+ },
+ {
+  "date": "2026-11-23",
+  "ticker": "MLCO",
+  "company": "Melco Resorts & Entertainment",
+  "analyst": "Jeffrey Kiang",
+  "firm": "CLSA",
+  "rating_from": "Outperform",
+  "rating_to": "Hold",
+  "pt_from": 5,
+  "pt_to": 4,
+  "price_at_rating": 4.13,
+  "action": "downgrade",
+  "source_url": "https://longbridge.com/en/news/306499352"
+ },
+ {
+  "date": "2026-11-23",
+  "ticker": "ARE",
+  "company": "Alexandria Real Estate",
+  "firm": "Morgan Stanley",
+  "rating_from": "Underweight",
+  "rating_to": "Equal Weight",
+  "action": "upgrade",
+  "source_url": "https://dailytradealert.com/2026/11/23/analyst-upgrades-and-downgrades-for-monday-11-23/"
+ },
+ {
+  "date": "2026-11-23",
+  "ticker": "AVAH",
+  "company": "Aveanna",
+  "firm": "Truist",
+  "rating_from": "Hold",
+  "rating_to": "Buy",
+  "action": "upgrade",
+  "source_url": "https://dailytradealert.com/2026/11/23/analyst-upgrades-and-downgrades-for-monday-11-23/"
+ },
+ {
+  "date": "2026-11-23",
+  "ticker": "CFG",
+  "company": "Citizens Financial",
+  "firm": "Baird",
+  "rating_from": "Neutral",
+  "rating_to": "Outperform",
+  "action": "upgrade",
+  "source_url": "https://dailytradealert.com/2026/11/23/analyst-upgrades-and-downgrades-for-monday-11-23/"
+ },
+ {
+  "date": "2026-11-23",
+  "ticker": "CL",
+  "company": "Colgate-Palmolive",
+  "firm": "Argus",
+  "rating_from": "Hold",
+  "rating_to": "Buy",
+  "action": "upgrade",
+  "source_url": "https://dailytradealert.com/2026/11/23/analyst-upgrades-and-downgrades-for-monday-11-23/"
+ },
+ {
+  "date": "2026-11-23",
+  "ticker": "EVR",
+  "company": "Evercore",
+  "firm": "Morgan Stanley",
+  "rating_from": "Equal Weight",
+  "rating_to": "Overweight",
+  "action": "upgrade",
+  "source_url": "https://dailytradealert.com/2026/11/23/analyst-upgrades-and-downgrades-for-monday-11-23/"
+ },
+ {
+  "date": "2026-11-23",
+  "ticker": "FRO",
+  "company": "Frontline",
+  "firm": "DNB Carnegie",
+  "rating_from": "Hold",
+  "rating_to": "Buy",
+  "action": "upgrade",
+  "source_url": "https://dailytradealert.com/2026/11/23/analyst-upgrades-and-downgrades-for-monday-11-23/"
+ },
+ {
+  "date": "2026-11-23",
+  "ticker": "LAZ",
+  "company": "Lazard",
+  "firm": "Morgan Stanley",
+  "rating_from": "Underweight",
+  "rating_to": "Overweight",
+  "action": "upgrade",
+  "source_url": "https://dailytradealert.com/2026/11/23/analyst-upgrades-and-downgrades-for-monday-11-23/"
+ },
+ {
+  "date": "2026-11-23",
+  "ticker": "MMED",
+  "company": "MiniMed",
+  "firm": "Piper Sandler",
+  "rating_from": "Neutral",
+  "rating_to": "Overweight",
+  "action": "upgrade",
+  "source_url": "https://dailytradealert.com/2026/11/23/analyst-upgrades-and-downgrades-for-monday-11-23/"
+ },
+ {
+  "date": "2026-11-23",
+  "ticker": "PANW",
+  "company": "Palo Alto Networks",
+  "firm": "Phillip Securities",
+  "rating_from": "Neutral",
+  "rating_to": "Buy",
+  "action": "upgrade",
+  "source_url": "https://dailytradealert.com/2026/11/23/analyst-upgrades-and-downgrades-for-monday-11-23/"
+ },
+ {
+  "date": "2026-11-23",
+  "ticker": "PDD",
+  "company": "PDD Holdings",
+  "firm": "Bernstein",
+  "rating_from": "Market Perform",
+  "rating_to": "Outperform",
+  "action": "upgrade",
+  "source_url": "https://dailytradealert.com/2026/11/23/analyst-upgrades-and-downgrades-for-monday-11-23/"
+ },
+ {
+  "date": "2026-11-23",
+  "ticker": "RRR",
+  "company": "Red Rock Resorts",
+  "firm": "Morgan Stanley",
+  "rating_from": "Equal Weight",
+  "rating_to": "Overweight",
+  "action": "upgrade",
+  "source_url": "https://dailytradealert.com/2026/11/23/analyst-upgrades-and-downgrades-for-monday-11-23/"
+ },
+ {
+  "date": "2026-11-23",
+  "ticker": "VIV",
+  "company": "Telefonica Brasil",
+  "firm": "Citi",
+  "rating_from": "Neutral",
+  "rating_to": "Buy",
+  "action": "upgrade",
+  "source_url": "https://dailytradealert.com/2026/11/23/analyst-upgrades-and-downgrades-for-monday-11-23/"
+ },
+ {
+  "date": "2026-11-23",
+  "ticker": "TXN",
+  "company": "Texas Instruments",
+  "firm": "Cantor Fitzgerald",
+  "rating_from": "Neutral",
+  "rating_to": "Overweight",
+  "action": "upgrade",
+  "source_url": "https://dailytradealert.com/2026/11/23/analyst-upgrades-and-downgrades-for-monday-11-23/"
+ },
+ {
+  "date": "2026-11-23",
+  "ticker": "TIMB",
+  "company": "TIM SA",
+  "firm": "Citi",
+  "rating_from": "Neutral",
+  "rating_to": "Buy",
+  "action": "upgrade",
+  "source_url": "https://dailytradealert.com/2026/11/23/analyst-upgrades-and-downgrades-for-monday-11-23/"
+ },
+ {
+  "date": "2026-11-23",
+  "ticker": "TFC",
+  "company": "Truist Financial",
+  "firm": "Baird",
+  "rating_from": "Neutral",
+  "rating_to": "Outperform",
+  "action": "upgrade",
+  "source_url": "https://dailytradealert.com/2026/11/23/analyst-upgrades-and-downgrades-for-monday-11-23/"
+ },
+ {
+  "date": "2026-11-23",
+  "ticker": "ZBH",
+  "company": "Zimmer Biomet",
+  "firm": "Jefferies",
+  "rating_from": "Hold",
+  "rating_to": "Buy",
+  "action": "upgrade",
+  "source_url": "https://dailytradealert.com/2026/11/23/analyst-upgrades-and-downgrades-for-monday-11-23/"
+ },
+ {
+  "date": "2026-11-23",
+  "ticker": "CNO",
+  "company": "CNO Financial",
+  "firm": "Goldman Sachs",
+  "rating_to": "Buy",
+  "action": "initiate",
+  "source_url": "https://dailytradealert.com/2026/11/23/analyst-upgrades-and-downgrades-for-monday-11-23/"
+ },
+ {
+  "date": "2026-11-23",
+  "ticker": "MET",
+  "company": "MetLife",
+  "firm": "Goldman Sachs",
+  "rating_to": "Buy",
+  "action": "initiate",
+  "source_url": "https://dailytradealert.com/2026/11/23/analyst-upgrades-and-downgrades-for-monday-11-23/"
+ },
+ {
+  "date": "2026-11-23",
+  "ticker": "PNFP",
+  "company": "Pinnacle Financial",
+  "firm": "Goldman Sachs",
+  "rating_to": "Buy",
+  "action": "initiate",
+  "source_url": "https://dailytradealert.com/2026/11/23/analyst-upgrades-and-downgrades-for-monday-11-23/"
+ },
+ {
+  "date": "2026-11-23",
+  "ticker": "PRU",
+  "company": "Prudential Financial",
+  "firm": "Goldman Sachs",
+  "rating_to": "Sell",
+  "action": "initiate",
+  "source_url": "https://dailytradealert.com/2026/11/23/analyst-upgrades-and-downgrades-for-monday-11-23/"
+ },
+ {
+  "date": "2026-11-23",
+  "ticker": "QXO",
+  "company": "QXO",
+  "firm": "BTIG",
+  "rating_to": "Buy",
+  "action": "initiate",
+  "source_url": "https://dailytradealert.com/2026/11/23/analyst-upgrades-and-downgrades-for-monday-11-23/"
+ },
+ {
+  "date": "2026-11-23",
+  "ticker": "RXRX",
+  "company": "Recursion Pharmaceuticals",
+  "firm": "Citi",
+  "rating_to": "Buy",
+  "action": "initiate",
+  "source_url": "https://dailytradealert.com/2026/11/23/analyst-upgrades-and-downgrades-for-monday-11-23/"
+ },
+ {
+  "date": "2026-11-23",
+  "ticker": "TOST",
+  "company": "Toast",
+  "firm": "Citizens",
+  "rating_to": "Outperform",
+  "action": "initiate",
+  "source_url": "https://dailytradealert.com/2026/11/23/analyst-upgrades-and-downgrades-for-monday-11-23/"
+ },
+ {
+  "date": "2026-11-23",
+  "ticker": "RDNT",
+  "company": "RadNet",
+  "firm": "Mizuho",
+  "rating_to": "Outperform",
+  "action": "initiate",
+  "source_url": "https://dailytradealert.com/2026/11/23/analyst-upgrades-and-downgrades-for-monday-11-23/"
+ },
+ {
+  "date": "2026-11-23",
+  "ticker": "HBM",
+  "company": "Hudbay Minerals",
+  "firm": "JPMorgan",
+  "rating_to": "Overweight",
+  "action": "initiate",
+  "source_url": "https://dailytradealert.com/2026/11/23/analyst-upgrades-and-downgrades-for-monday-11-23/"
+ },
+ {
+  "date": "2026-11-23",
+  "ticker": "SPCX",
+  "company": "SpaceX",
+  "firm": "Jefferies",
+  "rating_to": "Buy",
+  "action": "initiate",
+  "source_url": "https://dailytradealert.com/2026/11/23/analyst-upgrades-and-downgrades-for-monday-11-23/"
+ },
+ {
+  "date": "2026-11-23",
+  "ticker": "APTV",
+  "company": "Aptiv",
+  "firm": "Baird",
+  "rating_from": "Outperform",
+  "rating_to": "Neutral",
+  "action": "downgrade",
+  "source_url": "https://dailytradealert.com/2026/11/23/analyst-upgrades-and-downgrades-for-monday-11-23/"
+ },
+ {
+  "date": "2026-11-23",
+  "ticker": "BILL",
+  "company": "Bill Holdings",
+  "firm": "Citi",
+  "rating_from": "Buy",
+  "rating_to": "Neutral",
+  "action": "downgrade",
+  "source_url": "https://dailytradealert.com/2026/11/23/analyst-upgrades-and-downgrades-for-monday-11-23/"
+ },
+ {
+  "date": "2026-11-23",
+  "ticker": "BLDR",
+  "company": "Builders FirstSource",
+  "firm": "Texas Capital",
+  "rating_from": "Buy",
+  "rating_to": "Hold",
+  "action": "downgrade",
+  "source_url": "https://dailytradealert.com/2026/11/23/analyst-upgrades-and-downgrades-for-monday-11-23/"
+ },
+ {
+  "date": "2026-11-23",
+  "ticker": "CAPR",
+  "company": "Capricor Therapeutics",
+  "firm": "B. Riley",
+  "rating_from": "Buy",
+  "rating_to": "Neutral",
+  "action": "downgrade",
+  "source_url": "https://dailytradealert.com/2026/11/23/analyst-upgrades-and-downgrades-for-monday-11-23/"
+ },
+ {
+  "date": "2026-11-23",
+  "ticker": "CAPR",
+  "company": "Capricor Therapeutics",
+  "firm": "Piper Sandler",
+  "rating_from": "Overweight",
+  "rating_to": "Underweight",
+  "action": "downgrade",
+  "source_url": "https://dailytradealert.com/2026/11/23/analyst-upgrades-and-downgrades-for-monday-11-23/"
+ },
+ {
+  "date": "2026-11-23",
+  "ticker": "DKNG",
+  "company": "DraftKings",
+  "firm": "Morgan Stanley",
+  "rating_from": "Overweight",
+  "rating_to": "Equal Weight",
+  "action": "downgrade",
+  "source_url": "https://dailytradealert.com/2026/11/23/analyst-upgrades-and-downgrades-for-monday-11-23/"
+ },
+ {
+  "date": "2026-11-23",
+  "ticker": "HLI",
+  "company": "Houlihan Lokey",
+  "firm": "Morgan Stanley",
+  "rating_from": "Overweight",
+  "rating_to": "Equal Weight",
+  "action": "downgrade",
+  "source_url": "https://dailytradealert.com/2026/11/23/analyst-upgrades-and-downgrades-for-monday-11-23/"
+ },
+ {
+  "date": "2026-11-23",
+  "ticker": "IOVA",
+  "company": "Iovance Biotherapeutics",
+  "firm": "Mizuho",
+  "rating_from": "Outperform",
+  "rating_to": "Neutral",
+  "action": "downgrade",
+  "source_url": "https://dailytradealert.com/2026/11/23/analyst-upgrades-and-downgrades-for-monday-11-23/"
+ },
+ {
+  "date": "2026-11-23",
+  "ticker": "JEF",
+  "company": "Jefferies Financial",
+  "firm": "Morgan Stanley",
+  "rating_from": "Equal Weight",
+  "rating_to": "Underweight",
+  "action": "downgrade",
+  "source_url": "https://dailytradealert.com/2026/11/23/analyst-upgrades-and-downgrades-for-monday-11-23/"
+ },
+ {
+  "date": "2026-11-23",
+  "ticker": "MAA",
+  "company": "Mid-America Apartment Communities",
+  "firm": "BMO Capital",
+  "rating_from": "Outperform",
+  "rating_to": "Market Perform",
+  "action": "downgrade",
+  "source_url": "https://dailytradealert.com/2026/11/23/analyst-upgrades-and-downgrades-for-monday-11-23/"
+ },
+ {
+  "date": "2026-11-23",
+  "ticker": "MC",
+  "company": "Moelis",
+  "firm": "Morgan Stanley",
+  "rating_from": "Overweight",
+  "rating_to": "Equal Weight",
+  "action": "downgrade",
+  "source_url": "https://dailytradealert.com/2026/11/23/analyst-upgrades-and-downgrades-for-monday-11-23/"
+ },
+ {
+  "date": "2026-11-23",
+  "ticker": "VVX",
+  "company": "V2X",
+  "firm": "BofA",
+  "rating_from": "Buy",
+  "rating_to": "Underperform",
+  "action": "downgrade",
+  "source_url": "https://dailytradealert.com/2026/11/23/analyst-upgrades-and-downgrades-for-monday-11-23/"
+ },
+ {
+  "date": "2026-11-23",
+  "ticker": "VOD",
+  "company": "Vodafone",
+  "firm": "Citi",
+  "rating_from": "Neutral",
+  "rating_to": "Sell",
+  "action": "downgrade",
+  "source_url": "https://dailytradealert.com/2026/11/23/analyst-upgrades-and-downgrades-for-monday-11-23/"
+ },
+ {
+  "date": "2026-11-23",
+  "ticker": "DIS",
+  "company": "Walt Disney",
+  "firm": "Phillip Securities",
+  "rating_from": "Buy",
+  "rating_to": "Accumulate",
+  "action": "downgrade",
+  "source_url": "https://dailytradealert.com/2026/11/23/analyst-upgrades-and-downgrades-for-monday-11-23/"
  },
  {
   "date": "2026-11-20",
