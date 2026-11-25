@@ -1334,6 +1334,21 @@
    "de": "Broker & Fintech",
    "sq": "Brokerë & fintech",
    "sr": "Brokeri i fintech"
+  },
+  "AI strategies": {
+   "de": "KI-Strategien",
+   "sq": "Strategji AI",
+   "sr": "AI strategije"
+  },
+  "Strategy assistant": {
+   "de": "Strategie-Assistent",
+   "sq": "Asistenti i strategjive",
+   "sr": "Asistent za strategije"
+  },
+  "the strategies trading bots and AI agents use, tested": {
+   "de": "die Strategien von Trading-Bots und KI-Agenten, getestet",
+   "sq": "strategjitë që përdorin botët e tregtimit dhe agjentët AI, të testuara",
+   "sr": "strategije koje koriste trading botovi i AI agenti, testirane"
   }
  },
  "js": {

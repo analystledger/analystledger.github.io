@@ -1,0 +1,182 @@
+{% extends "base.html" %}
+{% block title %}{{ _("Strategy assistant") }}: {{ _("the strategies trading bots and AI agents use, tested") }} | {{ CFG.site_name }}{% endblock %}
+{% block desc %}Free strategy assistant: the strategies run by trading bots and AI agents at Pionex, 3Commas, Composer, eToro, Robinhood and Interactive Brokers, explained in plain English and backtested on ten years of data. Builds safe instructions for your own AI agent. Educational only.{% endblock %}
+{% block body %}
+<style>
+.sa-grid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:18px;align-items:start}
+@media(max-width:860px){.sa-grid{grid-template-columns:1fr}}
+.chat{background:var(--card);border:1px solid var(--line);border-radius:14px;display:flex;flex-direction:column;height:560px}
+.chat-log{flex:1;overflow:auto;padding:14px 14px 4px}
+.msg{max-width:88%;margin:0 0 10px;padding:9px 12px;border-radius:12px;font-size:14.5px;white-space:pre-line;overflow-wrap:anywhere}
+.msg.bot{background:var(--bg);border:1px solid var(--line);border-top-left-radius:4px}
+.msg.me{background:var(--brand);color:#fff;margin-left:auto;border-top-right-radius:4px}
+.chips{display:flex;flex-wrap:wrap;gap:6px;padding:0 14px 10px}
+.chips button{border:1px solid var(--brand);background:#fff;color:var(--brand);border-radius:16px;padding:5px 11px;font-size:13.5px;cursor:pointer}
+.chips button:hover{background:var(--brand);color:#fff}
+.chat form{display:flex;gap:8px;border-top:1px solid var(--line);padding:10px}
+.chat input{flex:1;border:1px solid var(--line);border-radius:8px;padding:9px 10px;font-size:15px}
+.chat form button{background:var(--brand);color:#fff;border:0;border-radius:8px;padding:0 16px;font-weight:600;cursor:pointer}
+.rec{background:#fff;border:1px solid var(--line);border-radius:10px;padding:8px 10px;margin-top:6px}
+.rec b{color:var(--brand)}
+.instr{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px}
+.instr textarea{width:100%;min-height:330px;border:1px solid var(--line);border-radius:8px;padding:10px;font:13px/1.45 ui-monospace,Menlo,Consolas,monospace;box-sizing:border-box}
+.instr .row{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}
+.instr button{background:var(--brand);color:#fff;border:0;border-radius:8px;padding:8px 14px;font-weight:600;cursor:pointer}
+.instr button.ghost{background:#fff;color:var(--brand);border:1px solid var(--brand)}
+.tbl{width:100%;border-collapse:collapse;font-size:14px;background:var(--card)}
+.tbl th,.tbl td{border-bottom:1px solid var(--line);padding:7px 8px;text-align:right;white-space:nowrap}
+.tbl th:first-child,.tbl td:first-child{text-align:left;white-space:normal}
+.tbl thead th{background:var(--bg);position:sticky;top:0}
+.tbl tr.bench td{background:#f2f6ff;font-weight:600}
+.neg{color:var(--down)}.pos{color:var(--up)}
+.tblwrap{overflow:auto;border:1px solid var(--line);border-radius:12px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:14px}
+.scard{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+.scard h3{margin:0 0 4px;font-size:17px}
+.scard .meta{font-size:12.5px;color:var(--muted);margin-bottom:8px}
+.scard dl{margin:0;font-size:14px}.scard dt{font-weight:600;margin-top:6px}.scard dd{margin:0}
+.lvl{display:inline-block;border-radius:10px;padding:0 8px;font-size:12px;font-weight:700}
+.lvl.low{background:#e3f6ec;color:#0a6b3a}.lvl.medium{background:#fff3d6;color:#7a5a00}.lvl.high{background:#fde5e5;color:#a32020}
+.warnbox{background:#fff7e0;border:1px solid #f1d58a;border-radius:12px;padding:12px 16px}
+.nobox{background:#fde9e9;border:1px solid #f2b8b8;border-radius:12px;padding:12px 16px}
+</style>
+
+{% if lang != "en" %}<p class="warn" style="background:#fff7e0;border:1px solid #f1d58a;border-radius:10px;padding:10px 14px">{{ _("This page is available in English only. The English version applies.") }}</p>{% endif %}
+
+<section class="hero small">
+  <h1>{{ _("Strategy assistant") }}</h1>
+  <p>The strategies that trading bots and AI agents run at Pionex, 3Commas, Composer, eToro, Robinhood and Interactive Brokers — explained in plain English, backtested on {{ sb.period or "ten years of data" }}, and turned into safe written instructions you can give your own AI agent. Educational only: this assistant never places trades and does not know your full situation.</p>
+</section>
+
+<div class="sa-grid">
+  <div class="chat" aria-label="Strategy assistant chat">
+    <div class="chat-log" id="log" aria-live="polite"></div>
+    <div class="chips" id="chips"></div>
+    <form id="ask" autocomplete="off"><input id="in" placeholder="Ask about a strategy, e.g. 'what is a grid bot?'" aria-label="Your message"><button>Send</button></form>
+  </div>
+  <div class="instr">
+    <h2 style="margin:0 0 6px;font-size:18px">Instructions for your AI agent</h2>
+    <p style="margin:0 0 8px;color:var(--muted);font-size:14px">Built from your answers. Paste into the agent connected to a <b>separate, small sub-account</b> (IBKR AI Partition, Robinhood agentic account, eToro Agent Portfolio). Paper-trade first.</p>
+    <textarea id="out" readonly placeholder="Answer the questions in the chat and your instructions appear here."></textarea>
+    <div class="row"><button id="copy" type="button">Copy</button><button id="restart" class="ghost" type="button">Start again</button></div>
+  </div>
+</div>
+
+<h2 style="margin-top:28px">How the strategies did</h2>
+<p>Each strategy run on daily, dividend-adjusted prices from {{ sb.period }}: signals use the close and trade at the next close, with 0.05% costs per trade; cash earns the T-bill rate. Options strategies are modelled (option prices estimated from the VIX, adjusted for skew), not real fills. Past results do not predict future ones. Updated {{ sb.updated }}, monthly.</p>
+<div class="tblwrap"><table class="tbl" id="perf">
+<thead><tr><th>Strategy</th><th>Return a year</th><th>Worst fall</th><th>Risk-adjusted (Sharpe)</th><th>2020</th><th>2022</th><th>€10,000 became</th><th>Time in stocks</th><th>Trades a year</th></tr></thead>
+<tbody>
+{% for s in strategies if sb.results and s.id in sb.results and sb.results[s.id].get('cagr_pct') is not none %}{% set r = sb.results[s.id] %}
+<tr><td><a href="#s-{{ s.id }}">{{ s.name }}</a>{% if r.get('modelled') %} <small>(modelled)</small>{% endif %}</td>
+<td class="{{ 'neg' if r.cagr_pct < 0 else '' }}">{{ "%.1f"|format(r.cagr_pct) }}%</td><td class="neg">{{ "%.1f"|format(r.max_drawdown_pct) }}%</td><td>{{ "%.2f"|format(r.sharpe) }}</td>
+<td class="{{ 'neg' if (r.y2020_pct or 0) < 0 else 'pos' }}">{{ "%.1f"|format(r.y2020_pct) }}%</td><td class="{{ 'neg' if (r.y2022_pct or 0) < 0 else 'pos' }}">{{ "%.1f"|format(r.y2022_pct) }}%</td>
+<td>€{{ "{:,}".format(r.final_10k) }}</td><td>{{ (r.get('time_invested_pct') ~ "%") if r.get('time_invested_pct') is not none else "100%" }}</td><td>{{ r.trades_per_year }}</td></tr>
+{% endfor %}
+{% if sb.results and sb.results.buy_hold %}{% set r = sb.results.buy_hold %}<tr class="bench"><td>Benchmark: buy and hold SPY</td><td>{{ "%.1f"|format(r.cagr_pct) }}%</td><td class="neg">{{ "%.1f"|format(r.max_drawdown_pct) }}%</td><td>{{ "%.2f"|format(r.sharpe) }}</td><td>{{ "%.1f"|format(r.y2020_pct) }}%</td><td class="neg">{{ "%.1f"|format(r.y2022_pct) }}%</td><td>€{{ "{:,}".format(r.final_10k) }}</td><td>100%</td><td>0</td></tr>{% endif %}
+</tbody></table></div>
+{% if sb.results and sb.results.dca %}<p style="font-size:14px;color:var(--muted)">Dollar-cost averaging: €1 put in every month for {{ sb.results.dca.months }} months grew to €{{ sb.results.dca.dca_multiple }} per €1, against €{{ sb.results.dca.lump_sum_multiple }} for the same money invested on day one. In a rising market a lump sum usually wins; DCA spreads out the risk of bad timing.</p>{% endif %}
+{% if sb.results and sb.results.buy_hold %}{% set bh = sb.results.buy_hold %}{% set ns = namespace(beat=0, safer=0) %}{% for k, r in sb.results.items() if k != 'buy_hold' and r.get('cagr_pct') is not none %}{% if r.cagr_pct > bh.cagr_pct %}{% set ns.beat = ns.beat + 1 %}{% endif %}{% if r.max_drawdown_pct > bh.max_drawdown_pct * 0.67 %}{% set ns.safer = ns.safer + 1 %}{% endif %}{% endfor %}
+<p class="warnbox"><b>Reading the table:</b> {% if ns.beat == 0 %}no strategy beat simply holding the S&amp;P 500 on return over this period{% else %}{{ ns.beat }} strateg{{ 'y' if ns.beat == 1 else 'ies' }} beat simply holding the S&amp;P 500 on return over this period{% endif %}; {{ ns.safer }} cut the worst fall by a third or more. Bots and AI agents automate rules — they do not remove risk.</p>{% endif %}
+
+<h2 style="margin-top:28px">The strategies</h2>
+<div class="cards">
+{% for s in strategies %}{% set r = sb.results[s.id] if sb.results and s.id in sb.results else none %}
+<article class="scard" id="s-{{ s.id }}">
+  <h3>{{ s.name }}</h3>
+  <div class="meta"><span class="lvl {{ s.risk }}">{{ s.risk }} risk</span> · checks {{ s.freq }}{% if s.options %} · uses options{% endif %}</div>
+  <dl>
+    <dt>Used by</dt><dd>{{ s.platforms }}</dd>
+    <dt>Rules</dt><dd>{{ s.rules }}</dd>
+    <dt>Good for</dt><dd>{{ s.good }}</dd>
+    <dt>Main risk</dt><dd>{{ s.risk_text }}</dd>
+    {% if r and r.get('cagr_pct') is not none %}<dt>Backtest</dt><dd>{{ "%.1f"|format(r.cagr_pct) }}% a year, worst fall {{ "%.1f"|format(r.max_drawdown_pct) }}%{% if r.get('modelled') %} (modelled){% endif %}</dd>{% endif %}
+  </dl>
+</article>
+{% endfor %}
+</div>
+
+<h2 style="margin-top:28px">Left out on purpose</h2>
+<div class="nobox"><ul style="margin:0;padding-left:18px">
+<li><b>Martingale bots</b> (double the stake after every loss): one long losing run empties the account.</li>
+<li><b>Leveraged and inverse ETFs, leveraged grids, margin</b>: losses compound faster than gains; common in high-return Composer symphonies.</li>
+<li><b>Crypto bots and arbitrage</b>: outside this site's stock focus and far more volatile.</li>
+</ul></div>
+
+<h2 style="margin-top:28px">Where you can run a strategy with an AI agent</h2>
+<ul>
+<li><b>Interactive Brokers</b> — Autonomous Trading lets a connected AI trade inside a separate, funded "AI Partition" (<a href="https://www.nasdaq.com/press-release/interactive-brokers-introduces-autonomous-trading-2026-10-21" rel="noopener">press release, 21 Oct 2026</a>). See also <a href="start.html">opening an account</a>.</li>
+<li><b>Robinhood</b> — Agentic Trading through a dedicated account that only holds what you deposit (<a href="https://www.investmentnews.com/fintech/robinhood-just-made-a-bold-move-into-ai-powered-trading-for-the-retail-market/266771" rel="noopener">InvestmentNews</a>).</li>
+<li><b>eToro</b> — Agent Portfolios: a funded sub-portfolio connected to your agent with a scoped API key (<a href="https://www.etoro.com/news-and-analysis/etoro-updates/agent-portfolios-let-your-ai-agent-trade-for-you/" rel="noopener">eToro</a>).</li>
+<li><b>Composer</b> — ready-made and AI-built "symphonies" that trade automatically (<a href="https://help.composer.trade/article/254-what-is-trade-with-ai" rel="noopener">Composer help</a>).</li>
+</ul>
+<p style="font-size:14px;color:var(--muted)">Bot strategy sources: <a href="https://www.unite.ai/?p=356778" rel="noopener">Pionex bot suite (Unite.AI)</a>, <a href="https://www.daytrading.com/3commas" rel="noopener">3Commas review (DayTrading.com)</a>, Composer symphony pages, eToro Agent Portfolios. {{ CFG.disclaimer }}</p>
+
+<script>
+(function(){
+var S={{ strategies|tojson }}, R={{ (sb.results or {})|tojson }};
+var log=document.getElementById('log'),chips=document.getElementById('chips'),out=document.getElementById('out'),inp=document.getElementById('in');
+var st={step:0,a:{}};
+function el(t,c,h){var e=document.createElement(t);if(c)e.className=c;if(h!=null)e.textContent=h;return e}
+function bot(text,extra){var m=el('div','msg bot',text);if(extra)m.appendChild(extra);log.appendChild(m);log.scrollTop=log.scrollHeight}
+function me(text){log.appendChild(el('div','msg me',text));log.scrollTop=log.scrollHeight}
+function setChips(list){chips.innerHTML='';list.forEach(function(c){var b=el('button',null,c[0]);b.type='button';b.onclick=function(){me(c[0]);c[1]()};chips.appendChild(b)})}
+function fmt(r){if(!r||r.cagr_pct==null)return '';return ' Backtest: '+r.cagr_pct.toFixed(1)+'% a year, worst fall '+r.max_drawdown_pct.toFixed(1)+'%'+(r.modelled?' (modelled)':'')+'.'}
+var Q=[
+ {k:'goal',q:'What do you want the strategy to do?',o:[['Grow money long term','growth'],['Earn regular income','income'],['Protect against crashes','protect'],['Save a fixed amount monthly','save']]},
+ {k:'risk',q:'How much up-and-down can you live with?',o:[['Low — sleep well','low'],['Medium — some swings','medium'],['High — big swings','high']]},
+ {k:'freq',q:'How often can the strategy act?',o:[['Monthly','monthly'],['Weekly','weekly'],['Daily','daily']]},
+ {k:'opt',q:'Do you have options trading permission and experience?',o:[['Yes','yes'],['No','no']]},
+ {k:'cap',q:'Roughly how much would you put in the agent\'s sub-account? Type a number in euros (e.g. 5000).',o:null}
+];
+function ask(){var x=Q[st.step];if(!x){return recommend()}
+ bot(x.q);if(x.o){setChips(x.o.map(function(o){return [o[0],function(){st.a[x.k]=o[1];st.step++;ask()}]}))}else{setChips([['1000',function(){answerCap('1000')}],['5000',function(){answerCap('5000')}],['20000',function(){answerCap('20000')}]])}}
+function answerCap(v){var n=parseFloat(String(v).replace(/[^0-9.]/g,''));if(!(n>0)){bot('Please type a number, for example 5000.');return}st.a.cap=n;st.step++;ask()}
+var RANK={low:0,medium:1,high:2},FREQ={monthly:0,weekly:1,daily:2};
+function score(s){var a=st.a,p=0;
+ if(s.goal.indexOf(a.goal)>=0)p+=4; if(RANK[s.risk]<=RANK[a.risk])p+=2; else p-=4;
+ if(FREQ[s.freq]<=FREQ[a.freq])p+=1; else p-=2;
+ if(s.options&&a.opt!=='yes')p-=10; if(s.options&&a.cap<5000)p-=6;
+ var r=R[s.id]; if(r&&r.sharpe!=null)p+=r.sharpe;
+ if(s.id==='drawdown_alert')p-=1.5; return p}
+function recommend(){var list=S.slice().sort(function(x,y){return score(y)-score(x)}).slice(0,3);st.recs=list;
+ var box=document.createElement('div');
+ list.forEach(function(s,i){var d=el('div','rec');var b=el('b',null,(i+1)+'. '+s.name);d.appendChild(b);d.appendChild(el('div',null,s.rules+fmt(R[s.id])));d.appendChild(el('div',null,'Main risk: '+s.risk_text));box.appendChild(d)});
+ bot('Based on your answers, these fit best:',box);
+ if(st.a.opt==='yes'&&st.a.cap<5000)bot('Note: options strategies need 100 shares (or the cash to buy them). With under €5,000 that means a low-priced ETF, so they are ranked lower.');
+ bot('Pick one and I will write the instructions for your AI agent on the right.');
+ setChips(list.map(function(s){return [s.name,function(){build(s)}]}).concat([['Start again',restart]]));}
+function pct(v){return (v*100).toFixed(1)+'%'}
+function build(s){var a=st.a,cap=a.cap,riskPct=a.risk==='low'?0.01:0.02,maxLoss=Math.round(cap*riskPct);
+ var lines=[
+ 'ROLE: You are my trading agent. You only act inside the separate sub-account I funded for you (about €'+cap.toLocaleString()+'). Never touch my other accounts.',
+ '','STRATEGY: '+s.name,'RULES: '+s.rules,'INSTRUMENTS: '+s.universe,'SCHEDULE: check '+s.freq+'; act only on closing prices unless I say otherwise.','',
+ 'GUARDRAILS (always apply, they override the strategy):',
+ '- No margin, no leverage, no short selling, no leveraged or inverse ETFs, no crypto.',
+ '- Maximum loss I accept per position: '+pct(riskPct)+' of the sub-account (about €'+maxLoss.toLocaleString()+'). Size every new position so that this limit is respected, and use limit orders.',
+ s.options?'- Options: only covered calls or cash-secured puts, fully covered; take profit by buying back at 50% of the premium; never hold a new short option through earnings, a Fed (FOMC) decision or a merger vote.':'- Do not open new positions on days with a Fed (FOMC) decision or when a holding reports earnings.',
+ '- If the sub-account falls 3% in a day or 10% from its peak, stop trading and send me a summary.',
+ '- If a rule is unclear or data is missing, do nothing and ask me.','',
+ 'REPORTING: after every action, log the date, order, price, the rule that triggered it and the account value. Send me a weekly summary.','',
+ 'START: paper-trade (simulate) for the first 4 weeks and report what you would have done. Do not place real orders until I confirm in writing.'];
+ out.value=lines.join('\n');bot('Done — the instructions for "'+s.name+'" are on the right. Copy them into your agent. Remember: educational example, not advice; you stay responsible for every trade.');
+ setChips(st.recs.map(function(x){return [x.name,function(){build(x)}]}).concat([['Start again',restart]]));}
+function answerFree(t){var q=t.toLowerCase();
+ if(st.step===4&&/\d/.test(q)){answerCap(q);return}
+ var words=q.split(/[^a-z0-9]+/).filter(function(w){return w.length>2});
+ var best=null,bs=0;S.forEach(function(s){var hay=(s.keywords+' '+s.name).toLowerCase(),sc=0;words.forEach(function(w){if(hay.indexOf(w)>=0)sc++});if(sc>bs){bs=sc;best=s}});
+ if(/advice|should i buy|guarantee|sure win|best stock/.test(q)){bot('I can\'t tell you what to buy or promise results. I can explain how a strategy works and how it behaved in the past, and help you write rules with safety limits.');return}
+ if(/sharpe/.test(q)){bot('Sharpe ratio = return above cash divided by how much the strategy swings. Above 0.5 is decent, above 1 is very good over long periods.');return}
+ if(/drawdown|worst fall/.test(q)){bot('The worst fall (maximum drawdown) is the biggest drop from a peak to a later low. It shows the pain you must sit through.');return}
+ if(/sigma|1 sigma/.test(q)){bot('One sigma is one standard deviation of price moves — the "normal" range. About two weeks in three stay within ±1 sigma; real markets have more extreme weeks than the bell curve. See the backtest page for SPY and QQQ.');return}
+ if(best&&bs>0){bot(best.name+' — '+best.rules+fmt(R[best.id])+'\nUsed by: '+best.platforms+'.\nMain risk: '+best.risk_text);setChips([['Write instructions for this',function(){if(st.a.cap){build(best)}else{st.pending=best;bot('First a few questions so the limits fit you.');ask()}}],['Start the questions',restart]]);return}
+ bot('I don\'t know that one yet. Try: grid bot, DCA, momentum, trend filter, RSI, VIX switch, covered call, cash-secured put — or press "Start again".');}
+function restart(){st={step:0,a:{}};log.innerHTML='';out.value='';
+ bot('Hi! I explain the strategies trading bots and AI agents use, show how they did in ten years of tests, and write safe instructions for your own AI agent. I never place trades or give personal advice. Five quick questions:');ask()}
+document.getElementById('ask').onsubmit=function(e){e.preventDefault();var t=inp.value.trim();if(!t)return;me(t);inp.value='';answerFree(t)};
+document.getElementById('copy').onclick=function(){if(!out.value)return;out.select();try{navigator.clipboard.writeText(out.value)}catch(e){document.execCommand('copy')}this.textContent='Copied';var b=this;setTimeout(function(){b.textContent='Copy'},1500)};
+document.getElementById('restart').onclick=restart;
+restart();
+})();
+</script>
+{% endblock %}
