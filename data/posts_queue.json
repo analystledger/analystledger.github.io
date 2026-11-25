@@ -305,7 +305,7 @@
  },
  {
   "id": "feature-ai-strategy-assistant-2026-11-25",
-  "status": "pending",
+  "status": "posted",
   "kicker": "New on Analyst Ledger",
   "title": "Bot and AI-agent strategies, tested",
   "card_lines": [
@@ -314,6 +314,7 @@
    "Builds safe instructions for your own AI agent"
   ],
   "short": "New: a free strategy assistant. 13 strategies trading bots and AI agents run (grid, DCA, momentum, trend, VIX switch, covered calls), tested 2016–2026. None beat buy-and-hold SPY on return; 5 cut the worst fall by a third. https://analystledger.github.io/strategies.html",
-  "long": "New on Analyst Ledger: a free strategy assistant.\n\nIt explains 13 strategies that trading bots and AI agents run at Pionex, 3Commas, Composer, eToro, Robinhood and Interactive Brokers — grid bots, DCA, rebalancing, momentum rotation, trend filters, RSI dip-buying, a VIX switch, crash breakers, covered calls and cash-secured puts — and shows how each did from 2016 to 2026.\n\nThe headline: none beat simply holding the S&P 500 on return; five cut the worst fall by a third or more.\n\nAnswer five questions and it writes instructions with safety limits for your own AI agent. Educational only — it never places trades.\n\nhttps://analystledger.github.io/strategies.html\n\n#investing #AI #trading"
+  "long": "New on Analyst Ledger: a free strategy assistant.\n\nIt explains 13 strategies that trading bots and AI agents run at Pionex, 3Commas, Composer, eToro, Robinhood and Interactive Brokers — grid bots, DCA, rebalancing, momentum rotation, trend filters, RSI dip-buying, a VIX switch, crash breakers, covered calls and cash-secured puts — and shows how each did from 2016 to 2026.\n\nThe headline: none beat simply holding the S&P 500 on return; five cut the worst fall by a third or more.\n\nAnswer five questions and it writes instructions with safety limits for your own AI agent. Educational only — it never places trades.\n\nhttps://analystledger.github.io/strategies.html\n\n#investing #AI #trading",
+  "posted_utc": "2026-11-25 12:56"
  }
 ]
