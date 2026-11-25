@@ -291,7 +291,7 @@
  },
  {
   "id": "news-dell-q3-ai-backlog-raises-fy27-2026-11-24",
-  "status": "pending",
+  "status": "posted",
   "kicker": "Market news",
   "title": "Dell doubles revenue, AI backlog $132B",
   "card_lines": [
@@ -300,6 +300,7 @@
    "FY27 revenue guide raised to $202B; $25B buyback"
   ],
   "short": "$DELL Q3 revenue doubled to a record $54.9B vs ~$49.3B expected; AI backlog hit $132.3B and FY27 guide rose to $202B, though AI server margins stay thin. https://analystledger.github.io/news.html #stocks #AI",
-  "long": "Dell's quarter is the latest test of AI infrastructure demand after a sharp chip selloff, and the order book points to more growth while margins stay the open question.\n\n• Q3 revenue $54.9B, up 103% and above ~$49.3B consensus; adjusted EPS $9.45 vs $6.59 expected\n• AI-optimized server sales $22.0B (+291%), orders $60.2B, record $132.3B backlog\n• FY27 revenue forecast raised to $202B from $192B; new $25B buyback authorization\n\nSources: https://analystledger.github.io/news.html\n\n#stocks #AI #AnalystLedger"
+  "long": "Dell's quarter is the latest test of AI infrastructure demand after a sharp chip selloff, and the order book points to more growth while margins stay the open question.\n\n• Q3 revenue $54.9B, up 103% and above ~$49.3B consensus; adjusted EPS $9.45 vs $6.59 expected\n• AI-optimized server sales $22.0B (+291%), orders $60.2B, record $132.3B backlog\n• FY27 revenue forecast raised to $202B from $192B; new $25B buyback authorization\n\nSources: https://analystledger.github.io/news.html\n\n#stocks #AI #AnalystLedger",
+  "posted_utc": "2026-11-25 12:49"
  }
 ]
