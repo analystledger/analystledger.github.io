@@ -1,5 +1,41 @@
 [
  {
+  "id": "brokers-ai-agent-trading-race-2026-11-25",
+  "date": "2026-11-25 12:45 UTC",
+  "impact": "medium",
+  "category": "Brokers & fintech",
+  "headline": "Brokers race to let AI agents trade for clients: Interactive Brokers, Robinhood and eToro all go live",
+  "summary": "Interactive Brokers launched IBKR Autonomous Trading on 21 October 2026: eligible clients can authorise a connected AI to scan more than 75,000 listed stocks, options and ETFs and submit supported orders without approving each one, inside a separate 'AI Partition' funded from their main account. Robinhood rolled out non-technical AI trading agents to its roughly 29 million users at its HOOD Summit on 29 September, and eToro launched connectors for Claude, ChatGPT and Grok on 8 October; in its 10 November Q3 results eToro said users engaged in API and agentic trading rose 250% from Q2 (secondary source).",
+  "why": "Agent trading could lift trading volumes and client activity — the main revenue drivers for IBKR, HOOD and ETOR — but liability for agent mistakes is still unsettled and FINRA has flagged autonomous agents as needing new supervision. All three firms ring-fence the agent in a separate sub-account with its own funding limit, which caps losses but not the risk of a bad strategy.",
+  "tickers": [
+   "IBKR",
+   "HOOD",
+   "ETOR"
+  ],
+  "sources": [
+   {
+    "name": "Interactive Brokers press release (Business Wire via Nasdaq), 21 Oct 2026",
+    "url": "https://www.nasdaq.com/press-release/interactive-brokers-introduces-autonomous-trading-2026-10-21"
+   },
+   {
+    "name": "Fortune, 29 Sep 2026",
+    "url": "https://fortune.com/2026/09/29/robinhood-trading-agents-hood-openai-anthropic/"
+   },
+   {
+    "name": "eToro press release, 8 Oct 2026",
+    "url": "https://www.etoro.com/news-and-analysis/press-releases/your-ai-already-runs-your-day-now-it-knows-your-portfolio/"
+   },
+   {
+    "name": "The TRADE",
+    "url": "https://www.thetradenews.com/interactive-brokers-rolls-out-autonomous-ai-trading/"
+   },
+   {
+    "name": "FourWeekMBA (secondary source, eToro Q3 figures)",
+    "url": "https://fourweekmba.com/ai-etoro-opens-to-claude-and-chatgpt-agents-sets-250m-buyback/"
+   }
+  ]
+ },
+ {
   "id": "adi-q4-beat-guide-capex-selloff-2026-11-24",
   "date": "2026-11-24 12:01 UTC",
   "impact": "high",

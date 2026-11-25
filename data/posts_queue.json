@@ -273,5 +273,18 @@
   "short": "A day after a ~31% jump, $NVDA fell ~7-9% Tuesday as $AMD (~-9%) and $MU (-10%+) also slid; the Nasdaq dropped ~2% while the Dow rose on a rotation to defensives. https://analystledger.github.io/news.html #stocks #AI",
   "long": "The AI hardware trade swung sharply in reverse on Tuesday, one session after its biggest rally in months.\n\n• $NVDA fell roughly 7-9% after jumping about 31% Monday on Jensen Huang's reinstatement as CEO\n• $AMD lost about 9%; $MU and SK Hynix dropped more than 10%; storage names fell 5%+\n• Nasdaq was down about 1.5-2% while the Dow gained as money moved into healthcare and retail\n\nSources: https://analystledger.github.io/news.html\n\n#stocks #AI #AnalystLedger",
   "posted_utc": "2026-11-24 20:48"
+ },
+ {
+  "id": "news-brokers-ai-agent-trading-race-2026-11-25",
+  "status": "pending",
+  "kicker": "Market news",
+  "title": "Brokers let AI agents trade for clients",
+  "card_lines": [
+   "$IBKR: Autonomous Trading, 75,000+ instruments",
+   "$HOOD: AI trading agents for ~29M users",
+   "$ETOR: Claude, ChatGPT and Grok connectors"
+  ],
+  "short": "AI agents can now trade for clients at $IBKR (Autonomous Trading, 21 Oct), $HOOD (29M users) and $ETOR (Claude/ChatGPT/Grok connectors). Each ring-fences the agent in a sub-account. https://analystledger.github.io/news.html #AI #stocks",
+  "long": "Brokers are racing to let AI agents trade on clients' behalf.\n\n• Interactive Brokers ($IBKR) launched IBKR Autonomous Trading on 21 Oct: eligible clients let a connected AI scan 75,000+ stocks, options and ETFs and place orders inside a separate funded 'AI Partition'.\n• Robinhood ($HOOD) rolled out AI trading agents to about 29 million users on 29 Sep (Fortune).\n• eToro ($ETOR) added Claude, ChatGPT and Grok connectors on 8 Oct.\n\nWhy it matters: more trading activity could lift broker revenue, but liability for agent errors is still unsettled.\n\nSources: https://analystledger.github.io/news.html\n\n#AI #stocks #fintech"
  }
 ]
