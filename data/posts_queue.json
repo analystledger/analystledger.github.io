@@ -59,7 +59,7 @@
  },
  {
   "id": "video-lesson-02",
-  "status": "pending",
+  "status": "posted",
   "not_before": "2026-11-25T12:00:00+00:00",
   "kicker": "Options lesson 2/8",
   "title": "Covered calls",
@@ -70,7 +70,8 @@
   ],
   "short": "Options lesson 2/8: Covered calls. Earn income on shares you own — and accept a cap on the upside.\n▶ https://youtube.com/shorts/5tuI9HNyRWQ\nhttps://analystledger.github.io/learn.html#covered-call\n#options #investing",
   "long": "Options lesson 2 of 8: Covered calls\n\nEarn income on shares you own — and accept a cap on the upside.\n\n▶ Watch the 1-minute video: https://youtube.com/shorts/5tuI9HNyRWQ\n📖 Full lesson, free: https://analystledger.github.io/learn.html#covered-call\n\nAll lessons: https://www.youtube.com/@AnalystLedger\n\n#options #investing #AnalystLedger",
-  "video": "videos/lesson-02.mp4"
+  "video": "videos/lesson-02.mp4",
+  "posted_utc": "2026-11-25 12:44"
  },
  {
   "id": "video-lesson-03",
@@ -276,7 +277,7 @@
  },
  {
   "id": "news-brokers-ai-agent-trading-race-2026-11-25",
-  "status": "pending",
+  "status": "posted",
   "kicker": "Market news",
   "title": "Brokers let AI agents trade for clients",
   "card_lines": [
@@ -285,6 +286,7 @@
    "$ETOR: Claude, ChatGPT and Grok connectors"
   ],
   "short": "AI agents can now trade for clients at $IBKR (Autonomous Trading, 21 Oct), $HOOD (29M users) and $ETOR (Claude/ChatGPT/Grok connectors). Each ring-fences the agent in a sub-account. https://analystledger.github.io/news.html #AI #stocks",
-  "long": "Brokers are racing to let AI agents trade on clients' behalf.\n\n• Interactive Brokers ($IBKR) launched IBKR Autonomous Trading on 21 Oct: eligible clients let a connected AI scan 75,000+ stocks, options and ETFs and place orders inside a separate funded 'AI Partition'.\n• Robinhood ($HOOD) rolled out AI trading agents to about 29 million users on 29 Sep (Fortune).\n• eToro ($ETOR) added Claude, ChatGPT and Grok connectors on 8 Oct.\n\nWhy it matters: more trading activity could lift broker revenue, but liability for agent errors is still unsettled.\n\nSources: https://analystledger.github.io/news.html\n\n#AI #stocks #fintech"
+  "long": "Brokers are racing to let AI agents trade on clients' behalf.\n\n• Interactive Brokers ($IBKR) launched IBKR Autonomous Trading on 21 Oct: eligible clients let a connected AI scan 75,000+ stocks, options and ETFs and place orders inside a separate funded 'AI Partition'.\n• Robinhood ($HOOD) rolled out AI trading agents to about 29 million users on 29 Sep (Fortune).\n• eToro ($ETOR) added Claude, ChatGPT and Grok connectors on 8 Oct.\n\nWhy it matters: more trading activity could lift broker revenue, but liability for agent errors is still unsettled.\n\nSources: https://analystledger.github.io/news.html\n\n#AI #stocks #fintech",
+  "posted_utc": "2026-11-25 12:44"
  }
 ]
