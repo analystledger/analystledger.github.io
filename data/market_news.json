@@ -1,5 +1,107 @@
 [
  {
+  "id": "macro-pce-core-3-3-gdp-4-3-fed-hike-2026-11-25",
+  "date": "2026-11-25 13:30 UTC",
+  "impact": "high",
+  "category": "Macro & Fed",
+  "headline": "Core PCE climbs to 3.3% and GDP is revised up to 4.3%, locking in December hike bets",
+  "summary": "The Fed's preferred inflation gauge rose 0.3% in October for a 3.8% annual rate, up from 3.6% in September, while core PCE also rose 0.3% on the month and accelerated to 3.3% from 3.1%; separately, third-quarter GDP growth was revised up to a 4.3% annualized pace from 3.4% and initial jobless claims fell to 189,000. Futures pricing now points to a quarter-point Fed hike at the December 8-9 meeting and another in January, and the data fed a chip-led rout that took the Nasdaq Composite down nearly 4% by late morning before it pared most of the drop in the afternoon as the Dow turned positive.",
+  "why": "Firm inflation with faster growth strengthens the case for further tightening, which weighs most on long-duration tech and AI names such as Nvidia, AMD, Micron and Broadcom that led Wednesday's slide. It remains unclear how far the Fed will go: Governor Waller has floated a half-point move, and the November jobs and CPI reports still come before the December decision.",
+  "tickers": [
+   "NVDA",
+   "AMD",
+   "MU",
+   "AVGO"
+  ],
+  "sources": [
+   {
+    "name": "Reuters via WTVB",
+    "url": "https://wtvbam.com/2026/11/25/us-inflation-rises-further-in-october/"
+   },
+   {
+    "name": "Yahoo Finance",
+    "url": "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-november-25-dow-sp-500-nasdaq-pce-inflation-data-091428237.html"
+   },
+   {
+    "name": "Motley Fool",
+    "url": "https://www.fool.com/coverage/stock-market-today/2026/11/25/stock-market-midday-nov-25-nasdaq-plunges-4-as-ai-sell-off-deepens-and-inflation-remains-stubborn/"
+   }
+  ]
+ },
+ {
+  "id": "ustr-section-301-tariffs-14-economies-2026-11-25",
+  "date": "2026-11-25 13:15 UTC",
+  "impact": "high",
+  "category": "Regulation & legal",
+  "headline": "USTR proposes Section 301 tariffs on 14 economies, from 15% on the EU to 35% on Vietnam",
+  "summary": "The US Trade Representative proposed new tariffs on 14 of 16 economies probed for structural excess manufacturing capacity, including up to 20% on China, 15% on the EU, up to 15% on Japan, South Korea and Taiwan, up to 25% on India and up to 35% on Vietnam, with lower rates offered to some partners that conclude trade agreements and no action yet on Mexico and Norway. Comments are due January 5 and hearings start January 25, so final duties are unlikely before late January; the move is widely seen as rebuilding the tariffs lost when the Supreme Court struck down the IEEPA levies in February.",
+  "why": "Importers and companies with Asian supply chains, from apparel and footwear retailers to electronics makers, face renewed cost uncertainty just as markets digest firmer inflation. Key open questions are how the net-of-existing-duties formula will be calculated, whether goods covered by Section 232 stay exempt, and how the proposal interacts with the US-China truce expiring January 10.",
+  "tickers": [
+   "NKE",
+   "AAPL",
+   "WMT",
+   "TGT"
+  ],
+  "sources": [
+   {
+    "name": "Reuters via Investing.com",
+    "url": "https://www.investing.com/news/world-news/us-proposes-new-tariffs-on-14-trading-partners-to-fight-excess-factory-capacity-5050714"
+   },
+   {
+    "name": "Baker McKenzie",
+    "url": "https://globalimportblog.bakermckenzie.com/2026/11/25/us-ustr-proposes-section-301-tariffs-on-14-economies-over-structural-excess-capacity/"
+   },
+   {
+    "name": "Husch Blackwell",
+    "url": "https://www.internationaltradeinsights.com/2026/11/ustr-announces-proposed-section-301-excess-capacity-tariffs-on-fourteen-economies/"
+   }
+  ]
+ },
+ {
+  "id": "ntnx-q1-beat-ceo-exit-soft-guide-2026-11-24",
+  "date": "2026-11-24 21:05 UTC",
+  "impact": "medium",
+  "category": "Leadership",
+  "headline": "Nutanix beats on Q1 but CEO Ramaswami's exit and a light outlook sink shares 18%",
+  "summary": "Nutanix's fiscal first-quarter revenue rose 15% to $772.4 million, ahead of the roughly $762.7 million Wall Street expected, and adjusted EPS of $0.73 topped the $0.61 consensus. CEO Rajiv Ramaswami will step down after six years once a successor is found, while the full-year revenue forecast of $3.18-3.23 billion has a midpoint below the $3.22 billion analysts expected; shares fell about 8% after hours and were down nearly 18% in Wednesday's regular session.",
+  "why": "The reaction shows investors in infrastructure software punishing even clean beats when guidance and leadership are in flux, a read-through for hybrid-cloud peers such as VMware owner Broadcom and Pure Storage. The main uncertainty is who succeeds Ramaswami and whether hardware and memory cost pressure on customers keeps weighing on the outlook.",
+  "tickers": [
+   "NTNX"
+  ],
+  "sources": [
+   {
+    "name": "SiliconANGLE",
+    "url": "https://siliconangle.com/2026/11/24/rajiv-ramaswami-to-step-down-as-nutanix-begins-hunt-for-its-next-ceo/"
+   },
+   {
+    "name": "StockTitan",
+    "url": "https://www.stocktitan.net/articles/stock-market-today-live-november-25-2026"
+   }
+  ]
+ },
+ {
+  "id": "amba-q4-guide-memory-shortage-2026-11-24",
+  "date": "2026-11-24 21:05 UTC",
+  "impact": "medium",
+  "category": "Earnings",
+  "headline": "Ambarella sees Q4 revenue falling about 37% from Q3 as memory shortage hits customers",
+  "summary": "Ambarella's fiscal third-quarter revenue rose 6.2% to $115.2 million, at the low end of its own $115-124 million guidance, with non-GAAP EPS of $0.28 versus $0.27 a year earlier. The chipmaker forecast fourth-quarter revenue of just $70-75 million, citing a sharp rise in memory prices and scarce supply that is leading customers to cut their outlooks, and the stock fell about 20% in Wednesday's session.",
+  "why": "The warning is a concrete example of the memory squeeze spilling into edge-AI and consumer device chips, relevant for camera, IoT and automotive suppliers that also lean on DRAM-heavy designs. It is unclear whether the lost revenue is deferred until memory supply normalizes or permanently lost, and how long elevated memory prices will last.",
+  "tickers": [
+   "AMBA"
+  ],
+  "sources": [
+   {
+    "name": "Ambarella press release",
+    "url": "https://investor.ambarella.com/news-releases/news-release-details/ambarella-inc-announces-third-quarter-fiscal-year-2027-financial"
+   },
+   {
+    "name": "Motley Fool",
+    "url": "https://www.fool.com/coverage/stock-market-today/2026/11/25/stock-market-midday-nov-25-nasdaq-plunges-4-as-ai-sell-off-deepens-and-inflation-remains-stubborn/"
+   }
+  ]
+ },
+ {
   "id": "dell-q3-ai-backlog-raises-fy27-2026-11-24",
   "date": "2026-11-24 21:05 UTC",
   "impact": "high",

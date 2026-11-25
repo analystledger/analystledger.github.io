@@ -316,5 +316,31 @@
   "short": "New: a free strategy assistant. 13 strategies trading bots and AI agents run (grid, DCA, momentum, trend, VIX switch, covered calls), tested 2016–2026. None beat buy-and-hold SPY on return; 5 cut the worst fall by a third. https://analystledger.github.io/strategies.html",
   "long": "New on Analyst Ledger: a free strategy assistant.\n\nIt explains 13 strategies that trading bots and AI agents run at Pionex, 3Commas, Composer, eToro, Robinhood and Interactive Brokers — grid bots, DCA, rebalancing, momentum rotation, trend filters, RSI dip-buying, a VIX switch, crash breakers, covered calls and cash-secured puts — and shows how each did from 2016 to 2026.\n\nThe headline: none beat simply holding the S&P 500 on return; five cut the worst fall by a third or more.\n\nAnswer five questions and it writes instructions with safety limits for your own AI agent. Educational only — it never places trades.\n\nhttps://analystledger.github.io/strategies.html\n\n#investing #AI #trading",
   "posted_utc": "2026-11-25 12:56"
+ },
+ {
+  "id": "news-macro-pce-core-3-3-gdp-4-3-fed-hike-2026-11-25",
+  "status": "pending",
+  "kicker": "Market news",
+  "title": "Core PCE 3.3%, GDP 4.3%: hike bets firm",
+  "card_lines": [
+   "Oct PCE 3.8% YoY; core 3.3%, up from 3.1%",
+   "Q3 GDP revised up to 4.3% from 3.4%",
+   "Nasdaq fell ~4% intraday; $NVDA $AMD led drop"
+  ],
+  "short": "Core PCE accelerated to 3.3% in October and Q3 GDP was revised up to 4.3%, cementing bets on a December Fed hike; the Nasdaq fell nearly 4% before paring losses. https://analystledger.github.io/news.html #stocks #Fed",
+  "long": "Hotter inflation and faster growth landed together on Wednesday, strengthening the case for another Fed hike and fueling a chip-led selloff that later faded.\n\n• October PCE up 3.8% YoY; core PCE 3.3%, up from 3.1%\n• Q3 GDP revised to 4.3% annualized from 3.4%; jobless claims 189,000\n• Futures price a quarter-point hike at the Dec 8-9 meeting; $NVDA $AMD $MU led a Nasdaq drop of nearly 4% before a rebound\n\nSources: https://analystledger.github.io/news.html\n\n#stocks #Fed #AnalystLedger"
+ },
+ {
+  "id": "news-ustr-section-301-tariffs-14-economies-2026-11-25",
+  "status": "pending",
+  "kicker": "Market news",
+  "title": "US proposes tariffs on 14 economies",
+  "card_lines": [
+   "Up to 20% on China, 15% on EU under Section 301",
+   "Vietnam up to 35%, India up to 25%",
+   "Comments due Jan 5; hearings from Jan 25"
+  ],
+  "short": "USTR proposed Section 301 tariffs on 14 economies, from 15% on the EU to up to 35% on Vietnam, with hearings set for late January; Mexico and Norway spared for now. https://analystledger.github.io/news.html #tariffs #stocks",
+  "long": "Washington moved to rebuild its global tariff wall after the Supreme Court struck down the IEEPA levies, raising cost questions for import-heavy companies.\n\n• Proposed rates: up to 20% on China, 15% on the EU, up to 15% on Japan, Korea and Taiwan\n• Vietnam faces up to 35% and India up to 25%, lower if trade deals are reached\n• Comments due Jan 5, hearings from Jan 25; no action yet on Mexico and Norway\n\nSources: https://analystledger.github.io/news.html\n\n#tariffs #stocks #AnalystLedger"
  }
 ]
