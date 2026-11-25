@@ -1,16 +1,16 @@
 {
- "updated_utc": "2026-11-25 21:50 UTC",
+ "updated_utc": "2026-11-25 22:02 UTC",
  "total_events": 364,
- "new_events": 57,
+ "new_events": 0,
  "log": [
   "FMP: no FMP_API_KEY set - skipped",
   "Finnhub: no FINNHUB_API_KEY set - skipped",
   "News (Claude): 364 events",
   "Prices (Stooq): first 5 tickers failed - skipping price update this run",
   "Prices (Stooq): 0 tickers updated, 0 rating prices filled, 5 failed",
-  "  ACRE: HTTP 200 '<!DOCTYPE html><html><head><meta charset=\"utf-8\"><meta name=\"robots\" content=\"noindex,nofollow\"></head><body><noscript>T'",
-  "  AGRO: HTTP 200 '<!DOCTYPE html><html><head><meta charset=\"utf-8\"><meta name=\"robots\" content=\"noindex,nofollow\"></head><body><noscript>T'",
-  "  AGX: HTTP 200 '<!DOCTYPE html><html><head><meta charset=\"utf-8\"><meta name=\"robots\" content=\"noindex,nofollow\"></head><body><noscript>T'",
+  "  ASR: HTTP 200 '<!DOCTYPE html><html><head><meta charset=\"utf-8\"><meta name=\"robots\" content=\"noindex,nofollow\"></head><body><noscript>T'",
+  "  AVAV: HTTP 200 '<!DOCTYPE html><html><head><meta charset=\"utf-8\"><meta name=\"robots\" content=\"noindex,nofollow\"></head><body><noscript>T'",
+  "  BA: HTTP 200 '<!DOCTYPE html><html><head><meta charset=\"utf-8\"><meta name=\"robots\" content=\"noindex,nofollow\"></head><body><noscript>T'",
   "Alerts queued: 0 pending"
  ]
 }
