@@ -90,7 +90,7 @@
 
 <section class="hero small">
   <h1>Asistenti i strategjive</h1>
-  <p>The strategies that trading bots and AI agents run at Pionex, 3Commas, Composer, eToro, Robinhood and Interactive Brokers — explained in plain English, backtested on 2016-01-04 to 2026-11-24, and turned into safe written instructions you can give your own AI agent. Educational only: this assistant never places trades and does not know your full situation.</p>
+  <p>The strategies that trading bots and AI agents run at Pionex, 3Commas, Composer, eToro, Robinhood and Interactive Brokers — explained in plain English, backtested over 2016–2026, and turned into safe written instructions you can give your own AI agent. Educational only: this assistant never places trades and does not know your full situation.</p>
 </section>
 
 <div class="sa-grid">
@@ -161,12 +161,12 @@
 <tr><td><a href="#s-covered_call">Weekly covered call</a> <small>(modelled)</small></td>
 <td class="">11.5%</td><td class="neg">-31.2%</td><td>0.64</td>
 <td class="pos">8.0%</td><td class="neg">-24.6%</td>
-<td>€32,600</td><td>100%</td><td>52.0</td></tr>
+<td>€32,600</td><td>—</td><td>52.0</td></tr>
 
 <tr><td><a href="#s-cash_secured_put">Weekly cash-secured put</a> <small>(modelled)</small></td>
 <td class="">5.3%</td><td class="neg">-19.5%</td><td>0.53</td>
 <td class="neg">-7.8%</td><td class="pos">3.4%</td>
-<td>€17,560</td><td>100%</td><td>52.0</td></tr>
+<td>€17,560</td><td>—</td><td>52.0</td></tr>
 
 <tr class="bench"><td>Benchmark: buy and hold SPY</td><td>14.1%</td><td class="neg">-33.7%</td><td>0.71</td><td>18.3%</td><td class="neg">-18.2%</td><td>€41,920</td><td>100%</td><td>0</td></tr>
 </tbody></table></div>
@@ -392,7 +392,7 @@ function build(s){var a=st.a,cap=a.cap,riskPct=a.risk==='low'?0.01:0.02,maxLoss=
  '','STRATEGY: '+s.name,'RULES: '+s.rules,'INSTRUMENTS: '+s.universe,'SCHEDULE: check '+s.freq+'; act only on closing prices unless I say otherwise.','',
  'GUARDRAILS (always apply, they override the strategy):',
  '- No margin, no leverage, no short selling, no leveraged or inverse ETFs, no crypto.',
- '- Maximum loss I accept per position: '+pct(riskPct)+' of the sub-account (about €'+maxLoss.toLocaleString()+'). Size every new position so that this limit is respected, and use limit orders.',
+ s.options?'- Maximum loss I accept per trade: '+pct(riskPct)+' of the sub-account (about €'+maxLoss.toLocaleString()+'). Choose strikes and size so this limit is respected; use limit orders.':'- This strategy may hold up to 100% of the sub-account in the listed ETFs only. Use limit orders, never single stocks, and never more than the sub-account holds.',
  s.options?'- Options: only covered calls or cash-secured puts, fully covered; take profit by buying back at 50% of the premium; never hold a new short option through earnings, a Fed (FOMC) decision or a merger vote.':'- Do not open new positions on days with a Fed (FOMC) decision or when a holding reports earnings.',
  '- If the sub-account falls 3% in a day or 10% from its peak, stop trading and send me a summary.',
  '- If a rule is unclear or data is missing, do nothing and ask me.','',

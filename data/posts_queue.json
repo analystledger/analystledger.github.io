@@ -302,5 +302,18 @@
   "short": "$DELL Q3 revenue doubled to a record $54.9B vs ~$49.3B expected; AI backlog hit $132.3B and FY27 guide rose to $202B, though AI server margins stay thin. https://analystledger.github.io/news.html #stocks #AI",
   "long": "Dell's quarter is the latest test of AI infrastructure demand after a sharp chip selloff, and the order book points to more growth while margins stay the open question.\n\n• Q3 revenue $54.9B, up 103% and above ~$49.3B consensus; adjusted EPS $9.45 vs $6.59 expected\n• AI-optimized server sales $22.0B (+291%), orders $60.2B, record $132.3B backlog\n• FY27 revenue forecast raised to $202B from $192B; new $25B buyback authorization\n\nSources: https://analystledger.github.io/news.html\n\n#stocks #AI #AnalystLedger",
   "posted_utc": "2026-11-25 12:49"
+ },
+ {
+  "id": "feature-ai-strategy-assistant-2026-11-25",
+  "status": "pending",
+  "kicker": "New on Analyst Ledger",
+  "title": "Bot and AI-agent strategies, tested",
+  "card_lines": [
+   "13 strategies from Pionex, 3Commas, Composer, eToro, IBKR",
+   "10 years of backtests vs buy-and-hold SPY",
+   "Builds safe instructions for your own AI agent"
+  ],
+  "short": "New: a free strategy assistant. 13 strategies trading bots and AI agents run (grid, DCA, momentum, trend, VIX switch, covered calls), tested 2016–2026. None beat buy-and-hold SPY on return; 5 cut the worst fall by a third. https://analystledger.github.io/strategies.html",
+  "long": "New on Analyst Ledger: a free strategy assistant.\n\nIt explains 13 strategies that trading bots and AI agents run at Pionex, 3Commas, Composer, eToro, Robinhood and Interactive Brokers — grid bots, DCA, rebalancing, momentum rotation, trend filters, RSI dip-buying, a VIX switch, crash breakers, covered calls and cash-secured puts — and shows how each did from 2016 to 2026.\n\nThe headline: none beat simply holding the S&P 500 on return; five cut the worst fall by a third or more.\n\nAnswer five questions and it writes instructions with safety limits for your own AI agent. Educational only — it never places trades.\n\nhttps://analystledger.github.io/strategies.html\n\n#investing #AI #trading"
  }
 ]

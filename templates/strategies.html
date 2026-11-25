@@ -45,7 +45,7 @@
 
 <section class="hero small">
   <h1>{{ _("Strategy assistant") }}</h1>
-  <p>The strategies that trading bots and AI agents run at Pionex, 3Commas, Composer, eToro, Robinhood and Interactive Brokers — explained in plain English, backtested on {{ sb.period or "ten years of data" }}, and turned into safe written instructions you can give your own AI agent. Educational only: this assistant never places trades and does not know your full situation.</p>
+  <p>The strategies that trading bots and AI agents run at Pionex, 3Commas, Composer, eToro, Robinhood and Interactive Brokers — explained in plain English, backtested over {{ (sb.period[:4] ~ "–" ~ sb.period[-10:-6]) if sb.period else "ten years" }}, and turned into safe written instructions you can give your own AI agent. Educational only: this assistant never places trades and does not know your full situation.</p>
 </section>
 
 <div class="sa-grid">
@@ -63,7 +63,7 @@
 </div>
 
 <h2 style="margin-top:28px">How the strategies did</h2>
-<p>Each strategy run on daily, dividend-adjusted prices from {{ sb.period }}: signals use the close and trade at the next close, with 0.05% costs per trade; cash earns the T-bill rate. Options strategies are modelled (option prices estimated from the VIX, adjusted for skew), not real fills. Past results do not predict future ones. Updated {{ sb.updated }}, monthly.</p>
+<p>Each strategy run on daily, dividend-adjusted prices from {{ sb.period|replace(' to ', ' to ') }}: signals use the close and trade at the next close, with 0.05% costs per trade; cash earns the T-bill rate. Options strategies are modelled (option prices estimated from the VIX, adjusted for skew), not real fills. Past results do not predict future ones. Updated {{ sb.updated }}, monthly.</p>
 <div class="tblwrap"><table class="tbl" id="perf">
 <thead><tr><th>Strategy</th><th>Return a year</th><th>Worst fall</th><th>Risk-adjusted (Sharpe)</th><th>2020</th><th>2022</th><th>€10,000 became</th><th>Time in stocks</th><th>Trades a year</th></tr></thead>
 <tbody>
@@ -71,7 +71,7 @@
 <tr><td><a href="#s-{{ s.id }}">{{ s.name }}</a>{% if r.get('modelled') %} <small>(modelled)</small>{% endif %}</td>
 <td class="{{ 'neg' if r.cagr_pct < 0 else '' }}">{{ "%.1f"|format(r.cagr_pct) }}%</td><td class="neg">{{ "%.1f"|format(r.max_drawdown_pct) }}%</td><td>{{ "%.2f"|format(r.sharpe) }}</td>
 <td class="{{ 'neg' if (r.y2020_pct or 0) < 0 else 'pos' }}">{{ "%.1f"|format(r.y2020_pct) }}%</td><td class="{{ 'neg' if (r.y2022_pct or 0) < 0 else 'pos' }}">{{ "%.1f"|format(r.y2022_pct) }}%</td>
-<td>€{{ "{:,}".format(r.final_10k) }}</td><td>{{ (r.get('time_invested_pct') ~ "%") if r.get('time_invested_pct') is not none else "100%" }}</td><td>{{ r.trades_per_year }}</td></tr>
+<td>€{{ "{:,}".format(r.final_10k) }}</td><td>{{ (r.get('time_invested_pct') ~ "%") if r.get('time_invested_pct') is not none else "—" }}</td><td>{{ r.trades_per_year }}</td></tr>
 {% endfor %}
 {% if sb.results and sb.results.buy_hold %}{% set r = sb.results.buy_hold %}<tr class="bench"><td>Benchmark: buy and hold SPY</td><td>{{ "%.1f"|format(r.cagr_pct) }}%</td><td class="neg">{{ "%.1f"|format(r.max_drawdown_pct) }}%</td><td>{{ "%.2f"|format(r.sharpe) }}</td><td>{{ "%.1f"|format(r.y2020_pct) }}%</td><td class="neg">{{ "%.1f"|format(r.y2022_pct) }}%</td><td>€{{ "{:,}".format(r.final_10k) }}</td><td>100%</td><td>0</td></tr>{% endif %}
 </tbody></table></div>
@@ -153,7 +153,7 @@ function build(s){var a=st.a,cap=a.cap,riskPct=a.risk==='low'?0.01:0.02,maxLoss=
  '','STRATEGY: '+s.name,'RULES: '+s.rules,'INSTRUMENTS: '+s.universe,'SCHEDULE: check '+s.freq+'; act only on closing prices unless I say otherwise.','',
  'GUARDRAILS (always apply, they override the strategy):',
  '- No margin, no leverage, no short selling, no leveraged or inverse ETFs, no crypto.',
- '- Maximum loss I accept per position: '+pct(riskPct)+' of the sub-account (about €'+maxLoss.toLocaleString()+'). Size every new position so that this limit is respected, and use limit orders.',
+ s.options?'- Maximum loss I accept per trade: '+pct(riskPct)+' of the sub-account (about €'+maxLoss.toLocaleString()+'). Choose strikes and size so this limit is respected; use limit orders.':'- This strategy may hold up to 100% of the sub-account in the listed ETFs only. Use limit orders, never single stocks, and never more than the sub-account holds.',
  s.options?'- Options: only covered calls or cash-secured puts, fully covered; take profit by buying back at 50% of the premium; never hold a new short option through earnings, a Fed (FOMC) decision or a merger vote.':'- Do not open new positions on days with a Fed (FOMC) decision or when a holding reports earnings.',
  '- If the sub-account falls 3% in a day or 10% from its peak, stop trading and send me a summary.',
  '- If a rule is unclear or data is missing, do nothing and ask me.','',
