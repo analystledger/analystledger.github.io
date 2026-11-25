@@ -99,7 +99,7 @@ def bs_call(S, K, T, v):
 
 def options_weekly(px, kind):
     """Modelled weekly covered call / cash-secured put on SPY, ~1 sigma out of the money.
-    Implied vol = VIX/100 at entry; premium haircut 5% for spreads; no early assignment."""
+    Implied vol from VIX adjusted for skew (ATM = 0.85 x VIX; 1-sigma call x0.80, put x1.12); premium haircut 5%; no early assignment."""
     spy, vix = px["SPY"], px["^VIX"]
     weeks = spy.resample("W-FRI").last().dropna()
     vixw = vix.resample("W-FRI").last().reindex(weeks.index).ffill()
@@ -107,9 +107,11 @@ def options_weekly(px, kind):
     rets, dates = [], []
     for i in range(1, len(weeks)):
         S0, S1 = weeks.iloc[i - 1], weeks.iloc[i]
-        v = float(vixw.iloc[i - 1]) / 100
+        vix_v = float(vixw.iloc[i - 1]) / 100
         T = 5 / 252
-        sig = v * math.sqrt(T)
+        atm = 0.85 * vix_v                      # ATM implied vol sits below VIX (VIX includes the put skew)
+        sig = atm * math.sqrt(T)                # strike ~1 sigma from the money
+        v = atm * (0.80 if kind == "covered_call" else 1.12)   # OTM call IV below ATM, OTM put IV above (skew)
         cash_r = cashw.iloc[i] / cashw.iloc[i - 1] - 1
         if kind == "covered_call":
             K = S0 * math.exp(sig)
@@ -276,7 +278,7 @@ def main():
     out = {
         "updated": date.today().isoformat(),
         "period": f"{EVAL_START} to {P.index[-1].date().isoformat()}",
-        "method": "Daily dividend-adjusted closes; signals use the close and trade at the next close (no look-ahead); 0.05% cost per unit traded; cash earns T-bill return (BIL). Options strategies are modelled with Black-Scholes using VIX as implied volatility, ~1 sigma out of the money, 5% premium haircut.",
+        "method": "Daily dividend-adjusted closes; signals use the close and trade at the next close (no look-ahead); 0.05% cost per unit traded; cash earns T-bill return (BIL). Options strategies are modelled with Black-Scholes, implied volatility taken from VIX and adjusted for skew (at-the-money = 0.85 x VIX; 1-sigma calls x0.80, puts x1.12), ~1 sigma out of the money, 5% premium haircut.",
         "source": "Computed from daily prices; only aggregated results are published.",
         "synthetic": synthetic,
         "results": res,
