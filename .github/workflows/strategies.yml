@@ -1,0 +1,28 @@
+name: Strategy backtests
+on:
+  schedule:
+    - cron: "15 6 2 * *"   # monthly, 2nd day 06:15 UTC
+  push:
+    paths: ["scripts/strategy_backtest.py", ".github/workflows/strategies.yml"]
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency: { group: site, cancel-in-progress: false }
+jobs:
+  backtest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install -r requirements.txt yfinance pandas numpy
+      - run: python scripts/strategy_backtest.py
+      - run: python scripts/build_site.py
+      - name: Commit
+        run: |
+          git config user.name "analyst-ledger-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add -A
+          git diff --cached --quiet || git commit -m "Strategy backtests $(date -u +%F)"
+          git pull --rebase -X ours || true
+          git push
