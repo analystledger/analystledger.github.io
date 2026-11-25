@@ -1,5 +1,557 @@
 [
  {
+  "date": "2026-11-25",
+  "ticker": "SNY",
+  "company": "Sanofi",
+  "analyst": "James Gordon",
+  "firm": "Barclays",
+  "rating_from": "Equal-Weight",
+  "rating_to": "Overweight",
+  "price_at_rating": 51.9,
+  "action": "upgrade",
+  "source_url": "https://longbridge.com/en/news/306811160"
+ },
+ {
+  "date": "2026-11-25",
+  "ticker": "AGRO",
+  "company": "Adecoagro",
+  "analyst": "Gabriel Barra",
+  "firm": "Citigroup",
+  "rating_from": "Neutral",
+  "rating_to": "Buy",
+  "pt_from": 10.5,
+  "pt_to": 9.75,
+  "price_at_rating": 7.74,
+  "action": "upgrade",
+  "source_url": "https://longbridge.com/en/news/306811160"
+ },
+ {
+  "date": "2026-11-25",
+  "ticker": "AGX",
+  "company": "Argan",
+  "analyst": "Dimple Gosai",
+  "firm": "Piper Sandler",
+  "rating_from": "Underweight",
+  "rating_to": "Neutral",
+  "pt_from": 273,
+  "pt_to": 274,
+  "price_at_rating": 271.22,
+  "action": "upgrade",
+  "source_url": "https://longbridge.com/en/news/306811160"
+ },
+ {
+  "date": "2026-11-24",
+  "ticker": "AVAV",
+  "company": "AeroVironment",
+  "firm": "Mizuho",
+  "rating_to": "Outperform",
+  "action": "initiate",
+  "source_url": "https://dailytradealert.com/2026/11/24/analyst-upgrades-and-downgrades-for-tuesday-11-24/"
+ },
+ {
+  "date": "2026-11-24",
+  "ticker": "BA",
+  "company": "Boeing",
+  "firm": "Mizuho",
+  "rating_to": "Outperform",
+  "action": "initiate",
+  "source_url": "https://dailytradealert.com/2026/11/24/analyst-upgrades-and-downgrades-for-tuesday-11-24/"
+ },
+ {
+  "date": "2026-11-24",
+  "ticker": "LHX",
+  "company": "L3Harris",
+  "firm": "Mizuho",
+  "rating_to": "Outperform",
+  "action": "initiate",
+  "source_url": "https://dailytradealert.com/2026/11/24/analyst-upgrades-and-downgrades-for-tuesday-11-24/"
+ },
+ {
+  "date": "2026-11-24",
+  "ticker": "LMT",
+  "company": "Lockheed Martin",
+  "firm": "Mizuho",
+  "rating_to": "Outperform",
+  "action": "initiate",
+  "source_url": "https://dailytradealert.com/2026/11/24/analyst-upgrades-and-downgrades-for-tuesday-11-24/"
+ },
+ {
+  "date": "2026-11-24",
+  "ticker": "NOC",
+  "company": "Northrop Grumman",
+  "firm": "Mizuho",
+  "rating_to": "Outperform",
+  "action": "initiate",
+  "source_url": "https://dailytradealert.com/2026/11/24/analyst-upgrades-and-downgrades-for-tuesday-11-24/"
+ },
+ {
+  "date": "2026-11-24",
+  "ticker": "KTOS",
+  "company": "Kratos Defense",
+  "firm": "Mizuho",
+  "rating_to": "Outperform",
+  "action": "initiate",
+  "source_url": "https://dailytradealert.com/2026/11/24/analyst-upgrades-and-downgrades-for-tuesday-11-24/"
+ },
+ {
+  "date": "2026-11-24",
+  "ticker": "TDY",
+  "company": "Teledyne",
+  "firm": "Mizuho",
+  "rating_to": "Outperform",
+  "action": "initiate",
+  "source_url": "https://dailytradealert.com/2026/11/24/analyst-upgrades-and-downgrades-for-tuesday-11-24/"
+ },
+ {
+  "date": "2026-11-24",
+  "ticker": "KRMN",
+  "company": "Karman",
+  "firm": "Mizuho",
+  "rating_to": "Outperform",
+  "action": "initiate",
+  "source_url": "https://dailytradealert.com/2026/11/24/analyst-upgrades-and-downgrades-for-tuesday-11-24/"
+ },
+ {
+  "date": "2026-11-24",
+  "ticker": "BKSY",
+  "company": "BlackSky",
+  "firm": "Mizuho",
+  "rating_to": "Outperform",
+  "action": "initiate",
+  "source_url": "https://dailytradealert.com/2026/11/24/analyst-upgrades-and-downgrades-for-tuesday-11-24/"
+ },
+ {
+  "date": "2026-11-24",
+  "ticker": "LUNR",
+  "company": "Intuitive Machines",
+  "firm": "Mizuho",
+  "rating_to": "Outperform",
+  "action": "initiate",
+  "source_url": "https://dailytradealert.com/2026/11/24/analyst-upgrades-and-downgrades-for-tuesday-11-24/"
+ },
+ {
+  "date": "2026-11-24",
+  "ticker": "FLY",
+  "company": "Firefly Aerospace",
+  "firm": "Mizuho",
+  "rating_to": "Outperform",
+  "action": "initiate",
+  "source_url": "https://dailytradealert.com/2026/11/24/analyst-upgrades-and-downgrades-for-tuesday-11-24/"
+ },
+ {
+  "date": "2026-11-24",
+  "ticker": "SARO",
+  "company": "StandardAero",
+  "firm": "Mizuho",
+  "rating_to": "Outperform",
+  "action": "initiate",
+  "source_url": "https://dailytradealert.com/2026/11/24/analyst-upgrades-and-downgrades-for-tuesday-11-24/"
+ },
+ {
+  "date": "2026-11-24",
+  "ticker": "RKLB",
+  "company": "Rocket Lab",
+  "firm": "Mizuho",
+  "rating_to": "Underperform",
+  "action": "initiate",
+  "source_url": "https://dailytradealert.com/2026/11/24/analyst-upgrades-and-downgrades-for-tuesday-11-24/"
+ },
+ {
+  "date": "2026-11-24",
+  "ticker": "RDW",
+  "company": "Redwire",
+  "firm": "Mizuho",
+  "rating_to": "Underperform",
+  "action": "initiate",
+  "source_url": "https://dailytradealert.com/2026/11/24/analyst-upgrades-and-downgrades-for-tuesday-11-24/"
+ },
+ {
+  "date": "2026-11-24",
+  "ticker": "TSLA",
+  "company": "Tesla",
+  "firm": "Seaport Research",
+  "rating_to": "Buy",
+  "action": "initiate",
+  "source_url": "https://dailytradealert.com/2026/11/24/analyst-upgrades-and-downgrades-for-tuesday-11-24/"
+ },
+ {
+  "date": "2026-11-24",
+  "ticker": "GM",
+  "company": "General Motors",
+  "firm": "Seaport Research",
+  "rating_to": "Buy",
+  "action": "initiate",
+  "source_url": "https://dailytradealert.com/2026/11/24/analyst-upgrades-and-downgrades-for-tuesday-11-24/"
+ },
+ {
+  "date": "2026-11-24",
+  "ticker": "F",
+  "company": "Ford",
+  "firm": "Seaport Research",
+  "rating_to": "Buy",
+  "action": "initiate",
+  "source_url": "https://dailytradealert.com/2026/11/24/analyst-upgrades-and-downgrades-for-tuesday-11-24/"
+ },
+ {
+  "date": "2026-11-24",
+  "ticker": "RIVN",
+  "company": "Rivian",
+  "firm": "Seaport Research",
+  "rating_to": "Buy",
+  "action": "initiate",
+  "source_url": "https://dailytradealert.com/2026/11/24/analyst-upgrades-and-downgrades-for-tuesday-11-24/"
+ },
+ {
+  "date": "2026-11-24",
+  "ticker": "APTV",
+  "company": "Aptiv",
+  "firm": "Seaport Research",
+  "rating_to": "Buy",
+  "action": "initiate",
+  "source_url": "https://dailytradealert.com/2026/11/24/analyst-upgrades-and-downgrades-for-tuesday-11-24/"
+ },
+ {
+  "date": "2026-11-24",
+  "ticker": "BWA",
+  "company": "BorgWarner",
+  "firm": "Seaport Research",
+  "rating_to": "Buy",
+  "action": "initiate",
+  "source_url": "https://dailytradealert.com/2026/11/24/analyst-upgrades-and-downgrades-for-tuesday-11-24/"
+ },
+ {
+  "date": "2026-11-24",
+  "ticker": "MBLY",
+  "company": "Mobileye",
+  "firm": "Seaport Research",
+  "rating_to": "Buy",
+  "action": "initiate",
+  "source_url": "https://dailytradealert.com/2026/11/24/analyst-upgrades-and-downgrades-for-tuesday-11-24/"
+ },
+ {
+  "date": "2026-11-24",
+  "ticker": "VC",
+  "company": "Visteon",
+  "firm": "Seaport Research",
+  "rating_to": "Buy",
+  "action": "initiate",
+  "source_url": "https://dailytradealert.com/2026/11/24/analyst-upgrades-and-downgrades-for-tuesday-11-24/"
+ },
+ {
+  "date": "2026-11-24",
+  "ticker": "LCID",
+  "company": "Lucid Group",
+  "firm": "Seaport Research",
+  "rating_to": "Sell",
+  "action": "initiate",
+  "source_url": "https://dailytradealert.com/2026/11/24/analyst-upgrades-and-downgrades-for-tuesday-11-24/"
+ },
+ {
+  "date": "2026-11-24",
+  "ticker": "DRI",
+  "company": "Darden",
+  "firm": "BNP Paribas",
+  "rating_to": "Outperform",
+  "action": "initiate",
+  "source_url": "https://dailytradealert.com/2026/11/24/analyst-upgrades-and-downgrades-for-tuesday-11-24/"
+ },
+ {
+  "date": "2026-11-24",
+  "ticker": "TXRH",
+  "company": "Texas Roadhouse",
+  "firm": "BNP Paribas",
+  "rating_to": "Outperform",
+  "action": "initiate",
+  "source_url": "https://dailytradealert.com/2026/11/24/analyst-upgrades-and-downgrades-for-tuesday-11-24/"
+ },
+ {
+  "date": "2026-11-24",
+  "ticker": "YUM",
+  "company": "Yum! Brands",
+  "firm": "BNP Paribas",
+  "rating_to": "Outperform",
+  "action": "initiate",
+  "source_url": "https://dailytradealert.com/2026/11/24/analyst-upgrades-and-downgrades-for-tuesday-11-24/"
+ },
+ {
+  "date": "2026-11-24",
+  "ticker": "DPZ",
+  "company": "Domino's Pizza",
+  "firm": "BNP Paribas",
+  "rating_to": "Underperform",
+  "action": "initiate",
+  "source_url": "https://dailytradealert.com/2026/11/24/analyst-upgrades-and-downgrades-for-tuesday-11-24/"
+ },
+ {
+  "date": "2026-11-24",
+  "ticker": "GME",
+  "company": "GameStop",
+  "firm": "Needham",
+  "rating_to": "Buy",
+  "action": "initiate",
+  "source_url": "https://dailytradealert.com/2026/11/24/analyst-upgrades-and-downgrades-for-tuesday-11-24/"
+ },
+ {
+  "date": "2026-11-24",
+  "ticker": "CPRT",
+  "company": "Copart",
+  "firm": "JPMorgan",
+  "rating_to": "Overweight",
+  "action": "initiate",
+  "source_url": "https://dailytradealert.com/2026/11/24/analyst-upgrades-and-downgrades-for-tuesday-11-24/"
+ },
+ {
+  "date": "2026-11-24",
+  "ticker": "FLEX",
+  "company": "Flex",
+  "firm": "UBS",
+  "rating_to": "Buy",
+  "action": "initiate",
+  "source_url": "https://dailytradealert.com/2026/11/24/analyst-upgrades-and-downgrades-for-tuesday-11-24/"
+ },
+ {
+  "date": "2026-11-24",
+  "ticker": "LFUS",
+  "company": "Littelfuse",
+  "firm": "Freedom Capital",
+  "rating_to": "Buy",
+  "action": "initiate",
+  "source_url": "https://dailytradealert.com/2026/11/24/analyst-upgrades-and-downgrades-for-tuesday-11-24/"
+ },
+ {
+  "date": "2026-11-24",
+  "ticker": "CPA",
+  "company": "Copa Holdings",
+  "firm": "Barclays",
+  "rating_to": "Overweight",
+  "action": "initiate",
+  "source_url": "https://dailytradealert.com/2026/11/24/analyst-upgrades-and-downgrades-for-tuesday-11-24/"
+ },
+ {
+  "date": "2026-11-24",
+  "ticker": "LTM",
+  "company": "Latam Airlines",
+  "firm": "Barclays",
+  "rating_to": "Overweight",
+  "action": "initiate",
+  "source_url": "https://dailytradealert.com/2026/11/24/analyst-upgrades-and-downgrades-for-tuesday-11-24/"
+ },
+ {
+  "date": "2026-11-24",
+  "ticker": "PAC",
+  "company": "GAP Airports",
+  "firm": "Barclays",
+  "rating_to": "Overweight",
+  "action": "initiate",
+  "source_url": "https://dailytradealert.com/2026/11/24/analyst-upgrades-and-downgrades-for-tuesday-11-24/"
+ },
+ {
+  "date": "2026-11-24",
+  "ticker": "OMAB",
+  "company": "OMA",
+  "firm": "Barclays",
+  "rating_to": "Overweight",
+  "action": "initiate",
+  "source_url": "https://dailytradealert.com/2026/11/24/analyst-upgrades-and-downgrades-for-tuesday-11-24/"
+ },
+ {
+  "date": "2026-11-24",
+  "ticker": "ASR",
+  "company": "Asur",
+  "firm": "Barclays",
+  "rating_to": "Underweight",
+  "action": "initiate",
+  "source_url": "https://dailytradealert.com/2026/11/24/analyst-upgrades-and-downgrades-for-tuesday-11-24/"
+ },
+ {
+  "date": "2026-11-24",
+  "ticker": "AMGN",
+  "company": "Amgen",
+  "firm": "CICC",
+  "rating_to": "Outperform",
+  "action": "initiate",
+  "source_url": "https://dailytradealert.com/2026/11/24/analyst-upgrades-and-downgrades-for-tuesday-11-24/"
+ },
+ {
+  "date": "2026-11-24",
+  "ticker": "INTU",
+  "company": "Intuit",
+  "firm": "HSBC",
+  "rating_from": "Buy",
+  "rating_to": "Hold",
+  "action": "downgrade",
+  "source_url": "https://dailytradealert.com/2026/11/24/analyst-upgrades-and-downgrades-for-tuesday-11-24/"
+ },
+ {
+  "date": "2026-11-24",
+  "ticker": "ZS",
+  "company": "Zscaler",
+  "firm": "Bernstein",
+  "rating_from": "Outperform",
+  "rating_to": "Market Perform",
+  "action": "downgrade",
+  "source_url": "https://dailytradealert.com/2026/11/24/analyst-upgrades-and-downgrades-for-tuesday-11-24/"
+ },
+ {
+  "date": "2026-11-24",
+  "ticker": "ZS",
+  "company": "Zscaler",
+  "firm": "Capital One",
+  "rating_from": "Overweight",
+  "rating_to": "Equal Weight",
+  "action": "downgrade",
+  "source_url": "https://dailytradealert.com/2026/11/24/analyst-upgrades-and-downgrades-for-tuesday-11-24/"
+ },
+ {
+  "date": "2026-11-24",
+  "ticker": "ZS",
+  "company": "Zscaler",
+  "firm": "Jefferies",
+  "rating_from": "Buy",
+  "rating_to": "Hold",
+  "action": "downgrade",
+  "source_url": "https://dailytradealert.com/2026/11/24/analyst-upgrades-and-downgrades-for-tuesday-11-24/"
+ },
+ {
+  "date": "2026-11-24",
+  "ticker": "ZS",
+  "company": "Zscaler",
+  "firm": "Rosenblatt",
+  "rating_from": "Buy",
+  "rating_to": "Neutral",
+  "action": "downgrade",
+  "source_url": "https://dailytradealert.com/2026/11/24/analyst-upgrades-and-downgrades-for-tuesday-11-24/"
+ },
+ {
+  "date": "2026-11-24",
+  "ticker": "ZS",
+  "company": "Zscaler",
+  "firm": "Stifel",
+  "rating_from": "Buy",
+  "rating_to": "Hold",
+  "action": "downgrade",
+  "source_url": "https://dailytradealert.com/2026/11/24/analyst-upgrades-and-downgrades-for-tuesday-11-24/"
+ },
+ {
+  "date": "2026-11-24",
+  "ticker": "ZS",
+  "company": "Zscaler",
+  "firm": "TD Cowen",
+  "rating_from": "Buy",
+  "rating_to": "Hold",
+  "action": "downgrade",
+  "source_url": "https://dailytradealert.com/2026/11/24/analyst-upgrades-and-downgrades-for-tuesday-11-24/"
+ },
+ {
+  "date": "2026-11-24",
+  "ticker": "ZS",
+  "company": "Zscaler",
+  "firm": "DA Davidson",
+  "rating_from": "Neutral",
+  "rating_to": "Buy",
+  "action": "upgrade",
+  "source_url": "https://dailytradealert.com/2026/11/24/analyst-upgrades-and-downgrades-for-tuesday-11-24/"
+ },
+ {
+  "date": "2026-11-24",
+  "ticker": "ACRE",
+  "company": "Ares Commercial Real Estate",
+  "firm": "UBS",
+  "rating_from": "Neutral",
+  "rating_to": "Buy",
+  "pt_to": 4.5,
+  "action": "upgrade",
+  "source_url": "https://www.kucoin.com/news/insight/CRWD/6b06e1359f9fb00007f74ff9"
+ },
+ {
+  "date": "2026-11-24",
+  "ticker": "CRWD",
+  "company": "CrowdStrike",
+  "firm": "Guggenheim",
+  "rating_from": "Neutral",
+  "rating_to": "Buy",
+  "pt_to": 280,
+  "action": "upgrade",
+  "source_url": "https://www.kucoin.com/news/insight/CRWD/6b06e1359f9fb00007f74ff9"
+ },
+ {
+  "date": "2026-11-24",
+  "ticker": "HUM",
+  "company": "Humana",
+  "firm": "KeyBanc Capital Markets",
+  "rating_from": "Sector Weight",
+  "rating_to": "Overweight",
+  "pt_to": 500,
+  "action": "upgrade",
+  "source_url": "https://www.kucoin.com/news/insight/CRWD/6b06e1359f9fb00007f74ff9"
+ },
+ {
+  "date": "2026-11-24",
+  "ticker": "JBLU",
+  "company": "JetBlue Airways",
+  "firm": "BMO Capital Markets",
+  "rating_from": "Market Perform",
+  "rating_to": "Outperform",
+  "pt_to": 5.5,
+  "action": "upgrade",
+  "source_url": "https://www.kucoin.com/news/insight/CRWD/6b06e1359f9fb00007f74ff9"
+ },
+ {
+  "date": "2026-11-24",
+  "ticker": "TIGO",
+  "company": "Millicom International Cellular",
+  "firm": "Morgan Stanley",
+  "rating_from": "Equal-Weight",
+  "rating_to": "Overweight",
+  "pt_to": 100,
+  "action": "upgrade",
+  "source_url": "https://www.kucoin.com/news/insight/CRWD/6b06e1359f9fb00007f74ff9"
+ },
+ {
+  "date": "2026-11-24",
+  "ticker": "RGEN",
+  "company": "Repligen",
+  "firm": "Jefferies",
+  "rating_from": "Hold",
+  "rating_to": "Buy",
+  "pt_to": 200,
+  "action": "upgrade",
+  "source_url": "https://www.kucoin.com/news/insight/CRWD/6b06e1359f9fb00007f74ff9"
+ },
+ {
+  "date": "2026-11-24",
+  "ticker": "SHLS",
+  "company": "Shoals Technologies",
+  "firm": "Mizuho",
+  "rating_from": "Neutral",
+  "rating_to": "Outperform",
+  "pt_to": 12,
+  "action": "upgrade",
+  "source_url": "https://www.kucoin.com/news/insight/CRWD/6b06e1359f9fb00007f74ff9"
+ },
+ {
+  "date": "2026-11-24",
+  "ticker": "SKYD",
+  "company": "Skydance",
+  "firm": "UBS",
+  "rating_from": "Sell",
+  "rating_to": "Neutral",
+  "pt_to": 7,
+  "action": "upgrade",
+  "source_url": "https://www.kucoin.com/news/insight/CRWD/6b06e1359f9fb00007f74ff9"
+ },
+ {
+  "date": "2026-11-24",
+  "ticker": "VNT",
+  "company": "Vontier",
+  "firm": "Argus",
+  "rating_from": "Hold",
+  "rating_to": "Buy",
+  "pt_to": 49,
+  "action": "upgrade",
+  "source_url": "https://www.kucoin.com/news/insight/CRWD/6b06e1359f9fb00007f74ff9"
+ },
+ {
   "date": "2026-11-24",
   "ticker": "MU",
   "company": "Micron Technology",
