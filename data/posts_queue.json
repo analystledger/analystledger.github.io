@@ -344,5 +344,31 @@
   "short": "USTR proposed Section 301 tariffs on 14 economies, from 15% on the EU to up to 35% on Vietnam, with hearings set for late January; Mexico and Norway spared for now. https://analystledger.github.io/news.html #tariffs #stocks",
   "long": "Washington moved to rebuild its global tariff wall after the Supreme Court struck down the IEEPA levies, raising cost questions for import-heavy companies.\n\n• Proposed rates: up to 20% on China, 15% on the EU, up to 15% on Japan, Korea and Taiwan\n• Vietnam faces up to 35% and India up to 25%, lower if trade deals are reached\n• Comments due Jan 5, hearings from Jan 25; no action yet on Mexico and Norway\n\nSources: https://analystledger.github.io/news.html\n\n#tariffs #stocks #AnalystLedger",
   "posted_utc": "2026-11-25 20:55"
+ },
+ {
+  "id": "news-vrtx-povetacicept-fda-delay-2026-11-25",
+  "status": "pending",
+  "kicker": "Market news",
+  "title": "FDA delays Vertex kidney drug to February",
+  "card_lines": [
+   "FDA decision moves from Nov 30 to Feb 28, 2027",
+   "$VRTX down about 7.5% after hours",
+   "Rival $VERA jumped more than 18%"
+  ],
+  "short": "FDA pushed its decision on Vertex's IgA nephropathy drug povetacicept back up to three months, to Feb 28, 2027. $VRTX fell ~7.5% after hours; rival $VERA rose 18%+. https://analystledger.github.io/news.html #biotech #stocks",
+  "long": "A late-cycle FDA request has delayed a key launch for Vertex and shifted the competitive picture in IgA nephropathy.\n\n• FDA target date moved from Nov 30, 2026 to no later than Feb 28, 2027 after a major amendment\n• $VRTX fell about 7.5% in after-hours trading on Wednesday\n• Rival Vera Therapeutics ($VERA) rose more than 18%\n\nSources: https://analystledger.github.io/news.html\n\n#biotech #stocks #AnalystLedger"
+ },
+ {
+  "id": "news-nvda-sp-creditwatch-governance-2026-11-25",
+  "status": "pending",
+  "kicker": "Market news",
+  "title": "S&P puts Nvidia's AA rating on watch",
+  "card_lines": [
+   "$NVDA AA rating on CreditWatch negative",
+   "Decision due within 90 days; one-notch risk",
+   "$NVDA closed down 3.9% on Wednesday"
+  ],
+  "short": "S&P put Nvidia's AA rating on CreditWatch negative, citing board oversight, key-person risk and China controls; a decision is due within 90 days. $NVDA closed down 3.9%. https://analystledger.github.io/news.html #Nvidia #stocks",
+  "long": "Nvidia's governance questions have reached the credit market after Jensen Huang's resignation and reinstatement as CEO.\n\n• S&P placed the AA rating on CreditWatch negative; any cut likely limited to one notch\n• Concerns: board oversight, long-tenured directors, no succession plan, China-related controls\n• $NVDA closed down 3.9% Wednesday; S&P expects to decide within 90 days\n\nSources: https://analystledger.github.io/news.html\n\n#Nvidia #stocks #AnalystLedger"
  }
 ]

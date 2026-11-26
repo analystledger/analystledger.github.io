@@ -1,5 +1,75 @@
 [
  {
+  "id": "vrtx-povetacicept-fda-delay-2026-11-25",
+  "date": "2026-11-25 21:02 UTC",
+  "impact": "high",
+  "category": "Regulation & legal",
+  "headline": "FDA pushes Vertex kidney-drug decision to February, sending shares down 7.5% after hours",
+  "summary": "Vertex said the FDA extended its review of povetacicept for IgA nephropathy by up to three months, moving the target action date from November 30, 2026 to no later than February 28, 2027, after the agency classified Vertex's reply to a late-cycle information request as a major amendment. Vertex said it remains confident in the clinical data and will keep working with the regulator; its shares fell about 7.5% in after-hours trading Wednesday, while rival Vera Therapeutics jumped more than 18%.",
+  "why": "The delay reshapes the launch race in IgA nephropathy, where Vera Therapeutics is developing a rival treatment and investors are weighing who reaches patients first. The FDA has not publicly said what information it requested, so it remains unclear whether the extension signals a substantive review issue or a procedural one.",
+  "tickers": [
+   "VRTX",
+   "VERA"
+  ],
+  "sources": [
+   {
+    "name": "Investing.com",
+    "url": "https://uk.investing.com/news/stock-market-news/vertex-shares-drop-75-as-fda-extends-review-for-kidney-drug-povetacicept-5004820"
+   },
+   {
+    "name": "StockTitan",
+    "url": "https://www.stocktitan.net/articles/stock-market-today-live-november-25-2026"
+   }
+  ]
+ },
+ {
+  "id": "nvda-sp-creditwatch-governance-2026-11-25",
+  "date": "2026-11-25 20:00 UTC",
+  "impact": "high",
+  "category": "Regulation & legal",
+  "headline": "S&P puts Nvidia's AA rating on watch for a cut over board oversight after Huang's return",
+  "summary": "S&P Global Ratings placed Nvidia's AA issuer and senior unsecured ratings on CreditWatch negative, citing weak board oversight of executive conduct, long-tenured directors, no succession plan that leaves the company dependent on Jensen Huang, and questions over internal controls tied to China exposure; it also cut its management and governance assessment to neutral from positive. S&P expects to decide within 90 days and said any downgrade would likely be limited to one notch, and Nvidia shares closed down 3.9% Wednesday after sliding nearly 5% in the afternoon.",
+  "why": "The action adds a credit-market dimension to the governance questions that have hit Nvidia since Huang's resignation and reinstatement, and Nvidia's swings have been driving the broader AI chip complex including AMD, Micron and Broadcom. Key open items are whether the board announces governance changes and what emerges from Huang's congressional appearances scheduled for early December.",
+  "tickers": [
+   "NVDA",
+   "AMD",
+   "MU",
+   "AVGO"
+  ],
+  "sources": [
+   {
+    "name": "Reuters via Investing.com",
+    "url": "https://za.investing.com/news/stock-market-news/sp-global-places-nvidia-rating-on-creditwatch-negative-on-rising-management-and-governance-risks-4597377"
+   },
+   {
+    "name": "StockAnalysis",
+    "url": "https://stockanalysis.com/news/nvidia-sp-rating-creditwatch-negative/"
+   },
+   {
+    "name": "AP via News4JAX",
+    "url": "https://www.news4jax.com/business/2026/11/26/asian-shares-rebound-led-by-ai-stocks-after-wall-street-pares-sharp-losses"
+   }
+  ]
+ },
+ {
+  "id": "phar-ruconest-production-pause-2026-11-25",
+  "date": "2026-11-25 06:00 UTC",
+  "impact": "medium",
+  "category": "Products & contracts",
+  "headline": "Pharming halts Ruconest production after a failed test, and shares drop 24%",
+  "summary": "Pharming paused manufacturing of Ruconest, its hereditary angioedema treatment, after a routine manufacturing test failed, notified the FDA and warned that US supply constraints are likely, with current supply expected to last through mid-December. The US-listed shares fell about 17% before the open and closed down 24% on Wednesday.",
+  "why": "Ruconest is Pharming's core commercial product, so the length of the halt is central to its near-term revenue, and other hereditary angioedema treatment makers could see patients switch if shortages emerge. The company has not said when production will resume or what caused the failed test.",
+  "tickers": [
+   "PHAR"
+  ],
+  "sources": [
+   {
+    "name": "StockTitan",
+    "url": "https://www.stocktitan.net/articles/stock-market-today-live-november-25-2026"
+   }
+  ]
+ },
+ {
   "id": "macro-pce-core-3-3-gdp-4-3-fed-hike-2026-11-25",
   "date": "2026-11-25 13:30 UTC",
   "impact": "high",
