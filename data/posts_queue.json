@@ -75,7 +75,7 @@
  },
  {
   "id": "video-lesson-03",
-  "status": "pending",
+  "status": "posted",
   "not_before": "2026-11-26T12:00:00+00:00",
   "kicker": "Options lesson 3/8",
   "title": "Cash-secured puts",
@@ -86,7 +86,8 @@
   ],
   "short": "Options lesson 3/8: Cash-secured puts. Get paid while you wait to buy a stock at a lower price.\n▶ https://youtube.com/shorts/sp-a0jS4-eQ\nhttps://analystledger.github.io/learn.html#csp\n#options #investing",
   "long": "Options lesson 3 of 8: Cash-secured puts\n\nGet paid while you wait to buy a stock at a lower price.\n\n▶ Watch the 1-minute video: https://youtube.com/shorts/sp-a0jS4-eQ\n📖 Full lesson, free: https://analystledger.github.io/learn.html#csp\n\nAll lessons: https://www.youtube.com/@AnalystLedger\n\n#options #investing #AnalystLedger",
-  "video": "videos/lesson-03.mp4"
+  "video": "videos/lesson-03.mp4",
+  "posted_utc": "2026-11-26 12:56"
  },
  {
   "id": "video-lesson-04",
@@ -347,7 +348,7 @@
  },
  {
   "id": "news-vrtx-povetacicept-fda-delay-2026-11-25",
-  "status": "pending",
+  "status": "posted",
   "kicker": "Market news",
   "title": "FDA delays Vertex kidney drug to February",
   "card_lines": [
@@ -356,11 +357,12 @@
    "Rival $VERA jumped more than 18%"
   ],
   "short": "FDA pushed its decision on Vertex's IgA nephropathy drug povetacicept back up to three months, to Feb 28, 2027. $VRTX fell ~7.5% after hours; rival $VERA rose 18%+. https://analystledger.github.io/news.html #biotech #stocks",
-  "long": "A late-cycle FDA request has delayed a key launch for Vertex and shifted the competitive picture in IgA nephropathy.\n\n• FDA target date moved from Nov 30, 2026 to no later than Feb 28, 2027 after a major amendment\n• $VRTX fell about 7.5% in after-hours trading on Wednesday\n• Rival Vera Therapeutics ($VERA) rose more than 18%\n\nSources: https://analystledger.github.io/news.html\n\n#biotech #stocks #AnalystLedger"
+  "long": "A late-cycle FDA request has delayed a key launch for Vertex and shifted the competitive picture in IgA nephropathy.\n\n• FDA target date moved from Nov 30, 2026 to no later than Feb 28, 2027 after a major amendment\n• $VRTX fell about 7.5% in after-hours trading on Wednesday\n• Rival Vera Therapeutics ($VERA) rose more than 18%\n\nSources: https://analystledger.github.io/news.html\n\n#biotech #stocks #AnalystLedger",
+  "posted_utc": "2026-11-26 12:56"
  },
  {
   "id": "news-nvda-sp-creditwatch-governance-2026-11-25",
-  "status": "pending",
+  "status": "posted",
   "kicker": "Market news",
   "title": "S&P puts Nvidia's AA rating on watch",
   "card_lines": [
@@ -369,6 +371,7 @@
    "$NVDA closed down 3.9% on Wednesday"
   ],
   "short": "S&P put Nvidia's AA rating on CreditWatch negative, citing board oversight, key-person risk and China controls; a decision is due within 90 days. $NVDA closed down 3.9%. https://analystledger.github.io/news.html #Nvidia #stocks",
-  "long": "Nvidia's governance questions have reached the credit market after Jensen Huang's resignation and reinstatement as CEO.\n\n• S&P placed the AA rating on CreditWatch negative; any cut likely limited to one notch\n• Concerns: board oversight, long-tenured directors, no succession plan, China-related controls\n• $NVDA closed down 3.9% Wednesday; S&P expects to decide within 90 days\n\nSources: https://analystledger.github.io/news.html\n\n#Nvidia #stocks #AnalystLedger"
+  "long": "Nvidia's governance questions have reached the credit market after Jensen Huang's resignation and reinstatement as CEO.\n\n• S&P placed the AA rating on CreditWatch negative; any cut likely limited to one notch\n• Concerns: board oversight, long-tenured directors, no succession plan, China-related controls\n• $NVDA closed down 3.9% Wednesday; S&P expects to decide within 90 days\n\nSources: https://analystledger.github.io/news.html\n\n#Nvidia #stocks #AnalystLedger",
+  "posted_utc": "2026-11-26 12:56"
  }
 ]
