@@ -1,5 +1,5 @@
 {
- "updated_utc": "2026-11-25 22:02 UTC",
+ "updated_utc": "2026-11-26 04:18 UTC",
  "total_events": 364,
  "new_events": 0,
  "log": [
@@ -8,9 +8,9 @@
   "News (Claude): 364 events",
   "Prices (Stooq): first 5 tickers failed - skipping price update this run",
   "Prices (Stooq): 0 tickers updated, 0 rating prices filled, 5 failed",
-  "  ASR: HTTP 200 '<!DOCTYPE html><html><head><meta charset=\"utf-8\"><meta name=\"robots\" content=\"noindex,nofollow\"></head><body><noscript>T'",
-  "  AVAV: HTTP 200 '<!DOCTYPE html><html><head><meta charset=\"utf-8\"><meta name=\"robots\" content=\"noindex,nofollow\"></head><body><noscript>T'",
-  "  BA: HTTP 200 '<!DOCTYPE html><html><head><meta charset=\"utf-8\"><meta name=\"robots\" content=\"noindex,nofollow\"></head><body><noscript>T'",
+  "  AAL: HTTP 200 '<!DOCTYPE html><html><head><meta charset=\"utf-8\"><meta name=\"robots\" content=\"noindex,nofollow\"></head><body><noscript>T'",
+  "  AAPL: HTTP 200 '<!DOCTYPE html><html><head><meta charset=\"utf-8\"><meta name=\"robots\" content=\"noindex,nofollow\"></head><body><noscript>T'",
+  "  AARD: HTTP 200 '<!DOCTYPE html><html><head><meta charset=\"utf-8\"><meta name=\"robots\" content=\"noindex,nofollow\"></head><body><noscript>T'",
   "Alerts queued: 0 pending"
  ]
 }
