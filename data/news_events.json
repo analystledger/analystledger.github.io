@@ -1,6 +1,472 @@
 [
  {
   "date": "2026-11-25",
+  "ticker": "ACN",
+  "company": "Accenture",
+  "firm": "Wedbush",
+  "rating_to": "Outperform",
+  "action": "initiate",
+  "source_url": "https://dailytradealert.com/2026/11/25/analyst-upgrades-and-downgrades-for-wednesday-11-25/"
+ },
+ {
+  "date": "2026-11-25",
+  "ticker": "ADP",
+  "company": "ADP",
+  "firm": "Wedbush",
+  "rating_to": "Outperform",
+  "action": "initiate",
+  "source_url": "https://dailytradealert.com/2026/11/25/analyst-upgrades-and-downgrades-for-wednesday-11-25/"
+ },
+ {
+  "date": "2026-11-25",
+  "ticker": "COIN",
+  "company": "Coinbase",
+  "firm": "Wedbush",
+  "rating_to": "Outperform",
+  "action": "initiate",
+  "source_url": "https://dailytradealert.com/2026/11/25/analyst-upgrades-and-downgrades-for-wednesday-11-25/"
+ },
+ {
+  "date": "2026-11-25",
+  "ticker": "MA",
+  "company": "Mastercard",
+  "firm": "Wedbush",
+  "rating_to": "Outperform",
+  "action": "initiate",
+  "source_url": "https://dailytradealert.com/2026/11/25/analyst-upgrades-and-downgrades-for-wednesday-11-25/"
+ },
+ {
+  "date": "2026-11-25",
+  "ticker": "V",
+  "company": "Visa",
+  "firm": "Wedbush",
+  "rating_to": "Outperform",
+  "action": "initiate",
+  "source_url": "https://dailytradealert.com/2026/11/25/analyst-upgrades-and-downgrades-for-wednesday-11-25/"
+ },
+ {
+  "date": "2026-11-25",
+  "ticker": "PAYX",
+  "company": "Paychex",
+  "firm": "Wedbush",
+  "rating_to": "Outperform",
+  "action": "initiate",
+  "source_url": "https://dailytradealert.com/2026/11/25/analyst-upgrades-and-downgrades-for-wednesday-11-25/"
+ },
+ {
+  "date": "2026-11-25",
+  "ticker": "PWR",
+  "company": "Quanta Services",
+  "firm": "Wedbush",
+  "rating_to": "Outperform",
+  "action": "initiate",
+  "source_url": "https://dailytradealert.com/2026/11/25/analyst-upgrades-and-downgrades-for-wednesday-11-25/"
+ },
+ {
+  "date": "2026-11-25",
+  "ticker": "HOOD",
+  "company": "Robinhood",
+  "firm": "Wedbush",
+  "rating_to": "Outperform",
+  "action": "initiate",
+  "source_url": "https://dailytradealert.com/2026/11/25/analyst-upgrades-and-downgrades-for-wednesday-11-25/"
+ },
+ {
+  "date": "2026-11-25",
+  "ticker": "IBM",
+  "company": "IBM",
+  "firm": "Wedbush",
+  "rating_to": "Outperform",
+  "action": "initiate",
+  "source_url": "https://dailytradealert.com/2026/11/25/analyst-upgrades-and-downgrades-for-wednesday-11-25/"
+ },
+ {
+  "date": "2026-11-25",
+  "ticker": "CTSH",
+  "company": "Cognizant",
+  "firm": "Wedbush",
+  "rating_to": "Outperform",
+  "action": "initiate",
+  "source_url": "https://dailytradealert.com/2026/11/25/analyst-upgrades-and-downgrades-for-wednesday-11-25/"
+ },
+ {
+  "date": "2026-11-25",
+  "ticker": "EPAM",
+  "company": "EPAM Systems",
+  "firm": "Wedbush",
+  "rating_to": "Outperform",
+  "action": "initiate",
+  "source_url": "https://dailytradealert.com/2026/11/25/analyst-upgrades-and-downgrades-for-wednesday-11-25/"
+ },
+ {
+  "date": "2026-11-25",
+  "ticker": "INFY",
+  "company": "Infosys",
+  "firm": "Wedbush",
+  "rating_to": "Outperform",
+  "action": "initiate",
+  "source_url": "https://dailytradealert.com/2026/11/25/analyst-upgrades-and-downgrades-for-wednesday-11-25/"
+ },
+ {
+  "date": "2026-11-25",
+  "ticker": "EXLS",
+  "company": "ExlService",
+  "firm": "Wedbush",
+  "rating_to": "Outperform",
+  "action": "initiate",
+  "source_url": "https://dailytradealert.com/2026/11/25/analyst-upgrades-and-downgrades-for-wednesday-11-25/"
+ },
+ {
+  "date": "2026-11-25",
+  "ticker": "SEZL",
+  "company": "Sezzle",
+  "firm": "Wedbush",
+  "rating_to": "Outperform",
+  "action": "initiate",
+  "source_url": "https://dailytradealert.com/2026/11/25/analyst-upgrades-and-downgrades-for-wednesday-11-25/"
+ },
+ {
+  "date": "2026-11-25",
+  "ticker": "WIT",
+  "company": "Wipro",
+  "firm": "Wedbush",
+  "rating_to": "Underperform",
+  "action": "initiate",
+  "source_url": "https://dailytradealert.com/2026/11/25/analyst-upgrades-and-downgrades-for-wednesday-11-25/"
+ },
+ {
+  "date": "2026-11-25",
+  "ticker": "DAVA",
+  "company": "Endava",
+  "firm": "Wedbush",
+  "rating_to": "Underperform",
+  "action": "initiate",
+  "source_url": "https://dailytradealert.com/2026/11/25/analyst-upgrades-and-downgrades-for-wednesday-11-25/"
+ },
+ {
+  "date": "2026-11-25",
+  "ticker": "GLOB",
+  "company": "Globant",
+  "firm": "Wedbush",
+  "rating_from": "Neutral",
+  "rating_to": "Outperform",
+  "action": "upgrade",
+  "source_url": "https://dailytradealert.com/2026/11/25/analyst-upgrades-and-downgrades-for-wednesday-11-25/"
+ },
+ {
+  "date": "2026-11-25",
+  "ticker": "KLAR",
+  "company": "Klarna",
+  "firm": "Wedbush",
+  "rating_from": "Outperform",
+  "rating_to": "Neutral",
+  "action": "downgrade",
+  "source_url": "https://dailytradealert.com/2026/11/25/analyst-upgrades-and-downgrades-for-wednesday-11-25/"
+ },
+ {
+  "date": "2026-11-25",
+  "ticker": "DIOD",
+  "company": "Diodes",
+  "firm": "Mizuho",
+  "rating_to": "Outperform",
+  "action": "initiate",
+  "source_url": "https://dailytradealert.com/2026/11/25/analyst-upgrades-and-downgrades-for-wednesday-11-25/"
+ },
+ {
+  "date": "2026-11-25",
+  "ticker": "FLY",
+  "company": "Firefly Aerospace",
+  "firm": "Needham",
+  "rating_to": "Buy",
+  "action": "initiate",
+  "source_url": "https://dailytradealert.com/2026/11/25/analyst-upgrades-and-downgrades-for-wednesday-11-25/"
+ },
+ {
+  "date": "2026-11-25",
+  "ticker": "GMAB",
+  "company": "Genmab",
+  "firm": "RBC Capital",
+  "rating_to": "Outperform",
+  "action": "initiate",
+  "source_url": "https://dailytradealert.com/2026/11/25/analyst-upgrades-and-downgrades-for-wednesday-11-25/"
+ },
+ {
+  "date": "2026-11-25",
+  "ticker": "KC",
+  "company": "Kingsoft Cloud",
+  "firm": "BNP Paribas",
+  "rating_to": "Outperform",
+  "action": "initiate",
+  "source_url": "https://dailytradealert.com/2026/11/25/analyst-upgrades-and-downgrades-for-wednesday-11-25/"
+ },
+ {
+  "date": "2026-11-25",
+  "ticker": "SNY",
+  "company": "Sanofi",
+  "firm": "BofA Securities",
+  "rating_from": "Neutral",
+  "rating_to": "Buy",
+  "action": "upgrade",
+  "source_url": "https://dailytradealert.com/2026/11/25/analyst-upgrades-and-downgrades-for-wednesday-11-25/"
+ },
+ {
+  "date": "2026-11-25",
+  "ticker": "SNY",
+  "company": "Sanofi",
+  "firm": "RBC Capital",
+  "rating_from": "Sector Perform",
+  "rating_to": "Outperform",
+  "action": "upgrade",
+  "source_url": "https://dailytradealert.com/2026/11/25/analyst-upgrades-and-downgrades-for-wednesday-11-25/"
+ },
+ {
+  "date": "2026-11-25",
+  "ticker": "SHLS",
+  "company": "Shoals Technologies",
+  "firm": "Citigroup",
+  "rating_from": "Neutral",
+  "rating_to": "Buy",
+  "action": "upgrade",
+  "source_url": "https://dailytradealert.com/2026/11/25/analyst-upgrades-and-downgrades-for-wednesday-11-25/"
+ },
+ {
+  "date": "2026-11-25",
+  "ticker": "ICLR",
+  "company": "ICON",
+  "firm": "Rothschild & Co Redburn",
+  "rating_from": "Neutral",
+  "rating_to": "Buy",
+  "action": "upgrade",
+  "source_url": "https://dailytradealert.com/2026/11/25/analyst-upgrades-and-downgrades-for-wednesday-11-25/"
+ },
+ {
+  "date": "2026-11-25",
+  "ticker": "GGB",
+  "company": "Gerdau",
+  "firm": "Bradesco BBI",
+  "rating_from": "Neutral",
+  "rating_to": "Outperform",
+  "action": "upgrade",
+  "source_url": "https://dailytradealert.com/2026/11/25/analyst-upgrades-and-downgrades-for-wednesday-11-25/"
+ },
+ {
+  "date": "2026-11-25",
+  "ticker": "ANF",
+  "company": "Abercrombie & Fitch",
+  "firm": "BMO Capital",
+  "rating_from": "Outperform",
+  "rating_to": "Market Perform",
+  "action": "downgrade",
+  "source_url": "https://dailytradealert.com/2026/11/25/analyst-upgrades-and-downgrades-for-wednesday-11-25/"
+ },
+ {
+  "date": "2026-11-25",
+  "ticker": "BUD",
+  "company": "AB InBev",
+  "firm": "JPMorgan",
+  "rating_from": "Overweight",
+  "rating_to": "Neutral",
+  "action": "downgrade",
+  "source_url": "https://dailytradealert.com/2026/11/25/analyst-upgrades-and-downgrades-for-wednesday-11-25/"
+ },
+ {
+  "date": "2026-11-25",
+  "ticker": "AMBA",
+  "company": "Ambarella",
+  "firm": "BofA Securities",
+  "rating_from": "Neutral",
+  "rating_to": "Underperform",
+  "action": "downgrade",
+  "source_url": "https://dailytradealert.com/2026/11/25/analyst-upgrades-and-downgrades-for-wednesday-11-25/"
+ },
+ {
+  "date": "2026-11-25",
+  "ticker": "AMBA",
+  "company": "Ambarella",
+  "firm": "Morgan Stanley",
+  "rating_from": "Overweight",
+  "rating_to": "Equal Weight",
+  "action": "downgrade",
+  "source_url": "https://dailytradealert.com/2026/11/25/analyst-upgrades-and-downgrades-for-wednesday-11-25/"
+ },
+ {
+  "date": "2026-11-25",
+  "ticker": "ASR",
+  "company": "Grupo Aeroportuario del Sureste",
+  "firm": "Citigroup",
+  "rating_from": "Buy",
+  "rating_to": "Neutral",
+  "action": "downgrade",
+  "source_url": "https://dailytradealert.com/2026/11/25/analyst-upgrades-and-downgrades-for-wednesday-11-25/"
+ },
+ {
+  "date": "2026-11-25",
+  "ticker": "CCEP",
+  "company": "Coca-Cola Europacific Partners",
+  "firm": "Deutsche Bank",
+  "rating_from": "Buy",
+  "rating_to": "Hold",
+  "action": "downgrade",
+  "source_url": "https://dailytradealert.com/2026/11/25/analyst-upgrades-and-downgrades-for-wednesday-11-25/"
+ },
+ {
+  "date": "2026-11-25",
+  "ticker": "GDRX",
+  "company": "GoodRx",
+  "firm": "Raymond James",
+  "rating_from": "Outperform",
+  "rating_to": "Market Perform",
+  "action": "downgrade",
+  "source_url": "https://dailytradealert.com/2026/11/25/analyst-upgrades-and-downgrades-for-wednesday-11-25/"
+ },
+ {
+  "date": "2026-11-25",
+  "ticker": "GT",
+  "company": "Goodyear Tire",
+  "firm": "JPMorgan",
+  "rating_from": "Overweight",
+  "rating_to": "Neutral",
+  "action": "downgrade",
+  "source_url": "https://dailytradealert.com/2026/11/25/analyst-upgrades-and-downgrades-for-wednesday-11-25/"
+ },
+ {
+  "date": "2026-11-25",
+  "ticker": "HCA",
+  "company": "HCA Healthcare",
+  "firm": "Argus",
+  "rating_from": "Buy",
+  "rating_to": "Sell",
+  "action": "downgrade",
+  "source_url": "https://dailytradealert.com/2026/11/25/analyst-upgrades-and-downgrades-for-wednesday-11-25/"
+ },
+ {
+  "date": "2026-11-25",
+  "ticker": "NTNX",
+  "company": "Nutanix",
+  "firm": "BofA Securities",
+  "rating_from": "Buy",
+  "rating_to": "Neutral",
+  "action": "downgrade",
+  "source_url": "https://dailytradealert.com/2026/11/25/analyst-upgrades-and-downgrades-for-wednesday-11-25/"
+ },
+ {
+  "date": "2026-11-25",
+  "ticker": "PBR",
+  "company": "Petrobras",
+  "firm": "Santander",
+  "rating_from": "Outperform",
+  "rating_to": "Neutral",
+  "action": "downgrade",
+  "source_url": "https://dailytradealert.com/2026/11/25/analyst-upgrades-and-downgrades-for-wednesday-11-25/"
+ },
+ {
+  "date": "2026-11-25",
+  "ticker": "URBN",
+  "company": "Urban Outfitters",
+  "firm": "Morgan Stanley",
+  "rating_from": "Overweight",
+  "rating_to": "Equal Weight",
+  "action": "downgrade",
+  "source_url": "https://dailytradealert.com/2026/11/25/analyst-upgrades-and-downgrades-for-wednesday-11-25/"
+ },
+ {
+  "date": "2026-11-25",
+  "ticker": "DELL",
+  "company": "Dell Technologies",
+  "analyst": "Vijay Rakesh",
+  "firm": "Mizuho",
+  "rating_from": "Outperform",
+  "rating_to": "Outperform",
+  "pt_from": 650,
+  "pt_to": 500,
+  "price_at_rating": 297.06,
+  "action": "target_cut",
+  "source_url": "https://www.heygotrade.com/en/news/analyst-upgrades-downgrades-dell-price-targets-fall/"
+ },
+ {
+  "date": "2026-11-25",
+  "ticker": "DELL",
+  "company": "Dell Technologies",
+  "analyst": "Wamsi Mohan",
+  "firm": "BofA Securities",
+  "rating_from": "Buy",
+  "rating_to": "Buy",
+  "pt_from": 600,
+  "pt_to": 500,
+  "price_at_rating": 297.06,
+  "action": "target_cut",
+  "source_url": "https://www.heygotrade.com/en/news/analyst-upgrades-downgrades-dell-price-targets-fall/"
+ },
+ {
+  "date": "2026-11-25",
+  "ticker": "DELL",
+  "company": "Dell Technologies",
+  "analyst": "Aaron Rakers",
+  "firm": "Wells Fargo",
+  "rating_from": "Overweight",
+  "rating_to": "Overweight",
+  "pt_from": 545,
+  "pt_to": 400,
+  "price_at_rating": 297.06,
+  "action": "target_cut",
+  "source_url": "https://www.heygotrade.com/en/news/analyst-upgrades-downgrades-dell-price-targets-fall/"
+ },
+ {
+  "date": "2026-11-25",
+  "ticker": "DELL",
+  "company": "Dell Technologies",
+  "analyst": "Simon Leopold",
+  "firm": "Raymond James",
+  "rating_from": "Buy",
+  "rating_to": "Buy",
+  "pt_from": 617,
+  "pt_to": 570,
+  "price_at_rating": 297.06,
+  "action": "target_cut",
+  "source_url": "https://www.heygotrade.com/en/news/analyst-upgrades-downgrades-dell-price-targets-fall/"
+ },
+ {
+  "date": "2026-11-25",
+  "ticker": "DELL",
+  "company": "Dell Technologies",
+  "analyst": "Mark Newman",
+  "firm": "Bernstein",
+  "pt_from": 650,
+  "pt_to": 580,
+  "price_at_rating": 297.06,
+  "action": "target_cut",
+  "source_url": "https://www.heygotrade.com/en/news/analyst-upgrades-downgrades-dell-price-targets-fall/"
+ },
+ {
+  "date": "2026-11-25",
+  "ticker": "DELL",
+  "company": "Dell Technologies",
+  "analyst": "James Fish",
+  "firm": "Piper Sandler",
+  "rating_from": "Overweight",
+  "rating_to": "Overweight",
+  "pt_from": 558,
+  "pt_to": 555,
+  "price_at_rating": 297.06,
+  "action": "target_cut",
+  "source_url": "https://www.heygotrade.com/en/news/analyst-upgrades-downgrades-dell-price-targets-fall/"
+ },
+ {
+  "date": "2026-11-25",
+  "ticker": "DELL",
+  "company": "Dell Technologies",
+  "analyst": "Erik Woodring",
+  "firm": "Morgan Stanley",
+  "rating_from": "Equal-Weight",
+  "rating_to": "Equal-Weight",
+  "pt_from": 403,
+  "pt_to": 408,
+  "price_at_rating": 297.06,
+  "action": "target_raise",
+  "source_url": "https://www.heygotrade.com/en/news/analyst-upgrades-downgrades-dell-price-targets-fall/"
+ },
+ {
+  "date": "2026-11-25",
   "ticker": "SNY",
   "company": "Sanofi",
   "analyst": "James Gordon",
