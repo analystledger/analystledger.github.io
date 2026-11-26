@@ -1,21 +1,6 @@
 [
  {
   "t": "a",
-  "n": "James Gordon",
-  "u": "analysts/james-gordon-barclays.html"
- },
- {
-  "t": "a",
-  "n": "Dimple Gosai",
-  "u": "analysts/dimple-gosai-piper-sandler.html"
- },
- {
-  "t": "a",
-  "n": "Gabriel Barra",
-  "u": "analysts/gabriel-barra-citigroup.html"
- },
- {
-  "t": "a",
   "n": "Mizuho (research team)",
   "u": "analysts/mizuho-research.html"
  },
@@ -28,6 +13,121 @@
   "t": "a",
   "n": "JPMorgan (research team)",
   "u": "analysts/jpmorgan-research.html"
+ },
+ {
+  "t": "a",
+  "n": "Wedbush (research team)",
+  "u": "analysts/wedbush-research.html"
+ },
+ {
+  "t": "a",
+  "n": "Citigroup (research team)",
+  "u": "analysts/citigroup-research.html"
+ },
+ {
+  "t": "a",
+  "n": "Argus (research team)",
+  "u": "analysts/argus-research.html"
+ },
+ {
+  "t": "a",
+  "n": "BNP Paribas (research team)",
+  "u": "analysts/bnp-paribas-research.html"
+ },
+ {
+  "t": "a",
+  "n": "BMO Capital (research team)",
+  "u": "analysts/bmo-capital-research.html"
+ },
+ {
+  "t": "a",
+  "n": "BofA Securities (research team)",
+  "u": "analysts/bofa-securities-research.html"
+ },
+ {
+  "t": "a",
+  "n": "RBC Capital (research team)",
+  "u": "analysts/rbc-capital-research.html"
+ },
+ {
+  "t": "a",
+  "n": "Needham (research team)",
+  "u": "analysts/needham-research.html"
+ },
+ {
+  "t": "a",
+  "n": "Raymond James (research team)",
+  "u": "analysts/raymond-james-research.html"
+ },
+ {
+  "t": "a",
+  "n": "Deutsche Bank (research team)",
+  "u": "analysts/deutsche-bank-research.html"
+ },
+ {
+  "t": "a",
+  "n": "Rothschild & Co Redburn (research team)",
+  "u": "analysts/rothschild-co-redburn-research.html"
+ },
+ {
+  "t": "a",
+  "n": "James Gordon",
+  "u": "analysts/james-gordon-barclays.html"
+ },
+ {
+  "t": "a",
+  "n": "Santander (research team)",
+  "u": "analysts/santander-research.html"
+ },
+ {
+  "t": "a",
+  "n": "Bradesco BBI (research team)",
+  "u": "analysts/bradesco-bbi-research.html"
+ },
+ {
+  "t": "a",
+  "n": "Vijay Rakesh",
+  "u": "analysts/vijay-rakesh-mizuho.html"
+ },
+ {
+  "t": "a",
+  "n": "Wamsi Mohan",
+  "u": "analysts/wamsi-mohan-bofa-securities.html"
+ },
+ {
+  "t": "a",
+  "n": "Aaron Rakers",
+  "u": "analysts/aaron-rakers-wells-fargo.html"
+ },
+ {
+  "t": "a",
+  "n": "Simon Leopold",
+  "u": "analysts/simon-leopold-raymond-james.html"
+ },
+ {
+  "t": "a",
+  "n": "Mark Newman",
+  "u": "analysts/mark-newman-bernstein.html"
+ },
+ {
+  "t": "a",
+  "n": "James Fish",
+  "u": "analysts/james-fish-piper-sandler.html"
+ },
+ {
+  "t": "a",
+  "n": "Erik Woodring",
+  "u": "analysts/erik-woodring-morgan-stanley.html"
+ },
+ {
+  "t": "a",
+  "n": "Dimple Gosai",
+  "u": "analysts/dimple-gosai-piper-sandler.html"
+ },
+ {
+  "t": "a",
+  "n": "Gabriel Barra",
+  "u": "analysts/gabriel-barra-citigroup.html"
  },
  {
   "t": "a",
@@ -68,26 +168,6 @@
   "t": "a",
   "n": "DA Davidson (research team)",
   "u": "analysts/da-davidson-research.html"
- },
- {
-  "t": "a",
-  "n": "Argus (research team)",
-  "u": "analysts/argus-research.html"
- },
- {
-  "t": "a",
-  "n": "BNP Paribas (research team)",
-  "u": "analysts/bnp-paribas-research.html"
- },
- {
-  "t": "a",
-  "n": "BMO Capital (research team)",
-  "u": "analysts/bmo-capital-research.html"
- },
- {
-  "t": "a",
-  "n": "Needham (research team)",
-  "u": "analysts/needham-research.html"
  },
  {
   "t": "a",
@@ -251,11 +331,6 @@
  },
  {
   "t": "a",
-  "n": "Raymond James (research team)",
-  "u": "analysts/raymond-james-research.html"
- },
- {
-  "t": "a",
   "n": "Canaccord Genuity (research team)",
   "u": "analysts/canaccord-genuity-research.html"
  },
@@ -288,11 +363,6 @@
   "t": "a",
   "n": "Fearnley (research team)",
   "u": "analysts/fearnley-research.html"
- },
- {
-  "t": "a",
-  "n": "RBC Capital (research team)",
-  "u": "analysts/rbc-capital-research.html"
  },
  {
   "t": "a",
@@ -338,11 +408,6 @@
   "t": "a",
   "n": "Sheila Kahyaoglu",
   "u": "analysts/sheila-kahyaoglu-jefferies.html"
- },
- {
-  "t": "a",
-  "n": "BofA Securities (research team)",
-  "u": "analysts/bofa-securities-research.html"
  },
  {
   "t": "a",
@@ -401,11 +466,6 @@
  },
  {
   "t": "a",
-  "n": "Citigroup (research team)",
-  "u": "analysts/citigroup-research.html"
- },
- {
-  "t": "a",
   "n": "Freedom Broker (research team)",
   "u": "analysts/freedom-broker-research.html"
  },
@@ -453,11 +513,6 @@
   "t": "a",
   "n": "Zelman & Associates (research team)",
   "u": "analysts/zelman-associates-research.html"
- },
- {
-  "t": "a",
-  "n": "Deutsche Bank (research team)",
-  "u": "analysts/deutsche-bank-research.html"
  },
  {
   "t": "a",
@@ -566,11 +621,6 @@
  },
  {
   "t": "a",
-  "n": "Rothschild & Co Redburn (research team)",
-  "u": "analysts/rothschild-co-redburn-research.html"
- },
- {
-  "t": "a",
   "n": "Manav Patnaik",
   "u": "analysts/manav-patnaik-barclays.html"
  },
@@ -586,8 +636,183 @@
  },
  {
   "t": "s",
+  "n": "DELL Dell Technologies",
+  "u": "stocks/dell.html"
+ },
+ {
+  "t": "s",
   "n": "SNY Sanofi",
   "u": "stocks/sny.html"
+ },
+ {
+  "t": "s",
+  "n": "FLY Firefly Aerospace",
+  "u": "stocks/fly.html"
+ },
+ {
+  "t": "s",
+  "n": "SHLS Shoals Technologies",
+  "u": "stocks/shls.html"
+ },
+ {
+  "t": "s",
+  "n": "CTSH Cognizant Technology Solutions",
+  "u": "stocks/ctsh.html"
+ },
+ {
+  "t": "s",
+  "n": "ASR Asur",
+  "u": "stocks/asr.html"
+ },
+ {
+  "t": "s",
+  "n": "AMBA Ambarella",
+  "u": "stocks/amba.html"
+ },
+ {
+  "t": "s",
+  "n": "WIT Wipro",
+  "u": "stocks/wit.html"
+ },
+ {
+  "t": "s",
+  "n": "V Visa",
+  "u": "stocks/v.html"
+ },
+ {
+  "t": "s",
+  "n": "URBN Urban Outfitters",
+  "u": "stocks/urbn.html"
+ },
+ {
+  "t": "s",
+  "n": "SEZL Sezzle",
+  "u": "stocks/sezl.html"
+ },
+ {
+  "t": "s",
+  "n": "PWR Quanta Services",
+  "u": "stocks/pwr.html"
+ },
+ {
+  "t": "s",
+  "n": "PBR Petrobras",
+  "u": "stocks/pbr.html"
+ },
+ {
+  "t": "s",
+  "n": "PAYX Paychex",
+  "u": "stocks/payx.html"
+ },
+ {
+  "t": "s",
+  "n": "NTNX Nutanix",
+  "u": "stocks/ntnx.html"
+ },
+ {
+  "t": "s",
+  "n": "MA Mastercard",
+  "u": "stocks/ma.html"
+ },
+ {
+  "t": "s",
+  "n": "KLAR Klarna",
+  "u": "stocks/klar.html"
+ },
+ {
+  "t": "s",
+  "n": "KC Kingsoft Cloud",
+  "u": "stocks/kc.html"
+ },
+ {
+  "t": "s",
+  "n": "INFY Infosys",
+  "u": "stocks/infy.html"
+ },
+ {
+  "t": "s",
+  "n": "ICLR ICON",
+  "u": "stocks/iclr.html"
+ },
+ {
+  "t": "s",
+  "n": "IBM IBM",
+  "u": "stocks/ibm.html"
+ },
+ {
+  "t": "s",
+  "n": "HOOD Robinhood",
+  "u": "stocks/hood.html"
+ },
+ {
+  "t": "s",
+  "n": "HCA HCA Healthcare",
+  "u": "stocks/hca.html"
+ },
+ {
+  "t": "s",
+  "n": "GT Goodyear Tire",
+  "u": "stocks/gt.html"
+ },
+ {
+  "t": "s",
+  "n": "GMAB Genmab",
+  "u": "stocks/gmab.html"
+ },
+ {
+  "t": "s",
+  "n": "GLOB Globant",
+  "u": "stocks/glob.html"
+ },
+ {
+  "t": "s",
+  "n": "GGB Gerdau",
+  "u": "stocks/ggb.html"
+ },
+ {
+  "t": "s",
+  "n": "GDRX GoodRx",
+  "u": "stocks/gdrx.html"
+ },
+ {
+  "t": "s",
+  "n": "EXLS ExlService",
+  "u": "stocks/exls.html"
+ },
+ {
+  "t": "s",
+  "n": "EPAM EPAM Systems",
+  "u": "stocks/epam.html"
+ },
+ {
+  "t": "s",
+  "n": "DIOD Diodes",
+  "u": "stocks/diod.html"
+ },
+ {
+  "t": "s",
+  "n": "DAVA Endava",
+  "u": "stocks/dava.html"
+ },
+ {
+  "t": "s",
+  "n": "COIN Coinbase",
+  "u": "stocks/coin.html"
+ },
+ {
+  "t": "s",
+  "n": "CCEP Coca-Cola Europacific Partners",
+  "u": "stocks/ccep.html"
+ },
+ {
+  "t": "s",
+  "n": "BUD AB InBev",
+  "u": "stocks/bud.html"
+ },
+ {
+  "t": "s",
+  "n": "ANF Abercrombie & Fitch",
+  "u": "stocks/anf.html"
  },
  {
   "t": "s",
@@ -598,6 +823,16 @@
   "t": "s",
   "n": "AGRO Adecoagro",
   "u": "stocks/agro.html"
+ },
+ {
+  "t": "s",
+  "n": "ADP ADP",
+  "u": "stocks/adp.html"
+ },
+ {
+  "t": "s",
+  "n": "ACN Accenture",
+  "u": "stocks/acn.html"
  },
  {
   "t": "s",
@@ -628,11 +863,6 @@
   "t": "s",
   "n": "HUM Humana",
   "u": "stocks/hum.html"
- },
- {
-  "t": "s",
-  "n": "FLY Firefly Aerospace",
-  "u": "stocks/fly.html"
  },
  {
   "t": "s",
@@ -678,11 +908,6 @@
   "t": "s",
   "n": "SKYD Skydance",
   "u": "stocks/skyd.html"
- },
- {
-  "t": "s",
-  "n": "SHLS Shoals Technologies",
-  "u": "stocks/shls.html"
  },
  {
   "t": "s",
@@ -838,11 +1063,6 @@
   "t": "s",
   "n": "AVAV AeroVironment",
   "u": "stocks/avav.html"
- },
- {
-  "t": "s",
-  "n": "ASR Asur",
-  "u": "stocks/asr.html"
  },
  {
   "t": "s",
@@ -1748,11 +1968,6 @@
   "t": "s",
   "n": "DTM DT Midstream",
   "u": "stocks/dtm.html"
- },
- {
-  "t": "s",
-  "n": "CTSH Cognizant Technology Solutions",
-  "u": "stocks/ctsh.html"
  },
  {
   "t": "s",
