@@ -1,5 +1,54 @@
 [
  {
+  "id": "china-mofcom-section-301-response-2026-11-26",
+  "date": "2026-11-26 11:22 UTC",
+  "impact": "medium",
+  "category": "Macro & Fed",
+  "headline": "China rejects proposed US Section 301 tariffs and reserves the right to retaliate",
+  "summary": "China's commerce ministry said Thursday it firmly opposes the new Section 301 tariffs Washington proposed on 14 economies, calling the overcapacity probe a breach of WTO rules and saying Beijing reserves the right to take necessary measures; the US plan would put an extra 20% duty on many Chinese goods, lifting the combined rate on some to 45%. Spokesman He Yadong also urged the US to speed up the internal steps needed to activate a $30 billion reciprocal tariff-reduction arrangement agreed in September, whose goods Washington has exempted from the proposal, with US markets closed for Thanksgiving until Friday's shortened session.",
+  "why": "Beijing's measured wording, with no specific countermeasures named, keeps trade risk in focus for US companies with heavy China sales or supply chains, from consumer electronics and apparel to agricultural exporters. The key open questions are whether China responds before the US-China truce expires on January 10 and how talks at the December G20 summit shape the final duties, which are not due before hearings starting January 25.",
+  "tickers": [
+   "AAPL",
+   "NKE",
+   "TSLA"
+  ],
+  "sources": [
+   {
+    "name": "Xinhua",
+    "url": "https://english.news.cn/20261126/9d9be8e730414538ba58af52d044e80e/c.html"
+   },
+   {
+    "name": "AP via ClickOnDetroit",
+    "url": "https://www.clickondetroit.com/news/politics/2026/11/25/trump-plans-a-20-tariff-on-chinese-goods-and-new-import-taxes-for-the-eu-and-a-dozen-other-major-trading-partners/"
+   }
+  ]
+ },
+ {
+  "id": "market-global-chip-rebound-thanksgiving-2026-11-26",
+  "date": "2026-11-26 08:15 UTC",
+  "impact": "medium",
+  "category": "Other",
+  "headline": "Chip stocks rebound overseas and US futures firm as Wall Street shuts for Thanksgiving",
+  "summary": "With US exchanges closed Thursday, Europe's STOXX 600 rose 1.4% in early trade as its tech sector gained nearly 2%, while in Asia Kioxia jumped 12.6%, SoftBank Group 7.3% and SK Hynix 2.2% and Taiwan's Taiex added 2.5%. S&P 500 futures were up about 0.5% early Thursday New York time after a Wednesday session in which the Nasdaq Composite briefly fell 4.6% before closing down 0.6% and Nvidia lost 3.9% following S&P's warning on its credit rating.",
+  "why": "The overseas rebound in memory and chip names offers a first read on whether this week's AI hardware selloff in Nvidia, Micron and SanDisk is stabilising, and Reuters tied part of Europe's gain to expectations that proposed US tariffs on the EU will be capped at the agreed 15% rate. Friday's holiday-shortened US session is typically thin, so moves may not prove durable, and Nvidia's governance questions remain unresolved.",
+  "tickers": [
+   "NVDA",
+   "MU",
+   "SNDK",
+   "AVGO"
+  ],
+  "sources": [
+   {
+    "name": "Reuters via Euronext",
+    "url": "https://live.euronext.com/en/financial-news/european-stocks-rally-tech-and-banks-rebound-tariff-fears-ease"
+   },
+   {
+    "name": "AP via BNN Bloomberg",
+    "url": "https://www.bnnbloomberg.ca/markets/2026/11/26/global-stocks-rise-and-tech-shares-rebound-as-us-closes-for-thanksgiving/"
+   }
+  ]
+ },
+ {
   "id": "vrtx-povetacicept-fda-delay-2026-11-25",
   "date": "2026-11-25 21:02 UTC",
   "impact": "high",
