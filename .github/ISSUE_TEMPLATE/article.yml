@@ -1,0 +1,66 @@
+name: Submit an article
+description: Send an article to Analyst Ledger. It is published only after the editor approves it.
+title: "[Article] "
+labels: ["article", "pending-review"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for writing for **Analyst Ledger**. Every article is reviewed by the editor before it appears on the site, and you'll get a comment here when it is approved or if changes are needed.
+        Note: this repository is public, so your submission is visible here while it waits for review.
+        Format the article in Markdown (`## Heading`, `**bold**`, `- bullet`, `[link](https://…)`). Images and HTML are not supported.
+  - type: input
+    id: headline
+    attributes:
+      label: Headline
+      description: Clear and factual, max 90 characters.
+    validations: { required: true }
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: One or two sentences shown on the article list.
+    validations: { required: true }
+  - type: input
+    id: investor
+    attributes:
+      label: Investor (optional)
+      description: If the article is about one tracked investor, their full name (e.g. Warren Buffett).
+  - type: input
+    id: tickers
+    attributes:
+      label: Tickers (optional)
+      description: Comma-separated US tickers discussed, e.g. AAPL, MSFT
+  - type: textarea
+    id: article
+    attributes:
+      label: Article
+      description: 300–1,500 words of Markdown. State facts with sources; no buy/sell calls or price targets.
+    validations: { required: true }
+  - type: textarea
+    id: sources
+    attributes:
+      label: Sources
+      description: One per line, as "Name | https://link". Prefer primary sources (SEC filings, company releases).
+    validations: { required: true }
+  - type: input
+    id: byline
+    attributes:
+      label: Byline (editors only, optional)
+      description: Leave empty. Correspondents are credited with the name they registered with.
+  - type: checkboxes
+    id: declarations
+    attributes:
+      label: Declarations
+      options:
+        - label: The text is my own work, written in my own words.
+          required: true
+        - label: It contains no buy/sell recommendations or price targets of my own.
+          required: true
+        - label: I have disclosed below any position I hold in the stocks discussed.
+          required: true
+  - type: input
+    id: disclosure
+    attributes:
+      label: Disclosure of positions
+      description: e.g. "I own shares of AAPL." Leave empty if you hold none of the stocks discussed.

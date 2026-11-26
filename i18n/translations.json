@@ -1349,6 +1349,116 @@
    "de": "die Strategien von Trading-Bots und KI-Agenten, getestet",
    "sq": "strategjitë që përdorin botët e tregtimit dhe agjentët AI, të testuara",
    "sr": "strategije koje koriste trading botovi i AI agenti, testirane"
+  },
+  "Investors": {
+   "de": "Investoren",
+   "sq": "Investitorët",
+   "sr": "Investitori"
+  },
+  "Investors & articles": {
+   "de": "Investoren & Artikel",
+   "sq": "Investitorët & artikujt",
+   "sr": "Investitori i članci"
+  },
+  "Investors we follow": {
+   "de": "Investoren, denen wir folgen",
+   "sq": "Investitorët që ndjekim",
+   "sr": "Investitori koje pratimo"
+  },
+  "Latest article": {
+   "de": "Neuester Artikel",
+   "sq": "Artikulli i fundit",
+   "sr": "Najnoviji članak"
+  },
+  "Latest articles": {
+   "de": "Neueste Artikel",
+   "sq": "Artikujt më të fundit",
+   "sr": "Najnoviji članci"
+  },
+  "SEC filings": {
+   "de": "SEC-Meldungen",
+   "sq": "Raportimet në SEC",
+   "sr": "SEC prijave"
+  },
+  "Sources": {
+   "de": "Quellen",
+   "sq": "Burimet",
+   "sr": "Izvori"
+  },
+  "By": {
+   "de": "Von",
+   "sq": "Nga",
+   "sr": "Autor:"
+  },
+  "How to follow:": {
+   "de": "So folgen Sie:",
+   "sq": "Si të ndiqni:",
+   "sr": "Kako pratiti:"
+  },
+  "Investor tracker": {
+   "de": "Investoren-Tracker",
+   "sq": "Ndjekës investitorësh",
+   "sr": "Praćenje investitora"
+  },
+  "Write for Analyst Ledger": {
+   "de": "Für Analyst Ledger schreiben",
+   "sq": "Shkruani për Analyst Ledger",
+   "sr": "Pišite za Analyst Ledger"
+  },
+  "{n} min read": {
+   "de": "{n} Min. Lesezeit",
+   "sq": "{n} min lexim",
+   "sr": "{n} min čitanja"
+  },
+  "Articles are published in English.": {
+   "de": "Artikel werden auf Englisch veröffentlicht.",
+   "sq": "Artikujt publikohen në anglisht.",
+   "sr": "Članci se objavljuju na engleskom."
+  },
+  "Correspondents can publish their own research and commentary under their own name.": {
+   "de": "Korrespondenten können eigene Analysen und Kommentare unter ihrem Namen veröffentlichen.",
+   "sq": "Korrespondentët mund të publikojnë analizat dhe komentet e tyre me emrin e tyre.",
+   "sr": "Dopisnici mogu objavljivati sopstvene analize i komentare pod svojim imenom."
+  },
+  "Filings show past, partial positions (long US holdings only, up to 45 days old). Nothing here is a recommendation to copy any investor.": {
+   "de": "Meldungen zeigen vergangene, unvollständige Positionen (nur US-Long-Positionen, bis zu 45 Tage alt). Nichts hier ist eine Empfehlung, einen Investor zu kopieren.",
+   "sq": "Raportimet tregojnë pozicione të kaluara dhe të pjesshme (vetëm pozicione blerëse në SHBA, deri në 45 ditë të vjetra). Asgjë këtu nuk është rekomandim për të kopjuar ndonjë investitor.",
+   "sr": "Prijave prikazuju prošle, delimične pozicije (samo duge američke pozicije, stare do 45 dana). Ništa ovde nije preporuka da kopirate nekog investitora."
+  },
+  "Famous investors have to disclose many of their trades to the SEC. We track the filings of investors whose moves can be followed quickly, explain what they changed, and publish articles from our correspondents. Every article is reviewed by the editor before it appears.": {
+   "de": "Bekannte Investoren müssen viele ihrer Transaktionen der SEC melden. Wir verfolgen die Meldungen von Investoren, deren Schritte sich schnell nachvollziehen lassen, erklären die Änderungen und veröffentlichen Artikel unserer Korrespondenten. Jeder Artikel wird vor der Veröffentlichung redaktionell geprüft.",
+   "sq": "Investitorët e njohur duhet t'i raportojnë shumë nga transaksionet e tyre në SEC. Ne ndjekim raportimet e investitorëve, lëvizjet e të cilëve mund të ndiqen shpejt, shpjegojmë çfarë ndryshuan dhe publikojmë artikuj nga korrespondentët tanë. Çdo artikull shqyrtohet nga redaktori para publikimit.",
+   "sr": "Poznati investitori moraju da prijave mnoge svoje transakcije SEC-u. Pratimo prijave investitora čiji se potezi mogu brzo pratiti, objašnjavamo šta su promenili i objavljujemo članke naših dopisnika. Urednik pregleda svaki članak pre objavljivanja."
+  },
+  "What famous investors are buying and selling, from their SEC filings: profiles, latest disclosed moves and how to follow them, plus articles from our correspondents.": {
+   "de": "Was bekannte Investoren laut SEC-Meldungen kaufen und verkaufen: Profile, neueste Schritte und wie man ihnen folgt, dazu Artikel unserer Korrespondenten.",
+   "sq": "Çfarë blejnë dhe shesin investitorët e njohur sipas raportimeve në SEC: profile, lëvizjet e fundit dhe si t'i ndiqni, si dhe artikuj nga korrespondentët tanë.",
+   "sr": "Šta poznati investitori kupuju i prodaju prema SEC prijavama: profili, najnoviji potezi i kako ih pratiti, plus članci naših dopisnika."
+  },
+  "Become an Analyst Ledger correspondent: sign in with a free GitHub account, submit articles, and publish under your own name after editorial review.": {
+   "de": "Werden Sie Korrespondent bei Analyst Ledger: mit einem kostenlosen GitHub-Konto anmelden, Artikel einreichen und nach redaktioneller Prüfung unter eigenem Namen veröffentlichen.",
+   "sq": "Bëhuni korrespondent i Analyst Ledger: hyni me një llogari falas GitHub, dërgoni artikuj dhe publikoni me emrin tuaj pas shqyrtimit nga redaktori.",
+   "sr": "Postanite dopisnik Analyst Ledger-a: prijavite se besplatnim GitHub nalogom, pošaljite članke i objavljujte pod svojim imenom nakon uredničkog pregleda."
+  },
+  "The first articles are being reviewed and will appear here soon.": {
+   "de": "Die ersten Artikel werden geprüft und erscheinen bald hier.",
+   "sq": "Artikujt e parë po shqyrtohen dhe do të shfaqen së shpejti këtu.",
+   "sr": "Prvi članci se pregledaju i uskoro će se pojaviti ovde."
+  },
+  "correspondent": {
+   "de": "Korrespondent",
+   "sq": "korrespondent",
+   "sr": "dopisnik"
+  },
+  "Correspondent": {
+   "de": "Korrespondent",
+   "sq": "Korrespondent",
+   "sr": "Dopisnik"
+  },
+  "Correspondent articles reflect the author's views, not Analyst Ledger's. They are reviewed before publication.": {
+   "de": "Korrespondentenartikel geben die Meinung des Autors wieder, nicht die von Analyst Ledger. Sie werden vor der Veröffentlichung geprüft.",
+   "sq": "Artikujt e korrespondentëve pasqyrojnë pikëpamjet e autorit, jo të Analyst Ledger. Ata shqyrtohen para publikimit.",
+   "sr": "Članci dopisnika odražavaju stavove autora, a ne Analyst Ledger-a. Pregledaju se pre objavljivanja."
   }
  },
  "js": {

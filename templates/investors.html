@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+{% block title %}{{ _("Investors & articles") }} | {{ CFG.site_name }}{% endblock %}
+{% block desc %}{{ _("What famous investors are buying and selling, from their SEC filings: profiles, latest disclosed moves and how to follow them, plus articles from our correspondents.") }}{% endblock %}
+{% block body %}
+<style>
+.inv-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px;margin:0 0 22px}
+.inv{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;display:flex;flex-direction:column;gap:6px}
+.inv h3{margin:0;font-size:17px}.inv .firm{color:var(--muted);font-size:13px;margin-top:-4px}
+.inv p{margin:0;font-size:14px}.inv .lnk{margin-top:auto;font-size:13.5px;display:flex;gap:12px;flex-wrap:wrap}
+.art{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 18px;margin-bottom:12px}
+.art h3{margin:2px 0 6px;font-size:17px;line-height:1.35}.art p{margin:0 0 6px}
+.meta{font-size:12.5px;color:var(--muted)}
+.tag{display:inline-block;font-size:11.5px;font-weight:700;border-radius:20px;padding:1px 9px;background:#e8eefc;color:#2a4fa8}
+.tag.c{background:#e9f6ee;color:#1f7a45}
+</style>
+<section class="hero small">
+  <h1>{{ _("Investors & articles") }}</h1>
+  <p>{{ _("Famous investors have to disclose many of their trades to the SEC. We track the filings of investors whose moves can be followed quickly, explain what they changed, and publish articles from our correspondents. Every article is reviewed by the editor before it appears.") }}</p>
+  {% if lang != "en" %}<p class="note">{{ _("Articles are published in English.") }}</p>{% endif %}
+</section>
+
+<h2>{{ _("Investors we follow") }}</h2>
+<div class="inv-grid">
+{% for i in investors %}
+<div class="inv" id="{{ i.slug }}">
+  <h3>{{ i.name }}</h3>
+  <div class="firm">{{ i.firm }}</div>
+  <p>{{ i.style }}</p>
+  <p class="meta"><b>{{ _("How to follow:") }}</b> {{ i.follow }}</p>
+  <div class="lnk">
+    {% if i.article %}<a href="{{ root }}articles/{{ i.article.slug }}.html">{{ _("Latest article") }} →</a>{% endif %}
+    <a href="https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&amp;CIK={{ i.cik }}&amp;type=&amp;dateb=&amp;owner=include&amp;count=40" rel="noopener nofollow" target="_blank">{{ _("SEC filings") }}</a>
+  </div>
+</div>
+{% endfor %}
+</div>
+
+<h2>{{ _("Latest articles") }}</h2>
+{% for a in articles %}
+<article class="art">
+  <div class="meta"><span class="tag{{ ' c' if a.author_type == 'correspondent' }}">{{ _("Correspondent") if a.author_type == 'correspondent' else _("Investor tracker") }}</span> {{ a.date }} · {{ a.author }}</div>
+  <h3><a href="{{ root }}articles/{{ a.slug }}.html">{{ a.title }}</a></h3>
+  <p>{{ a.summary }}</p>
+  {% if a.tickers %}<p class="meta">{% for t in a.tickers %}${{ t }} {% endfor %}</p>{% endif %}
+</article>
+{% else %}
+<p class="muted">{{ _("The first articles are being reviewed and will appear here soon.") }}</p>
+{% endfor %}
+
+<section class="art">
+  <h3>{{ _("Write for Analyst Ledger") }}</h3>
+  <p>{{ _("Correspondents can publish their own research and commentary under their own name.") }} <a href="{{ root }}contribute.html">{{ _("How it works") }} →</a></p>
+</section>
+<p class="note">{{ _("Filings show past, partial positions (long US holdings only, up to 45 days old). Nothing here is a recommendation to copy any investor.") }} {{ _(CFG.disclaimer) }}</p>
+{% endblock %}

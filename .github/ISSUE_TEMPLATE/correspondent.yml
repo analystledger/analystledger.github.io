@@ -1,0 +1,34 @@
+name: Apply to be a correspondent
+description: Ask to write for Analyst Ledger under your own name.
+title: "[Correspondent] "
+labels: ["correspondent-application", "pending-review"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Correspondents sign in with their free GitHub account and submit articles with the **Submit an article** form. Once the editor approves this application, your articles carry the display name below. Each article is still reviewed before publication.
+  - type: input
+    id: name
+    attributes:
+      label: Display name
+      description: The name shown on your articles.
+    validations: { required: true }
+  - type: textarea
+    id: bio
+    attributes:
+      label: Short bio
+      description: Max 280 characters, shown on your articles.
+    validations: { required: true }
+  - type: textarea
+    id: experience
+    attributes:
+      label: Experience and topics
+      description: What you would like to write about, and links to anything you've written before.
+    validations: { required: true }
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Terms
+      options:
+        - label: I will write in my own words, cite sources, avoid buy/sell recommendations and disclose my positions.
+          required: true

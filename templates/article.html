@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %}{{ a.title }} | {{ CFG.site_name }}{% endblock %}
+{% block desc %}{{ a.summary }}{% endblock %}
+{% block body %}
+<article class="prose">
+  <p class="muted" style="font-size:13px;margin-bottom:4px"><a href="{{ root }}investors.html">← {{ _("Investors & articles") }}</a></p>
+  <h1>{{ a.title }}</h1>
+  <p class="muted">{{ _("By") }} {{ a.author }}{% if a.author_type == 'correspondent' %} ({{ _("correspondent") }}){% endif %} · {{ a.date }}{% if a.words %} · {{ _("{n} min read", n=(a.words // 220) + 1) }}{% endif %}</p>
+  {% if a.bio %}<p class="note">{{ a.bio }}</p>{% endif %}
+  {% if a.summary %}<p><strong>{{ a.summary }}</strong></p>{% endif %}
+  {{ a.html|safe }}
+  {% if a.tickers %}<p>{% for t in a.tickers %}{% if t in tracked %}<a href="{{ root }}stocks/{{ t|lower|replace('.', '-') }}.html"><b>${{ t }}</b></a>{% else %}<b>${{ t }}</b>{% endif %} {% endfor %}</p>{% endif %}
+  {% if a.sources %}<h2>{{ _("Sources") }}</h2>
+  <ul>{% for s in a.sources %}<li><a href="{{ s.url }}" rel="noopener nofollow" target="_blank">{{ s.name }}</a></li>{% endfor %}</ul>{% endif %}
+  <p class="note">{% if a.author_type == 'correspondent' %}{{ _("Correspondent articles reflect the author's views, not Analyst Ledger's. They are reviewed before publication.") }} {% endif %}{{ _("Filings show past, partial positions (long US holdings only, up to 45 days old). Nothing here is a recommendation to copy any investor.") }} {{ _(CFG.disclaimer) }}</p>
+</article>
+{% endblock %}

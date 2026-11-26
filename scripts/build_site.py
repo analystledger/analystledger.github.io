@@ -10,6 +10,7 @@ from xml.sax.saxutils import escape
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from articles import load_articles  # noqa: E402
 from common import ACTIONS, DATA, DOCS, ROOT, config, load_json, save_json, slugify, stance  # noqa: E402
 
 CFG = config()
@@ -94,7 +95,7 @@ def main():
     events.sort(key=lambda e: (e["date"], e["ticker"]), reverse=True)
 
     # clean generated folders (keep assets + social images)
-    for sub in ["analysts", "stocks"] + [L["code"] for L in LANGS if L["code"] != "en"]:
+    for sub in ["analysts", "stocks", "articles"] + [L["code"] for L in LANGS if L["code"] != "en"]:
         shutil.rmtree(os.path.join(DOCS, sub), ignore_errors=True)
 
     analysts = defaultdict(lambda: {"events": []})
@@ -171,6 +172,17 @@ def main():
            stocks_json=json.dumps(planner_data, separators=(",", ":")).replace("</", "<\\/"), **common)
     render("start.html", "start.html", 0, **common)
     render("news.html", "news.html", 0, news=news, tracked=set(stocks), **common)
+    articles = load_articles()
+    corr = {c["login"].lower(): c for c in load_json(os.path.join(DATA, "correspondents.json"), [])}
+    for a in articles:
+        a["bio"] = (corr.get((a.get("author_login") or "").lower()) or {}).get("bio", "")
+    investors = load_json(os.path.join(DATA, "investors.json"), [])
+    for i in investors:
+        i["article"] = next((a for a in articles if a.get("investor", "").lower() == i["name"].lower()), None)
+    render("investors.html", "investors.html", 0, investors=investors, articles=articles, **common)
+    render("contribute.html", "contribute.html", 0, **common)
+    for a in articles:
+        render(f"articles/{a['slug']}.html", "article.html", 1, a=a, tracked=set(stocks), **common)
     render("learn.html", "learn.html", 0, **common)
     render("tools.html", "tools.html", 0, **common)
     render("journal.html", "journal.html", 0, **common)
@@ -189,8 +201,9 @@ def main():
 
     # sitemap, robots, RSS
     base = CFG["base_url"].rstrip("/") + CFG.get("base_path", "")
-    urls = ["", "analysts/", "stocks/", "news.html", "learn.html", "strategies.html", "tools.html", "backtest.html", "journal.html", "planner.html", "start.html", "about.html"] + \
-           [f"analysts/{a['slug']}.html" for a in a_list] + [f"stocks/{slugify(s['ticker'])}.html" for s in s_list]
+    urls = ["", "analysts/", "stocks/", "news.html", "investors.html", "contribute.html", "learn.html", "strategies.html", "tools.html", "backtest.html", "journal.html", "planner.html", "start.html", "about.html"] + \
+           [f"analysts/{a['slug']}.html" for a in a_list] + [f"stocks/{slugify(s['ticker'])}.html" for s in s_list] + \
+           [f"articles/{a['slug']}.html" for a in articles]
     urls = [("" if L["code"] == "en" else L["code"] + "/") + u for L in LANGS for u in urls]
     with open(os.path.join(DOCS, "sitemap.xml"), "w") as f:
         f.write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n')

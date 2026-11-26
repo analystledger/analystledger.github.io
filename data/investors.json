@@ -1,0 +1,18 @@
+[
+ {"slug": "warren-buffett", "name": "Warren Buffett", "firm": "Berkshire Hathaway", "cik": "0001067983",
+  "style": "Long-term value; buys whole businesses and large stakes in quality companies", "follow": "13F (quarterly, ≤45 days); Form 4 within 2 business days on stakes above 10%; annual letter and meeting"},
+ {"slug": "stanley-druckenmiller", "name": "Stanley Druckenmiller", "firm": "Duquesne Family Office", "cik": "0001536411",
+  "style": "Global macro; concentrated, fast-changing bets driven by liquidity and rates", "follow": "13F (quarterly, ≤45 days); interviews and conference talks"},
+ {"slug": "bill-ackman", "name": "Bill Ackman", "firm": "Pershing Square", "cik": "0001336528",
+  "style": "Concentrated activist; 8–12 large positions in high-quality companies", "follow": "13F; 13D within 5 business days; posts on X; weekly NAV of Pershing Square Holdings"},
+ {"slug": "david-tepper", "name": "David Tepper", "firm": "Appaloosa Management", "cik": "0001656456",
+  "style": "Opportunistic; buys distressed or out-of-favour assets and big macro turning points", "follow": "13F (quarterly, ≤45 days); TV interviews"},
+ {"slug": "seth-klarman", "name": "Seth Klarman", "firm": "The Baupost Group", "cik": "0001061768",
+  "style": "Deep value with a 'margin of safety'; often holds large cash and illiquid assets", "follow": "13F (quarterly, ≤45 days); 13G/13D on larger stakes"},
+ {"slug": "carl-icahn", "name": "Carl Icahn", "firm": "Icahn Enterprises", "cik": "0000921669",
+  "style": "Activist; takes big stakes and pushes for board seats, sales or buybacks", "follow": "13D within 5 business days; Form 4 within 2 business days; IEP quarterly results"},
+ {"slug": "li-lu", "name": "Li Lu", "firm": "Himalaya Capital", "cik": "0001709323",
+  "style": "Very concentrated long-term value, US and Asia; few trades", "follow": "13F (quarterly, ≤45 days)"},
+ {"slug": "howard-marks", "name": "Howard Marks", "firm": "Oaktree Capital", "cik": "0000949509",
+  "style": "Credit and distressed-debt investing; market-cycle thinking", "follow": "Free memos (several a year); Brookfield/Oaktree filings"}
+]

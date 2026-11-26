@@ -1,0 +1,77 @@
+name: Articles
+# Publishes an article (or registers a correspondent) when an editor adds the "approved" label.
+on:
+  issues:
+    types: [opened, labeled]
+permissions:
+  contents: write
+  issues: write
+concurrency: { group: site, cancel-in-progress: false }
+jobs:
+  received:
+    if: github.event.action == 'opened' && (contains(github.event.issue.labels.*.name, 'article') || contains(github.event.issue.labels.*.name, 'correspondent-application'))
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/github-script@v7
+        with:
+          script: |
+            await github.rest.issues.createComment({owner: context.repo.owner, repo: context.repo.repo,
+              issue_number: context.issue.number,
+              body: "Thanks — received. The editor reviews every submission before anything is published. You'll get a comment here when it is approved or if changes are needed."});
+  publish:
+    if: github.event.action == 'labeled' && github.event.label.name == 'approved'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install -r requirements.txt
+      - name: Write article or register correspondent
+        id: write
+        env:
+          IS_ARTICLE: ${{ contains(github.event.issue.labels.*.name, 'article') }}
+          IS_CORR: ${{ contains(github.event.issue.labels.*.name, 'correspondent-application') }}
+        run: |
+          if [ "$IS_ARTICLE" = "true" ]; then
+            slug=$(python scripts/articles.py publish "$GITHUB_EVENT_PATH")
+            echo "msg=Published: https://analystledger.github.io/articles/$slug.html" >> "$GITHUB_OUTPUT"
+          elif [ "$IS_CORR" = "true" ]; then
+            login=$(python scripts/articles.py correspondent "$GITHUB_EVENT_PATH")
+            echo "msg=Welcome aboard, @$login — you are now a registered correspondent. Submit articles with the 'Submit an article' form: https://github.com/${{ github.repository }}/issues/new?template=article.yml" >> "$GITHUB_OUTPUT"
+          else
+            echo "Not an article or application; nothing to do."; exit 0
+          fi
+      - name: Build website
+        if: steps.write.outputs.msg != ''
+        run: python scripts/build_site.py
+      - name: Commit
+        if: steps.write.outputs.msg != ''
+        run: |
+          git config user.name "analyst-ledger-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add -A articles data/correspondents.json docs
+          git diff --cached --quiet || git commit -m "Approve issue #${{ github.event.issue.number }}"
+          git pull --rebase -X ours || true
+          git push
+      - name: Comment and close
+        if: steps.write.outputs.msg != ''
+        uses: actions/github-script@v7
+        env:
+          MSG: ${{ steps.write.outputs.msg }}
+        with:
+          script: |
+            const p = {owner: context.repo.owner, repo: context.repo.repo, issue_number: context.issue.number};
+            await github.rest.issues.createComment({...p, body: process.env.MSG});
+            try { await github.rest.issues.removeLabel({...p, name: 'pending-review'}); } catch (e) {}
+            await github.rest.issues.update({...p, state: 'closed', state_reason: 'completed'});
+  reject:
+    if: github.event.action == 'labeled' && github.event.label.name == 'rejected' && contains(fromJSON('["UrimBex"]'), github.event.sender.login)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/github-script@v7
+        with:
+          script: |
+            const p = {owner: context.repo.owner, repo: context.repo.repo, issue_number: context.issue.number};
+            await github.rest.issues.createComment({...p, body: "Thanks for the submission. The editor has decided not to publish this one. See any comments above for the reason."});
+            try { await github.rest.issues.removeLabel({...p, name: 'pending-review'}); } catch (e) {}
+            await github.rest.issues.update({...p, state: 'closed', state_reason: 'not_planned'});
