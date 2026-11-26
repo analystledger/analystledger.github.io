@@ -78,5 +78,10 @@
   "id": "a567becf511d",
   "reason": "double upgrade/downgrade",
   "queued": "2026-11-24"
+ },
+ {
+  "id": "f2a9ebbbd50a",
+  "reason": "double upgrade/downgrade",
+  "queued": "2026-11-26"
  }
 ]
