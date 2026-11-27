@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
     inputs:
       code:
-        description: "One-time code shown on analystledger.github.io/tiktok-callback.html"
+        description: "One-time code shown on analystledger.com/tiktok-callback.html"
         required: true
 permissions:
   contents: write

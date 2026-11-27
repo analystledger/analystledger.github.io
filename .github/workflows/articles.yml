@@ -34,7 +34,7 @@ jobs:
         run: |
           if [ "$IS_ARTICLE" = "true" ]; then
             slug=$(python scripts/articles.py publish "$GITHUB_EVENT_PATH")
-            echo "msg=Published: https://analystledger.github.io/articles/$slug.html" >> "$GITHUB_OUTPUT"
+            echo "msg=Published: https://analystledger.com/articles/$slug.html" >> "$GITHUB_OUTPUT"
           elif [ "$IS_CORR" = "true" ]; then
             login=$(python scripts/articles.py correspondent "$GITHUB_EVENT_PATH")
             echo "msg=Welcome aboard, @$login — you are now a registered correspondent. Submit articles with the 'Submit an article' form: https://github.com/${{ github.repository }}/issues/new?template=article.yml" >> "$GITHUB_OUTPUT"
