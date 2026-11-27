@@ -91,7 +91,7 @@
  },
  {
   "id": "video-lesson-04",
-  "status": "pending",
+  "status": "posted",
   "not_before": "2026-11-27T12:00:00+00:00",
   "kicker": "Options lesson 4/8",
   "title": "Credit spreads",
@@ -102,7 +102,8 @@
   ],
   "short": "Options lesson 4/8: Credit spreads. Cap the worst case — and know it before you trade.\n▶ https://youtube.com/shorts/z6hNL_3_jXc\nhttps://analystledger.github.io/learn.html#spreads\n#options #investing",
   "long": "Options lesson 4 of 8: Credit spreads\n\nCap the worst case — and know it before you trade.\n\n▶ Watch the 1-minute video: https://youtube.com/shorts/z6hNL_3_jXc\n📖 Full lesson, free: https://analystledger.github.io/learn.html#spreads\n\nAll lessons: https://www.youtube.com/@AnalystLedger\n\n#options #investing #AnalystLedger",
-  "video": "videos/lesson-04.mp4"
+  "video": "videos/lesson-04.mp4",
+  "posted_utc": "2026-11-27 12:49"
  },
  {
   "id": "video-lesson-05",
@@ -376,7 +377,7 @@
  },
  {
   "id": "news-market-black-friday-futures-ai-rebound-2026-11-27",
-  "status": "pending",
+  "status": "posted",
   "kicker": "Market news",
   "title": "Nasdaq futures +2% into Black Friday",
   "card_lines": [
@@ -385,11 +386,12 @@
    "10-yr yield ~4.84%; Brent near $92 on Houthi strikes"
   ],
   "short": "Nasdaq-100 futures rose about 2% ahead of Friday's shortened session as chip stocks rebounded: Nvidia up nearly 4%, Micron ~6% premarket. Brent near $92 on Houthi strikes. https://analystledger.github.io/news.html #stocks #AI",
-  "long": "Wall Street reopens after Thanksgiving with a holiday-shortened session that tests whether this week's AI-led selloff has run its course.\n\n• Nasdaq-100 futures up about 2%, S&P 500 futures up roughly 1.5%-1.7%, Dow futures about 1%\n• Nvidia up nearly 4% and Micron about 6% premarket; 10-year yield near 4.84%\n• Brent crude around $92 after Houthi attacks on Saudi energy sites; stocks close at 1 p.m. ET\n\nSources: https://analystledger.github.io/news.html\n\n#stocks #AI #AnalystLedger"
+  "long": "Wall Street reopens after Thanksgiving with a holiday-shortened session that tests whether this week's AI-led selloff has run its course.\n\n• Nasdaq-100 futures up about 2%, S&P 500 futures up roughly 1.5%-1.7%, Dow futures about 1%\n• Nvidia up nearly 4% and Micron about 6% premarket; 10-year yield near 4.84%\n• Brent crude around $92 after Houthi attacks on Saudi energy sites; stocks close at 1 p.m. ET\n\nSources: https://analystledger.github.io/news.html\n\n#stocks #AI #AnalystLedger",
+  "posted_utc": "2026-11-27 12:49"
  },
  {
   "id": "news-nvda-southeast-asia-shipment-halt-2026-11-26",
-  "status": "pending",
+  "status": "posted",
   "kicker": "Market news",
   "title": "Nvidia halts SE Asia AI server shipments",
   "card_lines": [
@@ -398,6 +400,7 @@
    "Singapore unit billed $104B in 2025, up 72%"
   ],
   "short": "Nvidia told partners to halt AI server shipments to Malaysia, Singapore, Thailand and Indonesia amid tighter US export curbs, per the FT; its Singapore unit billed $104B in 2025. https://analystledger.github.io/news.html #Nvidia #chips",
-  "long": "A Financial Times report puts a fast-growing outlet for AI hardware in question just as investors reassess AI spending.\n\n• Nvidia asked partners to stop shipping AI servers to Malaysia, Singapore, Thailand and Indonesia\n• Dell and Supermicro told customers there their orders will not be authorized\n• Nvidia booked $104 billion through its Singapore subsidiary in 2025, up 72%; unclear if the pause is temporary\n\nSources: https://analystledger.github.io/news.html\n\n#Nvidia #semiconductors #AnalystLedger"
+  "long": "A Financial Times report puts a fast-growing outlet for AI hardware in question just as investors reassess AI spending.\n\n• Nvidia asked partners to stop shipping AI servers to Malaysia, Singapore, Thailand and Indonesia\n• Dell and Supermicro told customers there their orders will not be authorized\n• Nvidia booked $104 billion through its Singapore subsidiary in 2025, up 72%; unclear if the pause is temporary\n\nSources: https://analystledger.github.io/news.html\n\n#Nvidia #semiconductors #AnalystLedger",
+  "posted_utc": "2026-11-27 12:49"
  }
 ]
