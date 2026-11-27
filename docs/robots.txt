@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://analystledger.github.io/sitemap.xml
+Sitemap: https://analystledger.com/sitemap.xml
