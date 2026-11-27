@@ -402,5 +402,18 @@
   "short": "Nvidia told partners to halt AI server shipments to Malaysia, Singapore, Thailand and Indonesia amid tighter US export curbs, per the FT; its Singapore unit billed $104B in 2025. https://analystledger.github.io/news.html #Nvidia #chips",
   "long": "A Financial Times report puts a fast-growing outlet for AI hardware in question just as investors reassess AI spending.\n\n• Nvidia asked partners to stop shipping AI servers to Malaysia, Singapore, Thailand and Indonesia\n• Dell and Supermicro told customers there their orders will not be authorized\n• Nvidia booked $104 billion through its Singapore subsidiary in 2025, up 72%; unclear if the pause is temporary\n\nSources: https://analystledger.github.io/news.html\n\n#Nvidia #semiconductors #AnalystLedger",
   "posted_utc": "2026-11-27 12:49"
+ },
+ {
+  "id": "options-2026-11-27",
+  "status": "pending",
+  "kicker": "Weekly options watch",
+  "title": "Earnings week: Marvell, Salesforce, Dollar General",
+  "card_lines": [
+   "$MRVL: ~15.6% implied move on Dec 1 earnings",
+   "$CRM: ~11.5% implied vs ~8% avg; reports Dec 2",
+   "$DG: ~9.4% implied Dec 3 after Piper Sandler upgrade"
+  ],
+  "short": "Weekly options watch: $MRVL prices a ~15.6% earnings move (Dec 1), $CRM ~11.5% vs ~8% avg (Dec 2), $DG ~9.4% after a Piper upgrade (Dec 3). https://analystledger.github.io #options #stocks",
+  "long": "Weekly options watch: here is what the options market is pricing for the week of Nov 30, after VIX spiked near 40 on Nov 20 and eased to the high 20s as stocks rebounded.\n\n• $MRVL — reports Tue Dec 1 after the close. Options imply a move of about ±15.6%, well above its ~10% historical average reaction, a sign traders expect an outsized AI-chip print after a volatile month for semis.\n\n• $CRM — reports Wed Dec 2 after the close with an implied move near ±11.5%, versus a historical average around 8%. Last quarter the stock moved +23.8%, so the market is pricing a wider-than-usual range again.\n\n• $DG — reports Thu Dec 3 before the open with an implied move near ±9.4%. Piper Sandler upgraded the stock this week on our tracker, making it a read on budget-consumer demand going into the holidays.\n\nAlso on deck: $SNOW (±15%), $MDB (±17%), $OKTA (±16%), $ULTA and $KR.\n\nTrack every rating change free at https://analystledger.github.io\n\nEducational only — not investment advice.\n#options #stocks"
  }
 ]
