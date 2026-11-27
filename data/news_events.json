@@ -1,5 +1,221 @@
 [
  {
+  "date": "2026-11-27",
+  "ticker": "ASTS",
+  "company": "AST SpaceMobile",
+  "firm": "Berenberg",
+  "rating_from": "Buy",
+  "rating_to": "Hold",
+  "pt_to": 30,
+  "action": "downgrade",
+  "source_url": "https://www.everhint.com/analyst-hints-ratings-november-27-2026-midday-update-last-24-hours-pacific-time/"
+ },
+ {
+  "date": "2026-11-27",
+  "ticker": "HUBS",
+  "company": "HubSpot",
+  "firm": "Argus",
+  "rating_from": "Buy",
+  "rating_to": "Hold",
+  "action": "downgrade",
+  "source_url": "https://www.everhint.com/analyst-hints-ratings-november-27-2026-midday-update-last-24-hours-pacific-time/"
+ },
+ {
+  "date": "2026-11-27",
+  "ticker": "AMD",
+  "company": "Advanced Micro Devices",
+  "firm": "Erste Group",
+  "rating_from": "Buy",
+  "rating_to": "Hold",
+  "action": "downgrade",
+  "source_url": "https://wearemainstreet.org/world/2026/11/27/amd-downgraded-hold-valuation-concerns"
+ },
+ {
+  "date": "2026-11-27",
+  "ticker": "CRM",
+  "company": "Salesforce",
+  "firm": "Erste Group",
+  "rating_from": "Buy",
+  "rating_to": "Hold",
+  "action": "downgrade",
+  "source_url": "https://www.everhint.com/analyst-hints-ratings-november-27-2026-midday-update-last-24-hours-pacific-time/"
+ },
+ {
+  "date": "2026-11-27",
+  "ticker": "SPOT",
+  "company": "Spotify",
+  "firm": "Erste Group",
+  "rating_from": "Hold",
+  "rating_to": "Buy",
+  "action": "upgrade",
+  "source_url": "https://www.everhint.com/analyst-hints-ratings-november-27-2026-midday-update-last-24-hours-pacific-time/"
+ },
+ {
+  "date": "2026-11-27",
+  "ticker": "JNJ",
+  "company": "Johnson & Johnson",
+  "firm": "Erste Group",
+  "rating_to": "Buy",
+  "action": "initiate",
+  "source_url": "https://www.everhint.com/analyst-hints-ratings-november-27-2026-midday-update-last-24-hours-pacific-time/"
+ },
+ {
+  "date": "2026-11-27",
+  "ticker": "DE",
+  "company": "Deere",
+  "firm": "Bernstein SocGen",
+  "pt_from": 580,
+  "pt_to": 640,
+  "action": "target_raise",
+  "source_url": "https://www.everhint.com/analyst-hints-ratings-november-27-2026-midday-update-last-24-hours-pacific-time/"
+ },
+ {
+  "date": "2026-11-27",
+  "ticker": "CF",
+  "company": "CF Industries",
+  "firm": "Bernstein SocGen",
+  "pt_from": 162,
+  "pt_to": 163,
+  "action": "target_raise",
+  "source_url": "https://www.everhint.com/analyst-hints-ratings-november-27-2026-midday-update-last-24-hours-pacific-time/"
+ },
+ {
+  "date": "2026-11-27",
+  "ticker": "MDT",
+  "company": "Medtronic",
+  "firm": "Bernstein SocGen",
+  "rating_from": "Outperform",
+  "rating_to": "Outperform",
+  "pt_to": 112,
+  "action": "reiterate",
+  "source_url": "https://www.everhint.com/analyst-hints-ratings-november-27-2026-midday-update-last-24-hours-pacific-time/"
+ },
+ {
+  "date": "2026-11-27",
+  "ticker": "XPEV",
+  "company": "XPeng",
+  "firm": "BofA Securities",
+  "rating_from": "Buy",
+  "rating_to": "Buy",
+  "pt_to": 16.0,
+  "action": "reiterate",
+  "source_url": "https://www.everhint.com/analyst-hints-ratings-november-27-2026-midday-update-last-24-hours-pacific-time/"
+ },
+ {
+  "date": "2026-11-27",
+  "ticker": "LI",
+  "company": "Li Auto",
+  "firm": "Bernstein SocGen",
+  "rating_from": "Market Perform",
+  "rating_to": "Market Perform",
+  "pt_to": 14.5,
+  "action": "reiterate",
+  "source_url": "https://www.everhint.com/analyst-hints-ratings-november-27-2026-midday-update-last-24-hours-pacific-time/"
+ },
+ {
+  "date": "2026-11-27",
+  "ticker": "PNNT",
+  "company": "PennantPark Investment",
+  "firm": "Keefe Bruyette",
+  "pt_from": 4.0,
+  "pt_to": 2.75,
+  "action": "target_cut",
+  "source_url": "https://www.everhint.com/analyst-hints-ratings-november-27-2026-midday-update-last-24-hours-pacific-time/"
+ },
+ {
+  "date": "2026-11-27",
+  "ticker": "PHAR",
+  "company": "Pharming Group",
+  "firm": "Canaccord",
+  "pt_from": 41,
+  "pt_to": 31,
+  "action": "target_cut",
+  "source_url": "https://www.everhint.com/analyst-hints-ratings-november-27-2026-midday-update-last-24-hours-pacific-time/"
+ },
+ {
+  "date": "2026-11-27",
+  "ticker": "KGS",
+  "company": "Kodiak Gas Services",
+  "firm": "Stifel",
+  "rating_from": "Buy",
+  "rating_to": "Buy",
+  "pt_to": 90.0,
+  "action": "reiterate",
+  "source_url": "https://www.everhint.com/analyst-hints-ratings-november-27-2026-midday-update-last-24-hours-pacific-time/"
+ },
+ {
+  "date": "2026-11-27",
+  "ticker": "MDB",
+  "company": "MongoDB",
+  "firm": "Rosenblatt",
+  "rating_from": "Buy",
+  "rating_to": "Buy",
+  "pt_to": 445.0,
+  "action": "reiterate",
+  "source_url": "https://www.everhint.com/analyst-hints-ratings-november-27-2026-midday-update-last-24-hours-pacific-time/"
+ },
+ {
+  "date": "2026-11-27",
+  "ticker": "GTLB",
+  "company": "GitLab",
+  "firm": "Rosenblatt",
+  "rating_from": "Buy",
+  "rating_to": "Buy",
+  "pt_to": 55,
+  "action": "reiterate",
+  "source_url": "https://www.everhint.com/analyst-hints-ratings-november-27-2026-midday-update-last-24-hours-pacific-time/"
+ },
+ {
+  "date": "2026-11-27",
+  "ticker": "WYY",
+  "company": "WidePoint",
+  "firm": "H.C. Wainwright",
+  "rating_to": "Buy",
+  "pt_to": 21.0,
+  "action": "initiate",
+  "source_url": "https://www.everhint.com/analyst-hints-ratings-november-27-2026-midday-update-last-24-hours-pacific-time/"
+ },
+ {
+  "date": "2026-11-27",
+  "ticker": "OHI",
+  "company": "Omega Healthcare Investors",
+  "firm": "Truist Securities",
+  "pt_from": 47,
+  "pt_to": 48,
+  "action": "target_raise",
+  "source_url": "https://www.everhint.com/analyst-hints-ratings-november-27-2026-midday-update-last-24-hours-pacific-time/"
+ },
+ {
+  "date": "2026-11-27",
+  "ticker": "FRT",
+  "company": "Federal Realty",
+  "firm": "Truist Securities",
+  "rating_from": "Hold",
+  "rating_to": "Hold",
+  "pt_to": 116,
+  "action": "reiterate",
+  "source_url": "https://www.everhint.com/analyst-hints-ratings-november-27-2026-midday-update-last-24-hours-pacific-time/"
+ },
+ {
+  "date": "2026-11-27",
+  "ticker": "SHOE",
+  "company": "Shoe Carnival",
+  "firm": "Williams Trading",
+  "pt_to": 14,
+  "action": "target_cut",
+  "source_url": "https://www.everhint.com/analyst-hints-ratings-november-27-2026-midday-update-last-24-hours-pacific-time/"
+ },
+ {
+  "date": "2026-11-27",
+  "ticker": "AMTM",
+  "company": "Amentum",
+  "firm": "BTIG",
+  "rating_from": "Buy",
+  "rating_to": "Buy",
+  "action": "reiterate",
+  "source_url": "https://www.everhint.com/analyst-hints-ratings-november-27-2026-midday-update-last-24-hours-pacific-time/"
+ },
+ {
   "date": "2026-11-25",
   "ticker": "ACN",
   "company": "Accenture",
