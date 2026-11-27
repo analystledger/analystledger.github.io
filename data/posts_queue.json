@@ -373,5 +373,31 @@
   "short": "S&P put Nvidia's AA rating on CreditWatch negative, citing board oversight, key-person risk and China controls; a decision is due within 90 days. $NVDA closed down 3.9%. https://analystledger.github.io/news.html #Nvidia #stocks",
   "long": "Nvidia's governance questions have reached the credit market after Jensen Huang's resignation and reinstatement as CEO.\n\n• S&P placed the AA rating on CreditWatch negative; any cut likely limited to one notch\n• Concerns: board oversight, long-tenured directors, no succession plan, China-related controls\n• $NVDA closed down 3.9% Wednesday; S&P expects to decide within 90 days\n\nSources: https://analystledger.github.io/news.html\n\n#Nvidia #stocks #AnalystLedger",
   "posted_utc": "2026-11-26 12:56"
+ },
+ {
+  "id": "news-market-black-friday-futures-ai-rebound-2026-11-27",
+  "status": "pending",
+  "kicker": "Market news",
+  "title": "Nasdaq futures +2% into Black Friday",
+  "card_lines": [
+   "Nasdaq-100 futures up ~2% before 1 p.m. ET close",
+   "$NVDA up nearly 4%, $MU ~6% premarket",
+   "10-yr yield ~4.84%; Brent near $92 on Houthi strikes"
+  ],
+  "short": "Nasdaq-100 futures rose about 2% ahead of Friday's shortened session as chip stocks rebounded: Nvidia up nearly 4%, Micron ~6% premarket. Brent near $92 on Houthi strikes. https://analystledger.github.io/news.html #stocks #AI",
+  "long": "Wall Street reopens after Thanksgiving with a holiday-shortened session that tests whether this week's AI-led selloff has run its course.\n\n• Nasdaq-100 futures up about 2%, S&P 500 futures up roughly 1.5%-1.7%, Dow futures about 1%\n• Nvidia up nearly 4% and Micron about 6% premarket; 10-year yield near 4.84%\n• Brent crude around $92 after Houthi attacks on Saudi energy sites; stocks close at 1 p.m. ET\n\nSources: https://analystledger.github.io/news.html\n\n#stocks #AI #AnalystLedger"
+ },
+ {
+  "id": "news-nvda-southeast-asia-shipment-halt-2026-11-26",
+  "status": "pending",
+  "kicker": "Market news",
+  "title": "Nvidia halts SE Asia AI server shipments",
+  "card_lines": [
+   "$NVDA pauses shipments to 4 SE Asian markets (FT)",
+   "$DELL, $SMCI told customers orders not authorized",
+   "Singapore unit billed $104B in 2025, up 72%"
+  ],
+  "short": "Nvidia told partners to halt AI server shipments to Malaysia, Singapore, Thailand and Indonesia amid tighter US export curbs, per the FT; its Singapore unit billed $104B in 2025. https://analystledger.github.io/news.html #Nvidia #chips",
+  "long": "A Financial Times report puts a fast-growing outlet for AI hardware in question just as investors reassess AI spending.\n\n• Nvidia asked partners to stop shipping AI servers to Malaysia, Singapore, Thailand and Indonesia\n• Dell and Supermicro told customers there their orders will not be authorized\n• Nvidia booked $104 billion through its Singapore subsidiary in 2025, up 72%; unclear if the pause is temporary\n\nSources: https://analystledger.github.io/news.html\n\n#Nvidia #semiconductors #AnalystLedger"
  }
 ]
