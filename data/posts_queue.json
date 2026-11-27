@@ -377,7 +377,7 @@
  },
  {
   "id": "news-market-black-friday-futures-ai-rebound-2026-11-27",
-  "status": "pending",
+  "status": "posted",
   "kicker": "Market news",
   "title": "Nasdaq futures +2% into Black Friday",
   "card_lines": [
@@ -387,7 +387,7 @@
   ],
   "short": "Nasdaq-100 futures rose about 2% ahead of Friday's shortened session as chip stocks rebounded: Nvidia up nearly 4%, Micron ~6% premarket. Brent near $92 on Houthi strikes. https://analystledger.github.io/news.html #stocks #AI",
   "long": "Wall Street reopens after Thanksgiving with a holiday-shortened session that tests whether this week's AI-led selloff has run its course.\n\n• Nasdaq-100 futures up about 2%, S&P 500 futures up roughly 1.5%-1.7%, Dow futures about 1%\n• Nvidia up nearly 4% and Micron about 6% premarket; 10-year yield near 4.84%\n• Brent crude around $92 after Houthi attacks on Saudi energy sites; stocks close at 1 p.m. ET\n\nSources: https://analystledger.github.io/news.html\n\n#stocks #AI #AnalystLedger",
-  "posted_utc": "2026-11-27 20:10"
+  "posted_utc": "2026-11-27 20:18"
  },
  {
   "id": "news-nvda-southeast-asia-shipment-halt-2026-11-26",
@@ -405,7 +405,7 @@
  },
  {
   "id": "options-2026-11-27",
-  "status": "pending",
+  "status": "posted",
   "kicker": "Weekly options watch",
   "title": "Earnings week: Marvell, Salesforce, Dollar General",
   "card_lines": [
@@ -414,6 +414,7 @@
    "$DG: ~9.4% implied Dec 3 after Piper Sandler upgrade"
   ],
   "short": "Weekly options watch: $MRVL prices a ~15.6% earnings move (Dec 1), $CRM ~11.5% vs ~8% avg (Dec 2), $DG ~9.4% after a Piper upgrade (Dec 3). https://analystledger.github.io #options #stocks",
-  "long": "Weekly options watch: here is what the options market is pricing for the week of Nov 30, after VIX spiked near 40 on Nov 20 and eased to the high 20s as stocks rebounded.\n\n• $MRVL — reports Tue Dec 1 after the close. Options imply a move of about ±15.6%, well above its ~10% historical average reaction, a sign traders expect an outsized AI-chip print after a volatile month for semis.\n\n• $CRM — reports Wed Dec 2 after the close with an implied move near ±11.5%, versus a historical average around 8%. Last quarter the stock moved +23.8%, so the market is pricing a wider-than-usual range again.\n\n• $DG — reports Thu Dec 3 before the open with an implied move near ±9.4%. Piper Sandler upgraded the stock this week on our tracker, making it a read on budget-consumer demand going into the holidays.\n\nAlso on deck: $SNOW (±15%), $MDB (±17%), $OKTA (±16%), $ULTA and $KR.\n\nTrack every rating change free at https://analystledger.github.io\n\nEducational only — not investment advice.\n#options #stocks"
+  "long": "Weekly options watch: here is what the options market is pricing for the week of Nov 30, after VIX spiked near 40 on Nov 20 and eased to the high 20s as stocks rebounded.\n\n• $MRVL — reports Tue Dec 1 after the close. Options imply a move of about ±15.6%, well above its ~10% historical average reaction, a sign traders expect an outsized AI-chip print after a volatile month for semis.\n\n• $CRM — reports Wed Dec 2 after the close with an implied move near ±11.5%, versus a historical average around 8%. Last quarter the stock moved +23.8%, so the market is pricing a wider-than-usual range again.\n\n• $DG — reports Thu Dec 3 before the open with an implied move near ±9.4%. Piper Sandler upgraded the stock this week on our tracker, making it a read on budget-consumer demand going into the holidays.\n\nAlso on deck: $SNOW (±15%), $MDB (±17%), $OKTA (±16%), $ULTA and $KR.\n\nTrack every rating change free at https://analystledger.github.io\n\nEducational only — not investment advice.\n#options #stocks",
+  "posted_utc": "2026-11-27 20:18"
  }
 ]
