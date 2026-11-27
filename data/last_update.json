@@ -1,5 +1,5 @@
 {
- "updated_utc": "2026-11-27 20:17 UTC",
+ "updated_utc": "2026-11-27 21:43 UTC",
  "total_events": 410,
  "new_events": 0,
  "log": [
@@ -8,9 +8,9 @@
   "News (Claude): 410 events",
   "Prices (Stooq): first 5 tickers failed - skipping price update this run",
   "Prices (Stooq): 0 tickers updated, 0 rating prices filled, 5 failed",
-  "  AIG: HTTPSConnectionPool(host='stooq.com', port=443): Max retries exceeded with url: /q/d/l/?s=aig.us&i=d&d1=20261107&d2=20261127 (Caused by ConnectTimeoutError(<HTTPSConnection(host='stooq.com', port=443) at 0x75bbb199fda0>, 'Connection to stooq.com timed out. (connect timeout=10)'))",
-  "  AJG: HTTPSConnectionPool(host='stooq.com', port=443): Max retries exceeded with url: /q/d/l/?s=ajg.us&i=d&d1=20261117&d2=20261127 (Caused by ConnectTimeoutError(<HTTPSConnection(host='stooq.com', port=443) at 0x75bbb19b9640>, 'Connection to stooq.com timed out. (connect timeout=10)'))",
-  "  ALNY: HTTPSConnectionPool(host='stooq.com', port=443): Max retries exceeded with url: /q/d/l/?s=alny.us&i=d&d1=20261108&d2=20261127 (Caused by ConnectTimeoutError(<HTTPSConnection(host='stooq.com', port=443) at 0x75bbb19579b0>, 'Connection to stooq.com timed out. (connect timeout=10)'))",
+  "  AMD: HTTP 200 '<!DOCTYPE html><html><head><meta charset=\"utf-8\"><meta name=\"robots\" content=\"noindex,nofollow\"></head><body><noscript>T'",
+  "  AMGN: HTTP 200 '<!DOCTYPE html><html><head><meta charset=\"utf-8\"><meta name=\"robots\" content=\"noindex,nofollow\"></head><body><noscript>T'",
+  "  AMRZ: HTTP 200 '<!DOCTYPE html><html><head><meta charset=\"utf-8\"><meta name=\"robots\" content=\"noindex,nofollow\"></head><body><noscript>T'",
   "Alerts queued: 0 pending"
  ]
 }
