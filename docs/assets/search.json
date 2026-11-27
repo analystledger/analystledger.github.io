@@ -1,6 +1,71 @@
 [
  {
   "t": "a",
+  "n": "Stifel (research team)",
+  "u": "analysts/stifel-research.html"
+ },
+ {
+  "t": "a",
+  "n": "Erste Group (research team)",
+  "u": "analysts/erste-group-research.html"
+ },
+ {
+  "t": "a",
+  "n": "Argus (research team)",
+  "u": "analysts/argus-research.html"
+ },
+ {
+  "t": "a",
+  "n": "BofA Securities (research team)",
+  "u": "analysts/bofa-securities-research.html"
+ },
+ {
+  "t": "a",
+  "n": "Truist Securities (research team)",
+  "u": "analysts/truist-securities-research.html"
+ },
+ {
+  "t": "a",
+  "n": "Bernstein SocGen (research team)",
+  "u": "analysts/bernstein-socgen-research.html"
+ },
+ {
+  "t": "a",
+  "n": "Rosenblatt (research team)",
+  "u": "analysts/rosenblatt-research.html"
+ },
+ {
+  "t": "a",
+  "n": "BTIG (research team)",
+  "u": "analysts/btig-research.html"
+ },
+ {
+  "t": "a",
+  "n": "Williams Trading (research team)",
+  "u": "analysts/williams-trading-research.html"
+ },
+ {
+  "t": "a",
+  "n": "H.C. Wainwright (research team)",
+  "u": "analysts/h-c-wainwright-research.html"
+ },
+ {
+  "t": "a",
+  "n": "Keefe Bruyette (research team)",
+  "u": "analysts/keefe-bruyette-research.html"
+ },
+ {
+  "t": "a",
+  "n": "Canaccord (research team)",
+  "u": "analysts/canaccord-research.html"
+ },
+ {
+  "t": "a",
+  "n": "Berenberg (research team)",
+  "u": "analysts/berenberg-research.html"
+ },
+ {
+  "t": "a",
   "n": "Mizuho (research team)",
   "u": "analysts/mizuho-research.html"
  },
@@ -26,11 +91,6 @@
  },
  {
   "t": "a",
-  "n": "Argus (research team)",
-  "u": "analysts/argus-research.html"
- },
- {
-  "t": "a",
   "n": "BNP Paribas (research team)",
   "u": "analysts/bnp-paribas-research.html"
  },
@@ -38,11 +98,6 @@
   "t": "a",
   "n": "BMO Capital (research team)",
   "u": "analysts/bmo-capital-research.html"
- },
- {
-  "t": "a",
-  "n": "BofA Securities (research team)",
-  "u": "analysts/bofa-securities-research.html"
  },
  {
   "t": "a",
@@ -136,11 +191,6 @@
  },
  {
   "t": "a",
-  "n": "Stifel (research team)",
-  "u": "analysts/stifel-research.html"
- },
- {
-  "t": "a",
   "n": "UBS (research team)",
   "u": "analysts/ubs-research.html"
  },
@@ -178,11 +228,6 @@
   "t": "a",
   "n": "HSBC (research team)",
   "u": "analysts/hsbc-research.html"
- },
- {
-  "t": "a",
-  "n": "Rosenblatt (research team)",
-  "u": "analysts/rosenblatt-research.html"
  },
  {
   "t": "a",
@@ -238,11 +283,6 @@
   "t": "a",
   "n": "Cantor Fitzgerald (research team)",
   "u": "analysts/cantor-fitzgerald-research.html"
- },
- {
-  "t": "a",
-  "n": "BTIG (research team)",
-  "u": "analysts/btig-research.html"
  },
  {
   "t": "a",
@@ -386,23 +426,8 @@
  },
  {
   "t": "a",
-  "n": "Williams Trading (research team)",
-  "u": "analysts/williams-trading-research.html"
- },
- {
-  "t": "a",
   "n": "James Friedman",
   "u": "analysts/james-friedman-susquehanna.html"
- },
- {
-  "t": "a",
-  "n": "Erste Group (research team)",
-  "u": "analysts/erste-group-research.html"
- },
- {
-  "t": "a",
-  "n": "Truist Securities (research team)",
-  "u": "analysts/truist-securities-research.html"
  },
  {
   "t": "a",
@@ -633,6 +658,111 @@
   "t": "a",
   "n": "Jay Goldberg",
   "u": "analysts/jay-goldberg-seaport-research-partners.html"
+ },
+ {
+  "t": "s",
+  "n": "AMD Advanced Micro Devices",
+  "u": "stocks/amd.html"
+ },
+ {
+  "t": "s",
+  "n": "XPEV XPeng",
+  "u": "stocks/xpev.html"
+ },
+ {
+  "t": "s",
+  "n": "MDT Medtronic",
+  "u": "stocks/mdt.html"
+ },
+ {
+  "t": "s",
+  "n": "ASTS AST SpaceMobile Inc.",
+  "u": "stocks/asts.html"
+ },
+ {
+  "t": "s",
+  "n": "WYY WidePoint",
+  "u": "stocks/wyy.html"
+ },
+ {
+  "t": "s",
+  "n": "SPOT Spotify",
+  "u": "stocks/spot.html"
+ },
+ {
+  "t": "s",
+  "n": "SHOE Shoe Carnival",
+  "u": "stocks/shoe.html"
+ },
+ {
+  "t": "s",
+  "n": "PNNT PennantPark Investment",
+  "u": "stocks/pnnt.html"
+ },
+ {
+  "t": "s",
+  "n": "PHAR Pharming Group",
+  "u": "stocks/phar.html"
+ },
+ {
+  "t": "s",
+  "n": "OHI Omega Healthcare Investors",
+  "u": "stocks/ohi.html"
+ },
+ {
+  "t": "s",
+  "n": "MDB MongoDB",
+  "u": "stocks/mdb.html"
+ },
+ {
+  "t": "s",
+  "n": "LI Li Auto",
+  "u": "stocks/li.html"
+ },
+ {
+  "t": "s",
+  "n": "KGS Kodiak Gas Services",
+  "u": "stocks/kgs.html"
+ },
+ {
+  "t": "s",
+  "n": "JNJ Johnson & Johnson",
+  "u": "stocks/jnj.html"
+ },
+ {
+  "t": "s",
+  "n": "HUBS HubSpot",
+  "u": "stocks/hubs.html"
+ },
+ {
+  "t": "s",
+  "n": "GTLB GitLab",
+  "u": "stocks/gtlb.html"
+ },
+ {
+  "t": "s",
+  "n": "FRT Federal Realty",
+  "u": "stocks/frt.html"
+ },
+ {
+  "t": "s",
+  "n": "DE Deere",
+  "u": "stocks/de.html"
+ },
+ {
+  "t": "s",
+  "n": "CRM Salesforce",
+  "u": "stocks/crm.html"
+ },
+ {
+  "t": "s",
+  "n": "CF CF Industries",
+  "u": "stocks/cf.html"
+ },
+ {
+  "t": "s",
+  "n": "AMTM Amentum",
+  "u": "stocks/amtm.html"
  },
  {
   "t": "s",
@@ -1321,11 +1451,6 @@
  },
  {
   "t": "s",
-  "n": "XPEV XPeng",
-  "u": "stocks/xpev.html"
- },
- {
-  "t": "s",
   "n": "VVV Valvoline",
   "u": "stocks/vvv.html"
  },
@@ -1513,11 +1638,6 @@
   "t": "s",
   "n": "BE Bloom Energy Corp.",
   "u": "stocks/be.html"
- },
- {
-  "t": "s",
-  "n": "ASTS AST SpaceMobile Inc.",
-  "u": "stocks/asts.html"
  },
  {
   "t": "s",
@@ -1738,11 +1858,6 @@
   "t": "s",
   "n": "MPTI M-tron Industries",
   "u": "stocks/mpti.html"
- },
- {
-  "t": "s",
-  "n": "MDT Medtronic",
-  "u": "stocks/mdt.html"
  },
  {
   "t": "s",
@@ -1983,11 +2098,6 @@
   "t": "s",
   "n": "CRCL Circle Internet Group",
   "u": "stocks/crcl.html"
- },
- {
-  "t": "s",
-  "n": "AMD Advanced Micro Devices",
-  "u": "stocks/amd.html"
  },
  {
   "t": "s",
