@@ -49,15 +49,30 @@ def ysym(t):
 
 
 def closes(t, start):
+    """Split-adjusted daily closes, plus the splits [(date, ratio)] so old price targets can be adjusted too."""
     p1 = int(datetime.fromisoformat(start).replace(tzinfo=timezone.utc).timestamp())
     r = S.get(f"https://query1.finance.yahoo.com/v8/finance/chart/{ysym(t)}",
-              params={"period1": p1, "period2": int(time.time()), "interval": "1d"}, timeout=20)
+              params={"period1": p1, "period2": int(time.time()), "interval": "1d", "events": "split"}, timeout=20)
     res = r.json()["chart"]["result"][0]
     out = {}
     for ts, c in zip(res.get("timestamp") or [], res["indicators"]["quote"][0]["close"]):
         if c:
             out[datetime.fromtimestamp(ts, timezone.utc).date().isoformat()] = round(c, 2)
-    return out
+    splits = [(datetime.fromtimestamp(v["date"], timezone.utc).date().isoformat(), v["numerator"] / v["denominator"])
+              for v in ((res.get("events") or {}).get("splits") or {}).values() if v.get("denominator")]
+    return out, splits
+
+
+def adjust_targets(actions, splits):
+    """Analysts' targets are quoted in the share price of their day; divide by later splits to match the chart."""
+    for a in actions:
+        f = 1.0
+        for d, ratio in splits:
+            if a[0] < d and ratio > 0:
+                f *= ratio
+        if f != 1.0:
+            a[5] = round(a[5] / f, 2) if a[5] else a[5]
+            a[6] = round(a[6] / f, 2) if a[6] else a[6]
 
 
 def summary(t):
@@ -120,16 +135,16 @@ def main():
     ok = fail = 0
     for i, t in enumerate(tickers):
         try:
-            prices = closes(t, start.isoformat())
+            prices, splits = closes(t, start.isoformat())
         except Exception as e:  # noqa: BLE001
-            prices = {}
+            prices, splits = {}, []
             print(f"{t}: prices failed: {e}")
         actions, trend = [], []
         try:
             sm = summary(t)
             for h in (sm.get("upgradeDowngradeHistory") or {}).get("history", []):
                 d = datetime.fromtimestamp(h["epochGradeDate"], timezone.utc).date().isoformat()
-                if d < start.isoformat():
+                if d < (start - timedelta(days=366)).isoformat():  # a year of lead-in for the first consensus
                     continue
                 actions.append([d, h.get("firm") or "", h.get("fromGrade") or "", h.get("toGrade") or "",
                                 ACT.get(h.get("action"), h.get("action") or ""),
@@ -142,6 +157,7 @@ def main():
                               r.get("hold", 0), r.get("sell", 0), r.get("strongSell", 0)])
         except Exception as e:  # noqa: BLE001
             print(f"{t}: analyst history failed: {e}")
+        adjust_targets(actions, splits)
         src = "Yahoo Finance"
         if not actions:
             actions, src = own_actions(events, t), "Analyst Ledger"

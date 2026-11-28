@@ -1549,6 +1549,136 @@
       "de": "Letzte 3 Monate",
       "sq": "3 muajt e fundit",
       "sr": "Poslednja 3 meseca"
+    },
+    "Analyst history: {s}.": {
+      "de": "Analystenhistorie: {s}.",
+      "sq": "Historiku i analistëve: {s}.",
+      "sr": "Istorija analitičara: {s}."
+    },
+    "Avg analyst target": {
+      "de": "Ø Analystenziel",
+      "sq": "Objektivi mesatar i analistëve",
+      "sr": "Prosečan cilj analitičara"
+    },
+    "Bars: analysts bullish / neutral / bearish at each month end (each firm's latest view in the prior 12 months).": {
+      "de": "Balken: Analysten bullisch / neutral / bärisch am Monatsende (letzte Einschätzung jeder Firma in den 12 Monaten davor).",
+      "sq": "Shtyllat: analistë optimistë / neutralë / pesimistë në fund të çdo muaji (pikëpamja e fundit e çdo firme në 12 muajt paraardhës).",
+      "sr": "Stubići: analitičari optimistični / neutralni / pesimistični na kraju svakog meseca (poslednje mišljenje svake firme u prethodnih 12 meseci)."
+    },
+    "Chart a stock (e.g. NVDA)": {
+      "de": "Aktie im Chart (z. B. NVDA)",
+      "sq": "Grafiku i një aksioni (p.sh. NVDA)",
+      "sr": "Grafikon akcije (npr. NVDA)"
+    },
+    "Close chart": {
+      "de": "Chart schließen",
+      "sq": "Mbyll grafikun",
+      "sr": "Zatvori grafikon"
+    },
+    "Consensus on a date uses each firm's latest view in the 12 months before it, at month end. Prices are split-adjusted closes; returns exclude dividends. Sources: Yahoo Finance and Analyst Ledger.": {
+      "de": "Der Konsens an einem Datum nutzt die letzte Einschätzung jeder Firma in den 12 Monaten davor, jeweils zum Monatsende. Kurse sind split-bereinigte Schlusskurse; Renditen ohne Dividenden. Quellen: Yahoo Finance und Analyst Ledger.",
+      "sq": "Konsensusi në një datë përdor pikëpamjen e fundit të çdo firme në 12 muajt para saj, në fund të muajit. Çmimet janë mbyllje të rregulluara për ndarjet; kthimet nuk përfshijnë dividendët. Burimet: Yahoo Finance dhe Analyst Ledger.",
+      "sr": "Konsenzus na dan koristi poslednje mišljenje svake firme u 12 meseci pre njega, na kraju meseca. Cene su zatvaranja korigovana za podele akcija; prinosi ne uključuju dividende. Izvori: Yahoo Finance i Analyst Ledger."
+    },
+    "Downgrades": {
+      "de": "Herabstufungen",
+      "sq": "Ulje vlerësimi",
+      "sr": "Snižavanja"
+    },
+    "Historical data is still loading for the first time — check back in a few minutes.": {
+      "de": "Historische Daten werden erstmals geladen — schauen Sie in ein paar Minuten wieder vorbei.",
+      "sq": "Të dhënat historike po ngarkohen për herë të parë — kontrolloni pas pak minutash.",
+      "sr": "Istorijski podaci se učitavaju prvi put — proverite za nekoliko minuta."
+    },
+    "Initiation": {
+      "de": "Erstbewertung",
+      "sq": "Fillim mbulimi",
+      "sr": "Početak praćenja"
+    },
+    "Last 3 years": {
+      "de": "Letzte 3 Jahre",
+      "sq": "3 vitet e fundit",
+      "sr": "Poslednje 3 godine"
+    },
+    "Last 5 years": {
+      "de": "Letzte 5 Jahre",
+      "sq": "5 vitet e fundit",
+      "sr": "Poslednjih 5 godina"
+    },
+    "Last year": {
+      "de": "Letztes Jahr",
+      "sq": "Viti i fundit",
+      "sr": "Poslednja godina"
+    },
+    "Loading…": {
+      "de": "Lädt…",
+      "sq": "Duke u ngarkuar…",
+      "sr": "Učitava se…"
+    },
+    "No data for this stock yet.": {
+      "de": "Noch keine Daten für diese Aktie.",
+      "sq": "Ende nuk ka të dhëna për këtë aksion.",
+      "sr": "Još nema podataka za ovu akciju."
+    },
+    "Other rating": {
+      "de": "Andere Bewertung",
+      "sq": "Vlerësim tjetër",
+      "sr": "Druga ocena"
+    },
+    "Pick a period to see the analyst consensus, price and target as they stood on a past date. Click a ticker to chart its price with every analyst rating in that period.": {
+      "de": "Wählen Sie einen Zeitraum, um Analystenkonsens, Kurs und Kursziel an einem früheren Datum zu sehen. Klicken Sie auf einen Ticker, um den Kurs mit jeder Analystenbewertung im Zeitraum als Chart zu sehen.",
+      "sq": "Zgjidhni një periudhë për të parë konsensusin e analistëve, çmimin dhe objektivin siç ishin në një datë të kaluar. Klikoni një simbol për të parë grafikun e çmimit me çdo vlerësim analisti në atë periudhë.",
+      "sr": "Izaberite period da vidite konsenzus analitičara, cenu i cilj kakvi su bili na raniji datum. Kliknite na tiker za grafikon cene sa svakom ocenom analitičara u tom periodu."
+    },
+    "Price": {
+      "de": "Kurs",
+      "sq": "Çmimi",
+      "sr": "Cena"
+    },
+    "Price change": {
+      "de": "Kursänderung",
+      "sq": "Ndryshimi i çmimit",
+      "sr": "Promena cene"
+    },
+    "Price now": {
+      "de": "Kurs jetzt",
+      "sq": "Çmimi tani",
+      "sr": "Cena sada"
+    },
+    "Price then": {
+      "de": "Kurs damals",
+      "sq": "Çmimi atëherë",
+      "sr": "Cena tada"
+    },
+    "Return since": {
+      "de": "Rendite seitdem",
+      "sq": "Kthimi që atëherë",
+      "sr": "Prinos od tada"
+    },
+    "Stock page": {
+      "de": "Aktienseite",
+      "sq": "Faqja e aksionit",
+      "sr": "Stranica akcije"
+    },
+    "Target": {
+      "de": "Kursziel",
+      "sq": "Objektivi",
+      "sr": "Cilj"
+    },
+    "Upgrades": {
+      "de": "Heraufstufungen",
+      "sq": "Ngritje vlerësimi",
+      "sr": "Podizanja"
+    },
+    "Upside then": {
+      "de": "Potenzial damals",
+      "sq": "Potenciali atëherë",
+      "sr": "Potencijal tada"
+    },
+    "{n} analyst actions in this period": {
+      "de": "{n} Analystenaktionen in diesem Zeitraum",
+      "sq": "{n} veprime analistësh në këtë periudhë",
+      "sr": "{n} akcija analitičara u ovom periodu"
     }
   },
   "js": {
