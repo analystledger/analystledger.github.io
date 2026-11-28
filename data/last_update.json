@@ -1,12 +1,12 @@
 {
- "updated_utc": "2026-11-28 13:39 UTC",
+ "updated_utc": "2026-11-28 13:41 UTC",
  "total_events": 431,
  "new_events": 0,
  "log": [
   "FMP: no FMP_API_KEY set - skipped",
   "Finnhub: no FINNHUB_API_KEY set - skipped",
   "News (Claude): 431 events",
-  "Prices: 275 tickers updated, 348 rating prices filled, 0 failed",
+  "Prices: 0 tickers updated, 0 rating prices filled, 0 failed",
   "Alerts queued: 0 pending"
  ]
 }
