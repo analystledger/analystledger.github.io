@@ -211,6 +211,30 @@ def stooq_history(ticker, start):
     return out, None if out else f"{ticker}: empty"
 
 
+def yahoo_history(ticker, start):
+    """Daily split-adjusted closes {YYYY-MM-DD: close} from Yahoo Finance's public chart endpoint."""
+    p1 = int(datetime.fromisoformat(start).replace(tzinfo=timezone.utc).timestamp())
+    try:
+        r = SESSION.get(f"https://query1.finance.yahoo.com/v8/finance/chart/{ticker.replace('.', '-')}",
+                        params={"period1": p1, "period2": int(time.time()), "interval": "1d"},
+                        headers={"User-Agent": "Mozilla/5.0"}, timeout=20)
+        res = r.json()["chart"]["result"][0]
+        ts, closes = res["timestamp"], res["indicators"]["quote"][0]["close"]
+    except Exception as e:  # noqa: BLE001
+        return {}, f"Yahoo {ticker}: {e}"
+    out = {datetime.fromtimestamp(t, timezone.utc).date().isoformat(): round(c, 2) for t, c in zip(ts, closes) if c}
+    return out, None if out else f"Yahoo {ticker}: empty"
+
+
+def price_history(ticker, start):
+    """Yahoo first (free, no key); Stooq as a fallback."""
+    hist, err = yahoo_history(ticker, start)
+    if hist:
+        return hist, None
+    hist, err2 = stooq_history(ticker, start)
+    return hist, None if hist else f"{err}; {err2}"
+
+
 def update_prices(events):
     """Latest close per ticker (for scoring) and the close before each rating that lacks one.
 
@@ -243,18 +267,18 @@ def update_prices(events):
         missing = [e for e in evs if not e.get("price_at_rating")]
         start = min(e["date"] for e in missing) if missing else today
         start = (date.fromisoformat(start) - timedelta(days=10)).isoformat()
-        hist, err = stooq_history(t, start)
+        hist, err = price_history(t, start)
         time.sleep(0.3)
         if err:
             errors.append(err)
             if not ok and len(errors) >= 5:
-                log("Prices (Stooq): first 5 tickers failed - skipping price update this run")
+                log("Prices: first 5 tickers failed - skipping price update this run")
                 break
             prices.setdefault(t, {})["checked"] = today
             continue
         days = sorted(hist)
         last = days[-1]
-        prices[t] = {"price": hist[last], "date": last, "checked": today, "source": "Stooq"}
+        prices[t] = {"price": hist[last], "date": last, "checked": today, "source": "Yahoo/Stooq"}
         ok += 1
         for e in missing:
             before = [d for d in days if d < e["date"]]   # close before the rating was published
@@ -262,7 +286,7 @@ def update_prices(events):
                 e["price_at_rating"] = hist[before[-1]]
                 filled += 1
     save_json(os.path.join(DATA, "prices.json"), prices)
-    log(f"Prices (Stooq): {ok} tickers updated, {filled} rating prices filled, {len(errors)} failed")
+    log(f"Prices: {ok} tickers updated, {filled} rating prices filled, {len(errors)} failed")
     for err in errors[:3]:
         log(f"  {err}")
     return prices

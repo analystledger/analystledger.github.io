@@ -1,0 +1,28 @@
+name: Historical data
+on:
+  schedule:
+    - cron: "40 23 * * 1-5"   # after the US close, Mon-Fri
+  workflow_dispatch:
+    inputs:
+      tickers: { description: "Only these tickers (space separated, blank = all)", required: false, default: "" }
+permissions:
+  contents: write
+concurrency: { group: site, cancel-in-progress: false }
+jobs:
+  history:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install -r requirements.txt
+      - name: Fetch prices and analyst history
+        run: python scripts/history_data.py ${{ github.event.inputs.tickers }}
+      - name: Commit
+        run: |
+          git config user.name "analyst-ledger-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add docs/data/hist
+          git diff --cached --quiet || git commit -m "Historical data $(date -u +%F)"
+          git pull --rebase -X ours || true
+          git push
