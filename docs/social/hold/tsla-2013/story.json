@@ -1,0 +1,87 @@
+{
+ "ticker": "TSLA",
+ "name": "Tesla",
+ "year": 2013,
+ "start_day": "2013-01-02",
+ "end_day": "2026-11-27",
+ "final": 1696832.85880544,
+ "multiple": 169.683285880544,
+ "cagr": 0.4467880011489975,
+ "max_dd": 0.736322174421912,
+ "episodes": [
+  {
+   "peak": "2017-09-18",
+   "peak_v": 108880.11383410211,
+   "trough": "2019-06-03",
+   "trough_v": 50613.69296246697,
+   "depth": 0.5351429092039178,
+   "recovered": "2019-12-18",
+   "closes_near_trough": {
+    "2019-05-24": 12.71,
+    "2019-05-28": 12.58,
+    "2019-05-29": 12.66,
+    "2019-05-30": 12.55,
+    "2019-05-31": 12.34,
+    "2019-06-03": 11.93,
+    "2019-06-04": 12.91,
+    "2019-06-05": 13.11,
+    "2019-06-06": 13.73,
+    "2019-06-07": 13.63,
+    "2019-06-10": 14.19
+   }
+  },
+  {
+   "peak": "2021-11-04",
+   "peak_v": 1739126.4229894883,
+   "trough": "2023-01-03",
+   "trough_v": 458569.07361926645,
+   "depth": 0.736322174421912,
+   "recovered": "2024-12-11",
+   "closes_near_trough": {
+    "2022-12-23": 123.15,
+    "2022-12-27": 109.1,
+    "2022-12-28": 112.71,
+    "2022-12-29": 121.82,
+    "2022-12-30": 123.18,
+    "2023-01-03": 108.1,
+    "2023-01-04": 113.64,
+    "2023-01-05": 110.34,
+    "2023-01-06": 113.06,
+    "2023-01-09": 119.77,
+    "2023-01-10": 118.85
+   }
+  },
+  {
+   "peak": "2024-12-17",
+   "peak_v": 2035605.4769260706,
+   "trough": "2025-03-10",
+   "trough_v": 942378.5230674564,
+   "depth": 0.5370524722253527,
+   "recovered": "2025-12-16",
+   "closes_near_trough": {
+    "2025-03-03": 284.65,
+    "2025-03-04": 272.04,
+    "2025-03-05": 279.1,
+    "2025-03-06": 263.45,
+    "2025-03-07": 262.67,
+    "2025-03-10": 222.15,
+    "2025-03-11": 230.58,
+    "2025-03-12": 248.09,
+    "2025-03-13": 240.68,
+    "2025-03-14": 249.98,
+    "2025-03-17": 238.01
+   }
+  }
+ ],
+ "pct_below": 0.5239186479518763,
+ "longest_below_days": 778,
+ "caption": "$10,000 in $TSLA in 2013 \u2192 $1.70 million today. Sounds easy. It meant sitting through a 74% drop ($1.74 million \u2192 $458,600) and more. Volatility is the price of long-term returns.\n\nTrack every analyst call on $TSLA: https://analystledger.com/stocks/tsla.html\n\nHypothetical, price only. Not investment advice. #TSLA #stocks #investing #longterminvesting",
+ "slides": [
+  "docs/social/hold/tsla-2013/1.png",
+  "docs/social/hold/tsla-2013/2.png",
+  "docs/social/hold/tsla-2013/3.png",
+  "docs/social/hold/tsla-2013/4.png",
+  "docs/social/hold/tsla-2013/5.png",
+  "docs/social/hold/tsla-2013/6.png"
+ ]
+}
