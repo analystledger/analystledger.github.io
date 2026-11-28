@@ -67,8 +67,28 @@ def drawdowns(days, vals, threshold):
     return eps
 
 
+def yahoo_history(ticker, start):
+    """Daily split-adjusted closes from Yahoo Finance's public chart endpoint."""
+    import time
+    from datetime import datetime, timezone
+    import requests
+    p1 = int(datetime.fromisoformat(start).replace(tzinfo=timezone.utc).timestamp())
+    url = f"https://query1.finance.yahoo.com/v8/finance/chart/{ticker.replace('.', '-')}"
+    try:
+        r = requests.get(url, params={"period1": p1, "period2": int(time.time()), "interval": "1d",
+                                      "events": "split"}, headers={"User-Agent": "Mozilla/5.0"}, timeout=20)
+        res = r.json()["chart"]["result"][0]
+        ts, closes = res["timestamp"], res["indicators"]["quote"][0]["close"]
+    except Exception as e:  # noqa: BLE001
+        return {}, f"Yahoo {ticker}: {e}"
+    out = {datetime.fromtimestamp(t, timezone.utc).date().isoformat(): c for t, c in zip(ts, closes) if c}
+    return out, None if out else f"Yahoo {ticker}: empty"
+
+
 def analyse(ticker, year):
-    hist, err = stooq_history(ticker, f"{year}-01-01")
+    hist, err = yahoo_history(ticker, f"{year}-01-01")
+    if err or not hist:
+        hist, err = stooq_history(ticker, f"{year}-01-01")
     if err or not hist:
         raise SystemExit(f"No price data for {ticker}: {err}")
     days = sorted(d for d in hist if d >= f"{year}-01-01")
