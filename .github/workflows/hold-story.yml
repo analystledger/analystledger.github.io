@@ -1,0 +1,29 @@
+name: Hold story (preview)
+on:
+  workflow_dispatch:
+    inputs:
+      ticker: { description: "Ticker, e.g. NVDA", required: true, default: "NVDA" }
+      year: { description: "Start year, e.g. 2015", required: true, default: "2015" }
+permissions:
+  contents: write
+concurrency: { group: site, cancel-in-progress: false }
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install -r requirements.txt
+      - name: Build carousel (no posting)
+        env:
+          STOOQ_API_KEY: ${{ secrets.STOOQ_API_KEY }}
+        run: python scripts/hold_story.py "${{ github.event.inputs.ticker }}" "${{ github.event.inputs.year }}"
+      - name: Commit
+        run: |
+          git config user.name "analyst-ledger-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add docs/social/hold
+          git diff --cached --quiet || git commit -m "Hold story preview ${{ github.event.inputs.ticker }} ${{ github.event.inputs.year }}"
+          git pull --rebase -X ours || true
+          git push
