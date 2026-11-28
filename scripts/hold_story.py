@@ -96,7 +96,7 @@ def analyse(ticker, year):
     vals = [START * c / closes[0] for c in closes]
     for thr in (0.5, 0.4, 0.3, 0.2):
         eps = drawdowns(days, vals, thr)
-        if len(eps) >= 2:
+        if len(eps) >= 3:
             break
     eps = sorted(eps, key=lambda e: e["depth"], reverse=True)[:4]
     eps.sort(key=lambda e: e["peak"])
@@ -106,9 +106,10 @@ def analyse(ticker, year):
         if v >= run:
             run, cur = v, 0
         else:
-            below += 1
             cur += 1
             longest = max(longest, cur)
+        if v <= run * 0.8:
+            below += 1
     years = (date.fromisoformat(days[-1]) - date.fromisoformat(days[0])).days / 365.25
     final = vals[-1]
     return {
@@ -245,7 +246,7 @@ def build(a, out_dir):
     img, d = base("What the chart doesn't show", 5, T)
     stats = [(f"{a['multiple']:,.0f}×" if a["multiple"] >= 10 else f"{a['multiple']:.1f}×", "total, price only"),
              (f"{a['cagr']:.0%}", "a year, compounded"),
-             (f"{a['pct_below']:.0%}", "of trading days below a previous high"),
+             (f"{a['pct_below']:.0%}", "of trading days 20%+ below its peak"),
              (f"{a['longest_below_days'] / 252:.1f} yrs", "longest wait for a new high")]
     y = 260
     for big, small in stats:
