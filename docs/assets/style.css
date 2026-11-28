@@ -79,3 +79,5 @@ table.ev{border-collapse:collapse;width:100%;font-size:14px}
 #hc-svg .up,.hc-legend .up{color:var(--up)}
 .hchart{position:relative}.hc-x{position:absolute;top:8px;right:8px}.hc-head{padding-right:26px}
 @media (max-width:700px){.hc-wrap{overflow-x:auto}#hc-svg{min-width:640px}.hc-kpis{margin-left:0;gap:14px}.hc-kpis div{text-align:left}}
+.filters select{flex:none;max-width:100%}
+#j-tk::placeholder{text-transform:none}

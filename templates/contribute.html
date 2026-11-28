@@ -5,24 +5,24 @@
 {% set repo = "https://github.com/analystledger/analystledger.github.io" %}
 <article class="prose">
 <h1>{{ _("Write for Analyst Ledger") }}</h1>
-<p>Analyst Ledger publishes short, sourced research on investors, filings and market events. Correspondents write under their own name. The editor reviews every article before it goes live.</p>
+<p>{{ _("Analyst Ledger publishes short, sourced research on investors, filings and market events. Correspondents write under their own name. The editor reviews every article before it goes live.")|safe }}</p>
 
-<h2>How it works</h2>
+<h2>{{ _("How it works")|safe }}</h2>
 <ol>
-  <li><strong>Sign in.</strong> Correspondents use a free <a href="https://github.com/signup" rel="noopener" target="_blank">GitHub account</a> as their login. There is no separate password to remember.</li>
-  <li><strong>Apply once.</strong> <a href="{{ repo }}/issues/new?template=correspondent.yml" rel="noopener" target="_blank">Apply to be a correspondent</a> with your display name, a short bio and the topics you'd like to cover.</li>
-  <li><strong>Submit articles.</strong> When your application is approved, use <a href="{{ repo }}/issues/new?template=article.yml" rel="noopener" target="_blank">Submit an article</a>. Write in Markdown and list your sources.</li>
-  <li><strong>Editorial review.</strong> The editor approves, asks for changes in the comments, or declines. Approved articles appear on the <a href="{{ root }}investors.html">Investors &amp; articles</a> page within a few minutes, and you get a comment with the link.</li>
+  <li>{{ _('<strong>Sign in.</strong> Correspondents use a free <a href="https://github.com/signup" rel="noopener" target="_blank">GitHub account</a> as their login. There is no separate password to remember.')|safe }}</li>
+  <li>{{ _('<strong>Apply once.</strong> <a href="{v0}/issues/new?template=correspondent.yml" rel="noopener" target="_blank">Apply to be a correspondent</a> with your display name, a short bio and the topics you\'d like to cover.', v0=repo)|safe }}</li>
+  <li>{{ _('<strong>Submit articles.</strong> When your application is approved, use <a href="{v0}/issues/new?template=article.yml" rel="noopener" target="_blank">Submit an article</a>. Write in Markdown and list your sources.', v0=repo)|safe }}</li>
+  <li>{{ _('<strong>Editorial review.</strong> The editor approves, asks for changes in the comments, or declines. Approved articles appear on the <a href="{v0}investors.html">Investors &amp; articles</a> page within a few minutes, and you get a comment with the link.', v0=root)|safe }}</li>
 </ol>
-<p class="note">Submissions are made on a public GitHub repository, so drafts waiting for review are visible there.</p>
+<p class="note">{{ _("Submissions are made on a public GitHub repository, so drafts waiting for review are visible there.")|safe }}</p>
 
-<h2>Guidelines</h2>
+<h2>{{ _("Guidelines")|safe }}</h2>
 <ul>
-  <li>Write in your own words. Quote sparingly and link to the original.</li>
-  <li>Back every number with a source, ideally a primary one: an SEC filing, a company release or an official statistic.</li>
-  <li>Describe and explain. Don't tell readers to buy or sell, and don't publish price targets of your own.</li>
-  <li>Disclose any position you hold in the stocks you discuss.</li>
-  <li>No promotion, paid content or undisclosed affiliate links.</li>
+  <li>{{ _("Write in your own words. Quote sparingly and link to the original.")|safe }}</li>
+  <li>{{ _("Back every number with a source, ideally a primary one: an SEC filing, a company release or an official statistic.")|safe }}</li>
+  <li>{{ _("Describe and explain. Don't tell readers to buy or sell, and don't publish price targets of your own.")|safe }}</li>
+  <li>{{ _("Disclose any position you hold in the stocks you discuss.")|safe }}</li>
+  <li>{{ _("No promotion, paid content or undisclosed affiliate links.")|safe }}</li>
 </ul>
 <p>{{ _(CFG.disclaimer) }}</p>
 </article>

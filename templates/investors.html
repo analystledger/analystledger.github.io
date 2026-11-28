@@ -25,8 +25,8 @@
 <div class="inv" id="{{ i.slug }}">
   <h3>{{ i.name }}</h3>
   <div class="firm">{{ i.firm }}</div>
-  <p>{{ i.style }}</p>
-  <p class="meta"><b>{{ _("How to follow:") }}</b> {{ i.follow }}</p>
+  <p>{{ _(i.style) }}</p>
+  <p class="meta"><b>{{ _("How to follow:") }}</b> {{ _(i.follow) }}</p>
   <div class="lnk">
     {% if i.article %}<a href="{{ root }}articles/{{ i.article.slug }}.html">{{ _("Latest article") }} →</a>{% endif %}
     <a href="https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&amp;CIK={{ i.cik }}&amp;type=&amp;dateb=&amp;owner=include&amp;count=40" rel="noopener nofollow" target="_blank">{{ _("SEC filings") }}</a>

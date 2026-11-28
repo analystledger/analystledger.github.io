@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% block title %}{{ _("Strategy assistant") }}: {{ _("the strategies trading bots and AI agents use, tested") }} | {{ CFG.site_name }}{% endblock %}
-{% block desc %}Free strategy assistant: the strategies run by trading bots and AI agents at Pionex, 3Commas, Composer, eToro, Robinhood and Interactive Brokers, explained in plain English and backtested on ten years of data. Builds safe instructions for your own AI agent. Educational only.{% endblock %}
+{% block desc %}{{ _("Free strategy assistant: the strategies run by trading bots and AI agents at Pionex, 3Commas, Composer, eToro, Robinhood and Interactive Brokers, explained in plain English and backtested on ten years of data. Builds safe instructions for your own AI agent. Educational only.") }}{% endblock %}
 {% block body %}
 <style>
 .sa-grid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:18px;align-items:start}
@@ -41,97 +41,99 @@
 .nobox{background:#fde9e9;border:1px solid #f2b8b8;border-radius:12px;padding:12px 16px}
 </style>
 
-{% if lang != "en" %}<p class="warn" style="background:#fff7e0;border:1px solid #f1d58a;border-radius:10px;padding:10px 14px">{{ _("This page is available in English only. The English version applies.") }}</p>{% endif %}
+{% if lang not in ("en", "sq") %}<p class="warn" style="background:#fff7e0;border:1px solid #f1d58a;border-radius:10px;padding:10px 14px">{{ _("This page is available in English only. The English version applies.") }}</p>{% endif %}
 
 <section class="hero small">
   <h1>{{ _("Strategy assistant") }}</h1>
-  <p>The strategies that trading bots and AI agents run at Pionex, 3Commas, Composer, eToro, Robinhood and Interactive Brokers — explained in plain English, backtested over {{ (sb.period[:4] ~ "–" ~ sb.period[-10:-6]) if sb.period else "ten years" }}, and turned into safe written instructions you can give your own AI agent. Educational only: this assistant never places trades and does not know your full situation.</p>
+  <p>{{ _("The strategies that trading bots and AI agents run at Pionex, 3Commas, Composer, eToro, Robinhood and Interactive Brokers — explained in plain English, backtested over {p}, and turned into safe written instructions you can give your own AI agent. Educational only: this assistant never places trades and does not know your full situation.", p=(sb.period[:4] ~ "–" ~ sb.period[-10:-6]) if sb.period else _("ten years")) }}</p>
 </section>
 
 <div class="sa-grid">
-  <div class="chat" aria-label="Strategy assistant chat">
+  <div class="chat" aria-label="{{ _('Strategy assistant chat') }}">
     <div class="chat-log" id="log" aria-live="polite"></div>
     <div class="chips" id="chips"></div>
-    <form id="ask" autocomplete="off"><input id="in" placeholder="Ask about a strategy, e.g. 'what is a grid bot?'" aria-label="Your message"><button>Send</button></form>
+    <form id="ask" autocomplete="off"><input id="in" placeholder="{{ _("Ask about a strategy, e.g. 'what is a grid bot?'") }}" aria-label="{{ _('Your message') }}"><button>{{ _("Send") }}</button></form>
   </div>
   <div class="instr">
-    <h2 style="margin:0 0 6px;font-size:18px">Instructions for your AI agent</h2>
-    <p style="margin:0 0 8px;color:var(--muted);font-size:14px">Built from your answers. Paste into the agent connected to a <b>separate, small sub-account</b> (IBKR AI Partition, Robinhood agentic account, eToro Agent Portfolio). Paper-trade first.</p>
-    <textarea id="out" readonly placeholder="Answer the questions in the chat and your instructions appear here."></textarea>
-    <div class="row"><button id="copy" type="button">Copy</button><button id="restart" class="ghost" type="button">Start again</button></div>
+    <h2 style="margin:0 0 6px;font-size:18px">{{ _("Instructions for your AI agent") }}</h2>
+    <p style="margin:0 0 8px;color:var(--muted);font-size:14px">{{ _("Built from your answers. Paste into the agent connected to a <b>separate, small sub-account</b> (IBKR AI Partition, Robinhood agentic account, eToro Agent Portfolio). Paper-trade first.")|safe }}</p>
+    <textarea id="out" readonly placeholder="{{ _('Answer the questions in the chat and your instructions appear here.') }}"></textarea>
+    <div class="row"><button id="copy" type="button">{{ _("Copy") }}</button><button id="restart" class="ghost" type="button">{{ _("Start again") }}</button></div>
   </div>
 </div>
 
-<h2 style="margin-top:28px">How the strategies did</h2>
-<p>Each strategy run on daily, dividend-adjusted prices from {{ sb.period|replace(' to ', ' to ') }}: signals use the close and trade at the next close, with 0.05% costs per trade; cash earns the T-bill rate. Options strategies are modelled (option prices estimated from the VIX, adjusted for skew), not real fills. Past results do not predict future ones. Updated {{ sb.updated }}, monthly.</p>
+<h2 style="margin-top:28px">{{ _("How the strategies did") }}</h2>
+<p>{{ _("Each strategy run on daily, dividend-adjusted prices from {p}: signals use the close and trade at the next close, with 0.05% costs per trade; cash earns the T-bill rate. Options strategies are modelled (option prices estimated from the VIX, adjusted for skew), not real fills. Past results do not predict future ones. Updated {u}, monthly.", p=sb.period|replace(' to ', ' → '), u=sb.updated) }}</p>
 <div class="tblwrap"><table class="tbl" id="perf">
-<thead><tr><th>Strategy</th><th>Return a year</th><th>Worst fall</th><th>Risk-adjusted (Sharpe)</th><th>2020</th><th>2022</th><th>€10,000 became</th><th>Time in stocks</th><th>Trades a year</th></tr></thead>
+<thead><tr><th>{{ _("Strategy") }}</th><th>{{ _("Return a year") }}</th><th>{{ _("Worst fall") }}</th><th>{{ _("Risk-adjusted (Sharpe)") }}</th><th>2020</th><th>2022</th><th>{{ _("€10,000 became") }}</th><th>{{ _("Time in stocks") }}</th><th>{{ _("Trades a year") }}</th></tr></thead>
 <tbody>
 {% for s in strategies if sb.results and s.id in sb.results and sb.results[s.id].get('cagr_pct') is not none %}{% set r = sb.results[s.id] %}
-<tr><td><a href="#s-{{ s.id }}">{{ s.name }}</a>{% if r.get('modelled') %} <small>(modelled)</small>{% endif %}</td>
+<tr><td><a href="#s-{{ s.id }}">{{ _(s.name) }}</a>{% if r.get('modelled') %} <small>({{ _("modelled") }})</small>{% endif %}</td>
 <td class="{{ 'neg' if r.cagr_pct < 0 else '' }}">{{ "%.1f"|format(r.cagr_pct) }}%</td><td class="neg">{{ "%.1f"|format(r.max_drawdown_pct) }}%</td><td>{{ "%.2f"|format(r.sharpe) }}</td>
 <td class="{{ 'neg' if (r.y2020_pct or 0) < 0 else 'pos' }}">{{ "%.1f"|format(r.y2020_pct) }}%</td><td class="{{ 'neg' if (r.y2022_pct or 0) < 0 else 'pos' }}">{{ "%.1f"|format(r.y2022_pct) }}%</td>
 <td>€{{ "{:,}".format(r.final_10k) }}</td><td>{{ (r.get('time_invested_pct') ~ "%") if r.get('time_invested_pct') is not none else "—" }}</td><td>{{ r.trades_per_year }}</td></tr>
 {% endfor %}
-{% if sb.results and sb.results.buy_hold %}{% set r = sb.results.buy_hold %}<tr class="bench"><td>Benchmark: buy and hold SPY</td><td>{{ "%.1f"|format(r.cagr_pct) }}%</td><td class="neg">{{ "%.1f"|format(r.max_drawdown_pct) }}%</td><td>{{ "%.2f"|format(r.sharpe) }}</td><td>{{ "%.1f"|format(r.y2020_pct) }}%</td><td class="neg">{{ "%.1f"|format(r.y2022_pct) }}%</td><td>€{{ "{:,}".format(r.final_10k) }}</td><td>100%</td><td>0</td></tr>{% endif %}
+{% if sb.results and sb.results.buy_hold %}{% set r = sb.results.buy_hold %}<tr class="bench"><td>{{ _("Benchmark: buy and hold SPY") }}</td><td>{{ "%.1f"|format(r.cagr_pct) }}%</td><td class="neg">{{ "%.1f"|format(r.max_drawdown_pct) }}%</td><td>{{ "%.2f"|format(r.sharpe) }}</td><td>{{ "%.1f"|format(r.y2020_pct) }}%</td><td class="neg">{{ "%.1f"|format(r.y2022_pct) }}%</td><td>€{{ "{:,}".format(r.final_10k) }}</td><td>100%</td><td>0</td></tr>{% endif %}
 </tbody></table></div>
-{% if sb.results and sb.results.dca %}<p style="font-size:14px;color:var(--muted)">Dollar-cost averaging: €1 put in every month for {{ sb.results.dca.months }} months grew to €{{ sb.results.dca.dca_multiple }} per €1, against €{{ sb.results.dca.lump_sum_multiple }} for the same money invested on day one. In a rising market a lump sum usually wins; DCA spreads out the risk of bad timing.</p>{% endif %}
+{% if sb.results and sb.results.dca %}<p style="font-size:14px;color:var(--muted)">{{ _("Dollar-cost averaging: €1 put in every month for {m} months grew to €{d} per €1, against €{l} for the same money invested on day one. In a rising market a lump sum usually wins; DCA spreads out the risk of bad timing.", m=sb.results.dca.months, d=sb.results.dca.dca_multiple, l=sb.results.dca.lump_sum_multiple) }}</p>{% endif %}
 {% if sb.results and sb.results.buy_hold %}{% set bh = sb.results.buy_hold %}{% set ns = namespace(beat=0, safer=0) %}{% for k, r in sb.results.items() if k != 'buy_hold' and r.get('cagr_pct') is not none %}{% if r.cagr_pct > bh.cagr_pct %}{% set ns.beat = ns.beat + 1 %}{% endif %}{% if r.max_drawdown_pct > bh.max_drawdown_pct * 0.67 %}{% set ns.safer = ns.safer + 1 %}{% endif %}{% endfor %}
-<p class="warnbox"><b>Reading the table:</b> {% if ns.beat == 0 %}no strategy beat simply holding the S&amp;P 500 on return over this period{% else %}{{ ns.beat }} strateg{{ 'y' if ns.beat == 1 else 'ies' }} beat simply holding the S&amp;P 500 on return over this period{% endif %}; {{ ns.safer }} cut the worst fall by a third or more. Bots and AI agents automate rules — they do not remove risk.</p>{% endif %}
+<p class="warnbox"><b>{{ _("Reading the table:") }}</b> {% if ns.beat == 0 %}{{ _("no strategy beat simply holding the S&P 500 on return over this period") }}{% elif ns.beat == 1 %}{{ _("1 strategy beat simply holding the S&P 500 on return over this period") }}{% else %}{{ _("{n} strategies beat simply holding the S&P 500 on return over this period", n=ns.beat) }}{% endif %}; {{ _("{n} cut the worst fall by a third or more. Bots and AI agents automate rules — they do not remove risk.", n=ns.safer) }}</p>{% endif %}
 
-<h2 style="margin-top:28px">The strategies</h2>
+<h2 style="margin-top:28px">{{ _("The strategies") }}</h2>
 <div class="cards">
 {% for s in strategies %}{% set r = sb.results[s.id] if sb.results and s.id in sb.results else none %}
 <article class="scard" id="s-{{ s.id }}">
-  <h3>{{ s.name }}</h3>
-  <div class="meta"><span class="lvl {{ s.risk }}">{{ s.risk }} risk</span> · checks {{ s.freq }}{% if s.options %} · uses options{% endif %}</div>
+  <h3>{{ _(s.name) }}</h3>
+  <div class="meta"><span class="lvl {{ s.risk }}">{{ _(s.risk ~ " risk") }}</span> · {{ _("checks " ~ s.freq) }}{% if s.options %} · {{ _("uses options") }}{% endif %}</div>
   <dl>
-    <dt>Used by</dt><dd>{{ s.platforms }}</dd>
-    <dt>Rules</dt><dd>{{ s.rules }}</dd>
-    <dt>Good for</dt><dd>{{ s.good }}</dd>
-    <dt>Main risk</dt><dd>{{ s.risk_text }}</dd>
-    {% if r and r.get('cagr_pct') is not none %}<dt>Backtest</dt><dd>{{ "%.1f"|format(r.cagr_pct) }}% a year, worst fall {{ "%.1f"|format(r.max_drawdown_pct) }}%{% if r.get('modelled') %} (modelled){% endif %}</dd>{% endif %}
+    <dt>{{ _("Used by") }}</dt><dd>{{ _(s.platforms) }}</dd>
+    <dt>{{ _("Rules") }}</dt><dd>{{ _(s.rules) }}</dd>
+    <dt>{{ _("Good for") }}</dt><dd>{{ _(s.good) }}</dd>
+    <dt>{{ _("Main risk") }}</dt><dd>{{ _(s.risk_text) }}</dd>
+    {% if r and r.get('cagr_pct') is not none %}<dt>{{ _("Backtest") }}</dt><dd>{{ _("{c}% a year, worst fall {d}%", c="%.1f"|format(r.cagr_pct), d="%.1f"|format(r.max_drawdown_pct)) }}{% if r.get('modelled') %} ({{ _("modelled") }}){% endif %}</dd>{% endif %}
   </dl>
 </article>
 {% endfor %}
 </div>
 
-<h2 style="margin-top:28px">Left out on purpose</h2>
+<h2 style="margin-top:28px">{{ _("Left out on purpose") }}</h2>
 <div class="nobox"><ul style="margin:0;padding-left:18px">
-<li><b>Martingale bots</b> (double the stake after every loss): one long losing run empties the account.</li>
-<li><b>Leveraged and inverse ETFs, leveraged grids, margin</b>: losses compound faster than gains; common in high-return Composer symphonies.</li>
-<li><b>Crypto bots and arbitrage</b>: outside this site's stock focus and far more volatile.</li>
+<li>{{ _('<b>Martingale bots</b> (double the stake after every loss): one long losing run empties the account.')|safe }}</li>
+<li>{{ _('<b>Leveraged and inverse ETFs, leveraged grids, margin</b>: losses compound faster than gains; common in high-return Composer symphonies.')|safe }}</li>
+<li>{{ _("<b>Crypto bots and arbitrage</b>: outside this site's stock focus and far more volatile.")|safe }}</li>
 </ul></div>
 
-<h2 style="margin-top:28px">Where you can run a strategy with an AI agent</h2>
+<h2 style="margin-top:28px">{{ _("Where you can run a strategy with an AI agent") }}</h2>
 <ul>
-<li><b>Interactive Brokers</b> — Autonomous Trading lets a connected AI trade inside a separate, funded "AI Partition" (<a href="https://www.nasdaq.com/press-release/interactive-brokers-introduces-autonomous-trading-2026-10-21" rel="noopener">press release, 21 Oct 2026</a>). See also <a href="start.html">opening an account</a>.</li>
-<li><b>Robinhood</b> — Agentic Trading through a dedicated account that only holds what you deposit (<a href="https://www.investmentnews.com/fintech/robinhood-just-made-a-bold-move-into-ai-powered-trading-for-the-retail-market/266771" rel="noopener">InvestmentNews</a>).</li>
-<li><b>eToro</b> — Agent Portfolios: a funded sub-portfolio connected to your agent with a scoped API key (<a href="https://www.etoro.com/news-and-analysis/etoro-updates/agent-portfolios-let-your-ai-agent-trade-for-you/" rel="noopener">eToro</a>).</li>
-<li><b>Composer</b> — ready-made and AI-built "symphonies" that trade automatically (<a href="https://help.composer.trade/article/254-what-is-trade-with-ai" rel="noopener">Composer help</a>).</li>
+<li><b>Interactive Brokers</b> — {{ _('Autonomous Trading lets a connected AI trade inside a separate, funded "AI Partition"') }} (<a href="https://www.nasdaq.com/press-release/interactive-brokers-introduces-autonomous-trading-2026-10-21" rel="noopener">{{ _("press release, 21 Oct 2026") }}</a>). {{ _("See also") }} <a href="start.html">{{ _("opening an account") }}</a>.</li>
+<li><b>Robinhood</b> — {{ _("Agentic Trading through a dedicated account that only holds what you deposit") }} (<a href="https://www.investmentnews.com/fintech/robinhood-just-made-a-bold-move-into-ai-powered-trading-for-the-retail-market/266771" rel="noopener">InvestmentNews</a>).</li>
+<li><b>eToro</b> — {{ _("Agent Portfolios: a funded sub-portfolio connected to your agent with a scoped API key") }} (<a href="https://www.etoro.com/news-and-analysis/etoro-updates/agent-portfolios-let-your-ai-agent-trade-for-you/" rel="noopener">eToro</a>).</li>
+<li><b>Composer</b> — {{ _('ready-made and AI-built "symphonies" that trade automatically') }} (<a href="https://help.composer.trade/article/254-what-is-trade-with-ai" rel="noopener">{{ _("Composer help") }}</a>).</li>
 </ul>
-<p style="font-size:14px;color:var(--muted)">Bot strategy sources: <a href="https://www.unite.ai/?p=356778" rel="noopener">Pionex bot suite (Unite.AI)</a>, <a href="https://www.daytrading.com/3commas" rel="noopener">3Commas review (DayTrading.com)</a>, Composer symphony pages, eToro Agent Portfolios. {{ CFG.disclaimer }}</p>
+<p style="font-size:14px;color:var(--muted)">{{ _("Bot strategy sources:") }} <a href="https://www.unite.ai/?p=356778" rel="noopener">Pionex bot suite (Unite.AI)</a>, <a href="https://www.daytrading.com/3commas" rel="noopener">3Commas review (DayTrading.com)</a>, {{ _("Composer symphony pages, eToro Agent Portfolios.") }} {{ _(CFG.disclaimer) }}</p>
 
 <script>
 (function(){
-var S={{ strategies|tojson }}, R={{ (sb.results or {})|tojson }};
+{% set SL = [] %}{% for s in strategies %}{% set junk = SL.append(dict(s, name=_(s.name), platforms=_(s.platforms), rules=_(s.rules), good=_(s.good), risk_text=_(s.risk_text))) %}{% endfor %}
+var S={{ SL|tojson }}, SE={}, R={{ (sb.results or {})|tojson }}, T=window.T;
+{{ strategies|tojson }}.forEach(function(s){SE[s.id]=s});
 var log=document.getElementById('log'),chips=document.getElementById('chips'),out=document.getElementById('out'),inp=document.getElementById('in');
 var st={step:0,a:{}};
 function el(t,c,h){var e=document.createElement(t);if(c)e.className=c;if(h!=null)e.textContent=h;return e}
 function bot(text,extra){var m=el('div','msg bot',text);if(extra)m.appendChild(extra);log.appendChild(m);log.scrollTop=log.scrollHeight}
 function me(text){log.appendChild(el('div','msg me',text));log.scrollTop=log.scrollHeight}
 function setChips(list){chips.innerHTML='';list.forEach(function(c){var b=el('button',null,c[0]);b.type='button';b.onclick=function(){me(c[0]);c[1]()};chips.appendChild(b)})}
-function fmt(r){if(!r||r.cagr_pct==null)return '';return ' Backtest: '+r.cagr_pct.toFixed(1)+'% a year, worst fall '+r.max_drawdown_pct.toFixed(1)+'%'+(r.modelled?' (modelled)':'')+'.'}
+function fmt(r){if(!r||r.cagr_pct==null)return '';return T(' Backtest: ')+r.cagr_pct.toFixed(1)+T('% a year, worst fall ')+r.max_drawdown_pct.toFixed(1)+'%'+(r.modelled?' ('+T('modelled')+')':'')+'.'}
 var Q=[
- {k:'goal',q:'What do you want the strategy to do?',o:[['Grow money long term','growth'],['Earn regular income','income'],['Protect against crashes','protect'],['Save a fixed amount monthly','save']]},
- {k:'risk',q:'How much up-and-down can you live with?',o:[['Low — sleep well','low'],['Medium — some swings','medium'],['High — big swings','high']]},
- {k:'freq',q:'How often can the strategy act?',o:[['Monthly','monthly'],['Weekly','weekly'],['Daily','daily']]},
- {k:'opt',q:'Do you have options trading permission and experience?',o:[['Yes','yes'],['No','no']]},
- {k:'cap',q:'Roughly how much would you put in the agent\'s sub-account? Type a number in euros (e.g. 5000).',o:null}
+ {k:'goal',q:T('What do you want the strategy to do?'),o:[[T('Grow money long term'),'growth'],[T('Earn regular income'),'income'],[T('Protect against crashes'),'protect'],[T('Save a fixed amount monthly'),'save']]},
+ {k:'risk',q:T('How much up-and-down can you live with?'),o:[[T('Low — sleep well'),'low'],[T('Medium — some swings'),'medium'],[T('High — big swings'),'high']]},
+ {k:'freq',q:T('How often can the strategy act?'),o:[[T('Monthly'),'monthly'],[T('Weekly'),'weekly'],[T('Daily'),'daily']]},
+ {k:'opt',q:T('Do you have options trading permission and experience?'),o:[[T('Yes'),'yes'],[T('No'),'no']]},
+ {k:'cap',q:T('Roughly how much would you put in the agent\'s sub-account? Type a number in euros (e.g. 5000).'),o:null}
 ];
 function ask(){var x=Q[st.step];if(!x){return recommend()}
  bot(x.q);if(x.o){setChips(x.o.map(function(o){return [o[0],function(){st.a[x.k]=o[1];st.step++;ask()}]}))}else{setChips([['1000',function(){answerCap('1000')}],['5000',function(){answerCap('5000')}],['20000',function(){answerCap('20000')}]])}}
-function answerCap(v){var n=parseFloat(String(v).replace(/[^0-9.]/g,''));if(!(n>0)){bot('Please type a number, for example 5000.');return}st.a.cap=n;st.step++;ask()}
+function answerCap(v){var n=parseFloat(String(v).replace(/[^0-9.]/g,''));if(!(n>0)){bot(T('Please type a number, for example 5000.'));return}st.a.cap=n;st.step++;ask()}
 var RANK={low:0,medium:1,high:2},FREQ={monthly:0,weekly:1,daily:2};
 function score(s){var a=st.a,p=0;
  if(s.goal.indexOf(a.goal)>=0)p+=4; if(RANK[s.risk]<=RANK[a.risk])p+=2; else p-=4;
@@ -141,16 +143,16 @@ function score(s){var a=st.a,p=0;
  if(s.id==='drawdown_alert')p-=1.5; return p}
 function recommend(){var list=S.slice().sort(function(x,y){return score(y)-score(x)}).slice(0,3);st.recs=list;
  var box=document.createElement('div');
- list.forEach(function(s,i){var d=el('div','rec');var b=el('b',null,(i+1)+'. '+s.name);d.appendChild(b);d.appendChild(el('div',null,s.rules+fmt(R[s.id])));d.appendChild(el('div',null,'Main risk: '+s.risk_text));box.appendChild(d)});
- bot('Based on your answers, these fit best:',box);
- if(st.a.opt==='yes'&&st.a.cap<5000)bot('Note: options strategies need 100 shares (or the cash to buy them). With under €5,000 that means a low-priced ETF, so they are ranked lower.');
- bot('Pick one and I will write the instructions for your AI agent on the right.');
- setChips(list.map(function(s){return [s.name,function(){build(s)}]}).concat([['Start again',restart]]));}
+ list.forEach(function(s,i){var d=el('div','rec');var b=el('b',null,(i+1)+'. '+s.name);d.appendChild(b);d.appendChild(el('div',null,s.rules+fmt(R[s.id])));d.appendChild(el('div',null,T('Main risk: ')+s.risk_text));box.appendChild(d)});
+ bot(T('Based on your answers, these fit best:'),box);
+ if(st.a.opt==='yes'&&st.a.cap<5000)bot(T('Note: options strategies need 100 shares (or the cash to buy them). With under €5,000 that means a low-priced ETF, so they are ranked lower.'));
+ bot(T('Pick one and I will write the instructions for your AI agent on the right.'));
+ setChips(list.map(function(s){return [s.name,function(){build(s)}]}).concat([[T('Start again'),restart]]));}
 function pct(v){return (v*100).toFixed(1)+'%'}
 function build(s){var a=st.a,cap=a.cap,riskPct=a.risk==='low'?0.01:0.02,maxLoss=Math.round(cap*riskPct);
  var lines=[
  'ROLE: You are my trading agent. You only act inside the separate sub-account I funded for you (about €'+cap.toLocaleString()+'). Never touch my other accounts.',
- '','STRATEGY: '+s.name,'RULES: '+s.rules,'INSTRUMENTS: '+s.universe,'SCHEDULE: check '+s.freq+'; act only on closing prices unless I say otherwise.','',
+ '','STRATEGY: '+SE[s.id].name,'RULES: '+SE[s.id].rules,'INSTRUMENTS: '+SE[s.id].universe,'SCHEDULE: check '+s.freq+'; act only on closing prices unless I say otherwise.','',
  'GUARDRAILS (always apply, they override the strategy):',
  '- No margin, no leverage, no short selling, no leveraged or inverse ETFs, no crypto.',
  s.options?'- Maximum loss I accept per trade: '+pct(riskPct)+' of the sub-account (about €'+maxLoss.toLocaleString()+'). Choose strikes and size so this limit is respected; use limit orders.':'- This strategy may hold up to 100% of the sub-account in the listed ETFs only. Use limit orders, never single stocks, and never more than the sub-account holds.',
@@ -159,22 +161,22 @@ function build(s){var a=st.a,cap=a.cap,riskPct=a.risk==='low'?0.01:0.02,maxLoss=
  '- If a rule is unclear or data is missing, do nothing and ask me.','',
  'REPORTING: after every action, log the date, order, price, the rule that triggered it and the account value. Send me a weekly summary.','',
  'START: paper-trade (simulate) for the first 4 weeks and report what you would have done. Do not place real orders until I confirm in writing.'];
- out.value=lines.join('\n');bot('Done — the instructions for "'+s.name+'" are on the right. Copy them into your agent. Remember: educational example, not advice; you stay responsible for every trade.');
- setChips(st.recs.map(function(x){return [x.name,function(){build(x)}]}).concat([['Start again',restart]]));}
+ out.value=lines.join('\n');bot(T('Done — the instructions for "{s}" are on the right. Copy them into your agent. Remember: educational example, not advice; you stay responsible for every trade.').replace('{s}',s.name));
+ setChips(st.recs.map(function(x){return [x.name,function(){build(x)}]}).concat([[T('Start again'),restart]]));}
 function answerFree(t){var q=t.toLowerCase();
  if(st.step===4&&/\d/.test(q)){answerCap(q);return}
  var words=q.split(/[^a-z0-9]+/).filter(function(w){return w.length>2});
  var best=null,bs=0;S.forEach(function(s){var hay=(s.keywords+' '+s.name).toLowerCase(),sc=0;words.forEach(function(w){if(hay.indexOf(w)>=0)sc++});if(sc>bs){bs=sc;best=s}});
- if(/advice|should i buy|guarantee|sure win|best stock/.test(q)){bot('I can\'t tell you what to buy or promise results. I can explain how a strategy works and how it behaved in the past, and help you write rules with safety limits.');return}
- if(/sharpe/.test(q)){bot('Sharpe ratio = return above cash divided by how much the strategy swings. Above 0.5 is decent, above 1 is very good over long periods.');return}
- if(/drawdown|worst fall/.test(q)){bot('The worst fall (maximum drawdown) is the biggest drop from a peak to a later low. It shows the pain you must sit through.');return}
- if(/sigma|1 sigma/.test(q)){bot('One sigma is one standard deviation of price moves — the "normal" range. About two weeks in three stay within ±1 sigma; real markets have more extreme weeks than the bell curve. See the backtest page for SPY and QQQ.');return}
- if(best&&bs>0){bot(best.name+' — '+best.rules+fmt(R[best.id])+'\nUsed by: '+best.platforms+'.\nMain risk: '+best.risk_text);setChips([['Write instructions for this',function(){if(st.a.cap){build(best)}else{st.pending=best;bot('First a few questions so the limits fit you.');ask()}}],['Start the questions',restart]]);return}
- bot('I don\'t know that one yet. Try: grid bot, DCA, momentum, trend filter, RSI, VIX switch, covered call, cash-secured put — or press "Start again".');}
+ if(/advice|should i buy|guarantee|sure win|best stock/.test(q)){bot(T('I can\'t tell you what to buy or promise results. I can explain how a strategy works and how it behaved in the past, and help you write rules with safety limits.'));return}
+ if(/sharpe/.test(q)){bot(T('Sharpe ratio = return above cash divided by how much the strategy swings. Above 0.5 is decent, above 1 is very good over long periods.'));return}
+ if(/drawdown|worst fall/.test(q)){bot(T('The worst fall (maximum drawdown) is the biggest drop from a peak to a later low. It shows the pain you must sit through.'));return}
+ if(/sigma|1 sigma/.test(q)){bot(T('One sigma is one standard deviation of price moves — the "normal" range. About two weeks in three stay within ±1 sigma; real markets have more extreme weeks than the bell curve. See the backtest page for SPY and QQQ.'));return}
+ if(best&&bs>0){bot(best.name+' — '+best.rules+fmt(R[best.id])+'\n'+T('Used by: ')+best.platforms+'.\n'+T('Main risk: ')+best.risk_text);setChips([[T('Write instructions for this'),function(){if(st.a.cap){build(best)}else{st.pending=best;bot(T('First a few questions so the limits fit you.'));ask()}}],[T('Start the questions'),restart]]);return}
+ bot(T('I don\'t know that one yet. Try: grid bot, DCA, momentum, trend filter, RSI, VIX switch, covered call, cash-secured put — or press "Start again".'));}
 function restart(){st={step:0,a:{}};log.innerHTML='';out.value='';
- bot('Hi! I explain the strategies trading bots and AI agents use, show how they did in ten years of tests, and write safe instructions for your own AI agent. I never place trades or give personal advice. Five quick questions:');ask()}
+ bot(T('Hi! I explain the strategies trading bots and AI agents use, show how they did in ten years of tests, and write safe instructions for your own AI agent. I never place trades or give personal advice. Five quick questions:'));ask()}
 document.getElementById('ask').onsubmit=function(e){e.preventDefault();var t=inp.value.trim();if(!t)return;me(t);inp.value='';answerFree(t)};
-document.getElementById('copy').onclick=function(){if(!out.value)return;out.select();try{navigator.clipboard.writeText(out.value)}catch(e){document.execCommand('copy')}this.textContent='Copied';var b=this;setTimeout(function(){b.textContent='Copy'},1500)};
+document.getElementById('copy').onclick=function(){if(!out.value)return;out.select();try{navigator.clipboard.writeText(out.value)}catch(e){document.execCommand('copy')}this.textContent=T('Copied');var b=this;setTimeout(function(){b.textContent=T('Copy')},1500)};
 document.getElementById('restart').onclick=restart;
 restart();
 })();

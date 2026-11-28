@@ -1,20 +1,21 @@
 {% extends "base.html" %}
 {% block title %}{{ _("Terms of Service") }} | {{ CFG.site_name }}{% endblock %}
 {% block body %}
-{% if lang != "en" %}<p class="warn" style="background:#fff7e0;border:1px solid #f1d58a;border-radius:10px;padding:10px 14px">{{ _("This page is available in English only. The English version applies.") }}</p>{% endif %}
+{% if lang not in ("en", "sq") %}<p class="warn" style="background:#fff7e0;border:1px solid #f1d58a;border-radius:10px;padding:10px 14px">{{ _("This page is available in English only. The English version applies.") }}</p>{% endif %}
 <article class="prose">
+{% if lang == "sq" %}<p class="note">{{ _("Translated for convenience. If the versions differ, the English version applies.") }}</p>{% endif %}
 <h1>{{ _("Terms of Service") }}</h1>
-<p>Last updated: 15 November 2026</p>
-<p>{{ CFG.site_name }} ("we") provides a free website and social media accounts that publish factual records of publicly reported Wall Street analyst rating and price-target changes. By using the website or following our accounts you agree to these terms.</p>
-<h2>Information only</h2>
-<p>{{ CFG.disclaimer }} We are not a broker, investment adviser or financial institution and we do not offer personalised recommendations.</p>
-<h2>Accuracy</h2>
-<p>We collect data automatically from licensed data providers and public news reports. Data may be delayed, incomplete or wrong. Always check the original source before relying on anything published here.</p>
-<h2>Use of the website</h2>
-<p>You may read and share our pages for personal, non-commercial purposes. Do not attempt to disrupt the service.</p>
-<h2>Our social media apps</h2>
-<p>Our automated posting tools (including our TikTok, Meta, Bluesky, Mastodon and Telegram integrations) publish content only to accounts operated by {{ CFG.site_name }}. They are not offered to other users.</p>
-<h2>Changes and contact</h2>
-<p>We may update these terms at any time by posting a new version on this page. Contact: open an issue at github.com/analystledger/analystledger.github.io.</p>
+<p>{{ _("Last updated: 15 November 2026")|safe }}</p>
+<p>{{ _('{v0} ("we") provides a free website and social media accounts that publish factual records of publicly reported Wall Street analyst rating and price-target changes. By using the website or following our accounts you agree to these terms.', v0=CFG.site_name)|safe }}</p>
+<h2>{{ _("Information only")|safe }}</h2>
+<p>{{ _("{v0} We are not a broker, investment adviser or financial institution and we do not offer personalised recommendations.", v0=_(CFG.disclaimer))|safe }}</p>
+<h2>{{ _("Accuracy")|safe }}</h2>
+<p>{{ _("We collect data automatically from licensed data providers and public news reports. Data may be delayed, incomplete or wrong. Always check the original source before relying on anything published here.")|safe }}</p>
+<h2>{{ _("Use of the website")|safe }}</h2>
+<p>{{ _("You may read and share our pages for personal, non-commercial purposes. Do not attempt to disrupt the service.")|safe }}</p>
+<h2>{{ _("Our social media apps")|safe }}</h2>
+<p>{{ _("Our automated posting tools (including our TikTok, Meta, Bluesky, Mastodon and Telegram integrations) publish content only to accounts operated by {v0}. They are not offered to other users.", v0=CFG.site_name)|safe }}</p>
+<h2>{{ _("Changes and contact")|safe }}</h2>
+<p>{{ _("We may update these terms at any time by posting a new version on this page. Contact: open an issue at github.com/analystledger/analystledger.github.io.")|safe }}</p>
 </article>
 {% endblock %}
