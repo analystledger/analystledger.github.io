@@ -135,7 +135,8 @@ def main():
     ok = fail = 0
     for i, t in enumerate(tickers):
         try:
-            prices, splits = closes(t, start.isoformat())
+            prices, splits = closes(t, (start - timedelta(days=366)).isoformat())  # lead-in year: catch its splits too
+            prices = {d: v for d, v in prices.items() if d >= start.isoformat()}
         except Exception as e:  # noqa: BLE001
             prices, splits = {}, []
             print(f"{t}: prices failed: {e}")
