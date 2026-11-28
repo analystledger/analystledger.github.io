@@ -37,7 +37,7 @@ def parse_front(text):
     for line in head.splitlines():
         km = re.match(r"^([a-z_]+):\s*(.*)$", line)
         if km and km.group(1) in {"title", "investor", "firm", "summary", "tickers", "sources", "author",
-                                  "author_login", "author_type", "date", "issue", "status", "slug"}:
+                                  "author_login", "author_type", "date", "issue", "status", "slug", "pinned"}:
             key = km.group(1)
             meta[key] = km.group(2).strip()
         elif key == "sources" and line.strip():
@@ -81,7 +81,10 @@ def load_articles():
         meta.setdefault("author", config().get("staff_byline", "Staff"))
         meta.setdefault("author_type", "staff")
         arts.append(meta)
+    for a in arts:
+        a["pinned"] = str(a.get("pinned", "")).strip().lower() in ("yes", "true", "1")
     arts.sort(key=lambda a: a["date"], reverse=True)
+    arts.sort(key=lambda a: not a["pinned"])  # pinned guides first, newest first within each group
     return arts
 
 

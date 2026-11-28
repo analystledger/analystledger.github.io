@@ -155,7 +155,8 @@ def main():
             news_by_ticker[t].append(n)
     for t, st in stocks.items():
         st["news"] = news_by_ticker.get(t, [])[:5]
-    render("index.html", "index.html", 0, latest=events[:150], week=week, top_news=news[:5],
+    articles = load_articles()
+    render("index.html", "index.html", 0, pinned=[a for a in articles if a["pinned"]][:2], latest=events[:150], week=week, top_news=news[:5],
            top_stocks=sorted(s_list, key=lambda s: sum(1 for e in s["events"] if e["date"] >= week_ago),
                              reverse=True)[:10],
            ranked=ranked[:10], **common)
@@ -174,7 +175,6 @@ def main():
            stocks_json=json.dumps(planner_data, separators=(",", ":")).replace("</", "<\\/"), **common)
     render("start.html", "start.html", 0, **common)
     render("news.html", "news.html", 0, news=news, tracked=set(stocks), **common)
-    articles = load_articles()
     corr = {c["login"].lower(): c for c in load_json(os.path.join(DATA, "correspondents.json"), [])}
     for a in articles:
         a["bio"] = (corr.get((a.get("author_login") or "").lower()) or {}).get("bio", "")

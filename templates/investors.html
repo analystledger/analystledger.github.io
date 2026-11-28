@@ -37,8 +37,8 @@
 
 <h2>{{ _("Latest articles") }}</h2>
 {% for a in articles %}
-<article class="art">
-  <div class="meta"><span class="tag{{ ' c' if a.author_type == 'correspondent' }}">{{ _("Correspondent") if a.author_type == 'correspondent' else _("Investor tracker") }}</span> {{ a.date }} · {{ a.author }}</div>
+<article class="art{{ ' pinned' if a.pinned }}">
+  <div class="meta">{% if a.pinned %}<span class="tag pin">📌 {{ _("Pinned guide") }}</span> {% endif %}<span class="tag{{ ' c' if a.author_type == 'correspondent' }}">{{ _("Correspondent") if a.author_type == 'correspondent' else _("Investor tracker") }}</span> {{ a.date }} · {{ a.author }}</div>
   <h3><a href="{{ root }}articles/{{ a.slug }}.html">{{ a.title }}</a></h3>
   <p>{{ a.summary }}</p>
   {% if a.tickers %}<p class="meta">{% for t in a.tickers %}${{ t }} {% endfor %}</p>{% endif %}

@@ -2539,6 +2539,16 @@
       "sq": "{v0} është një faqe statike. Nuk kemi llogari, hyrje, gjurmues reklamash apo cookies analitike dhe nuk mbledhim të dhëna personale nga vizitorët.",
       "de": "{v0} ist eine statische Website. Wir betreiben keine Konten, Logins, Werbetracker oder Analyse-Cookies und erheben keine personenbezogenen Daten von Besuchern.",
       "sr": "{v0} je statički sajt. Nemamo naloge, prijave, reklamne trekere ni analitičke kolačiće i ne prikupljamo lične podatke posetilaca."
+    },
+    "Investor guide": {
+      "de": "Leitfaden für Anleger",
+      "sq": "Udhëzues për investitorët",
+      "sr": "Vodič za investitore"
+    },
+    "Pinned guide": {
+      "de": "Angehefteter Leitfaden",
+      "sq": "Udhëzues i fiksuar",
+      "sr": "Istaknuti vodič"
     }
   },
   "js": {

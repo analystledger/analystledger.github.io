@@ -12,6 +12,9 @@
   </div>
 </section>
 
+{% for a in pinned %}
+<a class="pin-card" href="articles/{{ a.slug }}.html"><span class="pin-tag">📌 {{ _("Investor guide") }}</span><b>{{ a.title }}</b><span class="muted">{{ a.summary }}</span></a>
+{% endfor %}
 {% if top_news %}
 <section class="card" style="margin-bottom:16px">
   <h2>{{ _("Market-moving news") }}</h2>
