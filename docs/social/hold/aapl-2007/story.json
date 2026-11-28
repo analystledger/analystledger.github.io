@@ -1,0 +1,87 @@
+{
+ "ticker": "AAPL",
+ "name": "Apple",
+ "year": 2007,
+ "start_day": "2007-01-03",
+ "end_day": "2026-11-27",
+ "final": 1197985.7741828377,
+ "multiple": 119.79857741828377,
+ "cagr": 0.27189609243854207,
+ "max_dd": 0.608667411642672,
+ "episodes": [
+  {
+   "peak": "2007-12-28",
+   "peak_v": 23846.06425643944,
+   "trough": "2009-01-20",
+   "trough_v": 9331.742047607606,
+   "depth": 0.608667411642672,
+   "recovered": "2009-10-21",
+   "closes_near_trough": {
+    "2009-01-12": 3.17,
+    "2009-01-13": 3.13,
+    "2009-01-14": 3.05,
+    "2009-01-15": 2.98,
+    "2009-01-16": 2.94,
+    "2009-01-20": 2.79,
+    "2009-01-21": 2.96,
+    "2009-01-22": 3.16,
+    "2009-01-23": 3.16,
+    "2009-01-26": 3.2,
+    "2009-01-27": 3.24
+   }
+  },
+  {
+   "peak": "2012-09-19",
+   "peak_v": 83782.82335501642,
+   "trough": "2013-04-19",
+   "trough_v": 46602.62860879258,
+   "depth": 0.4437687017144154,
+   "recovered": "2014-08-19",
+   "closes_near_trough": {
+    "2013-04-12": 15.35,
+    "2013-04-15": 14.99,
+    "2013-04-16": 15.22,
+    "2013-04-17": 14.39,
+    "2013-04-18": 14.0,
+    "2013-04-19": 13.95,
+    "2013-04-22": 14.24,
+    "2013-04-23": 14.5,
+    "2013-04-24": 14.48,
+    "2013-04-25": 14.59,
+    "2013-04-26": 14.9
+   }
+  },
+  {
+   "peak": "2018-10-03",
+   "peak_v": 193853.238664499,
+   "trough": "2019-01-03",
+   "trough_v": 118774.47153466372,
+   "depth": 0.38729694508624524,
+   "recovered": "2019-10-11",
+   "closes_near_trough": {
+    "2018-12-26": 39.29,
+    "2018-12-27": 39.04,
+    "2018-12-28": 39.06,
+    "2018-12-31": 39.44,
+    "2019-01-02": 39.48,
+    "2019-01-03": 35.55,
+    "2019-01-04": 37.06,
+    "2019-01-07": 36.98,
+    "2019-01-08": 37.69,
+    "2019-01-09": 38.33,
+    "2019-01-10": 38.45
+   }
+  }
+ ],
+ "pct_below": 0.20571200319552627,
+ "longest_below_days": 497,
+ "caption": "$10,000 in $AAPL in 2007 \u2192 $1.20 million today. Sounds easy. It meant sitting through a 61% drop ($23,800 \u2192 $9,332) and more. Volatility is the price of long-term returns.\n\nTrack every analyst call on $AAPL: https://analystledger.com/stocks/aapl.html\n\nHypothetical, price only. Not investment advice. #AAPL #stocks #investing #longterminvesting",
+ "slides": [
+  "docs/social/hold/aapl-2007/1.png",
+  "docs/social/hold/aapl-2007/2.png",
+  "docs/social/hold/aapl-2007/3.png",
+  "docs/social/hold/aapl-2007/4.png",
+  "docs/social/hold/aapl-2007/5.png",
+  "docs/social/hold/aapl-2007/6.png"
+ ]
+}
