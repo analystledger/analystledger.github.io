@@ -311,9 +311,9 @@
       "sr": "Prekida praćenje"
     },
     "Earnings": {
-      "de": "Quartalszahlen",
+      "de": "Gewinne",
       "sq": "Fitimet",
-      "sr": "Rezultati poslovanja"
+      "sr": "Zarade"
     },
     "Educational analysis of past prices only — past results do not predict future results, and this is not investment advice.": {
       "de": "Nur eine Lernanalyse vergangener Kurse — vergangene Ergebnisse sagen keine zukünftigen voraus, und dies ist keine Anlageberatung.",
@@ -2569,6 +2569,106 @@
       "de": "Bekannte Investoren und Artikel",
       "sq": "Investitorë të njohur dhe artikuj",
       "sr": "Poznati investitori i članci"
+    },
+    "12-month": {
+      "de": "12 Monate",
+      "sq": "12-mujor",
+      "sr": "12 meseci"
+    },
+    "All banks": {
+      "de": "Alle Banken",
+      "sq": "Të gjitha bankat",
+      "sr": "Sve banke"
+    },
+    "Bank research is usually for clients only; we summarise what has been reported publicly and link the sources. Forecasts are often wrong. Not investment advice.": {
+      "de": "Bankresearch ist meist nur für Kunden bestimmt; wir fassen zusammen, was öffentlich berichtet wurde, und verlinken die Quellen. Prognosen liegen oft daneben. Keine Anlageberatung.",
+      "sq": "Kërkimet e bankave zakonisht janë vetëm për klientët; ne përmbledhim atë që është raportuar publikisht dhe vendosim lidhjet e burimeve. Parashikimet shpesh dalin gabim. Nuk është këshillë investimi.",
+      "sr": "Istraživanja banaka su obično samo za klijente; sažimamo ono što je javno objavljeno i dajemo linkove ka izvorima. Prognoze su često pogrešne. Nije investicioni savet."
+    },
+    "Flows & positioning": {
+      "de": "Kapitalflüsse & Positionierung",
+      "sq": "Flukset & pozicionimi",
+      "sr": "Tokovi i pozicioniranje"
+    },
+    "Goldman Sachs and other big banks' outlooks": {
+      "de": "Ausblicke von Goldman Sachs und anderen Großbanken",
+      "sq": "Parashikimet e Goldman Sachs dhe bankave të tjera të mëdha",
+      "sr": "Prognoze Goldman Sachsa i drugih velikih banaka"
+    },
+    "Latest bank notes": {
+      "de": "Neueste Bankanalysen",
+      "sq": "Shënimet më të fundit të bankave",
+      "sr": "Najnovije analize banaka"
+    },
+    "Market outlook": {
+      "de": "Marktausblick",
+      "sq": "Parashikimi i tregut",
+      "sr": "Izgledi tržišta"
+    },
+    "Fed & economy": {
+      "de": "Fed & Konjunktur",
+      "sq": "Fed-i & ekonomia",
+      "sr": "Fed i ekonomija"
+    },
+    "Sectors": {
+      "de": "Sektoren",
+      "sq": "Sektorët",
+      "sr": "Sektori"
+    },
+    "Read our guide": {
+      "de": "Unseren Leitfaden lesen",
+      "sq": "Lexoni udhëzuesin tonë",
+      "sr": "Pročitajte naš vodič"
+    },
+    "S&P 500 targets for 2027": {
+      "de": "S&P-500-Kursziele für 2027",
+      "sq": "Objektivat e S&P 500 për 2027",
+      "sr": "Ciljevi za S&P 500 za 2027."
+    },
+    "Summaries are published in English.": {
+      "de": "Die Zusammenfassungen werden auf Englisch veröffentlicht.",
+      "sq": "Përmbledhjet publikohen në anglisht.",
+      "sr": "Sažeci se objavljuju na engleskom."
+    },
+    "Wall Street views": {
+      "de": "Wall-Street-Ausblicke",
+      "sq": "Pikëpamjet e Wall Street",
+      "sr": "Stavovi Wall Streeta"
+    },
+    "What Goldman Sachs, Morgan Stanley, JPMorgan and other big banks expect for US stocks: S&P 500 targets, flow estimates and Fed calls, summarised with sources.": {
+      "de": "Was Goldman Sachs, Morgan Stanley, JPMorgan und andere Großbanken für US-Aktien erwarten: S&P-500-Ziele, Schätzungen der Kapitalflüsse und Fed-Prognosen, mit Quellen zusammengefasst.",
+      "sq": "Çfarë presin Goldman Sachs, Morgan Stanley, JPMorgan dhe banka të tjera të mëdha për aksionet amerikane: objektivat e S&P 500, vlerësimet e flukseve dhe parashikimet për Fed-in, të përmbledhura me burime.",
+      "sr": "Šta Goldman Sachs, Morgan Stanley, JPMorgan i druge velike banke očekuju od američkih akcija: ciljevi za S&P 500, procene tokova i prognoze za Fed, sažeto sa izvorima."
+    },
+    "What the big banks' strategists expect for US stocks — index targets, estimates of how big funds are buying or selling, and calls on the Fed — summarised in our own words from public reports. These are forecasts, not facts, and they change often.": {
+      "de": "Was die Strategen der Großbanken für US-Aktien erwarten — Indexziele, Schätzungen, wie große Fonds kaufen oder verkaufen, und Prognosen zur Fed — in eigenen Worten aus öffentlichen Berichten zusammengefasst. Das sind Prognosen, keine Fakten, und sie ändern sich oft.",
+      "sq": "Çfarë presin strategët e bankave të mëdha për aksionet amerikane — objektivat e indeksit, vlerësimet se si fondet e mëdha po blejnë ose shesin dhe parashikimet për Fed-in — të përmbledhura me fjalët tona nga raportet publike. Këto janë parashikime, jo fakte, dhe ndryshojnë shpesh.",
+      "sr": "Šta stratezi velikih banaka očekuju od američkih akcija — ciljevi indeksa, procene kako veliki fondovi kupuju ili prodaju i prognoze za Fed — sažeto našim rečima iz javnih izveštaja. Ovo su prognoze, ne činjenice, i često se menjaju."
+    },
+    "Year-end 2027 targets unless marked 12-month. Bars start at {n} to make differences visible.": {
+      "de": "Ziele für Ende 2027, sofern nicht als 12 Monate markiert. Die Balken beginnen bei {n}, damit Unterschiede sichtbar sind.",
+      "sq": "Objektiva për fund të 2027, përveç atyre të shënuara 12-mujore. Shtyllat fillojnë nga {n} që dallimet të duken.",
+      "sr": "Ciljevi za kraj 2027. osim ako su označeni kao 12-mesečni. Trake počinju od {n} da bi razlike bile vidljive."
+    },
+    "average": {
+      "de": "Durchschnitt",
+      "sq": "mesatarja",
+      "sr": "prosek"
+    },
+    "end-2027": {
+      "de": "Ende 2027",
+      "sq": "fund 2027",
+      "sr": "kraj 2027."
+    },
+    "forecasts": {
+      "de": "Prognosen",
+      "sq": "parashikime",
+      "sr": "prognoza"
+    },
+    "range": {
+      "de": "Spanne",
+      "sq": "diapazoni",
+      "sr": "raspon"
     }
   },
   "js": {

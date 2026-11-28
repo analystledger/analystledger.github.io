@@ -181,6 +181,8 @@ def main():
     investors = load_json(os.path.join(DATA, "investors.json"), [])
     for i in investors:
         i["article"] = next((a for a in articles if a.get("investor", "").lower() == i["name"].lower()), None)
+    bv = load_json(os.path.join(DATA, "bank_views.json"), {"targets": [], "notes": []})
+    render("wall-street.html", "wall_street.html", 0, bv=bv, **common)
     render("investors.html", "investors.html", 0, investors=investors, articles=articles, **common)
     render("contribute.html", "contribute.html", 0, **common)
     for a in articles:
@@ -205,7 +207,7 @@ def main():
     base = CFG["base_url"].rstrip("/") + CFG.get("base_path", "")
     urls = ["", "analysts/", "stocks/", "news.html", "investors.html", "contribute.html", "learn.html", "strategies.html", "tools.html", "backtest.html", "journal.html", "planner.html", "start.html", "about.html"] + \
            [f"analysts/{a['slug']}.html" for a in a_list] + [f"stocks/{slugify(s['ticker'])}.html" for s in s_list] + \
-           [f"articles/{a['slug']}.html" for a in articles]
+           [f"articles/{a['slug']}.html" for a in articles] + ["wall-street.html"]
     urls = [("" if L["code"] == "en" else L["code"] + "/") + u for L in LANGS for u in urls]
     with open(os.path.join(DOCS, "sitemap.xml"), "w") as f:
         f.write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n')

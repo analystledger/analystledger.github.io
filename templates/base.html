@@ -23,13 +23,14 @@
     <a class="brand" href="{{ root }}index.html"><img src="{{ aroot }}assets/logo.svg" alt="" width="28" height="28"> {{ CFG.site_name }}</a>
     <nav>
       <a href="{{ root }}index.html">{{ _("Latest") }}</a>
-      {% set rsec = 'analysts' if page_path.startswith('analysts/') else 'stocks' if page_path.startswith('stocks/') else 'investors' if (page_path == 'investors.html' or page_path.startswith('articles/')) else '' %}
+      {% set rsec = 'analysts' if page_path.startswith('analysts/') else 'stocks' if page_path.startswith('stocks/') else 'investors' if (page_path == 'investors.html' or page_path.startswith('articles/')) else 'wallst' if page_path == 'wall-street.html' else '' %}
       <details class="navdd{{ ' on' if rsec }}">
         <summary>{{ _("Research") }}<span class="car" aria-hidden="true">▾</span></summary>
         <div class="navmenu">
           <a href="{{ root }}analysts/index.html"{% if rsec == 'analysts' %} class="on"{% endif %}><b>{{ _("Analysts") }}</b><span>{{ _("Ratings and track records") }}</span></a>
           <a href="{{ root }}stocks/index.html"{% if rsec == 'stocks' %} class="on"{% endif %}><b>{{ _("Stocks") }}</b><span>{{ _("Consensus, targets and history") }}</span></a>
           <a href="{{ root }}investors.html"{% if rsec == 'investors' %} class="on"{% endif %}><b>{{ _("Investors") }}</b><span>{{ _("Famous investors and articles") }}</span></a>
+          <a href="{{ root }}wall-street.html"{% if rsec == 'wallst' %} class="on"{% endif %}><b>{{ _("Wall Street views") }}</b><span>{{ _("Goldman Sachs and other big banks' outlooks") }}</span></a>
         </div>
       </details>
       <a href="{{ root }}news.html">{{ _("News") }}</a>
@@ -53,6 +54,7 @@
 <a href="{{ root }}analysts/index.html"{% if rsec == 'analysts' %} class="on" aria-current="page"{% endif %}>{{ _("Analysts") }}</a>
 <a href="{{ root }}stocks/index.html"{% if rsec == 'stocks' %} class="on" aria-current="page"{% endif %}>{{ _("Stocks") }}</a>
 <a href="{{ root }}investors.html"{% if rsec == 'investors' %} class="on" aria-current="page"{% endif %}>{{ _("Investors") }}</a>
+<a href="{{ root }}wall-street.html"{% if rsec == 'wallst' %} class="on" aria-current="page"{% endif %}>{{ _("Wall Street views") }}</a>
 </div>{% endif %}
 {% if lang != "en" %}{% block langnote %}{% endblock %}{% endif %}
 {% block body %}{% endblock %}

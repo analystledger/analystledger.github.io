@@ -67,3 +67,7 @@
     });
   });
 })();
+(function () {  // keep the active Research tab visible on narrow screens
+  var bar = document.querySelector(".rtabs"), on = bar && bar.querySelector("a.on");
+  if (on && bar.scrollWidth > bar.clientWidth) bar.scrollLeft = on.offsetLeft - (bar.clientWidth - on.offsetWidth) / 2;
+})();
