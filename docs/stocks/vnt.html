@@ -26,10 +26,16 @@
     <a class="brand" href="../index.html"><img src="../assets/logo.svg" alt="" width="28" height="28"> Analyst Ledger</a>
     <nav>
       <a href="../index.html">Latest</a>
-      <a href="../analysts/index.html">Analysts</a>
-      <a href="../stocks/index.html">Stocks</a>
+      
+      <details class="navdd on">
+        <summary>Research<span class="car" aria-hidden="true">▾</span></summary>
+        <div class="navmenu">
+          <a href="../analysts/index.html"><b>Analysts</b><span>Ratings and track records</span></a>
+          <a href="../stocks/index.html" class="on"><b>Stocks</b><span>Consensus, targets and history</span></a>
+          <a href="../investors.html"><b>Investors</b><span>Famous investors and articles</span></a>
+        </div>
+      </details>
       <a href="../news.html">News</a>
-      <a href="../investors.html">Investors</a>
       <a href="../learn.html">Learn &amp; tools</a>
       <a href="../strategies.html">AI strategies</a>
       <a href="../start.html">Open account</a>
@@ -46,6 +52,11 @@
   </div>
 </header>
 <main class="wrap">
+<div class="subtabs rtabs" role="navigation" aria-label="Research">
+<a href="../analysts/index.html">Analysts</a>
+<a href="../stocks/index.html" class="on" aria-current="page">Stocks</a>
+<a href="../investors.html">Investors</a>
+</div>
 
 
 <p class="crumbs"><a href="index.html">Stocks</a> / VNT</p>

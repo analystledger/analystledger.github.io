@@ -83,3 +83,9 @@ table.ev{border-collapse:collapse;width:100%;font-size:14px}
 #j-tk::placeholder{text-transform:none}
 .pin-card{display:flex;flex-direction:column;gap:4px;background:#fff8e6;border:1px solid #f1d58a;border-radius:12px;padding:14px 16px;margin:0 0 16px;color:inherit;text-decoration:none}.pin-card:hover{border-color:#e0b84a}.pin-card b{font-size:18px;color:var(--navy)}.pin-card .muted{font-size:14px}
 .pin-tag{font-size:12px;font-weight:700;color:#8a6200;text-transform:uppercase;letter-spacing:.03em}.art.pinned{border-color:#f1d58a;background:#fffcf2}.tag.pin{background:#fff1c7;color:#8a6200}
+.navdd{position:relative}.navdd summary{list-style:none;cursor:pointer;color:#c9d6ee;font-weight:500;display:flex;align-items:center;gap:4px;white-space:nowrap}.navdd summary::-webkit-details-marker{display:none}
+.navdd summary:hover,.navdd[open] summary,.navdd.on summary{color:#fff}.navdd .car{font-size:10px;opacity:.8}
+.navmenu{position:absolute;left:-10px;top:calc(100% + 10px);background:#fff;border:1px solid var(--line);border-radius:10px;box-shadow:0 10px 28px rgba(0,0,0,.18);min-width:250px;padding:6px;z-index:20}
+.navmenu a{display:flex;flex-direction:column;padding:8px 10px;border-radius:7px;color:var(--ink)}.navmenu a b{font-size:14px}.navmenu a span{font-size:12px;color:var(--muted);font-weight:400}
+.navmenu a:hover{background:var(--bg);text-decoration:none}.navmenu a.on{background:#eef4ff}.navmenu a.on b{color:var(--brand)}
+.rtabs{margin-top:6px}.subtabs a{padding:8px 14px;font-weight:600;color:var(--muted);border-bottom:3px solid transparent;text-decoration:none}.subtabs a.on{color:var(--brand);border-bottom-color:var(--brand)}.subtabs a:hover{color:var(--ink);text-decoration:none}

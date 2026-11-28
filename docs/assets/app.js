@@ -1,6 +1,8 @@
 (function () {
   var T = window.T || function (s) { return s; };
   // Language menu: close when clicking elsewhere or pressing Escape
+  var dd = document.querySelector("details.navdd");
+  if (dd) document.addEventListener("click", function (e) { if (!e.target.closest("details.navdd")) dd.open = false; });
   var lm = document.querySelector("details.langs");
   if (lm) {
     document.addEventListener("click", function (e) { if (!e.target.closest("details.langs")) lm.open = false; });
