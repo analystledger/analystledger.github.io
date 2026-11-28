@@ -1259,7 +1259,7 @@
 ["2026-11-02", "Guggenheim", "Buy", "Buy", "pt_change", 201.0, 205.0],
 ["2026-10-21", "Morgan Stanley", "Overweight", "Overweight", "pt_change", 213.0, 218.0],
 ["2026-10-12", "Wolfe Research", "Outperform", "Peer Perform", "downgrade", null, null],
-["2026-10-12", "HC Wainwright & Co.", "Buy", "Buy", "reiterate", 220.0, 220.0],
+["2026-10-12", "HC Wainwright & Co.", "Buy", "Buy", "reiterate", 220.0, null],
 ["2026-09-30", "Barclays", "Overweight", "Overweight", "pt_change", 207.0, 237.0],
 ["2026-09-15", "Roth Capital", "Buy", "Buy", "reiterate", 198.0, 212.0],
 ["2026-08-10", "JP Morgan", "Overweight", "Overweight", "pt_change", 175.0, 179.0],
