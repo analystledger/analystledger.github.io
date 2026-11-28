@@ -1,16 +1,12 @@
 {
- "updated_utc": "2026-11-28 13:26 UTC",
+ "updated_utc": "2026-11-28 13:39 UTC",
  "total_events": 431,
  "new_events": 0,
  "log": [
   "FMP: no FMP_API_KEY set - skipped",
   "Finnhub: no FINNHUB_API_KEY set - skipped",
   "News (Claude): 431 events",
-  "Prices (Stooq): first 5 tickers failed - skipping price update this run",
-  "Prices (Stooq): 0 tickers updated, 0 rating prices filled, 5 failed",
-  "  BA: HTTP 200 '<!DOCTYPE html><html><head><meta charset=\"utf-8\"><meta name=\"robots\" content=\"noindex,nofollow\"></head><body><noscript>T'",
-  "  BABA: HTTP 200 '<!DOCTYPE html><html><head><meta charset=\"utf-8\"><meta name=\"robots\" content=\"noindex,nofollow\"></head><body><noscript>T'",
-  "  BAM: HTTP 200 '<!DOCTYPE html><html><head><meta charset=\"utf-8\"><meta name=\"robots\" content=\"noindex,nofollow\"></head><body><noscript>T'",
+  "Prices: 275 tickers updated, 348 rating prices filled, 0 failed",
   "Alerts queued: 0 pending"
  ]
 }
