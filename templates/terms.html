@@ -1,9 +1,9 @@
 {% extends "base.html" %}
 {% block title %}{{ _("Terms of Service") }} | {{ CFG.site_name }}{% endblock %}
 {% block body %}
-{% if lang not in ("en", "sq") %}<p class="warn" style="background:#fff7e0;border:1px solid #f1d58a;border-radius:10px;padding:10px 14px">{{ _("This page is available in English only. The English version applies.") }}</p>{% endif %}
+{% if false %}<p class="warn" style="background:#fff7e0;border:1px solid #f1d58a;border-radius:10px;padding:10px 14px">{{ _("This page is available in English only. The English version applies.") }}</p>{% endif %}
 <article class="prose">
-{% if lang == "sq" %}<p class="note">{{ _("Translated for convenience. If the versions differ, the English version applies.") }}</p>{% endif %}
+{% if lang != "en" %}<p class="note">{{ _("Translated for convenience. If the versions differ, the English version applies.") }}</p>{% endif %}
 <h1>{{ _("Terms of Service") }}</h1>
 <p>{{ _("Last updated: 15 November 2026")|safe }}</p>
 <p>{{ _('{v0} ("we") provides a free website and social media accounts that publish factual records of publicly reported Wall Street analyst rating and price-target changes. By using the website or following our accounts you agree to these terms.', v0=CFG.site_name)|safe }}</p>

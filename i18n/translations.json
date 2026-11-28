@@ -376,9 +376,9 @@
       "sr": "Filtriraj analitičare ili firme…"
     },
     "Filter by ticker or word, e.g. NVDA": {
-      "de": "Nach Ticker oder Wort filtern, z. B. NVDA",
+      "de": "Ticker oder Wort, z. B. NVDA",
       "sq": "Simbol ose fjalë, p.sh. NVDA",
-      "sr": "Filtriraj po oznaci ili reči, npr. NVDA"
+      "sr": "Oznaka ili reč, npr. NVDA"
     },
     "Filter news": {
       "de": "Nachrichten filtern",
@@ -1206,9 +1206,9 @@
       "sr": "poslednja cena"
     },
     "leave empty if open": {
-      "de": "leer lassen, wenn offen",
+      "de": "leer = offen",
       "sq": "bosh = i hapur",
-      "sr": "ostavite prazno ako je otvorena"
+      "sr": "prazno = otvorena"
     },
     "rating history": {
       "de": "Bewertungshistorie",
@@ -1681,520 +1681,864 @@
       "sr": "{n} akcija analitičara u ovom periodu"
     },
     "<b>Crypto bots and arbitrage</b>: outside this site's stock focus and far more volatile.": {
-      "sq": "<b>Bot-et e kriptomonedhave dhe arbitrazhi</b>: jashtë fokusit të kësaj faqeje te aksionet dhe shumë më të paqëndrueshëm."
+      "sq": "<b>Bot-et e kriptomonedhave dhe arbitrazhi</b>: jashtë fokusit të kësaj faqeje te aksionet dhe shumë më të paqëndrueshëm.",
+      "de": "<b>Krypto-Bots und Arbitrage</b>: außerhalb des Aktienfokus dieser Website und weit volatiler.",
+      "sr": "<b>Kripto botovi i arbitraža</b>: van fokusa ovog sajta na akcije i mnogo nestabilniji."
     },
     "<b>Leveraged and inverse ETFs, leveraged grids, margin</b>: losses compound faster than gains; common in high-return Composer symphonies.": {
-      "sq": "<b>ETF-të me levë dhe të kundërta, rrjetat me levë, marzhi</b>: humbjet rriten më shpejt se fitimet; të zakonshme në simfonitë e Composer me kthim të lartë."
+      "sq": "<b>ETF-të me levë dhe të kundërta, rrjetat me levë, marzhi</b>: humbjet rriten më shpejt se fitimet; të zakonshme në simfonitë e Composer me kthim të lartë.",
+      "de": "<b>Gehebelte und inverse ETFs, gehebelte Grids, Margin</b>: Verluste wachsen schneller als Gewinne; verbreitet in renditestarken Composer-Symphonien.",
+      "sr": "<b>ETF-ovi sa polugom i inverzni ETF-ovi, mreže sa polugom, margina</b>: gubici rastu brže od dobitaka; česti u Composer simfonijama sa visokim prinosom."
     },
     "<b>Martingale bots</b> (double the stake after every loss): one long losing run empties the account.": {
-      "sq": "<b>Bot-et Martingale</b> (dyfishojnë shumën pas çdo humbjeje): një seri e gjatë humbjesh e zbraz llogarinë."
+      "sq": "<b>Bot-et Martingale</b> (dyfishojnë shumën pas çdo humbjeje): një seri e gjatë humbjesh e zbraz llogarinë.",
+      "de": "<b>Martingale-Bots</b> (verdoppeln den Einsatz nach jedem Verlust): eine lange Verlustserie leert das Konto.",
+      "sr": "<b>Martingale botovi</b> (dupliraju ulog posle svakog gubitka): jedan dug niz gubitaka isprazni račun."
     },
     "A crash week can wipe out months of premium.": {
-      "sq": "Një javë rënieje të fortë mund të fshijë primet e disa muajve."
+      "sq": "Një javë rënieje të fortë mund të fshijë primet e disa muajve.",
+      "de": "Eine Crash-Woche kann die Prämien von Monaten auslöschen.",
+      "sr": "Jedna nedelja kraha može izbrisati premije od više meseci."
     },
     "AI drawdown watch": {
-      "sq": "Vëzhgimi i rënieve me AI"
+      "sq": "Vëzhgimi i rënieve me AI",
+      "de": "KI-Verlustwächter",
+      "sr": "AI praćenje padova"
     },
     "Agent Portfolios: a funded sub-portfolio connected to your agent with a scoped API key": {
-      "sq": "Agent Portfolios: një nën-portofol i financuar, i lidhur me agjentin tuaj përmes një çelësi API me të drejta të kufizuara"
+      "sq": "Agent Portfolios: një nën-portofol i financuar, i lidhur me agjentin tuaj përmes një çelësi API me të drejta të kufizuara",
+      "de": "Agent Portfolios: ein finanziertes Unterportfolio, das über einen eingeschränkten API-Schlüssel mit Ihrem Agenten verbunden ist",
+      "sr": "Agent Portfolios: finansiran podportfolio povezan sa vašim agentom preko API ključa sa ograničenim pravima"
     },
     "Agentic Trading through a dedicated account that only holds what you deposit": {
-      "sq": "Agentic Trading përmes një llogarie të veçantë që mban vetëm atë që depozitoni"
+      "sq": "Agentic Trading përmes një llogarie të veçantë që mban vetëm atë që depozitoni",
+      "de": "Agentic Trading über ein eigenes Konto, das nur hält, was Sie einzahlen",
+      "sr": "Agentic Trading preko posebnog računa koji drži samo ono što uplatite"
     },
     "Answer the questions in the chat and your instructions appear here.": {
-      "sq": "Përgjigjuni pyetjeve në bisedë dhe udhëzimet do të shfaqen këtu."
+      "sq": "Përgjigjuni pyetjeve në bisedë dhe udhëzimet do të shfaqen këtu.",
+      "de": "Beantworten Sie die Fragen im Chat, dann erscheinen Ihre Anweisungen hier.",
+      "sr": "Odgovorite na pitanja u četu i vaša uputstva će se pojaviti ovde."
     },
     "Ask about a strategy, e.g. 'what is a grid bot?'": {
-      "sq": "Pyetni për një strategji, p.sh. 'çfarë është grid bot?'"
+      "sq": "Pyetni për një strategji, p.sh. 'çfarë është grid bot?'",
+      "de": "Fragen Sie nach einer Strategie, z. B. 'Was ist ein Grid-Bot?'",
+      "sr": "Pitajte o strategiji, npr. 'šta je grid bot?'"
     },
     "Autonomous Trading lets a connected AI trade inside a separate, funded \"AI Partition\"": {
-      "sq": "Autonomous Trading lejon një AI të lidhur të tregtojë brenda një \"AI Partition\" të veçantë dhe të financuar"
+      "sq": "Autonomous Trading lejon një AI të lidhur të tregtojë brenda një \"AI Partition\" të veçantë dhe të financuar",
+      "de": "Autonomous Trading lässt eine verbundene KI in einer separaten, finanzierten \"AI Partition\" handeln",
+      "sr": "Autonomous Trading omogućava povezanom AI-u da trguje unutar posebne, finansirane \"AI Partition\""
     },
     "Backtest": {
-      "sq": "Testimi historik"
+      "sq": "Testimi historik",
+      "de": "Backtest",
+      "sr": "Istorijski test"
     },
     "Benchmark: buy and hold SPY": {
-      "sq": "Pikë krahasimi: blej dhe mbaj SPY"
+      "sq": "Pikë krahasimi: blej dhe mbaj SPY",
+      "de": "Vergleich: SPY kaufen und halten",
+      "sr": "Poređenje: kupi i drži SPY"
     },
     "Bonds and stocks can fall together, as in 2022.": {
-      "sq": "Obligacionet dhe aksionet mund të bien njëkohësisht, si në 2022."
+      "sq": "Obligacionet dhe aksionet mund të bien njëkohësisht, si në 2022.",
+      "de": "Anleihen und Aktien können gemeinsam fallen, wie 2022.",
+      "sr": "Obveznice i akcije mogu pasti zajedno, kao 2022."
     },
     "Bot strategy sources:": {
-      "sq": "Burimet e strategjive të bot-eve:"
+      "sq": "Burimet e strategjive të bot-eve:",
+      "de": "Quellen zu Bot-Strategien:",
+      "sr": "Izvori o strategijama botova:"
     },
     "Built from your answers. Paste into the agent connected to a <b>separate, small sub-account</b> (IBKR AI Partition, Robinhood agentic account, eToro Agent Portfolio). Paper-trade first.": {
-      "sq": "Ndërtuar nga përgjigjet tuaja. Ngjitini te agjenti i lidhur me një <b>nën-llogari të veçantë dhe të vogël</b> (IBKR AI Partition, llogari agjentike Robinhood, eToro Agent Portfolio). Provojeni fillimisht me tregtim simulues."
+      "sq": "Ndërtuar nga përgjigjet tuaja. Ngjitini te agjenti i lidhur me një <b>nën-llogari të veçantë dhe të vogël</b> (IBKR AI Partition, llogari agjentike Robinhood, eToro Agent Portfolio). Provojeni fillimisht me tregtim simulues.",
+      "de": "Aus Ihren Antworten erstellt. Fügen Sie sie in den Agenten ein, der mit einem <b>separaten, kleinen Unterkonto</b> verbunden ist (IBKR AI Partition, Robinhood-Agentenkonto, eToro Agent Portfolio). Zuerst auf Papier handeln.",
+      "sr": "Napravljeno na osnovu vaših odgovora. Nalepite u agenta povezanog sa <b>posebnim, malim podračunom</b> (IBKR AI Partition, Robinhood agentski račun, eToro Agent Portfolio). Prvo probajte simulirano trgovanje."
     },
     "Buy the same amount of a broad index ETF (here SPY) on the first trading day of every month, whatever the price.": {
-      "sq": "Bleni të njëjtën shumë të një ETF-je të gjerë indeksi (këtu SPY) në ditën e parë të tregtimit të çdo muaji, pavarësisht çmimit."
+      "sq": "Bleni të njëjtën shumë të një ETF-je të gjerë indeksi (këtu SPY) në ditën e parë të tregtimit të çdo muaji, pavarësisht çmimit.",
+      "de": "Kaufen Sie am ersten Handelstag jedes Monats denselben Betrag eines breiten Index-ETFs (hier SPY), unabhängig vom Kurs.",
+      "sr": "Kupujte isti iznos širokog indeksnog ETF-a (ovde SPY) prvog radnog dana svakog meseca, bez obzira na cenu."
     },
     "Composer 'Dual Momentum' symphonies; a widely copied academic rule": {
-      "sq": "Simfonitë 'Dual Momentum' të Composer; një rregull akademik shumë i kopjuar"
+      "sq": "Simfonitë 'Dual Momentum' të Composer; një rregull akademik shumë i kopjuar",
+      "de": "Composer-Symphonien 'Dual Momentum'; eine viel kopierte akademische Regel",
+      "sr": "Composer simfonije 'Dual Momentum'; često kopirano akademsko pravilo"
     },
     "Composer help": {
-      "sq": "Ndihma e Composer"
+      "sq": "Ndihma e Composer",
+      "de": "Composer-Hilfe",
+      "sr": "Composer pomoć"
     },
     "Composer symphonies ('if SPY drops more than 3% in 10 days, switch to T-bills and gold')": {
-      "sq": "Simfonitë e Composer ('nëse SPY bie më shumë se 3% në 10 ditë, kalo në bono thesari dhe ar')"
+      "sq": "Simfonitë e Composer ('nëse SPY bie më shumë se 3% në 10 ditë, kalo në bono thesari dhe ar')",
+      "de": "Composer-Symphonien ('fällt SPY in 10 Tagen um mehr als 3 %, in T-Bills und Gold wechseln')",
+      "sr": "Composer simfonije ('ako SPY padne više od 3% za 10 dana, pređi u trezorske zapise i zlato')"
     },
     "Composer symphonies (e.g. 'Dual Momentum with Fallback', 'AI Flywheel Momentum Harvester')": {
-      "sq": "Simfonitë e Composer (p.sh. 'Dual Momentum with Fallback', 'AI Flywheel Momentum Harvester')"
+      "sq": "Simfonitë e Composer (p.sh. 'Dual Momentum with Fallback', 'AI Flywheel Momentum Harvester')",
+      "de": "Composer-Symphonien (z. B. 'Dual Momentum with Fallback', 'AI Flywheel Momentum Harvester')",
+      "sr": "Composer simfonije (npr. 'Dual Momentum with Fallback', 'AI Flywheel Momentum Harvester')"
     },
     "Composer symphony pages, eToro Agent Portfolios.": {
-      "sq": "Faqet e simfonive të Composer, eToro Agent Portfolios."
+      "sq": "Faqet e simfonive të Composer, eToro Agent Portfolios.",
+      "de": "Composer-Symphonieseiten, eToro Agent Portfolios.",
+      "sr": "Stranice Composer simfonija, eToro Agent Portfolios."
     },
     "Copy": {
-      "sq": "Kopjo"
+      "sq": "Kopjo",
+      "de": "Kopieren",
+      "sr": "Kopiraj"
     },
     "Crash breaker (T-bills + gold)": {
-      "sq": "Ndërprerësi i rënieve (bono thesari + ar)"
+      "sq": "Ndërprerësi i rënieve (bono thesari + ar)",
+      "de": "Crash-Bremse (T-Bills + Gold)",
+      "sr": "Prekidač kraha (trezorski zapisi + zlato)"
     },
     "Cutting losses in long bear markets.": {
-      "sq": "Kufizimi i humbjeve në tregje të gjata rënëse."
+      "sq": "Kufizimi i humbjeve në tregje të gjata rënëse.",
+      "de": "Verluste in langen Bärenmärkten begrenzen.",
+      "sr": "Ograničavanje gubitaka na dugim medveđim tržištima."
     },
     "Dollar-cost averaging (DCA)": {
-      "sq": "Investimi periodik me shumë fikse (DCA)"
+      "sq": "Investimi periodik me shumë fikse (DCA)",
+      "de": "Cost-Average-Effekt (Sparplan, DCA)",
+      "sr": "Periodično ulaganje fiksnog iznosa (DCA)"
     },
     "Dollar-cost averaging: €1 put in every month for {m} months grew to €{d} per €1, against €{l} for the same money invested on day one. In a rising market a lump sum usually wins; DCA spreads out the risk of bad timing.": {
-      "sq": "Investimi periodik: €1 i vendosur çdo muaj për {m} muaj u bë €{d} për çdo €1, kundrejt €{l} për të njëjtat para të investuara në ditën e parë. Në një treg në rritje, shuma e plotë zakonisht fiton; DCA e shpërndan rrezikun e kohës së gabuar."
+      "sq": "Investimi periodik: €1 i vendosur çdo muaj për {m} muaj u bë €{d} për çdo €1, kundrejt €{l} për të njëjtat para të investuara në ditën e parë. Në një treg në rritje, shuma e plotë zakonisht fiton; DCA e shpërndan rrezikun e kohës së gabuar.",
+      "de": "Sparplan: 1 €, {m} Monate lang jeden Monat angelegt, wurde zu {d} € je 1 €, gegenüber {l} € für dasselbe Geld, am ersten Tag angelegt. In steigenden Märkten gewinnt meist die Einmalanlage; ein Sparplan verteilt das Risiko eines schlechten Zeitpunkts.",
+      "sr": "Periodično ulaganje: 1 € uložen svakog meseca tokom {m} meseci narastao je na {d} € po 1 €, naspram {l} € za isti novac uložen prvog dana. Na rastućem tržištu jednokratno ulaganje obično pobeđuje; DCA raspoređuje rizik lošeg trenutka."
     },
     "Dual momentum with bond fallback": {
-      "sq": "Momentum i dyfishtë me kalim në obligacione"
+      "sq": "Momentum i dyfishtë me kalim në obligacione",
+      "de": "Dual Momentum mit Anleihen-Ausweichlösung",
+      "sr": "Dvostruki momentum sa prelaskom u obveznice"
     },
     "Each dip can keep falling; works only in uptrends; many small trades.": {
-      "sq": "Çdo rënie mund të vazhdojë; funksionon vetëm në trende rritëse; shumë tregtime të vogla."
+      "sq": "Çdo rënie mund të vazhdojë; funksionon vetëm në trende rritëse; shumë tregtime të vogla.",
+      "de": "Jeder Rücksetzer kann weiter fallen; funktioniert nur im Aufwärtstrend; viele kleine Trades.",
+      "sr": "Svaki pad može da se nastavi; radi samo u uzlaznom trendu; mnogo malih trgovina."
     },
     "Each strategy run on daily, dividend-adjusted prices from {p}: signals use the close and trade at the next close, with 0.05% costs per trade; cash earns the T-bill rate. Options strategies are modelled (option prices estimated from the VIX, adjusted for skew), not real fills. Past results do not predict future ones. Updated {u}, monthly.": {
-      "sq": "Çdo strategji u testua me çmime ditore të rregulluara për dividendët nga {p}: sinjalet përdorin mbylljen dhe tregtojnë në mbylljen e radhës, me kosto 0,05% për tregtim; paratë cash fitojnë normën e bonove të thesarit. Strategjitë me opsione janë të modeluara (çmimet e opsioneve vlerësohen nga VIX, të rregulluara për pjerrësinë), jo ekzekutime reale. Rezultatet e kaluara nuk parashikojnë ato të ardhshme. Përditësuar më {u}, çdo muaj."
+      "sq": "Çdo strategji u testua me çmime ditore të rregulluara për dividendët nga {p}: sinjalet përdorin mbylljen dhe tregtojnë në mbylljen e radhës, me kosto 0,05% për tregtim; paratë cash fitojnë normën e bonove të thesarit. Strategjitë me opsione janë të modeluara (çmimet e opsioneve vlerësohen nga VIX, të rregulluara për pjerrësinë), jo ekzekutime reale. Rezultatet e kaluara nuk parashikojnë ato të ardhshme. Përditësuar më {u}, çdo muaj.",
+      "de": "Jede Strategie lief auf täglichen, dividendenbereinigten Kursen von {p}: Signale nutzen den Schlusskurs und handeln zum nächsten Schlusskurs, mit 0,05 % Kosten pro Trade; Barmittel erhalten den T-Bill-Zins. Optionsstrategien sind modelliert (Optionspreise aus dem VIX geschätzt, um die Schiefe bereinigt), keine echten Ausführungen. Vergangene Ergebnisse sagen nichts über künftige aus. Aktualisiert {u}, monatlich.",
+      "sr": "Svaka strategija je testirana na dnevnim cenama korigovanim za dividende od {p}: signali koriste zatvaranje i trguju na sledećem zatvaranju, uz troškove od 0,05% po trgovini; gotovina zarađuje kamatu trezorskih zapisa. Strategije sa opcijama su modelovane (cene opcija procenjene iz VIX-a, korigovane za iskrivljenost), ne stvarna izvršenja. Prošli rezultati ne predviđaju buduće. Ažurirano {u}, mesečno."
     },
     "Falls with the market; in a rising market investing a lump sum early usually ends higher.": {
-      "sq": "Bie bashkë me tregun; në një treg në rritje, investimi i një shume të plotë herët zakonisht përfundon më lart."
+      "sq": "Bie bashkë me tregun; në një treg në rritje, investimi i një shume të plotë herët zakonisht përfundon më lart.",
+      "de": "Fällt mit dem Markt; in steigenden Märkten endet eine frühe Einmalanlage meist höher.",
+      "sr": "Pada sa tržištem; na rastućem tržištu rano jednokratno ulaganje obično završi više."
     },
     "Free strategy assistant: the strategies run by trading bots and AI agents at Pionex, 3Commas, Composer, eToro, Robinhood and Interactive Brokers, explained in plain English and backtested on ten years of data. Builds safe instructions for your own AI agent. Educational only.": {
-      "sq": "Asistent falas strategjish: strategjitë që përdorin bot-et e tregtimit dhe agjentët e AI në Pionex, 3Commas, Composer, eToro, Robinhood dhe Interactive Brokers, të shpjeguara thjesht dhe të testuara në dhjetë vjet të dhëna. Ndërton udhëzime të sigurta për agjentin tuaj të AI. Vetëm për qëllime edukative."
+      "sq": "Asistent falas strategjish: strategjitë që përdorin bot-et e tregtimit dhe agjentët e AI në Pionex, 3Commas, Composer, eToro, Robinhood dhe Interactive Brokers, të shpjeguara thjesht dhe të testuara në dhjetë vjet të dhëna. Ndërton udhëzime të sigurta për agjentin tuaj të AI. Vetëm për qëllime edukative.",
+      "de": "Kostenloser Strategie-Assistent: die Strategien von Trading-Bots und KI-Agenten bei Pionex, 3Commas, Composer, eToro, Robinhood und Interactive Brokers, verständlich erklärt und auf zehn Jahren Daten getestet. Erstellt sichere Anweisungen für Ihren eigenen KI-Agenten. Nur zu Bildungszwecken.",
+      "sr": "Besplatni asistent za strategije: strategije trgovačkih botova i AI agenata na Pionex, 3Commas, Composer, eToro, Robinhood i Interactive Brokers, jednostavno objašnjene i testirane na deset godina podataka. Pravi bezbedna uputstva za vašeg AI agenta. Samo u edukativne svrhe."
     },
     "Getting paid while waiting to buy lower.": {
-      "sq": "Të paguhesh ndërsa pret të blesh më lirë."
+      "sq": "Të paguhesh ndërsa pret të blesh më lirë.",
+      "de": "Bezahlt werden, während man auf günstigere Kurse wartet.",
+      "sr": "Biti plaćen dok čekate da kupite jeftinije."
     },
     "Good for": {
-      "sq": "E mirë për"
+      "sq": "E mirë për",
+      "de": "Gut für",
+      "sr": "Dobro za"
     },
     "Grid bot": {
-      "sq": "Grid bot (rrjetë)"
+      "sq": "Grid bot (rrjetë)",
+      "de": "Grid-Bot",
+      "sr": "Grid bot (mreža)"
     },
     "Hold 60% stocks (SPY) and 40% bonds (AGG). Once a month, sell what has grown above its share and buy what has fallen below it.": {
-      "sq": "Mbani 60% aksione (SPY) dhe 40% obligacione (AGG). Një herë në muaj, shisni atë që është rritur mbi pjesën e vet dhe blini atë që ka rënë nën të."
+      "sq": "Mbani 60% aksione (SPY) dhe 40% obligacione (AGG). Një herë në muaj, shisni atë që është rritur mbi pjesën e vet dhe blini atë që ka rënë nën të.",
+      "de": "Halten Sie 60 % Aktien (SPY) und 40 % Anleihen (AGG). Einmal im Monat verkaufen, was über seinen Anteil gewachsen ist, und kaufen, was darunter gefallen ist.",
+      "sr": "Držite 60% akcija (SPY) i 40% obveznica (AGG). Jednom mesečno prodajte ono što je naraslo iznad svog udela i kupite ono što je palo ispod njega."
     },
     "Hold SPY. If SPY has fallen more than 3% over the last 10 trading days, hold 50% T-bills (BIL) and 50% gold (GLD) instead until it recovers.": {
-      "sq": "Mbani SPY. Nëse SPY ka rënë më shumë se 3% gjatë 10 ditëve të fundit të tregtimit, mbani në vend të tij 50% bono thesari (BIL) dhe 50% ar (GLD) derisa të rikuperohet."
+      "sq": "Mbani SPY. Nëse SPY ka rënë më shumë se 3% gjatë 10 ditëve të fundit të tregtimit, mbani në vend të tij 50% bono thesari (BIL) dhe 50% ar (GLD) derisa të rikuperohet.",
+      "de": "SPY halten. Ist SPY in den letzten 10 Handelstagen um mehr als 3 % gefallen, stattdessen 50 % T-Bills (BIL) und 50 % Gold (GLD) halten, bis er sich erholt.",
+      "sr": "Držite SPY. Ako je SPY pao više od 3% u poslednjih 10 trgovačkih dana, umesto njega držite 50% trezorskih zapisa (BIL) i 50% zlata (GLD) dok se ne oporavi."
     },
     "Hold SPY. When the VIX closes above 25, switch to bonds (AGG); return to SPY when the VIX closes below 20.": {
-      "sq": "Mbani SPY. Kur VIX mbyll mbi 25, kaloni në obligacione (AGG); kthehuni në SPY kur VIX mbyll nën 20."
+      "sq": "Mbani SPY. Kur VIX mbyll mbi 25, kaloni në obligacione (AGG); kthehuni në SPY kur VIX mbyll nën 20.",
+      "de": "SPY halten. Schließt der VIX über 25, in Anleihen (AGG) wechseln; zurück in SPY, wenn der VIX unter 20 schließt.",
+      "sr": "Držite SPY. Kada VIX zatvori iznad 25, pređite u obveznice (AGG); vratite se u SPY kada VIX zatvori ispod 20."
     },
     "Hold cash in T-bills; each week sell one put about 1 sigma below the price, covered by cash; buy it back at 50% profit; skip event weeks.": {
-      "sq": "Mbani paratë në bono thesari; çdo javë shisni një put rreth 1 sigma nën çmim, të mbuluar me para; bliheni përsëri me 50% fitim; anashkaloni javët me ngjarje."
+      "sq": "Mbani paratë në bono thesari; çdo javë shisni një put rreth 1 sigma nën çmim, të mbuluar me para; bliheni përsëri me 50% fitim; anashkaloni javët me ngjarje.",
+      "de": "Bargeld in T-Bills halten; jede Woche einen Put etwa 1 Sigma unter dem Kurs verkaufen, durch Bargeld gedeckt; bei 50 % Gewinn zurückkaufen; Ereigniswochen auslassen.",
+      "sr": "Držite gotovinu u trezorskim zapisima; svake nedelje prodajte jedan put oko 1 sigma ispod cene, pokriven gotovinom; otkupite ga na 50% dobiti; preskočite nedelje sa događajima."
     },
     "How the strategies did": {
-      "sq": "Si performuan strategjitë"
+      "sq": "Si performuan strategjitë",
+      "de": "So haben die Strategien abgeschnitten",
+      "sr": "Kako su prošle strategije"
     },
     "IBKR Autonomous Trading example ('if a position falls more than 7% from its 20-day high, send a brief')": {
-      "sq": "Shembull i IBKR Autonomous Trading ('nëse një pozicion bie më shumë se 7% nga maksimumi 20-ditor, dërgo një përmbledhje')"
+      "sq": "Shembull i IBKR Autonomous Trading ('nëse një pozicion bie më shumë se 7% nga maksimumi 20-ditor, dërgo një përmbledhje')",
+      "de": "Beispiel IBKR Autonomous Trading ('fällt eine Position um mehr als 7 % vom 20-Tage-Hoch, eine Kurzinfo senden')",
+      "sr": "Primer IBKR Autonomous Trading ('ako pozicija padne više od 7% od 20-dnevnog maksimuma, pošalji kratak izveštaj')"
     },
     "Information only; you still decide.": {
-      "sq": "Vetëm informacion; vendimi mbetet i juaji."
+      "sq": "Vetëm informacion; vendimi mbetet i juaji.",
+      "de": "Nur Information; Sie entscheiden weiterhin.",
+      "sr": "Samo informacija; i dalje vi odlučujete."
     },
     "Instructions for your AI agent": {
-      "sq": "Udhëzime për agjentin tuaj të AI"
+      "sq": "Udhëzime për agjentin tuaj të AI",
+      "de": "Anweisungen für Ihren KI-Agenten",
+      "sr": "Uputstva za vašeg AI agenta"
     },
     "Keeps all the downside of the shares but caps the upside.": {
-      "sq": "Mban gjithë rënien e aksioneve, por kufizon rritjen."
+      "sq": "Mban gjithë rënien e aksioneve, por kufizon rritjen.",
+      "de": "Behält das volle Abwärtsrisiko der Aktien, begrenzt aber das Aufwärtspotenzial.",
+      "sr": "Zadržava ceo rizik pada akcija, ali ograničava rast."
     },
     "Left out on purpose": {
-      "sq": "Të lëna jashtë qëllimisht"
+      "sq": "Të lëna jashtë qëllimisht",
+      "de": "Bewusst ausgelassen",
+      "sr": "Namerno izostavljeno"
     },
     "Long bear markets such as 2008.": {
-      "sq": "Tregje të gjata rënëse si 2008."
+      "sq": "Tregje të gjata rënëse si 2008.",
+      "de": "Lange Bärenmärkte wie 2008.",
+      "sr": "Duga medveđa tržišta kao 2008."
     },
     "Main risk": {
-      "sq": "Rreziku kryesor"
+      "sq": "Rreziku kryesor",
+      "de": "Hauptrisiko",
+      "sr": "Glavni rizik"
     },
     "Many false alarms; switching costs add up.": {
-      "sq": "Shumë alarme të rreme; kostot e kalimeve mblidhen."
+      "sq": "Shumë alarme të rreme; kostot e kalimeve mblidhen.",
+      "de": "Viele Fehlalarme; Wechselkosten summieren sich.",
+      "sr": "Mnogo lažnih uzbuna; troškovi prebacivanja se sabiraju."
     },
     "Momentum rotation": {
-      "sq": "Rotacion sipas momentumit"
+      "sq": "Rotacion sipas momentumit",
+      "de": "Momentum-Rotation",
+      "sr": "Rotacija po momentumu"
     },
     "Monthly: if SPY's 12-month return beats T-bills, hold the better of US (SPY) and international (EFA) stocks; otherwise hold bonds (AGG).": {
-      "sq": "Çdo muaj: nëse kthimi 12-mujor i SPY kalon bonot e thesarit, mbani më të mirin mes aksioneve amerikane (SPY) dhe ndërkombëtare (EFA); përndryshe mbani obligacione (AGG)."
+      "sq": "Çdo muaj: nëse kthimi 12-mujor i SPY kalon bonot e thesarit, mbani më të mirin mes aksioneve amerikane (SPY) dhe ndërkombëtare (EFA); përndryshe mbani obligacione (AGG).",
+      "de": "Monatlich: Schlägt die 12-Monats-Rendite von SPY die T-Bills, das bessere von US- (SPY) und internationalen (EFA) Aktien halten; sonst Anleihen (AGG).",
+      "sr": "Mesečno: ako 12-mesečni prinos SPY nadmaši trezorske zapise, držite bolje od američkih (SPY) i međunarodnih (EFA) akcija; u suprotnom držite obveznice (AGG)."
     },
     "Moving-average crossover (50/200)": {
-      "sq": "Kryqëzimi i mesatareve lëvizëse (50/200)"
+      "sq": "Kryqëzimi i mesatareve lëvizëse (50/200)",
+      "de": "Kreuzung gleitender Durchschnitte (50/200)",
+      "sr": "Ukrštanje pokretnih proseka (50/200)"
     },
     "No trades. Every day, check each holding; if one falls more than 7% from its 20-day high, send a short note on the cause and current option prices.": {
-      "sq": "Pa tregtime. Çdo ditë kontrolloni çdo zotërim; nëse njëri bie më shumë se 7% nga maksimumi 20-ditor, dërgoni një shënim të shkurtër për shkakun dhe çmimet aktuale të opsioneve."
+      "sq": "Pa tregtime. Çdo ditë kontrolloni çdo zotërim; nëse njëri bie më shumë se 7% nga maksimumi 20-ditor, dërgoni një shënim të shkurtër për shkakun dhe çmimet aktuale të opsioneve.",
+      "de": "Keine Trades. Täglich jede Position prüfen; fällt eine um mehr als 7 % vom 20-Tage-Hoch, eine kurze Notiz zur Ursache und zu aktuellen Optionspreisen senden.",
+      "sr": "Bez trgovina. Svaki dan proverite svaku poziciju; ako neka padne više od 7% od 20-dnevnog maksimuma, pošaljite kratku belešku o uzroku i trenutnim cenama opcija."
     },
     "Often sells after the drop and buys back after the rebound; did not help in 2022.": {
-      "sq": "Shpesh shet pas rënies dhe blen përsëri pas rimëkëmbjes; nuk ndihmoi në 2022."
+      "sq": "Shpesh shet pas rënies dhe blen përsëri pas rimëkëmbjes; nuk ndihmoi në 2022.",
+      "de": "Verkauft oft nach dem Einbruch und kauft nach der Erholung zurück; half 2022 nicht.",
+      "sr": "Često prodaje posle pada i kupuje ponovo posle oporavka; nije pomogao 2022."
     },
     "Once a month, rank SPY, QQQ, EFA and GLD by their 6-month return. Hold the top two (50% each); any of the two with a negative return is replaced by bonds (AGG).": {
-      "sq": "Një herë në muaj, renditni SPY, QQQ, EFA dhe GLD sipas kthimit 6-mujor. Mbani dy të parët (50% secili); nëse njëri prej tyre ka kthim negativ, zëvendësohet me obligacione (AGG)."
+      "sq": "Një herë në muaj, renditni SPY, QQQ, EFA dhe GLD sipas kthimit 6-mujor. Mbani dy të parët (50% secili); nëse njëri prej tyre ka kthim negativ, zëvendësohet me obligacione (AGG).",
+      "de": "Einmal im Monat SPY, QQQ, EFA und GLD nach 6-Monats-Rendite ordnen. Die besten zwei halten (je 50 %); einer der beiden mit negativer Rendite wird durch Anleihen (AGG) ersetzt.",
+      "sr": "Jednom mesečno rangirajte SPY, QQQ, EFA i GLD po 6-mesečnom prinosu. Držite prva dva (po 50%); onaj od njih sa negativnim prinosom zamenjuje se obveznicama (AGG)."
     },
     "Options income bots and AI agents at IBKR and Robinhood; put-write indexes": {
-      "sq": "Bot-e të të ardhurave me opsione dhe agjentë AI në IBKR dhe Robinhood; indekse të shitjes së put-eve"
+      "sq": "Bot-e të të ardhurave me opsione dhe agjentë AI në IBKR dhe Robinhood; indekse të shitjes së put-eve",
+      "de": "Options-Einkommensbots und KI-Agenten bei IBKR und Robinhood; Put-Write-Indizes",
+      "sr": "Botovi za prihod od opcija i AI agenti na IBKR i Robinhood; put-write indeksi"
     },
     "Options income bots and AI agents at IBKR, Robinhood and Composer; covered-call ETFs": {
-      "sq": "Bot-e të të ardhurave me opsione dhe agjentë AI në IBKR, Robinhood dhe Composer; ETF me covered call"
+      "sq": "Bot-e të të ardhurave me opsione dhe agjentë AI në IBKR, Robinhood dhe Composer; ETF me covered call",
+      "de": "Options-Einkommensbots und KI-Agenten bei IBKR, Robinhood und Composer; Covered-Call-ETFs",
+      "sr": "Botovi za prihod od opcija i AI agenti na IBKR, Robinhood i Composer; covered-call ETF-ovi"
     },
     "Own 100 shares; each week sell one call about 1 sigma above the price; buy it back at 50% profit; skip weeks with earnings or a Fed decision.": {
-      "sq": "Zotëroni 100 aksione; çdo javë shisni një call rreth 1 sigma mbi çmim; bliheni përsëri me 50% fitim; anashkaloni javët me rezultate financiare ose vendim të Fed-it."
+      "sq": "Zotëroni 100 aksione; çdo javë shisni një call rreth 1 sigma mbi çmim; bliheni përsëri me 50% fitim; anashkaloni javët me rezultate financiare ose vendim të Fed-it.",
+      "de": "100 Aktien besitzen; jede Woche einen Call etwa 1 Sigma über dem Kurs verkaufen; bei 50 % Gewinn zurückkaufen; Wochen mit Quartalszahlen oder Fed-Entscheid auslassen.",
+      "sr": "Posedujte 100 akcija; svake nedelje prodajte jedan call oko 1 sigma iznad cene; otkupite ga na 50% dobiti; preskočite nedelje sa rezultatima ili odlukom Fed-a."
     },
     "Own SPY while it closes above its 200-day moving average; switch to T-bills (BIL) when it closes below, and back when it recovers.": {
-      "sq": "Mbani SPY sa kohë mbyll mbi mesataren lëvizëse 200-ditore; kaloni në bono thesari (BIL) kur mbyll nën të dhe kthehuni kur rikuperohet."
+      "sq": "Mbani SPY sa kohë mbyll mbi mesataren lëvizëse 200-ditore; kaloni në bono thesari (BIL) kur mbyll nën të dhe kthehuni kur rikuperohet.",
+      "de": "SPY halten, solange er über seinem 200-Tage-Durchschnitt schließt; in T-Bills (BIL) wechseln, wenn er darunter schließt, und zurück, wenn er sich erholt.",
+      "sr": "Držite SPY dok zatvara iznad 200-dnevnog pokretnog proseka; pređite u trezorske zapise (BIL) kada zatvori ispod i vratite se kada se oporavi."
     },
     "Own SPY while its 50-day average is above its 200-day average; hold T-bills when it is below.": {
-      "sq": "Mbani SPY sa kohë mesatarja 50-ditore është mbi atë 200-ditore; mbani bono thesari kur është nën të."
+      "sq": "Mbani SPY sa kohë mesatarja 50-ditore është mbi atë 200-ditore; mbani bono thesari kur është nën të.",
+      "de": "SPY halten, solange sein 50-Tage-Durchschnitt über dem 200-Tage-Durchschnitt liegt; sonst T-Bills.",
+      "sr": "Držite SPY dok je njegov 50-dnevni prosek iznad 200-dnevnog; držite trezorske zapise kada je ispod."
     },
     "Pionex and 3Commas DCA bots; Binance Auto-Invest; recurring buys at most brokers": {
-      "sq": "Bot-et DCA të Pionex dhe 3Commas; Binance Auto-Invest; blerje periodike në shumicën e brokerëve"
+      "sq": "Bot-et DCA të Pionex dhe 3Commas; Binance Auto-Invest; blerje periodike në shumicën e brokerëve",
+      "de": "DCA-Bots von Pionex und 3Commas; Binance Auto-Invest; Sparpläne bei den meisten Brokern",
+      "sr": "DCA botovi Pionex i 3Commas; Binance Auto-Invest; periodične kupovine kod većine brokera"
     },
     "Pionex and 3Commas rebalancing bots; Robinhood agents can rebalance a portfolio": {
-      "sq": "Bot-et e ribalancimit të Pionex dhe 3Commas; agjentët e Robinhood mund të ribalancojnë një portofol"
+      "sq": "Bot-et e ribalancimit të Pionex dhe 3Commas; agjentët e Robinhood mund të ribalancojnë një portofol",
+      "de": "Rebalancing-Bots von Pionex und 3Commas; Robinhood-Agenten können ein Portfolio neu gewichten",
+      "sr": "Botovi za rebalans Pionex i 3Commas; Robinhood agenti mogu rebalansirati portfolio"
     },
     "Pionex, 3Commas and Bitsgap grid bots (built for crypto; shown here on SPY)": {
-      "sq": "Grid bot-et e Pionex, 3Commas dhe Bitsgap (krijuar për kripto; këtu treguar mbi SPY)"
+      "sq": "Grid bot-et e Pionex, 3Commas dhe Bitsgap (krijuar për kripto; këtu treguar mbi SPY)",
+      "de": "Grid-Bots von Pionex, 3Commas und Bitsgap (für Krypto gebaut; hier auf SPY gezeigt)",
+      "sr": "Grid botovi Pionex, 3Commas i Bitsgap (napravljeni za kripto; ovde prikazani na SPY)"
     },
     "RSI mean reversion (buy the dip)": {
-      "sq": "Kthimi në mesatare me RSI (blej rënien)"
+      "sq": "Kthimi në mesatare me RSI (blej rënien)",
+      "de": "RSI-Rückkehr zum Mittelwert (Rücksetzer kaufen)",
+      "sr": "RSI povratak ka proseku (kupi pad)"
     },
     "RSI rules in Composer symphonies, TradingView and signal bots": {
-      "sq": "Rregulla RSI në simfonitë e Composer, TradingView dhe bot-et e sinjaleve"
+      "sq": "Rregulla RSI në simfonitë e Composer, TradingView dhe bot-et e sinjaleve",
+      "de": "RSI-Regeln in Composer-Symphonien, TradingView und Signal-Bots",
+      "sr": "RSI pravila u Composer simfonijama, TradingView-u i signalnim botovima"
     },
     "Reading the table:": {
-      "sq": "Si ta lexoni tabelën:"
+      "sq": "Si ta lexoni tabelën:",
+      "de": "So lesen Sie die Tabelle:",
+      "sr": "Kako čitati tabelu:"
     },
     "Rebalancing bot (60/40)": {
-      "sq": "Bot ribalancimi (60/40)"
+      "sq": "Bot ribalancimi (60/40)",
+      "de": "Rebalancing-Bot (60/40)",
+      "sr": "Bot za rebalans (60/40)"
     },
     "Regular savers; removes the stress of picking the moment.": {
-      "sq": "Kursimtarë të rregullt; heq stresin e zgjedhjes së momentit."
+      "sq": "Kursimtarë të rregullt; heq stresin e zgjedhjes së momentit.",
+      "de": "Regelmäßige Sparer; nimmt den Stress, den richtigen Moment zu wählen.",
+      "sr": "Redovni štediše; uklanja stres biranja trenutka."
     },
     "Return a year": {
-      "sq": "Kthimi në vit"
+      "sq": "Kthimi në vit",
+      "de": "Rendite pro Jahr",
+      "sr": "Prinos godišnje"
     },
     "Riding whichever market is strongest.": {
-      "sq": "Ndjekja e tregut që është më i fortë."
+      "sq": "Ndjekja e tregut që është më i fortë.",
+      "de": "Mit dem jeweils stärksten Markt mitgehen.",
+      "sr": "Praćenje tržišta koje je najjače."
     },
     "Risk-adjusted (Sharpe)": {
-      "sq": "I rregulluar për rrezikun (Sharpe)"
+      "sq": "I rregulluar për rrezikun (Sharpe)",
+      "de": "Risikobereinigt (Sharpe)",
+      "sr": "Korigovano za rizik (Sharpe)"
     },
     "Rules": {
-      "sq": "Rregullat"
+      "sq": "Rregullat",
+      "de": "Regeln",
+      "sr": "Pravila"
     },
     "See also": {
-      "sq": "Shihni gjithashtu"
+      "sq": "Shihni gjithashtu",
+      "de": "Siehe auch",
+      "sr": "Pogledajte i"
     },
     "Sells too early in strong uptrends; buys all the way down in a crash.": {
-      "sq": "Shet shumë herët në trende të forta rritëse; blen gjatë gjithë rënies në një krizë."
+      "sq": "Shet shumë herët në trende të forta rritëse; blen gjatë gjithë rënies në një krizë.",
+      "de": "Verkauft in starken Aufwärtstrends zu früh; kauft im Crash den ganzen Weg nach unten.",
+      "sr": "Prodaje prerano u jakim uzlaznim trendovima; kupuje sve vreme tokom kraha."
     },
     "Send": {
-      "sq": "Dërgo"
+      "sq": "Dërgo",
+      "de": "Senden",
+      "sr": "Pošalji"
     },
     "Sharp reversals hurt: it can buy what just peaked.": {
-      "sq": "Kthesat e mprehta dëmtojnë: mund të blejë atë që sapo arriti kulmin."
+      "sq": "Kthesat e mprehta dëmtojnë: mund të blejë atë që sapo arriti kulmin.",
+      "de": "Scharfe Umkehrungen schaden: kann kaufen, was gerade seinen Höhepunkt erreicht hat.",
+      "sr": "Oštri preokreti bole: može kupiti ono što je upravo dostiglo vrh."
     },
     "Short, frequent trades with little time in the market.": {
-      "sq": "Tregtime të shkurtra e të shpeshta me pak kohë në treg."
+      "sq": "Tregtime të shkurtra e të shpeshta me pak kohë në treg.",
+      "de": "Kurze, häufige Trades mit wenig Zeit im Markt.",
+      "sr": "Kratke, česte trgovine sa malo vremena na tržištu."
     },
     "Short, sharp sell-offs.": {
-      "sq": "Shitje të shkurtra e të mprehta."
+      "sq": "Shitje të shkurtra e të mprehta.",
+      "de": "Kurze, heftige Ausverkäufe.",
+      "sr": "Kratke, oštre rasprodaje."
     },
     "Sideways, choppy markets.": {
-      "sq": "Tregje anësore e të lëkundshme."
+      "sq": "Tregje anësore e të lëkundshme.",
+      "de": "Seitwärts laufende, unruhige Märkte.",
+      "sr": "Bočna, nemirna tržišta."
     },
     "Signal bots on 3Commas and TradingView alerts; classic 'golden cross' rule": {
-      "sq": "Bot-et e sinjaleve në 3Commas dhe alarmet e TradingView; rregulli klasik 'golden cross'"
+      "sq": "Bot-et e sinjaleve në 3Commas dhe alarmet e TradingView; rregulli klasik 'golden cross'",
+      "de": "Signal-Bots bei 3Commas und TradingView-Alarme; klassische 'Golden Cross'-Regel",
+      "sr": "Signalni botovi na 3Commas i TradingView upozorenja; klasično pravilo 'golden cross'"
     },
     "Slow 12-month signal; lagged badly in the fast 2020 crash and rebound.": {
-      "sq": "Sinjal i ngadaltë 12-mujor; mbeti shumë prapa në rënien dhe rimëkëmbjen e shpejtë të 2020."
+      "sq": "Sinjal i ngadaltë 12-mujor; mbeti shumë prapa në rënien dhe rimëkëmbjen e shpejtë të 2020.",
+      "de": "Langsames 12-Monats-Signal; hinkte beim schnellen Crash und der Erholung 2020 stark hinterher.",
+      "sr": "Spor 12-mesečni signal; jako je kasnio u brzom krahu i oporavku 2020."
     },
     "Slow: reacts weeks after a fast crash such as 2020.": {
-      "sq": "I ngadaltë: reagon disa javë pas një rënieje të shpejtë si ajo e 2020."
+      "sq": "I ngadaltë: reagon disa javë pas një rënieje të shpejtë si ajo e 2020.",
+      "de": "Langsam: reagiert Wochen nach einem schnellen Crash wie 2020.",
+      "sr": "Spor: reaguje nedeljama posle brzog kraha kao 2020."
     },
     "Smoother ride than all-stocks; automatically sells high and buys low.": {
-      "sq": "Më pak luhatje se vetëm aksionet; automatikisht shet shtrenjtë dhe blen lirë."
+      "sq": "Më pak luhatje se vetëm aksionet; automatikisht shet shtrenjtë dhe blen lirë.",
+      "de": "Ruhiger als reine Aktien; verkauft automatisch teuer und kauft günstig.",
+      "sr": "Mirnije od samih akcija; automatski prodaje skupo i kupuje jeftino."
     },
     "Start 50% invested in SPY. Every 2% fall buys another 10% of capital; every 2% rise sells 10%.": {
-      "sq": "Filloni me 50% të investuar në SPY. Çdo rënie 2% blen edhe 10% të kapitalit; çdo rritje 2% shet 10%."
+      "sq": "Filloni me 50% të investuar në SPY. Çdo rënie 2% blen edhe 10% të kapitalit; çdo rritje 2% shet 10%.",
+      "de": "Mit 50 % in SPY starten. Jeder Rückgang um 2 % kauft weitere 10 % des Kapitals; jeder Anstieg um 2 % verkauft 10 %.",
+      "sr": "Počnite sa 50% uloženim u SPY. Svaki pad od 2% kupuje još 10% kapitala; svaki rast od 2% prodaje 10%."
     },
     "Start again": {
-      "sq": "Fillo nga e para"
+      "sq": "Fillo nga e para",
+      "de": "Neu starten",
+      "sr": "Počni ponovo"
     },
     "Staying informed without watching screens.": {
-      "sq": "Të qëndroni të informuar pa ndjekur ekranet."
+      "sq": "Të qëndroni të informuar pa ndjekur ekranet.",
+      "de": "Informiert bleiben, ohne auf Bildschirme zu starren.",
+      "sr": "Biti informisan bez praćenja ekrana."
     },
     "Steady income on shares you would hold anyway.": {
-      "sq": "Të ardhura të qëndrueshme nga aksione që do t'i mbanit gjithsesi."
+      "sq": "Të ardhura të qëndrueshme nga aksione që do t'i mbanit gjithsesi.",
+      "de": "Stetiges Einkommen aus Aktien, die Sie ohnehin halten würden.",
+      "sr": "Stabilan prihod od akcija koje biste ionako držali."
     },
     "Stepping aside during panics.": {
-      "sq": "Dalja mënjanë gjatë paniqeve."
+      "sq": "Dalja mënjanë gjatë paniqeve.",
+      "de": "Bei Panik zur Seite treten.",
+      "sr": "Sklanjanje u stranu tokom panike."
     },
     "Strategy assistant chat": {
-      "sq": "Biseda me asistentin e strategjive"
+      "sq": "Biseda me asistentin e strategjive",
+      "de": "Chat mit dem Strategie-Assistenten",
+      "sr": "Čet sa asistentom za strategije"
     },
     "The strategies": {
-      "sq": "Strategjitë"
+      "sq": "Strategjitë",
+      "de": "Die Strategien",
+      "sr": "Strategije"
     },
     "The strategies that trading bots and AI agents run at Pionex, 3Commas, Composer, eToro, Robinhood and Interactive Brokers — explained in plain English, backtested over {p}, and turned into safe written instructions you can give your own AI agent. Educational only: this assistant never places trades and does not know your full situation.": {
-      "sq": "Strategjitë që përdorin bot-et e tregtimit dhe agjentët e AI në Pionex, 3Commas, Composer, eToro, Robinhood dhe Interactive Brokers — të shpjeguara thjesht, të testuara historikisht gjatë {p} dhe të kthyera në udhëzime të sigurta me shkrim që mund t'i jepni agjentit tuaj të AI. Vetëm për qëllime edukative: ky asistent nuk kryen kurrë tregtime dhe nuk e njeh situatën tuaj të plotë."
+      "sq": "Strategjitë që përdorin bot-et e tregtimit dhe agjentët e AI në Pionex, 3Commas, Composer, eToro, Robinhood dhe Interactive Brokers — të shpjeguara thjesht, të testuara historikisht gjatë {p} dhe të kthyera në udhëzime të sigurta me shkrim që mund t'i jepni agjentit tuaj të AI. Vetëm për qëllime edukative: ky asistent nuk kryen kurrë tregtime dhe nuk e njeh situatën tuaj të plotë.",
+      "de": "Die Strategien von Trading-Bots und KI-Agenten bei Pionex, 3Commas, Composer, eToro, Robinhood und Interactive Brokers — verständlich erklärt, über {p} getestet und in sichere schriftliche Anweisungen für Ihren eigenen KI-Agenten verwandelt. Nur zu Bildungszwecken: Dieser Assistent handelt nie und kennt Ihre gesamte Situation nicht.",
+      "sr": "Strategije trgovačkih botova i AI agenata na Pionex, 3Commas, Composer, eToro, Robinhood i Interactive Brokers — jednostavno objašnjene, testirane tokom {p} i pretvorene u bezbedna pisana uputstva koja možete dati svom AI agentu. Samo u edukativne svrhe: ovaj asistent nikada ne trguje i ne poznaje vašu celu situaciju."
     },
     "Time in stocks": {
-      "sq": "Koha në aksione"
+      "sq": "Koha në aksione",
+      "de": "Zeit in Aktien",
+      "sr": "Vreme u akcijama"
     },
     "Trades a year": {
-      "sq": "Tregtime në vit"
+      "sq": "Tregtime në vit",
+      "de": "Trades pro Jahr",
+      "sr": "Trgovina godišnje"
     },
     "Trend filter (200-day average)": {
-      "sq": "Filtri i trendit (mesatarja 200-ditore)"
+      "sq": "Filtri i trendit (mesatarja 200-ditore)",
+      "de": "Trendfilter (200-Tage-Durchschnitt)",
+      "sr": "Filter trenda (200-dnevni prosek)"
     },
     "Trend filters inside Composer symphonies and most rule-based bot builders": {
-      "sq": "Filtra trendi brenda simfonive të Composer dhe në shumicën e ndërtuesve të bot-eve me rregulla"
+      "sq": "Filtra trendi brenda simfonive të Composer dhe në shumicën e ndërtuesve të bot-eve me rregulla",
+      "de": "Trendfilter in Composer-Symphonien und den meisten regelbasierten Bot-Baukästen",
+      "sr": "Filteri trenda u Composer simfonijama i većini alata za botove zasnovane na pravilima"
     },
     "Used by": {
-      "sq": "Përdoret nga"
+      "sq": "Përdoret nga",
+      "de": "Genutzt von",
+      "sr": "Koriste"
     },
     "Very few trades (about one a year).": {
-      "sq": "Shumë pak tregtime (rreth një në vit)."
+      "sq": "Shumë pak tregtime (rreth një në vit).",
+      "de": "Sehr wenige Trades (etwa einer pro Jahr).",
+      "sr": "Vrlo malo trgovina (oko jedna godišnje)."
     },
     "Volatility switch (VIX)": {
-      "sq": "Ndërprerësi i volatilitetit (VIX)"
+      "sq": "Ndërprerësi i volatilitetit (VIX)",
+      "de": "Volatilitätsschalter (VIX)",
+      "sr": "Prekidač volatilnosti (VIX)"
     },
     "Weekly cash-secured put": {
-      "sq": "Put javor i mbuluar me para"
+      "sq": "Put javor i mbuluar me para",
+      "de": "Wöchentlicher bargeldgedeckter Put",
+      "sr": "Nedeljni put pokriven gotovinom"
     },
     "Weekly covered call": {
-      "sq": "Covered call javor"
+      "sq": "Covered call javor",
+      "de": "Wöchentlicher Covered Call",
+      "sr": "Nedeljni covered call"
     },
     "When SPY is above its 200-day average and its 2-day RSI falls below 10, buy at the close; sell when it closes above its 5-day average. Otherwise sit in T-bills.": {
-      "sq": "Kur SPY është mbi mesataren 200-ditore dhe RSI 2-ditor bie nën 10, blini në mbyllje; shisni kur mbyll mbi mesataren 5-ditore. Përndryshe qëndroni në bono thesari."
+      "sq": "Kur SPY është mbi mesataren 200-ditore dhe RSI 2-ditor bie nën 10, blini në mbyllje; shisni kur mbyll mbi mesataren 5-ditore. Përndryshe qëndroni në bono thesari.",
+      "de": "Liegt SPY über seinem 200-Tage-Durchschnitt und fällt sein 2-Tage-RSI unter 10, zum Schlusskurs kaufen; verkaufen, wenn er über dem 5-Tage-Durchschnitt schließt. Sonst in T-Bills bleiben.",
+      "sr": "Kada je SPY iznad 200-dnevnog proseka i njegov 2-dnevni RSI padne ispod 10, kupite na zatvaranju; prodajte kada zatvori iznad 5-dnevnog proseka. Inače budite u trezorskim zapisima."
     },
     "Where you can run a strategy with an AI agent": {
-      "sq": "Ku mund ta zbatoni një strategji me një agjent AI"
+      "sq": "Ku mund ta zbatoni një strategji me një agjent AI",
+      "de": "Wo Sie eine Strategie mit einem KI-Agenten umsetzen können",
+      "sr": "Gde možete pokrenuti strategiju sa AI agentom"
     },
     "Whipsaws: several small losses when the price hovers around the average; misses the first part of rebounds.": {
-      "sq": "Sinjale të rreme: disa humbje të vogla kur çmimi lëviz rreth mesatares; humbet pjesën e parë të rimëkëmbjeve."
+      "sq": "Sinjale të rreme: disa humbje të vogla kur çmimi lëviz rreth mesatares; humbet pjesën e parë të rimëkëmbjeve.",
+      "de": "Fehlsignale: mehrere kleine Verluste, wenn der Kurs um den Durchschnitt pendelt; verpasst den ersten Teil von Erholungen.",
+      "sr": "Lažni signali: nekoliko malih gubitaka kada se cena kreće oko proseka; propušta prvi deo oporavka."
     },
     "Worst fall": {
-      "sq": "Rënia më e madhe"
+      "sq": "Rënia më e madhe",
+      "de": "Größter Rückgang",
+      "sr": "Najveći pad"
     },
     "Your message": {
-      "sq": "Mesazhi juaj"
+      "sq": "Mesazhi juaj",
+      "de": "Ihre Nachricht",
+      "sr": "Vaša poruka"
     },
     "checks daily": {
-      "sq": "kontrollon çdo ditë"
+      "sq": "kontrollon çdo ditë",
+      "de": "prüft täglich",
+      "sr": "proverava dnevno"
     },
     "checks monthly": {
-      "sq": "kontrollon çdo muaj"
+      "sq": "kontrollon çdo muaj",
+      "de": "prüft monatlich",
+      "sr": "proverava mesečno"
     },
     "checks weekly": {
-      "sq": "kontrollon çdo javë"
+      "sq": "kontrollon çdo javë",
+      "de": "prüft wöchentlich",
+      "sr": "proverava nedeljno"
     },
     "eToro Agent Portfolios example agent (VIX above 25 = defensive, below 20 = back in)": {
-      "sq": "Agjenti shembull i eToro Agent Portfolios (VIX mbi 25 = mbrojtës, nën 20 = rikthim)"
+      "sq": "Agjenti shembull i eToro Agent Portfolios (VIX mbi 25 = mbrojtës, nën 20 = rikthim)",
+      "de": "Beispielagent von eToro Agent Portfolios (VIX über 25 = defensiv, unter 20 = wieder investiert)",
+      "sr": "Primer agenta eToro Agent Portfolios (VIX iznad 25 = odbrambeno, ispod 20 = povratak)"
     },
     "low risk": {
-      "sq": "rrezik i ulët"
+      "sq": "rrezik i ulët",
+      "de": "geringes Risiko",
+      "sr": "nizak rizik"
     },
     "medium risk": {
-      "sq": "rrezik mesatar"
+      "sq": "rrezik mesatar",
+      "de": "mittleres Risiko",
+      "sr": "srednji rizik"
     },
     "modelled": {
-      "sq": "i modeluar"
+      "sq": "i modeluar",
+      "de": "modelliert",
+      "sr": "modelovano"
     },
     "no strategy beat simply holding the S&P 500 on return over this period": {
-      "sq": "asnjë strategji nuk e mundi thjesht mbajtjen e S&P 500 për nga kthimi gjatë kësaj periudhe"
+      "sq": "asnjë strategji nuk e mundi thjesht mbajtjen e S&P 500 për nga kthimi gjatë kësaj periudhe",
+      "de": "keine Strategie schlug beim Ertrag in diesem Zeitraum das einfache Halten des S&P 500",
+      "sr": "nijedna strategija nije nadmašila obično držanje S&P 500 po prinosu u ovom periodu"
     },
     "opening an account": {
-      "sq": "hapjen e një llogarie"
+      "sq": "hapjen e një llogarie",
+      "de": "Kontoeröffnung",
+      "sr": "otvaranje računa"
     },
     "press release, 21 Oct 2026": {
-      "sq": "njoftim për shtyp, 21 tetor 2026"
+      "sq": "njoftim për shtyp, 21 tetor 2026",
+      "de": "Pressemitteilung, 21. Okt. 2026",
+      "sr": "saopštenje za medije, 21. okt. 2026"
     },
     "ready-made and AI-built \"symphonies\" that trade automatically": {
-      "sq": "\"simfoni\" të gatshme dhe të ndërtuara nga AI që tregtojnë automatikisht"
+      "sq": "\"simfoni\" të gatshme dhe të ndërtuara nga AI që tregtojnë automatikisht",
+      "de": "fertige und KI-erstellte \"Symphonien\", die automatisch handeln",
+      "sr": "gotove i AI-om napravljene \"simfonije\" koje trguju automatski"
     },
     "uses options": {
-      "sq": "përdor opsione"
+      "sq": "përdor opsione",
+      "de": "nutzt Optionen",
+      "sr": "koristi opcije"
     },
     "{c}% a year, worst fall {d}%": {
-      "sq": "{c}% në vit, rënia më e madhe {d}%"
+      "sq": "{c}% në vit, rënia më e madhe {d}%",
+      "de": "{c} % pro Jahr, größter Rückgang {d} %",
+      "sr": "{c}% godišnje, najveći pad {d}%"
     },
     "{n} cut the worst fall by a third or more. Bots and AI agents automate rules — they do not remove risk.": {
-      "sq": "{n} e ulën rënien më të madhe me një të tretën ose më shumë. Bot-et dhe agjentët e AI automatizojnë rregulla — nuk e heqin rrezikun."
+      "sq": "{n} e ulën rënien më të madhe me një të tretën ose më shumë. Bot-et dhe agjentët e AI automatizojnë rregulla — nuk e heqin rrezikun.",
+      "de": "{n} verringerten den größten Rückgang um ein Drittel oder mehr. Bots und KI-Agenten automatisieren Regeln — sie beseitigen kein Risiko.",
+      "sr": "{n} je smanjilo najveći pad za trećinu ili više. Botovi i AI agenti automatizuju pravila — ne uklanjaju rizik."
     },
     "€10,000 became": {
-      "sq": "€10.000 u bënë"
+      "sq": "€10.000 u bënë",
+      "de": "Aus 10.000 € wurden",
+      "sr": "10.000 € je postalo"
     },
     "high risk": {
-      "sq": "rrezik i lartë"
+      "sq": "rrezik i lartë",
+      "de": "hohes Risiko",
+      "sr": "visok rizik"
     },
     "ten years": {
-      "sq": "dhjetë vjet"
+      "sq": "dhjetë vjet",
+      "de": "zehn Jahre",
+      "sr": "deset godina"
     },
     "1 strategy beat simply holding the S&P 500 on return over this period": {
-      "sq": "1 strategji e mundi thjesht mbajtjen e S&P 500 për nga kthimi gjatë kësaj periudhe"
+      "sq": "1 strategji e mundi thjesht mbajtjen e S&P 500 për nga kthimi gjatë kësaj periudhe",
+      "de": "1 Strategie schlug beim Ertrag in diesem Zeitraum das einfache Halten des S&P 500",
+      "sr": "1 strategija je nadmašila obično držanje S&P 500 po prinosu u ovom periodu"
     },
     "{n} strategies beat simply holding the S&P 500 on return over this period": {
-      "sq": "{n} strategji e mundën thjesht mbajtjen e S&P 500 për nga kthimi gjatë kësaj periudhe"
+      "sq": "{n} strategji e mundën thjesht mbajtjen e S&P 500 për nga kthimi gjatë kësaj periudhe",
+      "de": "{n} Strategien schlugen beim Ertrag in diesem Zeitraum das einfache Halten des S&P 500",
+      "sr": "{n} strategija je nadmašilo obično držanje S&P 500 po prinosu u ovom periodu"
     },
     "13D within 5 business days; Form 4 within 2 business days; IEP quarterly results": {
-      "sq": "13D brenda 5 ditëve pune; Form 4 brenda 2 ditëve pune; rezultatet tremujore të IEP"
+      "sq": "13D brenda 5 ditëve pune; Form 4 brenda 2 ditëve pune; rezultatet tremujore të IEP",
+      "de": "13D innerhalb von 5 Geschäftstagen; Form 4 innerhalb von 2 Geschäftstagen; IEP-Quartalsergebnisse",
+      "sr": "13D u roku od 5 radnih dana; Form 4 u roku od 2 radna dana; tromesečni rezultati IEP"
     },
     "13F (quarterly, ≤45 days)": {
-      "sq": "13F (tremujor, ≤45 ditë)"
+      "sq": "13F (tremujor, ≤45 ditë)",
+      "de": "13F (vierteljährlich, ≤45 Tage)",
+      "sr": "13F (tromesečno, ≤45 dana)"
     },
     "13F (quarterly, ≤45 days); 13G/13D on larger stakes": {
-      "sq": "13F (tremujor, ≤45 ditë); 13G/13D për pjesëmarrje më të mëdha"
+      "sq": "13F (tremujor, ≤45 ditë); 13G/13D për pjesëmarrje më të mëdha",
+      "de": "13F (vierteljährlich, ≤45 Tage); 13G/13D bei größeren Beteiligungen",
+      "sr": "13F (tromesečno, ≤45 dana); 13G/13D za veće udele"
     },
     "13F (quarterly, ≤45 days); Form 4 within 2 business days on stakes above 10%; annual letter and meeting": {
-      "sq": "13F (tremujor, ≤45 ditë); Form 4 brenda 2 ditëve pune për pjesëmarrje mbi 10%; letra dhe mbledhja vjetore"
+      "sq": "13F (tremujor, ≤45 ditë); Form 4 brenda 2 ditëve pune për pjesëmarrje mbi 10%; letra dhe mbledhja vjetore",
+      "de": "13F (vierteljährlich, ≤45 Tage); Form 4 innerhalb von 2 Geschäftstagen bei Beteiligungen über 10 %; Jahresbrief und Hauptversammlung",
+      "sr": "13F (tromesečno, ≤45 dana); Form 4 u roku od 2 radna dana za udele iznad 10%; godišnje pismo i skupština"
     },
     "13F (quarterly, ≤45 days); TV interviews": {
-      "sq": "13F (tremujor, ≤45 ditë); intervista televizive"
+      "sq": "13F (tremujor, ≤45 ditë); intervista televizive",
+      "de": "13F (vierteljährlich, ≤45 Tage); TV-Interviews",
+      "sr": "13F (tromesečno, ≤45 dana); TV intervjui"
     },
     "13F (quarterly, ≤45 days); interviews and conference talks": {
-      "sq": "13F (tremujor, ≤45 ditë); intervista dhe fjalime në konferenca"
+      "sq": "13F (tremujor, ≤45 ditë); intervista dhe fjalime në konferenca",
+      "de": "13F (vierteljährlich, ≤45 Tage); Interviews und Konferenzauftritte",
+      "sr": "13F (tromesečno, ≤45 dana); intervjui i govori na konferencijama"
     },
     "13F; 13D within 5 business days; posts on X; weekly NAV of Pershing Square Holdings": {
-      "sq": "13F; 13D brenda 5 ditëve pune; postime në X; NAV javor i Pershing Square Holdings"
+      "sq": "13F; 13D brenda 5 ditëve pune; postime në X; NAV javor i Pershing Square Holdings",
+      "de": "13F; 13D innerhalb von 5 Geschäftstagen; Beiträge auf X; wöchentlicher NAV von Pershing Square Holdings",
+      "sr": "13F; 13D u roku od 5 radnih dana; objave na X; nedeljni NAV Pershing Square Holdings"
     },
     "Activist; takes big stakes and pushes for board seats, sales or buybacks": {
-      "sq": "Aktivist; merr pjesëmarrje të mëdha dhe shtyn për vende në bord, shitje ose riblerje aksionesh"
+      "sq": "Aktivist; merr pjesëmarrje të mëdha dhe shtyn për vende në bord, shitje ose riblerje aksionesh",
+      "de": "Aktivist; geht große Beteiligungen ein und drängt auf Aufsichtsratssitze, Verkäufe oder Aktienrückkäufe",
+      "sr": "Aktivista; uzima velike udele i gura za mesta u odboru, prodaje ili otkupe akcija"
     },
     "Concentrated activist; 8–12 large positions in high-quality companies": {
-      "sq": "Aktivist i përqendruar; 8–12 pozicione të mëdha në kompani me cilësi të lartë"
+      "sq": "Aktivist i përqendruar; 8–12 pozicione të mëdha në kompani me cilësi të lartë",
+      "de": "Konzentrierter Aktivist; 8–12 große Positionen in Qualitätsunternehmen",
+      "sr": "Koncentrisani aktivista; 8–12 velikih pozicija u kvalitetnim kompanijama"
     },
     "Credit and distressed-debt investing; market-cycle thinking": {
-      "sq": "Investime në kredi dhe borxhe në vështirësi; mendim sipas cikleve të tregut"
+      "sq": "Investime në kredi dhe borxhe në vështirësi; mendim sipas cikleve të tregut",
+      "de": "Kredit- und Distressed-Debt-Investments; Denken in Marktzyklen",
+      "sr": "Ulaganja u kredite i problematične dugove; razmišljanje o tržišnim ciklusima"
     },
     "Deep value with a 'margin of safety'; often holds large cash and illiquid assets": {
-      "sq": "Vlerë e thellë me 'marzh sigurie'; shpesh mban shumë para cash dhe asete jolikuide"
+      "sq": "Vlerë e thellë me 'marzh sigurie'; shpesh mban shumë para cash dhe asete jolikuide",
+      "de": "Tiefer Value-Ansatz mit 'Sicherheitsmarge'; hält oft viel Bargeld und illiquide Vermögenswerte",
+      "sr": "Duboka vrednost sa 'marginom sigurnosti'; često drži mnogo gotovine i nelikvidne imovine"
     },
     "Free memos (several a year); Brookfield/Oaktree filings": {
-      "sq": "Memo falas (disa në vit); dokumentet e Brookfield/Oaktree"
+      "sq": "Memo falas (disa në vit); dokumentet e Brookfield/Oaktree",
+      "de": "Kostenlose Memos (mehrere pro Jahr); Brookfield/Oaktree-Meldungen",
+      "sr": "Besplatni memoi (nekoliko godišnje); izveštaji Brookfield/Oaktree"
     },
     "Global macro; concentrated, fast-changing bets driven by liquidity and rates": {
-      "sq": "Makro globale; baste të përqendruara që ndryshojnë shpejt, të nxitura nga likuiditeti dhe normat e interesit"
+      "sq": "Makro globale; baste të përqendruara që ndryshojnë shpejt, të nxitura nga likuiditeti dhe normat e interesit",
+      "de": "Global Macro; konzentrierte, schnell wechselnde Wetten, getrieben von Liquidität und Zinsen",
+      "sr": "Globalna makro strategija; koncentrisane opklade koje se brzo menjaju, vođene likvidnošću i kamatama"
     },
     "Long-term value; buys whole businesses and large stakes in quality companies": {
-      "sq": "Vlerë afatgjatë; blen biznese të tëra dhe pjesëmarrje të mëdha në kompani cilësore"
+      "sq": "Vlerë afatgjatë; blen biznese të tëra dhe pjesëmarrje të mëdha në kompani cilësore",
+      "de": "Langfristiger Value-Ansatz; kauft ganze Unternehmen und große Beteiligungen an Qualitätsfirmen",
+      "sr": "Dugoročna vrednost; kupuje cele kompanije i velike udele u kvalitetnim firmama"
     },
     "Opportunistic; buys distressed or out-of-favour assets and big macro turning points": {
-      "sq": "Oportunist; blen asete në vështirësi ose të pavlerësuara dhe pikat e mëdha të kthesës makro"
+      "sq": "Oportunist; blen asete në vështirësi ose të pavlerësuara dhe pikat e mëdha të kthesës makro",
+      "de": "Opportunistisch; kauft notleidende oder unbeliebte Vermögenswerte und große makroökonomische Wendepunkte",
+      "sr": "Oportunista; kupuje problematičnu ili zanemarenu imovinu i velike makro preokrete"
     },
     "Very concentrated long-term value, US and Asia; few trades": {
-      "sq": "Vlerë afatgjatë shumë e përqendruar, SHBA dhe Azi; pak tregtime"
+      "sq": "Vlerë afatgjatë shumë e përqendruar, SHBA dhe Azi; pak tregtime",
+      "de": "Sehr konzentrierter langfristiger Value-Ansatz, USA und Asien; wenige Trades",
+      "sr": "Veoma koncentrisana dugoročna vrednost, SAD i Azija; malo trgovina"
     },
     "<strong>Apply once.</strong> <a href=\"{v0}/issues/new?template=correspondent.yml\" rel=\"noopener\" target=\"_blank\">Apply to be a correspondent</a> with your display name, a short bio and the topics you'd like to cover.": {
-      "sq": "<strong>Aplikoni një herë.</strong> <a href=\"{v0}/issues/new?template=correspondent.yml\" rel=\"noopener\" target=\"_blank\">Aplikoni për t'u bërë korrespondent</a> me emrin që do të shfaqet, një biografi të shkurtër dhe temat që dëshironi të mbuloni."
+      "sq": "<strong>Aplikoni një herë.</strong> <a href=\"{v0}/issues/new?template=correspondent.yml\" rel=\"noopener\" target=\"_blank\">Aplikoni për t'u bërë korrespondent</a> me emrin që do të shfaqet, një biografi të shkurtër dhe temat që dëshironi të mbuloni.",
+      "de": "<strong>Einmal bewerben.</strong> <a href=\"{v0}/issues/new?template=correspondent.yml\" rel=\"noopener\" target=\"_blank\">Als Korrespondent bewerben</a> mit Anzeigename, kurzer Biografie und den Themen, über die Sie schreiben möchten.",
+      "sr": "<strong>Prijavite se jednom.</strong> <a href=\"{v0}/issues/new?template=correspondent.yml\" rel=\"noopener\" target=\"_blank\">Prijavite se za dopisnika</a> sa imenom za prikaz, kratkom biografijom i temama koje želite da pokrivate."
     },
     "<strong>Editorial review.</strong> The editor approves, asks for changes in the comments, or declines. Approved articles appear on the <a href=\"{v0}investors.html\">Investors &amp; articles</a> page within a few minutes, and you get a comment with the link.": {
-      "sq": "<strong>Shqyrtimi editorial.</strong> Redaktori e miraton, kërkon ndryshime në komente ose e refuzon. Artikujt e miratuar shfaqen në faqen <a href=\"{v0}investors.html\">Investitorët &amp; artikujt</a> brenda pak minutash dhe ju merrni një koment me lidhjen."
+      "sq": "<strong>Shqyrtimi editorial.</strong> Redaktori e miraton, kërkon ndryshime në komente ose e refuzon. Artikujt e miratuar shfaqen në faqen <a href=\"{v0}investors.html\">Investitorët &amp; artikujt</a> brenda pak minutash dhe ju merrni një koment me lidhjen.",
+      "de": "<strong>Redaktionelle Prüfung.</strong> Die Redaktion gibt frei, bittet in den Kommentaren um Änderungen oder lehnt ab. Freigegebene Artikel erscheinen innerhalb weniger Minuten auf der Seite <a href=\"{v0}investors.html\">Investoren &amp; Artikel</a>, und Sie erhalten einen Kommentar mit dem Link.",
+      "sr": "<strong>Urednička provera.</strong> Urednik odobrava, traži izmene u komentarima ili odbija. Odobreni članci se pojavljuju na stranici <a href=\"{v0}investors.html\">Investitori i članci</a> za nekoliko minuta, a vi dobijate komentar sa linkom."
     },
     "<strong>Sign in.</strong> Correspondents use a free <a href=\"https://github.com/signup\" rel=\"noopener\" target=\"_blank\">GitHub account</a> as their login. There is no separate password to remember.": {
-      "sq": "<strong>Hyni.</strong> Korrespondentët përdorin një <a href=\"https://github.com/signup\" rel=\"noopener\" target=\"_blank\">llogari falas GitHub</a> për t'u identifikuar. Nuk ka fjalëkalim të veçantë për të mbajtur mend."
+      "sq": "<strong>Hyni.</strong> Korrespondentët përdorin një <a href=\"https://github.com/signup\" rel=\"noopener\" target=\"_blank\">llogari falas GitHub</a> për t'u identifikuar. Nuk ka fjalëkalim të veçantë për të mbajtur mend.",
+      "de": "<strong>Anmelden.</strong> Korrespondenten nutzen ein kostenloses <a href=\"https://github.com/signup\" rel=\"noopener\" target=\"_blank\">GitHub-Konto</a> als Login. Es gibt kein separates Passwort.",
+      "sr": "<strong>Prijavite se.</strong> Dopisnici koriste besplatan <a href=\"https://github.com/signup\" rel=\"noopener\" target=\"_blank\">GitHub nalog</a> za prijavu. Nema posebne lozinke za pamćenje."
     },
     "<strong>Submit articles.</strong> When your application is approved, use <a href=\"{v0}/issues/new?template=article.yml\" rel=\"noopener\" target=\"_blank\">Submit an article</a>. Write in Markdown and list your sources.": {
-      "sq": "<strong>Dërgoni artikuj.</strong> Kur aplikimi juaj miratohet, përdorni <a href=\"{v0}/issues/new?template=article.yml\" rel=\"noopener\" target=\"_blank\">Dërgo një artikull</a>. Shkruani në Markdown dhe rendisni burimet tuaja."
+      "sq": "<strong>Dërgoni artikuj.</strong> Kur aplikimi juaj miratohet, përdorni <a href=\"{v0}/issues/new?template=article.yml\" rel=\"noopener\" target=\"_blank\">Dërgo një artikull</a>. Shkruani në Markdown dhe rendisni burimet tuaja.",
+      "de": "<strong>Artikel einreichen.</strong> Nach der Freigabe Ihrer Bewerbung nutzen Sie <a href=\"{v0}/issues/new?template=article.yml\" rel=\"noopener\" target=\"_blank\">Artikel einreichen</a>. Schreiben Sie in Markdown und nennen Sie Ihre Quellen.",
+      "sr": "<strong>Pošaljite članke.</strong> Kada vam prijava bude odobrena, koristite <a href=\"{v0}/issues/new?template=article.yml\" rel=\"noopener\" target=\"_blank\">Pošalji članak</a>. Pišite u Markdownu i navedite izvore."
     },
     "Analyst Ledger publishes short, sourced research on investors, filings and market events. Correspondents write under their own name. The editor reviews every article before it goes live.": {
-      "sq": "Analyst Ledger publikon kërkime të shkurtra me burime për investitorët, dokumentet zyrtare dhe ngjarjet e tregut. Korrespondentët shkruajnë me emrin e tyre. Redaktori shqyrton çdo artikull para se të publikohet."
+      "sq": "Analyst Ledger publikon kërkime të shkurtra me burime për investitorët, dokumentet zyrtare dhe ngjarjet e tregut. Korrespondentët shkruajnë me emrin e tyre. Redaktori shqyrton çdo artikull para se të publikohet.",
+      "de": "Analyst Ledger veröffentlicht kurze, belegte Analysen zu Investoren, Meldungen und Marktereignissen. Korrespondenten schreiben unter eigenem Namen. Die Redaktion prüft jeden Artikel vor der Veröffentlichung.",
+      "sr": "Analyst Ledger objavljuje kratka istraživanja sa izvorima o investitorima, izveštajima i tržišnim događajima. Dopisnici pišu pod svojim imenom. Urednik pregleda svaki članak pre objave."
     },
     "Back every number with a source, ideally a primary one: an SEC filing, a company release or an official statistic.": {
-      "sq": "Mbështetni çdo numër me një burim, mundësisht parësor: një dokument në SEC, një njoftim të kompanisë ose një statistikë zyrtare."
+      "sq": "Mbështetni çdo numër me një burim, mundësisht parësor: një dokument në SEC, një njoftim të kompanisë ose një statistikë zyrtare.",
+      "de": "Belegen Sie jede Zahl mit einer Quelle, idealerweise einer Primärquelle: einer SEC-Meldung, einer Unternehmensmitteilung oder einer amtlichen Statistik.",
+      "sr": "Svaki broj potkrepite izvorom, po mogućstvu primarnim: izveštajem SEC-u, saopštenjem kompanije ili zvaničnom statistikom."
     },
     "Describe and explain. Don't tell readers to buy or sell, and don't publish price targets of your own.": {
-      "sq": "Përshkruani dhe shpjegoni. Mos u thoni lexuesve të blejnë ose të shesin dhe mos publikoni objektiva çmimi tuajat."
+      "sq": "Përshkruani dhe shpjegoni. Mos u thoni lexuesve të blejnë ose të shesin dhe mos publikoni objektiva çmimi tuajat.",
+      "de": "Beschreiben und erklären. Fordern Sie Leser nicht zum Kauf oder Verkauf auf und veröffentlichen Sie keine eigenen Kursziele.",
+      "sr": "Opisujte i objašnjavajte. Ne govorite čitaocima da kupuju ili prodaju i ne objavljujte sopstvene ciljne cene."
     },
     "Disclose any position you hold in the stocks you discuss.": {
-      "sq": "Deklaroni çdo pozicion që mbani në aksionet për të cilat shkruani."
+      "sq": "Deklaroni çdo pozicion që mbani në aksionet për të cilat shkruani.",
+      "de": "Legen Sie jede Position offen, die Sie in den besprochenen Aktien halten.",
+      "sr": "Objavite svaku poziciju koju držite u akcijama o kojima pišete."
     },
     "Guidelines": {
-      "sq": "Udhëzimet"
+      "sq": "Udhëzimet",
+      "de": "Richtlinien",
+      "sr": "Smernice"
     },
     "No promotion, paid content or undisclosed affiliate links.": {
-      "sq": "Pa promovim, përmbajtje të paguar ose lidhje afiliate të padeklaruara."
+      "sq": "Pa promovim, përmbajtje të paguar ose lidhje afiliate të padeklaruara.",
+      "de": "Keine Werbung, keine bezahlten Inhalte und keine nicht offengelegten Affiliate-Links.",
+      "sr": "Bez promocije, plaćenog sadržaja ili neprijavljenih affiliate linkova."
     },
     "Submissions are made on a public GitHub repository, so drafts waiting for review are visible there.": {
-      "sq": "Dërgesat bëhen në një depo publike GitHub, prandaj draftet që presin shqyrtim janë të dukshme atje."
+      "sq": "Dërgesat bëhen në një depo publike GitHub, prandaj draftet që presin shqyrtim janë të dukshme atje.",
+      "de": "Einreichungen erfolgen in einem öffentlichen GitHub-Repository, daher sind Entwürfe, die auf Prüfung warten, dort sichtbar.",
+      "sr": "Prijave se šalju u javni GitHub repozitorijum, pa su nacrti koji čekaju pregled tamo vidljivi."
     },
     "Write in your own words. Quote sparingly and link to the original.": {
-      "sq": "Shkruani me fjalët tuaja. Citoni pak dhe vendosni lidhjen te origjinali."
+      "sq": "Shkruani me fjalët tuaja. Citoni pak dhe vendosni lidhjen te origjinali.",
+      "de": "Schreiben Sie mit eigenen Worten. Zitieren Sie sparsam und verlinken Sie das Original.",
+      "sr": "Pišite svojim rečima. Citirajte umereno i stavite link ka originalu."
     },
     "Accuracy": {
-      "sq": "Saktësia"
+      "sq": "Saktësia",
+      "de": "Genauigkeit",
+      "sr": "Tačnost"
     },
     "Changes and contact": {
-      "sq": "Ndryshimet dhe kontakti"
+      "sq": "Ndryshimet dhe kontakti",
+      "de": "Änderungen und Kontakt",
+      "sr": "Izmene i kontakt"
     },
     "Contact": {
-      "sq": "Kontakti"
+      "sq": "Kontakti",
+      "de": "Kontakt",
+      "sr": "Kontakt"
     },
     "Hosting": {
-      "sq": "Hostimi"
+      "sq": "Hostimi",
+      "de": "Hosting",
+      "sr": "Hosting"
     },
     "Information only": {
-      "sq": "Vetëm informacion"
+      "sq": "Vetëm informacion",
+      "de": "Nur zur Information",
+      "sr": "Samo informativno"
     },
     "Last updated: 15 November 2026": {
-      "sq": "Përditësuar së fundmi: 15 nëntor 2026"
+      "sq": "Përditësuar së fundmi: 15 nëntor 2026",
+      "de": "Zuletzt aktualisiert: 15. November 2026",
+      "sr": "Poslednje ažuriranje: 15. novembar 2026"
     },
     "Our automated posting apps": {
-      "sq": "Aplikacionet tona të postimit automatik"
+      "sq": "Aplikacionet tona të postimit automatik",
+      "de": "Unsere Apps für automatisches Posten",
+      "sr": "Naše aplikacije za automatsko objavljivanje"
     },
     "Our social media apps": {
-      "sq": "Aplikacionet tona të rrjeteve sociale"
+      "sq": "Aplikacionet tona të rrjeteve sociale",
+      "de": "Unsere Social-Media-Apps",
+      "sr": "Naše aplikacije za društvene mreže"
     },
     "Use of the website": {
-      "sq": "Përdorimi i faqes"
+      "sq": "Përdorimi i faqes",
+      "de": "Nutzung der Website",
+      "sr": "Korišćenje sajta"
     },
     "What we store": {
-      "sq": "Çfarë ruajmë"
+      "sq": "Çfarë ruajmë",
+      "de": "Was wir speichern",
+      "sr": "Šta čuvamo"
     },
     "Translated for convenience. If the versions differ, the English version applies.": {
-      "sq": "Përkthyer për lehtësi. Nëse versionet ndryshojnë, vlen versioni në anglisht."
+      "sq": "Përkthyer për lehtësi. Nëse versionet ndryshojnë, vlen versioni në anglisht.",
+      "de": "Zur besseren Verständlichkeit übersetzt. Bei Abweichungen gilt die englische Fassung.",
+      "sr": "Prevedeno radi lakšeg razumevanja. Ako se verzije razlikuju, važi engleska verzija."
     },
     "Our automated posting tools (including our TikTok, Meta, Bluesky, Mastodon and Telegram integrations) publish content only to accounts operated by {v0}. They are not offered to other users.": {
-      "sq": "Mjetet tona të postimit automatik (përfshirë integrimet me TikTok, Meta, Bluesky, Mastodon dhe Telegram) publikojnë përmbajtje vetëm në llogaritë e menaxhuara nga {v0}. Ato nuk u ofrohen përdoruesve të tjerë."
+      "sq": "Mjetet tona të postimit automatik (përfshirë integrimet me TikTok, Meta, Bluesky, Mastodon dhe Telegram) publikojnë përmbajtje vetëm në llogaritë e menaxhuara nga {v0}. Ato nuk u ofrohen përdoruesve të tjerë.",
+      "de": "Unsere Tools für automatisches Posten (einschließlich unserer Integrationen mit TikTok, Meta, Bluesky, Mastodon und Telegram) veröffentlichen Inhalte nur auf Konten, die von {v0} betrieben werden. Sie werden anderen Nutzern nicht angeboten.",
+      "sr": "Naši alati za automatsko objavljivanje (uključujući integracije sa TikTok, Meta, Bluesky, Mastodon i Telegram) objavljuju sadržaj samo na nalozima kojima upravlja {v0}. Ne nude se drugim korisnicima."
     },
     "Our posting integrations (TikTok, Meta, Bluesky, Mastodon, Telegram) are used only to publish to accounts owned by {v0}. The access tokens for those accounts are stored encrypted and are used only to publish posts. We do not collect, store or share data about other users of those platforms.": {
-      "sq": "Integrimet tona të postimit (TikTok, Meta, Bluesky, Mastodon, Telegram) përdoren vetëm për të publikuar në llogaritë që zotërohen nga {v0}. Token-ët e aksesit për këto llogari ruhen të enkriptuar dhe përdoren vetëm për të publikuar postime. Nuk mbledhim, ruajmë ose ndajmë të dhëna për përdoruesit e tjerë të këtyre platformave."
+      "sq": "Integrimet tona të postimit (TikTok, Meta, Bluesky, Mastodon, Telegram) përdoren vetëm për të publikuar në llogaritë që zotërohen nga {v0}. Token-ët e aksesit për këto llogari ruhen të enkriptuar dhe përdoren vetëm për të publikuar postime. Nuk mbledhim, ruajmë ose ndajmë të dhëna për përdoruesit e tjerë të këtyre platformave.",
+      "de": "Unsere Posting-Integrationen (TikTok, Meta, Bluesky, Mastodon, Telegram) werden nur genutzt, um auf Konten von {v0} zu veröffentlichen. Die Zugriffstoken dieser Konten werden verschlüsselt gespeichert und nur zum Veröffentlichen verwendet. Wir erheben, speichern oder teilen keine Daten anderer Nutzer dieser Plattformen.",
+      "sr": "Naše integracije za objavljivanje (TikTok, Meta, Bluesky, Mastodon, Telegram) koriste se samo za objavljivanje na nalozima u vlasništvu {v0}. Pristupni tokeni za te naloge čuvaju se šifrovano i koriste se samo za objavljivanje. Ne prikupljamo, ne čuvamo i ne delimo podatke o drugim korisnicima tih platformi."
     },
     "Questions or removal requests: open an issue at github.com/analystledger/analystledger.github.io.": {
-      "sq": "Pyetje ose kërkesa për heqje: hapni një issue në github.com/analystledger/analystledger.github.io."
+      "sq": "Pyetje ose kërkesa për heqje: hapni një issue në github.com/analystledger/analystledger.github.io.",
+      "de": "Fragen oder Löschanfragen: Eröffnen Sie ein Issue unter github.com/analystledger/analystledger.github.io.",
+      "sr": "Pitanja ili zahtevi za uklanjanje: otvorite issue na github.com/analystledger/analystledger.github.io."
     },
     "The site is hosted on GitHub Pages; GitHub may log technical data such as IP addresses as described in GitHub's own privacy statement.": {
-      "sq": "Faqja hostohet në GitHub Pages; GitHub mund të regjistrojë të dhëna teknike si adresat IP, siç përshkruhet në deklaratën e privatësisë së vetë GitHub."
+      "sq": "Faqja hostohet në GitHub Pages; GitHub mund të regjistrojë të dhëna teknike si adresat IP, siç përshkruhet në deklaratën e privatësisë së vetë GitHub.",
+      "de": "Die Website wird auf GitHub Pages gehostet; GitHub kann technische Daten wie IP-Adressen protokollieren, wie in der eigenen Datenschutzerklärung von GitHub beschrieben.",
+      "sr": "Sajt je hostovan na GitHub Pages; GitHub može beležiti tehničke podatke kao što su IP adrese, kako je opisano u GitHub-ovoj izjavi o privatnosti."
     },
     "We collect data automatically from licensed data providers and public news reports. Data may be delayed, incomplete or wrong. Always check the original source before relying on anything published here.": {
-      "sq": "Të dhënat i mbledhim automatikisht nga ofrues të licencuar të të dhënave dhe nga lajmet publike. Të dhënat mund të jenë të vonuara, të paplota ose të gabuara. Kontrolloni gjithmonë burimin origjinal para se të mbështeteni te diçka e publikuar këtu."
+      "sq": "Të dhënat i mbledhim automatikisht nga ofrues të licencuar të të dhënave dhe nga lajmet publike. Të dhënat mund të jenë të vonuara, të paplota ose të gabuara. Kontrolloni gjithmonë burimin origjinal para se të mbështeteni te diçka e publikuar këtu.",
+      "de": "Wir erheben Daten automatisch von lizenzierten Datenanbietern und aus öffentlichen Nachrichten. Daten können verspätet, unvollständig oder falsch sein. Prüfen Sie immer die Originalquelle, bevor Sie sich auf hier Veröffentlichtes verlassen.",
+      "sr": "Podatke prikupljamo automatski od licenciranih dobavljača podataka i iz javnih vesti. Podaci mogu kasniti, biti nepotpuni ili netačni. Uvek proverite originalni izvor pre nego što se oslonite na nešto objavljeno ovde."
     },
     "We may update these terms at any time by posting a new version on this page. Contact: open an issue at github.com/analystledger/analystledger.github.io.": {
-      "sq": "Mund t'i përditësojmë këto kushte në çdo kohë duke publikuar një version të ri në këtë faqe. Kontakti: hapni një issue në github.com/analystledger/analystledger.github.io."
+      "sq": "Mund t'i përditësojmë këto kushte në çdo kohë duke publikuar një version të ri në këtë faqe. Kontakti: hapni një issue në github.com/analystledger/analystledger.github.io.",
+      "de": "Wir können diese Bedingungen jederzeit ändern, indem wir eine neue Fassung auf dieser Seite veröffentlichen. Kontakt: Eröffnen Sie ein Issue unter github.com/analystledger/analystledger.github.io.",
+      "sr": "Možemo ažurirati ove uslove u bilo kom trenutku objavljivanjem nove verzije na ovoj stranici. Kontakt: otvorite issue na github.com/analystledger/analystledger.github.io."
     },
     "We publish information about professional analysts' publicly reported rating changes (name, firm, date, rating, price target and source link) as reported by the press and data providers.": {
-      "sq": "Publikojmë informacione për ndryshimet e vlerësimeve të analistëve profesionistë të raportuara publikisht (emri, firma, data, vlerësimi, objektivi i çmimit dhe lidhja e burimit), siç raportohen nga shtypi dhe ofruesit e të dhënave."
+      "sq": "Publikojmë informacione për ndryshimet e vlerësimeve të analistëve profesionistë të raportuara publikisht (emri, firma, data, vlerësimi, objektivi i çmimit dhe lidhja e burimit), siç raportohen nga shtypi dhe ofruesit e të dhënave.",
+      "de": "Wir veröffentlichen Informationen über öffentlich gemeldete Ratingänderungen professioneller Analysten (Name, Firma, Datum, Rating, Kursziel und Quellenlink), wie von Presse und Datenanbietern berichtet.",
+      "sr": "Objavljujemo informacije o javno prijavljenim promenama ocena profesionalnih analitičara (ime, firma, datum, ocena, ciljna cena i link ka izvoru), kako ih prenose mediji i dobavljači podataka."
     },
     "You may read and share our pages for personal, non-commercial purposes. Do not attempt to disrupt the service.": {
-      "sq": "Mund t'i lexoni dhe t'i ndani faqet tona për qëllime personale, jo tregtare. Mos u përpiqni ta pengoni shërbimin."
+      "sq": "Mund t'i lexoni dhe t'i ndani faqet tona për qëllime personale, jo tregtare. Mos u përpiqni ta pengoni shërbimin.",
+      "de": "Sie dürfen unsere Seiten für persönliche, nicht kommerzielle Zwecke lesen und teilen. Versuchen Sie nicht, den Dienst zu stören.",
+      "sr": "Možete čitati i deliti naše stranice u lične, nekomercijalne svrhe. Ne pokušavajte da ometate uslugu."
     },
     "{v0} (\"we\") provides a free website and social media accounts that publish factual records of publicly reported Wall Street analyst rating and price-target changes. By using the website or following our accounts you agree to these terms.": {
-      "sq": "{v0} (\"ne\") ofron një faqe interneti falas dhe llogari në rrjetet sociale që publikojnë të dhëna faktike për ndryshimet e vlerësimeve dhe objektivave të çmimit nga analistët e Wall Street, të raportuara publikisht. Duke përdorur faqen ose duke ndjekur llogaritë tona, ju pranoni këto kushte."
+      "sq": "{v0} (\"ne\") ofron një faqe interneti falas dhe llogari në rrjetet sociale që publikojnë të dhëna faktike për ndryshimet e vlerësimeve dhe objektivave të çmimit nga analistët e Wall Street, të raportuara publikisht. Duke përdorur faqen ose duke ndjekur llogaritë tona, ju pranoni këto kushte.",
+      "de": "{v0} („wir“) bietet eine kostenlose Website und Social-Media-Konten, die sachliche Aufzeichnungen öffentlich gemeldeter Rating- und Kurszieländerungen von Wall-Street-Analysten veröffentlichen. Mit der Nutzung der Website oder dem Folgen unserer Konten stimmen Sie diesen Bedingungen zu.",
+      "sr": "{v0} („mi“) pruža besplatan sajt i naloge na društvenim mrežama koji objavljuju činjenične zapise o javno prijavljenim promenama ocena i ciljnih cena analitičara sa Wall Street-a. Korišćenjem sajta ili praćenjem naših naloga prihvatate ove uslove."
     },
     "{v0} We are not a broker, investment adviser or financial institution and we do not offer personalised recommendations.": {
-      "sq": "{v0} Nuk jemi broker, këshilltar investimesh apo institucion financiar dhe nuk ofrojmë rekomandime të personalizuara."
+      "sq": "{v0} Nuk jemi broker, këshilltar investimesh apo institucion financiar dhe nuk ofrojmë rekomandime të personalizuara.",
+      "de": "{v0} Wir sind kein Broker, Anlageberater oder Finanzinstitut und bieten keine persönlichen Empfehlungen an.",
+      "sr": "{v0} Nismo broker, investicioni savetnik ni finansijska institucija i ne nudimo personalizovane preporuke."
     },
     "{v0} is a static website. We do not run accounts, logins, advertising trackers or analytics cookies, and we do not collect personal data from visitors.": {
-      "sq": "{v0} është një faqe statike. Nuk kemi llogari, hyrje, gjurmues reklamash apo cookies analitike dhe nuk mbledhim të dhëna personale nga vizitorët."
+      "sq": "{v0} është një faqe statike. Nuk kemi llogari, hyrje, gjurmues reklamash apo cookies analitike dhe nuk mbledhim të dhëna personale nga vizitorët.",
+      "de": "{v0} ist eine statische Website. Wir betreiben keine Konten, Logins, Werbetracker oder Analyse-Cookies und erheben keine personenbezogenen Daten von Besuchern.",
+      "sr": "{v0} je statički sajt. Nemamo naloge, prijave, reklamne trekere ni analitičke kolačiće i ne prikupljamo lične podatke posetilaca."
     }
   },
   "js": {
@@ -2759,121 +3103,199 @@
       "sr": "pojas ±2σ (≈95%)"
     },
     " Backtest: ": {
-      "sq": " Testimi historik: "
+      "sq": " Testimi historik: ",
+      "de": " Backtest: ",
+      "sr": " Istorijski test: "
     },
     "% a year, worst fall ": {
-      "sq": "% në vit, rënia më e madhe "
+      "sq": "% në vit, rënia më e madhe ",
+      "de": " % pro Jahr, größter Rückgang ",
+      "sr": "% godišnje, najveći pad "
     },
     "modelled": {
-      "sq": "i modeluar"
+      "sq": "i modeluar",
+      "de": "modelliert",
+      "sr": "modelovano"
     },
     "What do you want the strategy to do?": {
-      "sq": "Çfarë doni të bëjë strategjia?"
+      "sq": "Çfarë doni të bëjë strategjia?",
+      "de": "Was soll die Strategie tun?",
+      "sr": "Šta želite da strategija radi?"
     },
     "Grow money long term": {
-      "sq": "Rritje e parave afatgjatë"
+      "sq": "Rritje e parave afatgjatë",
+      "de": "Geld langfristig vermehren",
+      "sr": "Dugoročno uvećati novac"
     },
     "Earn regular income": {
-      "sq": "Të ardhura të rregullta"
+      "sq": "Të ardhura të rregullta",
+      "de": "Regelmäßiges Einkommen",
+      "sr": "Redovan prihod"
     },
     "Protect against crashes": {
-      "sq": "Mbrojtje nga rëniet e mëdha"
+      "sq": "Mbrojtje nga rëniet e mëdha",
+      "de": "Schutz vor Crashs",
+      "sr": "Zaštita od krahova"
     },
     "Save a fixed amount monthly": {
-      "sq": "Kursim i një shume fikse çdo muaj"
+      "sq": "Kursim i një shume fikse çdo muaj",
+      "de": "Monatlich einen festen Betrag sparen",
+      "sr": "Mesečno štedeti fiksni iznos"
     },
     "How much up-and-down can you live with?": {
-      "sq": "Sa luhatje mund të përballoni?"
+      "sq": "Sa luhatje mund të përballoni?",
+      "de": "Wie viel Auf und Ab halten Sie aus?",
+      "sr": "Koliko oscilacija možete da podnesete?"
     },
     "Low — sleep well": {
-      "sq": "Pak — të fle i qetë"
+      "sq": "Pak — të fle i qetë",
+      "de": "Wenig — ruhig schlafen",
+      "sr": "Malo — mirno spavati"
     },
     "Medium — some swings": {
-      "sq": "Mesatare — disa luhatje"
+      "sq": "Mesatare — disa luhatje",
+      "de": "Mittel — einige Schwankungen",
+      "sr": "Srednje — neke oscilacije"
     },
     "High — big swings": {
-      "sq": "Shumë — luhatje të mëdha"
+      "sq": "Shumë — luhatje të mëdha",
+      "de": "Hoch — große Schwankungen",
+      "sr": "Mnogo — velike oscilacije"
     },
     "How often can the strategy act?": {
-      "sq": "Sa shpesh mund të veprojë strategjia?"
+      "sq": "Sa shpesh mund të veprojë strategjia?",
+      "de": "Wie oft darf die Strategie handeln?",
+      "sr": "Koliko često strategija može da deluje?"
     },
     "Monthly": {
-      "sq": "Çdo muaj"
+      "sq": "Çdo muaj",
+      "de": "Monatlich",
+      "sr": "Mesečno"
     },
     "Weekly": {
-      "sq": "Çdo javë"
+      "sq": "Çdo javë",
+      "de": "Wöchentlich",
+      "sr": "Nedeljno"
     },
     "Daily": {
-      "sq": "Çdo ditë"
+      "sq": "Çdo ditë",
+      "de": "Täglich",
+      "sr": "Dnevno"
     },
     "Do you have options trading permission and experience?": {
-      "sq": "A keni leje dhe përvojë në tregtimin e opsioneve?"
+      "sq": "A keni leje dhe përvojë në tregtimin e opsioneve?",
+      "de": "Haben Sie eine Optionshandelsberechtigung und Erfahrung?",
+      "sr": "Imate li dozvolu i iskustvo u trgovanju opcijama?"
     },
     "Yes": {
-      "sq": "Po"
+      "sq": "Po",
+      "de": "Ja",
+      "sr": "Da"
     },
     "No": {
-      "sq": "Jo"
+      "sq": "Jo",
+      "de": "Nein",
+      "sr": "Ne"
     },
     "Roughly how much would you put in the agent's sub-account? Type a number in euros (e.g. 5000).": {
-      "sq": "Përafërsisht sa do të vendosnit në nën-llogarinë e agjentit? Shkruani një numër në euro (p.sh. 5000)."
+      "sq": "Përafërsisht sa do të vendosnit në nën-llogarinë e agjentit? Shkruani një numër në euro (p.sh. 5000).",
+      "de": "Wie viel würden Sie ungefähr auf das Unterkonto des Agenten einzahlen? Geben Sie eine Zahl in Euro ein (z. B. 5000).",
+      "sr": "Otprilike koliko biste uložili na podračun agenta? Upišite broj u evrima (npr. 5000)."
     },
     "Please type a number, for example 5000.": {
-      "sq": "Ju lutem shkruani një numër, për shembull 5000."
+      "sq": "Ju lutem shkruani një numër, për shembull 5000.",
+      "de": "Bitte geben Sie eine Zahl ein, zum Beispiel 5000.",
+      "sr": "Molimo upišite broj, na primer 5000."
     },
     "Main risk: ": {
-      "sq": "Rreziku kryesor: "
+      "sq": "Rreziku kryesor: ",
+      "de": "Hauptrisiko: ",
+      "sr": "Glavni rizik: "
     },
     "Used by: ": {
-      "sq": "Përdoret nga: "
+      "sq": "Përdoret nga: ",
+      "de": "Genutzt von: ",
+      "sr": "Koriste: "
     },
     "Based on your answers, these fit best:": {
-      "sq": "Sipas përgjigjeve tuaja, këto përshtaten më mirë:"
+      "sq": "Sipas përgjigjeve tuaja, këto përshtaten më mirë:",
+      "de": "Nach Ihren Antworten passen diese am besten:",
+      "sr": "Prema vašim odgovorima, ove najbolje odgovaraju:"
     },
     "Note: options strategies need 100 shares (or the cash to buy them). With under €5,000 that means a low-priced ETF, so they are ranked lower.": {
-      "sq": "Shënim: strategjitë me opsione kërkojnë 100 aksione (ose paratë për t'i blerë). Me më pak se €5.000 kjo do të thotë një ETF me çmim të ulët, prandaj renditen më poshtë."
+      "sq": "Shënim: strategjitë me opsione kërkojnë 100 aksione (ose paratë për t'i blerë). Me më pak se €5.000 kjo do të thotë një ETF me çmim të ulët, prandaj renditen më poshtë.",
+      "de": "Hinweis: Optionsstrategien brauchen 100 Aktien (oder das Geld, sie zu kaufen). Mit unter 5.000 € bedeutet das einen günstigen ETF, daher stehen sie weiter unten.",
+      "sr": "Napomena: strategije sa opcijama zahtevaju 100 akcija (ili novac da se kupe). Sa manje od 5.000 € to znači jeftin ETF, pa su rangirane niže."
     },
     "Pick one and I will write the instructions for your AI agent on the right.": {
-      "sq": "Zgjidhni një dhe unë do të shkruaj udhëzimet për agjentin tuaj të AI në të djathtë."
+      "sq": "Zgjidhni një dhe unë do të shkruaj udhëzimet për agjentin tuaj të AI në të djathtë.",
+      "de": "Wählen Sie eine aus, und ich schreibe rechts die Anweisungen für Ihren KI-Agenten.",
+      "sr": "Izaberite jednu i napisaću uputstva za vašeg AI agenta desno."
     },
     "Start again": {
-      "sq": "Fillo nga e para"
+      "sq": "Fillo nga e para",
+      "de": "Neu starten",
+      "sr": "Počni ponovo"
     },
     "Done — the instructions for \"{s}\" are on the right. Copy them into your agent. Remember: educational example, not advice; you stay responsible for every trade.": {
-      "sq": "Gati — udhëzimet për \"{s}\" janë në të djathtë. Kopjojini te agjenti juaj. Janë në anglisht, sepse agjentët e AI i ndjekin më saktë. Mos harroni: shembull edukativ, jo këshillë; ju mbeteni përgjegjës për çdo tregtim."
+      "sq": "Gati — udhëzimet për \"{s}\" janë në të djathtë. Kopjojini te agjenti juaj. Janë në anglisht, sepse agjentët e AI i ndjekin më saktë. Mos harroni: shembull edukativ, jo këshillë; ju mbeteni përgjegjës për çdo tregtim.",
+      "de": "Fertig — die Anweisungen für \"{s}\" stehen rechts. Kopieren Sie sie in Ihren Agenten. Sie sind auf Englisch, weil KI-Agenten Englisch am zuverlässigsten befolgen. Denken Sie daran: Lehrbeispiel, keine Beratung; Sie bleiben für jeden Trade verantwortlich.",
+      "sr": "Gotovo — uputstva za \"{s}\" su desno. Kopirajte ih u svog agenta. Na engleskom su, jer ih AI agenti najpouzdanije prate. Zapamtite: edukativni primer, ne savet; vi ostajete odgovorni za svaku trgovinu."
     },
     "I can't tell you what to buy or promise results. I can explain how a strategy works and how it behaved in the past, and help you write rules with safety limits.": {
-      "sq": "Nuk mund t'ju them çfarë të blini ose t'ju premtoj rezultate. Mund t'ju shpjegoj si funksionon një strategji dhe si u soll në të kaluarën, dhe t'ju ndihmoj të shkruani rregulla me kufij sigurie."
+      "sq": "Nuk mund t'ju them çfarë të blini ose t'ju premtoj rezultate. Mund t'ju shpjegoj si funksionon një strategji dhe si u soll në të kaluarën, dhe t'ju ndihmoj të shkruani rregulla me kufij sigurie.",
+      "de": "Ich kann Ihnen nicht sagen, was Sie kaufen sollen, oder Ergebnisse versprechen. Ich kann erklären, wie eine Strategie funktioniert und wie sie sich früher verhalten hat, und Ihnen helfen, Regeln mit Sicherheitsgrenzen zu schreiben.",
+      "sr": "Ne mogu vam reći šta da kupite niti obećati rezultate. Mogu objasniti kako strategija radi i kako se ponašala u prošlosti, i pomoći vam da napišete pravila sa sigurnosnim ograničenjima."
     },
     "Sharpe ratio = return above cash divided by how much the strategy swings. Above 0.5 is decent, above 1 is very good over long periods.": {
-      "sq": "Raporti Sharpe = kthimi mbi paratë cash i pjesëtuar me sa luhatet strategjia. Mbi 0,5 është i mirë, mbi 1 shumë i mirë për periudha të gjata."
+      "sq": "Raporti Sharpe = kthimi mbi paratë cash i pjesëtuar me sa luhatet strategjia. Mbi 0,5 është i mirë, mbi 1 shumë i mirë për periudha të gjata.",
+      "de": "Sharpe-Ratio = Rendite über dem Geldmarktzins geteilt durch die Schwankung der Strategie. Über 0,5 ist ordentlich, über 1 über lange Zeiträume sehr gut.",
+      "sr": "Šarpov odnos = prinos iznad gotovine podeljen sa koliko strategija oscilira. Iznad 0,5 je pristojno, iznad 1 vrlo dobro na duge staze."
     },
     "The worst fall (maximum drawdown) is the biggest drop from a peak to a later low. It shows the pain you must sit through.": {
-      "sq": "Rënia më e madhe (maximum drawdown) është rënia më e madhe nga një kulm deri te një pikë e ulët e mëvonshme. Tregon dhimbjen që duhet të duroni."
+      "sq": "Rënia më e madhe (maximum drawdown) është rënia më e madhe nga një kulm deri te një pikë e ulët e mëvonshme. Tregon dhimbjen që duhet të duroni.",
+      "de": "Der größte Rückgang (maximaler Drawdown) ist der stärkste Fall von einem Hoch bis zu einem späteren Tief. Er zeigt, was Sie aushalten müssen.",
+      "sr": "Najveći pad (maksimalni drawdown) je najveći pad od vrha do kasnijeg dna. Pokazuje bol koju morate da izdržite."
     },
     "One sigma is one standard deviation of price moves — the \"normal\" range. About two weeks in three stay within ±1 sigma; real markets have more extreme weeks than the bell curve. See the backtest page for SPY and QQQ.": {
-      "sq": "Një sigma është një devijim standard i lëvizjeve të çmimit — diapazoni \"normal\". Rreth dy javë nga tre mbeten brenda ±1 sigma; tregjet reale kanë më shumë javë ekstreme se kurba e kambanës. Shihni faqen e testimit historik për SPY dhe QQQ."
+      "sq": "Një sigma është një devijim standard i lëvizjeve të çmimit — diapazoni \"normal\". Rreth dy javë nga tre mbeten brenda ±1 sigma; tregjet reale kanë më shumë javë ekstreme se kurba e kambanës. Shihni faqen e testimit historik për SPY dhe QQQ.",
+      "de": "Ein Sigma ist eine Standardabweichung der Kursbewegungen — die \"normale\" Spanne. Etwa zwei von drei Wochen bleiben innerhalb von ±1 Sigma; echte Märkte haben mehr extreme Wochen als die Glockenkurve. Siehe die Backtest-Seite für SPY und QQQ.",
+      "sr": "Jedna sigma je jedna standardna devijacija kretanja cene — \"normalan\" opseg. Oko dve od tri nedelje ostaju unutar ±1 sigma; stvarna tržišta imaju više ekstremnih nedelja od zvonaste krive. Pogledajte stranicu istorijskog testa za SPY i QQQ."
     },
     "Write instructions for this": {
-      "sq": "Shkruaj udhëzime për këtë"
+      "sq": "Shkruaj udhëzime për këtë",
+      "de": "Anweisungen dafür schreiben",
+      "sr": "Napiši uputstva za ovo"
     },
     "First a few questions so the limits fit you.": {
-      "sq": "Së pari disa pyetje, që kufijtë t'ju përshtaten."
+      "sq": "Së pari disa pyetje, që kufijtë t'ju përshtaten.",
+      "de": "Zuerst ein paar Fragen, damit die Grenzen zu Ihnen passen.",
+      "sr": "Prvo nekoliko pitanja, da ograničenja odgovaraju vama."
     },
     "Start the questions": {
-      "sq": "Fillo pyetjet"
+      "sq": "Fillo pyetjet",
+      "de": "Fragen starten",
+      "sr": "Počni pitanja"
     },
     "I don't know that one yet. Try: grid bot, DCA, momentum, trend filter, RSI, VIX switch, covered call, cash-secured put — or press \"Start again\".": {
-      "sq": "Atë nuk e njoh ende. Provoni: grid bot, DCA, momentum, trend filter, RSI, VIX switch, covered call, cash-secured put — ose shtypni \"Fillo nga e para\"."
+      "sq": "Atë nuk e njoh ende. Provoni: grid bot, DCA, momentum, trend filter, RSI, VIX switch, covered call, cash-secured put — ose shtypni \"Fillo nga e para\".",
+      "de": "Das kenne ich noch nicht. Versuchen Sie: grid bot, DCA, momentum, trend filter, RSI, VIX switch, covered call, cash-secured put — oder klicken Sie auf \"Neu starten\".",
+      "sr": "To još ne znam. Probajte: grid bot, DCA, momentum, trend filter, RSI, VIX switch, covered call, cash-secured put — ili pritisnite \"Počni ponovo\"."
     },
     "Hi! I explain the strategies trading bots and AI agents use, show how they did in ten years of tests, and write safe instructions for your own AI agent. I never place trades or give personal advice. Five quick questions:": {
-      "sq": "Përshëndetje! Shpjegoj strategjitë që përdorin bot-et e tregtimit dhe agjentët e AI, tregoj si performuan në dhjetë vjet testesh dhe shkruaj udhëzime të sigurta për agjentin tuaj të AI. Nuk kryej kurrë tregtime dhe nuk jap këshilla personale. Pesë pyetje të shpejta:"
+      "sq": "Përshëndetje! Shpjegoj strategjitë që përdorin bot-et e tregtimit dhe agjentët e AI, tregoj si performuan në dhjetë vjet testesh dhe shkruaj udhëzime të sigurta për agjentin tuaj të AI. Nuk kryej kurrë tregtime dhe nuk jap këshilla personale. Pesë pyetje të shpejta:",
+      "de": "Hallo! Ich erkläre die Strategien von Trading-Bots und KI-Agenten, zeige, wie sie in zehn Jahren Tests abgeschnitten haben, und schreibe sichere Anweisungen für Ihren eigenen KI-Agenten. Ich handle nie und gebe keine persönliche Beratung. Fünf kurze Fragen:",
+      "sr": "Zdravo! Objašnjavam strategije trgovačkih botova i AI agenata, pokazujem kako su prošle u deset godina testova i pišem bezbedna uputstva za vašeg AI agenta. Nikada ne trgujem i ne dajem lične savete. Pet brzih pitanja:"
     },
     "Copied": {
-      "sq": "U kopjua"
+      "sq": "U kopjua",
+      "de": "Kopiert",
+      "sr": "Kopirano"
     },
     "Copy": {
-      "sq": "Kopjo"
+      "sq": "Kopjo",
+      "de": "Kopieren",
+      "sr": "Kopiraj"
     }
   }
 }
