@@ -107,7 +107,7 @@ def analyse(ticker, year):
         eps = drawdowns(days, vals, thr)
         if len(eps) >= 3:
             break
-    eps = sorted(eps, key=lambda e: e["depth"], reverse=True)[:4]
+    eps = sorted(eps, key=lambda e: e["depth"], reverse=True)[:3]
     pos = {d: i for i, d in enumerate(days)}
     for e in eps:  # raw closes around each low, for checking the data
         i = pos[e["trough"]]
