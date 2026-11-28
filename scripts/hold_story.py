@@ -298,7 +298,46 @@ def build(a, out_dir):
     return paths, caption
 
 
+def next_story():
+    """Build the next unposted story from data/hold_rotation.json and record it in data/hold_current.json."""
+    data = os.path.join(ROOT, "data")
+    rot = json.load(open(os.path.join(data, "hold_rotation.json")))
+    log_path = os.path.join(data, "post_log.json")
+    log = json.load(open(log_path)) if os.path.exists(log_path) else {}
+    cur_path = os.path.join(data, "hold_current.json")
+    cur = json.load(open(cur_path)) if os.path.exists(cur_path) else None
+    # keep retrying the current story until every platform has it, but only for a day
+    if cur and cur.get("built") == date.today().isoformat():
+        return cur
+    done_path = os.path.join(data, "hold_done.json")
+    done = json.load(open(done_path)) if os.path.exists(done_path) else []
+    if cur and cur["id"] not in done:  # last week's story is finished (the post log is trimmed, so keep our own list)
+        done.append(cur["id"])
+        json.dump(done, open(done_path, "w"), indent=1)
+    for item in rot:
+        sid = f"hold-{item['ticker'].lower()}-{item['year']}"
+        if sid in log or sid in done:
+            continue
+        rel = os.path.join("social", "hold", f"{item['ticker'].lower()}-{item['year']}")
+        try:
+            build(analyse(item["ticker"].upper(), int(item["year"])), os.path.join(ROOT, "docs", rel))
+        except SystemExit as e:
+            print(f"skip {sid}: {e}")
+            continue
+        cur = {"id": sid, "dir": rel, "built": date.today().isoformat()}
+        json.dump(cur, open(cur_path, "w"), indent=1)
+        print(f"Next story: {sid}")
+        return cur
+    print("Rotation finished - add more stocks to data/hold_rotation.json")
+    if os.path.exists(cur_path):
+        os.remove(cur_path)
+    return None
+
+
 if __name__ == "__main__":
+    if "--next" in sys.argv:
+        next_story()
+        sys.exit(0)
     args = [x for x in sys.argv[1:] if not x.startswith("--")]
     ticker, year = args[0].upper(), int(args[1])
     out = os.path.join(ROOT, "docs", "social", "hold", f"{ticker.lower()}-{year}")

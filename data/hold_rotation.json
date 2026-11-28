@@ -1,0 +1,98 @@
+[
+ {
+  "ticker": "NVDA",
+  "year": 2015
+ },
+ {
+  "ticker": "AAPL",
+  "year": 2007
+ },
+ {
+  "ticker": "TSLA",
+  "year": 2013
+ },
+ {
+  "ticker": "AMZN",
+  "year": 2006
+ },
+ {
+  "ticker": "META",
+  "year": 2013
+ },
+ {
+  "ticker": "NFLX",
+  "year": 2011
+ },
+ {
+  "ticker": "AMD",
+  "year": 2016
+ },
+ {
+  "ticker": "MSFT",
+  "year": 2009
+ },
+ {
+  "ticker": "PLTR",
+  "year": 2021
+ },
+ {
+  "ticker": "SHOP",
+  "year": 2016
+ },
+ {
+  "ticker": "MU",
+  "year": 2016
+ },
+ {
+  "ticker": "AVGO",
+  "year": 2015
+ },
+ {
+  "ticker": "LLY",
+  "year": 2015
+ },
+ {
+  "ticker": "COST",
+  "year": 2009
+ },
+ {
+  "ticker": "GOOGL",
+  "year": 2008
+ },
+ {
+  "ticker": "ADBE",
+  "year": 2012
+ },
+ {
+  "ticker": "CRM",
+  "year": 2010
+ },
+ {
+  "ticker": "INTC",
+  "year": 2015
+ },
+ {
+  "ticker": "UBER",
+  "year": 2019
+ },
+ {
+  "ticker": "COIN",
+  "year": 2021
+ },
+ {
+  "ticker": "SMCI",
+  "year": 2020
+ },
+ {
+  "ticker": "DIS",
+  "year": 2015
+ },
+ {
+  "ticker": "PYPL",
+  "year": 2016
+ },
+ {
+  "ticker": "BA",
+  "year": 2016
+ }
+]

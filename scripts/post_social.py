@@ -144,9 +144,38 @@ def queued_posts():
     return out
 
 
+def pick(images, n):
+    """Platforms with a small image limit get the hook, the ride, the drops and the call to action."""
+    if len(images) <= n:
+        return images
+    return [images[i] for i in (0, 1, 3, len(images) - 1)][:n]
+
+
+def hold_post():
+    """This week's 'hold test' carousel prepared by `hold_story.py --next` (data/hold_current.json)."""
+    cur = load_json(os.path.join(DATA, "hold_current.json"), None)
+    if not cur:
+        return None
+    meta = load_json(os.path.join(DOCS, cur["dir"], "story.json"), None)
+    if not meta:
+        return None
+    t, worst = meta["ticker"], sorted(meta["episodes"], key=lambda e: e["depth"], reverse=True)
+    final = meta["final"]
+    final_s = f"${final / 1e6:.2f}M" if final >= 1e6 else f"${final:,.0f}"
+    drops = ", ".join(f"-{e['depth']:.0%}" for e in sorted(meta["episodes"], key=lambda e: e["peak"]))
+    url = f"{SITE}/stocks/{t.lower()}.html"
+    short = (f"$10,000 in ${t} in {meta['year']} → {final_s} today.\n\nSounds easy. The ride included drops of {drops}. "
+             f"Swipe for what holding really felt like 👉\n\nEvery analyst call on ${t}: {url}\n{CFG['post_disclaimer']} #{t} #investing")
+    images = [os.path.join(DOCS, cur["dir"], f"{i}.png") for i in range(1, 7)]
+    return {"id": cur["id"], "short": short, "long": meta["caption"], "image": images[0], "images": images,
+            "title": f"The hold test: ${t} since {meta['year']}"}
+
+
 # ------------------------------------------------------------------ platforms
 def public_image_url(post, ext=None, path=None):
-    path = path or (os.path.splitext(post["image"])[0] + ext if ext else post["image"])
+    path = path or post["image"]
+    if ext:
+        path = os.path.splitext(path)[0] + ext
     rel = os.path.relpath(path, DOCS).replace(os.sep, "/")
     url = f"{SITE}/{rel}"
     if DRY:
@@ -179,10 +208,15 @@ def post_bluesky(p):
     text = p["short"]
     while len(text) > 300:
         text = text[:297] + "…"
-    with open(p["image"], "rb") as f:
-        blob = requests.post(f"{base}/com.atproto.repo.uploadBlob", data=f.read(),
-                             headers={**h, "Content-Type": "image/png"}, timeout=60)
-    blob.raise_for_status()
+    imgs = []
+    for path in (pick(p["images"], 4) if p.get("images") else [p["image"]]):
+        jpg = os.path.splitext(path)[0] + ".jpg"
+        path, ctype = (jpg, "image/jpeg") if os.path.exists(jpg) else (path, "image/png")
+        with open(path, "rb") as f:
+            blob = requests.post(f"{base}/com.atproto.repo.uploadBlob", data=f.read(),
+                                 headers={**h, "Content-Type": ctype}, timeout=60)
+        blob.raise_for_status()
+        imgs.append({"alt": p["title"], "image": blob.json()["blob"]})
     facets = []
     b = text.encode("utf-8")
     for m in re.finditer(rb"https?://[^\s]+", b):
@@ -193,8 +227,7 @@ def post_bluesky(p):
                        "features": [{"$type": "app.bsky.richtext.facet#tag", "tag": m.group(1).decode()}]})
     record = {"$type": "app.bsky.feed.post", "text": text, "facets": facets,
               "createdAt": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
-              "embed": {"$type": "app.bsky.embed.images",
-                        "images": [{"alt": p["title"], "image": blob.json()["blob"]}]}}
+              "embed": {"$type": "app.bsky.embed.images", "images": imgs}}
     r = requests.post(f"{base}/com.atproto.repo.createRecord", headers=h, timeout=30,
                       json={"repo": s["did"], "collection": "app.bsky.feed.post", "record": record})
     r.raise_for_status()
@@ -202,13 +235,16 @@ def post_bluesky(p):
 
 def post_mastodon(p):
     inst, h = ENV("MASTODON_INSTANCE").rstrip("/"), {"Authorization": f"Bearer {ENV('MASTODON_TOKEN')}"}
-    with open(p["image"], "rb") as f:
-        m = requests.post(f"{inst}/api/v2/media", headers=h, files={"file": f},
-                          data={"description": p["title"]}, timeout=60)
-    m.raise_for_status()
+    ids = []
+    for path in (pick(p["images"], 4) if p.get("images") else [p["image"]]):
+        with open(path, "rb") as f:
+            m = requests.post(f"{inst}/api/v2/media", headers=h, files={"file": f},
+                              data={"description": p["title"]}, timeout=60)
+        m.raise_for_status()
+        ids.append(m.json()["id"])
     text = p["long"][:495]
     r = requests.post(f"{inst}/api/v1/statuses", headers=h, timeout=30,
-                      data={"status": text, "media_ids[]": m.json()["id"], "visibility": "public"})
+                      data={"status": text, "media_ids[]": ids, "visibility": "public"})
     r.raise_for_status()
 
 
@@ -219,6 +255,19 @@ def post_telegram(p):
         with open(p["video"], "rb") as f:
             r = requests.post(f"https://api.telegram.org/bot{tok}/sendVideo", timeout=120,
                               data={"chat_id": chat, "caption": cap, "supports_streaming": "true"}, files={"video": f})
+        r.raise_for_status()
+        return
+    if p.get("images"):
+        files, media = {}, []
+        for i, path in enumerate(p["images"][:10]):
+            files[f"p{i}"] = open(path, "rb")
+            media.append({"type": "photo", "media": f"attach://p{i}", **({"caption": cap} if i == 0 else {})})
+        try:
+            r = requests.post(f"https://api.telegram.org/bot{tok}/sendMediaGroup", timeout=120,
+                              data={"chat_id": chat, "media": json.dumps(media)}, files=files)
+        finally:
+            for f in files.values():
+                f.close()
         r.raise_for_status()
         return
     with open(p["image"], "rb") as f:
@@ -275,14 +324,54 @@ def post_facebook(p):
                               data={"title": p["title"], "description": p["long"], "access_token": page_token()})
         r.raise_for_status()
         return
+    if p.get("images"):
+        ids = []
+        for path in p["images"]:
+            with open(path, "rb") as f:
+                u = requests.post(f"{GRAPH}/{ENV('FB_PAGE_ID')}/photos", timeout=60, files={"source": f},
+                                  data={"published": "false", "access_token": page_token()})
+            u.raise_for_status()
+            ids.append(u.json()["id"])
+        data = {"message": p["long"], "access_token": page_token()}
+        for i, mid in enumerate(ids):
+            data[f"attached_media[{i}]"] = json.dumps({"media_fbid": mid})
+        r = requests.post(f"{GRAPH}/{ENV('FB_PAGE_ID')}/feed", timeout=60, data=data)
+        r.raise_for_status()
+        return
     with open(p["image"], "rb") as f:
         r = requests.post(f"{GRAPH}/{ENV('FB_PAGE_ID')}/photos", timeout=60, files={"source": f},
                           data={"caption": p["long"], "access_token": page_token()})
     r.raise_for_status()
 
 
+def ig_wait(cid, tok, tries):
+    for _ in range(tries):
+        st = requests.get(f"{GRAPH}/{cid}", params={"fields": "status_code", "access_token": tok}, timeout=30).json()
+        if st.get("status_code") == "FINISHED":
+            return
+        if st.get("status_code") == "ERROR":
+            raise RuntimeError(f"Instagram processing error: {st}")
+        time.sleep(6)
+
+
 def post_instagram(p):
     ig, tok = ENV("IG_USER_ID"), page_token()
+    if p.get("images"):
+        kids = []
+        for path in p["images"][:10]:
+            c = requests.post(f"{GRAPH}/{ig}/media", timeout=60, data={
+                "image_url": public_image_url(p, ".jpg", path=path), "is_carousel_item": "true", "access_token": tok})
+            c.raise_for_status()
+            kids.append(c.json()["id"])
+        for k in kids:
+            ig_wait(k, tok, 20)
+        c = requests.post(f"{GRAPH}/{ig}/media", timeout=60, data={
+            "media_type": "CAROUSEL", "children": ",".join(kids), "caption": p["long"][:2150], "access_token": tok})
+        c.raise_for_status()
+        ig_wait(c.json()["id"], tok, 20)
+        r = requests.post(f"{GRAPH}/{ig}/media_publish", data={"creation_id": c.json()["id"], "access_token": tok}, timeout=60)
+        r.raise_for_status()
+        return
     if p.get("video"):  # publish as a Reel
         data = {"media_type": "REELS", "video_url": public_image_url(p, path=p["video"]), "share_to_feed": "true",
                 "caption": p["long"][:2150], "access_token": tok}
@@ -318,7 +407,7 @@ def post_tiktok(p):
         endpoint = "https://open.tiktokapis.com/v2/post/publish/content/init/"
         body = {"post_info": {"title": p["title"][:90], "description": p["long"][:2200], "privacy_level": privacy,
                               "disable_comment": False, "auto_add_music": False},
-                "source_info": {"source": "PULL_FROM_URL", "photo_cover_index": 0, "photo_images": [public_image_url(p, ".jpg")]},
+                "source_info": {"source": "PULL_FROM_URL", "photo_cover_index": 0, "photo_images": [public_image_url(p, ".jpg", path=x) for x in (p.get("images") or [p["image"]])][:35]},
                 "post_mode": "DIRECT_POST", "media_type": "PHOTO"}
     r = requests.post(endpoint, headers=h, json=body, timeout=60)
     if "unaudited_client" in r.text and privacy != "SELF_ONLY":
@@ -411,6 +500,9 @@ def main():
             posts.append(p)
     elif mode == "queue":
         posts = queued_posts()
+    elif mode == "hold":
+        hp = hold_post()
+        posts = [hp] if hp else []
     configured = [n for n, keys, _ in PLATFORMS if all(ENV(k) for k in keys)]
     print(f"Mode {mode}: {len(posts)} post(s); platforms configured: {configured or 'none yet'}")
     for p in posts:

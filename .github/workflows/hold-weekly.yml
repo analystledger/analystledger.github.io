@@ -1,0 +1,50 @@
+name: Weekly hold test carousel
+on:
+  schedule:
+    - cron: "17 8 * * 0"   # Sunday 08:17 UTC (09:17 Tirane)
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency: { group: site, cancel-in-progress: false }
+jobs:
+  hold:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install -r requirements.txt
+      - name: Build this week's carousel
+        env:
+          STOOQ_API_KEY: ${{ secrets.STOOQ_API_KEY }}
+        run: python scripts/hold_story.py --next
+      - name: Publish slides
+        run: |
+          git config user.name "analyst-ledger-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add -A
+          git diff --cached --quiet || git commit -m "Hold story $(date -u +%F)"
+          git pull --rebase -X ours || true
+          git push
+      - name: Post carousel
+        env:
+          X_API_KEY: ${{ secrets.X_API_KEY }}
+          X_API_SECRET: ${{ secrets.X_API_SECRET }}
+          X_ACCESS_TOKEN: ${{ secrets.X_ACCESS_TOKEN }}
+          X_ACCESS_SECRET: ${{ secrets.X_ACCESS_SECRET }}
+          BSKY_HANDLE: ${{ secrets.BSKY_HANDLE }}
+          BSKY_APP_PASSWORD: ${{ secrets.BSKY_APP_PASSWORD }}
+          MASTODON_INSTANCE: ${{ secrets.MASTODON_INSTANCE }}
+          MASTODON_TOKEN: ${{ secrets.MASTODON_TOKEN }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
+          FB_PAGE_TOKEN: ${{ secrets.FB_PAGE_TOKEN }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          TIKTOK_CLIENT_KEY: ${{ secrets.TIKTOK_CLIENT_KEY }}
+          TIKTOK_CLIENT_SECRET: ${{ secrets.TIKTOK_CLIENT_SECRET }}
+          TIKTOK_REFRESH_TOKEN: ${{ secrets.TIKTOK_REFRESH_TOKEN }}
+        run: |
+          python scripts/post_social.py hold
+          git add -A
+          git diff --cached --quiet || (git commit -m "Post log $(date -u +%F)" && git pull --rebase -X ours && git push)
