@@ -93,12 +93,24 @@ def analyse(ticker, year):
         raise SystemExit(f"No price data for {ticker}: {err}")
     days = sorted(d for d in hist if d >= f"{year}-01-01")
     closes = [hist[d] for d in days]
+    # drop isolated bad ticks: a close far from both neighbours while the neighbours agree
+    keep = [True] * len(closes)
+    for i in range(1, len(closes) - 1):
+        a, b, c = closes[i - 1], closes[i], closes[i + 1]
+        if abs(a / c - 1) < 0.12 and (b / a < 0.8 or b / a > 1.25) and (b / c < 0.8 or b / c > 1.25):
+            keep[i] = False
+    days = [d for d, k in zip(days, keep) if k]
+    closes = [c for c, k in zip(closes, keep) if k]
     vals = [START * c / closes[0] for c in closes]
     for thr in (0.5, 0.4, 0.3, 0.2):
         eps = drawdowns(days, vals, thr)
         if len(eps) >= 3:
             break
     eps = sorted(eps, key=lambda e: e["depth"], reverse=True)[:4]
+    pos = {d: i for i, d in enumerate(days)}
+    for e in eps:  # raw closes around each low, for checking the data
+        i = pos[e["trough"]]
+        e["closes_near_trough"] = {days[j]: round(closes[j], 2) for j in range(max(0, i - 5), min(len(days), i + 6))}
     eps.sort(key=lambda e: e["peak"])
     # time spent below a previous high
     run, below, longest, cur = 0, 0, 0, 0
