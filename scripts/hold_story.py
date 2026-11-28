@@ -93,11 +93,12 @@ def analyse(ticker, year):
         raise SystemExit(f"No price data for {ticker}: {err}")
     days = sorted(d for d in hist if d >= f"{year}-01-01")
     closes = [hist[d] for d in days]
-    # drop isolated bad ticks: a close far from both neighbours while the neighbours agree
+    # drop bad ticks: closes more than 12% away from the median of the surrounding week
     keep = [True] * len(closes)
-    for i in range(1, len(closes) - 1):
-        a, b, c = closes[i - 1], closes[i], closes[i + 1]
-        if abs(a / c - 1) < 0.12 and (b / a < 0.8 or b / a > 1.25) and (b / c < 0.8 or b / c > 1.25):
+    for i in range(len(closes)):
+        win = sorted(closes[max(0, i - 3):i + 4])
+        med = win[len(win) // 2]
+        if abs(closes[i] / med - 1) > 0.12:
             keep[i] = False
     days = [d for d, k in zip(days, keep) if k]
     closes = [c for c, k in zip(closes, keep) if k]
