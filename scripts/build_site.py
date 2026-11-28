@@ -160,7 +160,12 @@ def main():
                              reverse=True)[:10],
            ranked=ranked[:10], **common)
     render("analysts/index.html", "analysts.html", 1, analysts=a_list, **common)
-    render("stocks/index.html", "stocks.html", 1, stocks=s_list, **common)
+    hist = [[e["date"], e["ticker"], slugify(e["firm"]), {"bullish": 1, "neutral": 0, "bearish": -1}.get(stance(e.get("rating_to")), None),
+             e.get("pt_to"), e["action"]] for e in events]
+    hist_json = json.dumps({"e": hist, "c": {s["ticker"]: s.get("company", "") for s in s_list},
+                            "now": {s["ticker"]: s["avg_pt"] for s in s_list}, "first": events[-1]["date"] if events else ""},
+                           separators=(",", ":")).replace("</", "<\\/")
+    render("stocks/index.html", "stocks.html", 1, stocks=s_list, hist_json=hist_json, first_date=events[-1]["date"] if events else "", **common)
     for a in a_list:
         render(f"analysts/{a['slug']}.html", "analyst.html", 1, a=a, **common)
     for s in s_list:

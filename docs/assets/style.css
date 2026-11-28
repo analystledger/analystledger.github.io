@@ -62,3 +62,7 @@ table.ev{border-collapse:collapse;width:100%;font-size:14px}
 .langmenu a:hover{background:var(--bg);text-decoration:none}
 .langmenu a.on{background:#eef4ff;color:var(--brand)}.langmenu a.on b{color:var(--brand)}
 @media(max-width:760px){.langs{margin-left:auto}.langmenu{right:0}}
+
+.subtabs{display:flex;gap:4px;border-bottom:1px solid var(--line);margin:0 0 14px}.subtabs button{background:none;border:0;border-bottom:3px solid transparent;padding:8px 14px;font:inherit;font-weight:600;color:var(--muted);cursor:pointer}.subtabs button.on{color:var(--brand);border-bottom-color:var(--brand)}
+.hctl label{display:flex;align-items:center;gap:6px;font-size:14px;color:var(--muted)}.hctl input[type=date]{min-width:0;flex:none}
+.small{font-size:13px}

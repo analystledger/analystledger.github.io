@@ -2,6 +2,11 @@
 {% block title %}{{ _("All stocks") }} | {{ CFG.site_name }}{% endblock %}
 {% block body %}
 <h1>{{ _("Stocks") }}</h1>
+<div class="subtabs" role="tablist">
+<button role="tab" class="on" data-tab="current" aria-selected="true">{{ _("Current") }}</button>
+<button role="tab" data-tab="history" aria-selected="false">{{ _("Historical") }}</button>
+</div>
+<section id="tab-current">
 <p class="muted">{{ _("Consensus uses each firm's latest view in the last 12 months. Click a column to sort.") }}</p>
 <div class="filters"><input class="tf" type="search" placeholder="{{ _('Filter stocks…') }}" aria-label="{{ _('Filter') }}"></div>
 <div class="tw"><table class="ev sortable">
@@ -15,4 +20,86 @@
 <td>{{ s.n }}</td><td class="nw">{{ s.last }}</td></tr>
 {% endfor %}
 </tbody></table></div>
+</section>
+
+<section id="tab-history" hidden>
+<p class="muted">{{ _("See the analyst consensus as it stood on any past date, and how many rating actions each stock had in the period you pick. Data starts {d}.", d=first_date) }}</p>
+<div class="filters hctl">
+<label>{{ _("From") }} <input type="date" id="h-from"></label>
+<label>{{ _("As of") }} <input type="date" id="h-to"></label>
+<select id="h-quick" aria-label="{{ _('Quick pick') }}">
+<option value="">{{ _("Quick pick…") }}</option>
+<option value="0">{{ _("Last 3 months") }}</option><option value="1">{{ _("1 month ago") }}</option><option value="3">{{ _("3 months ago") }}</option>
+<option value="6">{{ _("6 months ago") }}</option><option value="12">{{ _("1 year ago") }}</option>
+</select>
+<input class="tf" id="h-q" type="search" placeholder="{{ _('Filter stocks…') }}" aria-label="{{ _('Filter') }}">
+</div>
+<p class="muted" id="h-sum"></p>
+<div class="tw"><table class="ev sortable" id="h-table">
+<thead><tr><th>{{ _("Ticker") }}</th><th>{{ _("Company") }}</th><th data-num>{{ _("Bullish") }}</th><th data-num>{{ _("Neutral") }}</th><th data-num>{{ _("Bearish") }}</th><th data-num>{{ _("Avg target then") }}</th><th data-num>{{ _("Avg target now") }}</th><th data-num>{{ _("Target change") }}</th><th data-num>{{ _("Actions in period") }}</th><th>{{ _("Last action") }}</th></tr></thead>
+<tbody></tbody></table></div>
+<p class="muted small">{{ _("Consensus on a date uses each firm's latest view in the 12 months before it. Stocks are listed if they had a view then.") }}</p>
+</section>
+
+<script>
+(function () {
+  var H = {{ hist_json|safe }};
+  var tabs = document.querySelectorAll(".subtabs button");
+  function show(name) {
+    tabs.forEach(function (b) { var on = b.dataset.tab === name; b.classList.toggle("on", on); b.setAttribute("aria-selected", on); });
+    document.getElementById("tab-current").hidden = name !== "current";
+    document.getElementById("tab-history").hidden = name !== "history";
+    if (name === "history") { draw(); history.replaceState(null, "", "#history"); }
+    else history.replaceState(null, "", location.pathname);
+  }
+  tabs.forEach(function (b) { b.addEventListener("click", function () { show(b.dataset.tab); }); });
+
+  var from = document.getElementById("h-from"), to = document.getElementById("h-to"), quick = document.getElementById("h-quick"), q = document.getElementById("h-q");
+  function iso(d) { return d.toISOString().slice(0, 10); }
+  function monthsAgo(n) { var d = new Date(); d.setMonth(d.getMonth() - n); return iso(d); }
+  to.value = iso(new Date()); from.value = monthsAgo(1); to.max = from.max = iso(new Date()); to.min = from.min = H.first;
+  function money(v) { return v ? "$" + v.toLocaleString("en-US", {minimumFractionDigits: 2, maximumFractionDigits: 2}) : "—"; }
+  function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return {"&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;"}[c]; }); }
+  function draw() {
+    var end = to.value || iso(new Date()), start = from.value || H.first;
+    if (start > end) { var x = start; start = end; end = x; }
+    var d = new Date(end); d.setFullYear(d.getFullYear() - 1); var cut = iso(d);
+    var S = {};
+    H.e.forEach(function (e) {           // events are newest first
+      if (e[0] > end) return;
+      var s = S[e[1]] || (S[e[1]] = {t: e[1], firms: {}, n: 0, last: ""});
+      if (e[0] >= start) { s.n++; if (!s.last) s.last = e[0]; }
+      if (e[0] >= cut && !(e[2] in s.firms)) s.firms[e[2]] = e;
+    });
+    var rows = [], tot = 0, filt = q.value.toLowerCase();
+    Object.keys(S).forEach(function (t) {
+      var s = S[t], v = Object.keys(s.firms).map(function (k) { return s.firms[k]; });
+      if (!v.length && !s.n) return;
+      var b = 0, nn = 0, r = 0, pts = [];
+      v.forEach(function (e) { if (e[3] === 1) b++; else if (e[3] === 0) nn++; else if (e[3] === -1) r++; if (e[4]) pts.push(e[4]); });
+      var then = pts.length ? pts.reduce(function (a, c) { return a + c; }, 0) / pts.length : null, now = H.now[t];
+      var ch = then && now ? (now / then - 1) * 100 : null, c = H.c[t] || "";
+      tot += s.n;
+      if (filt && (t + " " + c).toLowerCase().indexOf(filt) === -1) return;
+      rows.push({t: t, c: c, b: b, nn: nn, r: r, then: then, now: now, ch: ch, n: s.n, last: s.last});
+    });
+    rows.sort(function (a, b) { return b.n - a.n || (b.last > a.last ? 1 : -1); });
+    document.getElementById("h-table").tBodies[0].innerHTML = rows.map(function (x) {
+      return '<tr><td><a class="tk" href="' + x.t.toLowerCase().replace(".", "-") + '.html">' + esc(x.t) + '</a></td><td>' + esc(x.c) +
+        '</td><td class="r-bullish">' + x.b + '</td><td class="r-neutral">' + x.nn + '</td><td class="r-bearish">' + x.r +
+        '</td><td data-v="' + (x.then || 0) + '">' + money(x.then) + '</td><td data-v="' + (x.now || 0) + '">' + money(x.now) +
+        '</td><td data-v="' + (x.ch === null ? -9999 : x.ch) + '" class="' + (x.ch === null ? "" : x.ch >= 0 ? "up" : "down") + '">' +
+        (x.ch === null ? "—" : (x.ch >= 0 ? "+" : "") + x.ch.toFixed(1) + "%") + '</td><td>' + x.n + '</td><td class="nw">' + (x.last || "—") + '</td></tr>';
+    }).join("");
+    document.getElementById("h-sum").textContent = {{ _("{n} stocks · {a} rating actions between {s} and {e}")|tojson }}
+      .replace("{n}", rows.length).replace("{a}", tot).replace("{s}", start).replace("{e}", end);
+  }
+  [from, to].forEach(function (el) { el.addEventListener("change", function () { quick.value = ""; draw(); }); });
+  q.addEventListener("input", draw);
+  quick.addEventListener("change", function () {
+    if (quick.value === "") return; var n = +quick.value; to.value = monthsAgo(n); from.value = monthsAgo(n + 3); draw();
+  });
+  if (location.hash === "#history") show("history");
+})();
+</script>
 {% endblock %}

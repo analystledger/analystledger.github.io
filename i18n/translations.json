@@ -1,2026 +1,2116 @@
 {
- "ui": {
-  "1 unit of your currency = ? USD (US stocks trade in USD)": {
-   "de": "1 Einheit Ihrer Währung = ? USD (US-Aktien werden in USD gehandelt)",
-   "sq": "1 njësi e monedhës suaj = ? USD (aksionet amerikane tregtohen në USD)",
-   "sr": "1 jedinica vaše valute = ? USD (američke akcije se trguju u USD)"
-  },
-  "<b>Most weeks are calm.</b> About 5 weeks in 6 ended above −1σ — that is why weekly put selling wins most of the time.": {
-   "de": "<b>Die meisten Wochen sind ruhig.</b> Etwa 5 von 6 Wochen endeten über −1σ — deshalb gewinnt der wöchentliche Put-Verkauf meistens.",
-   "sq": "<b>Shumica e javëve janë të qeta.</b> Rreth 5 nga 6 javë përfunduan mbi −1σ — prandaj shitja javore e put-eve fiton shumicën e kohës.",
-   "sr": "<b>Većina nedelja je mirna.</b> Oko 5 od 6 nedelja završilo je iznad −1σ — zato nedeljna prodaja put opcija uglavnom dobija."
-  },
-  "<b>The tail is fatter than the bell curve.</b> Falls of 3σ or more were several times more frequent than a normal distribution predicts. One such week can erase months of small gains.": {
-   "de": "<b>Die Ränder sind dicker als bei der Glockenkurve.</b> Rückgänge von 3σ oder mehr kamen mehrfach häufiger vor, als eine Normalverteilung vorhersagt. Eine solche Woche kann monatelange kleine Gewinne auslöschen.",
-   "sq": "<b>Bishti është më i trashë se kurba e kambanës.</b> Rëniet prej 3σ ose më shumë ndodhën disa herë më shpesh nga sa parashikon shpërndarja normale. Një javë e tillë mund të fshijë muaj fitimesh të vogla.",
-   "sr": "<b>Rep je deblji od zvonaste krive.</b> Padovi od 3σ ili više bili su nekoliko puta češći nego što normalna raspodela predviđa. Jedna takva nedelja može izbrisati mesece malih dobitaka."
-  },
-  "<b>Win rate is not profit.</b> Always ask how big the losing weeks were, and whether the premiums collected cover them after commissions.": {
-   "de": "<b>Trefferquote ist kein Gewinn.</b> Fragen Sie immer, wie groß die Verlustwochen waren und ob die eingenommenen Prämien sie nach Gebühren decken.",
-   "sq": "<b>Përqindja e fitoreve nuk është fitim.</b> Pyesni gjithmonë sa të mëdha ishin javët me humbje dhe nëse primat e arkëtuara i mbulojnë pas komisioneve.",
-   "sr": "<b>Procenat dobitaka nije profit.</b> Uvek pitajte koliko su bile velike gubitničke nedelje i da li ih naplaćene premije pokrivaju posle provizija."
-  },
-  "A fixed yearly return is an assumption, not a forecast. Real returns vary and can be negative.": {
-   "de": "Eine feste Jahresrendite ist eine Annahme, keine Prognose. Echte Renditen schwanken und können negativ sein.",
-   "sq": "Një kthim vjetor fiks është supozim, jo parashikim. Kthimet reale ndryshojnë dhe mund të jenë negative.",
-   "sr": "Fiksni godišnji prinos je pretpostavka, a ne prognoza. Stvarni prinosi variraju i mogu biti negativni."
-  },
-  "A free, private trade journal: log practice or real stock and options trades, record why you entered, and track win rate, average win and loss, and total profit. Saved only in your browser.": {
-   "de": "Ein kostenloses, privates Trading-Journal: Übungs- oder echte Aktien- und Options-Trades erfassen, Einstiegsgründe notieren und Trefferquote, Ø Gewinn und Verlust sowie Gesamtergebnis verfolgen. Nur in Ihrem Browser gespeichert.",
-   "sq": "Ditar tregtimi falas dhe privat: regjistroni tregtime praktike ose reale me aksione dhe opsione, shënoni pse hytë dhe ndiqni përqindjen e fitoreve, fitimin dhe humbjen mesatare dhe rezultatin total. Ruhet vetëm në shfletuesin tuaj.",
-   "sr": "Besplatan, privatan dnevnik trgovanja: beležite vežbe ili stvarne trgovine akcijama i opcijama, zašto ste ušli, i pratite procenat dobitaka, prosečan dobitak i gubitak i ukupan rezultat. Čuva se samo u vašem pregledaču."
-  },
-  "About": {
-   "de": "Über uns",
-   "sq": "Rreth nesh",
-   "sr": "O nama"
-  },
-  "Account": {
-   "de": "Konto",
-   "sq": "Llogaria",
-   "sr": "Račun"
-  },
-  "Action": {
-   "de": "Aktion",
-   "sq": "Veprimi",
-   "sr": "Akcija"
-  },
-  "Actions": {
-   "de": "Aktionen",
-   "sq": "Veprime",
-   "sr": "Akcije"
-  },
-  "Add a trade": {
-   "de": "Trade hinzufügen",
-   "sq": "Shto një tregtim",
-   "sr": "Dodaj trgovinu"
-  },
-  "Added each month": {
-   "de": "Monatliche Einzahlung",
-   "sq": "Shtesë çdo muaj",
-   "sr": "Dodato svakog meseca"
-  },
-  "All actions": {
-   "de": "Alle Aktionen",
-   "sq": "Të gjitha veprimet",
-   "sr": "Sve akcije"
-  },
-  "All analysts": {
-   "de": "Alle Analysten",
-   "sq": "Të gjithë analistët",
-   "sr": "Svi analitičari"
-  },
-  "All impact levels": {
-   "de": "Alle Einflussstufen",
-   "sq": "Të gjitha nivelet e ndikimit",
-   "sr": "Svi nivoi uticaja"
-  },
-  "All news →": {
-   "de": "Alle Nachrichten →",
-   "sq": "Të gjitha lajmet →",
-   "sr": "Sve vesti →"
-  },
-  "All stocks": {
-   "de": "Alle Aktien",
-   "sq": "Të gjitha aksionet",
-   "sr": "Sve akcije"
-  },
-  "All trades": {
-   "de": "Alle Trades",
-   "sq": "Të gjitha tregtimet",
-   "sr": "Sve trgovine"
-  },
-  "Amount you can invest": {
-   "de": "Betrag, den Sie investieren können",
-   "sq": "Shuma që mund të investoni",
-   "sr": "Iznos koji možete da uložite"
-  },
-  "Analyst": {
-   "de": "Analyst",
-   "sq": "Analisti",
-   "sr": "Analitičar"
-  },
-  "Analyst / Firm": {
-   "de": "Analyst / Firma",
-   "sq": "Analisti / Firma",
-   "sr": "Analitičar / Firma"
-  },
-  "Analyst Ledger publishes factual records of publicly reported analyst rating and price-target changes for information only. Nothing here is investment advice or a recommendation to buy or sell any security. Data may be delayed or incomplete — always verify with the original source.": {
-   "de": "Analyst Ledger veröffentlicht sachliche Aufzeichnungen öffentlich gemeldeter Bewertungs- und Kurszieländerungen von Analysten ausschließlich zur Information. Nichts hier ist Anlageberatung oder eine Empfehlung zum Kauf oder Verkauf eines Wertpapiers. Daten können verzögert oder unvollständig sein — prüfen Sie stets die Originalquelle.",
-   "sq": "Analyst Ledger publikon regjistrime faktike të ndryshimeve të raportuara publikisht të vlerësimeve dhe objektivave të çmimit nga analistët, vetëm për informim. Asgjë këtu nuk është këshillë investimi apo rekomandim për të blerë ose shitur ndonjë letër me vlerë. Të dhënat mund të jenë të vonuara ose jo të plota — verifikoni gjithmonë me burimin origjinal.",
-   "sr": "Analyst Ledger objavljuje činjenične zapise javno objavljenih promena ocena i ciljanih cena analitičara isključivo informativno. Ništa ovde nije investicioni savet niti preporuka za kupovinu ili prodaju bilo koje hartije od vrednosti. Podaci mogu kasniti ili biti nepotpuni — uvek proverite originalni izvor."
-  },
-  "Analyst rating changes & track records": {
-   "de": "Analystenbewertungen & Trefferquoten",
-   "sq": "Ndryshimet e vlerësimeve të analistëve & rezultatet",
-   "sr": "Promene ocena analitičara i rezultati"
-  },
-  "Analysts": {
-   "de": "Analysten",
-   "sq": "Analistët",
-   "sr": "Analitičari"
-  },
-  "At expiry only, before commissions and taxes. Premium is per share; one contract = 100 shares.": {
-   "de": "Nur bei Verfall, vor Gebühren und Steuern. Die Prämie gilt pro Aktie; ein Kontrakt = 100 Aktien.",
-   "sq": "Vetëm në skadim, para komisioneve dhe taksave. Prima është për aksion; një kontratë = 100 aksione.",
-   "sr": "Samo na dan isteka, pre provizija i poreza. Premija je po akciji; jedan ugovor = 100 akcija."
-  },
-  "Average directional return since each Buy/Sell-type call.": {
-   "de": "Durchschnittliche Rendite in Richtung jeder Kauf-/Verkaufsempfehlung.",
-   "sq": "Kthimi mesatar në drejtimin e çdo rekomandimi Bli/Shit.",
-   "sr": "Prosečan prinos u pravcu svake preporuke Kupi/Prodaj."
-  },
-  "Avg return": {
-   "de": "Ø Rendite",
-   "sq": "Kthimi mesatar",
-   "sr": "Prosečan prinos"
-  },
-  "Avg target": {
-   "de": "Ø Kursziel",
-   "sq": "Objektivi mesatar",
-   "sr": "Prosečan cilj"
-  },
-  "Back up (JSON)": {
-   "de": "Sichern (JSON)",
-   "sq": "Ruaj kopje (JSON)",
-   "sr": "Rezervna kopija (JSON)"
-  },
-  "Bearish": {
-   "de": "Negativ",
-   "sq": "Negativ",
-   "sr": "Negativno"
-  },
-  "Bell-curve probabilities. Real markets have fat tails: large drops happen more often than shown.": {
-   "de": "Wahrscheinlichkeiten nach Glockenkurve. Echte Märkte haben „fette Ränder“: große Kursstürze kommen häufiger vor als hier gezeigt.",
-   "sq": "Probabilitete sipas kurbës së kambanës. Tregjet reale kanë „bishta të trashë“: rëniet e mëdha ndodhin më shpesh se sa tregohet.",
-   "sr": "Verovatnoće po zvonastoj krivoj. Stvarna tržišta imaju „debele repove“: veliki padovi se dešavaju češće nego što je prikazano."
-  },
-  "Best-scoring analysts": {
-   "de": "Analysten mit den besten Ergebnissen",
-   "sq": "Analistët me rezultatet më të mira",
-   "sr": "Analitičari sa najboljim rezultatima"
-  },
-  "Bought call": {
-   "de": "Gekaufter Call",
-   "sq": "Call i blerë",
-   "sr": "Kupljen call"
-  },
-  "Bought put": {
-   "de": "Gekaufter Put",
-   "sq": "Put i blerë",
-   "sr": "Kupljen put"
-  },
-  "Bought strike ($)": {
-   "de": "Gekaufter Strike ($)",
-   "sq": "Strike i blerë ($)",
-   "sr": "Kupljeni strajk ($)"
-  },
-  "British pound (£)": {
-   "de": "Britisches Pfund (£)",
-   "sq": "Paundi britanik (£)",
-   "sr": "Britanska funta (£)"
-  },
-  "Budget & strategy planner": {
-   "de": "Budget- & Strategieplaner",
-   "sq": "Planifikuesi i buxhetit dhe strategjisë",
-   "sr": "Planer budžeta i strategije"
-  },
-  "Bullish": {
-   "de": "Positiv",
-   "sq": "Pozitiv",
-   "sr": "Pozitivno"
-  },
-  "Bullish / neutral / bearish views from firms over the last 12 months.": {
-   "de": "Positive / neutrale / negative Einschätzungen von Firmen in den letzten 12 Monaten.",
-   "sq": "Pikëpamje pozitive / neutrale / negative nga firmat gjatë 12 muajve të fundit.",
-   "sr": "Pozitivna / neutralna / negativna mišljenja firmi u poslednjih 12 meseci."
-  },
-  "Buy a call": {
-   "de": "Call kaufen",
-   "sq": "Bli një call",
-   "sr": "Kupi call"
-  },
-  "Buy a put": {
-   "de": "Put kaufen",
-   "sq": "Bli një put",
-   "sr": "Kupi put"
-  },
-  "Calculators": {
-   "de": "Rechner",
-   "sq": "Kalkulatorët",
-   "sr": "Kalkulatori"
-  },
-  "Calendar days to expiry": {
-   "de": "Kalendertage bis Verfall",
-   "sq": "Ditë kalendarike deri në skadim",
-   "sr": "Kalendarski dani do isteka"
-  },
-  "Call credit spread": {
-   "de": "Call-Credit-Spread",
-   "sq": "Call credit spread",
-   "sr": "Call kreditni spred"
-  },
-  "Cash-secured put": {
-   "de": "Bar gedeckter Put",
-   "sq": "Put i mbuluar me para",
-   "sr": "Put pokriven gotovinom"
-  },
-  "Check the current price with your broker": {
-   "de": "Prüfen Sie den aktuellen Kurs bei Ihrem Broker",
-   "sq": "Kontrolloni çmimin aktual te brokeri juaj",
-   "sr": "Proverite trenutnu cenu kod svog brokera"
-  },
-  "Clear": {
-   "de": "Zurücksetzen",
-   "sq": "Pastro",
-   "sr": "Obriši"
-  },
-  "Click a column to sort. Return = average directional return per Buy/Sell-type call.": {
-   "de": "Spalte anklicken zum Sortieren. Rendite = durchschnittliche Rendite in Richtung jeder Kauf-/Verkaufsempfehlung.",
-   "sq": "Klikoni një kolonë për ta renditur. Kthimi = kthimi mesatar në drejtimin e çdo rekomandimi Bli/Shit.",
-   "sr": "Kliknite kolonu za sortiranje. Prinos = prosečan prinos u pravcu svake preporuke Kupi/Prodaj."
-  },
-  "Company": {
-   "de": "Unternehmen",
-   "sq": "Kompania",
-   "sr": "Kompanija"
-  },
-  "Compounding calculator": {
-   "de": "Zinseszinsrechner",
-   "sq": "Kalkulatori i interesit të përbërë",
-   "sr": "Kalkulator složene kamate"
-  },
-  "Computed from daily closing prices; only aggregated results are published.": {
-   "de": "Berechnet aus täglichen Schlusskursen; veröffentlicht werden nur zusammengefasste Ergebnisse.",
-   "sq": "Llogaritur nga çmimet ditore të mbylljes; publikohen vetëm rezultatet e përmbledhura.",
-   "sr": "Izračunato iz dnevnih cena zatvaranja; objavljuju se samo zbirni rezultati."
-  },
-  "Consensus uses each firm's latest view in the last 12 months. Click a column to sort.": {
-   "de": "Der Konsens nutzt die jeweils neueste Einschätzung jeder Firma aus den letzten 12 Monaten. Spalte anklicken zum Sortieren.",
-   "sq": "Konsensusi përdor pikëpamjen më të fundit të çdo firme në 12 muajt e fundit. Klikoni një kolonë për ta renditur.",
-   "sr": "Konsenzus koristi najnovije mišljenje svake firme u poslednjih 12 meseci. Kliknite kolonu za sortiranje."
-  },
-  "Contracts": {
-   "de": "Kontrakte",
-   "sq": "Kontrata",
-   "sr": "Ugovori"
-  },
-  "Covered call": {
-   "de": "Gedeckter Call",
-   "sq": "Covered call",
-   "sr": "Pokriveni call"
-  },
-  "Currency": {
-   "de": "Währung",
-   "sq": "Monedha",
-   "sr": "Valuta"
-  },
-  "Cuts target": {
-   "de": "Senkt Kursziel",
-   "sq": "Ul objektivin",
-   "sr": "Snižava cilj"
-  },
-  "Date": {
-   "de": "Datum",
-   "sq": "Data",
-   "sr": "Datum"
-  },
-  "Disclaimer:": {
-   "de": "Haftungsausschluss:",
-   "sq": "Mohim përgjegjësie:",
-   "sr": "Odricanje od odgovornosti:"
-  },
-  "Do you have an emergency fund (3–6 months of costs)?": {
-   "de": "Haben Sie einen Notgroschen (3–6 Monatsausgaben)?",
-   "sq": "A keni fond emergjence (shpenzime për 3–6 muaj)?",
-   "sr": "Imate li rezervni fond (troškovi za 3–6 meseci)?"
-  },
-  "Down": {
-   "de": "Ab",
-   "sq": "Poshtë",
-   "sr": "Dole"
-  },
-  "Downgrade": {
-   "de": "Herabstufung",
-   "sq": "Ulje vlerësimi",
-   "sr": "Snižena ocena"
-  },
-  "Drops coverage": {
-   "de": "Beendet Abdeckung",
-   "sq": "Ndërpret mbulimin",
-   "sr": "Prekida praćenje"
-  },
-  "Earnings": {
-   "de": "Quartalszahlen",
-   "sq": "Fitimet",
-   "sr": "Rezultati poslovanja"
-  },
-  "Educational analysis of past prices only — past results do not predict future results, and this is not investment advice.": {
-   "de": "Nur eine Lernanalyse vergangener Kurse — vergangene Ergebnisse sagen keine zukünftigen voraus, und dies ist keine Anlageberatung.",
-   "sq": "Vetëm analizë edukative e çmimeve të kaluara — rezultatet e kaluara nuk parashikojnë të ardhmen dhe kjo nuk është këshillë investimi.",
-   "sr": "Samo edukativna analiza prošlih cena — prošli rezultati ne predviđaju buduće i ovo nije investicioni savet."
-  },
-  "Educational calculators only — not investment advice.": {
-   "de": "Nur Lernrechner — keine Anlageberatung.",
-   "sq": "Vetëm kalkulatorë edukativë — jo këshillë investimi.",
-   "sr": "Samo edukativni kalkulatori — nije investicioni savet."
-  },
-  "Educational tool only — not investment advice.": {
-   "de": "Nur ein Lernwerkzeug — keine Anlageberatung.",
-   "sq": "Vetëm mjet edukativ — jo këshillë investimi.",
-   "sr": "Samo edukativni alat — nije investicioni savet."
-  },
-  "Euro (€)": {
-   "de": "Euro (€)",
-   "sq": "Euro (€)",
-   "sr": "Evro (€)"
-  },
-  "Every Wall Street rating change, dated and tracked — free.": {
-   "de": "Jede Wall-Street-Bewertungsänderung, datiert und verfolgt — kostenlos.",
-   "sq": "Çdo ndryshim vlerësimi në Wall Street, me datë dhe i ndjekur — falas.",
-   "sr": "Svaka promena ocene sa Wall Streeta, datirana i praćena — besplatno."
-  },
-  "Every dated rating and price-target change by {name} ({firm}): {n} actions across {s} stocks.": {
-   "de": "Jede datierte Bewertungs- und Kurszieländerung von {name} ({firm}): {n} Aktionen zu {s} Aktien.",
-   "sq": "Çdo ndryshim vlerësimi dhe objektivi çmimi me datë nga {name} ({firm}): {n} veprime për {s} aksione.",
-   "sr": "Svaka datirana promena ocene i ciljane cene od {name} ({firm}): {n} akcija za {s} hartija."
-  },
-  "Exchange rate to US dollar": {
-   "de": "Wechselkurs zum US-Dollar",
-   "sq": "Kursi i këmbimit me dollarin amerikan",
-   "sr": "Kurs prema američkom dolaru"
-  },
-  "Expected move and sigma bands": {
-   "de": "Erwartete Bewegung und Sigma-Bänder",
-   "sq": "Lëvizja e pritur dhe brezat sigma",
-   "sr": "Očekivano kretanje i sigma pojasevi"
-  },
-  "Experience": {
-   "de": "Erfahrung",
-   "sq": "Përvoja",
-   "sr": "Iskustvo"
-  },
-  "Export CSV": {
-   "de": "CSV exportieren",
-   "sq": "Eksporto CSV",
-   "sr": "Izvezi CSV"
-  },
-  "Filter": {
-   "de": "Filtern",
-   "sq": "Filtro",
-   "sr": "Filter"
-  },
-  "Filter analysts or firms…": {
-   "de": "Analysten oder Firmen filtern…",
-   "sq": "Filtro analistët ose firmat…",
-   "sr": "Filtriraj analitičare ili firme…"
-  },
-  "Filter by ticker or word, e.g. NVDA": {
-   "de": "Nach Ticker oder Wort filtern, z. B. NVDA",
-   "sq": "Filtro sipas simbolit ose fjalës, p.sh. NVDA",
-   "sr": "Filtriraj po oznaci ili reči, npr. NVDA"
-  },
-  "Filter news": {
-   "de": "Nachrichten filtern",
-   "sq": "Filtro lajmet",
-   "sr": "Filtriraj vesti"
-  },
-  "Filter stocks…": {
-   "de": "Aktien filtern…",
-   "sq": "Filtro aksionet…",
-   "sr": "Filtriraj akcije…"
-  },
-  "Filter table": {
-   "de": "Tabelle filtern",
-   "sq": "Filtro tabelën",
-   "sr": "Filtriraj tabelu"
-  },
-  "Filter this table…": {
-   "de": "Diese Tabelle filtern…",
-   "sq": "Filtro këtë tabelë…",
-   "sr": "Filtriraj ovu tabelu…"
-  },
-  "Firm": {
-   "de": "Firma",
-   "sq": "Firma",
-   "sr": "Firma"
-  },
-  "Five worst weeks": {
-   "de": "Die fünf schlechtesten Wochen",
-   "sq": "Pesë javët më të këqija",
-   "sr": "Pet najgorih nedelja"
-  },
-  "Free calculators that run in your browser. Enter numbers from your broker; nothing is sent or stored.": {
-   "de": "Kostenlose Rechner, die in Ihrem Browser laufen. Geben Sie Zahlen von Ihrem Broker ein; nichts wird gesendet oder gespeichert.",
-   "sq": "Kalkulatorë falas që punojnë në shfletuesin tuaj. Futni numrat nga brokeri juaj; asgjë nuk dërgohet apo ruhet.",
-   "sr": "Besplatni kalkulatori koji rade u vašem pregledaču. Unesite brojeve od svog brokera; ništa se ne šalje niti čuva."
-  },
-  "Free educational planner: enter your budget and risk settings to see which stock and options strategies your budget can support, how much you could lose per trade, and what analysts say about a stock.": {
-   "de": "Kostenloser Lernplaner: Geben Sie Budget und Risikoeinstellungen ein und sehen Sie, welche Aktien- und Optionsstrategien Ihr Budget trägt, wie viel Sie pro Trade verlieren könnten und was Analysten zu einer Aktie sagen.",
-   "sq": "Planifikues edukativ falas: futni buxhetin dhe nivelin e rrezikut për të parë cilat strategji me aksione dhe opsione i përballon buxheti juaj, sa mund të humbni për tregtim dhe çfarë thonë analistët për një aksion.",
-   "sr": "Besplatan edukativni planer: unesite budžet i nivo rizika da vidite koje strategije sa akcijama i opcijama vaš budžet podržava, koliko možete da izgubite po trgovini i šta analitičari kažu o akciji."
-  },
-  "Free options calculators: expected move and ±1σ/±2σ bands from implied volatility, profit and loss at expiry for calls, puts, covered calls, cash-secured puts and spreads, and a compounding calculator.": {
-   "de": "Kostenlose Optionsrechner: erwartete Bewegung und ±1σ/±2σ-Bänder aus der impliziten Volatilität, Gewinn und Verlust bei Verfall für Calls, Puts, gedeckte Calls, bar gedeckte Puts und Spreads sowie ein Zinseszinsrechner.",
-   "sq": "Kalkulatorë opsionesh falas: lëvizja e pritur dhe brezat ±1σ/±2σ nga volatiliteti i nënkuptuar, fitimi dhe humbja në skadim për call, put, covered call, put të mbuluar me para dhe spread, si dhe kalkulator i interesit të përbërë.",
-   "sr": "Besplatni kalkulatori opcija: očekivano kretanje i pojasevi ±1σ/±2σ iz implicitne volatilnosti, dobitak i gubitak na dan isteka za call, put, pokrivene call opcije, put pokriven gotovinom i spredove, kao i kalkulator složene kamate."
-  },
-  "Free options calculators: expected move, profit & loss, compounding": {
-   "de": "Kostenlose Optionsrechner: erwartete Bewegung, Gewinn & Verlust, Zinseszins",
-   "sq": "Kalkulatorë opsionesh falas: lëvizja e pritur, fitimi & humbja, interesi i përbërë",
-   "sr": "Besplatni kalkulatori opcija: očekivano kretanje, dobitak i gubitak, složena kamata"
-  },
-  "Free trade journal for stocks and options": {
-   "de": "Kostenloses Trading-Journal für Aktien und Optionen",
-   "sq": "Ditar tregtimi falas për aksione dhe opsione",
-   "sr": "Besplatan dnevnik trgovanja za akcije i opcije"
-  },
-  "Full history": {
-   "de": "Gesamte Historie",
-   "sq": "Historia e plotë",
-   "sr": "Cela istorija"
-  },
-  "High impact": {
-   "de": "Hoher Einfluss",
-   "sq": "Ndikim i lartë",
-   "sr": "Visok uticaj"
-  },
-  "Hold or buy more (high)": {
-   "de": "Halten oder nachkaufen (hoch)",
-   "sq": "Mbaj ose bli më shumë (i lartë)",
-   "sr": "Držim ili dokupljujem (visok)"
-  },
-  "How far the options market implies a stock could move by a date.": {
-   "de": "Wie weit sich eine Aktie laut Optionsmarkt bis zu einem Datum bewegen könnte.",
-   "sq": "Sa larg mund të lëvizë një aksion deri në një datë, sipas tregut të opsioneve.",
-   "sr": "Koliko bi se akcija mogla pomeriti do nekog datuma, prema tržištu opcija."
-  },
-  "How it works": {
-   "de": "So funktioniert es",
-   "sq": "Si funksionon",
-   "sr": "Kako funkcioniše"
-  },
-  "How often SPY and QQQ actually stayed inside their weekly ±1σ band over five years, how often they fell 2σ and 3σ, and how big the losing weeks were for a put sold at the −1σ line.": {
-   "de": "Wie oft SPY und QQQ in fünf Jahren tatsächlich innerhalb ihres wöchentlichen ±1σ-Bands blieben, wie oft sie um 2σ und 3σ fielen und wie groß die Verlustwochen für einen bei −1σ verkauften Put waren.",
-   "sq": "Sa shpesh SPY dhe QQQ mbetën realisht brenda brezit javor ±1σ gjatë pesë vjetëve, sa shpesh ranë 2σ dhe 3σ dhe sa të mëdha ishin javët me humbje për një put të shitur te vija −1σ.",
-   "sr": "Koliko često su SPY i QQQ stvarno ostali unutar nedeljnog pojasa ±1σ tokom pet godina, koliko često su pali 2σ i 3σ i koliko su bile velike gubitničke nedelje za put prodat na liniji −1σ."
-  },
-  "How would you react to a 30% fall?": {
-   "de": "Wie würden Sie auf einen Rückgang von 30 % reagieren?",
-   "sq": "Si do të reagonit ndaj një rënieje 30%?",
-   "sr": "Kako biste reagovali na pad od 30%?"
-  },
-  "I have bought stocks or funds": {
-   "de": "Ich habe Aktien oder Fonds gekauft",
-   "sq": "Kam blerë aksione ose fonde",
-   "sr": "Kupovao/la sam akcije ili fondove"
-  },
-  "I have traded options": {
-   "de": "Ich habe mit Optionen gehandelt",
-   "sq": "Kam tregtuar opsione",
-   "sr": "Trgovao/la sam opcijama"
-  },
-  "If you had sold a put at the −1σ line every week": {
-   "de": "Wenn Sie jede Woche einen Put an der −1σ-Linie verkauft hätten",
-   "sq": "Nëse do të kishit shitur një put te vija −1σ çdo javë",
-   "sr": "Da ste svake nedelje prodavali put na liniji −1σ"
-  },
-  "Impact": {
-   "de": "Einfluss",
-   "sq": "Ndikimi",
-   "sr": "Uticaj"
-  },
-  "Implied volatility (%)": {
-   "de": "Implizite Volatilität (%)",
-   "sq": "Volatiliteti i nënkuptuar (%)",
-   "sr": "Implicitna volatilnost (%)"
-  },
-  "In 1–3 years": {
-   "de": "In 1–3 Jahren",
-   "sq": "Për 1–3 vjet",
-   "sr": "Za 1–3 godine"
-  },
-  "In more than 3 years": {
-   "de": "In mehr als 3 Jahren",
-   "sq": "Për më shumë se 3 vjet",
-   "sr": "Za više od 3 godine"
-  },
-  "In sigma": {
-   "de": "In Sigma",
-   "sq": "Në sigma",
-   "sr": "U sigmama"
-  },
-  "In the {n} weeks the price ended below the line, it finished on average <b>{a}%</b> of the share price below the strike, and <b>{w}%</b> in the worst week. On {tk} that is the loss per share before the premium you collected — the premiums from the winning weeks have to pay for it.": {
-   "de": "In den {n} Wochen, in denen der Kurs unter der Linie schloss, lag er im Schnitt <b>{a} %</b> des Aktienkurses unter dem Strike und in der schlechtesten Woche <b>{w} %</b>. Bei {tk} ist das der Verlust pro Aktie vor der eingenommenen Prämie — die Prämien der Gewinnwochen müssen ihn bezahlen.",
-   "sq": "Në {n} javët kur çmimi u mbyll nën vijë, ai përfundoi mesatarisht <b>{a}%</b> të çmimit të aksionit nën strike, dhe <b>{w}%</b> në javën më të keqe. Për {tk} kjo është humbja për aksion para primës së arkëtuar — primat e javëve fituese duhet ta mbulojnë.",
-   "sr": "U {n} nedelja kada se cena zatvorila ispod linije, završila je u proseku <b>{a}%</b> cene akcije ispod strajka, a <b>{w}%</b> u najgoroj nedelji. Na {tk} to je gubitak po akciji pre naplaćene premije — premije iz dobitnih nedelja moraju da ga pokriju."
-  },
-  "Initiates coverage": {
-   "de": "Beginnt Abdeckung",
-   "sq": "Fillon mbulimin",
-   "sr": "Započinje praćenje"
-  },
-  "Language": {
-   "de": "Sprache",
-   "sq": "Gjuha",
-   "sr": "Jezik"
-  },
-  "Last action": {
-   "de": "Letzte Aktion",
-   "sq": "Veprimi i fundit",
-   "sr": "Poslednja akcija"
-  },
-  "Latest": {
-   "de": "Neueste",
-   "sq": "Më të rejat",
-   "sr": "Najnovije"
-  },
-  "Latest rating changes": {
-   "de": "Neueste Bewertungsänderungen",
-   "sq": "Ndryshimet më të fundit të vlerësimeve",
-   "sr": "Najnovije promene ocena"
-  },
-  "Leadership": {
-   "de": "Führung",
-   "sq": "Udhëheqja",
-   "sr": "Rukovodstvo"
-  },
-  "Learn": {
-   "de": "Lernen",
-   "sq": "Mëso",
-   "sr": "Učite"
-  },
-  "Learn & tools": {
-   "de": "Lernen & Tools",
-   "sq": "Mëso & mjete",
-   "sr": "Učenje i alati"
-  },
-  "Learning with small amounts": {
-   "de": "Lernen mit kleinen Beträgen",
-   "sq": "Të mësoj me shuma të vogla",
-   "sr": "Učenje sa malim iznosima"
-  },
-  "Long-term growth": {
-   "de": "Langfristiges Wachstum",
-   "sq": "Rritje afatgjatë",
-   "sr": "Dugoročni rast"
-  },
-  "Macro & Fed": {
-   "de": "Makro & Fed",
-   "sq": "Makro & Fed",
-   "sr": "Makro i Fed"
-  },
-  "Main goal": {
-   "de": "Hauptziel",
-   "sq": "Qëllimi kryesor",
-   "sr": "Glavni cilj"
-  },
-  "Market-moving news": {
-   "de": "Marktbewegende Nachrichten",
-   "sq": "Lajme që lëvizin tregun",
-   "sr": "Vesti koje pokreću tržište"
-  },
-  "Medium impact": {
-   "de": "Mittlerer Einfluss",
-   "sq": "Ndikim mesatar",
-   "sr": "Srednji uticaj"
-  },
-  "Mergers & acquisitions": {
-   "de": "Fusionen & Übernahmen",
-   "sq": "Bashkime & blerje",
-   "sr": "Spajanja i preuzimanja"
-  },
-  "Method": {
-   "de": "Methode",
-   "sq": "Metoda",
-   "sr": "Metod"
-  },
-  "Money you could afford to lose without hardship": {
-   "de": "Geld, dessen Verlust Sie ohne Härte verkraften könnten",
-   "sq": "Para që mund t'i humbni pa vështirësi",
-   "sr": "Novac koji možete da izgubite bez teškoća"
-  },
-  "Most I could lose ($)": {
-   "de": "Maximaler Verlust ($)",
-   "sq": "Humbja maksimale ($)",
-   "sr": "Najveći mogući gubitak ($)"
-  },
-  "Most you accept losing on one trade": {
-   "de": "Maximaler Verlust, den Sie pro Trade akzeptieren",
-   "sq": "Humbja maksimale që pranoni për një tregtim",
-   "sr": "Najveći gubitak koji prihvatate po trgovini"
-  },
-  "Most-covered stocks this week": {
-   "de": "Meistbewertete Aktien dieser Woche",
-   "sq": "Aksionet më të mbuluara këtë javë",
-   "sr": "Najpraćenije akcije ove nedelje"
-  },
-  "Move": {
-   "de": "Bewegung",
-   "sq": "Lëvizja",
-   "sr": "Kretanje"
-  },
-  "Moves are measured from the last close of one week to the last close of the next. Option-implied volatility is usually a little higher than realised volatility, so bands drawn from option prices are slightly wider and would be crossed somewhat less often. Five years is a short sample.": {
-   "de": "Bewegungen werden vom letzten Schlusskurs einer Woche bis zum letzten Schlusskurs der nächsten gemessen. Die implizite Volatilität von Optionen liegt meist etwas über der realisierten, daher sind aus Optionspreisen abgeleitete Bänder etwas breiter und würden seltener durchbrochen. Fünf Jahre sind eine kurze Stichprobe.",
-   "sq": "Lëvizjet maten nga mbyllja e fundit e një jave deri te mbyllja e fundit e javës tjetër. Volatiliteti i nënkuptuar i opsioneve zakonisht është pak më i lartë se ai i realizuar, ndaj brezat nga çmimet e opsioneve janë pak më të gjerë dhe do të kapërceheshin më rrallë. Pesë vjet janë një mostër e shkurtër.",
-   "sr": "Kretanja se mere od poslednjeg zatvaranja jedne nedelje do poslednjeg zatvaranja sledeće. Implicitna volatilnost opcija je obično nešto viša od ostvarene, pa su pojasevi iz cena opcija malo širi i ređe bi bili probijeni. Pet godina je kratak uzorak."
-  },
-  "Neutral": {
-   "de": "Neutral",
-   "sq": "Neutral",
-   "sr": "Neutralno"
-  },
-  "New to investing": {
-   "de": "Neu beim Investieren",
-   "sq": "I ri në investime",
-   "sr": "Početnik u investiranju"
-  },
-  "New to trading? How to open and set up a brokerage account →": {
-   "de": "Neu im Handel? So eröffnen und richten Sie ein Brokerkonto ein →",
-   "sq": "I ri në tregti? Si të hapni dhe konfiguroni një llogari brokeri →",
-   "sr": "Novi ste u trgovanju? Kako otvoriti i podesiti brokerski račun →"
-  },
-  "News": {
-   "de": "Nachrichten",
-   "sq": "Lajme",
-   "sr": "Vesti"
-  },
-  "News summaries are for information only and describe what was reported, not what a stock will do.": {
-   "de": "Die Nachrichtenzusammenfassungen dienen nur der Information und beschreiben, was berichtet wurde — nicht, was eine Aktie tun wird.",
-   "sq": "Përmbledhjet e lajmeve janë vetëm për informim dhe përshkruajnë atë që u raportua, jo atë që do të bëjë një aksion.",
-   "sr": "Sažeci vesti su samo informativni i opisuju šta je objavljeno, a ne šta će akcija uraditi."
-  },
-  "News summaries are published in English.": {
-   "de": "Die Nachrichtenzusammenfassungen erscheinen auf Englisch.",
-   "sq": "Përmbledhjet e lajmeve publikohen në anglisht.",
-   "sr": "Sažeci vesti se objavljuju na engleskom."
-  },
-  "No": {
-   "de": "Nein",
-   "sq": "Jo",
-   "sr": "Ne"
-  },
-  "No news yet.": {
-   "de": "Noch keine Nachrichten.",
-   "sq": "Ende nuk ka lajme.",
-   "sr": "Još nema vesti."
-  },
-  "No rating changes recorded yet.": {
-   "de": "Noch keine Bewertungsänderungen erfasst.",
-   "sq": "Ende nuk ka ndryshime vlerësimi të regjistruara.",
-   "sr": "Još nema zabeleženih promena ocena."
-  },
-  "Notes": {
-   "de": "Notizen",
-   "sq": "Shënime",
-   "sr": "Beleške"
-  },
-  "Number of weeks by size of move in sigma": {
-   "de": "Anzahl der Wochen nach Größe der Bewegung in Sigma",
-   "sq": "Numri i javëve sipas madhësisë së lëvizjes në sigma",
-   "sr": "Broj nedelja po veličini kretanja u sigmama"
-  },
-  "Open account": {
-   "de": "Konto eröffnen",
-   "sq": "Hap llogari",
-   "sr": "Otvori račun"
-  },
-  "Options calculators": {
-   "de": "Optionsrechner",
-   "sq": "Kalkulatorët e opsioneve",
-   "sr": "Kalkulatori opcija"
-  },
-  "Other": {
-   "de": "Sonstiges",
-   "sq": "Tjetër",
-   "sr": "Ostalo"
-  },
-  "Practice": {
-   "de": "Übung",
-   "sq": "Praktikë",
-   "sr": "Vežba"
-  },
-  "Premium per share ($)": {
-   "de": "Prämie pro Aktie ($)",
-   "sq": "Prima për aksion ($)",
-   "sr": "Premija po akciji ($)"
-  },
-  "Price target": {
-   "de": "Kursziel",
-   "sq": "Objektivi i çmimit",
-   "sr": "Ciljana cena"
-  },
-  "Privacy": {
-   "de": "Datenschutz",
-   "sq": "Privatësia",
-   "sr": "Privatnost"
-  },
-  "Privacy Policy": {
-   "de": "Datenschutzerklärung",
-   "sq": "Politika e privatësisë",
-   "sr": "Politika privatnosti"
-  },
-  "Private:": {
-   "de": "Privat:",
-   "sq": "Privat:",
-   "sr": "Privatno:"
-  },
-  "Products & contracts": {
-   "de": "Produkte & Aufträge",
-   "sq": "Produkte & kontrata",
-   "sr": "Proizvodi i ugovori"
-  },
-  "Profit and loss at expiry": {
-   "de": "Gewinn und Verlust bei Verfall",
-   "sq": "Fitimi dhe humbja në skadim",
-   "sr": "Dobitak i gubitak na dan isteka"
-  },
-  "Profit and loss chart": {
-   "de": "Gewinn-und-Verlust-Diagramm",
-   "sq": "Grafiku i fitimit dhe humbjes",
-   "sr": "Grafikon dobitka i gubitka"
-  },
-  "Put credit spread": {
-   "de": "Put-Credit-Spread",
-   "sq": "Put credit spread",
-   "sr": "Put kreditni spred"
-  },
-  "Put sellers often draw a ±1σ band each week and sell puts below it. This page checks, over five years of weekly moves in SPY and QQQ, how often price really stayed above the −1σ line — and how big the losing weeks were.": {
-   "de": "Put-Verkäufer zeichnen oft jede Woche ein ±1σ-Band und verkaufen Puts darunter. Diese Seite prüft anhand von fünf Jahren wöchentlicher Bewegungen bei SPY und QQQ, wie oft der Kurs wirklich über der −1σ-Linie blieb — und wie groß die Verlustwochen waren.",
-   "sq": "Shitësit e put-eve shpesh vizatojnë një brez ±1σ çdo javë dhe shesin put nën të. Kjo faqe kontrollon, në pesë vjet lëvizjesh javore të SPY dhe QQQ, sa shpesh çmimi mbeti realisht mbi vijën −1σ — dhe sa të mëdha ishin javët me humbje.",
-   "sr": "Prodavci put opcija često svake nedelje ucrtaju pojas ±1σ i prodaju put ispod njega. Ova stranica proverava, na pet godina nedeljnih kretanja SPY i QQQ, koliko je često cena stvarno ostala iznad linije −1σ — i koliko su bile velike gubitničke nedelje."
-  },
-  "Raises target": {
-   "de": "Hebt Kursziel an",
-   "sq": "Ngre objektivin",
-   "sr": "Podiže cilj"
-  },
-  "Rating": {
-   "de": "Bewertung",
-   "sq": "Vlerësimi",
-   "sr": "Ocena"
-  },
-  "Rating history": {
-   "de": "Bewertungshistorie",
-   "sq": "Historia e vlerësimeve",
-   "sr": "Istorija ocena"
-  },
-  "Real": {
-   "de": "Echt",
-   "sq": "Reale",
-   "sr": "Stvarno"
-  },
-  "Recent market news": {
-   "de": "Aktuelle Marktnachrichten",
-   "sq": "Lajme të fundit të tregut",
-   "sr": "Najnovije tržišne vesti"
-  },
-  "Regular income": {
-   "de": "Regelmäßiges Einkommen",
-   "sq": "Të ardhura të rregullta",
-   "sr": "Redovan prihod"
-  },
-  "Regulation & legal": {
-   "de": "Regulierung & Recht",
-   "sq": "Rregullimi & ligjore",
-   "sr": "Regulativa i pravo"
-  },
-  "Reiterates": {
-   "de": "Bestätigt",
-   "sq": "Rikonfirmon",
-   "sr": "Potvrđuje"
-  },
-  "Restore backup": {
-   "de": "Sicherung wiederherstellen",
-   "sq": "Rikthe kopjen",
-   "sr": "Vrati rezervnu kopiju"
-  },
-  "Result": {
-   "de": "Ergebnis",
-   "sq": "Rezultati",
-   "sr": "Rezultat"
-  },
-  "Result ($, + or −)": {
-   "de": "Ergebnis ($, + oder −)",
-   "sq": "Rezultati ($, + ose −)",
-   "sr": "Rezultat ($, + ili −)"
-  },
-  "Return": {
-   "de": "Rendite",
-   "sq": "Kthimi",
-   "sr": "Prinos"
-  },
-  "Return = stock move since the rating date, counted positive when the call was right (Buy-type and the stock rose, or Sell-type and it fell).": {
-   "de": "Rendite = Kursbewegung seit dem Bewertungsdatum, positiv gezählt, wenn die Empfehlung richtig war (Kauf-Typ und die Aktie stieg, oder Verkaufs-Typ und sie fiel).",
-   "sq": "Kthimi = lëvizja e aksionit që nga data e vlerësimit, e llogaritur pozitive kur rekomandimi doli i saktë (tip Bli dhe aksioni u rrit, ose tip Shit dhe ra).",
-   "sr": "Prinos = kretanje akcije od datuma ocene, računato pozitivno kada je preporuka bila tačna (tip Kupi i akcija je porasla, ili tip Prodaj i pala je)."
-  },
-  "Return since the rating date, positive when the call was right. Neutral ratings are not scored.": {
-   "de": "Rendite seit dem Bewertungsdatum, positiv, wenn die Empfehlung richtig war. Neutrale Bewertungen werden nicht gewertet.",
-   "sq": "Kthimi që nga data e vlerësimit, pozitiv kur rekomandimi doli i saktë. Vlerësimet neutrale nuk pikëzohen.",
-   "sr": "Prinos od datuma ocene, pozitivan kada je preporuka bila tačna. Neutralne ocene se ne boduju."
-  },
-  "Right direction": {
-   "de": "Richtige Richtung",
-   "sq": "Drejtim i saktë",
-   "sr": "Tačan pravac"
-  },
-  "Risk": {
-   "de": "Risiko",
-   "sq": "Rreziku",
-   "sr": "Rizik"
-  },
-  "Save trade": {
-   "de": "Trade speichern",
-   "sq": "Ruaj tregtimin",
-   "sr": "Sačuvaj trgovinu"
-  },
-  "Scores appear once analysts have at least 3 rated calls with price data.": {
-   "de": "Wertungen erscheinen, sobald Analysten mindestens 3 bewertete Empfehlungen mit Kursdaten haben.",
-   "sq": "Pikët shfaqen kur analistët kanë të paktën 3 rekomandime të vlerësuara me të dhëna çmimi.",
-   "sr": "Rezultati se prikazuju kada analitičari imaju najmanje 3 ocenjene preporuke sa podacima o ceni."
-  },
-  "Search": {
-   "de": "Suche",
-   "sq": "Kërko",
-   "sr": "Pretraga"
-  },
-  "Search ticker, analyst, firm…": {
-   "de": "Ticker, Analyst, Firma suchen…",
-   "sq": "Kërko simbol, analist, firmë…",
-   "sr": "Pretraži oznaku, analitičara, firmu…"
-  },
-  "Sell or lose sleep (low risk)": {
-   "de": "Verkaufen oder schlaflos (niedriges Risiko)",
-   "sq": "Shes ose s'fle dot (rrezik i ulët)",
-   "sr": "Prodajem ili ne spavam (nizak rizik)"
-  },
-  "Share price ($)": {
-   "de": "Aktienkurs ($)",
-   "sq": "Çmimi i aksionit ($)",
-   "sr": "Cena akcije ($)"
-  },
-  "Share price in USD": {
-   "de": "Aktienkurs in USD",
-   "sq": "Çmimi i aksionit në USD",
-   "sr": "Cena akcije u USD"
-  },
-  "Share price now ($)": {
-   "de": "Aktueller Aktienkurs ($)",
-   "sq": "Çmimi aktual i aksionit ($)",
-   "sr": "Trenutna cena akcije ($)"
-  },
-  "Shares": {
-   "de": "Aktien",
-   "sq": "Aksione",
-   "sr": "Akcije"
-  },
-  "Short, sourced summaries of news likely to affect US stocks — company events, deals, leadership changes, regulation and economic data — with the tickers involved. Updated each trading day. Summaries are written in our own words; follow the links for the full reports.": {
-   "de": "Kurze, belegte Zusammenfassungen von Nachrichten, die US-Aktien bewegen dürften — Unternehmensereignisse, Übernahmen, Führungswechsel, Regulierung und Wirtschaftsdaten — mit den betroffenen Tickern. Jeden Handelstag aktualisiert. Die Zusammenfassungen sind in eigenen Worten verfasst; den Links folgen Sie zu den vollständigen Berichten.",
-   "sq": "Përmbledhje të shkurtra me burime të lajmeve që mund të ndikojnë aksionet amerikane — ngjarje të kompanive, marrëveshje, ndryshime drejtuesish, rregullime dhe të dhëna ekonomike — me simbolet përkatëse. Përditësohen çdo ditë tregtimi. Përmbledhjet janë me fjalët tona; ndiqni lidhjet për raportet e plota.",
-   "sr": "Kratki sažeci vesti sa izvorima koje bi mogle uticati na američke akcije — događaji u kompanijama, poslovi, promene rukovodstva, regulativa i ekonomski podaci — sa oznakama akcija. Ažurira se svakog trgovačkog dana. Sažeci su pisani našim rečima; pratite linkove do punih izveštaja."
-  },
-  "Short, sourced summaries of news likely to move US stocks: company events, deals, leadership changes, regulation and macro data, with the tickers affected and links to the original reports.": {
-   "de": "Kurze, belegte Zusammenfassungen marktbewegender Nachrichten zu US-Aktien: Unternehmensereignisse, Übernahmen, Führungswechsel, Regulierung und Makrodaten, mit betroffenen Tickern und Links zu den Originalberichten.",
-   "sq": "Përmbledhje të shkurtra me burime të lajmeve që lëvizin aksionet amerikane: ngjarje kompanish, marrëveshje, ndryshime drejtuesish, rregullime dhe të dhëna makro, me simbolet e prekura dhe lidhje te raportet origjinale.",
-   "sr": "Kratki sažeci vesti sa izvorima koje pokreću američke akcije: događaji u kompanijama, poslovi, promene rukovodstva, regulativa i makro podaci, sa pogođenim oznakama i linkovima ka originalnim izveštajima."
-  },
-  "Show": {
-   "de": "Anzeigen",
-   "sq": "Shfaq",
-   "sr": "Prikaži"
-  },
-  "Show my options": {
-   "de": "Meine Optionen anzeigen",
-   "sq": "Shfaq mundësitë e mia",
-   "sr": "Prikaži moje mogućnosti"
-  },
-  "Source": {
-   "de": "Quelle",
-   "sq": "Burimi",
-   "sr": "Izvor"
-  },
-  "Sources:": {
-   "de": "Quellen:",
-   "sq": "Burimet:",
-   "sr": "Izvori:"
-  },
-  "Starting amount": {
-   "de": "Startbetrag",
-   "sq": "Shuma fillestare",
-   "sr": "Početni iznos"
-  },
-  "Stock": {
-   "de": "Aktie",
-   "sq": "Aksioni",
-   "sr": "Akcija"
-  },
-  "Stock you are looking at (optional)": {
-   "de": "Aktie, die Sie interessiert (optional)",
-   "sq": "Aksioni që po shikoni (opsional)",
-   "sr": "Akcija koja vas zanima (opciono)"
-  },
-  "Stocks": {
-   "de": "Aktien",
-   "sq": "Aksionet",
-   "sr": "Akcije"
-  },
-  "Strategy": {
-   "de": "Strategie",
-   "sq": "Strategjia",
-   "sr": "Strategija"
-  },
-  "Strike ($)": {
-   "de": "Strike ($)",
-   "sq": "Strike ($)",
-   "sr": "Strajk ($)"
-  },
-  "Tell the planner your budget and how much risk you accept. It shows which common stock and options strategies your budget can support, the most you could lose, and what analysts tracked on {site} say about a stock. It is an educational calculator, not personal financial advice.": {
-   "de": "Nennen Sie dem Planer Ihr Budget und wie viel Risiko Sie akzeptieren. Er zeigt, welche gängigen Aktien- und Optionsstrategien Ihr Budget trägt, wie viel Sie maximal verlieren könnten und was die auf {site} erfassten Analysten zu einer Aktie sagen. Er ist ein Lernrechner, keine persönliche Finanzberatung.",
-   "sq": "Tregojini planifikuesit buxhetin tuaj dhe sa rrezik pranoni. Ai tregon cilat strategji të zakonshme me aksione dhe opsione i përballon buxheti juaj, sa mund të humbni maksimalisht dhe çfarë thonë analistët e ndjekur në {site} për një aksion. Është kalkulator edukativ, jo këshillë financiare personale.",
-   "sr": "Recite planeru svoj budžet i koliki rizik prihvatate. Prikazaće koje uobičajene strategije sa akcijama i opcijama vaš budžet podržava, koliko najviše možete da izgubite i šta analitičari praćeni na {site} kažu o akciji. Ovo je edukativni kalkulator, a ne lični finansijski savet."
-  },
-  "Terms": {
-   "de": "Nutzungsbedingungen",
-   "sq": "Kushtet",
-   "sr": "Uslovi"
-  },
-  "Terms of Service": {
-   "de": "Nutzungsbedingungen",
-   "sq": "Kushtet e shërbimit",
-   "sr": "Uslovi korišćenja"
-  },
-  "The planner applies simple, published rules of thumb (position sizing, the cash that each strategy requires, its worst case) to the numbers you enter. It does not know your full finances, taxes or goals and does not recommend buying or selling any security. Prices may be delayed. For personal advice, speak to a licensed financial adviser in your country.": {
-   "de": "Der Planer wendet einfache, veröffentlichte Faustregeln (Positionsgröße, benötigtes Kapital je Strategie, schlechtester Fall) auf Ihre Angaben an. Er kennt weder Ihre gesamten Finanzen noch Steuern oder Ziele und empfiehlt weder Kauf noch Verkauf eines Wertpapiers. Kurse können verzögert sein. Für persönliche Beratung wenden Sie sich an einen zugelassenen Finanzberater in Ihrem Land.",
-   "sq": "Planifikuesi zbaton rregulla të thjeshta e të publikuara (madhësia e pozicionit, paratë që kërkon çdo strategji, rasti më i keq) mbi numrat që futni. Ai nuk i njeh financat, taksat apo qëllimet tuaja të plota dhe nuk rekomandon blerjen ose shitjen e asnjë letre me vlerë. Çmimet mund të jenë të vonuara. Për këshilla personale, flisni me një këshilltar financiar të licencuar në vendin tuaj.",
-   "sr": "Planer primenjuje jednostavna, objavljena pravila (veličina pozicije, novac koji svaka strategija zahteva, najgori slučaj) na brojeve koje unesete. Ne poznaje vaše celokupne finansije, poreze ni ciljeve i ne preporučuje kupovinu ili prodaju bilo koje hartije. Cene mogu kasniti. Za lični savet obratite se licenciranom finansijskom savetniku u vašoj zemlji."
-  },
-  "This page is available in English only. The English version applies.": {
-   "de": "Diese Seite ist nur auf Englisch verfügbar. Es gilt die englische Fassung.",
-   "sq": "Kjo faqe është e disponueshme vetëm në anglisht. Vlen versioni në anglisht.",
-   "sr": "Ova stranica je dostupna samo na engleskom. Važi verzija na engleskom."
-  },
-  "Ticker": {
-   "de": "Ticker",
-   "sq": "Simboli",
-   "sr": "Oznaka"
-  },
-  "Ticker of a US stock tracked here, or any ticker": {
-   "de": "Ticker einer hier erfassten US-Aktie oder ein beliebiger Ticker",
-   "sq": "Simboli i një aksioni amerikan të ndjekur këtu, ose çdo simbol",
-   "sr": "Oznaka američke akcije praćene ovde, ili bilo koja oznaka"
-  },
-  "Trade journal": {
-   "de": "Trading-Journal",
-   "sq": "Ditari i tregtimit",
-   "sr": "Dnevnik trgovanja"
-  },
-  "US dollar ($)": {
-   "de": "US-Dollar ($)",
-   "sq": "Dollar amerikan ($)",
-   "sr": "Američki dolar ($)"
-  },
-  "Uncomfortable but hold (medium)": {
-   "de": "Unangenehm, aber halten (mittel)",
-   "sq": "I pakëndshëm por mbaj (mesatar)",
-   "sr": "Neprijatno, ali držim (srednji)"
-  },
-  "Up": {
-   "de": "Auf",
-   "sq": "Lart",
-   "sr": "Gore"
-  },
-  "Updated": {
-   "de": "Aktualisiert",
-   "sq": "Përditësuar",
-   "sr": "Ažurirano"
-  },
-  "Upgrade": {
-   "de": "Heraufstufung",
-   "sq": "Ngritje vlerësimi",
-   "sr": "Povišena ocena"
-  },
-  "Upgrades, downgrades, new coverage and price-target moves from Wall Street analysts — each one dated, sourced and added to the analyst's permanent history.": {
-   "de": "Herauf- und Herabstufungen, neue Abdeckungen und Kurszieländerungen von Wall-Street-Analysten — jede datiert, belegt und dauerhaft in der Historie des Analysten gespeichert.",
-   "sq": "Ngritje dhe ulje vlerësimesh, mbulime të reja dhe ndryshime të objektivave të çmimit nga analistët e Wall Street — secila me datë, burim dhe e shtuar në historinë e përhershme të analistit.",
-   "sr": "Povišenja i sniženja ocena, novo praćenje i promene ciljanih cena analitičara sa Wall Streeta — svaka datirana, sa izvorom i dodata u trajnu istoriju analitičara."
-  },
-  "Upside": {
-   "de": "Potenzial",
-   "sq": "Potenciali",
-   "sr": "Potencijal"
-  },
-  "Week ending": {
-   "de": "Woche bis",
-   "sq": "Java që mbyllet",
-   "sr": "Nedelja do"
-  },
-  "Weekly backtest": {
-   "de": "Wöchentlicher Backtest",
-   "sq": "Testi javor historik",
-   "sr": "Nedeljni bektest"
-  },
-  "Weekly close-to-close moves (last trading day of each week). One sigma = standard deviation of the previous 20 daily moves, scaled to the trading days in the week (realised volatility, not option-implied).": {
-   "de": "Wöchentliche Bewegungen von Schluss zu Schluss (letzter Handelstag jeder Woche). Ein Sigma = Standardabweichung der vorherigen 20 Tagesbewegungen, skaliert auf die Handelstage der Woche (realisierte Volatilität, nicht aus Optionen abgeleitet).",
-   "sq": "Lëvizjet javore nga mbyllja në mbyllje (dita e fundit e tregtimit të çdo jave). Një sigma = devijimi standard i 20 lëvizjeve ditore paraardhëse, i shkallëzuar sipas ditëve të tregtimit në javë (volatilitet i realizuar, jo i nënkuptuar nga opsionet).",
-   "sr": "Nedeljna kretanja od zatvaranja do zatvaranja (poslednji trgovački dan svake nedelje). Jedna sigma = standardna devijacija prethodnih 20 dnevnih kretanja, skalirana na trgovačke dane u nedelji (ostvarena volatilnost, ne implicitna iz opcija)."
-  },
-  "Weekly sigma-band backtest": {
-   "de": "Wöchentlicher Sigma-Band-Backtest",
-   "sq": "Testi historik javor i brezit sigma",
-   "sr": "Nedeljni bektest sigma pojasa"
-  },
-  "Weekly sigma-band backtest: SPY and QQQ": {
-   "de": "Wöchentlicher Sigma-Band-Backtest: SPY und QQQ",
-   "sq": "Testi historik javor i brezit sigma: SPY dhe QQQ",
-   "sr": "Nedeljni bektest sigma pojasa: SPY i QQQ"
-  },
-  "What I learned": {
-   "de": "Was ich gelernt habe",
-   "sq": "Çfarë mësova",
-   "sr": "Šta sam naučio/la"
-  },
-  "What this shows": {
-   "de": "Was das zeigt",
-   "sq": "Çfarë tregon kjo",
-   "sr": "Šta ovo pokazuje"
-  },
-  "When might you need this money?": {
-   "de": "Wann könnten Sie dieses Geld brauchen?",
-   "sq": "Kur mund t'ju duhen këto para?",
-   "sr": "Kada bi vam ovaj novac mogao zatrebati?"
-  },
-  "Why I took it, and my exit plan": {
-   "de": "Warum ich ihn eingegangen bin und mein Ausstiegsplan",
-   "sq": "Pse e bëra dhe plani im i daljes",
-   "sr": "Zašto sam ušao/la i moj plan izlaska"
-  },
-  "Why it matters:": {
-   "de": "Warum es wichtig ist:",
-   "sq": "Pse ka rëndësi:",
-   "sr": "Zašto je važno:"
-  },
-  "Within 1 year": {
-   "de": "Innerhalb eines Jahres",
-   "sq": "Brenda 1 viti",
-   "sr": "U roku od 1 godine"
-  },
-  "Write down every trade — practice or real — with the reason you took it and the result. Over time, the numbers show what works for you.": {
-   "de": "Notieren Sie jeden Trade — Übung oder echt — mit dem Grund und dem Ergebnis. Mit der Zeit zeigen die Zahlen, was für Sie funktioniert.",
-   "sq": "Shkruani çdo tregtim — praktikë ose real — me arsyen pse e bëtë dhe rezultatin. Me kohë, numrat tregojnë çfarë funksionon për ju.",
-   "sr": "Zapišite svaku trgovinu — vežbu ili stvarnu — sa razlogom i rezultatom. Vremenom brojevi pokazuju šta vam odgovara."
-  },
-  "Yearly return (%)": {
-   "de": "Jährliche Rendite (%)",
-   "sq": "Kthimi vjetor (%)",
-   "sr": "Godišnji prinos (%)"
-  },
-  "Years": {
-   "de": "Jahre",
-   "sq": "Vite",
-   "sr": "Godine"
-  },
-  "Yes": {
-   "de": "Ja",
-   "sq": "Po",
-   "sr": "Da"
-  },
-  "Your results": {
-   "de": "Ihre Ergebnisse",
-   "sq": "Rezultatet tuaja",
-   "sr": "Vaši rezultati"
-  },
-  "Your share cost ($)": {
-   "de": "Ihr Einstandskurs ($)",
-   "sq": "Kostoja juaj për aksion ($)",
-   "sr": "Vaša nabavna cena ($)"
-  },
-  "above +1σ": {
-   "de": "über +1σ",
-   "sq": "mbi +1σ",
-   "sr": "iznad +1σ"
-  },
-  "analyst ratings & price targets": {
-   "de": "Analystenbewertungen & Kursziele",
-   "sq": "vlerësimet e analistëve & objektivat e çmimit",
-   "sr": "ocene analitičara i ciljane cene"
-  },
-  "analysts tracked": {
-   "de": "erfasste Analysten",
-   "sq": "analistë të ndjekur",
-   "sr": "praćenih analitičara"
-  },
-  "average target": {
-   "de": "durchschnittliches Kursziel",
-   "sq": "objektivi mesatar",
-   "sr": "prosečna ciljana cena"
-  },
-  "average width of 1σ in a week": {
-   "de": "durchschnittliche Breite von 1σ pro Woche",
-   "sq": "gjerësia mesatare e 1σ në javë",
-   "sr": "prosečna širina 1σ u nedelji"
-  },
-  "avg return per call": {
-   "de": "Ø Rendite pro Empfehlung",
-   "sq": "kthimi mesatar për rekomandim",
-   "sr": "prosečan prinos po preporuci"
-  },
-  "below −1σ (a put at −1σ loses)": {
-   "de": "unter −1σ (ein Put bei −1σ verliert)",
-   "sq": "nën −1σ (një put te −1σ humbet)",
-   "sr": "ispod −1σ (put na −1σ gubi)"
-  },
-  "bullish / neutral / bearish": {
-   "de": "positiv / neutral / negativ",
-   "sq": "pozitiv / neutral / negativ",
-   "sr": "pozitivno / neutralno / negativno"
-  },
-  "calls in the right direction": {
-   "de": "Empfehlungen in richtiger Richtung",
-   "sq": "rekomandime në drejtimin e saktë",
-   "sr": "preporuke u tačnom pravcu"
-  },
-  "changes this week": {
-   "de": "Änderungen diese Woche",
-   "sq": "ndryshime këtë javë",
-   "sr": "promena ove nedelje"
-  },
-  "daily": {
-   "de": "täglich",
-   "sq": "çdo ditë",
-   "sr": "dnevno"
-  },
-  "downgrades": {
-   "de": "Herabstufungen",
-   "sq": "ulje vlerësimi",
-   "sr": "sniženja ocena"
-  },
-  "e.g. 5000": {
-   "de": "z. B. 5000",
-   "sq": "p.sh. 5000",
-   "sr": "npr. 5000"
-  },
-  "e.g. NVDA": {
-   "de": "z. B. NVDA",
-   "sq": "p.sh. NVDA",
-   "sr": "npr. NVDA"
-  },
-  "e.g. SPY": {
-   "de": "z. B. SPY",
-   "sq": "p.sh. SPY",
-   "sr": "npr. SPY"
-  },
-  "e.g. Sold 1σ put, no earnings before expiry; close at 50% profit or if price breaks the strike": {
-   "de": "z. B. 1σ-Put verkauft, keine Zahlen vor Verfall; Schließen bei 50 % Gewinn oder wenn der Kurs den Strike durchbricht",
-   "sq": "p.sh. Shita put 1σ, pa rezultate para skadimit; mbyll në 50% fitim ose nëse çmimi kalon strike-un",
-   "sr": "npr. Prodat put na 1σ, bez rezultata pre isteka; zatvoriti na 50% dobiti ili ako cena probije strajk"
-  },
-  "everything is calculated in your browser. Nothing you type is sent or stored.": {
-   "de": "Alles wird in Ihrem Browser berechnet. Nichts, was Sie eingeben, wird gesendet oder gespeichert.",
-   "sq": "gjithçka llogaritet në shfletuesin tuaj. Asgjë që shkruani nuk dërgohet apo ruhet.",
-   "sr": "sve se računa u vašem pregledaču. Ništa što unesete se ne šalje niti čuva."
-  },
-  "filled in when known": {
-   "de": "wird ausgefüllt, wenn bekannt",
-   "sq": "plotësohet kur dihet",
-   "sr": "popunjava se kada je poznato"
-  },
-  "firms with a view (12 mo)": {
-   "de": "Firmen mit Einschätzung (12 Mon.)",
-   "sq": "firma me pikëpamje (12 muaj)",
-   "sr": "firme sa mišljenjem (12 mes.)"
-  },
-  "inside ±1σ": {
-   "de": "innerhalb ±1σ",
-   "sq": "brenda ±1σ",
-   "sr": "unutar ±1σ"
-  },
-  "last action": {
-   "de": "letzte Aktion",
-   "sq": "veprimi i fundit",
-   "sr": "poslednja akcija"
-  },
-  "last price": {
-   "de": "letzter Kurs",
-   "sq": "çmimi i fundit",
-   "sr": "poslednja cena"
-  },
-  "leave empty if open": {
-   "de": "leer lassen, wenn offen",
-   "sq": "lëreni bosh nëse është i hapur",
-   "sr": "ostavite prazno ako je otvorena"
-  },
-  "rating history": {
-   "de": "Bewertungshistorie",
-   "sq": "historia e vlerësimeve",
-   "sr": "istorija ocena"
-  },
-  "recorded actions": {
-   "de": "erfasste Aktionen",
-   "sq": "veprime të regjistruara",
-   "sr": "zabeleženih akcija"
-  },
-  "stocks covered": {
-   "de": "abgedeckte Aktien",
-   "sq": "aksione të mbuluara",
-   "sr": "praćenih akcija"
-  },
-  "to avg target": {
-   "de": "bis zum Ø-Kursziel",
-   "sq": "deri te objektivi mesatar",
-   "sr": "do prosečnog cilja"
-  },
-  "tracked since": {
-   "de": "erfasst seit",
-   "sq": "ndjekur që nga",
-   "sr": "praćen od"
-  },
-  "upgrades": {
-   "de": "Heraufstufungen",
-   "sq": "ngritje vlerësimi",
-   "sr": "povišenja ocena"
-  },
-  "upgrades / downgrades": {
-   "de": "Herauf- / Herabstufungen",
-   "sq": "ngritje / ulje",
-   "sr": "povišenja / sniženja"
-  },
-  "weekly move, in sigma": {
-   "de": "Wochenbewegung in Sigma",
-   "sq": "lëvizja javore, në sigma",
-   "sr": "nedeljno kretanje, u sigmama"
-  },
-  "weeks that fell 2σ or more (bell curve: {x})": {
-   "de": "Wochen mit Rückgang um 2σ oder mehr (Glockenkurve: {x})",
-   "sq": "javë që ranë 2σ ose më shumë (kurba e kambanës: {x})",
-   "sr": "nedelje sa padom od 2σ ili više (zvonasta kriva: {x})"
-  },
-  "weeks that fell 3σ or more (bell curve: {x})": {
-   "de": "Wochen mit Rückgang um 3σ oder mehr (Glockenkurve: {x})",
-   "sq": "javë që ranë 3σ ose më shumë (kurba e kambanës: {x})",
-   "sr": "nedelje sa padom od 3σ ili više (zvonasta kriva: {x})"
-  },
-  "weeks that fell through −1σ (bell curve: {x})": {
-   "de": "Wochen, die −1σ durchbrachen (Glockenkurve: {x})",
-   "sq": "javë që kaluan poshtë −1σ (kurba e kambanës: {x})",
-   "sr": "nedelje koje su probile −1σ (zvonasta kriva: {x})"
-  },
-  "weeks that stayed above −1σ ({a} of {b})": {
-   "de": "Wochen über −1σ ({a} von {b})",
-   "sq": "javë që mbetën mbi −1σ ({a} nga {b})",
-   "sr": "nedelje iznad −1σ ({a} od {b})"
-  },
-  "worst case": {
-   "de": "schlechtester Fall",
-   "sq": "rasti më i keq",
-   "sr": "najgori slučaj"
-  },
-  "your journal is saved only in this browser on this device. Export it to keep a copy.": {
-   "de": "Ihr Journal wird nur in diesem Browser auf diesem Gerät gespeichert. Exportieren Sie es, um eine Kopie zu behalten.",
-   "sq": "ditari juaj ruhet vetëm në këtë shfletues në këtë pajisje. Eksportojeni për të mbajtur një kopje.",
-   "sr": "vaš dnevnik se čuva samo u ovom pregledaču na ovom uređaju. Izvezite ga da biste sačuvali kopiju."
-  },
-  "{n} analysts": {
-   "de": "{n} Analysten",
-   "sq": "{n} analistë",
-   "sr": "{n} analitičara"
-  },
-  "{n} dated analyst rating and price-target changes.": {
-   "de": "{n} datierte Änderungen von Analystenbewertungen und Kurszielen.",
-   "sq": "{n} ndryshime me datë të vlerësimeve dhe objektivave të çmimit nga analistët.",
-   "sr": "{n} datiranih promena ocena i ciljanih cena analitičara."
-  },
-  "{n} rating changes": {
-   "de": "{n} Bewertungsänderungen",
-   "sq": "{n} ndryshime vlerësimi",
-   "sr": "{n} promena ocena"
-  },
-  "{n} stocks": {
-   "de": "{n} Aktien",
-   "sq": "{n} aksione",
-   "sr": "{n} akcija"
-  },
-  "{n} weeks ({a} to {b})": {
-   "de": "{n} Wochen ({a} bis {b})",
-   "sq": "{n} javë ({a} deri {b})",
-   "sr": "{n} nedelja ({a} do {b})"
-  },
-  "{p}% of the amount": {
-   "de": "{p} % des Betrags",
-   "sq": "{p}% e shumës",
-   "sr": "{p}% iznosa"
-  },
-  "Watch the 1-minute video": {
-   "de": "1-Minuten-Video ansehen",
-   "sq": "Shiko videon 1-minutëshe",
-   "sr": "Pogledajte video od 1 minuta"
-  },
-  "YouTube Short · in English": {
-   "de": "YouTube Short · auf Englisch",
-   "sq": "YouTube Short · në anglisht",
-   "sr": "YouTube Short · na engleskom"
-  },
-  "Video lessons on YouTube": {
-   "de": "Videolektionen auf YouTube",
-   "sq": "Mësime me video në YouTube",
-   "sr": "Video lekcije na YouTube-u"
-  },
-  "All 8 lessons as one-minute videos.": {
-   "de": "Alle 8 Lektionen als Ein-Minuten-Videos.",
-   "sq": "Të 8 mësimet si video një-minutëshe.",
-   "sr": "Svih 8 lekcija kao video snimci od jednog minuta."
-  },
-  "Brokers & fintech": {
-   "de": "Broker & Fintech",
-   "sq": "Brokerë & fintech",
-   "sr": "Brokeri i fintech"
-  },
-  "AI strategies": {
-   "de": "KI-Strategien",
-   "sq": "Strategji AI",
-   "sr": "AI strategije"
-  },
-  "Strategy assistant": {
-   "de": "Strategie-Assistent",
-   "sq": "Asistenti i strategjive",
-   "sr": "Asistent za strategije"
-  },
-  "the strategies trading bots and AI agents use, tested": {
-   "de": "die Strategien von Trading-Bots und KI-Agenten, getestet",
-   "sq": "strategjitë që përdorin botët e tregtimit dhe agjentët AI, të testuara",
-   "sr": "strategije koje koriste trading botovi i AI agenti, testirane"
-  },
-  "Investors": {
-   "de": "Investoren",
-   "sq": "Investitorët",
-   "sr": "Investitori"
-  },
-  "Investors & articles": {
-   "de": "Investoren & Artikel",
-   "sq": "Investitorët & artikujt",
-   "sr": "Investitori i članci"
-  },
-  "Investors we follow": {
-   "de": "Investoren, denen wir folgen",
-   "sq": "Investitorët që ndjekim",
-   "sr": "Investitori koje pratimo"
-  },
-  "Latest article": {
-   "de": "Neuester Artikel",
-   "sq": "Artikulli i fundit",
-   "sr": "Najnoviji članak"
-  },
-  "Latest articles": {
-   "de": "Neueste Artikel",
-   "sq": "Artikujt më të fundit",
-   "sr": "Najnoviji članci"
-  },
-  "SEC filings": {
-   "de": "SEC-Meldungen",
-   "sq": "Raportimet në SEC",
-   "sr": "SEC prijave"
-  },
-  "Sources": {
-   "de": "Quellen",
-   "sq": "Burimet",
-   "sr": "Izvori"
-  },
-  "By": {
-   "de": "Von",
-   "sq": "Nga",
-   "sr": "Autor:"
-  },
-  "How to follow:": {
-   "de": "So folgen Sie:",
-   "sq": "Si të ndiqni:",
-   "sr": "Kako pratiti:"
-  },
-  "Investor tracker": {
-   "de": "Investoren-Tracker",
-   "sq": "Ndjekës investitorësh",
-   "sr": "Praćenje investitora"
-  },
-  "Write for Analyst Ledger": {
-   "de": "Für Analyst Ledger schreiben",
-   "sq": "Shkruani për Analyst Ledger",
-   "sr": "Pišite za Analyst Ledger"
-  },
-  "{n} min read": {
-   "de": "{n} Min. Lesezeit",
-   "sq": "{n} min lexim",
-   "sr": "{n} min čitanja"
-  },
-  "Articles are published in English.": {
-   "de": "Artikel werden auf Englisch veröffentlicht.",
-   "sq": "Artikujt publikohen në anglisht.",
-   "sr": "Članci se objavljuju na engleskom."
-  },
-  "Correspondents can publish their own research and commentary under their own name.": {
-   "de": "Korrespondenten können eigene Analysen und Kommentare unter ihrem Namen veröffentlichen.",
-   "sq": "Korrespondentët mund të publikojnë analizat dhe komentet e tyre me emrin e tyre.",
-   "sr": "Dopisnici mogu objavljivati sopstvene analize i komentare pod svojim imenom."
-  },
-  "Filings show past, partial positions (long US holdings only, up to 45 days old). Nothing here is a recommendation to copy any investor.": {
-   "de": "Meldungen zeigen vergangene, unvollständige Positionen (nur US-Long-Positionen, bis zu 45 Tage alt). Nichts hier ist eine Empfehlung, einen Investor zu kopieren.",
-   "sq": "Raportimet tregojnë pozicione të kaluara dhe të pjesshme (vetëm pozicione blerëse në SHBA, deri në 45 ditë të vjetra). Asgjë këtu nuk është rekomandim për të kopjuar ndonjë investitor.",
-   "sr": "Prijave prikazuju prošle, delimične pozicije (samo duge američke pozicije, stare do 45 dana). Ništa ovde nije preporuka da kopirate nekog investitora."
-  },
-  "Famous investors have to disclose many of their trades to the SEC. We track the filings of investors whose moves can be followed quickly, explain what they changed, and publish articles from our correspondents. Every article is reviewed by the editor before it appears.": {
-   "de": "Bekannte Investoren müssen viele ihrer Transaktionen der SEC melden. Wir verfolgen die Meldungen von Investoren, deren Schritte sich schnell nachvollziehen lassen, erklären die Änderungen und veröffentlichen Artikel unserer Korrespondenten. Jeder Artikel wird vor der Veröffentlichung redaktionell geprüft.",
-   "sq": "Investitorët e njohur duhet t'i raportojnë shumë nga transaksionet e tyre në SEC. Ne ndjekim raportimet e investitorëve, lëvizjet e të cilëve mund të ndiqen shpejt, shpjegojmë çfarë ndryshuan dhe publikojmë artikuj nga korrespondentët tanë. Çdo artikull shqyrtohet nga redaktori para publikimit.",
-   "sr": "Poznati investitori moraju da prijave mnoge svoje transakcije SEC-u. Pratimo prijave investitora čiji se potezi mogu brzo pratiti, objašnjavamo šta su promenili i objavljujemo članke naših dopisnika. Urednik pregleda svaki članak pre objavljivanja."
-  },
-  "What famous investors are buying and selling, from their SEC filings: profiles, latest disclosed moves and how to follow them, plus articles from our correspondents.": {
-   "de": "Was bekannte Investoren laut SEC-Meldungen kaufen und verkaufen: Profile, neueste Schritte und wie man ihnen folgt, dazu Artikel unserer Korrespondenten.",
-   "sq": "Çfarë blejnë dhe shesin investitorët e njohur sipas raportimeve në SEC: profile, lëvizjet e fundit dhe si t'i ndiqni, si dhe artikuj nga korrespondentët tanë.",
-   "sr": "Šta poznati investitori kupuju i prodaju prema SEC prijavama: profili, najnoviji potezi i kako ih pratiti, plus članci naših dopisnika."
-  },
-  "Become an Analyst Ledger correspondent: sign in with a free GitHub account, submit articles, and publish under your own name after editorial review.": {
-   "de": "Werden Sie Korrespondent bei Analyst Ledger: mit einem kostenlosen GitHub-Konto anmelden, Artikel einreichen und nach redaktioneller Prüfung unter eigenem Namen veröffentlichen.",
-   "sq": "Bëhuni korrespondent i Analyst Ledger: hyni me një llogari falas GitHub, dërgoni artikuj dhe publikoni me emrin tuaj pas shqyrtimit nga redaktori.",
-   "sr": "Postanite dopisnik Analyst Ledger-a: prijavite se besplatnim GitHub nalogom, pošaljite članke i objavljujte pod svojim imenom nakon uredničkog pregleda."
-  },
-  "The first articles are being reviewed and will appear here soon.": {
-   "de": "Die ersten Artikel werden geprüft und erscheinen bald hier.",
-   "sq": "Artikujt e parë po shqyrtohen dhe do të shfaqen së shpejti këtu.",
-   "sr": "Prvi članci se pregledaju i uskoro će se pojaviti ovde."
-  },
-  "correspondent": {
-   "de": "Korrespondent",
-   "sq": "korrespondent",
-   "sr": "dopisnik"
-  },
-  "Correspondent": {
-   "de": "Korrespondent",
-   "sq": "Korrespondent",
-   "sr": "Dopisnik"
-  },
-  "Correspondent articles reflect the author's views, not Analyst Ledger's. They are reviewed before publication.": {
-   "de": "Korrespondentenartikel geben die Meinung des Autors wieder, nicht die von Analyst Ledger. Sie werden vor der Veröffentlichung geprüft.",
-   "sq": "Artikujt e korrespondentëve pasqyrojnë pikëpamjet e autorit, jo të Analyst Ledger. Ata shqyrtohen para publikimit.",
-   "sr": "Članci dopisnika odražavaju stavove autora, a ne Analyst Ledger-a. Pregledaju se pre objavljivanja."
+  "ui": {
+    "1 unit of your currency = ? USD (US stocks trade in USD)": {
+      "de": "1 Einheit Ihrer Währung = ? USD (US-Aktien werden in USD gehandelt)",
+      "sq": "1 njësi e monedhës suaj = ? USD (aksionet amerikane tregtohen në USD)",
+      "sr": "1 jedinica vaše valute = ? USD (američke akcije se trguju u USD)"
+    },
+    "<b>Most weeks are calm.</b> About 5 weeks in 6 ended above −1σ — that is why weekly put selling wins most of the time.": {
+      "de": "<b>Die meisten Wochen sind ruhig.</b> Etwa 5 von 6 Wochen endeten über −1σ — deshalb gewinnt der wöchentliche Put-Verkauf meistens.",
+      "sq": "<b>Shumica e javëve janë të qeta.</b> Rreth 5 nga 6 javë përfunduan mbi −1σ — prandaj shitja javore e put-eve fiton shumicën e kohës.",
+      "sr": "<b>Većina nedelja je mirna.</b> Oko 5 od 6 nedelja završilo je iznad −1σ — zato nedeljna prodaja put opcija uglavnom dobija."
+    },
+    "<b>The tail is fatter than the bell curve.</b> Falls of 3σ or more were several times more frequent than a normal distribution predicts. One such week can erase months of small gains.": {
+      "de": "<b>Die Ränder sind dicker als bei der Glockenkurve.</b> Rückgänge von 3σ oder mehr kamen mehrfach häufiger vor, als eine Normalverteilung vorhersagt. Eine solche Woche kann monatelange kleine Gewinne auslöschen.",
+      "sq": "<b>Bishti është më i trashë se kurba e kambanës.</b> Rëniet prej 3σ ose më shumë ndodhën disa herë më shpesh nga sa parashikon shpërndarja normale. Një javë e tillë mund të fshijë muaj fitimesh të vogla.",
+      "sr": "<b>Rep je deblji od zvonaste krive.</b> Padovi od 3σ ili više bili su nekoliko puta češći nego što normalna raspodela predviđa. Jedna takva nedelja može izbrisati mesece malih dobitaka."
+    },
+    "<b>Win rate is not profit.</b> Always ask how big the losing weeks were, and whether the premiums collected cover them after commissions.": {
+      "de": "<b>Trefferquote ist kein Gewinn.</b> Fragen Sie immer, wie groß die Verlustwochen waren und ob die eingenommenen Prämien sie nach Gebühren decken.",
+      "sq": "<b>Përqindja e fitoreve nuk është fitim.</b> Pyesni gjithmonë sa të mëdha ishin javët me humbje dhe nëse primat e arkëtuara i mbulojnë pas komisioneve.",
+      "sr": "<b>Procenat dobitaka nije profit.</b> Uvek pitajte koliko su bile velike gubitničke nedelje i da li ih naplaćene premije pokrivaju posle provizija."
+    },
+    "A fixed yearly return is an assumption, not a forecast. Real returns vary and can be negative.": {
+      "de": "Eine feste Jahresrendite ist eine Annahme, keine Prognose. Echte Renditen schwanken und können negativ sein.",
+      "sq": "Një kthim vjetor fiks është supozim, jo parashikim. Kthimet reale ndryshojnë dhe mund të jenë negative.",
+      "sr": "Fiksni godišnji prinos je pretpostavka, a ne prognoza. Stvarni prinosi variraju i mogu biti negativni."
+    },
+    "A free, private trade journal: log practice or real stock and options trades, record why you entered, and track win rate, average win and loss, and total profit. Saved only in your browser.": {
+      "de": "Ein kostenloses, privates Trading-Journal: Übungs- oder echte Aktien- und Options-Trades erfassen, Einstiegsgründe notieren und Trefferquote, Ø Gewinn und Verlust sowie Gesamtergebnis verfolgen. Nur in Ihrem Browser gespeichert.",
+      "sq": "Ditar tregtimi falas dhe privat: regjistroni tregtime praktike ose reale me aksione dhe opsione, shënoni pse hytë dhe ndiqni përqindjen e fitoreve, fitimin dhe humbjen mesatare dhe rezultatin total. Ruhet vetëm në shfletuesin tuaj.",
+      "sr": "Besplatan, privatan dnevnik trgovanja: beležite vežbe ili stvarne trgovine akcijama i opcijama, zašto ste ušli, i pratite procenat dobitaka, prosečan dobitak i gubitak i ukupan rezultat. Čuva se samo u vašem pregledaču."
+    },
+    "About": {
+      "de": "Über uns",
+      "sq": "Rreth nesh",
+      "sr": "O nama"
+    },
+    "Account": {
+      "de": "Konto",
+      "sq": "Llogaria",
+      "sr": "Račun"
+    },
+    "Action": {
+      "de": "Aktion",
+      "sq": "Veprimi",
+      "sr": "Akcija"
+    },
+    "Actions": {
+      "de": "Aktionen",
+      "sq": "Veprime",
+      "sr": "Akcije"
+    },
+    "Add a trade": {
+      "de": "Trade hinzufügen",
+      "sq": "Shto një tregtim",
+      "sr": "Dodaj trgovinu"
+    },
+    "Added each month": {
+      "de": "Monatliche Einzahlung",
+      "sq": "Shtesë çdo muaj",
+      "sr": "Dodato svakog meseca"
+    },
+    "All actions": {
+      "de": "Alle Aktionen",
+      "sq": "Të gjitha veprimet",
+      "sr": "Sve akcije"
+    },
+    "All analysts": {
+      "de": "Alle Analysten",
+      "sq": "Të gjithë analistët",
+      "sr": "Svi analitičari"
+    },
+    "All impact levels": {
+      "de": "Alle Einflussstufen",
+      "sq": "Të gjitha nivelet e ndikimit",
+      "sr": "Svi nivoi uticaja"
+    },
+    "All news →": {
+      "de": "Alle Nachrichten →",
+      "sq": "Të gjitha lajmet →",
+      "sr": "Sve vesti →"
+    },
+    "All stocks": {
+      "de": "Alle Aktien",
+      "sq": "Të gjitha aksionet",
+      "sr": "Sve akcije"
+    },
+    "All trades": {
+      "de": "Alle Trades",
+      "sq": "Të gjitha tregtimet",
+      "sr": "Sve trgovine"
+    },
+    "Amount you can invest": {
+      "de": "Betrag, den Sie investieren können",
+      "sq": "Shuma që mund të investoni",
+      "sr": "Iznos koji možete da uložite"
+    },
+    "Analyst": {
+      "de": "Analyst",
+      "sq": "Analisti",
+      "sr": "Analitičar"
+    },
+    "Analyst / Firm": {
+      "de": "Analyst / Firma",
+      "sq": "Analisti / Firma",
+      "sr": "Analitičar / Firma"
+    },
+    "Analyst Ledger publishes factual records of publicly reported analyst rating and price-target changes for information only. Nothing here is investment advice or a recommendation to buy or sell any security. Data may be delayed or incomplete — always verify with the original source.": {
+      "de": "Analyst Ledger veröffentlicht sachliche Aufzeichnungen öffentlich gemeldeter Bewertungs- und Kurszieländerungen von Analysten ausschließlich zur Information. Nichts hier ist Anlageberatung oder eine Empfehlung zum Kauf oder Verkauf eines Wertpapiers. Daten können verzögert oder unvollständig sein — prüfen Sie stets die Originalquelle.",
+      "sq": "Analyst Ledger publikon regjistrime faktike të ndryshimeve të raportuara publikisht të vlerësimeve dhe objektivave të çmimit nga analistët, vetëm për informim. Asgjë këtu nuk është këshillë investimi apo rekomandim për të blerë ose shitur ndonjë letër me vlerë. Të dhënat mund të jenë të vonuara ose jo të plota — verifikoni gjithmonë me burimin origjinal.",
+      "sr": "Analyst Ledger objavljuje činjenične zapise javno objavljenih promena ocena i ciljanih cena analitičara isključivo informativno. Ništa ovde nije investicioni savet niti preporuka za kupovinu ili prodaju bilo koje hartije od vrednosti. Podaci mogu kasniti ili biti nepotpuni — uvek proverite originalni izvor."
+    },
+    "Analyst rating changes & track records": {
+      "de": "Analystenbewertungen & Trefferquoten",
+      "sq": "Ndryshimet e vlerësimeve të analistëve & rezultatet",
+      "sr": "Promene ocena analitičara i rezultati"
+    },
+    "Analysts": {
+      "de": "Analysten",
+      "sq": "Analistët",
+      "sr": "Analitičari"
+    },
+    "At expiry only, before commissions and taxes. Premium is per share; one contract = 100 shares.": {
+      "de": "Nur bei Verfall, vor Gebühren und Steuern. Die Prämie gilt pro Aktie; ein Kontrakt = 100 Aktien.",
+      "sq": "Vetëm në skadim, para komisioneve dhe taksave. Prima është për aksion; një kontratë = 100 aksione.",
+      "sr": "Samo na dan isteka, pre provizija i poreza. Premija je po akciji; jedan ugovor = 100 akcija."
+    },
+    "Average directional return since each Buy/Sell-type call.": {
+      "de": "Durchschnittliche Rendite in Richtung jeder Kauf-/Verkaufsempfehlung.",
+      "sq": "Kthimi mesatar në drejtimin e çdo rekomandimi Bli/Shit.",
+      "sr": "Prosečan prinos u pravcu svake preporuke Kupi/Prodaj."
+    },
+    "Avg return": {
+      "de": "Ø Rendite",
+      "sq": "Kthimi mesatar",
+      "sr": "Prosečan prinos"
+    },
+    "Avg target": {
+      "de": "Ø Kursziel",
+      "sq": "Objektivi mesatar",
+      "sr": "Prosečan cilj"
+    },
+    "Back up (JSON)": {
+      "de": "Sichern (JSON)",
+      "sq": "Ruaj kopje (JSON)",
+      "sr": "Rezervna kopija (JSON)"
+    },
+    "Bearish": {
+      "de": "Negativ",
+      "sq": "Negativ",
+      "sr": "Negativno"
+    },
+    "Bell-curve probabilities. Real markets have fat tails: large drops happen more often than shown.": {
+      "de": "Wahrscheinlichkeiten nach Glockenkurve. Echte Märkte haben „fette Ränder“: große Kursstürze kommen häufiger vor als hier gezeigt.",
+      "sq": "Probabilitete sipas kurbës së kambanës. Tregjet reale kanë „bishta të trashë“: rëniet e mëdha ndodhin më shpesh se sa tregohet.",
+      "sr": "Verovatnoće po zvonastoj krivoj. Stvarna tržišta imaju „debele repove“: veliki padovi se dešavaju češće nego što je prikazano."
+    },
+    "Best-scoring analysts": {
+      "de": "Analysten mit den besten Ergebnissen",
+      "sq": "Analistët me rezultatet më të mira",
+      "sr": "Analitičari sa najboljim rezultatima"
+    },
+    "Bought call": {
+      "de": "Gekaufter Call",
+      "sq": "Call i blerë",
+      "sr": "Kupljen call"
+    },
+    "Bought put": {
+      "de": "Gekaufter Put",
+      "sq": "Put i blerë",
+      "sr": "Kupljen put"
+    },
+    "Bought strike ($)": {
+      "de": "Gekaufter Strike ($)",
+      "sq": "Strike i blerë ($)",
+      "sr": "Kupljeni strajk ($)"
+    },
+    "British pound (£)": {
+      "de": "Britisches Pfund (£)",
+      "sq": "Paundi britanik (£)",
+      "sr": "Britanska funta (£)"
+    },
+    "Budget & strategy planner": {
+      "de": "Budget- & Strategieplaner",
+      "sq": "Planifikuesi i buxhetit dhe strategjisë",
+      "sr": "Planer budžeta i strategije"
+    },
+    "Bullish": {
+      "de": "Positiv",
+      "sq": "Pozitiv",
+      "sr": "Pozitivno"
+    },
+    "Bullish / neutral / bearish views from firms over the last 12 months.": {
+      "de": "Positive / neutrale / negative Einschätzungen von Firmen in den letzten 12 Monaten.",
+      "sq": "Pikëpamje pozitive / neutrale / negative nga firmat gjatë 12 muajve të fundit.",
+      "sr": "Pozitivna / neutralna / negativna mišljenja firmi u poslednjih 12 meseci."
+    },
+    "Buy a call": {
+      "de": "Call kaufen",
+      "sq": "Bli një call",
+      "sr": "Kupi call"
+    },
+    "Buy a put": {
+      "de": "Put kaufen",
+      "sq": "Bli një put",
+      "sr": "Kupi put"
+    },
+    "Calculators": {
+      "de": "Rechner",
+      "sq": "Kalkulatorët",
+      "sr": "Kalkulatori"
+    },
+    "Calendar days to expiry": {
+      "de": "Kalendertage bis Verfall",
+      "sq": "Ditë kalendarike deri në skadim",
+      "sr": "Kalendarski dani do isteka"
+    },
+    "Call credit spread": {
+      "de": "Call-Credit-Spread",
+      "sq": "Call credit spread",
+      "sr": "Call kreditni spred"
+    },
+    "Cash-secured put": {
+      "de": "Bar gedeckter Put",
+      "sq": "Put i mbuluar me para",
+      "sr": "Put pokriven gotovinom"
+    },
+    "Check the current price with your broker": {
+      "de": "Prüfen Sie den aktuellen Kurs bei Ihrem Broker",
+      "sq": "Kontrolloni çmimin aktual te brokeri juaj",
+      "sr": "Proverite trenutnu cenu kod svog brokera"
+    },
+    "Clear": {
+      "de": "Zurücksetzen",
+      "sq": "Pastro",
+      "sr": "Obriši"
+    },
+    "Click a column to sort. Return = average directional return per Buy/Sell-type call.": {
+      "de": "Spalte anklicken zum Sortieren. Rendite = durchschnittliche Rendite in Richtung jeder Kauf-/Verkaufsempfehlung.",
+      "sq": "Klikoni një kolonë për ta renditur. Kthimi = kthimi mesatar në drejtimin e çdo rekomandimi Bli/Shit.",
+      "sr": "Kliknite kolonu za sortiranje. Prinos = prosečan prinos u pravcu svake preporuke Kupi/Prodaj."
+    },
+    "Company": {
+      "de": "Unternehmen",
+      "sq": "Kompania",
+      "sr": "Kompanija"
+    },
+    "Compounding calculator": {
+      "de": "Zinseszinsrechner",
+      "sq": "Kalkulatori i interesit të përbërë",
+      "sr": "Kalkulator složene kamate"
+    },
+    "Computed from daily closing prices; only aggregated results are published.": {
+      "de": "Berechnet aus täglichen Schlusskursen; veröffentlicht werden nur zusammengefasste Ergebnisse.",
+      "sq": "Llogaritur nga çmimet ditore të mbylljes; publikohen vetëm rezultatet e përmbledhura.",
+      "sr": "Izračunato iz dnevnih cena zatvaranja; objavljuju se samo zbirni rezultati."
+    },
+    "Consensus uses each firm's latest view in the last 12 months. Click a column to sort.": {
+      "de": "Der Konsens nutzt die jeweils neueste Einschätzung jeder Firma aus den letzten 12 Monaten. Spalte anklicken zum Sortieren.",
+      "sq": "Konsensusi përdor pikëpamjen më të fundit të çdo firme në 12 muajt e fundit. Klikoni një kolonë për ta renditur.",
+      "sr": "Konsenzus koristi najnovije mišljenje svake firme u poslednjih 12 meseci. Kliknite kolonu za sortiranje."
+    },
+    "Contracts": {
+      "de": "Kontrakte",
+      "sq": "Kontrata",
+      "sr": "Ugovori"
+    },
+    "Covered call": {
+      "de": "Gedeckter Call",
+      "sq": "Covered call",
+      "sr": "Pokriveni call"
+    },
+    "Currency": {
+      "de": "Währung",
+      "sq": "Monedha",
+      "sr": "Valuta"
+    },
+    "Cuts target": {
+      "de": "Senkt Kursziel",
+      "sq": "Ul objektivin",
+      "sr": "Snižava cilj"
+    },
+    "Date": {
+      "de": "Datum",
+      "sq": "Data",
+      "sr": "Datum"
+    },
+    "Disclaimer:": {
+      "de": "Haftungsausschluss:",
+      "sq": "Mohim përgjegjësie:",
+      "sr": "Odricanje od odgovornosti:"
+    },
+    "Do you have an emergency fund (3–6 months of costs)?": {
+      "de": "Haben Sie einen Notgroschen (3–6 Monatsausgaben)?",
+      "sq": "A keni fond emergjence (shpenzime për 3–6 muaj)?",
+      "sr": "Imate li rezervni fond (troškovi za 3–6 meseci)?"
+    },
+    "Down": {
+      "de": "Ab",
+      "sq": "Poshtë",
+      "sr": "Dole"
+    },
+    "Downgrade": {
+      "de": "Herabstufung",
+      "sq": "Ulje vlerësimi",
+      "sr": "Snižena ocena"
+    },
+    "Drops coverage": {
+      "de": "Beendet Abdeckung",
+      "sq": "Ndërpret mbulimin",
+      "sr": "Prekida praćenje"
+    },
+    "Earnings": {
+      "de": "Quartalszahlen",
+      "sq": "Fitimet",
+      "sr": "Rezultati poslovanja"
+    },
+    "Educational analysis of past prices only — past results do not predict future results, and this is not investment advice.": {
+      "de": "Nur eine Lernanalyse vergangener Kurse — vergangene Ergebnisse sagen keine zukünftigen voraus, und dies ist keine Anlageberatung.",
+      "sq": "Vetëm analizë edukative e çmimeve të kaluara — rezultatet e kaluara nuk parashikojnë të ardhmen dhe kjo nuk është këshillë investimi.",
+      "sr": "Samo edukativna analiza prošlih cena — prošli rezultati ne predviđaju buduće i ovo nije investicioni savet."
+    },
+    "Educational calculators only — not investment advice.": {
+      "de": "Nur Lernrechner — keine Anlageberatung.",
+      "sq": "Vetëm kalkulatorë edukativë — jo këshillë investimi.",
+      "sr": "Samo edukativni kalkulatori — nije investicioni savet."
+    },
+    "Educational tool only — not investment advice.": {
+      "de": "Nur ein Lernwerkzeug — keine Anlageberatung.",
+      "sq": "Vetëm mjet edukativ — jo këshillë investimi.",
+      "sr": "Samo edukativni alat — nije investicioni savet."
+    },
+    "Euro (€)": {
+      "de": "Euro (€)",
+      "sq": "Euro (€)",
+      "sr": "Evro (€)"
+    },
+    "Every Wall Street rating change, dated and tracked — free.": {
+      "de": "Jede Wall-Street-Bewertungsänderung, datiert und verfolgt — kostenlos.",
+      "sq": "Çdo ndryshim vlerësimi në Wall Street, me datë dhe i ndjekur — falas.",
+      "sr": "Svaka promena ocene sa Wall Streeta, datirana i praćena — besplatno."
+    },
+    "Every dated rating and price-target change by {name} ({firm}): {n} actions across {s} stocks.": {
+      "de": "Jede datierte Bewertungs- und Kurszieländerung von {name} ({firm}): {n} Aktionen zu {s} Aktien.",
+      "sq": "Çdo ndryshim vlerësimi dhe objektivi çmimi me datë nga {name} ({firm}): {n} veprime për {s} aksione.",
+      "sr": "Svaka datirana promena ocene i ciljane cene od {name} ({firm}): {n} akcija za {s} hartija."
+    },
+    "Exchange rate to US dollar": {
+      "de": "Wechselkurs zum US-Dollar",
+      "sq": "Kursi i këmbimit me dollarin amerikan",
+      "sr": "Kurs prema američkom dolaru"
+    },
+    "Expected move and sigma bands": {
+      "de": "Erwartete Bewegung und Sigma-Bänder",
+      "sq": "Lëvizja e pritur dhe brezat sigma",
+      "sr": "Očekivano kretanje i sigma pojasevi"
+    },
+    "Experience": {
+      "de": "Erfahrung",
+      "sq": "Përvoja",
+      "sr": "Iskustvo"
+    },
+    "Export CSV": {
+      "de": "CSV exportieren",
+      "sq": "Eksporto CSV",
+      "sr": "Izvezi CSV"
+    },
+    "Filter": {
+      "de": "Filtern",
+      "sq": "Filtro",
+      "sr": "Filter"
+    },
+    "Filter analysts or firms…": {
+      "de": "Analysten oder Firmen filtern…",
+      "sq": "Filtro analistët ose firmat…",
+      "sr": "Filtriraj analitičare ili firme…"
+    },
+    "Filter by ticker or word, e.g. NVDA": {
+      "de": "Nach Ticker oder Wort filtern, z. B. NVDA",
+      "sq": "Filtro sipas simbolit ose fjalës, p.sh. NVDA",
+      "sr": "Filtriraj po oznaci ili reči, npr. NVDA"
+    },
+    "Filter news": {
+      "de": "Nachrichten filtern",
+      "sq": "Filtro lajmet",
+      "sr": "Filtriraj vesti"
+    },
+    "Filter stocks…": {
+      "de": "Aktien filtern…",
+      "sq": "Filtro aksionet…",
+      "sr": "Filtriraj akcije…"
+    },
+    "Filter table": {
+      "de": "Tabelle filtern",
+      "sq": "Filtro tabelën",
+      "sr": "Filtriraj tabelu"
+    },
+    "Filter this table…": {
+      "de": "Diese Tabelle filtern…",
+      "sq": "Filtro këtë tabelë…",
+      "sr": "Filtriraj ovu tabelu…"
+    },
+    "Firm": {
+      "de": "Firma",
+      "sq": "Firma",
+      "sr": "Firma"
+    },
+    "Five worst weeks": {
+      "de": "Die fünf schlechtesten Wochen",
+      "sq": "Pesë javët më të këqija",
+      "sr": "Pet najgorih nedelja"
+    },
+    "Free calculators that run in your browser. Enter numbers from your broker; nothing is sent or stored.": {
+      "de": "Kostenlose Rechner, die in Ihrem Browser laufen. Geben Sie Zahlen von Ihrem Broker ein; nichts wird gesendet oder gespeichert.",
+      "sq": "Kalkulatorë falas që punojnë në shfletuesin tuaj. Futni numrat nga brokeri juaj; asgjë nuk dërgohet apo ruhet.",
+      "sr": "Besplatni kalkulatori koji rade u vašem pregledaču. Unesite brojeve od svog brokera; ništa se ne šalje niti čuva."
+    },
+    "Free educational planner: enter your budget and risk settings to see which stock and options strategies your budget can support, how much you could lose per trade, and what analysts say about a stock.": {
+      "de": "Kostenloser Lernplaner: Geben Sie Budget und Risikoeinstellungen ein und sehen Sie, welche Aktien- und Optionsstrategien Ihr Budget trägt, wie viel Sie pro Trade verlieren könnten und was Analysten zu einer Aktie sagen.",
+      "sq": "Planifikues edukativ falas: futni buxhetin dhe nivelin e rrezikut për të parë cilat strategji me aksione dhe opsione i përballon buxheti juaj, sa mund të humbni për tregtim dhe çfarë thonë analistët për një aksion.",
+      "sr": "Besplatan edukativni planer: unesite budžet i nivo rizika da vidite koje strategije sa akcijama i opcijama vaš budžet podržava, koliko možete da izgubite po trgovini i šta analitičari kažu o akciji."
+    },
+    "Free options calculators: expected move and ±1σ/±2σ bands from implied volatility, profit and loss at expiry for calls, puts, covered calls, cash-secured puts and spreads, and a compounding calculator.": {
+      "de": "Kostenlose Optionsrechner: erwartete Bewegung und ±1σ/±2σ-Bänder aus der impliziten Volatilität, Gewinn und Verlust bei Verfall für Calls, Puts, gedeckte Calls, bar gedeckte Puts und Spreads sowie ein Zinseszinsrechner.",
+      "sq": "Kalkulatorë opsionesh falas: lëvizja e pritur dhe brezat ±1σ/±2σ nga volatiliteti i nënkuptuar, fitimi dhe humbja në skadim për call, put, covered call, put të mbuluar me para dhe spread, si dhe kalkulator i interesit të përbërë.",
+      "sr": "Besplatni kalkulatori opcija: očekivano kretanje i pojasevi ±1σ/±2σ iz implicitne volatilnosti, dobitak i gubitak na dan isteka za call, put, pokrivene call opcije, put pokriven gotovinom i spredove, kao i kalkulator složene kamate."
+    },
+    "Free options calculators: expected move, profit & loss, compounding": {
+      "de": "Kostenlose Optionsrechner: erwartete Bewegung, Gewinn & Verlust, Zinseszins",
+      "sq": "Kalkulatorë opsionesh falas: lëvizja e pritur, fitimi & humbja, interesi i përbërë",
+      "sr": "Besplatni kalkulatori opcija: očekivano kretanje, dobitak i gubitak, složena kamata"
+    },
+    "Free trade journal for stocks and options": {
+      "de": "Kostenloses Trading-Journal für Aktien und Optionen",
+      "sq": "Ditar tregtimi falas për aksione dhe opsione",
+      "sr": "Besplatan dnevnik trgovanja za akcije i opcije"
+    },
+    "Full history": {
+      "de": "Gesamte Historie",
+      "sq": "Historia e plotë",
+      "sr": "Cela istorija"
+    },
+    "High impact": {
+      "de": "Hoher Einfluss",
+      "sq": "Ndikim i lartë",
+      "sr": "Visok uticaj"
+    },
+    "Hold or buy more (high)": {
+      "de": "Halten oder nachkaufen (hoch)",
+      "sq": "Mbaj ose bli më shumë (i lartë)",
+      "sr": "Držim ili dokupljujem (visok)"
+    },
+    "How far the options market implies a stock could move by a date.": {
+      "de": "Wie weit sich eine Aktie laut Optionsmarkt bis zu einem Datum bewegen könnte.",
+      "sq": "Sa larg mund të lëvizë një aksion deri në një datë, sipas tregut të opsioneve.",
+      "sr": "Koliko bi se akcija mogla pomeriti do nekog datuma, prema tržištu opcija."
+    },
+    "How it works": {
+      "de": "So funktioniert es",
+      "sq": "Si funksionon",
+      "sr": "Kako funkcioniše"
+    },
+    "How often SPY and QQQ actually stayed inside their weekly ±1σ band over five years, how often they fell 2σ and 3σ, and how big the losing weeks were for a put sold at the −1σ line.": {
+      "de": "Wie oft SPY und QQQ in fünf Jahren tatsächlich innerhalb ihres wöchentlichen ±1σ-Bands blieben, wie oft sie um 2σ und 3σ fielen und wie groß die Verlustwochen für einen bei −1σ verkauften Put waren.",
+      "sq": "Sa shpesh SPY dhe QQQ mbetën realisht brenda brezit javor ±1σ gjatë pesë vjetëve, sa shpesh ranë 2σ dhe 3σ dhe sa të mëdha ishin javët me humbje për një put të shitur te vija −1σ.",
+      "sr": "Koliko često su SPY i QQQ stvarno ostali unutar nedeljnog pojasa ±1σ tokom pet godina, koliko često su pali 2σ i 3σ i koliko su bile velike gubitničke nedelje za put prodat na liniji −1σ."
+    },
+    "How would you react to a 30% fall?": {
+      "de": "Wie würden Sie auf einen Rückgang von 30 % reagieren?",
+      "sq": "Si do të reagonit ndaj një rënieje 30%?",
+      "sr": "Kako biste reagovali na pad od 30%?"
+    },
+    "I have bought stocks or funds": {
+      "de": "Ich habe Aktien oder Fonds gekauft",
+      "sq": "Kam blerë aksione ose fonde",
+      "sr": "Kupovao/la sam akcije ili fondove"
+    },
+    "I have traded options": {
+      "de": "Ich habe mit Optionen gehandelt",
+      "sq": "Kam tregtuar opsione",
+      "sr": "Trgovao/la sam opcijama"
+    },
+    "If you had sold a put at the −1σ line every week": {
+      "de": "Wenn Sie jede Woche einen Put an der −1σ-Linie verkauft hätten",
+      "sq": "Nëse do të kishit shitur një put te vija −1σ çdo javë",
+      "sr": "Da ste svake nedelje prodavali put na liniji −1σ"
+    },
+    "Impact": {
+      "de": "Einfluss",
+      "sq": "Ndikimi",
+      "sr": "Uticaj"
+    },
+    "Implied volatility (%)": {
+      "de": "Implizite Volatilität (%)",
+      "sq": "Volatiliteti i nënkuptuar (%)",
+      "sr": "Implicitna volatilnost (%)"
+    },
+    "In 1–3 years": {
+      "de": "In 1–3 Jahren",
+      "sq": "Për 1–3 vjet",
+      "sr": "Za 1–3 godine"
+    },
+    "In more than 3 years": {
+      "de": "In mehr als 3 Jahren",
+      "sq": "Për më shumë se 3 vjet",
+      "sr": "Za više od 3 godine"
+    },
+    "In sigma": {
+      "de": "In Sigma",
+      "sq": "Në sigma",
+      "sr": "U sigmama"
+    },
+    "In the {n} weeks the price ended below the line, it finished on average <b>{a}%</b> of the share price below the strike, and <b>{w}%</b> in the worst week. On {tk} that is the loss per share before the premium you collected — the premiums from the winning weeks have to pay for it.": {
+      "de": "In den {n} Wochen, in denen der Kurs unter der Linie schloss, lag er im Schnitt <b>{a} %</b> des Aktienkurses unter dem Strike und in der schlechtesten Woche <b>{w} %</b>. Bei {tk} ist das der Verlust pro Aktie vor der eingenommenen Prämie — die Prämien der Gewinnwochen müssen ihn bezahlen.",
+      "sq": "Në {n} javët kur çmimi u mbyll nën vijë, ai përfundoi mesatarisht <b>{a}%</b> të çmimit të aksionit nën strike, dhe <b>{w}%</b> në javën më të keqe. Për {tk} kjo është humbja për aksion para primës së arkëtuar — primat e javëve fituese duhet ta mbulojnë.",
+      "sr": "U {n} nedelja kada se cena zatvorila ispod linije, završila je u proseku <b>{a}%</b> cene akcije ispod strajka, a <b>{w}%</b> u najgoroj nedelji. Na {tk} to je gubitak po akciji pre naplaćene premije — premije iz dobitnih nedelja moraju da ga pokriju."
+    },
+    "Initiates coverage": {
+      "de": "Beginnt Abdeckung",
+      "sq": "Fillon mbulimin",
+      "sr": "Započinje praćenje"
+    },
+    "Language": {
+      "de": "Sprache",
+      "sq": "Gjuha",
+      "sr": "Jezik"
+    },
+    "Last action": {
+      "de": "Letzte Aktion",
+      "sq": "Veprimi i fundit",
+      "sr": "Poslednja akcija"
+    },
+    "Latest": {
+      "de": "Neueste",
+      "sq": "Më të rejat",
+      "sr": "Najnovije"
+    },
+    "Latest rating changes": {
+      "de": "Neueste Bewertungsänderungen",
+      "sq": "Ndryshimet më të fundit të vlerësimeve",
+      "sr": "Najnovije promene ocena"
+    },
+    "Leadership": {
+      "de": "Führung",
+      "sq": "Udhëheqja",
+      "sr": "Rukovodstvo"
+    },
+    "Learn": {
+      "de": "Lernen",
+      "sq": "Mëso",
+      "sr": "Učite"
+    },
+    "Learn & tools": {
+      "de": "Lernen & Tools",
+      "sq": "Mëso & mjete",
+      "sr": "Učenje i alati"
+    },
+    "Learning with small amounts": {
+      "de": "Lernen mit kleinen Beträgen",
+      "sq": "Të mësoj me shuma të vogla",
+      "sr": "Učenje sa malim iznosima"
+    },
+    "Long-term growth": {
+      "de": "Langfristiges Wachstum",
+      "sq": "Rritje afatgjatë",
+      "sr": "Dugoročni rast"
+    },
+    "Macro & Fed": {
+      "de": "Makro & Fed",
+      "sq": "Makro & Fed",
+      "sr": "Makro i Fed"
+    },
+    "Main goal": {
+      "de": "Hauptziel",
+      "sq": "Qëllimi kryesor",
+      "sr": "Glavni cilj"
+    },
+    "Market-moving news": {
+      "de": "Marktbewegende Nachrichten",
+      "sq": "Lajme që lëvizin tregun",
+      "sr": "Vesti koje pokreću tržište"
+    },
+    "Medium impact": {
+      "de": "Mittlerer Einfluss",
+      "sq": "Ndikim mesatar",
+      "sr": "Srednji uticaj"
+    },
+    "Mergers & acquisitions": {
+      "de": "Fusionen & Übernahmen",
+      "sq": "Bashkime & blerje",
+      "sr": "Spajanja i preuzimanja"
+    },
+    "Method": {
+      "de": "Methode",
+      "sq": "Metoda",
+      "sr": "Metod"
+    },
+    "Money you could afford to lose without hardship": {
+      "de": "Geld, dessen Verlust Sie ohne Härte verkraften könnten",
+      "sq": "Para që mund t'i humbni pa vështirësi",
+      "sr": "Novac koji možete da izgubite bez teškoća"
+    },
+    "Most I could lose ($)": {
+      "de": "Maximaler Verlust ($)",
+      "sq": "Humbja maksimale ($)",
+      "sr": "Najveći mogući gubitak ($)"
+    },
+    "Most you accept losing on one trade": {
+      "de": "Maximaler Verlust, den Sie pro Trade akzeptieren",
+      "sq": "Humbja maksimale që pranoni për një tregtim",
+      "sr": "Najveći gubitak koji prihvatate po trgovini"
+    },
+    "Most-covered stocks this week": {
+      "de": "Meistbewertete Aktien dieser Woche",
+      "sq": "Aksionet më të mbuluara këtë javë",
+      "sr": "Najpraćenije akcije ove nedelje"
+    },
+    "Move": {
+      "de": "Bewegung",
+      "sq": "Lëvizja",
+      "sr": "Kretanje"
+    },
+    "Moves are measured from the last close of one week to the last close of the next. Option-implied volatility is usually a little higher than realised volatility, so bands drawn from option prices are slightly wider and would be crossed somewhat less often. Five years is a short sample.": {
+      "de": "Bewegungen werden vom letzten Schlusskurs einer Woche bis zum letzten Schlusskurs der nächsten gemessen. Die implizite Volatilität von Optionen liegt meist etwas über der realisierten, daher sind aus Optionspreisen abgeleitete Bänder etwas breiter und würden seltener durchbrochen. Fünf Jahre sind eine kurze Stichprobe.",
+      "sq": "Lëvizjet maten nga mbyllja e fundit e një jave deri te mbyllja e fundit e javës tjetër. Volatiliteti i nënkuptuar i opsioneve zakonisht është pak më i lartë se ai i realizuar, ndaj brezat nga çmimet e opsioneve janë pak më të gjerë dhe do të kapërceheshin më rrallë. Pesë vjet janë një mostër e shkurtër.",
+      "sr": "Kretanja se mere od poslednjeg zatvaranja jedne nedelje do poslednjeg zatvaranja sledeće. Implicitna volatilnost opcija je obično nešto viša od ostvarene, pa su pojasevi iz cena opcija malo širi i ređe bi bili probijeni. Pet godina je kratak uzorak."
+    },
+    "Neutral": {
+      "de": "Neutral",
+      "sq": "Neutral",
+      "sr": "Neutralno"
+    },
+    "New to investing": {
+      "de": "Neu beim Investieren",
+      "sq": "I ri në investime",
+      "sr": "Početnik u investiranju"
+    },
+    "New to trading? How to open and set up a brokerage account →": {
+      "de": "Neu im Handel? So eröffnen und richten Sie ein Brokerkonto ein →",
+      "sq": "I ri në tregti? Si të hapni dhe konfiguroni një llogari brokeri →",
+      "sr": "Novi ste u trgovanju? Kako otvoriti i podesiti brokerski račun →"
+    },
+    "News": {
+      "de": "Nachrichten",
+      "sq": "Lajme",
+      "sr": "Vesti"
+    },
+    "News summaries are for information only and describe what was reported, not what a stock will do.": {
+      "de": "Die Nachrichtenzusammenfassungen dienen nur der Information und beschreiben, was berichtet wurde — nicht, was eine Aktie tun wird.",
+      "sq": "Përmbledhjet e lajmeve janë vetëm për informim dhe përshkruajnë atë që u raportua, jo atë që do të bëjë një aksion.",
+      "sr": "Sažeci vesti su samo informativni i opisuju šta je objavljeno, a ne šta će akcija uraditi."
+    },
+    "News summaries are published in English.": {
+      "de": "Die Nachrichtenzusammenfassungen erscheinen auf Englisch.",
+      "sq": "Përmbledhjet e lajmeve publikohen në anglisht.",
+      "sr": "Sažeci vesti se objavljuju na engleskom."
+    },
+    "No": {
+      "de": "Nein",
+      "sq": "Jo",
+      "sr": "Ne"
+    },
+    "No news yet.": {
+      "de": "Noch keine Nachrichten.",
+      "sq": "Ende nuk ka lajme.",
+      "sr": "Još nema vesti."
+    },
+    "No rating changes recorded yet.": {
+      "de": "Noch keine Bewertungsänderungen erfasst.",
+      "sq": "Ende nuk ka ndryshime vlerësimi të regjistruara.",
+      "sr": "Još nema zabeleženih promena ocena."
+    },
+    "Notes": {
+      "de": "Notizen",
+      "sq": "Shënime",
+      "sr": "Beleške"
+    },
+    "Number of weeks by size of move in sigma": {
+      "de": "Anzahl der Wochen nach Größe der Bewegung in Sigma",
+      "sq": "Numri i javëve sipas madhësisë së lëvizjes në sigma",
+      "sr": "Broj nedelja po veličini kretanja u sigmama"
+    },
+    "Open account": {
+      "de": "Konto eröffnen",
+      "sq": "Hap llogari",
+      "sr": "Otvori račun"
+    },
+    "Options calculators": {
+      "de": "Optionsrechner",
+      "sq": "Kalkulatorët e opsioneve",
+      "sr": "Kalkulatori opcija"
+    },
+    "Other": {
+      "de": "Sonstiges",
+      "sq": "Tjetër",
+      "sr": "Ostalo"
+    },
+    "Practice": {
+      "de": "Übung",
+      "sq": "Praktikë",
+      "sr": "Vežba"
+    },
+    "Premium per share ($)": {
+      "de": "Prämie pro Aktie ($)",
+      "sq": "Prima për aksion ($)",
+      "sr": "Premija po akciji ($)"
+    },
+    "Price target": {
+      "de": "Kursziel",
+      "sq": "Objektivi i çmimit",
+      "sr": "Ciljana cena"
+    },
+    "Privacy": {
+      "de": "Datenschutz",
+      "sq": "Privatësia",
+      "sr": "Privatnost"
+    },
+    "Privacy Policy": {
+      "de": "Datenschutzerklärung",
+      "sq": "Politika e privatësisë",
+      "sr": "Politika privatnosti"
+    },
+    "Private:": {
+      "de": "Privat:",
+      "sq": "Privat:",
+      "sr": "Privatno:"
+    },
+    "Products & contracts": {
+      "de": "Produkte & Aufträge",
+      "sq": "Produkte & kontrata",
+      "sr": "Proizvodi i ugovori"
+    },
+    "Profit and loss at expiry": {
+      "de": "Gewinn und Verlust bei Verfall",
+      "sq": "Fitimi dhe humbja në skadim",
+      "sr": "Dobitak i gubitak na dan isteka"
+    },
+    "Profit and loss chart": {
+      "de": "Gewinn-und-Verlust-Diagramm",
+      "sq": "Grafiku i fitimit dhe humbjes",
+      "sr": "Grafikon dobitka i gubitka"
+    },
+    "Put credit spread": {
+      "de": "Put-Credit-Spread",
+      "sq": "Put credit spread",
+      "sr": "Put kreditni spred"
+    },
+    "Put sellers often draw a ±1σ band each week and sell puts below it. This page checks, over five years of weekly moves in SPY and QQQ, how often price really stayed above the −1σ line — and how big the losing weeks were.": {
+      "de": "Put-Verkäufer zeichnen oft jede Woche ein ±1σ-Band und verkaufen Puts darunter. Diese Seite prüft anhand von fünf Jahren wöchentlicher Bewegungen bei SPY und QQQ, wie oft der Kurs wirklich über der −1σ-Linie blieb — und wie groß die Verlustwochen waren.",
+      "sq": "Shitësit e put-eve shpesh vizatojnë një brez ±1σ çdo javë dhe shesin put nën të. Kjo faqe kontrollon, në pesë vjet lëvizjesh javore të SPY dhe QQQ, sa shpesh çmimi mbeti realisht mbi vijën −1σ — dhe sa të mëdha ishin javët me humbje.",
+      "sr": "Prodavci put opcija često svake nedelje ucrtaju pojas ±1σ i prodaju put ispod njega. Ova stranica proverava, na pet godina nedeljnih kretanja SPY i QQQ, koliko je često cena stvarno ostala iznad linije −1σ — i koliko su bile velike gubitničke nedelje."
+    },
+    "Raises target": {
+      "de": "Hebt Kursziel an",
+      "sq": "Ngre objektivin",
+      "sr": "Podiže cilj"
+    },
+    "Rating": {
+      "de": "Bewertung",
+      "sq": "Vlerësimi",
+      "sr": "Ocena"
+    },
+    "Rating history": {
+      "de": "Bewertungshistorie",
+      "sq": "Historia e vlerësimeve",
+      "sr": "Istorija ocena"
+    },
+    "Real": {
+      "de": "Echt",
+      "sq": "Reale",
+      "sr": "Stvarno"
+    },
+    "Recent market news": {
+      "de": "Aktuelle Marktnachrichten",
+      "sq": "Lajme të fundit të tregut",
+      "sr": "Najnovije tržišne vesti"
+    },
+    "Regular income": {
+      "de": "Regelmäßiges Einkommen",
+      "sq": "Të ardhura të rregullta",
+      "sr": "Redovan prihod"
+    },
+    "Regulation & legal": {
+      "de": "Regulierung & Recht",
+      "sq": "Rregullimi & ligjore",
+      "sr": "Regulativa i pravo"
+    },
+    "Reiterates": {
+      "de": "Bestätigt",
+      "sq": "Rikonfirmon",
+      "sr": "Potvrđuje"
+    },
+    "Restore backup": {
+      "de": "Sicherung wiederherstellen",
+      "sq": "Rikthe kopjen",
+      "sr": "Vrati rezervnu kopiju"
+    },
+    "Result": {
+      "de": "Ergebnis",
+      "sq": "Rezultati",
+      "sr": "Rezultat"
+    },
+    "Result ($, + or −)": {
+      "de": "Ergebnis ($, + oder −)",
+      "sq": "Rezultati ($, + ose −)",
+      "sr": "Rezultat ($, + ili −)"
+    },
+    "Return": {
+      "de": "Rendite",
+      "sq": "Kthimi",
+      "sr": "Prinos"
+    },
+    "Return = stock move since the rating date, counted positive when the call was right (Buy-type and the stock rose, or Sell-type and it fell).": {
+      "de": "Rendite = Kursbewegung seit dem Bewertungsdatum, positiv gezählt, wenn die Empfehlung richtig war (Kauf-Typ und die Aktie stieg, oder Verkaufs-Typ und sie fiel).",
+      "sq": "Kthimi = lëvizja e aksionit që nga data e vlerësimit, e llogaritur pozitive kur rekomandimi doli i saktë (tip Bli dhe aksioni u rrit, ose tip Shit dhe ra).",
+      "sr": "Prinos = kretanje akcije od datuma ocene, računato pozitivno kada je preporuka bila tačna (tip Kupi i akcija je porasla, ili tip Prodaj i pala je)."
+    },
+    "Return since the rating date, positive when the call was right. Neutral ratings are not scored.": {
+      "de": "Rendite seit dem Bewertungsdatum, positiv, wenn die Empfehlung richtig war. Neutrale Bewertungen werden nicht gewertet.",
+      "sq": "Kthimi që nga data e vlerësimit, pozitiv kur rekomandimi doli i saktë. Vlerësimet neutrale nuk pikëzohen.",
+      "sr": "Prinos od datuma ocene, pozitivan kada je preporuka bila tačna. Neutralne ocene se ne boduju."
+    },
+    "Right direction": {
+      "de": "Richtige Richtung",
+      "sq": "Drejtim i saktë",
+      "sr": "Tačan pravac"
+    },
+    "Risk": {
+      "de": "Risiko",
+      "sq": "Rreziku",
+      "sr": "Rizik"
+    },
+    "Save trade": {
+      "de": "Trade speichern",
+      "sq": "Ruaj tregtimin",
+      "sr": "Sačuvaj trgovinu"
+    },
+    "Scores appear once analysts have at least 3 rated calls with price data.": {
+      "de": "Wertungen erscheinen, sobald Analysten mindestens 3 bewertete Empfehlungen mit Kursdaten haben.",
+      "sq": "Pikët shfaqen kur analistët kanë të paktën 3 rekomandime të vlerësuara me të dhëna çmimi.",
+      "sr": "Rezultati se prikazuju kada analitičari imaju najmanje 3 ocenjene preporuke sa podacima o ceni."
+    },
+    "Search": {
+      "de": "Suche",
+      "sq": "Kërko",
+      "sr": "Pretraga"
+    },
+    "Search ticker, analyst, firm…": {
+      "de": "Ticker, Analyst, Firma suchen…",
+      "sq": "Kërko simbol, analist, firmë…",
+      "sr": "Pretraži oznaku, analitičara, firmu…"
+    },
+    "Sell or lose sleep (low risk)": {
+      "de": "Verkaufen oder schlaflos (niedriges Risiko)",
+      "sq": "Shes ose s'fle dot (rrezik i ulët)",
+      "sr": "Prodajem ili ne spavam (nizak rizik)"
+    },
+    "Share price ($)": {
+      "de": "Aktienkurs ($)",
+      "sq": "Çmimi i aksionit ($)",
+      "sr": "Cena akcije ($)"
+    },
+    "Share price in USD": {
+      "de": "Aktienkurs in USD",
+      "sq": "Çmimi i aksionit në USD",
+      "sr": "Cena akcije u USD"
+    },
+    "Share price now ($)": {
+      "de": "Aktueller Aktienkurs ($)",
+      "sq": "Çmimi aktual i aksionit ($)",
+      "sr": "Trenutna cena akcije ($)"
+    },
+    "Shares": {
+      "de": "Aktien",
+      "sq": "Aksione",
+      "sr": "Akcije"
+    },
+    "Short, sourced summaries of news likely to affect US stocks — company events, deals, leadership changes, regulation and economic data — with the tickers involved. Updated each trading day. Summaries are written in our own words; follow the links for the full reports.": {
+      "de": "Kurze, belegte Zusammenfassungen von Nachrichten, die US-Aktien bewegen dürften — Unternehmensereignisse, Übernahmen, Führungswechsel, Regulierung und Wirtschaftsdaten — mit den betroffenen Tickern. Jeden Handelstag aktualisiert. Die Zusammenfassungen sind in eigenen Worten verfasst; den Links folgen Sie zu den vollständigen Berichten.",
+      "sq": "Përmbledhje të shkurtra me burime të lajmeve që mund të ndikojnë aksionet amerikane — ngjarje të kompanive, marrëveshje, ndryshime drejtuesish, rregullime dhe të dhëna ekonomike — me simbolet përkatëse. Përditësohen çdo ditë tregtimi. Përmbledhjet janë me fjalët tona; ndiqni lidhjet për raportet e plota.",
+      "sr": "Kratki sažeci vesti sa izvorima koje bi mogle uticati na američke akcije — događaji u kompanijama, poslovi, promene rukovodstva, regulativa i ekonomski podaci — sa oznakama akcija. Ažurira se svakog trgovačkog dana. Sažeci su pisani našim rečima; pratite linkove do punih izveštaja."
+    },
+    "Short, sourced summaries of news likely to move US stocks: company events, deals, leadership changes, regulation and macro data, with the tickers affected and links to the original reports.": {
+      "de": "Kurze, belegte Zusammenfassungen marktbewegender Nachrichten zu US-Aktien: Unternehmensereignisse, Übernahmen, Führungswechsel, Regulierung und Makrodaten, mit betroffenen Tickern und Links zu den Originalberichten.",
+      "sq": "Përmbledhje të shkurtra me burime të lajmeve që lëvizin aksionet amerikane: ngjarje kompanish, marrëveshje, ndryshime drejtuesish, rregullime dhe të dhëna makro, me simbolet e prekura dhe lidhje te raportet origjinale.",
+      "sr": "Kratki sažeci vesti sa izvorima koje pokreću američke akcije: događaji u kompanijama, poslovi, promene rukovodstva, regulativa i makro podaci, sa pogođenim oznakama i linkovima ka originalnim izveštajima."
+    },
+    "Show": {
+      "de": "Anzeigen",
+      "sq": "Shfaq",
+      "sr": "Prikaži"
+    },
+    "Show my options": {
+      "de": "Meine Optionen anzeigen",
+      "sq": "Shfaq mundësitë e mia",
+      "sr": "Prikaži moje mogućnosti"
+    },
+    "Source": {
+      "de": "Quelle",
+      "sq": "Burimi",
+      "sr": "Izvor"
+    },
+    "Sources:": {
+      "de": "Quellen:",
+      "sq": "Burimet:",
+      "sr": "Izvori:"
+    },
+    "Starting amount": {
+      "de": "Startbetrag",
+      "sq": "Shuma fillestare",
+      "sr": "Početni iznos"
+    },
+    "Stock": {
+      "de": "Aktie",
+      "sq": "Aksioni",
+      "sr": "Akcija"
+    },
+    "Stock you are looking at (optional)": {
+      "de": "Aktie, die Sie interessiert (optional)",
+      "sq": "Aksioni që po shikoni (opsional)",
+      "sr": "Akcija koja vas zanima (opciono)"
+    },
+    "Stocks": {
+      "de": "Aktien",
+      "sq": "Aksionet",
+      "sr": "Akcije"
+    },
+    "Strategy": {
+      "de": "Strategie",
+      "sq": "Strategjia",
+      "sr": "Strategija"
+    },
+    "Strike ($)": {
+      "de": "Strike ($)",
+      "sq": "Strike ($)",
+      "sr": "Strajk ($)"
+    },
+    "Tell the planner your budget and how much risk you accept. It shows which common stock and options strategies your budget can support, the most you could lose, and what analysts tracked on {site} say about a stock. It is an educational calculator, not personal financial advice.": {
+      "de": "Nennen Sie dem Planer Ihr Budget und wie viel Risiko Sie akzeptieren. Er zeigt, welche gängigen Aktien- und Optionsstrategien Ihr Budget trägt, wie viel Sie maximal verlieren könnten und was die auf {site} erfassten Analysten zu einer Aktie sagen. Er ist ein Lernrechner, keine persönliche Finanzberatung.",
+      "sq": "Tregojini planifikuesit buxhetin tuaj dhe sa rrezik pranoni. Ai tregon cilat strategji të zakonshme me aksione dhe opsione i përballon buxheti juaj, sa mund të humbni maksimalisht dhe çfarë thonë analistët e ndjekur në {site} për një aksion. Është kalkulator edukativ, jo këshillë financiare personale.",
+      "sr": "Recite planeru svoj budžet i koliki rizik prihvatate. Prikazaće koje uobičajene strategije sa akcijama i opcijama vaš budžet podržava, koliko najviše možete da izgubite i šta analitičari praćeni na {site} kažu o akciji. Ovo je edukativni kalkulator, a ne lični finansijski savet."
+    },
+    "Terms": {
+      "de": "Nutzungsbedingungen",
+      "sq": "Kushtet",
+      "sr": "Uslovi"
+    },
+    "Terms of Service": {
+      "de": "Nutzungsbedingungen",
+      "sq": "Kushtet e shërbimit",
+      "sr": "Uslovi korišćenja"
+    },
+    "The planner applies simple, published rules of thumb (position sizing, the cash that each strategy requires, its worst case) to the numbers you enter. It does not know your full finances, taxes or goals and does not recommend buying or selling any security. Prices may be delayed. For personal advice, speak to a licensed financial adviser in your country.": {
+      "de": "Der Planer wendet einfache, veröffentlichte Faustregeln (Positionsgröße, benötigtes Kapital je Strategie, schlechtester Fall) auf Ihre Angaben an. Er kennt weder Ihre gesamten Finanzen noch Steuern oder Ziele und empfiehlt weder Kauf noch Verkauf eines Wertpapiers. Kurse können verzögert sein. Für persönliche Beratung wenden Sie sich an einen zugelassenen Finanzberater in Ihrem Land.",
+      "sq": "Planifikuesi zbaton rregulla të thjeshta e të publikuara (madhësia e pozicionit, paratë që kërkon çdo strategji, rasti më i keq) mbi numrat që futni. Ai nuk i njeh financat, taksat apo qëllimet tuaja të plota dhe nuk rekomandon blerjen ose shitjen e asnjë letre me vlerë. Çmimet mund të jenë të vonuara. Për këshilla personale, flisni me një këshilltar financiar të licencuar në vendin tuaj.",
+      "sr": "Planer primenjuje jednostavna, objavljena pravila (veličina pozicije, novac koji svaka strategija zahteva, najgori slučaj) na brojeve koje unesete. Ne poznaje vaše celokupne finansije, poreze ni ciljeve i ne preporučuje kupovinu ili prodaju bilo koje hartije. Cene mogu kasniti. Za lični savet obratite se licenciranom finansijskom savetniku u vašoj zemlji."
+    },
+    "This page is available in English only. The English version applies.": {
+      "de": "Diese Seite ist nur auf Englisch verfügbar. Es gilt die englische Fassung.",
+      "sq": "Kjo faqe është e disponueshme vetëm në anglisht. Vlen versioni në anglisht.",
+      "sr": "Ova stranica je dostupna samo na engleskom. Važi verzija na engleskom."
+    },
+    "Ticker": {
+      "de": "Ticker",
+      "sq": "Simboli",
+      "sr": "Oznaka"
+    },
+    "Ticker of a US stock tracked here, or any ticker": {
+      "de": "Ticker einer hier erfassten US-Aktie oder ein beliebiger Ticker",
+      "sq": "Simboli i një aksioni amerikan të ndjekur këtu, ose çdo simbol",
+      "sr": "Oznaka američke akcije praćene ovde, ili bilo koja oznaka"
+    },
+    "Trade journal": {
+      "de": "Trading-Journal",
+      "sq": "Ditari i tregtimit",
+      "sr": "Dnevnik trgovanja"
+    },
+    "US dollar ($)": {
+      "de": "US-Dollar ($)",
+      "sq": "Dollar amerikan ($)",
+      "sr": "Američki dolar ($)"
+    },
+    "Uncomfortable but hold (medium)": {
+      "de": "Unangenehm, aber halten (mittel)",
+      "sq": "I pakëndshëm por mbaj (mesatar)",
+      "sr": "Neprijatno, ali držim (srednji)"
+    },
+    "Up": {
+      "de": "Auf",
+      "sq": "Lart",
+      "sr": "Gore"
+    },
+    "Updated": {
+      "de": "Aktualisiert",
+      "sq": "Përditësuar",
+      "sr": "Ažurirano"
+    },
+    "Upgrade": {
+      "de": "Heraufstufung",
+      "sq": "Ngritje vlerësimi",
+      "sr": "Povišena ocena"
+    },
+    "Upgrades, downgrades, new coverage and price-target moves from Wall Street analysts — each one dated, sourced and added to the analyst's permanent history.": {
+      "de": "Herauf- und Herabstufungen, neue Abdeckungen und Kurszieländerungen von Wall-Street-Analysten — jede datiert, belegt und dauerhaft in der Historie des Analysten gespeichert.",
+      "sq": "Ngritje dhe ulje vlerësimesh, mbulime të reja dhe ndryshime të objektivave të çmimit nga analistët e Wall Street — secila me datë, burim dhe e shtuar në historinë e përhershme të analistit.",
+      "sr": "Povišenja i sniženja ocena, novo praćenje i promene ciljanih cena analitičara sa Wall Streeta — svaka datirana, sa izvorom i dodata u trajnu istoriju analitičara."
+    },
+    "Upside": {
+      "de": "Potenzial",
+      "sq": "Potenciali",
+      "sr": "Potencijal"
+    },
+    "Week ending": {
+      "de": "Woche bis",
+      "sq": "Java që mbyllet",
+      "sr": "Nedelja do"
+    },
+    "Weekly backtest": {
+      "de": "Wöchentlicher Backtest",
+      "sq": "Testi javor historik",
+      "sr": "Nedeljni bektest"
+    },
+    "Weekly close-to-close moves (last trading day of each week). One sigma = standard deviation of the previous 20 daily moves, scaled to the trading days in the week (realised volatility, not option-implied).": {
+      "de": "Wöchentliche Bewegungen von Schluss zu Schluss (letzter Handelstag jeder Woche). Ein Sigma = Standardabweichung der vorherigen 20 Tagesbewegungen, skaliert auf die Handelstage der Woche (realisierte Volatilität, nicht aus Optionen abgeleitet).",
+      "sq": "Lëvizjet javore nga mbyllja në mbyllje (dita e fundit e tregtimit të çdo jave). Një sigma = devijimi standard i 20 lëvizjeve ditore paraardhëse, i shkallëzuar sipas ditëve të tregtimit në javë (volatilitet i realizuar, jo i nënkuptuar nga opsionet).",
+      "sr": "Nedeljna kretanja od zatvaranja do zatvaranja (poslednji trgovački dan svake nedelje). Jedna sigma = standardna devijacija prethodnih 20 dnevnih kretanja, skalirana na trgovačke dane u nedelji (ostvarena volatilnost, ne implicitna iz opcija)."
+    },
+    "Weekly sigma-band backtest": {
+      "de": "Wöchentlicher Sigma-Band-Backtest",
+      "sq": "Testi historik javor i brezit sigma",
+      "sr": "Nedeljni bektest sigma pojasa"
+    },
+    "Weekly sigma-band backtest: SPY and QQQ": {
+      "de": "Wöchentlicher Sigma-Band-Backtest: SPY und QQQ",
+      "sq": "Testi historik javor i brezit sigma: SPY dhe QQQ",
+      "sr": "Nedeljni bektest sigma pojasa: SPY i QQQ"
+    },
+    "What I learned": {
+      "de": "Was ich gelernt habe",
+      "sq": "Çfarë mësova",
+      "sr": "Šta sam naučio/la"
+    },
+    "What this shows": {
+      "de": "Was das zeigt",
+      "sq": "Çfarë tregon kjo",
+      "sr": "Šta ovo pokazuje"
+    },
+    "When might you need this money?": {
+      "de": "Wann könnten Sie dieses Geld brauchen?",
+      "sq": "Kur mund t'ju duhen këto para?",
+      "sr": "Kada bi vam ovaj novac mogao zatrebati?"
+    },
+    "Why I took it, and my exit plan": {
+      "de": "Warum ich ihn eingegangen bin und mein Ausstiegsplan",
+      "sq": "Pse e bëra dhe plani im i daljes",
+      "sr": "Zašto sam ušao/la i moj plan izlaska"
+    },
+    "Why it matters:": {
+      "de": "Warum es wichtig ist:",
+      "sq": "Pse ka rëndësi:",
+      "sr": "Zašto je važno:"
+    },
+    "Within 1 year": {
+      "de": "Innerhalb eines Jahres",
+      "sq": "Brenda 1 viti",
+      "sr": "U roku od 1 godine"
+    },
+    "Write down every trade — practice or real — with the reason you took it and the result. Over time, the numbers show what works for you.": {
+      "de": "Notieren Sie jeden Trade — Übung oder echt — mit dem Grund und dem Ergebnis. Mit der Zeit zeigen die Zahlen, was für Sie funktioniert.",
+      "sq": "Shkruani çdo tregtim — praktikë ose real — me arsyen pse e bëtë dhe rezultatin. Me kohë, numrat tregojnë çfarë funksionon për ju.",
+      "sr": "Zapišite svaku trgovinu — vežbu ili stvarnu — sa razlogom i rezultatom. Vremenom brojevi pokazuju šta vam odgovara."
+    },
+    "Yearly return (%)": {
+      "de": "Jährliche Rendite (%)",
+      "sq": "Kthimi vjetor (%)",
+      "sr": "Godišnji prinos (%)"
+    },
+    "Years": {
+      "de": "Jahre",
+      "sq": "Vite",
+      "sr": "Godine"
+    },
+    "Yes": {
+      "de": "Ja",
+      "sq": "Po",
+      "sr": "Da"
+    },
+    "Your results": {
+      "de": "Ihre Ergebnisse",
+      "sq": "Rezultatet tuaja",
+      "sr": "Vaši rezultati"
+    },
+    "Your share cost ($)": {
+      "de": "Ihr Einstandskurs ($)",
+      "sq": "Kostoja juaj për aksion ($)",
+      "sr": "Vaša nabavna cena ($)"
+    },
+    "above +1σ": {
+      "de": "über +1σ",
+      "sq": "mbi +1σ",
+      "sr": "iznad +1σ"
+    },
+    "analyst ratings & price targets": {
+      "de": "Analystenbewertungen & Kursziele",
+      "sq": "vlerësimet e analistëve & objektivat e çmimit",
+      "sr": "ocene analitičara i ciljane cene"
+    },
+    "analysts tracked": {
+      "de": "erfasste Analysten",
+      "sq": "analistë të ndjekur",
+      "sr": "praćenih analitičara"
+    },
+    "average target": {
+      "de": "durchschnittliches Kursziel",
+      "sq": "objektivi mesatar",
+      "sr": "prosečna ciljana cena"
+    },
+    "average width of 1σ in a week": {
+      "de": "durchschnittliche Breite von 1σ pro Woche",
+      "sq": "gjerësia mesatare e 1σ në javë",
+      "sr": "prosečna širina 1σ u nedelji"
+    },
+    "avg return per call": {
+      "de": "Ø Rendite pro Empfehlung",
+      "sq": "kthimi mesatar për rekomandim",
+      "sr": "prosečan prinos po preporuci"
+    },
+    "below −1σ (a put at −1σ loses)": {
+      "de": "unter −1σ (ein Put bei −1σ verliert)",
+      "sq": "nën −1σ (një put te −1σ humbet)",
+      "sr": "ispod −1σ (put na −1σ gubi)"
+    },
+    "bullish / neutral / bearish": {
+      "de": "positiv / neutral / negativ",
+      "sq": "pozitiv / neutral / negativ",
+      "sr": "pozitivno / neutralno / negativno"
+    },
+    "calls in the right direction": {
+      "de": "Empfehlungen in richtiger Richtung",
+      "sq": "rekomandime në drejtimin e saktë",
+      "sr": "preporuke u tačnom pravcu"
+    },
+    "changes this week": {
+      "de": "Änderungen diese Woche",
+      "sq": "ndryshime këtë javë",
+      "sr": "promena ove nedelje"
+    },
+    "daily": {
+      "de": "täglich",
+      "sq": "çdo ditë",
+      "sr": "dnevno"
+    },
+    "downgrades": {
+      "de": "Herabstufungen",
+      "sq": "ulje vlerësimi",
+      "sr": "sniženja ocena"
+    },
+    "e.g. 5000": {
+      "de": "z. B. 5000",
+      "sq": "p.sh. 5000",
+      "sr": "npr. 5000"
+    },
+    "e.g. NVDA": {
+      "de": "z. B. NVDA",
+      "sq": "p.sh. NVDA",
+      "sr": "npr. NVDA"
+    },
+    "e.g. SPY": {
+      "de": "z. B. SPY",
+      "sq": "p.sh. SPY",
+      "sr": "npr. SPY"
+    },
+    "e.g. Sold 1σ put, no earnings before expiry; close at 50% profit or if price breaks the strike": {
+      "de": "z. B. 1σ-Put verkauft, keine Zahlen vor Verfall; Schließen bei 50 % Gewinn oder wenn der Kurs den Strike durchbricht",
+      "sq": "p.sh. Shita put 1σ, pa rezultate para skadimit; mbyll në 50% fitim ose nëse çmimi kalon strike-un",
+      "sr": "npr. Prodat put na 1σ, bez rezultata pre isteka; zatvoriti na 50% dobiti ili ako cena probije strajk"
+    },
+    "everything is calculated in your browser. Nothing you type is sent or stored.": {
+      "de": "Alles wird in Ihrem Browser berechnet. Nichts, was Sie eingeben, wird gesendet oder gespeichert.",
+      "sq": "gjithçka llogaritet në shfletuesin tuaj. Asgjë që shkruani nuk dërgohet apo ruhet.",
+      "sr": "sve se računa u vašem pregledaču. Ništa što unesete se ne šalje niti čuva."
+    },
+    "filled in when known": {
+      "de": "wird ausgefüllt, wenn bekannt",
+      "sq": "plotësohet kur dihet",
+      "sr": "popunjava se kada je poznato"
+    },
+    "firms with a view (12 mo)": {
+      "de": "Firmen mit Einschätzung (12 Mon.)",
+      "sq": "firma me pikëpamje (12 muaj)",
+      "sr": "firme sa mišljenjem (12 mes.)"
+    },
+    "inside ±1σ": {
+      "de": "innerhalb ±1σ",
+      "sq": "brenda ±1σ",
+      "sr": "unutar ±1σ"
+    },
+    "last action": {
+      "de": "letzte Aktion",
+      "sq": "veprimi i fundit",
+      "sr": "poslednja akcija"
+    },
+    "last price": {
+      "de": "letzter Kurs",
+      "sq": "çmimi i fundit",
+      "sr": "poslednja cena"
+    },
+    "leave empty if open": {
+      "de": "leer lassen, wenn offen",
+      "sq": "lëreni bosh nëse është i hapur",
+      "sr": "ostavite prazno ako je otvorena"
+    },
+    "rating history": {
+      "de": "Bewertungshistorie",
+      "sq": "historia e vlerësimeve",
+      "sr": "istorija ocena"
+    },
+    "recorded actions": {
+      "de": "erfasste Aktionen",
+      "sq": "veprime të regjistruara",
+      "sr": "zabeleženih akcija"
+    },
+    "stocks covered": {
+      "de": "abgedeckte Aktien",
+      "sq": "aksione të mbuluara",
+      "sr": "praćenih akcija"
+    },
+    "to avg target": {
+      "de": "bis zum Ø-Kursziel",
+      "sq": "deri te objektivi mesatar",
+      "sr": "do prosečnog cilja"
+    },
+    "tracked since": {
+      "de": "erfasst seit",
+      "sq": "ndjekur që nga",
+      "sr": "praćen od"
+    },
+    "upgrades": {
+      "de": "Heraufstufungen",
+      "sq": "ngritje vlerësimi",
+      "sr": "povišenja ocena"
+    },
+    "upgrades / downgrades": {
+      "de": "Herauf- / Herabstufungen",
+      "sq": "ngritje / ulje",
+      "sr": "povišenja / sniženja"
+    },
+    "weekly move, in sigma": {
+      "de": "Wochenbewegung in Sigma",
+      "sq": "lëvizja javore, në sigma",
+      "sr": "nedeljno kretanje, u sigmama"
+    },
+    "weeks that fell 2σ or more (bell curve: {x})": {
+      "de": "Wochen mit Rückgang um 2σ oder mehr (Glockenkurve: {x})",
+      "sq": "javë që ranë 2σ ose më shumë (kurba e kambanës: {x})",
+      "sr": "nedelje sa padom od 2σ ili više (zvonasta kriva: {x})"
+    },
+    "weeks that fell 3σ or more (bell curve: {x})": {
+      "de": "Wochen mit Rückgang um 3σ oder mehr (Glockenkurve: {x})",
+      "sq": "javë që ranë 3σ ose më shumë (kurba e kambanës: {x})",
+      "sr": "nedelje sa padom od 3σ ili više (zvonasta kriva: {x})"
+    },
+    "weeks that fell through −1σ (bell curve: {x})": {
+      "de": "Wochen, die −1σ durchbrachen (Glockenkurve: {x})",
+      "sq": "javë që kaluan poshtë −1σ (kurba e kambanës: {x})",
+      "sr": "nedelje koje su probile −1σ (zvonasta kriva: {x})"
+    },
+    "weeks that stayed above −1σ ({a} of {b})": {
+      "de": "Wochen über −1σ ({a} von {b})",
+      "sq": "javë që mbetën mbi −1σ ({a} nga {b})",
+      "sr": "nedelje iznad −1σ ({a} od {b})"
+    },
+    "worst case": {
+      "de": "schlechtester Fall",
+      "sq": "rasti më i keq",
+      "sr": "najgori slučaj"
+    },
+    "your journal is saved only in this browser on this device. Export it to keep a copy.": {
+      "de": "Ihr Journal wird nur in diesem Browser auf diesem Gerät gespeichert. Exportieren Sie es, um eine Kopie zu behalten.",
+      "sq": "ditari juaj ruhet vetëm në këtë shfletues në këtë pajisje. Eksportojeni për të mbajtur një kopje.",
+      "sr": "vaš dnevnik se čuva samo u ovom pregledaču na ovom uređaju. Izvezite ga da biste sačuvali kopiju."
+    },
+    "{n} analysts": {
+      "de": "{n} Analysten",
+      "sq": "{n} analistë",
+      "sr": "{n} analitičara"
+    },
+    "{n} dated analyst rating and price-target changes.": {
+      "de": "{n} datierte Änderungen von Analystenbewertungen und Kurszielen.",
+      "sq": "{n} ndryshime me datë të vlerësimeve dhe objektivave të çmimit nga analistët.",
+      "sr": "{n} datiranih promena ocena i ciljanih cena analitičara."
+    },
+    "{n} rating changes": {
+      "de": "{n} Bewertungsänderungen",
+      "sq": "{n} ndryshime vlerësimi",
+      "sr": "{n} promena ocena"
+    },
+    "{n} stocks": {
+      "de": "{n} Aktien",
+      "sq": "{n} aksione",
+      "sr": "{n} akcija"
+    },
+    "{n} weeks ({a} to {b})": {
+      "de": "{n} Wochen ({a} bis {b})",
+      "sq": "{n} javë ({a} deri {b})",
+      "sr": "{n} nedelja ({a} do {b})"
+    },
+    "{p}% of the amount": {
+      "de": "{p} % des Betrags",
+      "sq": "{p}% e shumës",
+      "sr": "{p}% iznosa"
+    },
+    "Watch the 1-minute video": {
+      "de": "1-Minuten-Video ansehen",
+      "sq": "Shiko videon 1-minutëshe",
+      "sr": "Pogledajte video od 1 minuta"
+    },
+    "YouTube Short · in English": {
+      "de": "YouTube Short · auf Englisch",
+      "sq": "YouTube Short · në anglisht",
+      "sr": "YouTube Short · na engleskom"
+    },
+    "Video lessons on YouTube": {
+      "de": "Videolektionen auf YouTube",
+      "sq": "Mësime me video në YouTube",
+      "sr": "Video lekcije na YouTube-u"
+    },
+    "All 8 lessons as one-minute videos.": {
+      "de": "Alle 8 Lektionen als Ein-Minuten-Videos.",
+      "sq": "Të 8 mësimet si video një-minutëshe.",
+      "sr": "Svih 8 lekcija kao video snimci od jednog minuta."
+    },
+    "Brokers & fintech": {
+      "de": "Broker & Fintech",
+      "sq": "Brokerë & fintech",
+      "sr": "Brokeri i fintech"
+    },
+    "AI strategies": {
+      "de": "KI-Strategien",
+      "sq": "Strategji AI",
+      "sr": "AI strategije"
+    },
+    "Strategy assistant": {
+      "de": "Strategie-Assistent",
+      "sq": "Asistenti i strategjive",
+      "sr": "Asistent za strategije"
+    },
+    "the strategies trading bots and AI agents use, tested": {
+      "de": "die Strategien von Trading-Bots und KI-Agenten, getestet",
+      "sq": "strategjitë që përdorin botët e tregtimit dhe agjentët AI, të testuara",
+      "sr": "strategije koje koriste trading botovi i AI agenti, testirane"
+    },
+    "Investors": {
+      "de": "Investoren",
+      "sq": "Investitorët",
+      "sr": "Investitori"
+    },
+    "Investors & articles": {
+      "de": "Investoren & Artikel",
+      "sq": "Investitorët & artikujt",
+      "sr": "Investitori i članci"
+    },
+    "Investors we follow": {
+      "de": "Investoren, denen wir folgen",
+      "sq": "Investitorët që ndjekim",
+      "sr": "Investitori koje pratimo"
+    },
+    "Latest article": {
+      "de": "Neuester Artikel",
+      "sq": "Artikulli i fundit",
+      "sr": "Najnoviji članak"
+    },
+    "Latest articles": {
+      "de": "Neueste Artikel",
+      "sq": "Artikujt më të fundit",
+      "sr": "Najnoviji članci"
+    },
+    "SEC filings": {
+      "de": "SEC-Meldungen",
+      "sq": "Raportimet në SEC",
+      "sr": "SEC prijave"
+    },
+    "Sources": {
+      "de": "Quellen",
+      "sq": "Burimet",
+      "sr": "Izvori"
+    },
+    "By": {
+      "de": "Von",
+      "sq": "Nga",
+      "sr": "Autor:"
+    },
+    "How to follow:": {
+      "de": "So folgen Sie:",
+      "sq": "Si të ndiqni:",
+      "sr": "Kako pratiti:"
+    },
+    "Investor tracker": {
+      "de": "Investoren-Tracker",
+      "sq": "Ndjekës investitorësh",
+      "sr": "Praćenje investitora"
+    },
+    "Write for Analyst Ledger": {
+      "de": "Für Analyst Ledger schreiben",
+      "sq": "Shkruani për Analyst Ledger",
+      "sr": "Pišite za Analyst Ledger"
+    },
+    "{n} min read": {
+      "de": "{n} Min. Lesezeit",
+      "sq": "{n} min lexim",
+      "sr": "{n} min čitanja"
+    },
+    "Articles are published in English.": {
+      "de": "Artikel werden auf Englisch veröffentlicht.",
+      "sq": "Artikujt publikohen në anglisht.",
+      "sr": "Članci se objavljuju na engleskom."
+    },
+    "Correspondents can publish their own research and commentary under their own name.": {
+      "de": "Korrespondenten können eigene Analysen und Kommentare unter ihrem Namen veröffentlichen.",
+      "sq": "Korrespondentët mund të publikojnë analizat dhe komentet e tyre me emrin e tyre.",
+      "sr": "Dopisnici mogu objavljivati sopstvene analize i komentare pod svojim imenom."
+    },
+    "Filings show past, partial positions (long US holdings only, up to 45 days old). Nothing here is a recommendation to copy any investor.": {
+      "de": "Meldungen zeigen vergangene, unvollständige Positionen (nur US-Long-Positionen, bis zu 45 Tage alt). Nichts hier ist eine Empfehlung, einen Investor zu kopieren.",
+      "sq": "Raportimet tregojnë pozicione të kaluara dhe të pjesshme (vetëm pozicione blerëse në SHBA, deri në 45 ditë të vjetra). Asgjë këtu nuk është rekomandim për të kopjuar ndonjë investitor.",
+      "sr": "Prijave prikazuju prošle, delimične pozicije (samo duge američke pozicije, stare do 45 dana). Ništa ovde nije preporuka da kopirate nekog investitora."
+    },
+    "Famous investors have to disclose many of their trades to the SEC. We track the filings of investors whose moves can be followed quickly, explain what they changed, and publish articles from our correspondents. Every article is reviewed by the editor before it appears.": {
+      "de": "Bekannte Investoren müssen viele ihrer Transaktionen der SEC melden. Wir verfolgen die Meldungen von Investoren, deren Schritte sich schnell nachvollziehen lassen, erklären die Änderungen und veröffentlichen Artikel unserer Korrespondenten. Jeder Artikel wird vor der Veröffentlichung redaktionell geprüft.",
+      "sq": "Investitorët e njohur duhet t'i raportojnë shumë nga transaksionet e tyre në SEC. Ne ndjekim raportimet e investitorëve, lëvizjet e të cilëve mund të ndiqen shpejt, shpjegojmë çfarë ndryshuan dhe publikojmë artikuj nga korrespondentët tanë. Çdo artikull shqyrtohet nga redaktori para publikimit.",
+      "sr": "Poznati investitori moraju da prijave mnoge svoje transakcije SEC-u. Pratimo prijave investitora čiji se potezi mogu brzo pratiti, objašnjavamo šta su promenili i objavljujemo članke naših dopisnika. Urednik pregleda svaki članak pre objavljivanja."
+    },
+    "What famous investors are buying and selling, from their SEC filings: profiles, latest disclosed moves and how to follow them, plus articles from our correspondents.": {
+      "de": "Was bekannte Investoren laut SEC-Meldungen kaufen und verkaufen: Profile, neueste Schritte und wie man ihnen folgt, dazu Artikel unserer Korrespondenten.",
+      "sq": "Çfarë blejnë dhe shesin investitorët e njohur sipas raportimeve në SEC: profile, lëvizjet e fundit dhe si t'i ndiqni, si dhe artikuj nga korrespondentët tanë.",
+      "sr": "Šta poznati investitori kupuju i prodaju prema SEC prijavama: profili, najnoviji potezi i kako ih pratiti, plus članci naših dopisnika."
+    },
+    "Become an Analyst Ledger correspondent: sign in with a free GitHub account, submit articles, and publish under your own name after editorial review.": {
+      "de": "Werden Sie Korrespondent bei Analyst Ledger: mit einem kostenlosen GitHub-Konto anmelden, Artikel einreichen und nach redaktioneller Prüfung unter eigenem Namen veröffentlichen.",
+      "sq": "Bëhuni korrespondent i Analyst Ledger: hyni me një llogari falas GitHub, dërgoni artikuj dhe publikoni me emrin tuaj pas shqyrtimit nga redaktori.",
+      "sr": "Postanite dopisnik Analyst Ledger-a: prijavite se besplatnim GitHub nalogom, pošaljite članke i objavljujte pod svojim imenom nakon uredničkog pregleda."
+    },
+    "The first articles are being reviewed and will appear here soon.": {
+      "de": "Die ersten Artikel werden geprüft und erscheinen bald hier.",
+      "sq": "Artikujt e parë po shqyrtohen dhe do të shfaqen së shpejti këtu.",
+      "sr": "Prvi članci se pregledaju i uskoro će se pojaviti ovde."
+    },
+    "correspondent": {
+      "de": "Korrespondent",
+      "sq": "korrespondent",
+      "sr": "dopisnik"
+    },
+    "Correspondent": {
+      "de": "Korrespondent",
+      "sq": "Korrespondent",
+      "sr": "Dopisnik"
+    },
+    "Correspondent articles reflect the author's views, not Analyst Ledger's. They are reviewed before publication.": {
+      "de": "Korrespondentenartikel geben die Meinung des Autors wieder, nicht die von Analyst Ledger. Sie werden vor der Veröffentlichung geprüft.",
+      "sq": "Artikujt e korrespondentëve pasqyrojnë pikëpamjet e autorit, jo të Analyst Ledger. Ata shqyrtohen para publikimit.",
+      "sr": "Članci dopisnika odražavaju stavove autora, a ne Analyst Ledger-a. Pregledaju se pre objavljivanja."
+    },
+    "1 month ago": {
+      "de": "vor 1 Monat",
+      "sq": "1 muaj më parë",
+      "sr": "pre 1 mesec"
+    },
+    "3 months ago": {
+      "de": "vor 3 Monaten",
+      "sq": "3 muaj më parë",
+      "sr": "pre 3 meseca"
+    },
+    "6 months ago": {
+      "de": "vor 6 Monaten",
+      "sq": "6 muaj më parë",
+      "sr": "pre 6 meseci"
+    },
+    "1 year ago": {
+      "de": "vor 1 Jahr",
+      "sq": "1 vit më parë",
+      "sr": "pre 1 godinu"
+    },
+    "Actions in period": {
+      "de": "Aktionen im Zeitraum",
+      "sq": "Veprime në periudhë",
+      "sr": "Akcije u periodu"
+    },
+    "As of": {
+      "de": "Stand",
+      "sq": "Më datë",
+      "sr": "Na dan"
+    },
+    "Avg target now": {
+      "de": "Ø Kursziel jetzt",
+      "sq": "Objektivi mesatar tani",
+      "sr": "Prosečan cilj sada"
+    },
+    "Avg target then": {
+      "de": "Ø Kursziel damals",
+      "sq": "Objektivi mesatar atëherë",
+      "sr": "Prosečan cilj tada"
+    },
+    "Consensus on a date uses each firm's latest view in the 12 months before it. Stocks are listed if they had a view then.": {
+      "de": "Der Konsens an einem Datum nutzt die jeweils letzte Einschätzung jeder Firma in den 12 Monaten davor. Aufgeführt sind Aktien, für die es damals eine Einschätzung gab.",
+      "sq": "Konsensusi në një datë përdor pikëpamjen e fundit të çdo firme në 12 muajt para saj. Listohen aksionet që kishin një pikëpamje atëherë.",
+      "sr": "Konsenzus na određeni dan koristi poslednje mišljenje svake firme u 12 meseci pre tog dana. Navedene su akcije za koje je tada postojalo mišljenje."
+    },
+    "Current": {
+      "de": "Aktuell",
+      "sq": "Aktuale",
+      "sr": "Trenutno"
+    },
+    "From": {
+      "de": "Von",
+      "sq": "Nga",
+      "sr": "Od"
+    },
+    "Historical": {
+      "de": "Historisch",
+      "sq": "Historike",
+      "sr": "Istorijski"
+    },
+    "Quick pick": {
+      "de": "Schnellauswahl",
+      "sq": "Zgjedhje e shpejtë",
+      "sr": "Brzi izbor"
+    },
+    "Quick pick…": {
+      "de": "Schnellauswahl…",
+      "sq": "Zgjedhje e shpejtë…",
+      "sr": "Brzi izbor…"
+    },
+    "See the analyst consensus as it stood on any past date, and how many rating actions each stock had in the period you pick. Data starts {d}.": {
+      "de": "Sehen Sie den Analystenkonsens, wie er an einem beliebigen früheren Datum stand, und wie viele Rating-Aktionen jede Aktie im gewählten Zeitraum hatte. Daten ab {d}.",
+      "sq": "Shihni konsensusin e analistëve siç ishte në çdo datë të kaluar dhe sa veprime vlerësimi pati çdo aksion në periudhën që zgjidhni. Të dhënat fillojnë më {d}.",
+      "sr": "Pogledajte konsenzus analitičara kakav je bio na bilo koji raniji datum i koliko je akcija ocenjivanja svaka akcija imala u periodu koji izaberete. Podaci počinju {d}."
+    },
+    "Target change": {
+      "de": "Zieländerung",
+      "sq": "Ndryshimi i objektivit",
+      "sr": "Promena cilja"
+    },
+    "{n} stocks · {a} rating actions between {s} and {e}": {
+      "de": "{n} Aktien · {a} Rating-Aktionen zwischen {s} und {e}",
+      "sq": "{n} aksione · {a} veprime vlerësimi mes {s} dhe {e}",
+      "sr": "{n} akcija · {a} akcija ocenjivanja između {s} i {e}"
+    },
+    "Last 3 months": {
+      "de": "Letzte 3 Monate",
+      "sq": "3 muajt e fundit",
+      "sr": "Poslednja 3 meseca"
+    }
+  },
+  "js": {
+    "1σ move": {
+      "de": "1σ-Bewegung",
+      "sq": "lëvizja 1σ",
+      "sr": "kretanje 1σ"
+    },
+    "A practice (paper) trading account lets you test strategies with no money at risk.": {
+      "de": "Ein Übungskonto (Paper Trading) lässt Sie Strategien ohne Geldrisiko testen.",
+      "sq": "Një llogari praktike (paper trading) ju lejon të testoni strategji pa rrezikuar para.",
+      "sr": "Račun za vežbu (paper trading) omogućava da testirate strategije bez rizika za novac."
+    },
+    "Analysts are often wrong, and targets usually follow the price. Check each analyst’s record before relying on a view.": {
+      "de": "Analysten liegen oft falsch, und Kursziele folgen meist dem Kurs. Prüfen Sie die Bilanz jedes Analysten, bevor Sie sich auf eine Einschätzung verlassen.",
+      "sq": "Analistët shpesh gabojnë dhe objektivat zakonisht ndjekin çmimin. Kontrolloni historikun e çdo analisti para se të mbështeteni te një pikëpamje.",
+      "sr": "Analitičari često greše, a ciljevi obično prate cenu. Proverite rezultate svakog analitičara pre nego što se oslonite na mišljenje."
+    },
+    "Average price target:": {
+      "de": "Durchschnittliches Kursziel:",
+      "sq": "Objektivi mesatar i çmimit:",
+      "sr": "Prosečna ciljana cena:"
+    },
+    "Avoid holding options through major events (results, central-bank meetings, mergers): prices can jump overnight.": {
+      "de": "Halten Sie Optionen nicht über wichtige Ereignisse (Zahlen, Notenbanksitzungen, Fusionen): Kurse können über Nacht springen.",
+      "sq": "Shmangni mbajtjen e opsioneve gjatë ngjarjeve të mëdha (rezultate, mbledhje të bankës qendrore, bashkime): çmimet mund të kërcejnë brenda natës.",
+      "sr": "Izbegavajte držanje opcija tokom važnih događaja (rezultati, sastanci centralne banke, spajanja): cene mogu skočiti preko noći."
+    },
+    "Bought call": {
+      "de": "Gekaufter Call",
+      "sq": "Call i blerë",
+      "sr": "Kupljen call"
+    },
+    "Bought put": {
+      "de": "Gekaufter Put",
+      "sq": "Put i blerë",
+      "sr": "Kupljen put"
+    },
+    "Budget too small": {
+      "de": "Budget zu klein",
+      "sq": "Buxheti shumë i vogël",
+      "sr": "Budžet premali"
+    },
+    "Buy {t} shares": {
+      "de": "{t}-Aktien kaufen",
+      "sq": "Bli aksione {t}",
+      "sr": "Kupi akcije {t}"
+    },
+    "Buying a call or put": {
+      "de": "Kauf eines Calls oder Puts",
+      "sq": "Blerja e një call ose put",
+      "sr": "Kupovina call ili put opcije"
+    },
+    "Call credit spread": {
+      "de": "Call-Credit-Spread",
+      "sq": "Call credit spread",
+      "sr": "Call kreditni spred"
+    },
+    "Can lose 100% of what you pay, often within weeks": {
+      "de": "Kann 100 % des Einsatzes verlieren, oft innerhalb von Wochen",
+      "sq": "Mund të humbasë 100% të asaj që paguani, shpesh brenda javësh",
+      "sr": "Može izgubiti 100% uloženog, često za nekoliko nedelja"
+    },
+    "Cash needed": {
+      "de": "Benötigtes Kapital",
+      "sq": "Paratë e nevojshme",
+      "sr": "Potreban novac"
+    },
+    "Cash needed is the minimum a broker usually requires; options also need broker approval. Prices for options change by the minute.": {
+      "de": "Das benötigte Kapital ist das übliche Minimum beim Broker; Optionen erfordern zudem eine Freigabe durch den Broker. Optionspreise ändern sich minütlich.",
+      "sq": "Paratë e nevojshme janë minimumi që zakonisht kërkon një broker; opsionet kërkojnë edhe miratim nga brokeri. Çmimet e opsioneve ndryshojnë çdo minutë.",
+      "sr": "Potreban novac je minimum koji broker obično traži; opcije zahtevaju i odobrenje brokera. Cene opcija se menjaju iz minuta u minut."
+    },
+    "Cash-secured put": {
+      "de": "Bar gedeckter Put",
+      "sq": "Put i mbuluar me para",
+      "sr": "Put pokriven gotovinom"
+    },
+    "Checklist for your goal": {
+      "de": "Checkliste für Ihr Ziel",
+      "sq": "Lista e kontrollit për qëllimin tuaj",
+      "sr": "Kontrolna lista za vaš cilj"
+    },
+    "Could not save in this browser — export your trades to keep them.": {
+      "de": "Speichern in diesem Browser nicht möglich — exportieren Sie Ihre Trades, um sie zu behalten.",
+      "sq": "Nuk u ruajt dot në këtë shfletues — eksportoni tregtimet për t'i mbajtur.",
+      "sr": "Čuvanje u ovom pregledaču nije uspelo — izvezite trgovine da ih sačuvate."
+    },
+    "Covered call": {
+      "de": "Gedeckter Call",
+      "sq": "Covered call",
+      "sr": "Pokriveni call"
+    },
+    "Delete": {
+      "de": "Löschen",
+      "sq": "Fshi",
+      "sr": "Obriši"
+    },
+    "Diversified index fund": {
+      "de": "Breit gestreuter Indexfonds",
+      "sq": "Fond indeksi i diversifikuar",
+      "sr": "Diversifikovani indeksni fond"
+    },
+    "Dividends and covered calls pay income but do not protect you if the stock falls.": {
+      "de": "Dividenden und gedeckte Calls bringen Einkommen, schützen aber nicht, wenn die Aktie fällt.",
+      "sq": "Dividendat dhe covered call sjellin të ardhura, por nuk ju mbrojnë nëse aksioni bie.",
+      "sr": "Dividende i pokriveni call donose prihod, ali vas ne štite ako akcija padne."
+    },
+    "Educational information only — not personal financial, investment or tax advice.": {
+      "de": "Nur Lerninformationen — keine persönliche Finanz-, Anlage- oder Steuerberatung.",
+      "sq": "Vetëm informacion edukativ — jo këshillë personale financiare, investimi apo tatimore.",
+      "sr": "Samo edukativne informacije — nije lični finansijski, investicioni ni poreski savet."
+    },
+    "Enter a share price to see covered calls, cash-secured puts, spreads and share counts.": {
+      "de": "Geben Sie einen Aktienkurs ein, um gedeckte Calls, bar gedeckte Puts, Spreads und Stückzahlen zu sehen.",
+      "sq": "Futni një çmim aksioni për të parë covered call, put të mbuluar me para, spread dhe numrin e aksioneve.",
+      "sr": "Unesite cenu akcije da vidite pokrivene call, put pokriven gotovinom, spredove i broj akcija."
+    },
+    "Example strike about 10% below the price (${k}): {v} must be held in cash.": {
+      "de": "Beispiel-Strike etwa 10 % unter dem Kurs (${k}): {v} müssen als Bargeld gehalten werden.",
+      "sq": "Shembull strike rreth 10% nën çmim (${k}): {v} duhet të mbahen në para.",
+      "sr": "Primer strajka oko 10% ispod cene (${k}): {v} mora se držati u gotovini."
+    },
+    "Falls with the whole market (−30% to −50% in a crash)": {
+      "de": "Fällt mit dem Gesamtmarkt (−30 % bis −50 % in einem Crash)",
+      "sq": "Bie me gjithë tregun (−30% deri −50% në një krizë)",
+      "sr": "Pada sa celim tržištem (−30% do −50% u krahu)"
+    },
+    "Firms with a recent view: {n}.": {
+      "de": "Firmen mit aktueller Einschätzung: {n}.",
+      "sq": "Firma me pikëpamje të fundit: {n}.",
+      "sr": "Firme sa nedavnim mišljenjem: {n}."
+    },
+    "Fits your settings": {
+      "de": "Passt zu Ihren Einstellungen",
+      "sq": "Përshtatet me cilësimet tuaja",
+      "sr": "Odgovara vašim podešavanjima"
+    },
+    "Fits, but over {p}% in one stock": {
+      "de": "Passt, aber über {p} % in einer Aktie",
+      "sq": "Përshtatet, por mbi {p}% në një aksion",
+      "sr": "Odgovara, ali preko {p}% u jednoj akciji"
+    },
+    "High": {
+      "de": "Hoch",
+      "sq": "I lartë",
+      "sr": "Visok"
+    },
+    "Investing a fixed amount every month (dollar-cost averaging) reduces the risk of buying everything at a peak.": {
+      "de": "Jeden Monat einen festen Betrag zu investieren (Durchschnittskosteneffekt) senkt das Risiko, alles am Höchststand zu kaufen.",
+      "sq": "Investimi i një shume fikse çdo muaj (mesatarizimi i kostos) ul rrezikun e blerjes së gjithçkaje në kulm.",
+      "sr": "Ulaganje fiksnog iznosa svakog meseca (usrednjavanje troška) smanjuje rizik da sve kupite na vrhuncu."
+    },
+    "Long-term growth usually rests on low-cost, diversified funds; single stocks are extras sized within your one-stock limit.": {
+      "de": "Langfristiges Wachstum beruht meist auf günstigen, breit gestreuten Fonds; Einzelaktien sind Beimischungen innerhalb Ihres Limits pro Aktie.",
+      "sq": "Rritja afatgjatë zakonisht mbështetet te fonde të lira e të diversifikuara; aksionet e veçanta janë shtesa brenda kufirit tuaj për aksion.",
+      "sr": "Dugoročni rast obično počiva na jeftinim, diversifikovanim fondovima; pojedinačne akcije su dodaci u okviru vašeg limita po akciji."
+    },
+    "Loses value if the stock falls; one company can fall 50%+": {
+      "de": "Verliert an Wert, wenn die Aktie fällt; ein einzelnes Unternehmen kann um über 50 % fallen",
+      "sq": "Humb vlerë nëse aksioni bie; një kompani e vetme mund të bjerë mbi 50%",
+      "sr": "Gubi vrednost ako akcija padne; jedna kompanija može pasti 50%+"
+    },
+    "Low–medium": {
+      "de": "Niedrig–mittel",
+      "sq": "I ulët–mesatar",
+      "sr": "Nizak–srednji"
+    },
+    "Medium": {
+      "de": "Mittel",
+      "sq": "Mesatar",
+      "sr": "Srednji"
+    },
+    "Medium–high": {
+      "de": "Mittel–hoch",
+      "sq": "Mesatar–i lartë",
+      "sr": "Srednji–visok"
+    },
+    "Needs 100 shares ({v}) and pays a small income for agreeing to sell them at a set price.": {
+      "de": "Erfordert 100 Aktien ({v}) und bringt ein kleines Einkommen dafür, sie zu einem festen Preis zu verkaufen.",
+      "sq": "Kërkon 100 aksione ({v}) dhe paguan të ardhura të vogla për pranimin e shitjes së tyre me një çmim të caktuar.",
+      "sr": "Zahteva 100 akcija ({v}) i donosi mali prihod za pristanak da ih prodate po utvrđenoj ceni."
+    },
+    "Needs more experience": {
+      "de": "Erfordert mehr Erfahrung",
+      "sq": "Kërkon më shumë përvojë",
+      "sr": "Zahteva više iskustva"
+    },
+    "Never invest borrowed money or money you need for living costs.": {
+      "de": "Investieren Sie nie geliehenes Geld oder Geld, das Sie zum Leben brauchen.",
+      "sq": "Mos investoni kurrë para të huazuara ose para që ju duhen për jetesë.",
+      "sr": "Nikada ne ulažite pozajmljen novac ili novac potreban za život."
+    },
+    "No basic warning signs in your answers.": {
+      "de": "Keine grundlegenden Warnzeichen in Ihren Antworten.",
+      "sq": "Asnjë shenjë paralajmëruese bazë në përgjigjet tuaja.",
+      "sr": "Nema osnovnih znakova upozorenja u vašim odgovorima."
+    },
+    "No firm has a dated rating in the last 12 months.": {
+      "de": "Keine Firma hat in den letzten 12 Monaten eine datierte Bewertung.",
+      "sq": "Asnjë firmë nuk ka vlerësim me datë në 12 muajt e fundit.",
+      "sr": "Nijedna firma nema datiranu ocenu u poslednjih 12 meseci."
+    },
+    "No matches": {
+      "de": "Keine Treffer",
+      "sq": "Asnjë rezultat",
+      "sr": "Nema rezultata"
+    },
+    "No trades yet.": {
+      "de": "Noch keine Trades.",
+      "sq": "Ende nuk ka tregtime.",
+      "sr": "Još nema trgovina."
+    },
+    "Non-US residents usually have 30% US tax withheld on dividends unless a tax treaty lowers it — check yours.": {
+      "de": "Nicht-US-Bürgern werden auf Dividenden meist 30 % US-Steuer einbehalten, sofern kein Doppelbesteuerungsabkommen den Satz senkt — prüfen Sie Ihres.",
+      "sq": "Banorëve jo-amerikanë zakonisht u mbahet 30% taksë amerikane mbi dividendat, përveç nëse një marrëveshje tatimore e ul — kontrolloni tuajën.",
+      "sr": "Nerezidentima SAD se obično zadržava 30% američkog poreza na dividende, osim ako ga poreski ugovor ne smanjuje — proverite svoj."
+    },
+    "Not tracked here — enter its price yourself": {
+      "de": "Hier nicht erfasst — geben Sie den Kurs selbst ein",
+      "sq": "Nuk ndiqet këtu — futni vetë çmimin",
+      "sr": "Ne prati se ovde — unesite cenu sami"
+    },
+    "One share costs more than your one-stock limit; some brokers sell fractions of a share.": {
+      "de": "Eine Aktie kostet mehr als Ihr Limit pro Aktie; manche Broker verkaufen Aktienbruchteile.",
+      "sq": "Një aksion kushton më shumë se kufiri juaj për aksion; disa brokerë shesin pjesë aksionesh.",
+      "sr": "Jedna akcija košta više od vašeg limita po akciji; neki brokeri prodaju delove akcija."
+    },
+    "Only fits your rules if the premium (price × 100) is no more than {v}. Check the price with your broker.": {
+      "de": "Passt nur zu Ihren Regeln, wenn die Prämie (Preis × 100) höchstens {v} beträgt. Prüfen Sie den Preis bei Ihrem Broker.",
+      "sq": "Përshtatet me rregullat tuaja vetëm nëse prima (çmimi × 100) nuk e kalon {v}. Kontrolloni çmimin te brokeri.",
+      "sr": "Odgovara vašim pravilima samo ako premija (cena × 100) nije veća od {v}. Proverite cenu kod brokera."
+    },
+    "Other": {
+      "de": "Sonstiges",
+      "sq": "Tjetër",
+      "sr": "Ostalo"
+    },
+    "Practice": {
+      "de": "Übung",
+      "sq": "Praktikë",
+      "sr": "Vežba"
+    },
+    "Put credit spread": {
+      "de": "Put-Credit-Spread",
+      "sq": "Put credit spread",
+      "sr": "Put kreditni spred"
+    },
+    "Real": {
+      "de": "Echt",
+      "sq": "Reale",
+      "sr": "Stvarno"
+    },
+    "Risk": {
+      "de": "Risiko",
+      "sq": "Rreziku",
+      "sr": "Rizik"
+    },
+    "Riskier than your setting": {
+      "de": "Riskanter als Ihre Einstellung",
+      "sq": "Më e rrezikshme se cilësimi juaj",
+      "sr": "Rizičnije od vašeg podešavanja"
+    },
+    "Same as owning 100 shares, minus the premium collected; gains capped at the strike": {
+      "de": "Wie der Besitz von 100 Aktien, abzüglich der eingenommenen Prämie; Gewinne beim Strike gedeckelt",
+      "sq": "Njësoj si të zotëroni 100 aksione, minus primën e arkëtuar; fitimet kufizohen te strike",
+      "sr": "Isto kao posedovanje 100 akcija, minus naplaćena premija; dobitak ograničen na strajku"
+    },
+    "See every dated rating for {t} →": {
+      "de": "Alle datierten Bewertungen für {t} ansehen →",
+      "sq": "Shihni çdo vlerësim me datë për {t} →",
+      "sr": "Pogledajte sve datirane ocene za {t} →"
+    },
+    "Shares": {
+      "de": "Aktien",
+      "sq": "Aksione",
+      "sr": "Akcije"
+    },
+    "Sold strike ($)": {
+      "de": "Verkaufter Strike ($)",
+      "sq": "Strike i shitur ($)",
+      "sr": "Prodati strajk ($)"
+    },
+    "Spreads money across hundreds of companies; the usual core holding.": {
+      "de": "Verteilt das Geld auf Hunderte Unternehmen; die übliche Kernanlage.",
+      "sq": "Shpërndan paratë në qindra kompani; investimi bazë i zakonshëm.",
+      "sr": "Raspoređuje novac na stotine kompanija; uobičajeno osnovno ulaganje."
+    },
+    "Strategy": {
+      "de": "Strategie",
+      "sq": "Strategjia",
+      "sr": "Strategija"
+    },
+    "Strike ($)": {
+      "de": "Strike ($)",
+      "sq": "Strike ($)",
+      "sr": "Strajk ($)"
+    },
+    "Take profit or cut losses by a rule set in advance, not by feeling.": {
+      "de": "Gewinne mitnehmen oder Verluste begrenzen nach einer vorab festgelegten Regel, nicht nach Gefühl.",
+      "sq": "Merrni fitimin ose ndalni humbjet sipas një rregulli të caktuar më parë, jo sipas ndjenjës.",
+      "sr": "Uzmite dobit ili ograničite gubitke po unapred postavljenom pravilu, a ne po osećaju."
+    },
+    "That file is not a journal backup.": {
+      "de": "Diese Datei ist keine Journal-Sicherung.",
+      "sq": "Ky skedar nuk është kopje e ditarit.",
+      "sr": "Ova datoteka nije rezervna kopija dnevnika."
+    },
+    "Ticker of a US stock tracked here, or any ticker": {
+      "de": "Ticker einer hier erfassten US-Aktie oder ein beliebiger Ticker",
+      "sq": "Simboli i një aksioni amerikan të ndjekur këtu, ose çdo simbol",
+      "sr": "Oznaka američke akcije praćene ovde, ili bilo koja oznaka"
+    },
+    "Unlimited": {
+      "de": "Unbegrenzt",
+      "sq": "E pakufizuar",
+      "sr": "Neograničen"
+    },
+    "Up to {v} per spread (strike width), minus the premium": {
+      "de": "Bis zu {v} pro Spread (Strike-Abstand), abzüglich der Prämie",
+      "sq": "Deri në {v} për spread (gjerësia e strike-ve), minus prima",
+      "sr": "Do {v} po spredu (razmak strajkova), minus premija"
+    },
+    "What analysts say about {t}": {
+      "de": "Was Analysten zu {t} sagen",
+      "sq": "Çfarë thonë analistët për {t}",
+      "sr": "Šta analitičari kažu o {t}"
+    },
+    "What your budget can support": {
+      "de": "Was Ihr Budget tragen kann",
+      "sq": "Çfarë mund të përballojë buxheti juaj",
+      "sr": "Šta vaš budžet može da podrži"
+    },
+    "Within your one-stock limit: about {n} share(s) ({v}). Many brokers also sell fractions of a share.": {
+      "de": "Innerhalb Ihres Limits pro Aktie: etwa {n} Aktie(n) ({v}). Viele Broker verkaufen auch Aktienbruchteile.",
+      "sq": "Brenda kufirit tuaj për aksion: rreth {n} aksion(e) ({v}). Shumë brokerë shesin edhe pjesë aksionesh.",
+      "sr": "U okviru vašeg limita po akciji: oko {n} akcija ({v}). Mnogi brokeri prodaju i delove akcija."
+    },
+    "Worst case": {
+      "de": "Schlechtester Fall",
+      "sq": "Rasti më i keq",
+      "sr": "Najgori slučaj"
+    },
+    "Worst case is fixed in advance. With a ${w} wide spread, the worst case is {rel} your per-trade limit of {lim}.": {
+      "de": "Der schlechteste Fall steht vorab fest. Bei einem ${w} breiten Spread liegt er {rel} Ihrem Limit pro Trade von {lim}.",
+      "sq": "Rasti më i keq dihet paraprakisht. Me një spread ${w} të gjerë, rasti më i keq është {rel} kufirit tuaj për tregtim prej {lim}.",
+      "sr": "Najgori slučaj je unapred poznat. Sa spredom širine ${w}, najgori slučaj je {rel} vašeg limita po trgovini od {lim}."
+    },
+    "Write down why you enter each trade and when you will exit, then compare with what happened.": {
+      "de": "Notieren Sie, warum Sie jeden Trade eingehen und wann Sie aussteigen, und vergleichen Sie dann mit dem Ergebnis.",
+      "sq": "Shkruani pse hyni në çdo tregtim dhe kur do të dilni, pastaj krahasoni me atë që ndodhi.",
+      "sr": "Zapišite zašto ulazite u svaku trgovinu i kada ćete izaći, pa uporedite sa onim što se dogodilo."
+    },
+    "You are new to investing. Options can lose money quickly; most guides suggest starting with diversified funds and learning how options work with a practice (paper) account first.": {
+      "de": "Sie sind neu beim Investieren. Mit Optionen kann man schnell Geld verlieren; die meisten Ratgeber empfehlen, mit breit gestreuten Fonds zu beginnen und Optionen zuerst mit einem Übungskonto kennenzulernen.",
+      "sq": "Jeni i ri në investime. Me opsionet mund të humbni para shpejt; shumica e udhëzuesve sugjerojnë të filloni me fonde të diversifikuara dhe të mësoni si funksionojnë opsionet fillimisht me një llogari praktike.",
+      "sr": "Početnik ste u investiranju. Opcije mogu brzo izgubiti novac; većina vodiča predlaže da počnete sa diversifikovanim fondovima i da prvo naučite kako opcije rade na računu za vežbu."
+    },
+    "You have no emergency fund. The usual first step is to build 3–6 months of costs in savings before investing, so you are never forced to sell at a loss.": {
+      "de": "Sie haben keinen Notgroschen. Üblicherweise baut man zuerst 3–6 Monatsausgaben als Ersparnis auf, bevor man investiert, damit man nie mit Verlust verkaufen muss.",
+      "sq": "Nuk keni fond emergjence. Hapi i zakonshëm i parë është të kurseni shpenzimet e 3–6 muajve para se të investoni, që të mos detyroheni kurrë të shisni me humbje.",
+      "sr": "Nemate rezervni fond. Uobičajeni prvi korak je da uštedite troškove za 3–6 meseci pre ulaganja, kako nikada ne biste morali da prodajete sa gubitkom."
+    },
+    "You may have to buy 100 shares at the strike even if the stock has fallen further": {
+      "de": "Sie müssen evtl. 100 Aktien zum Strike kaufen, auch wenn die Aktie weiter gefallen ist",
+      "sq": "Mund t'ju duhet të blini 100 aksione te strike edhe nëse aksioni ka rënë më tej",
+      "sr": "Možda ćete morati da kupite 100 akcija po strajku čak i ako je akcija pala dalje"
+    },
+    "You may need this money within a year. Stocks can fall 30% or more in a year, so money needed soon is usually kept in savings or short-term government bonds, not in single stocks or options.": {
+      "de": "Sie brauchen dieses Geld evtl. innerhalb eines Jahres. Aktien können in einem Jahr 30 % oder mehr fallen; Geld, das bald gebraucht wird, liegt daher meist auf dem Sparkonto oder in kurzlaufenden Staatsanleihen, nicht in Einzelaktien oder Optionen.",
+      "sq": "Mund t'ju duhen këto para brenda një viti. Aksionet mund të bien 30% ose më shumë brenda një viti, ndaj paratë që ju duhen së shpejti zakonisht mbahen në kursime ose obligacione shtetërore afatshkurtra, jo në aksione të veçanta apo opsione.",
+      "sr": "Ovaj novac bi vam mogao zatrebati u roku od godinu dana. Akcije mogu pasti 30% ili više za godinu, pa se novac koji uskoro treba obično drži na štednji ili u kratkoročnim državnim obveznicama, a ne u pojedinačnim akcijama ili opcijama."
+    },
+    "Your browser is blocking storage, so trades stay only until you close this page. Use Export to keep them.": {
+      "de": "Ihr Browser blockiert die Speicherung; Trades bleiben nur bis zum Schließen dieser Seite erhalten. Nutzen Sie Export, um sie zu behalten.",
+      "sq": "Shfletuesi juaj bllokon ruajtjen, ndaj tregtimet mbeten vetëm deri sa të mbyllni këtë faqe. Përdorni Eksporto për t'i mbajtur.",
+      "sr": "Vaš pregledač blokira čuvanje, pa trgovine ostaju samo dok ne zatvorite stranicu. Koristite Izvoz da ih sačuvate."
+    },
+    "Your numbers": {
+      "de": "Ihre Zahlen",
+      "sq": "Numrat tuaj",
+      "sr": "Vaši brojevi"
+    },
+    "Your settings": {
+      "de": "Ihre Einstellungen",
+      "sq": "Cilësimet tuaja",
+      "sr": "Vaša podešavanja"
+    },
+    "above": {
+      "de": "über",
+      "sq": "mbi",
+      "sr": "iznad"
+    },
+    "amount to invest": {
+      "de": "Anlagebetrag",
+      "sq": "shuma për investim",
+      "sr": "iznos za ulaganje"
+    },
+    "amount you put in": {
+      "de": "eingezahlter Betrag",
+      "sq": "shuma që futët",
+      "sr": "uloženi iznos"
+    },
+    "analyst": {
+      "de": "Analyst",
+      "sq": "analist",
+      "sr": "analitičar"
+    },
+    "any amount": {
+      "de": "beliebiger Betrag",
+      "sq": "çdo shumë",
+      "sr": "bilo koji iznos"
+    },
+    "average loss": {
+      "de": "Ø Verlust",
+      "sq": "humbja mesatare",
+      "sr": "prosečan gubitak"
+    },
+    "average win": {
+      "de": "Ø Gewinn",
+      "sq": "fitimi mesatar",
+      "sr": "prosečan dobitak"
+    },
+    "average win ÷ average loss": {
+      "de": "Ø Gewinn ÷ Ø Verlust",
+      "sq": "fitimi mesatar ÷ humbja mesatare",
+      "sr": "prosečan dobitak ÷ prosečan gubitak"
+    },
+    "bearish": {
+      "de": "negativ",
+      "sq": "negativ",
+      "sr": "negativno"
+    },
+    "break-even price": {
+      "de": "Break-even-Kurs",
+      "sq": "çmimi i pikës zero",
+      "sr": "cena pokrića"
+    },
+    "bullish": {
+      "de": "positiv",
+      "sq": "pozitiv",
+      "sr": "pozitivno"
+    },
+    "chance of staying above −1σ (bell curve)": {
+      "de": "Chance, über −1σ zu bleiben (Glockenkurve)",
+      "sq": "mundësia për të mbetur mbi −1σ (kurba e kambanës)",
+      "sr": "šansa da ostane iznad −1σ (zvonasta kriva)"
+    },
+    "growth": {
+      "de": "Wachstum",
+      "sq": "rritja",
+      "sr": "rast"
+    },
+    "high risk": {
+      "de": "hohes Risiko",
+      "sq": "rrezik i lartë",
+      "sr": "visok rizik"
+    },
+    "low risk": {
+      "de": "niedriges Risiko",
+      "sq": "rrezik i ulët",
+      "sr": "nizak rizik"
+    },
+    "maximum gain": {
+      "de": "maximaler Gewinn",
+      "sq": "fitimi maksimal",
+      "sr": "najveći dobitak"
+    },
+    "maximum loss": {
+      "de": "maximaler Verlust",
+      "sq": "humbja maksimale",
+      "sr": "najveći gubitak"
+    },
+    "medium risk": {
+      "de": "mittleres Risiko",
+      "sq": "rrezik mesatar",
+      "sr": "srednji rizik"
+    },
+    "money tied up (approx.)": {
+      "de": "gebundenes Kapital (ca.)",
+      "sq": "para të bllokuara (përafërsisht)",
+      "sr": "vezan novac (približno)"
+    },
+    "most in any one stock ({p}% for {risk})": {
+      "de": "maximal in einer Aktie ({p} % bei {risk})",
+      "sq": "maksimumi në një aksion ({p}% për {risk})",
+      "sr": "najviše u jednoj akciji ({p}% za {risk})"
+    },
+    "most to lose on one trade ({p}%)": {
+      "de": "maximaler Verlust pro Trade ({p} %)",
+      "sq": "humbja maksimale për tregtim ({p}%)",
+      "sr": "najveći gubitak po trgovini ({p}%)"
+    },
+    "neutral": {
+      "de": "neutral",
+      "sq": "neutral",
+      "sr": "neutralno"
+    },
+    "now": {
+      "de": "jetzt",
+      "sq": "tani",
+      "sr": "sada"
+    },
+    "stock": {
+      "de": "Aktie",
+      "sq": "aksion",
+      "sr": "akcija"
+    },
+    "total result": {
+      "de": "Gesamtergebnis",
+      "sq": "rezultati total",
+      "sr": "ukupan rezultat"
+    },
+    "tracked here": {
+      "de": "hier erfasst",
+      "sq": "ndiqet këtu",
+      "sr": "prati se ovde"
+    },
+    "trades": {
+      "de": "Trades",
+      "sq": "tregtime",
+      "sr": "trgovina"
+    },
+    "value after {n} years": {
+      "de": "Wert nach {n} Jahren",
+      "sq": "vlera pas {n} vitesh",
+      "sr": "vrednost posle {n} godina"
+    },
+    "win rate": {
+      "de": "Trefferquote",
+      "sq": "përqindja e fitoreve",
+      "sr": "procenat dobitaka"
+    },
+    "within": {
+      "de": "innerhalb",
+      "sq": "brenda",
+      "sr": "unutar"
+    },
+    "{p}% above the price you entered": {
+      "de": "{p} % über dem eingegebenen Kurs",
+      "sq": "{p}% mbi çmimin që futët",
+      "sr": "{p}% iznad cene koju ste uneli"
+    },
+    "{p}% below the price you entered": {
+      "de": "{p} % unter dem eingegebenen Kurs",
+      "sq": "{p}% nën çmimin që futët",
+      "sr": "{p}% ispod cene koju ste uneli"
+    },
+    "{t} is not tracked on {site} yet, so there is no analyst summary.": {
+      "de": "{t} wird auf {site} noch nicht erfasst, daher gibt es keine Analystenübersicht.",
+      "sq": "{t} ende nuk ndiqet në {site}, ndaj nuk ka përmbledhje analistësh.",
+      "sr": "{t} se još ne prati na {site}, pa nema pregleda analitičara."
+    },
+    "±1σ band (≈68%)": {
+      "de": "±1σ-Band (≈68 %)",
+      "sq": "brezi ±1σ (≈68%)",
+      "sr": "pojas ±1σ (≈68%)"
+    },
+    "±2σ band (≈95%)": {
+      "de": "±2σ-Band (≈95 %)",
+      "sq": "brezi ±2σ (≈95%)",
+      "sr": "pojas ±2σ (≈95%)"
+    }
   }
- },
- "js": {
-  "1σ move": {
-   "de": "1σ-Bewegung",
-   "sq": "lëvizja 1σ",
-   "sr": "kretanje 1σ"
-  },
-  "A practice (paper) trading account lets you test strategies with no money at risk.": {
-   "de": "Ein Übungskonto (Paper Trading) lässt Sie Strategien ohne Geldrisiko testen.",
-   "sq": "Një llogari praktike (paper trading) ju lejon të testoni strategji pa rrezikuar para.",
-   "sr": "Račun za vežbu (paper trading) omogućava da testirate strategije bez rizika za novac."
-  },
-  "Analysts are often wrong, and targets usually follow the price. Check each analyst’s record before relying on a view.": {
-   "de": "Analysten liegen oft falsch, und Kursziele folgen meist dem Kurs. Prüfen Sie die Bilanz jedes Analysten, bevor Sie sich auf eine Einschätzung verlassen.",
-   "sq": "Analistët shpesh gabojnë dhe objektivat zakonisht ndjekin çmimin. Kontrolloni historikun e çdo analisti para se të mbështeteni te një pikëpamje.",
-   "sr": "Analitičari često greše, a ciljevi obično prate cenu. Proverite rezultate svakog analitičara pre nego što se oslonite na mišljenje."
-  },
-  "Average price target:": {
-   "de": "Durchschnittliches Kursziel:",
-   "sq": "Objektivi mesatar i çmimit:",
-   "sr": "Prosečna ciljana cena:"
-  },
-  "Avoid holding options through major events (results, central-bank meetings, mergers): prices can jump overnight.": {
-   "de": "Halten Sie Optionen nicht über wichtige Ereignisse (Zahlen, Notenbanksitzungen, Fusionen): Kurse können über Nacht springen.",
-   "sq": "Shmangni mbajtjen e opsioneve gjatë ngjarjeve të mëdha (rezultate, mbledhje të bankës qendrore, bashkime): çmimet mund të kërcejnë brenda natës.",
-   "sr": "Izbegavajte držanje opcija tokom važnih događaja (rezultati, sastanci centralne banke, spajanja): cene mogu skočiti preko noći."
-  },
-  "Bought call": {
-   "de": "Gekaufter Call",
-   "sq": "Call i blerë",
-   "sr": "Kupljen call"
-  },
-  "Bought put": {
-   "de": "Gekaufter Put",
-   "sq": "Put i blerë",
-   "sr": "Kupljen put"
-  },
-  "Budget too small": {
-   "de": "Budget zu klein",
-   "sq": "Buxheti shumë i vogël",
-   "sr": "Budžet premali"
-  },
-  "Buy {t} shares": {
-   "de": "{t}-Aktien kaufen",
-   "sq": "Bli aksione {t}",
-   "sr": "Kupi akcije {t}"
-  },
-  "Buying a call or put": {
-   "de": "Kauf eines Calls oder Puts",
-   "sq": "Blerja e një call ose put",
-   "sr": "Kupovina call ili put opcije"
-  },
-  "Call credit spread": {
-   "de": "Call-Credit-Spread",
-   "sq": "Call credit spread",
-   "sr": "Call kreditni spred"
-  },
-  "Can lose 100% of what you pay, often within weeks": {
-   "de": "Kann 100 % des Einsatzes verlieren, oft innerhalb von Wochen",
-   "sq": "Mund të humbasë 100% të asaj që paguani, shpesh brenda javësh",
-   "sr": "Može izgubiti 100% uloženog, često za nekoliko nedelja"
-  },
-  "Cash needed": {
-   "de": "Benötigtes Kapital",
-   "sq": "Paratë e nevojshme",
-   "sr": "Potreban novac"
-  },
-  "Cash needed is the minimum a broker usually requires; options also need broker approval. Prices for options change by the minute.": {
-   "de": "Das benötigte Kapital ist das übliche Minimum beim Broker; Optionen erfordern zudem eine Freigabe durch den Broker. Optionspreise ändern sich minütlich.",
-   "sq": "Paratë e nevojshme janë minimumi që zakonisht kërkon një broker; opsionet kërkojnë edhe miratim nga brokeri. Çmimet e opsioneve ndryshojnë çdo minutë.",
-   "sr": "Potreban novac je minimum koji broker obično traži; opcije zahtevaju i odobrenje brokera. Cene opcija se menjaju iz minuta u minut."
-  },
-  "Cash-secured put": {
-   "de": "Bar gedeckter Put",
-   "sq": "Put i mbuluar me para",
-   "sr": "Put pokriven gotovinom"
-  },
-  "Checklist for your goal": {
-   "de": "Checkliste für Ihr Ziel",
-   "sq": "Lista e kontrollit për qëllimin tuaj",
-   "sr": "Kontrolna lista za vaš cilj"
-  },
-  "Could not save in this browser — export your trades to keep them.": {
-   "de": "Speichern in diesem Browser nicht möglich — exportieren Sie Ihre Trades, um sie zu behalten.",
-   "sq": "Nuk u ruajt dot në këtë shfletues — eksportoni tregtimet për t'i mbajtur.",
-   "sr": "Čuvanje u ovom pregledaču nije uspelo — izvezite trgovine da ih sačuvate."
-  },
-  "Covered call": {
-   "de": "Gedeckter Call",
-   "sq": "Covered call",
-   "sr": "Pokriveni call"
-  },
-  "Delete": {
-   "de": "Löschen",
-   "sq": "Fshi",
-   "sr": "Obriši"
-  },
-  "Diversified index fund": {
-   "de": "Breit gestreuter Indexfonds",
-   "sq": "Fond indeksi i diversifikuar",
-   "sr": "Diversifikovani indeksni fond"
-  },
-  "Dividends and covered calls pay income but do not protect you if the stock falls.": {
-   "de": "Dividenden und gedeckte Calls bringen Einkommen, schützen aber nicht, wenn die Aktie fällt.",
-   "sq": "Dividendat dhe covered call sjellin të ardhura, por nuk ju mbrojnë nëse aksioni bie.",
-   "sr": "Dividende i pokriveni call donose prihod, ali vas ne štite ako akcija padne."
-  },
-  "Educational information only — not personal financial, investment or tax advice.": {
-   "de": "Nur Lerninformationen — keine persönliche Finanz-, Anlage- oder Steuerberatung.",
-   "sq": "Vetëm informacion edukativ — jo këshillë personale financiare, investimi apo tatimore.",
-   "sr": "Samo edukativne informacije — nije lični finansijski, investicioni ni poreski savet."
-  },
-  "Enter a share price to see covered calls, cash-secured puts, spreads and share counts.": {
-   "de": "Geben Sie einen Aktienkurs ein, um gedeckte Calls, bar gedeckte Puts, Spreads und Stückzahlen zu sehen.",
-   "sq": "Futni një çmim aksioni për të parë covered call, put të mbuluar me para, spread dhe numrin e aksioneve.",
-   "sr": "Unesite cenu akcije da vidite pokrivene call, put pokriven gotovinom, spredove i broj akcija."
-  },
-  "Example strike about 10% below the price (${k}): {v} must be held in cash.": {
-   "de": "Beispiel-Strike etwa 10 % unter dem Kurs (${k}): {v} müssen als Bargeld gehalten werden.",
-   "sq": "Shembull strike rreth 10% nën çmim (${k}): {v} duhet të mbahen në para.",
-   "sr": "Primer strajka oko 10% ispod cene (${k}): {v} mora se držati u gotovini."
-  },
-  "Falls with the whole market (−30% to −50% in a crash)": {
-   "de": "Fällt mit dem Gesamtmarkt (−30 % bis −50 % in einem Crash)",
-   "sq": "Bie me gjithë tregun (−30% deri −50% në një krizë)",
-   "sr": "Pada sa celim tržištem (−30% do −50% u krahu)"
-  },
-  "Firms with a recent view: {n}.": {
-   "de": "Firmen mit aktueller Einschätzung: {n}.",
-   "sq": "Firma me pikëpamje të fundit: {n}.",
-   "sr": "Firme sa nedavnim mišljenjem: {n}."
-  },
-  "Fits your settings": {
-   "de": "Passt zu Ihren Einstellungen",
-   "sq": "Përshtatet me cilësimet tuaja",
-   "sr": "Odgovara vašim podešavanjima"
-  },
-  "Fits, but over {p}% in one stock": {
-   "de": "Passt, aber über {p} % in einer Aktie",
-   "sq": "Përshtatet, por mbi {p}% në një aksion",
-   "sr": "Odgovara, ali preko {p}% u jednoj akciji"
-  },
-  "High": {
-   "de": "Hoch",
-   "sq": "I lartë",
-   "sr": "Visok"
-  },
-  "Investing a fixed amount every month (dollar-cost averaging) reduces the risk of buying everything at a peak.": {
-   "de": "Jeden Monat einen festen Betrag zu investieren (Durchschnittskosteneffekt) senkt das Risiko, alles am Höchststand zu kaufen.",
-   "sq": "Investimi i një shume fikse çdo muaj (mesatarizimi i kostos) ul rrezikun e blerjes së gjithçkaje në kulm.",
-   "sr": "Ulaganje fiksnog iznosa svakog meseca (usrednjavanje troška) smanjuje rizik da sve kupite na vrhuncu."
-  },
-  "Long-term growth usually rests on low-cost, diversified funds; single stocks are extras sized within your one-stock limit.": {
-   "de": "Langfristiges Wachstum beruht meist auf günstigen, breit gestreuten Fonds; Einzelaktien sind Beimischungen innerhalb Ihres Limits pro Aktie.",
-   "sq": "Rritja afatgjatë zakonisht mbështetet te fonde të lira e të diversifikuara; aksionet e veçanta janë shtesa brenda kufirit tuaj për aksion.",
-   "sr": "Dugoročni rast obično počiva na jeftinim, diversifikovanim fondovima; pojedinačne akcije su dodaci u okviru vašeg limita po akciji."
-  },
-  "Loses value if the stock falls; one company can fall 50%+": {
-   "de": "Verliert an Wert, wenn die Aktie fällt; ein einzelnes Unternehmen kann um über 50 % fallen",
-   "sq": "Humb vlerë nëse aksioni bie; një kompani e vetme mund të bjerë mbi 50%",
-   "sr": "Gubi vrednost ako akcija padne; jedna kompanija može pasti 50%+"
-  },
-  "Low–medium": {
-   "de": "Niedrig–mittel",
-   "sq": "I ulët–mesatar",
-   "sr": "Nizak–srednji"
-  },
-  "Medium": {
-   "de": "Mittel",
-   "sq": "Mesatar",
-   "sr": "Srednji"
-  },
-  "Medium–high": {
-   "de": "Mittel–hoch",
-   "sq": "Mesatar–i lartë",
-   "sr": "Srednji–visok"
-  },
-  "Needs 100 shares ({v}) and pays a small income for agreeing to sell them at a set price.": {
-   "de": "Erfordert 100 Aktien ({v}) und bringt ein kleines Einkommen dafür, sie zu einem festen Preis zu verkaufen.",
-   "sq": "Kërkon 100 aksione ({v}) dhe paguan të ardhura të vogla për pranimin e shitjes së tyre me një çmim të caktuar.",
-   "sr": "Zahteva 100 akcija ({v}) i donosi mali prihod za pristanak da ih prodate po utvrđenoj ceni."
-  },
-  "Needs more experience": {
-   "de": "Erfordert mehr Erfahrung",
-   "sq": "Kërkon më shumë përvojë",
-   "sr": "Zahteva više iskustva"
-  },
-  "Never invest borrowed money or money you need for living costs.": {
-   "de": "Investieren Sie nie geliehenes Geld oder Geld, das Sie zum Leben brauchen.",
-   "sq": "Mos investoni kurrë para të huazuara ose para që ju duhen për jetesë.",
-   "sr": "Nikada ne ulažite pozajmljen novac ili novac potreban za život."
-  },
-  "No basic warning signs in your answers.": {
-   "de": "Keine grundlegenden Warnzeichen in Ihren Antworten.",
-   "sq": "Asnjë shenjë paralajmëruese bazë në përgjigjet tuaja.",
-   "sr": "Nema osnovnih znakova upozorenja u vašim odgovorima."
-  },
-  "No firm has a dated rating in the last 12 months.": {
-   "de": "Keine Firma hat in den letzten 12 Monaten eine datierte Bewertung.",
-   "sq": "Asnjë firmë nuk ka vlerësim me datë në 12 muajt e fundit.",
-   "sr": "Nijedna firma nema datiranu ocenu u poslednjih 12 meseci."
-  },
-  "No matches": {
-   "de": "Keine Treffer",
-   "sq": "Asnjë rezultat",
-   "sr": "Nema rezultata"
-  },
-  "No trades yet.": {
-   "de": "Noch keine Trades.",
-   "sq": "Ende nuk ka tregtime.",
-   "sr": "Još nema trgovina."
-  },
-  "Non-US residents usually have 30% US tax withheld on dividends unless a tax treaty lowers it — check yours.": {
-   "de": "Nicht-US-Bürgern werden auf Dividenden meist 30 % US-Steuer einbehalten, sofern kein Doppelbesteuerungsabkommen den Satz senkt — prüfen Sie Ihres.",
-   "sq": "Banorëve jo-amerikanë zakonisht u mbahet 30% taksë amerikane mbi dividendat, përveç nëse një marrëveshje tatimore e ul — kontrolloni tuajën.",
-   "sr": "Nerezidentima SAD se obično zadržava 30% američkog poreza na dividende, osim ako ga poreski ugovor ne smanjuje — proverite svoj."
-  },
-  "Not tracked here — enter its price yourself": {
-   "de": "Hier nicht erfasst — geben Sie den Kurs selbst ein",
-   "sq": "Nuk ndiqet këtu — futni vetë çmimin",
-   "sr": "Ne prati se ovde — unesite cenu sami"
-  },
-  "One share costs more than your one-stock limit; some brokers sell fractions of a share.": {
-   "de": "Eine Aktie kostet mehr als Ihr Limit pro Aktie; manche Broker verkaufen Aktienbruchteile.",
-   "sq": "Një aksion kushton më shumë se kufiri juaj për aksion; disa brokerë shesin pjesë aksionesh.",
-   "sr": "Jedna akcija košta više od vašeg limita po akciji; neki brokeri prodaju delove akcija."
-  },
-  "Only fits your rules if the premium (price × 100) is no more than {v}. Check the price with your broker.": {
-   "de": "Passt nur zu Ihren Regeln, wenn die Prämie (Preis × 100) höchstens {v} beträgt. Prüfen Sie den Preis bei Ihrem Broker.",
-   "sq": "Përshtatet me rregullat tuaja vetëm nëse prima (çmimi × 100) nuk e kalon {v}. Kontrolloni çmimin te brokeri.",
-   "sr": "Odgovara vašim pravilima samo ako premija (cena × 100) nije veća od {v}. Proverite cenu kod brokera."
-  },
-  "Other": {
-   "de": "Sonstiges",
-   "sq": "Tjetër",
-   "sr": "Ostalo"
-  },
-  "Practice": {
-   "de": "Übung",
-   "sq": "Praktikë",
-   "sr": "Vežba"
-  },
-  "Put credit spread": {
-   "de": "Put-Credit-Spread",
-   "sq": "Put credit spread",
-   "sr": "Put kreditni spred"
-  },
-  "Real": {
-   "de": "Echt",
-   "sq": "Reale",
-   "sr": "Stvarno"
-  },
-  "Risk": {
-   "de": "Risiko",
-   "sq": "Rreziku",
-   "sr": "Rizik"
-  },
-  "Riskier than your setting": {
-   "de": "Riskanter als Ihre Einstellung",
-   "sq": "Më e rrezikshme se cilësimi juaj",
-   "sr": "Rizičnije od vašeg podešavanja"
-  },
-  "Same as owning 100 shares, minus the premium collected; gains capped at the strike": {
-   "de": "Wie der Besitz von 100 Aktien, abzüglich der eingenommenen Prämie; Gewinne beim Strike gedeckelt",
-   "sq": "Njësoj si të zotëroni 100 aksione, minus primën e arkëtuar; fitimet kufizohen te strike",
-   "sr": "Isto kao posedovanje 100 akcija, minus naplaćena premija; dobitak ograničen na strajku"
-  },
-  "See every dated rating for {t} →": {
-   "de": "Alle datierten Bewertungen für {t} ansehen →",
-   "sq": "Shihni çdo vlerësim me datë për {t} →",
-   "sr": "Pogledajte sve datirane ocene za {t} →"
-  },
-  "Shares": {
-   "de": "Aktien",
-   "sq": "Aksione",
-   "sr": "Akcije"
-  },
-  "Sold strike ($)": {
-   "de": "Verkaufter Strike ($)",
-   "sq": "Strike i shitur ($)",
-   "sr": "Prodati strajk ($)"
-  },
-  "Spreads money across hundreds of companies; the usual core holding.": {
-   "de": "Verteilt das Geld auf Hunderte Unternehmen; die übliche Kernanlage.",
-   "sq": "Shpërndan paratë në qindra kompani; investimi bazë i zakonshëm.",
-   "sr": "Raspoređuje novac na stotine kompanija; uobičajeno osnovno ulaganje."
-  },
-  "Strategy": {
-   "de": "Strategie",
-   "sq": "Strategjia",
-   "sr": "Strategija"
-  },
-  "Strike ($)": {
-   "de": "Strike ($)",
-   "sq": "Strike ($)",
-   "sr": "Strajk ($)"
-  },
-  "Take profit or cut losses by a rule set in advance, not by feeling.": {
-   "de": "Gewinne mitnehmen oder Verluste begrenzen nach einer vorab festgelegten Regel, nicht nach Gefühl.",
-   "sq": "Merrni fitimin ose ndalni humbjet sipas një rregulli të caktuar më parë, jo sipas ndjenjës.",
-   "sr": "Uzmite dobit ili ograničite gubitke po unapred postavljenom pravilu, a ne po osećaju."
-  },
-  "That file is not a journal backup.": {
-   "de": "Diese Datei ist keine Journal-Sicherung.",
-   "sq": "Ky skedar nuk është kopje e ditarit.",
-   "sr": "Ova datoteka nije rezervna kopija dnevnika."
-  },
-  "Ticker of a US stock tracked here, or any ticker": {
-   "de": "Ticker einer hier erfassten US-Aktie oder ein beliebiger Ticker",
-   "sq": "Simboli i një aksioni amerikan të ndjekur këtu, ose çdo simbol",
-   "sr": "Oznaka američke akcije praćene ovde, ili bilo koja oznaka"
-  },
-  "Unlimited": {
-   "de": "Unbegrenzt",
-   "sq": "E pakufizuar",
-   "sr": "Neograničen"
-  },
-  "Up to {v} per spread (strike width), minus the premium": {
-   "de": "Bis zu {v} pro Spread (Strike-Abstand), abzüglich der Prämie",
-   "sq": "Deri në {v} për spread (gjerësia e strike-ve), minus prima",
-   "sr": "Do {v} po spredu (razmak strajkova), minus premija"
-  },
-  "What analysts say about {t}": {
-   "de": "Was Analysten zu {t} sagen",
-   "sq": "Çfarë thonë analistët për {t}",
-   "sr": "Šta analitičari kažu o {t}"
-  },
-  "What your budget can support": {
-   "de": "Was Ihr Budget tragen kann",
-   "sq": "Çfarë mund të përballojë buxheti juaj",
-   "sr": "Šta vaš budžet može da podrži"
-  },
-  "Within your one-stock limit: about {n} share(s) ({v}). Many brokers also sell fractions of a share.": {
-   "de": "Innerhalb Ihres Limits pro Aktie: etwa {n} Aktie(n) ({v}). Viele Broker verkaufen auch Aktienbruchteile.",
-   "sq": "Brenda kufirit tuaj për aksion: rreth {n} aksion(e) ({v}). Shumë brokerë shesin edhe pjesë aksionesh.",
-   "sr": "U okviru vašeg limita po akciji: oko {n} akcija ({v}). Mnogi brokeri prodaju i delove akcija."
-  },
-  "Worst case": {
-   "de": "Schlechtester Fall",
-   "sq": "Rasti më i keq",
-   "sr": "Najgori slučaj"
-  },
-  "Worst case is fixed in advance. With a ${w} wide spread, the worst case is {rel} your per-trade limit of {lim}.": {
-   "de": "Der schlechteste Fall steht vorab fest. Bei einem ${w} breiten Spread liegt er {rel} Ihrem Limit pro Trade von {lim}.",
-   "sq": "Rasti më i keq dihet paraprakisht. Me një spread ${w} të gjerë, rasti më i keq është {rel} kufirit tuaj për tregtim prej {lim}.",
-   "sr": "Najgori slučaj je unapred poznat. Sa spredom širine ${w}, najgori slučaj je {rel} vašeg limita po trgovini od {lim}."
-  },
-  "Write down why you enter each trade and when you will exit, then compare with what happened.": {
-   "de": "Notieren Sie, warum Sie jeden Trade eingehen und wann Sie aussteigen, und vergleichen Sie dann mit dem Ergebnis.",
-   "sq": "Shkruani pse hyni në çdo tregtim dhe kur do të dilni, pastaj krahasoni me atë që ndodhi.",
-   "sr": "Zapišite zašto ulazite u svaku trgovinu i kada ćete izaći, pa uporedite sa onim što se dogodilo."
-  },
-  "You are new to investing. Options can lose money quickly; most guides suggest starting with diversified funds and learning how options work with a practice (paper) account first.": {
-   "de": "Sie sind neu beim Investieren. Mit Optionen kann man schnell Geld verlieren; die meisten Ratgeber empfehlen, mit breit gestreuten Fonds zu beginnen und Optionen zuerst mit einem Übungskonto kennenzulernen.",
-   "sq": "Jeni i ri në investime. Me opsionet mund të humbni para shpejt; shumica e udhëzuesve sugjerojnë të filloni me fonde të diversifikuara dhe të mësoni si funksionojnë opsionet fillimisht me një llogari praktike.",
-   "sr": "Početnik ste u investiranju. Opcije mogu brzo izgubiti novac; većina vodiča predlaže da počnete sa diversifikovanim fondovima i da prvo naučite kako opcije rade na računu za vežbu."
-  },
-  "You have no emergency fund. The usual first step is to build 3–6 months of costs in savings before investing, so you are never forced to sell at a loss.": {
-   "de": "Sie haben keinen Notgroschen. Üblicherweise baut man zuerst 3–6 Monatsausgaben als Ersparnis auf, bevor man investiert, damit man nie mit Verlust verkaufen muss.",
-   "sq": "Nuk keni fond emergjence. Hapi i zakonshëm i parë është të kurseni shpenzimet e 3–6 muajve para se të investoni, që të mos detyroheni kurrë të shisni me humbje.",
-   "sr": "Nemate rezervni fond. Uobičajeni prvi korak je da uštedite troškove za 3–6 meseci pre ulaganja, kako nikada ne biste morali da prodajete sa gubitkom."
-  },
-  "You may have to buy 100 shares at the strike even if the stock has fallen further": {
-   "de": "Sie müssen evtl. 100 Aktien zum Strike kaufen, auch wenn die Aktie weiter gefallen ist",
-   "sq": "Mund t'ju duhet të blini 100 aksione te strike edhe nëse aksioni ka rënë më tej",
-   "sr": "Možda ćete morati da kupite 100 akcija po strajku čak i ako je akcija pala dalje"
-  },
-  "You may need this money within a year. Stocks can fall 30% or more in a year, so money needed soon is usually kept in savings or short-term government bonds, not in single stocks or options.": {
-   "de": "Sie brauchen dieses Geld evtl. innerhalb eines Jahres. Aktien können in einem Jahr 30 % oder mehr fallen; Geld, das bald gebraucht wird, liegt daher meist auf dem Sparkonto oder in kurzlaufenden Staatsanleihen, nicht in Einzelaktien oder Optionen.",
-   "sq": "Mund t'ju duhen këto para brenda një viti. Aksionet mund të bien 30% ose më shumë brenda një viti, ndaj paratë që ju duhen së shpejti zakonisht mbahen në kursime ose obligacione shtetërore afatshkurtra, jo në aksione të veçanta apo opsione.",
-   "sr": "Ovaj novac bi vam mogao zatrebati u roku od godinu dana. Akcije mogu pasti 30% ili više za godinu, pa se novac koji uskoro treba obično drži na štednji ili u kratkoročnim državnim obveznicama, a ne u pojedinačnim akcijama ili opcijama."
-  },
-  "Your browser is blocking storage, so trades stay only until you close this page. Use Export to keep them.": {
-   "de": "Ihr Browser blockiert die Speicherung; Trades bleiben nur bis zum Schließen dieser Seite erhalten. Nutzen Sie Export, um sie zu behalten.",
-   "sq": "Shfletuesi juaj bllokon ruajtjen, ndaj tregtimet mbeten vetëm deri sa të mbyllni këtë faqe. Përdorni Eksporto për t'i mbajtur.",
-   "sr": "Vaš pregledač blokira čuvanje, pa trgovine ostaju samo dok ne zatvorite stranicu. Koristite Izvoz da ih sačuvate."
-  },
-  "Your numbers": {
-   "de": "Ihre Zahlen",
-   "sq": "Numrat tuaj",
-   "sr": "Vaši brojevi"
-  },
-  "Your settings": {
-   "de": "Ihre Einstellungen",
-   "sq": "Cilësimet tuaja",
-   "sr": "Vaša podešavanja"
-  },
-  "above": {
-   "de": "über",
-   "sq": "mbi",
-   "sr": "iznad"
-  },
-  "amount to invest": {
-   "de": "Anlagebetrag",
-   "sq": "shuma për investim",
-   "sr": "iznos za ulaganje"
-  },
-  "amount you put in": {
-   "de": "eingezahlter Betrag",
-   "sq": "shuma që futët",
-   "sr": "uloženi iznos"
-  },
-  "analyst": {
-   "de": "Analyst",
-   "sq": "analist",
-   "sr": "analitičar"
-  },
-  "any amount": {
-   "de": "beliebiger Betrag",
-   "sq": "çdo shumë",
-   "sr": "bilo koji iznos"
-  },
-  "average loss": {
-   "de": "Ø Verlust",
-   "sq": "humbja mesatare",
-   "sr": "prosečan gubitak"
-  },
-  "average win": {
-   "de": "Ø Gewinn",
-   "sq": "fitimi mesatar",
-   "sr": "prosečan dobitak"
-  },
-  "average win ÷ average loss": {
-   "de": "Ø Gewinn ÷ Ø Verlust",
-   "sq": "fitimi mesatar ÷ humbja mesatare",
-   "sr": "prosečan dobitak ÷ prosečan gubitak"
-  },
-  "bearish": {
-   "de": "negativ",
-   "sq": "negativ",
-   "sr": "negativno"
-  },
-  "break-even price": {
-   "de": "Break-even-Kurs",
-   "sq": "çmimi i pikës zero",
-   "sr": "cena pokrića"
-  },
-  "bullish": {
-   "de": "positiv",
-   "sq": "pozitiv",
-   "sr": "pozitivno"
-  },
-  "chance of staying above −1σ (bell curve)": {
-   "de": "Chance, über −1σ zu bleiben (Glockenkurve)",
-   "sq": "mundësia për të mbetur mbi −1σ (kurba e kambanës)",
-   "sr": "šansa da ostane iznad −1σ (zvonasta kriva)"
-  },
-  "growth": {
-   "de": "Wachstum",
-   "sq": "rritja",
-   "sr": "rast"
-  },
-  "high risk": {
-   "de": "hohes Risiko",
-   "sq": "rrezik i lartë",
-   "sr": "visok rizik"
-  },
-  "low risk": {
-   "de": "niedriges Risiko",
-   "sq": "rrezik i ulët",
-   "sr": "nizak rizik"
-  },
-  "maximum gain": {
-   "de": "maximaler Gewinn",
-   "sq": "fitimi maksimal",
-   "sr": "najveći dobitak"
-  },
-  "maximum loss": {
-   "de": "maximaler Verlust",
-   "sq": "humbja maksimale",
-   "sr": "najveći gubitak"
-  },
-  "medium risk": {
-   "de": "mittleres Risiko",
-   "sq": "rrezik mesatar",
-   "sr": "srednji rizik"
-  },
-  "money tied up (approx.)": {
-   "de": "gebundenes Kapital (ca.)",
-   "sq": "para të bllokuara (përafërsisht)",
-   "sr": "vezan novac (približno)"
-  },
-  "most in any one stock ({p}% for {risk})": {
-   "de": "maximal in einer Aktie ({p} % bei {risk})",
-   "sq": "maksimumi në një aksion ({p}% për {risk})",
-   "sr": "najviše u jednoj akciji ({p}% za {risk})"
-  },
-  "most to lose on one trade ({p}%)": {
-   "de": "maximaler Verlust pro Trade ({p} %)",
-   "sq": "humbja maksimale për tregtim ({p}%)",
-   "sr": "najveći gubitak po trgovini ({p}%)"
-  },
-  "neutral": {
-   "de": "neutral",
-   "sq": "neutral",
-   "sr": "neutralno"
-  },
-  "now": {
-   "de": "jetzt",
-   "sq": "tani",
-   "sr": "sada"
-  },
-  "stock": {
-   "de": "Aktie",
-   "sq": "aksion",
-   "sr": "akcija"
-  },
-  "total result": {
-   "de": "Gesamtergebnis",
-   "sq": "rezultati total",
-   "sr": "ukupan rezultat"
-  },
-  "tracked here": {
-   "de": "hier erfasst",
-   "sq": "ndiqet këtu",
-   "sr": "prati se ovde"
-  },
-  "trades": {
-   "de": "Trades",
-   "sq": "tregtime",
-   "sr": "trgovina"
-  },
-  "value after {n} years": {
-   "de": "Wert nach {n} Jahren",
-   "sq": "vlera pas {n} vitesh",
-   "sr": "vrednost posle {n} godina"
-  },
-  "win rate": {
-   "de": "Trefferquote",
-   "sq": "përqindja e fitoreve",
-   "sr": "procenat dobitaka"
-  },
-  "within": {
-   "de": "innerhalb",
-   "sq": "brenda",
-   "sr": "unutar"
-  },
-  "{p}% above the price you entered": {
-   "de": "{p} % über dem eingegebenen Kurs",
-   "sq": "{p}% mbi çmimin që futët",
-   "sr": "{p}% iznad cene koju ste uneli"
-  },
-  "{p}% below the price you entered": {
-   "de": "{p} % unter dem eingegebenen Kurs",
-   "sq": "{p}% nën çmimin që futët",
-   "sr": "{p}% ispod cene koju ste uneli"
-  },
-  "{t} is not tracked on {site} yet, so there is no analyst summary.": {
-   "de": "{t} wird auf {site} noch nicht erfasst, daher gibt es keine Analystenübersicht.",
-   "sq": "{t} ende nuk ndiqet në {site}, ndaj nuk ka përmbledhje analistësh.",
-   "sr": "{t} se još ne prati na {site}, pa nema pregleda analitičara."
-  },
-  "±1σ band (≈68%)": {
-   "de": "±1σ-Band (≈68 %)",
-   "sq": "brezi ±1σ (≈68%)",
-   "sr": "pojas ±1σ (≈68%)"
-  },
-  "±2σ band (≈95%)": {
-   "de": "±2σ-Band (≈95 %)",
-   "sq": "brezi ±2σ (≈95%)",
-   "sr": "pojas ±2σ (≈95%)"
-  }
- }
 }
